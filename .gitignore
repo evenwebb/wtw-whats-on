@@ -1,0 +1,15 @@
+# Data, cache and assets (posters/, certs/, icons/, .tmdb_cache.json, .whats_on_fingerprint)
+# are committed so GitHub Pages and the workflow work without external storage.
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.so
+.venv/
+venv/
+env/
+
+# Old scraper log (legacy)
+cinema_log.txt
