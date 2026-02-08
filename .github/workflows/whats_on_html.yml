@@ -31,8 +31,16 @@ jobs:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: python3 whats_on_scraper.py
 
-      - name: Commit and push if changed
+      - name: Commit and push if listings changed
         run: |
+          # Only commit when the fingerprint changed (new/removed films or showtimes).
+          # Data and HTML always get rewritten (e.g. updated_at) so we use fingerprint, not git diff.
+          OLD_FP=$(cat .whats_on_fingerprint 2>/dev/null || true)
+          NEW_FP=$(cat .whats_on_fingerprint)
+          if [ "$OLD_FP" = "$NEW_FP" ]; then
+            echo "Fingerprint unchanged; skipping commit."
+            exit 0
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add whats_on_data.json index.html .tmdb_cache.json .whats_on_fingerprint posters/ certs/ icons/

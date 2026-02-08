@@ -636,12 +636,6 @@ def build_html(data: Dict[str, Any]) -> str:
     """Generate single self-contained index.html with Web3 style and date filtering."""
     cinema = (data.get("cinemas") or {}).get("st-austell") or {}
     films = cinema.get("films") or []
-    updated_at = data.get("updated_at", "")
-    try:
-        dt = datetime.fromisoformat(updated_at.replace("Z", "+00:00"))
-        updated_str = dt.strftime("%d %b %Y, %H:%M")
-    except Exception:
-        updated_str = updated_at
 
     # Collect unique dates for tabs
     all_dates = set()
@@ -965,7 +959,7 @@ def build_html(data: Dict[str, Any]) -> str:
     <div class="tabs">{tabs_html}</div>
     <main id="films">{cards_html}</main>
     <footer>
-      Listings updated {updated_str} UTC · <a href="{WTW_WHATS_ON_URL}">WTW Cinemas</a>
+      <a href="{WTW_WHATS_ON_URL}">WTW Cinemas</a>
     </footer>
   </div>
   <script>
