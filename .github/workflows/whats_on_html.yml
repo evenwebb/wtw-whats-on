@@ -43,5 +43,5 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add whats_on_data.json index.html .tmdb_cache.json .whats_on_fingerprint posters/ certs/ icons/
+          git add whats_on_data.json .tmdb_cache.json .whats_on_fingerprint site/
           git diff --staged --quiet || (git commit -m "chore: update whats-on data and HTML" && git push)

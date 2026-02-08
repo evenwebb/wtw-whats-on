@@ -1,4 +1,4 @@
-# Data, cache and assets (posters/, certs/, icons/, .tmdb_cache.json, .whats_on_fingerprint)
+# Data, cache and site output (site/, .tmdb_cache.json, .whats_on_fingerprint)
 # are committed so GitHub Pages and the workflow work without external storage.
 
 # Python

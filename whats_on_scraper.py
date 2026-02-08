@@ -3,7 +3,7 @@
 WTW Cinemas What's On scraper.
 
 Scrapes the St Austell whats-on page, optionally enriches with TMDb data,
-writes whats_on_data.json and regenerates index.html on every run.
+writes whats_on_data.json and regenerates site/index.html (and assets) on every run.
 Commits (e.g. in CI) are driven by fingerprint change.
 """
 import hashlib
@@ -38,11 +38,12 @@ WTW_BASE = "https://wtwcinemas.co.uk"
 DATA_FILE = "whats_on_data.json"
 FINGERPRINT_FILE = ".whats_on_fingerprint"
 TMDB_CACHE_FILE = ".tmdb_cache.json"
-POSTERS_DIR = "posters"
-CERTS_DIR = "certs"
+SITE_DIR = "site"  # GitHub Pages: set Source to branch main, folder /site
+POSTERS_DIR = "site/posters"
+CERTS_DIR = "site/certs"
 WTW_CERT_BASE = "https://wtwcinemas.co.uk/wp-content/themes/wtw-2017/dist/images"
 CERT_IMAGES = {"U": "cert-u.png", "PG": "cert-pg.png", "12A": "cert-12a.png", "15": "cert-15.png", "18": "cert-18.png"}
-ICONS_DIR = "icons"
+ICONS_DIR = "site/icons"
 WTW_3D_ICON_URL = "https://wtwcinemas.co.uk/wp-content/uploads/2022/11/3D-Performance.png"
 TMDB_CACHE_DAYS = 30
 TMDB_DELAY_SEC = 0.2
@@ -233,7 +234,7 @@ def _download_poster(url: str, slug: str) -> str:
         r = requests.get(url, headers=headers, timeout=15)
         r.raise_for_status()
         path.write_bytes(r.content)
-        return f"{POSTERS_DIR}/{slug}.{ext}"
+        return f"posters/{slug}.{ext}"  # relative to SITE_DIR for HTML
     except Exception as e:
         logger.warning("Poster download failed %s: %s", url[:50], e)
         return ""
@@ -1084,8 +1085,9 @@ def main() -> None:
     _download_cert_images()
     _download_3d_icon()
     html = build_html(data)
-    Path("index.html").write_text(html, encoding="utf-8")
-    logger.info("Wrote index.html")
+    Path(SITE_DIR).mkdir(parents=True, exist_ok=True)
+    Path(SITE_DIR, "index.html").write_text(html, encoding="utf-8")
+    logger.info("Wrote %s/index.html", SITE_DIR)
     Path(FINGERPRINT_FILE).write_text(fingerprint, encoding="utf-8")
     if fingerprint == prev_fingerprint:
         logger.info("Fingerprint unchanged; nothing new to commit.")

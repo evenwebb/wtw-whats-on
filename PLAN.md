@@ -230,9 +230,9 @@ Caching cuts TMDb API calls and runtime so the workflow stays fast and within fr
 
 ## 5. GitHub Pages Setup
 
-- Output: `index.html` in repo root
-- Enable GitHub Pages: Settings → Pages → Source: Deploy from branch → Branch: `main` (or default) → `/ (root)`
-- Result: `https://<username>.github.io/wtw-cinemas-calendar/`
+- Output: `site/index.html` and assets under `site/` (posters, certs, icons)
+- Enable GitHub Pages: Settings → Pages → Source: Deploy from branch → Branch: `main` → Folder: **/site**
+- Result: [https://evenwebb.github.io/wtw-whats-on](https://evenwebb.github.io/wtw-whats-on)
 
 ---
 
