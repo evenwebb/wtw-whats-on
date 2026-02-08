@@ -18,17 +18,17 @@ pip install -r requirements.txt
 python whats_on_scraper.py
 ```
 
-- Writes `whats_on_data.json` and regenerates `site/index.html` (and assets in `site/`) every run.
+- Writes `whats_on_data.json` and regenerates `docs/index.html` (and assets in `docs/`) every run.
 - **Optional:** set `TMDB_API_KEY` (from [themoviedb.org](https://www.themoviedb.org/settings/api)) for posters, trailers, ratings and genres. Without it, existing TMDb data in the repo is preserved.
 
 ## Production (GitHub Pages)
 
-1. **Settings → Pages** — Source: **Deploy from a branch** → Branch: **main** → **/site** → Save.  
+1. **Settings → Pages** — Source: **Deploy from a branch** → Branch: **main** → **/docs** → Save.  
    Site: [https://evenwebb.github.io/wtw-whats-on](https://evenwebb.github.io/wtw-whats-on).
 
 2. **TMDb (optional)** — **Settings → Secrets and variables → Actions** → New repository secret: **TMDB_API_KEY**. The workflow uses it to refresh posters and metadata.
 
-3. **Workflow** — `.github/workflows/whats_on_html.yml` runs daily (09:00 UTC) and on manual trigger. It commits `whats_on_data.json`, `.tmdb_cache.json`, `.whats_on_fingerprint` and `site/` only when the data fingerprint changes.
+3. **Workflow** — `.github/workflows/whats_on_html.yml` runs daily (09:00 UTC) and on manual trigger. It commits `whats_on_data.json`, `.tmdb_cache.json`, `.whats_on_fingerprint` and `docs/` only when the data fingerprint changes.
 
 ## Files
 
@@ -36,7 +36,7 @@ python whats_on_scraper.py
 |------|--------|
 | `whats_on_scraper.py` | Scrape listings, TMDb enrich, build HTML |
 | `whats_on_data.json` | Cinema data (films, showtimes); committed when changed |
-| `site/` | Generated site: `index.html`, `posters/`, `certs/`, `icons/` |
+| `docs/` | Generated site: `index.html`, `posters/`, `certs/`, `icons/` |
 | `.tmdb_cache.json` | TMDb cache; committed to limit API use |
 | `.whats_on_fingerprint` | Hash used to decide whether to commit after a run |
 

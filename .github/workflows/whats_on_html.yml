@@ -31,17 +31,17 @@ jobs:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: python3 whats_on_scraper.py
 
-      - name: Commit and push if listings changed or site/ missing
+      - name: Commit and push if listings changed or docs/ missing
         run: |
-          # Commit when fingerprint changed (new/removed films or showtimes) OR when site/ is not in the repo yet.
-          SITE_EXISTED=$(git ls-files site/ 2>/dev/null | head -1)
+          # Commit when fingerprint changed (new/removed films or showtimes) OR when docs/ is not in the repo yet.
+          DOCS_EXISTED=$(git ls-files docs/ 2>/dev/null | head -1)
           OLD_FP=$(cat .whats_on_fingerprint 2>/dev/null || true)
           NEW_FP=$(cat .whats_on_fingerprint)
-          if [ "$OLD_FP" = "$NEW_FP" ] && [ -n "$SITE_EXISTED" ]; then
-            echo "Fingerprint unchanged and site/ already in repo; skipping commit."
+          if [ "$OLD_FP" = "$NEW_FP" ] && [ -n "$DOCS_EXISTED" ]; then
+            echo "Fingerprint unchanged and docs/ already in repo; skipping commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add whats_on_data.json .tmdb_cache.json .whats_on_fingerprint site/
+          git add whats_on_data.json .tmdb_cache.json .whats_on_fingerprint docs/
           git diff --staged --quiet || (git commit -m "chore: update whats-on data and HTML" && git push)
