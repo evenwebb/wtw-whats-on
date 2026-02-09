@@ -292,6 +292,24 @@ def _pick_best_tmdb_result(results: List[Dict], search_title: str) -> Optional[D
     return best if best is not None else results[0]
 
 
+def _event_cinema_fallback_queries(title: str) -> List[str]:
+    """For RBO/event cinema titles, return TMDb search queries to try in order. RBO uses 'Royal Ballet & Opera 2025/26: X'; Met Opera also tries 'The Metropolitan Opera: X'."""
+    if not title or "RBO" not in title.upper():
+        return []
+    # Match: "PRODUCTION - RBO 2025-26" or "PRODUCTION - The MET Opera - RBO 2025-26"
+    m = re.search(r"^(.+?)\s+-\s+(?:The MET Opera\s+-\s+)?RBO\s+2025-26", title, re.IGNORECASE)
+    if not m:
+        return []
+    production = m.group(1).strip().title()
+    if not production:
+        return []
+    queries = [f"Royal Ballet & Opera 2025/26: {production}"]
+    # Met Opera titles: TMDb lists as "The Metropolitan Opera: Eugene Onegin"
+    if "MET Opera" in title or "Met Opera" in title:
+        queries.append(f"The Metropolitan Opera: {production}")
+    return queries
+
+
 def _empty_tmdb_entry() -> Dict[str, Any]:
     """Empty cache entry so we never refetch after a miss or error."""
     return {
@@ -324,6 +342,9 @@ def enrich_film_tmdb(
         # Refetch if we have poster but no genres (backfill for old cache entries)
         if (not (entry.get("genres") or [])) and entry.get("poster_url"):
             pass  # Fall through to API call to get genres (and refresh cache)
+        # Retry with event cinema fallback if cache has no poster and this is an RBO title
+        elif not entry.get("poster_url") and _event_cinema_fallback_queries(film.get("title", "")):
+            pass  # Fall through to API call with fallback
         else:
             film["poster_url"] = entry.get("poster_url") or film.get("poster_url") or ""
             film["trailer_url"] = entry.get("trailer_url") or ""
@@ -347,10 +368,26 @@ def enrich_film_tmdb(
         search_r.raise_for_status()
         data = search_r.json()
         results = data.get("results") or []
+        match_title = search_title
+        # Event cinema fallback: try RBO/Met Opera queries when full title returns nothing
+        fallback_queries = _event_cinema_fallback_queries(film.get("title", "")) if not results else []
+        for fq in fallback_queries:
+            time.sleep(TMDB_DELAY_SEC)
+            search_r = requests.get(
+                search_url,
+                params={"api_key": api_key, "query": fq, "language": "en-GB"},
+                timeout=10,
+            )
+            search_r.raise_for_status()
+            data = search_r.json()
+            results = data.get("results") or []
+            if results:
+                match_title = fq
+                break
         if not results:
             cache[cache_key] = _empty_tmdb_entry()
             return
-        chosen = _pick_best_tmdb_result(results, search_title)
+        chosen = _pick_best_tmdb_result(results, match_title)
         if not chosen:
             cache[cache_key] = _empty_tmdb_entry()
             return
@@ -816,7 +853,8 @@ def build_html(data: Dict[str, Any]) -> str:
   <div class="showtimes">{showtimes_html}</div>
 </article>"""
 
-    cards_html = "\n".join(film_card(f) for f in films)
+    films_sorted = sorted(films, key=lambda f: len(f.get("showtimes") or []), reverse=True)
+    cards_html = "\n".join(film_card(f) for f in films_sorted)
 
     # Date filter tabs
     today_iso = datetime.utcnow().date().isoformat()

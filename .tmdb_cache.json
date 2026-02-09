@@ -192,7 +192,16 @@
     "cached_at": "2026-02-08T17:55:01.677201"
   },
   "woolf-works-rbo-2025-26-cinema-season": {
-    "cached_at": "2026-02-08T17:55:02.161796"
+    "poster_url": "https://image.tmdb.org/t/p/w342/mAQXkFFCUpCYdlUnmidR7vc9BW7.jpg",
+    "trailer_url": "",
+    "vote_average": 0.0,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "To Be Announced",
+    "cached_at": "2026-02-09T22:18:54.481821"
   },
   "national-theatre-live-the-audience": {
     "poster_url": "https://image.tmdb.org/t/p/w342/suj6ShOEIWysMf3dqBgmDWggWvi.jpg",
@@ -210,7 +219,18 @@
     "cached_at": "2026-02-08T20:45:21.384369"
   },
   "giselle-rbo-2025-26-cinema-season": {
-    "cached_at": "2026-02-08T17:55:03.632095"
+    "poster_url": "https://image.tmdb.org/t/p/w342/pYjzu4ubAX8JuGkdzDp6OKc9T56.jpg",
+    "trailer_url": "",
+    "vote_average": 0.0,
+    "genres": [
+      "Music"
+    ],
+    "imdb_id": "",
+    "overview": "The world turns upside down for the peasant girl Giselle when she discovers her lover Albrecht is actually a nobleman promised to another. In despair, she kills herself. Her spirit joins the Wilis, the vengeful ghosts of women who have been jilted and die before their wedding day. The Wilis are hell-bent on killing any man who crosses their path in a dance to the death. Wracked with guilt, Albrecht visits Giselle’s grave, where he must face the Wilis – and Giselle’s ghost. Will he survive?",
+    "director": "",
+    "writer": "",
+    "cast": "To Be Announced",
+    "cached_at": "2026-02-09T22:17:09.495275"
   },
   "othello": {
     "poster_url": "https://image.tmdb.org/t/p/w342/61A7EJqfMsrQO0YWsUWq8gbgbu0.jpg",
@@ -227,7 +247,16 @@
     "cached_at": "2026-02-08T20:45:22.257514"
   },
   "siegfried-rbo-2025-26-cinema-season": {
-    "cached_at": "2026-02-08T17:55:05.052606"
+    "poster_url": "https://image.tmdb.org/t/p/w342/7yEc8lAVG0Sklfj1e6UqAgypsxX.jpg",
+    "trailer_url": "",
+    "vote_average": 0.0,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "Raised by a scheming dwarf and unaware of his true family origins, a young man embarks on an epic journey.",
+    "director": "Barrie Kosky",
+    "writer": "",
+    "cast": "Peter Hoare, Andreas Schager, Christopher Maltman, Christopher Purves, Elisabet Strid",
+    "cached_at": "2026-02-09T22:19:10.413164"
   },
   "national-theatre-live-all-my-sons": {
     "poster_url": "https://image.tmdb.org/t/p/w342/jWblUug4V4LcMnkJUtF2MhFMl5X.jpg",
@@ -244,10 +273,30 @@
     "cached_at": "2026-02-08T20:45:23.101102"
   },
   "the-magic-flute-rbo-2025-26-cinema-season": {
-    "cached_at": "2026-02-08T17:55:06.570223"
+    "poster_url": "https://image.tmdb.org/t/p/w342/ff62NuReokkFchk3zJmapEesyPz.jpg",
+    "trailer_url": "",
+    "vote_average": 0.0,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "Princess Pamina has been captured. Her mother, the Queen of the Night, tasks the young Prince Tamino with her daughter’s rescue. But when Tamino and his friendly sidekick, Papageno, embark on their adventure, they soon learn that when it comes to the quest for love, nothing is as it really seems.",
+    "director": "David McVicar",
+    "writer": "",
+    "cast": "Julia Bullock, Amitai Pati, Huw Montague Rendall, Kathyrn Lewek",
+    "cached_at": "2026-02-09T22:19:11.412051"
   },
   "eugene-onegin-the-met-opera-rbo-2025-26-cinema-season": {
-    "cached_at": "2026-02-08T17:55:07.062339"
+    "poster_url": "https://image.tmdb.org/t/p/w342/5VpQ0JRs0SQLGMcahan8FLzjedN.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=SukbEYbc8Q4",
+    "vote_average": 0.0,
+    "genres": [
+      "Music"
+    ],
+    "imdb_id": "",
+    "overview": "Tchaikovsky’s setting of Pushkin’s timeless verse novel is presented on the Met stage in Deborah Warner’s moving production, starring Anna Netrebko as Tatiana and Mariusz Kwiecien and Peter Mattei sharing the title role. Alexey Dolgov sings the role of Lenski, and Robin Ticciati conducts.",
+    "director": "",
+    "writer": "",
+    "cast": "Anna Netrebko (Tatiana), Peter Mattei (Eugene Onegin), Alexey Dolgov (Lensky), Štefan Kocán (Gremin), Robin Ticciati, MET Orchestra",
+    "cached_at": "2026-02-09T22:18:59.274968"
   },
   "national-theatre-live-the-playboy-of-the-western-world": {
     "poster_url": "https://image.tmdb.org/t/p/w342/bRotcH0mzGtNJ40dYt4eVFTjdAL.jpg",
@@ -294,5 +343,129 @@
     "writer": "James Cameron, Shane Salerno, Amanda Silver, Rick Jaffa, Josh Friedman",
     "cast": "Sam Worthington (Jake), Zoe Saldaña (Neytiri), Sigourney Weaver (Kiri), Stephen Lang (Quaritch), Oona Chaplin (Varang), Jack Champion (Spider), Kate Winslet (Ronal), Cliff Curtis (Tonowari), Joel David Moore (Norm), CCH Pounder (Mo'at), Edie Falco (General Ardmore), Brendan Cowell (Scoresby)",
     "cached_at": "2026-02-08T20:34:07.302673"
+  },
+  "the-spongebob-movie-search-for-squarepants": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/pDWYW9v8fmJdA7N0I1MOdQA3ETq.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=UazW5vuAsF0",
+    "vote_average": 6.676,
+    "genres": [
+      "Animation",
+      "Family",
+      "Comedy",
+      "Adventure",
+      "Fantasy"
+    ],
+    "imdb_id": "tt23572848",
+    "overview": "Desperate to be a big guy, SpongeBob sets out to prove his bravery to Mr. Krabs by following The Flying Dutchman – a mysterious swashbuckling ghost pirate – on a seafaring adventure that takes him to the deepest depths of the deep sea, where no Sponge has gone before.",
+    "director": "Derek Drymon",
+    "writer": "Pam Brady, Kaz, Matt Lieberman, Marc Ceccarelli, Stephen Hillenburg",
+    "cast": "Tom Kenny (SpongeBob SquarePants / Gary / Morning DJ (voice)), Clancy Brown (Mr. Krabs / Pirate / Narrator), Rodger Bumpass (Squidward Tentacles (voice)), Bill Fagerbakke (Patrick Star (voice)), Carolyn Lawrence (Sandy Cheeks (voice)), Mr. Lawrence (Sheldon J. Plankton (voice)), George López (JK Fishlips (voice)), Ice Spice (Ticket Taker (voice)), Arturo Castro (Ride Operator), Sherry Cola (Studio Spokesperson / Krusty Krab Patron (voice)), Regina Hall (Barb (voice)), Mark Hamill (Flying Dutchman (voice))",
+    "cached_at": "2026-02-09T22:19:04.446983"
+  },
+  "zootropolis-2": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=k8t8rvRO7Ug",
+    "vote_average": 7.624,
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Adventure",
+      "Family",
+      "Mystery"
+    ],
+    "imdb_id": "tt26443597",
+    "overview": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
+    "director": "Jared Bush, Byron Howard",
+    "writer": "Jared Bush",
+    "cast": "Ginnifer Goodwin (Judy Hopps (voice)), Jason Bateman (Nick Wilde (voice)), Ke Huy Quan (Gary De'Snake (voice)), Fortune Feimster (Nibbles Maplestick (voice)), Andy Samberg (Pawbert Lynxley (voice)), David Strathairn (Milton Lynxley (voice)), Idris Elba (Chief Bogo (voice)), Shakira (Gazelle (voice)), Patrick Warburton (Mayor Winddancer (voice)), Quinta Brunson (Dr. Fuzzby (voice)), Danny Trejo (Jesús (voice)), Nate Torrence (Clawhauser (voice))",
+    "cached_at": "2026-02-09T22:19:05.310220"
+  },
+  "wuthering-heights": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/pZBQ6KfITjufDMCp6FFkqjCoIMN.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=a6eTho1jxuM",
+    "vote_average": 6.643,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "imdb_id": "tt0104181",
+    "overview": "Young orphan Heathcliff is adopted by the wealthy Earnshaw family and moves into their estate, Wuthering Heights. Soon, the new resident falls for his compassionate foster sister, Cathy. The two share a remarkable bond that seems unbreakable until Cathy, feeling the pressure of social convention, suppresses her feelings and marries Edgar Linton, a man of means who befits her stature. Heathcliff vows to win her back.",
+    "director": "Peter Kosminsky",
+    "writer": "Anne Devlin, Emily Brontë",
+    "cast": "Juliette Binoche (Cathy / Catherine Linton), Ralph Fiennes (Heathcliff), Janet McTeer (Ellen Dean), Sophie Ward (Isabella Linton), Simon Shepherd (Edgar Linton), Jeremy Northam (Hindley Earnshaw), Jason Riddington (Hareton Earnshaw), Simon Ward (Mr. Linton), Robert Demeger (Joseph), Paul Geoffrey (Mr. Lockwood), John Woodvine (Thomas Earnshaw), Jennifer Daniel (Mrs. Linton)",
+    "cached_at": "2026-02-09T22:19:06.063198"
+  },
+  "stitch-head": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/p0ZOIaQ8oLEGmQVrYcmvIOUuSqs.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=SlHrSRmobKQ",
+    "vote_average": 7.0,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Family",
+      "Comedy"
+    ],
+    "imdb_id": "tt26720001",
+    "overview": "Stitch Head was the first creature brought to 'almost life' by mad professor Erasmus. In the years since, he’s become nursemaid to the master’s ever-growing menagerie of neglected creatures, tasked with teaching them to suppress their 'inner monster' and hide out in the castle — away from prying eyes and itchy pitchfork fingers, of the village mob in the valley below. But when grubby circus impresario Fulbert Freakfinder arrives offering Stitch Head a starring role in his freak show, our hero is tempted by the promise of love and acceptance.",
+    "director": "Steve Hudson",
+    "writer": "Steve Hudson",
+    "cast": "Asa Butterfield (Stitch Head (voice)), Joel Fry (Creature (voice)), Alison Steadman (Nan (voice)), Rob Brydon (Professor (voice)), Seth Usdenov (Fulbert Freakfinder (voice)), Fern Brady (Madame Miranda (voice)), Tia Bannon (Arabella (voice)), Jamali Maddix (Taj/Tej (voice)), Paul Tylak (Owggagoffakkookkk (voice)), Ruth Gibson (Old Lady (voice)), Rasmus Hardiker (Geoff (voice)), Ryan Sampson (Doctor Dislocation (voice))",
+    "cached_at": "2026-02-09T22:19:06.994290"
+  },
+  "goat": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=4UoscmGBCZ0",
+    "vote_average": 6.6,
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Family",
+      "Action"
+    ],
+    "imdb_id": "tt27613895",
+    "overview": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball – a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world. Will's new teammates aren't thrilled about having a little goat on their roster, but Will is determined to revolutionize the sport and prove once and for all that 'smalls can ball'! He has to do something he has never done before.",
+    "director": "Tyree Dillihay",
+    "writer": "Aaron Buchsbaum, Teddy Riley, Nicolas Curcio",
+    "cast": "Caleb McLaughlin (Will Harris (voice)), Gabrielle Union (Jett Fillmore  (voice)), Jenifer Lewis (Florence Everson  (voice)), David Harbour (Archie Everhardt  (voice)), Nick Kroll (Modo Olachenko  (voice)), Nicola Coughlan (Olivia Burke  (voice)), Patton Oswalt (Dennis  (voice)), Stephen Curry (Lenny Williamson  (voice)), Aaron Pierre (Mane Attraction (voice)), Jennifer Hudson (Louise Harris (voice)), Wayne Knight (Frank (voice)), Jelly Roll (Grizz (voice))",
+    "cached_at": "2026-02-09T22:19:07.754014"
+  },
+  "goat-autism-friendly-screening": {
+    "poster_url": "",
+    "trailer_url": "",
+    "vote_average": null,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-02-09T22:19:08.182586"
+  },
+  "crime-101": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/fDj8ZATOTmiFy7BF43L3XLIOrf0.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=WQWlhBXQpqU",
+    "vote_average": 0.0,
+    "genres": [
+      "Crime",
+      "Thriller"
+    ],
+    "imdb_id": "tt32430579",
+    "overview": "When an elusive thief whose high-stakes heists unfold along the iconic 101 freeway in Los Angeles eyes the score of a lifetime, with hopes of this being his final job, his path collides with a disillusioned insurance broker who is facing her own crossroads, forcing the two to collaborate. Determined to crack the case, a relentless detective closes in on the operation, raising the stakes even higher.",
+    "director": "Bart Layton",
+    "writer": "Don Winslow, Bart Layton",
+    "cast": "Chris Hemsworth (Mike Davis), Halle Berry (Sharon), Mark Ruffalo (Detective Lou Lubesnick), Barry Keoghan (Ormon), Monica Barbaro (Maya), Corey Hawkins (Tillman), Jennifer Jason Leigh (Angie), Nick Nolte (Money), Tate Donovan (Monroe), Devon Bostick (Devon), Paul Adelstein (Mark), Matthew Del Negro (Police Captain Stewart)",
+    "cached_at": "2026-02-09T22:19:08.964100"
+  },
+  "the-lost-boys-of-carbis-bay-and-more": {
+    "poster_url": "",
+    "trailer_url": "",
+    "vote_average": null,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-02-09T22:19:09.394506"
   }
 }
