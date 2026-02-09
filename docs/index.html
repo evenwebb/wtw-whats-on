@@ -11,28 +11,136 @@
     :root {
       --bg: #0a0a0f;
       --card-bg: #12121a;
+      --surface: #12121a;
+      --surface-2: #12121a;
+      --surface-3: #1a1a24;
+      --border: rgba(168,85,247,0.25);
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
       --cyan: #00d4ff;
       --purple: #a855f7;
-      --text: #e2e8f0;
-      --muted: #94a3b8;
+      --accent: #00d4ff;
+      --accent-dim: rgba(0,212,255,0.15);
+      --accent-glow: rgba(0,212,255,0.25);
+      --radius: 16px;
+      --radius-sm: 10px;
+      --radius-lg: 24px;
+      --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: 'Space Grotesk', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
-    .wrap { max-width: 1400px; margin: 0 auto; padding: 1rem; }
-    header { text-align: center; padding: 2rem 0; border-bottom: 1px solid rgba(0,212,255,0.2); }
-    header h1 { font-size: 1.75rem; font-weight: 700; background: linear-gradient(90deg, var(--cyan), var(--purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-    header p { color: var(--muted); font-size: 0.95rem; margin-top: 0.25rem; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    .bg-mesh {
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 100% 80% at 50% -30%, var(--accent-dim) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 50% at 80% 100%, rgba(0,212,255,0.08) 0%, transparent 40%),
+        radial-gradient(ellipse 40% 40% at 10% 90%, rgba(168,85,247,0.05) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .bg-grid {
+      position: fixed;
+      inset: 0;
+      background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .page { position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    @media (min-width: 640px) { .page { padding: 3rem 2rem 5rem; } }
+    header {
+      text-align: center;
+      padding: 3rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+      animation: fadeUp 0.8s ease-out;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    header h1 {
+      font-size: clamp(2rem, 5vw, 2.5rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      background: linear-gradient(90deg, var(--cyan), var(--purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    header p { color: var(--text-muted); font-size: 0.95rem; margin-top: 0.25rem; }
     .tabs { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; padding: 1rem 0; }
-    .tab { font-family: inherit; background: var(--card-bg); border: 1px solid rgba(168,85,247,0.3); color: var(--text); padding: 0.5rem 0.75rem; border-radius: 8px; cursor: pointer; font-size: 0.9rem; }
+    .tab {
+      font-family: inherit;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all var(--transition);
+    }
     .tab:hover { border-color: var(--cyan); }
-    .tab.active { background: linear-gradient(135deg, rgba(0,212,255,0.15), rgba(168,85,247,0.15)); border-color: var(--cyan); }
+    .tab.active {
+      background: linear-gradient(135deg, var(--accent-dim), rgba(168,85,247,0.15));
+      border-color: var(--cyan);
+    }
     #films { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
     @media (min-width: 900px) { #films { grid-template-columns: repeat(2, 1fr); } }
-    .film-card { background: var(--card-bg); border: 1px solid rgba(168,85,247,0.25); border-radius: 12px; padding: 1.25rem; transition: box-shadow 0.2s, border-color 0.2s; }
-    .film-card:hover { border-color: rgba(0,212,255,0.4); box-shadow: 0 0 24px rgba(0,212,255,0.08); }
+    .section-title {
+      grid-column: 1 / -1;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      margin: 0.5rem 0 0;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--accent);
+    }
+    .section-title:first-child { margin-top: 0; padding-top: 0; }
+    .film-card {
+      background: linear-gradient(135deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      transition: all var(--transition);
+      position: relative;
+      overflow: hidden;
+      animation: fadeUp 0.6s ease-out backwards;
+    }
+    .film-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+    .film-card:hover {
+      border-color: rgba(0,212,255,0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(0,212,255,0.1);
+    }
+    .film-card:hover::before { opacity: 1; }
     .film-header { display: flex; gap: 1.25rem; flex-wrap: wrap; }
     .poster { position: relative; flex-shrink: 0; }
-    .poster img { width: 210px; height: 315px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+    .poster img { width: 210px; height: 315px; object-fit: cover; border-radius: var(--radius-sm); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
     .poster .icon--hints { position: absolute; right: 0; top: 0; width: 105px; height: 105px; pointer-events: none; }
     .poster .icon--hints.icon--3d { background: url(icons/3D-Performance.png) no-repeat; background-size: 100% auto; background-position: top right; }
     .film-meta { flex: 1; min-width: 200px; }
@@ -43,8 +151,8 @@
     .cert--12A { background-image: url(certs/cert-12a.png); }
     .cert--15 { background-image: url(certs/cert-15.png); }
     .cert--18 { background-image: url(certs/cert-18.png); }
-    .cert-fallback { background: #333; color: #fff; font-size: 0.65rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; border-radius: 4px; }
-    .meta-line { color: var(--muted); font-size: 0.9rem; margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; }
+    .cert-fallback { background: var(--surface-3); color: #fff; font-size: 0.65rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; border-radius: 4px; }
+    .meta-line { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; }
     .rating-wrap { display: inline-flex; align-items: center; gap: 0.4rem; }
     .rating-bar { display: block; width: 3rem; height: 0.5rem; background: rgba(255,255,255,0.25); border-radius: 3px; overflow: hidden; }
     .rating-fill { display: block; height: 0.5rem; background: linear-gradient(90deg, #00d4ff, #a855f7); border-radius: 3px; transition: width 0.2s; }
@@ -55,23 +163,42 @@
     .trailer-lightbox { position: fixed; inset: 0; z-index: 1000; display: none; align-items: center; justify-content: center; padding: 1rem; box-sizing: border-box; }
     .trailer-lightbox.is-open { display: flex; }
     .trailer-lightbox-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.85); cursor: pointer; }
-    .trailer-lightbox-inner { position: relative; width: 100%; max-width: 90vw; max-height: 90vh; aspect-ratio: 16/9; background: #000; border-radius: 8px; box-shadow: 0 0 40px rgba(0,212,255,0.2); overflow: hidden; }
+    .trailer-lightbox-inner { position: relative; width: 100%; max-width: 90vw; max-height: 90vh; aspect-ratio: 16/9; background: #000; border-radius: var(--radius); box-shadow: 0 0 40px var(--accent-glow); overflow: hidden; }
     .trailer-lightbox-inner iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
-    .trailer-lightbox-close { position: absolute; top: -2.5rem; right: 0; background: var(--card-bg); border: 1px solid rgba(168,85,247,0.3); color: var(--text); width: 2rem; height: 2rem; border-radius: 6px; cursor: pointer; font-size: 1.25rem; line-height: 1; display: flex; align-items: center; justify-content: center; z-index: 1; }
+    .trailer-lightbox-close { position: absolute; top: -2.5rem; right: 0; background: var(--surface-2); border: 1px solid var(--border); color: var(--text); width: 2rem; height: 2rem; border-radius: var(--radius-sm); cursor: pointer; font-size: 1.25rem; line-height: 1; display: flex; align-items: center; justify-content: center; z-index: 1; transition: all var(--transition); }
     .trailer-lightbox-close:hover { border-color: var(--cyan); color: var(--cyan); }
     .trailer-lightbox-fallback { position: absolute; bottom: 0.5rem; left: 0.5rem; font-size: 0.85rem; color: var(--cyan); }
     .trailer-lightbox-fallback:hover { color: var(--purple); }
-    .film-meta .crew { font-size: 0.9rem; color: var(--muted); margin: 0; padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .film-meta .crew { font-size: 0.9rem; color: var(--text-muted); margin: 0; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
     .film-meta .crew:first-of-type { padding-top: 0; }
-    .film-meta .cast { font-size: 0.9rem; color: var(--muted); margin: 0; padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
-    .film-meta .synopsis { font-size: 0.9rem; color: var(--muted); margin: 0; padding: 0.75rem 0 0.5rem; line-height: 1.5; max-width: 56em; border-top: 1px solid rgba(255,255,255,0.1); }
+    .film-meta .cast { font-size: 0.9rem; color: var(--text-muted); margin: 0; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+    .film-meta .synopsis { font-size: 0.9rem; color: var(--text-muted); margin: 0; padding: 0.75rem 0 0.5rem; line-height: 1.5; max-width: 56em; border-top: 1px solid var(--border); }
     .links { margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
-    .links a { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.5rem 0.75rem; border-radius: 8px; font-size: 0.9rem; text-decoration: none; }
-    .links .btn { background: linear-gradient(135deg, var(--cyan), var(--purple)); color: var(--bg); font-weight: 600; border: none; }
-    .links .link { color: var(--cyan); background: rgba(255,255,255,0.06); border: 1px solid rgba(0,212,255,0.35); }
-    .links .link:hover { background: rgba(0,212,255,0.12); border-color: var(--cyan); }
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: all var(--transition);
+    }
+    .links .btn {
+      background: linear-gradient(135deg, var(--cyan), var(--purple));
+      color: var(--bg);
+      font-weight: 600;
+      border: none;
+    }
+    .links .btn:hover {
+      background: linear-gradient(135deg, #20dfff, #b366ff);
+      transform: scale(1.02);
+      box-shadow: 0 4px 20px var(--accent-glow);
+    }
+    .links .link { color: var(--accent); background: rgba(255,255,255,0.06); border: 1px solid var(--border); }
+    .links .link:hover { background: rgba(0,212,255,0.12); border-color: var(--cyan); color: var(--purple); }
     .ext-logo { width: 18px; height: 18px; flex-shrink: 0; }
-    .showtimes { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.08); font-size: 0.9rem; }
+    .showtimes { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.9rem; }
     .day-group { margin-bottom: 0.75rem; }
     .day-group:last-child { margin-bottom: 0; }
     .st-date { font-weight: 600; margin-bottom: 0.25rem; color: var(--text); }
@@ -79,19 +206,33 @@
     .st-row:last-child { margin-bottom: 0; }
     .st-time { font-variant-numeric: tabular-nums; }
     .st-time a, .showtime a { color: var(--cyan); }
-    .st-time .past { color: var(--muted); }
-    .st-screen { color: var(--muted); }
+    .st-time .past { color: var(--text-muted); }
+    .st-screen { color: var(--text-muted); }
     .st-tags { display: flex; align-items: center; flex-wrap: wrap; gap: 0.25rem; }
     .cast-more-btn { background: none; border: none; color: var(--cyan); cursor: pointer; font-size: 0.85em; padding: 0 0.25rem; font-family: inherit; }
     .cast-more-btn:hover { text-decoration: underline; }
-    .tag { font-size: 0.75rem; color: var(--muted); margin-left: 0.25rem; display: inline-flex; align-items: center; gap: 0.25rem; }
+    .tag { font-size: 0.75rem; color: var(--text-muted); margin-left: 0.25rem; display: inline-flex; align-items: center; gap: 0.25rem; }
     .tag-icon { width: 14px; height: 14px; flex-shrink: 0; vertical-align: middle; }
     .cal-link { color: var(--purple); text-decoration: none; margin-left: 0.25rem; }
-    footer { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.06); }
-    footer a { color: var(--cyan); }
+    footer {
+      margin-top: 4rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      animation: fadeUp 0.6s ease-out backwards;
+    }
+    footer a { color: var(--accent); text-decoration: none; font-weight: 500; transition: color var(--transition); }
+    footer a:hover { color: var(--purple); }
+    .footer-disclaimer { font-size: 0.9rem; max-width: 36rem; margin: 0 auto 1rem; line-height: 1.6; }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.5rem; margin-bottom: 1rem; }
+    .footer-attribution { font-size: 0.8rem; opacity: 0.85; margin: 0; line-height: 1.5; }
   </style>
 </head>
 <body>
+  <div class="bg-mesh"></div>
+  <div class="bg-grid"></div>
   <div id="trailer-lightbox" class="trailer-lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Trailer video">
     <div class="trailer-lightbox-backdrop" id="trailer-lightbox-backdrop"></div>
     <div class="trailer-lightbox-inner">
@@ -118,7 +259,7 @@
       <symbol id="icon-kids-club" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M5 21v-2a4 4 0 0 1 4-4h0"/><circle cx="15" cy="10" r="2"/><path d="M15 21v-2a2 2 0 0 0-2-2h0"/></symbol>
     </defs>
   </svg>
-  <div class="wrap">
+  <div class="page">
     <header>
       <h1>What's on at WTW St Austell</h1>
       <p>Ratings, trailers &amp; links to IMDb, RT and Trakt</p>
@@ -138,8 +279,9 @@
 <button type="button" class="tab" data-date="2026-02-26">Thu 26</button>
 <button type="button" class="tab" data-date="2026-03-01">Sun 01</button>
 <button type="button" class="tab" data-date="2026-03-03">Tue 03</button></div>
-    <main id="films">
-<article class="film-card" data-dates="2026-02-09,2026-02-10,2026-02-11,2026-02-12,2026-02-13,2026-02-14,2026-02-15,2026-02-16,2026-02-17,2026-02-18,2026-02-19">
+    <main id="films"><h3 class="section-title" data-section="now">Now showing</h3>
+
+<article class="film-card" data-dates="2026-02-09,2026-02-10,2026-02-11,2026-02-12,2026-02-13,2026-02-14,2026-02-15,2026-02-16,2026-02-17,2026-02-18,2026-02-19" data-status="now">
   <div class="film-header">
     <div class="poster"><img src="posters/send-help.jpg" alt="" loading="lazy"/></div>
     <div class="film-meta">
@@ -148,7 +290,7 @@
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/MGzEPxcg4SY?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=MGzEPxcg4SY" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Sam Raimi</p>
       <p class="crew"><strong>Writer(s):</strong> Damian Shannon, Mark Swift</p>
-      <p class="cast"><strong>Starring:</strong> Rachel McAdams (Linda Liddle), Dylan O'Brien (Bradley Preston), Edyll Ismail (Zuri), Dennis Haysbert (Franklin), Xavier Samuel (Donovan), Chris Pang (Chase)<span class="cast-rest" hidden>, Thaneth Warakulnukroh (Boat Captain), Emma Raimi (River), Kristy Best (Polly Perera), Francesca Waters (Barbara), Olivia Sawyer (Applicant), Brad Flett (Trainer)</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="cast"><strong>Starring:</strong> Rachel McAdams, Dylan O'Brien</p>
       <p class="synopsis">Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/send-help/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -171,7 +313,139 @@
 <div class="day-group"><div class="st-date">Thu 19 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76224&screen=staustell">17:00</a></span><span class="st-screen">Screen 4</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76225&screen=staustell">19:45</a></span><span class="st-screen">Screen 4</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div></div>
 </article>
 
-<article class="film-card" data-dates="2026-02-13,2026-02-14,2026-02-15,2026-02-16,2026-02-17,2026-02-18,2026-02-19">
+<article class="film-card" data-dates="2026-02-09,2026-02-10,2026-02-11,2026-02-12,2026-02-17,2026-02-18,2026-02-19" data-status="now">
+  <div class="film-header">
+    <div class="poster"><img src="posters/hamnet.jpg" alt="" loading="lazy"/></div>
+    <div class="film-meta">
+      <h2>Hamnet </h2>
+      <div class="meta-line">126 min (2 hours 6 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:78%"></span></span><span class="rating-text">7.8/10</span></span> <span class="genres">Drama, Romance, History</span></div>
+      <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/ZqGffamnFqw?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=ZqGffamnFqw" aria-label="Play trailer">Trailer</button>
+      <p class="crew"><strong>Director:</strong> Chloé Zhao</p>
+      <p class="crew"><strong>Writer(s):</strong> Maggie O'Farrell, Chloé Zhao</p>
+      <p class="cast"><strong>Starring:</strong> Jessie Buckley, Paul Mescal</p>
+      <p class="synopsis">The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.</p>
+      <div class="links">
+        <a href="https://wtwcinemas.co.uk/film/hamnet/?screen=st-austell" class="btn book">Book at WTW</a>
+        <a href="https://www.imdb.com/title/tt14905854/" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
+        <a href="https://www.rottentomatoes.com/search?search=Hamnet" class="link ext-link" target="_blank" rel="noopener" title="Rotten Tomatoes"><svg class="ext-logo" aria-hidden="true"><use href="#rt-logo"/></svg> RT</a>
+        <a href="https://trakt.tv/search?query=Hamnet" class="link ext-link" target="_blank" rel="noopener" title="Trakt"><svg class="ext-logo" aria-hidden="true"><use href="#trakt-logo"/></svg> Trakt</a>
+      </div>
+    </div>
+  </div>
+  <div class="showtimes"><div class="day-group"><div class="st-date">Mon 09 Feb</div><div class="st-row"><span class="st-time"><span class="past">16:45</span></span><span class="st-screen">Screen 4</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
+<div class="day-group"><div class="st-date">Tue 10 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76106&screen=staustell">17:30</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
+<div class="day-group"><div class="st-date">Wed 11 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76116&screen=staustell">15:30</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
+<div class="day-group"><div class="st-date">Thu 12 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76123&screen=staustell">17:30</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
+<div class="day-group"><div class="st-date">Tue 17 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76190&screen=staustell">19:00</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
+<div class="day-group"><div class="st-date">Wed 18 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76207&screen=staustell">19:00</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
+<div class="day-group"><div class="st-date">Thu 19 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76223&screen=staustell">19:00</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div></div>
+</article>
+
+<article class="film-card" data-dates="2026-02-09,2026-02-10,2026-02-11,2026-02-12" data-status="now">
+  <div class="film-header">
+    <div class="poster"><img src="posters/shelter.jpg" alt="" loading="lazy"/></div>
+    <div class="film-meta">
+      <h2>Shelter </h2>
+      <div class="meta-line">107 min (1 hour 47 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:77%"></span></span><span class="rating-text">7.7/10</span></span> <span class="genres">Action, Crime, Thriller</span></div>
+      <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/kdcxogb4leQ?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=kdcxogb4leQ" aria-label="Play trailer">Trailer</button>
+      <p class="crew"><strong>Director:</strong> Ric Roman Waugh</p>
+      <p class="crew"><strong>Writer(s):</strong> Ward Parry</p>
+      <p class="cast"><strong>Starring:</strong> Jason Statham, Bodhi Rae Breathnach, Bill Nighy</p>
+      <p class="synopsis">A man living in self-imposed exile on a remote island rescues a young girl from a violent storm, setting off a chain of events that forces him out of seclusion to protect her from enemies tied to his past.</p>
+      <div class="links">
+        <a href="https://wtwcinemas.co.uk/film/shelter/?screen=st-austell" class="btn book">Book at WTW</a>
+        <a href="https://www.imdb.com/title/tt32357218/" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
+        <a href="https://www.rottentomatoes.com/search?search=Shelter" class="link ext-link" target="_blank" rel="noopener" title="Rotten Tomatoes"><svg class="ext-logo" aria-hidden="true"><use href="#rt-logo"/></svg> RT</a>
+        <a href="https://trakt.tv/search?query=Shelter" class="link ext-link" target="_blank" rel="noopener" title="Trakt"><svg class="ext-logo" aria-hidden="true"><use href="#trakt-logo"/></svg> Trakt</a>
+      </div>
+    </div>
+  </div>
+  <div class="showtimes"><div class="day-group"><div class="st-date">Mon 09 Feb</div><div class="st-row"><span class="st-time"><span class="past">19:30</span></span><span class="st-screen">Screen 4</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
+<div class="day-group"><div class="st-date">Tue 10 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76109&screen=staustell">19:30</a></span><span class="st-screen">Screen 4</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
+<div class="day-group"><div class="st-date">Wed 11 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76114&screen=staustell">19:30</a></span><span class="st-screen">Screen 4</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
+<div class="day-group"><div class="st-date">Thu 12 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76126&screen=staustell">19:30</a></span><span class="st-screen">Screen 4</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div></div>
+</article>
+
+<article class="film-card" data-dates="2026-02-09,2026-02-10,2026-02-11,2026-02-12" data-status="now">
+  <div class="film-header">
+    <div class="poster"><img src="posters/is-this-thing-on.jpg" alt="" loading="lazy"/></div>
+    <div class="film-meta">
+      <h2>Is This Thing On </h2>
+      <div class="meta-line">121 min (2 hours 1 min) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:70%"></span></span><span class="rating-text">7.0/10</span></span> <span class="genres">Comedy, Drama</span></div>
+      <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/DnIZfYuDEvQ?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=DnIZfYuDEvQ" aria-label="Play trailer">Trailer</button>
+      <p class="crew"><strong>Director:</strong> Bradley Cooper</p>
+      <p class="crew"><strong>Writer(s):</strong> Mark Chappell, Will Arnett, Bradley Cooper, John Bishop</p>
+      <p class="cast"><strong>Starring:</strong> Will Arnett, Laura Dern, Andra Day, Bradley Cooper</p>
+      <p class="synopsis">As their marriage quietly unravels, Alex faces middle age and an impending divorce, seeking new purpose in the New York comedy scene while Tess confronts the sacrifices she made for their family—forcing them to navigate co-parenting, identity, and whether love can take a new form.</p>
+      <div class="links">
+        <a href="https://wtwcinemas.co.uk/film/is-this-thing-on/?screen=st-austell" class="btn book">Book at WTW</a>
+        <a href="https://www.imdb.com/title/tt28083456/" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
+        <a href="https://www.rottentomatoes.com/search?search=Is+This+Thing+On" class="link ext-link" target="_blank" rel="noopener" title="Rotten Tomatoes"><svg class="ext-logo" aria-hidden="true"><use href="#rt-logo"/></svg> RT</a>
+        <a href="https://trakt.tv/search?query=Is+This+Thing+On" class="link ext-link" target="_blank" rel="noopener" title="Trakt"><svg class="ext-logo" aria-hidden="true"><use href="#trakt-logo"/></svg> Trakt</a>
+      </div>
+    </div>
+  </div>
+  <div class="showtimes"><div class="day-group"><div class="st-date">Mon 09 Feb</div><div class="st-row"><span class="st-time"><span class="past">19:45</span></span><span class="st-screen">Screen 2</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
+<div class="day-group"><div class="st-date">Tue 10 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76105&screen=staustell">19:45</a></span><span class="st-screen">Screen 2</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
+<div class="day-group"><div class="st-date">Wed 11 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76113&screen=staustell">19:45</a></span><span class="st-screen">Screen 2</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
+<div class="day-group"><div class="st-date">Thu 12 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76122&screen=staustell">19:15</a></span><span class="st-screen">Screen 2</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div></div>
+</article>
+
+<article class="film-card" data-dates="2026-02-09,2026-02-10,2026-02-11,2026-02-12" data-status="now">
+  <div class="film-header">
+    <div class="poster"><img src="posters/primate.jpg" alt="" loading="lazy"/></div>
+    <div class="film-meta">
+      <h2>Primate </h2>
+      <div class="meta-line">89 min (1 hour 29 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:63%"></span></span><span class="rating-text">6.3/10</span></span> <span class="genres">Horror, Thriller</span></div>
+      <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/xKGw0q_6aGw?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=xKGw0q_6aGw" aria-label="Play trailer">Trailer</button>
+      <p class="crew"><strong>Director:</strong> Johannes Roberts</p>
+      <p class="crew"><strong>Writer(s):</strong> Johannes Roberts, Ernest Riera</p>
+      <p class="cast"><strong>Starring:</strong> Jessica Alexander, Troy Kotsur, Victoria Wyant</p>
+      <p class="synopsis">Lucy, a college student, along with her friends, spend their vacation at her family's home in Hawaii, which includes her pet chimpanzee, Ben. However, when Ben contracts rabies after being bitten by a rabid animal, the group must fight for their lives in order to avoid the now-violent chimp.</p>
+      <div class="links">
+        <a href="https://wtwcinemas.co.uk/film/primate/?screen=st-austell" class="btn book">Book at WTW</a>
+        <a href="https://www.imdb.com/title/tt33028778/" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
+        <a href="https://www.rottentomatoes.com/search?search=Primate" class="link ext-link" target="_blank" rel="noopener" title="Rotten Tomatoes"><svg class="ext-logo" aria-hidden="true"><use href="#rt-logo"/></svg> RT</a>
+        <a href="https://trakt.tv/search?query=Primate" class="link ext-link" target="_blank" rel="noopener" title="Trakt"><svg class="ext-logo" aria-hidden="true"><use href="#trakt-logo"/></svg> Trakt</a>
+      </div>
+    </div>
+  </div>
+  <div class="showtimes"><div class="day-group"><div class="st-date">Mon 09 Feb</div><div class="st-row"><span class="st-time"><span class="past">17:30</span></span><span class="st-screen">Screen 2</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
+<div class="day-group"><div class="st-date">Tue 10 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76107&screen=staustell">20:15</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
+<div class="day-group"><div class="st-date">Wed 11 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76115&screen=staustell">17:30</a></span><span class="st-screen">Screen 2</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
+<div class="day-group"><div class="st-date">Thu 12 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76124&screen=staustell">20:15</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div></div>
+</article>
+<h3 class="section-title" data-section="coming">Coming soon</h3>
+
+<article class="film-card" data-dates="2026-02-13,2026-02-14,2026-02-15,2026-02-16,2026-02-17,2026-02-18,2026-02-19" data-status="coming-soon">
+  <div class="film-header">
+    <div class="poster"><img src="posters/goat.jpg" alt="" loading="lazy"/></div>
+    <div class="film-meta">
+      <h2>GOAT </h2>
+      <div class="meta-line">100 min (1 hour 40 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:66%"></span></span><span class="rating-text">6.6/10</span></span> <span class="genres">Animation, Comedy, Family, Action</span></div>
+      <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/4UoscmGBCZ0?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=4UoscmGBCZ0" aria-label="Play trailer">Trailer</button>
+      <p class="crew"><strong>Director:</strong> Tyree Dillihay</p>
+      <p class="crew"><strong>Writer(s):</strong> Aaron Buchsbaum, Teddy Riley, Nicolas Curcio</p>
+      <p class="cast"><strong>Starring:</strong> Caleb McLaughlin, Gabrielle Union, Jenifer Lewis, David Harbour</p>
+      <p class="synopsis">Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball – a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world. Will's new teammates aren't thrilled about having a little goat on their roster, but Will is determined to revolutionize the sport and prove once and for all that 'smalls can ball'! He has to do something he has never done before.</p>
+      <div class="links">
+        <a href="https://wtwcinemas.co.uk/film/goat/?screen=st-austell" class="btn book">Book at WTW</a>
+        <a href="https://www.imdb.com/title/tt27613895/" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
+        <a href="https://www.rottentomatoes.com/search?search=GOAT" class="link ext-link" target="_blank" rel="noopener" title="Rotten Tomatoes"><svg class="ext-logo" aria-hidden="true"><use href="#rt-logo"/></svg> RT</a>
+        <a href="https://trakt.tv/search?query=GOAT" class="link ext-link" target="_blank" rel="noopener" title="Trakt"><svg class="ext-logo" aria-hidden="true"><use href="#trakt-logo"/></svg> Trakt</a>
+      </div>
+    </div>
+  </div>
+  <div class="showtimes"><div class="day-group"><div class="st-date">Fri 13 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76130&screen=staustell">16:45</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div></div>
+<div class="day-group"><div class="st-date">Sat 14 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76144&screen=staustell">11:30</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76145&screen=staustell">14:00</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76137&screen=staustell">16:45</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div></div>
+<div class="day-group"><div class="st-date">Sun 15 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76160&screen=staustell">11:30</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76161&screen=staustell">14:00</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76169&screen=staustell">11:00</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76153&screen=staustell">16:45</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Subtitled screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-subtitles"/></svg>Subs</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
+<div class="day-group"><div class="st-date">Mon 16 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76177&screen=staustell">11:30</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76178&screen=staustell">14:00</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76170&screen=staustell">16:45</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div></div>
+<div class="day-group"><div class="st-date">Tue 17 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76193&screen=staustell">11:30</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76194&screen=staustell">14:00</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76186&screen=staustell">16:45</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div></div>
+<div class="day-group"><div class="st-date">Wed 18 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76210&screen=staustell">11:30</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76211&screen=staustell">14:00</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76203&screen=staustell">16:45</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div></div>
+<div class="day-group"><div class="st-date">Thu 19 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76226&screen=staustell">11:30</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76227&screen=staustell">14:00</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76219&screen=staustell">16:45</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div></div></div>
+</article>
+
+<article class="film-card" data-dates="2026-02-13,2026-02-14,2026-02-15,2026-02-16,2026-02-17,2026-02-18,2026-02-19" data-status="coming-soon">
   <div class="film-header">
     <div class="poster"><img src="posters/wuthering-heights.jpg" alt="" loading="lazy"/></div>
     <div class="film-meta">
@@ -180,7 +454,7 @@
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/a6eTho1jxuM?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=a6eTho1jxuM" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Peter Kosminsky</p>
       <p class="crew"><strong>Writer(s):</strong> Anne Devlin, Emily Brontë</p>
-      <p class="cast"><strong>Starring:</strong> Juliette Binoche (Cathy / Catherine Linton), Ralph Fiennes (Heathcliff), Janet McTeer (Ellen Dean), Sophie Ward (Isabella Linton), Simon Shepherd (Edgar Linton), Jeremy Northam (Hindley Earnshaw)<span class="cast-rest" hidden>, Jason Riddington (Hareton Earnshaw), Simon Ward (Mr. Linton), Robert Demeger (Joseph), Paul Geoffrey (Mr. Lockwood), John Woodvine (Thomas Earnshaw), Jennifer Daniel (Mrs. Linton)</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="cast"><strong>Starring:</strong> Margot Robbie, Jacob Elordi</p>
       <p class="synopsis">Young orphan Heathcliff is adopted by the wealthy Earnshaw family and moves into their estate, Wuthering Heights. Soon, the new resident falls for his compassionate foster sister, Cathy. The two share a remarkable bond that seems unbreakable until Cathy, feeling the pressure of social convention, suppresses her feelings and marries Edgar Linton, a man of means who befits her stature. Heathcliff vows to win her back.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/wuthering-heights/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -199,44 +473,16 @@
 <div class="day-group"><div class="st-date">Thu 19 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76229&screen=staustell">13:30</a></span><span class="st-screen">Screen 2</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76221&screen=staustell">16:30</a></span><span class="st-screen">Screen 2</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76220&screen=staustell">19:15</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div></div>
 </article>
 
-<article class="film-card" data-dates="2026-02-13,2026-02-14,2026-02-15,2026-02-16,2026-02-17,2026-02-18,2026-02-19">
-  <div class="film-header">
-    <div class="poster"><img src="posters/goat.jpg" alt="" loading="lazy"/></div>
-    <div class="film-meta">
-      <h2>GOAT </h2>
-      <div class="meta-line">100 min (1 hour 40 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:66%"></span></span><span class="rating-text">6.6/10</span></span> <span class="genres">Animation, Comedy, Family, Action</span></div>
-      <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/4UoscmGBCZ0?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=4UoscmGBCZ0" aria-label="Play trailer">Trailer</button>
-      <p class="crew"><strong>Director:</strong> Tyree Dillihay</p>
-      <p class="crew"><strong>Writer(s):</strong> Aaron Buchsbaum, Teddy Riley, Nicolas Curcio</p>
-      <p class="cast"><strong>Starring:</strong> Caleb McLaughlin (Will Harris (voice)), Gabrielle Union (Jett Fillmore  (voice)), Jenifer Lewis (Florence Everson  (voice)), David Harbour (Archie Everhardt  (voice)), Nick Kroll (Modo Olachenko  (voice)), Nicola Coughlan (Olivia Burke  (voice))<span class="cast-rest" hidden>, Patton Oswalt (Dennis  (voice)), Stephen Curry (Lenny Williamson  (voice)), Aaron Pierre (Mane Attraction (voice)), Jennifer Hudson (Louise Harris (voice)), Wayne Knight (Frank (voice)), Jelly Roll (Grizz (voice))</span> <button type="button" class="cast-more-btn">More</button></p>
-      <p class="synopsis">Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball – a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world. Will's new teammates aren't thrilled about having a little goat on their roster, but Will is determined to revolutionize the sport and prove once and for all that 'smalls can ball'! He has to do something he has never done before.</p>
-      <div class="links">
-        <a href="https://wtwcinemas.co.uk/film/goat/?screen=st-austell" class="btn book">Book at WTW</a>
-        <a href="https://www.imdb.com/title/tt27613895/" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
-        <a href="https://www.rottentomatoes.com/search?search=GOAT" class="link ext-link" target="_blank" rel="noopener" title="Rotten Tomatoes"><svg class="ext-logo" aria-hidden="true"><use href="#rt-logo"/></svg> RT</a>
-        <a href="https://trakt.tv/search?query=GOAT" class="link ext-link" target="_blank" rel="noopener" title="Trakt"><svg class="ext-logo" aria-hidden="true"><use href="#trakt-logo"/></svg> Trakt</a>
-      </div>
-    </div>
-  </div>
-  <div class="showtimes"><div class="day-group"><div class="st-date">Fri 13 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76130&screen=staustell">16:45</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div></div>
-<div class="day-group"><div class="st-date">Sat 14 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76144&screen=staustell">11:30</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76145&screen=staustell">14:00</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76137&screen=staustell">16:45</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div></div>
-<div class="day-group"><div class="st-date">Sun 15 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76160&screen=staustell">11:30</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76161&screen=staustell">14:00</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76153&screen=staustell">16:45</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Subtitled screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-subtitles"/></svg>Subs</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
-<div class="day-group"><div class="st-date">Mon 16 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76177&screen=staustell">11:30</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76178&screen=staustell">14:00</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76170&screen=staustell">16:45</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div></div>
-<div class="day-group"><div class="st-date">Tue 17 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76193&screen=staustell">11:30</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76194&screen=staustell">14:00</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76186&screen=staustell">16:45</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div></div>
-<div class="day-group"><div class="st-date">Wed 18 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76210&screen=staustell">11:30</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76211&screen=staustell">14:00</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76203&screen=staustell">16:45</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div></div>
-<div class="day-group"><div class="st-date">Thu 19 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76226&screen=staustell">11:30</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76227&screen=staustell">14:00</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76219&screen=staustell">16:45</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div></div></div>
-</article>
-
-<article class="film-card" data-dates="2026-02-13,2026-02-14,2026-02-15,2026-02-16,2026-02-17,2026-02-18,2026-02-19">
+<article class="film-card" data-dates="2026-02-13,2026-02-14,2026-02-15,2026-02-16,2026-02-17,2026-02-18,2026-02-19" data-status="coming-soon">
   <div class="film-header">
     <div class="poster"><img src="posters/crime-101.jpg" alt="" loading="lazy"/></div>
     <div class="film-meta">
       <h2>Crime 101 </h2>
-      <div class="meta-line">141 min (2 hours 21 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:0%"></span></span><span class="rating-text">0.0/10</span></span> <span class="genres">Crime, Thriller</span></div>
+      <div class="meta-line">141 min (2 hours 21 mins)  <span class="genres">Crime, Thriller</span></div>
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/WQWlhBXQpqU?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=WQWlhBXQpqU" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Bart Layton</p>
       <p class="crew"><strong>Writer(s):</strong> Don Winslow, Bart Layton</p>
-      <p class="cast"><strong>Starring:</strong> Chris Hemsworth (Mike Davis), Halle Berry (Sharon), Mark Ruffalo (Detective Lou Lubesnick), Barry Keoghan (Ormon), Monica Barbaro (Maya), Corey Hawkins (Tillman)<span class="cast-rest" hidden>, Jennifer Jason Leigh (Angie), Nick Nolte (Money), Tate Donovan (Monroe), Devon Bostick (Devon), Paul Adelstein (Mark), Matthew Del Negro (Police Captain Stewart)</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="cast"><strong>Starring:</strong> Chris Hemsworth, Halle Berry, Mark Ruffalo, Barry Keoghan, Monica Barbaro</p>
       <p class="synopsis">When an elusive thief whose high-stakes heists unfold along the iconic 101 freeway in Los Angeles eyes the score of a lifetime, with hopes of this being his final job, his path collides with a disillusioned insurance broker who is facing her own crossroads, forcing the two to collaborate. Determined to crack the case, a relentless detective closes in on the operation, raising the stakes even higher.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/crime-101/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -255,7 +501,7 @@
 <div class="day-group"><div class="st-date">Thu 19 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76232&screen=staustell">15:45</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76222&screen=staustell">19:30</a></span><span class="st-screen">Screen 2</span><span class="st-tags"><span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div></div>
 </article>
 
-<article class="film-card" data-dates="2026-02-14,2026-02-15,2026-02-16,2026-02-17,2026-02-18,2026-02-19">
+<article class="film-card" data-dates="2026-02-14,2026-02-15,2026-02-16,2026-02-17,2026-02-18,2026-02-19" data-status="coming-soon">
   <div class="film-header">
     <div class="poster"><img src="posters/stitch-head.jpg" alt="" loading="lazy"/></div>
     <div class="film-meta">
@@ -264,7 +510,7 @@
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/SlHrSRmobKQ?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=SlHrSRmobKQ" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Steve Hudson</p>
       <p class="crew"><strong>Writer(s):</strong> Steve Hudson</p>
-      <p class="cast"><strong>Starring:</strong> Asa Butterfield (Stitch Head (voice)), Joel Fry (Creature (voice)), Alison Steadman (Nan (voice)), Rob Brydon (Professor (voice)), Seth Usdenov (Fulbert Freakfinder (voice)), Fern Brady (Madame Miranda (voice))<span class="cast-rest" hidden>, Tia Bannon (Arabella (voice)), Jamali Maddix (Taj/Tej (voice)), Paul Tylak (Owggagoffakkookkk (voice)), Ruth Gibson (Old Lady (voice)), Rasmus Hardiker (Geoff (voice)), Ryan Sampson (Doctor Dislocation (voice))</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="cast"><strong>Starring:</strong> Asa Butterfield, Joel Fry, Alison Steadman</p>
       <p class="synopsis">Stitch Head was the first creature brought to 'almost life' by mad professor Erasmus. In the years since, he’s become nursemaid to the master’s ever-growing menagerie of neglected creatures, tasked with teaching them to suppress their 'inner monster' and hide out in the castle — away from prying eyes and itchy pitchfork fingers, of the village mob in the valley below. But when grubby circus impresario Fulbert Freakfinder arrives offering Stitch Head a starring role in his freak show, our hero is</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/stitch-head/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -282,7 +528,7 @@
 <div class="day-group"><div class="st-date">Thu 19 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76230&screen=staustell">11:00</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76231&screen=staustell">13:15</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div></div>
 </article>
 
-<article class="film-card" data-dates="2026-02-10,2026-02-11,2026-02-12,2026-02-14,2026-02-15,2026-02-16,2026-02-17,2026-02-18,2026-02-19">
+<article class="film-card" data-dates="2026-02-10,2026-02-11,2026-02-12,2026-02-14,2026-02-15,2026-02-16,2026-02-17,2026-02-18,2026-02-19" data-status="coming-soon">
   <div class="film-header">
     <div class="poster"><img src="posters/kangaroo.jpg" alt="" loading="lazy"/></div>
     <div class="film-meta">
@@ -291,7 +537,7 @@
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/RvmaXOvLJNc?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=RvmaXOvLJNc" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Kate Woods</p>
       <p class="crew"><strong>Writer(s):</strong> Harry Cripps, Melina Marchetta</p>
-      <p class="cast"><strong>Starring:</strong> Lily Whiteley (Charlie), Ryan Corr (Chris Masterman), Rachel House (Jesse), Brooke Satchwell (Liz), Rick Donald (Trap), Deborah Mailman (Rosie)<span class="cast-rest" hidden>, Clarence John Ryan (Nick), Roy Billing (Murray), Rarriwuy Hick (Brenda), Geneviève Lemon (Bernadette), Wayne Blair (Ralph), Ernie Dingo (Dave)</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="cast"><strong>Starring:</strong> Lily Whiteley, Ryan Corr, Rachel House</p>
       <p class="synopsis">Ex TV personality, Chris Masterman, becomes stranded in an Outback town outside Alice Springs. There, he teams up with 12-year-old Indigenous girl Charlie. The pair form an unlikely friendship and work together to rescue and rehabilitate orphaned joeys in the remote but stunning Outback community—an endeavour that proves to be life-changing for them both.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/kangaroo/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -312,35 +558,7 @@
 <div class="day-group"><div class="st-date">Thu 19 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76234&screen=staustell">14:15</a></span><span class="st-screen">Screen 4</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div></div>
 </article>
 
-<article class="film-card" data-dates="2026-02-09,2026-02-10,2026-02-11,2026-02-12,2026-02-17,2026-02-18,2026-02-19">
-  <div class="film-header">
-    <div class="poster"><img src="posters/hamnet.jpg" alt="" loading="lazy"/></div>
-    <div class="film-meta">
-      <h2>Hamnet </h2>
-      <div class="meta-line">126 min (2 hours 6 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:78%"></span></span><span class="rating-text">7.8/10</span></span> <span class="genres">Drama, Romance, History</span></div>
-      <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/ZqGffamnFqw?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=ZqGffamnFqw" aria-label="Play trailer">Trailer</button>
-      <p class="crew"><strong>Director:</strong> Chloé Zhao</p>
-      <p class="crew"><strong>Writer(s):</strong> Maggie O'Farrell, Chloé Zhao</p>
-      <p class="cast"><strong>Starring:</strong> Jessie Buckley (Agnes), Paul Mescal (Will), Emily Watson (Mary), Joe Alwyn (Bartholomew), Jacobi Jupe (Hamnet), Noah Jupe (Hamlet)<span class="cast-rest" hidden>, Bodhi Rae Breathnach (Susanna), Olivia Lynes (Judith), David Wilmot (John), Justine Mitchell (Joan), Faith Delaney (Young Agnes), Smylie Bradwell (Young Bartholomew)</span> <button type="button" class="cast-more-btn">More</button></p>
-      <p class="synopsis">The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.</p>
-      <div class="links">
-        <a href="https://wtwcinemas.co.uk/film/hamnet/?screen=st-austell" class="btn book">Book at WTW</a>
-        <a href="https://www.imdb.com/title/tt14905854/" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
-        <a href="https://www.rottentomatoes.com/search?search=Hamnet" class="link ext-link" target="_blank" rel="noopener" title="Rotten Tomatoes"><svg class="ext-logo" aria-hidden="true"><use href="#rt-logo"/></svg> RT</a>
-        <a href="https://trakt.tv/search?query=Hamnet" class="link ext-link" target="_blank" rel="noopener" title="Trakt"><svg class="ext-logo" aria-hidden="true"><use href="#trakt-logo"/></svg> Trakt</a>
-      </div>
-    </div>
-  </div>
-  <div class="showtimes"><div class="day-group"><div class="st-date">Mon 09 Feb</div><div class="st-row"><span class="st-time"><span class="past">16:45</span></span><span class="st-screen">Screen 4</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
-<div class="day-group"><div class="st-date">Tue 10 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76106&screen=staustell">17:30</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
-<div class="day-group"><div class="st-date">Wed 11 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76116&screen=staustell">15:30</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
-<div class="day-group"><div class="st-date">Thu 12 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76123&screen=staustell">17:30</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
-<div class="day-group"><div class="st-date">Tue 17 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76190&screen=staustell">19:00</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
-<div class="day-group"><div class="st-date">Wed 18 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76207&screen=staustell">19:00</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
-<div class="day-group"><div class="st-date">Thu 19 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76223&screen=staustell">19:00</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div></div>
-</article>
-
-<article class="film-card" data-dates="2026-02-10,2026-02-12,2026-02-13,2026-02-14,2026-02-16">
+<article class="film-card" data-dates="2026-02-10,2026-02-12,2026-02-13,2026-02-14,2026-02-16" data-status="coming-soon">
   <div class="film-header">
     <div class="poster"><img src="posters/the-housemaid.jpg" alt="" loading="lazy"/></div>
     <div class="film-meta">
@@ -349,7 +567,7 @@
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/TGdKFCVn6G0?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=TGdKFCVn6G0" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Paul Feig</p>
       <p class="crew"><strong>Writer(s):</strong> Rebecca Sonnenshine, Freida McFadden</p>
-      <p class="cast"><strong>Starring:</strong> Sydney Sweeney (Millie Calloway), Amanda Seyfried (Nina Winchester), Brandon Sklenar (Andrew Winchester), Michele Morrone (Enzo), Indiana Elle (Cece Winchester), Sarah Cooper (Pam)<span class="cast-rest" hidden>, Elizabeth Perkins (Mrs. Winchester), Ellen Tamaki (Patrice), Megan Ferguson (Jilliane), Amanda Joy Erickson (Suzanne), Alaina Surgener (Amanda), Peter Colandro (Cashier)</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="cast"><strong>Starring:</strong> Sydney Sweeney, Amanda Seyfried, Brandon Sklenar</p>
       <p class="synopsis">Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/the-housemaid/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -366,7 +584,7 @@
 <div class="day-group"><div class="st-date">Mon 16 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76174&screen=staustell">19:00</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div></div>
 </article>
 
-<article class="film-card" data-dates="2026-02-14,2026-02-15,2026-02-16,2026-02-17,2026-02-18,2026-02-19">
+<article class="film-card" data-dates="2026-02-14,2026-02-15,2026-02-16,2026-02-17,2026-02-18,2026-02-19" data-status="coming-soon">
   <div class="film-header">
     <div class="poster"><img src="posters/the-spongebob-movie-search-for-squarepants.jpg" alt="" loading="lazy"/></div>
     <div class="film-meta">
@@ -375,7 +593,7 @@
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/UazW5vuAsF0?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=UazW5vuAsF0" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Derek Drymon</p>
       <p class="crew"><strong>Writer(s):</strong> Pam Brady, Kaz, Matt Lieberman, Marc Ceccarelli, Stephen Hillenburg</p>
-      <p class="cast"><strong>Starring:</strong> Tom Kenny (SpongeBob SquarePants / Gary / Morning DJ (voice)), Clancy Brown (Mr. Krabs / Pirate / Narrator), Rodger Bumpass (Squidward Tentacles (voice)), Bill Fagerbakke (Patrick Star (voice)), Carolyn Lawrence (Sandy Cheeks (voice)), Mr. Lawrence (Sheldon J. Plankton (voice))<span class="cast-rest" hidden>, George López (JK Fishlips (voice)), Ice Spice (Ticket Taker (voice)), Arturo Castro (Ride Operator), Sherry Cola (Studio Spokesperson / Krusty Krab Patron (voice)), Regina Hall (Barb (voice)), Mark Hamill (Flying Dutchman (voice))</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="cast"><strong>Starring:</strong> Tom Kenny, Clancy Brown, Rodger Bumpass, Bill Fagerbakke</p>
       <p class="synopsis">Desperate to be a big guy, SpongeBob sets out to prove his bravery to Mr. Krabs by following The Flying Dutchman – a mysterious swashbuckling ghost pirate – on a seafaring adventure that takes him to the deepest depths of the deep sea, where no Sponge has gone before.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/the-spongebob-movie-search-for-squarepants/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -393,7 +611,7 @@
 <div class="day-group"><div class="st-date">Thu 19 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76228&screen=staustell">11:15</a></span><span class="st-screen">Screen 2</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div></div>
 </article>
 
-<article class="film-card" data-dates="2026-02-14,2026-02-15,2026-02-16,2026-02-17,2026-02-18,2026-02-19">
+<article class="film-card" data-dates="2026-02-14,2026-02-15,2026-02-16,2026-02-17,2026-02-18,2026-02-19" data-status="coming-soon">
   <div class="film-header">
     <div class="poster"><img src="posters/zootropolis-2.jpg" alt="" loading="lazy"/></div>
     <div class="film-meta">
@@ -402,7 +620,7 @@
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/k8t8rvRO7Ug?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=k8t8rvRO7Ug" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Jared Bush, Byron Howard</p>
       <p class="crew"><strong>Writer(s):</strong> Jared Bush</p>
-      <p class="cast"><strong>Starring:</strong> Ginnifer Goodwin (Judy Hopps (voice)), Jason Bateman (Nick Wilde (voice)), Ke Huy Quan (Gary De'Snake (voice)), Fortune Feimster (Nibbles Maplestick (voice)), Andy Samberg (Pawbert Lynxley (voice)), David Strathairn (Milton Lynxley (voice))<span class="cast-rest" hidden>, Idris Elba (Chief Bogo (voice)), Shakira (Gazelle (voice)), Patrick Warburton (Mayor Winddancer (voice)), Quinta Brunson (Dr. Fuzzby (voice)), Danny Trejo (Jesús (voice)), Nate Torrence (Clawhauser (voice))</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="cast"><strong>Starring:</strong> Ginnifer Goodwin, Jason Bateman, Ke Huy Quan</p>
       <p class="synopsis">After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/zootropolis-2/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -420,82 +638,7 @@
 <div class="day-group"><div class="st-date">Thu 19 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76233&screen=staustell">11:45</a></span><span class="st-screen">Screen 4</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div></div></div>
 </article>
 
-<article class="film-card" data-dates="2026-02-09,2026-02-10,2026-02-11,2026-02-12">
-  <div class="film-header">
-    <div class="poster"><img src="posters/shelter.jpg" alt="" loading="lazy"/></div>
-    <div class="film-meta">
-      <h2>Shelter </h2>
-      <div class="meta-line">107 min (1 hour 47 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:77%"></span></span><span class="rating-text">7.7/10</span></span> <span class="genres">Action, Crime, Thriller</span></div>
-      <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/kdcxogb4leQ?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=kdcxogb4leQ" aria-label="Play trailer">Trailer</button>
-      <p class="crew"><strong>Director:</strong> Ric Roman Waugh</p>
-      <p class="crew"><strong>Writer(s):</strong> Ward Parry</p>
-      <p class="cast"><strong>Starring:</strong> Jason Statham (Mason), Bodhi Rae Breathnach (Jesse), Michael Shaeffer (Uncle), Anna Crilly (Haneron), Bill Nighy (Manafort), Harriet Walter (Prime Minister Fordham)<span class="cast-rest" hidden>, Eugenia Caruso (Shop Clerk), Celine Buckens (Maddison), Naomi Ackie (Roberta), Bally Gill (Aziz), Bronson Webb (Deakins), Lohan Buson (Commando)</span> <button type="button" class="cast-more-btn">More</button></p>
-      <p class="synopsis">A man living in self-imposed exile on a remote island rescues a young girl from a violent storm, setting off a chain of events that forces him out of seclusion to protect her from enemies tied to his past.</p>
-      <div class="links">
-        <a href="https://wtwcinemas.co.uk/film/shelter/?screen=st-austell" class="btn book">Book at WTW</a>
-        <a href="https://www.imdb.com/title/tt32357218/" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
-        <a href="https://www.rottentomatoes.com/search?search=Shelter" class="link ext-link" target="_blank" rel="noopener" title="Rotten Tomatoes"><svg class="ext-logo" aria-hidden="true"><use href="#rt-logo"/></svg> RT</a>
-        <a href="https://trakt.tv/search?query=Shelter" class="link ext-link" target="_blank" rel="noopener" title="Trakt"><svg class="ext-logo" aria-hidden="true"><use href="#trakt-logo"/></svg> Trakt</a>
-      </div>
-    </div>
-  </div>
-  <div class="showtimes"><div class="day-group"><div class="st-date">Mon 09 Feb</div><div class="st-row"><span class="st-time"><span class="past">19:30</span></span><span class="st-screen">Screen 4</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
-<div class="day-group"><div class="st-date">Tue 10 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76109&screen=staustell">19:30</a></span><span class="st-screen">Screen 4</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
-<div class="day-group"><div class="st-date">Wed 11 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76114&screen=staustell">19:30</a></span><span class="st-screen">Screen 4</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
-<div class="day-group"><div class="st-date">Thu 12 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76126&screen=staustell">19:30</a></span><span class="st-screen">Screen 4</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div></div>
-</article>
-
-<article class="film-card" data-dates="2026-02-09,2026-02-10,2026-02-11,2026-02-12">
-  <div class="film-header">
-    <div class="poster"><img src="posters/is-this-thing-on.jpg" alt="" loading="lazy"/></div>
-    <div class="film-meta">
-      <h2>Is This Thing On </h2>
-      <div class="meta-line">121 min (2 hours 1 min) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:70%"></span></span><span class="rating-text">7.0/10</span></span> <span class="genres">Comedy, Drama</span></div>
-      <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/DnIZfYuDEvQ?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=DnIZfYuDEvQ" aria-label="Play trailer">Trailer</button>
-      <p class="crew"><strong>Director:</strong> Bradley Cooper</p>
-      <p class="crew"><strong>Writer(s):</strong> Mark Chappell, Will Arnett, Bradley Cooper, John Bishop</p>
-      <p class="cast"><strong>Starring:</strong> Will Arnett (Alex Novak), Laura Dern (Tess Novak), Andra Day (Christine), Bradley Cooper (Balls), Christine Ebersole (Marilyn), Ciarán Hinds (Jan)<span class="cast-rest" hidden>, Sean Hayes (Stephen), Amy Sedaris (Kemp), Chloe Radcliffe (Nina), Scott Icenogle (Geoffrey), Jordan Jensen (Jill), Peyton Manning (Laird)</span> <button type="button" class="cast-more-btn">More</button></p>
-      <p class="synopsis">As their marriage quietly unravels, Alex faces middle age and an impending divorce, seeking new purpose in the New York comedy scene while Tess confronts the sacrifices she made for their family—forcing them to navigate co-parenting, identity, and whether love can take a new form.</p>
-      <div class="links">
-        <a href="https://wtwcinemas.co.uk/film/is-this-thing-on/?screen=st-austell" class="btn book">Book at WTW</a>
-        <a href="https://www.imdb.com/title/tt28083456/" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
-        <a href="https://www.rottentomatoes.com/search?search=Is+This+Thing+On" class="link ext-link" target="_blank" rel="noopener" title="Rotten Tomatoes"><svg class="ext-logo" aria-hidden="true"><use href="#rt-logo"/></svg> RT</a>
-        <a href="https://trakt.tv/search?query=Is+This+Thing+On" class="link ext-link" target="_blank" rel="noopener" title="Trakt"><svg class="ext-logo" aria-hidden="true"><use href="#trakt-logo"/></svg> Trakt</a>
-      </div>
-    </div>
-  </div>
-  <div class="showtimes"><div class="day-group"><div class="st-date">Mon 09 Feb</div><div class="st-row"><span class="st-time"><span class="past">19:45</span></span><span class="st-screen">Screen 2</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
-<div class="day-group"><div class="st-date">Tue 10 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76105&screen=staustell">19:45</a></span><span class="st-screen">Screen 2</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
-<div class="day-group"><div class="st-date">Wed 11 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76113&screen=staustell">19:45</a></span><span class="st-screen">Screen 2</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
-<div class="day-group"><div class="st-date">Thu 12 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76122&screen=staustell">19:15</a></span><span class="st-screen">Screen 2</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div></div>
-</article>
-
-<article class="film-card" data-dates="2026-02-09,2026-02-10,2026-02-11,2026-02-12">
-  <div class="film-header">
-    <div class="poster"><img src="posters/primate.jpg" alt="" loading="lazy"/></div>
-    <div class="film-meta">
-      <h2>Primate </h2>
-      <div class="meta-line">89 min (1 hour 29 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:63%"></span></span><span class="rating-text">6.3/10</span></span> <span class="genres">Horror, Thriller</span></div>
-      <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/xKGw0q_6aGw?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=xKGw0q_6aGw" aria-label="Play trailer">Trailer</button>
-      <p class="crew"><strong>Director:</strong> Johannes Roberts</p>
-      <p class="crew"><strong>Writer(s):</strong> Johannes Roberts, Ernest Riera</p>
-      <p class="cast"><strong>Starring:</strong> Johnny Sequoyah (Lucy), Jessica Alexander (Hannah), Troy Kotsur (Adam), Victoria Wyant (Kate), Gia Hunter (Erin), Benjamin Cheng (Nick)<span class="cast-rest" hidden>, Charlie Mann (Drew), Tienne Simon (Brad), Miguel Hernando Torres Umba (Ben), Amina Abdi (Susan), Rob Chalk (Interpreter), Joe Abercrombie (Book Publisher)</span> <button type="button" class="cast-more-btn">More</button></p>
-      <p class="synopsis">Lucy, a college student, along with her friends, spend their vacation at her family's home in Hawaii, which includes her pet chimpanzee, Ben. However, when Ben contracts rabies after being bitten by a rabid animal, the group must fight for their lives in order to avoid the now-violent chimp.</p>
-      <div class="links">
-        <a href="https://wtwcinemas.co.uk/film/primate/?screen=st-austell" class="btn book">Book at WTW</a>
-        <a href="https://www.imdb.com/title/tt33028778/" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
-        <a href="https://www.rottentomatoes.com/search?search=Primate" class="link ext-link" target="_blank" rel="noopener" title="Rotten Tomatoes"><svg class="ext-logo" aria-hidden="true"><use href="#rt-logo"/></svg> RT</a>
-        <a href="https://trakt.tv/search?query=Primate" class="link ext-link" target="_blank" rel="noopener" title="Trakt"><svg class="ext-logo" aria-hidden="true"><use href="#trakt-logo"/></svg> Trakt</a>
-      </div>
-    </div>
-  </div>
-  <div class="showtimes"><div class="day-group"><div class="st-date">Mon 09 Feb</div><div class="st-row"><span class="st-time"><span class="past">17:30</span></span><span class="st-screen">Screen 2</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
-<div class="day-group"><div class="st-date">Tue 10 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76107&screen=staustell">20:15</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
-<div class="day-group"><div class="st-date">Wed 11 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76115&screen=staustell">17:30</a></span><span class="st-screen">Screen 2</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div>
-<div class="day-group"><div class="st-date">Thu 12 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76124&screen=staustell">20:15</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div></div>
-</article>
-
-<article class="film-card" data-dates="2026-02-26,2026-03-01,2026-03-04">
+<article class="film-card" data-dates="2026-02-26,2026-03-01,2026-03-04" data-status="coming-soon">
   <div class="film-header">
     <div class="poster"><img src="posters/national-theatre-live-the-audience.jpg" alt="" loading="lazy"/></div>
     <div class="film-meta">
@@ -504,7 +647,7 @@
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/AxO6VfSRAqs?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=AxO6VfSRAqs" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Robin Lough</p>
       <p class="crew"><strong>Writer(s):</strong> Peter Morgan</p>
-      <p class="cast"><strong>Starring:</strong> Helen Mirren (The Queen), Michael Elwyn (Anthony Eden), Haydn Gwynne (Margaret Thatcher), Richard McCabe (Harold Wilson), Nathaniel Parker (Gordon Brown), Paul Ritter (John Major)<span class="cast-rest" hidden>, Rufus Wright (David Cameron), Edward Fox (Winston Churchill), David Peart (James Callaghan / Private Secretary), Geoffrey Beevers (Equerry), Nell Williams (Young Elizabeth), Charlotte Moore (Bobo MacDonald / Private Secretary)</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="cast"><strong>Starring:</strong> Helen Mirren, Michael Elwyn, Haydn Gwynne</p>
       <p class="synopsis">For sixty years, Elizabeth II has met each of her twelve Prime Ministers in a weekly audience at Buckingham Palace, a meeting like no other in British public life, it is private.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/national-theatre-live-the-audience/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -519,7 +662,7 @@
 <div class="day-group"><div class="st-date">Wed 04 Mar</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=75469&screen=staustell">14:00</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag"><svg class="tag-icon" aria-hidden="true"><use href="#icon-event-cinema"/></svg>Event cinema</span></span></div></div></div>
 </article>
 
-<article class="film-card" data-dates="2026-02-26">
+<article class="film-card" data-dates="2026-02-26" data-status="coming-soon">
   <div class="film-header">
     <div class="poster"><img src="posters/song-sung-blue.jpg" alt="" loading="lazy"/></div>
     <div class="film-meta">
@@ -528,7 +671,7 @@
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/Hm12K_cuLWA?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=Hm12K_cuLWA" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Craig Brewer</p>
       <p class="crew"><strong>Writer(s):</strong> Craig Brewer</p>
-      <p class="cast"><strong>Starring:</strong> Hugh Jackman (Mike Sardina), Kate Hudson (Claire Sardina), Michael Imperioli (Mark Shurilla), Fisher Stevens (Dr. Dave Watson), Jim Belushi (Tom D'Amato), Ella Anderson (Rachel)<span class="cast-rest" hidden>, King Princess (Angelina), Mustafa Shakir (Sex Machine), Hudson Hilbert Hensley (Dayna), Shyaporn Theerakulstit (Somechai), John Beckwith (Eddie Vedder), Jayson Warner Smith (Earl / TCB)</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="cast"><strong>Starring:</strong> Hugh Jackman, Kate Hudson</p>
       <p class="synopsis">Based on a true story, two down-on-their-luck musicians form a joyous Neil Diamond tribute band, proving it's never too late to find love and follow your dreams.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/song-sung-blue/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -541,7 +684,7 @@
   <div class="showtimes"><div class="day-group"><div class="st-date">Thu 26 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=75974&screen=staustell">11:00</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag"><svg class="tag-icon" aria-hidden="true"><use href="#icon-silver-screen"/></svg>Silver Screen</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=75975&screen=staustell">11:15</a></span><span class="st-screen">Screen 4</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Subtitled screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-subtitles"/></svg>Subs</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag"><svg class="tag-icon" aria-hidden="true"><use href="#icon-silver-screen"/></svg>Silver Screen</span></span></div></div></div>
 </article>
 
-<article class="film-card" data-dates="2026-03-05">
+<article class="film-card" data-dates="2026-03-05" data-status="coming-soon">
   <div class="film-header">
     <div class="poster"><img src="posters/marty-supreme.jpg" alt="" loading="lazy"/></div>
     <div class="film-meta">
@@ -550,7 +693,7 @@
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/pwE3ZG1kIqw?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=pwE3ZG1kIqw" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Josh Safdie</p>
       <p class="crew"><strong>Writer(s):</strong> Josh Safdie, Ronald Bronstein</p>
-      <p class="cast"><strong>Starring:</strong> Timothée Chalamet (Marty Mauser), Gwyneth Paltrow (Kay Stone), Odessa A'zion (Rachel Mizler), Kevin O'Leary (Milton Rockwell), Tyler, The Creator (Wally)<span class="cast-rest" hidden>, Fran Drescher (Rebecca Mauser), Abel Ferrara (Ezra Mishkin), Emory Cohen (Ira Mizler), Géza Röhrig (Béla Kletzki), Koto Kawaguchi (Koto Endo), Larry Sloman (Murray Norkin), Luke Manley (Dion Galanis)</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="cast"><strong>Starring:</strong> Timothée Chalamet, Gwyneth Paltrow, Odessa A'zion</p>
       <p class="synopsis">Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/marty-supreme/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -563,7 +706,7 @@
   <div class="showtimes"><div class="day-group"><div class="st-date">Thu 05 Mar</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76054&screen=staustell">11:00</a></span><span class="st-screen">Screen 1</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag"><svg class="tag-icon" aria-hidden="true"><use href="#icon-silver-screen"/></svg>Silver Screen</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76055&screen=staustell">11:15</a></span><span class="st-screen">Screen 4</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Subtitled screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-subtitles"/></svg>Subs</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag"><svg class="tag-icon" aria-hidden="true"><use href="#icon-silver-screen"/></svg>Silver Screen</span></span></div></div></div>
 </article>
 
-<article class="film-card" data-dates="2026-03-04,2026-03-08">
+<article class="film-card" data-dates="2026-03-04,2026-03-08" data-status="coming-soon">
   <div class="film-header">
     <div class="poster"><img src="posters/othello.jpg" alt="" loading="lazy"/></div>
     <div class="film-meta">
@@ -586,7 +729,7 @@
 <div class="day-group"><div class="st-date">Sun 08 Mar</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=75475&screen=staustell">14:00</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag"><svg class="tag-icon" aria-hidden="true"><use href="#icon-event-cinema"/></svg>Event cinema</span></span></div></div></div>
 </article>
 
-<article class="film-card" data-dates="2026-04-16,2026-04-19">
+<article class="film-card" data-dates="2026-04-16,2026-04-19" data-status="coming-soon">
   <div class="film-header">
     <div class="poster"><img src="posters/national-theatre-live-all-my-sons.jpg" alt="" loading="lazy"/></div>
     <div class="film-meta">
@@ -595,7 +738,7 @@
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/FP6C8jmrpN4?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=FP6C8jmrpN4" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Ross MacGibbon</p>
       <p class="crew"><strong>Writer(s):</strong> Arthur Miller</p>
-      <p class="cast"><strong>Starring:</strong> Sally Field (Kate Keller), Bill Pullman (Joe Keller), Jenna Coleman (Ann Deever), Colin Morgan (Chris Keller), Sule Rimi (Dr. Jim Bayliss), Oliver Johnstone (George Deever)<span class="cast-rest" hidden>, Gunnar Cauthery (Frank Lubey), Bessie Carter (Lydia Lubey), Kayla Meikle (Sue Bayliss)</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="cast"><strong>Starring:</strong> Bryan Cranston, Marianne Jean-Baptiste</p>
       <p class="synopsis">America, 1947. Despite hard choices and even harder knocks, Joe and Kate Keller are a success story. They have built a home, raised two sons and established a thriving business.  But nothing lasts forever and their contented lives, already shadowed by the loss of their eldest boy to war, are about to shatter. With the return of a figure from the past, long buried truths are forced to the surface and the price of their American dream is laid bare.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/national-theatre-live-all-my-sons/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -609,16 +752,16 @@
 <div class="day-group"><div class="st-date">Sun 19 Apr</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=75898&screen=staustell">14:00</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag"><svg class="tag-icon" aria-hidden="true"><use href="#icon-event-cinema"/></svg>Event cinema</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div></div></div>
 </article>
 
-<article class="film-card" data-dates="2026-05-28,2026-05-31">
+<article class="film-card" data-dates="2026-05-28,2026-05-31" data-status="coming-soon">
   <div class="film-header">
     <div class="poster"><img src="posters/national-theatre-live-the-playboy-of-the-western-world.jpg" alt="" loading="lazy"/></div>
     <div class="film-meta">
       <h2>National Theatre Live: The Playboy of the Western World </h2>
-      <div class="meta-line">150 min (2 hours 30 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:0%"></span></span><span class="rating-text">0.0/10</span></span> <span class="genres">Drama, Comedy</span></div>
+      <div class="meta-line">150 min (2 hours 30 mins)  <span class="genres">Drama, Comedy</span></div>
       
       <p class="crew"><strong>Director:</strong> Caitriona McLaughlin</p>
       <p class="crew"><strong>Writer(s):</strong> John Millington Synge</p>
-      <p class="cast"><strong>Starring:</strong> Nicola Coughlan (Pegeen Mike), Éanna Hardwicke (Christy Mahon), Siobhán McSweeney (Widow Quin), Declan Conlon (Old Mahon), Lorcan Cranitch (Michael Flaherty), Megan Cusack (Susan Brady)<span class="cast-rest" hidden>, Naoise Dunbar (Jimmy Farrell), Matthew Forrest (Philly Cullen), Sallay Garnett (Nelly), Fionnuala Gygax (Honor Blake), Erin Hennessey (Fiddle), Peter Mooney (Banjo / Ensemble)</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="cast"><strong>Starring:</strong> Nicola Coughlan, Siobhán McSweeney, Éanna Hardwicke</p>
       <p class="synopsis">Nicola Coughlan (Bridgerton) joins Éanna Hardwicke (The Sixth Commandment) and Siobhán McSweeney (Derry Girls) in John Millington Synge’s riveting play of youth and self-discovery.  Pegeen Flaherty’s life is turned upside down when a young man walks into her pub claiming that he’s killed his father. Instead of being shunned, the killer becomes a local hero and begins to win hearts, that is until a second man unexpectedly arrives on the scene…  Filmed live on stage at the National Theatre, Caitrí</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/national-theatre-live-the-playboy-of-the-western-world/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -632,7 +775,7 @@
 <div class="day-group"><div class="st-date">Sun 31 May</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=75471&screen=staustell">14:00</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag"><svg class="tag-icon" aria-hidden="true"><use href="#icon-event-cinema"/></svg>Event cinema</span></span></div></div></div>
 </article>
 
-<article class="film-card" data-dates="2026-06-25,2026-06-28">
+<article class="film-card" data-dates="2026-06-25,2026-06-28" data-status="coming-soon">
   <div class="film-header">
     <div class="poster"><img src="posters/national-theatre-live-les-liaisons-dangereuses.jpg" alt="" loading="lazy"/></div>
     <div class="film-meta">
@@ -641,7 +784,7 @@
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/IcWwthReeUk?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=IcWwthReeUk" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Tony Grech-Smith, Josie Rourke</p>
       <p class="crew"><strong>Writer(s):</strong> Choderlos de Laclos</p>
-      <p class="cast"><strong>Starring:</strong> Janet McTeer (La Marquise de Merteuil), Dominic West (Le Vicomte de Valmont), Elaine Cassidy (Madame de Tourvel), Adjoa Andoh (Madame de Volanges), Morfydd Clark (Cécile Volanges), Edward Holcroft (Le Chevalier Danceny)<span class="cast-rest" hidden>, Una Stubbs (Madame de Rosemonde), Theo Barklem-Biggs (Azolan), Jennifer Saayeng (Émilie), Thom Petty (Major-Domo), Alison Arnopp (Julie)</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="cast"><strong>Starring:</strong> Lesley Manville, Aidan Turner</p>
       <p class="synopsis">Marquise de Merteuil, former lover of Vicomte de Valmont, incites him to corrupt the innocent Cécile de Volanges before her wedding night, but Valmont has targeted the peerlessly virtuous and beautiful Madame de Tourvel.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/national-theatre-live-les-liaisons-dangereuses/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -655,7 +798,7 @@
 <div class="day-group"><div class="st-date">Sun 28 Jun</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=75473&screen=staustell">14:00</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag"><svg class="tag-icon" aria-hidden="true"><use href="#icon-event-cinema"/></svg>Event cinema</span></span></div></div></div>
 </article>
 
-<article class="film-card" data-dates="2026-02-11">
+<article class="film-card" data-dates="2026-02-11" data-status="coming-soon">
   <div class="film-header">
     <div class="poster"><img src="posters/avatar-fire-and-ash-hfr-3d.jpg" alt="" loading="lazy"/></div>
     <div class="film-meta">
@@ -664,7 +807,7 @@
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/RlofL5WU28k?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=RlofL5WU28k" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> James Cameron</p>
       <p class="crew"><strong>Writer(s):</strong> James Cameron, Shane Salerno, Amanda Silver, Rick Jaffa, Josh Friedman</p>
-      <p class="cast"><strong>Starring:</strong> Sam Worthington (Jake), Zoe Saldaña (Neytiri), Sigourney Weaver (Kiri), Stephen Lang (Quaritch), Oona Chaplin (Varang), Jack Champion (Spider)<span class="cast-rest" hidden>, Kate Winslet (Ronal), Cliff Curtis (Tonowari), Joel David Moore (Norm), CCH Pounder (Mo'at), Edie Falco (General Ardmore), Brendan Cowell (Scoresby)</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="cast"><strong>Starring:</strong> Sam Worthington, Zoe Saldaña, Sigourney Weaver, Kate Winslet</p>
       <p class="synopsis">In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/avatar-fire-and-ash-hfr-3d/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -677,27 +820,7 @@
   <div class="showtimes"><div class="day-group"><div class="st-date">Wed 11 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76127&screen=staustell">18:30</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div></div></div>
 </article>
 
-<article class="film-card" data-dates="2026-02-15">
-  <div class="film-header">
-    
-    <div class="film-meta">
-      <h2>GOAT AUTISM FRIENDLY SCREENING </h2>
-      <div class="meta-line">100 min (1 hour 40 mins)  </div>
-      
-      <p class="cast"><strong>Starring:</strong> Caleb McLaughlin, Gabrielle Union, Jenifer Lewis, David Harbour</p>
-      <p class="synopsis">Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball - a high-intensity, co-ed, full-contact sport dominated...</p>
-      <div class="links">
-        <a href="https://wtwcinemas.co.uk/film/goat-autism-friendly-screening/?screen=st-austell" class="btn book">Book at WTW</a>
-        <a href="https://www.imdb.com/find/?q=GOAT+AUTISM+FRIENDLY+SCREENING" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
-        <a href="https://www.rottentomatoes.com/search?search=GOAT+AUTISM+FRIENDLY+SCREENING" class="link ext-link" target="_blank" rel="noopener" title="Rotten Tomatoes"><svg class="ext-logo" aria-hidden="true"><use href="#rt-logo"/></svg> RT</a>
-        <a href="https://trakt.tv/search?query=GOAT+AUTISM+FRIENDLY+SCREENING" class="link ext-link" target="_blank" rel="noopener" title="Trakt"><svg class="ext-logo" aria-hidden="true"><use href="#trakt-logo"/></svg> Trakt</a>
-      </div>
-    </div>
-  </div>
-  <div class="showtimes"><div class="day-group"><div class="st-date">Sun 15 Feb</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76169&screen=staustell">11:00</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div></div></div>
-</article>
-
-<article class="film-card" data-dates="2026-03-05">
+<article class="film-card" data-dates="2026-03-05" data-status="coming-soon">
   <div class="film-header">
     
     <div class="film-meta">
@@ -717,12 +840,12 @@
   <div class="showtimes"><div class="day-group"><div class="st-date">Thu 05 Mar</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76129&screen=staustell">18:00</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span></span></div></div></div>
 </article>
 
-<article class="film-card" data-dates="2026-03-03">
+<article class="film-card" data-dates="2026-03-03" data-status="coming-soon">
   <div class="film-header">
     <div class="poster"><img src="posters/giselle-rbo-2025-26-cinema-season.jpg" alt="" loading="lazy"/></div>
     <div class="film-meta">
       <h2>GISELLE - RBO 2025-26 Cinema Season </h2>
-      <div class="meta-line">210 min (3 hours 30 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:0%"></span></span><span class="rating-text">0.0/10</span></span> <span class="genres">Music</span></div>
+      <div class="meta-line">210 min (3 hours 30 mins)  <span class="genres">Music</span></div>
       
       <p class="cast"><strong>Starring:</strong> To Be Announced</p>
       <p class="synopsis">The world turns upside down for the peasant girl Giselle when she discovers her lover Albrecht is actually a nobleman promised to another. In despair, she kills herself. Her spirit joins the Wilis, the vengeful ghosts of women who have been jilted and die before their wedding day. The Wilis are hell-bent on killing any man who crosses their path in a dance to the death. Wracked with guilt, Albrecht visits Giselle’s grave, where he must face the Wilis – and Giselle’s ghost. Will he survive?</p>
@@ -737,15 +860,15 @@
   <div class="showtimes"><div class="day-group"><div class="st-date">Tue 03 Mar</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=73032&screen=staustell">19:15</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag"><svg class="tag-icon" aria-hidden="true"><use href="#icon-event-cinema"/></svg>Event cinema</span></span></div></div></div>
 </article>
 
-<article class="film-card" data-dates="2026-03-31">
+<article class="film-card" data-dates="2026-03-31" data-status="coming-soon">
   <div class="film-header">
     <div class="poster"><img src="posters/siegfried-rbo-2025-26-cinema-season.jpg" alt="" loading="lazy"/></div>
     <div class="film-meta">
       <h2>SIEGFRIED - RBO 2025-26 Cinema Season </h2>
-      <div class="meta-line">330 min (5 hours 30 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:0%"></span></span><span class="rating-text">0.0/10</span></span> </div>
+      <div class="meta-line">330 min (5 hours 30 mins)  </div>
       
       <p class="crew"><strong>Director:</strong> Barrie Kosky</p>
-      <p class="cast"><strong>Starring:</strong> Peter Hoare, Andreas Schager, Christopher Maltman, Christopher Purves, Elisabet Strid</p>
+      <p class="cast"><strong>Starring:</strong> To Be Announced</p>
       <p class="synopsis">Raised by a scheming dwarf and unaware of his true family origins, a young man embarks on an epic journey.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/siegfried-rbo-2025-26-cinema-season/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -758,15 +881,15 @@
   <div class="showtimes"><div class="day-group"><div class="st-date">Tue 31 Mar</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=73033&screen=staustell">17:15</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Subtitled screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-subtitles"/></svg>Subs</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag"><svg class="tag-icon" aria-hidden="true"><use href="#icon-event-cinema"/></svg>Event cinema</span></span></div></div></div>
 </article>
 
-<article class="film-card" data-dates="2026-04-21">
+<article class="film-card" data-dates="2026-04-21" data-status="coming-soon">
   <div class="film-header">
     <div class="poster"><img src="posters/the-magic-flute-rbo-2025-26-cinema-season.jpg" alt="" loading="lazy"/></div>
     <div class="film-meta">
       <h2>THE MAGIC FLUTE - RBO 2025-26 Cinema Season </h2>
-      <div class="meta-line">210 min (3 hours 30 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:0%"></span></span><span class="rating-text">0.0/10</span></span> </div>
+      <div class="meta-line">210 min (3 hours 30 mins)  </div>
       
       <p class="crew"><strong>Director:</strong> David McVicar</p>
-      <p class="cast"><strong>Starring:</strong> Julia Bullock, Amitai Pati, Huw Montague Rendall, Kathyrn Lewek</p>
+      <p class="cast"><strong>Starring:</strong> To Be Announced</p>
       <p class="synopsis">Princess Pamina has been captured. Her mother, the Queen of the Night, tasks the young Prince Tamino with her daughter’s rescue. But when Tamino and his friendly sidekick, Papageno, embark on their adventure, they soon learn that when it comes to the quest for love, nothing is as it really seems.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/the-magic-flute-rbo-2025-26-cinema-season/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -779,14 +902,14 @@
   <div class="showtimes"><div class="day-group"><div class="st-date">Tue 21 Apr</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=73034&screen=staustell">18:45</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Subtitled screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-subtitles"/></svg>Subs</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag"><svg class="tag-icon" aria-hidden="true"><use href="#icon-event-cinema"/></svg>Event cinema</span></span></div></div></div>
 </article>
 
-<article class="film-card" data-dates="2026-05-05">
+<article class="film-card" data-dates="2026-05-05" data-status="coming-soon">
   <div class="film-header">
     <div class="poster"><img src="posters/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season.jpg" alt="" loading="lazy"/></div>
     <div class="film-meta">
       <h2>EUGENE ONEGIN - The MET Opera - RBO 2025-26 Cinema Season </h2>
-      <div class="meta-line">245 min (4 hours 5 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:0%"></span></span><span class="rating-text">0.0/10</span></span> <span class="genres">Music</span></div>
+      <div class="meta-line">245 min (4 hours 5 mins)  <span class="genres">Music</span></div>
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/SukbEYbc8Q4?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=SukbEYbc8Q4" aria-label="Play trailer">Trailer</button>
-      <p class="cast"><strong>Starring:</strong> Anna Netrebko (Tatiana), Peter Mattei (Eugene Onegin), Alexey Dolgov (Lensky), Štefan Kocán (Gremin), Robin Ticciati, MET Orchestra</p>
+      <p class="cast"><strong>Starring:</strong> To Be Announced</p>
       <p class="synopsis">Tchaikovsky’s setting of Pushkin’s timeless verse novel is presented on the Met stage in Deborah Warner’s moving production, starring Anna Netrebko as Tatiana and Mariusz Kwiecien and Peter Mattei sharing the title role. Alexey Dolgov sings the role of Lenski, and Robin Ticciati conducts.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -799,7 +922,17 @@
   <div class="showtimes"><div class="day-group"><div class="st-date">Tue 05 May</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=73035&screen=staustell">18:00</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Subtitled screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-subtitles"/></svg>Subs</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag"><svg class="tag-icon" aria-hidden="true"><use href="#icon-event-cinema"/></svg>Event cinema</span></span></div></div></div>
 </article></main>
     <footer>
-      <a href="https://wtwcinemas.co.uk/st-austell/whats-on/">WTW Cinemas</a>
+      <p class="footer-disclaimer">An open source fan-made project. Not affiliated with WTW Cinemas.</p>
+      <div class="footer-links">
+        <a href="https://wtwcinemas.co.uk/">WTW Cinemas</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/evenwebb/wtw-whats-on">Source</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/evenwebb/">evenwebb</a>
+      </div>
+      <p class="footer-attribution">
+        Posters and ratings via <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">TMDb</a>. This product uses the TMDB API but is not endorsed or certified by TMDB.
+      </p>
     </footer>
   </div>
   <script>
@@ -808,9 +941,13 @@
         document.querySelectorAll('.tab').forEach(function(b) { b.classList.remove('active'); });
         btn.classList.add('active');
         var date = btn.getAttribute('data-date');
+        var isAll = date === 'all';
+        document.querySelectorAll('.section-title').forEach(function(el) {
+          el.style.display = isAll ? 'block' : 'none';
+        });
         document.querySelectorAll('.film-card').forEach(function(card) {
           var dates = (card.getAttribute('data-dates') || '').split(',');
-          var show = date === 'all' || dates.indexOf(date) !== -1;
+          var show = isAll || dates.indexOf(date) !== -1;
           card.style.display = show ? 'block' : 'none';
         });
       });

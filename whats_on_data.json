@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-09T22:19:01Z",
+  "updated_at": "2026-02-09T22:35:36Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -10,7 +10,7 @@
           "search_title": "Send Help",
           "film_slug": "send-help",
           "synopsis": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work...",
-          "cast": "Rachel McAdams (Linda Liddle), Dylan O'Brien (Bradley Preston), Edyll Ismail (Zuri), Dennis Haysbert (Franklin), Xavier Samuel (Donovan), Chris Pang (Chase), Thaneth Warakulnukroh (Boat Captain), Emma Raimi (River), Kristy Best (Polly Perera), Francesca Waters (Barbara), Olivia Sawyer (Applicant), Brad Flett (Trainer)",
+          "cast": "Rachel McAdams, Dylan O'Brien",
           "runtime_min": 113,
           "film_url": "https://wtwcinemas.co.uk/film/send-help/?screen=st-austell",
           "poster_url": "posters/send-help.jpg",
@@ -254,7 +254,7 @@
           "search_title": "Shelter",
           "film_slug": "shelter",
           "synopsis": "Mason lives in recluse at a remote setting by the sea. When he chooses to rescue a young girl from drowning in a terrible storm,...",
-          "cast": "Jason Statham (Mason), Bodhi Rae Breathnach (Jesse), Michael Shaeffer (Uncle), Anna Crilly (Haneron), Bill Nighy (Manafort), Harriet Walter (Prime Minister Fordham), Eugenia Caruso (Shop Clerk), Celine Buckens (Maddison), Naomi Ackie (Roberta), Bally Gill (Aziz), Bronson Webb (Deakins), Lohan Buson (Commando)",
+          "cast": "Jason Statham, Bodhi Rae Breathnach, Bill Nighy",
           "runtime_min": 107,
           "film_url": "https://wtwcinemas.co.uk/film/shelter/?screen=st-austell",
           "poster_url": "posters/shelter.jpg",
@@ -321,7 +321,7 @@
           "search_title": "Is This Thing On",
           "film_slug": "is-this-thing-on",
           "synopsis": "As their marriage quietly unravels, Alex faces middle age and an impending divorce, seeking new purpose in the New York comedy scene while Tess confronts...",
-          "cast": "Will Arnett (Alex Novak), Laura Dern (Tess Novak), Andra Day (Christine), Bradley Cooper (Balls), Christine Ebersole (Marilyn), Ciarán Hinds (Jan), Sean Hayes (Stephen), Amy Sedaris (Kemp), Chloe Radcliffe (Nina), Scott Icenogle (Geoffrey), Jordan Jensen (Jill), Peyton Manning (Laird)",
+          "cast": "Will Arnett, Laura Dern, Andra Day, Bradley Cooper",
           "runtime_min": 121,
           "film_url": "https://wtwcinemas.co.uk/film/is-this-thing-on/?screen=st-austell",
           "poster_url": "posters/is-this-thing-on.jpg",
@@ -387,7 +387,7 @@
           "search_title": "Hamnet",
           "film_slug": "hamnet",
           "synopsis": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
-          "cast": "Jessie Buckley (Agnes), Paul Mescal (Will), Emily Watson (Mary), Joe Alwyn (Bartholomew), Jacobi Jupe (Hamnet), Noah Jupe (Hamlet), Bodhi Rae Breathnach (Susanna), Olivia Lynes (Judith), David Wilmot (John), Justine Mitchell (Joan), Faith Delaney (Young Agnes), Smylie Bradwell (Young Bartholomew)",
+          "cast": "Jessie Buckley, Paul Mescal",
           "runtime_min": 126,
           "film_url": "https://wtwcinemas.co.uk/film/hamnet/?screen=st-austell",
           "poster_url": "posters/hamnet.jpg",
@@ -487,7 +487,7 @@
           "search_title": "Avatar: Fire and Ash",
           "film_slug": "avatar-fire-and-ash-hfr-3d",
           "synopsis": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat...",
-          "cast": "Sam Worthington (Jake), Zoe Saldaña (Neytiri), Sigourney Weaver (Kiri), Stephen Lang (Quaritch), Oona Chaplin (Varang), Jack Champion (Spider), Kate Winslet (Ronal), Cliff Curtis (Tonowari), Joel David Moore (Norm), CCH Pounder (Mo'at), Edie Falco (General Ardmore), Brendan Cowell (Scoresby)",
+          "cast": "Sam Worthington, Zoe Saldaña, Sigourney Weaver, Kate Winslet",
           "runtime_min": 197,
           "film_url": "https://wtwcinemas.co.uk/film/avatar-fire-and-ash-hfr-3d/?screen=st-austell",
           "poster_url": "posters/avatar-fire-and-ash-hfr-3d.jpg",
@@ -522,7 +522,7 @@
           "search_title": "The Housemaid",
           "film_slug": "the-housemaid",
           "synopsis": "A woman with a troubled past accepts a job as a live-in maid for a wealthy, seemingly perfect family.",
-          "cast": "Sydney Sweeney (Millie Calloway), Amanda Seyfried (Nina Winchester), Brandon Sklenar (Andrew Winchester), Michele Morrone (Enzo), Indiana Elle (Cece Winchester), Sarah Cooper (Pam), Elizabeth Perkins (Mrs. Winchester), Ellen Tamaki (Patrice), Megan Ferguson (Jilliane), Amanda Joy Erickson (Suzanne), Alaina Surgener (Amanda), Peter Colandro (Cashier)",
+          "cast": "Sydney Sweeney, Amanda Seyfried, Brandon Sklenar",
           "runtime_min": 131,
           "film_url": "https://wtwcinemas.co.uk/film/the-housemaid/?screen=st-austell",
           "poster_url": "posters/the-housemaid.jpg",
@@ -612,7 +612,7 @@
           "search_title": "Song Sung Blue",
           "film_slug": "song-sung-blue",
           "synopsis": "Based on a true story, two down-on-their-luck musicians form a joyous Neil Diamond tribute band, proving it's never too late to find love and follow...",
-          "cast": "Hugh Jackman (Mike Sardina), Kate Hudson (Claire Sardina), Michael Imperioli (Mark Shurilla), Fisher Stevens (Dr. Dave Watson), Jim Belushi (Tom D'Amato), Ella Anderson (Rachel), King Princess (Angelina), Mustafa Shakir (Sex Machine), Hudson Hilbert Hensley (Dayna), Shyaporn Theerakulstit (Somechai), John Beckwith (Eddie Vedder), Jayson Warner Smith (Earl / TCB)",
+          "cast": "Hugh Jackman, Kate Hudson",
           "runtime_min": 132,
           "film_url": "https://wtwcinemas.co.uk/film/song-sung-blue/?screen=st-austell",
           "poster_url": "posters/song-sung-blue.jpg",
@@ -660,7 +660,7 @@
           "search_title": "Marty Supreme",
           "film_slug": "marty-supreme",
           "synopsis": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
-          "cast": "Timothée Chalamet (Marty Mauser), Gwyneth Paltrow (Kay Stone), Odessa A'zion (Rachel Mizler), Kevin O'Leary (Milton Rockwell), Tyler, The Creator (Wally), Fran Drescher (Rebecca Mauser), Abel Ferrara (Ezra Mishkin), Emory Cohen (Ira Mizler), Géza Röhrig (Béla Kletzki), Koto Kawaguchi (Koto Endo), Larry Sloman (Murray Norkin), Luke Manley (Dion Galanis)",
+          "cast": "Timothée Chalamet, Gwyneth Paltrow, Odessa A'zion",
           "runtime_min": 150,
           "film_url": "https://wtwcinemas.co.uk/film/marty-supreme/?screen=st-austell",
           "poster_url": "posters/marty-supreme.jpg",
@@ -706,7 +706,7 @@
           "search_title": "The SpongeBob Movie: Search For Squarepants",
           "film_slug": "the-spongebob-movie-search-for-squarepants",
           "synopsis": "SpongeBob travels to the depths of the ocean and faces off against the ghost of the Flying Dutchman.",
-          "cast": "Tom Kenny (SpongeBob SquarePants / Gary / Morning DJ (voice)), Clancy Brown (Mr. Krabs / Pirate / Narrator), Rodger Bumpass (Squidward Tentacles (voice)), Bill Fagerbakke (Patrick Star (voice)), Carolyn Lawrence (Sandy Cheeks (voice)), Mr. Lawrence (Sheldon J. Plankton (voice)), George López (JK Fishlips (voice)), Ice Spice (Ticket Taker (voice)), Arturo Castro (Ride Operator), Sherry Cola (Studio Spokesperson / Krusty Krab Patron (voice)), Regina Hall (Barb (voice)), Mark Hamill (Flying Dutchman (voice))",
+          "cast": "Tom Kenny, Clancy Brown, Rodger Bumpass, Bill Fagerbakke",
           "runtime_min": 90,
           "film_url": "https://wtwcinemas.co.uk/film/the-spongebob-movie-search-for-squarepants/?screen=st-austell",
           "poster_url": "posters/the-spongebob-movie-search-for-squarepants.jpg",
@@ -797,7 +797,7 @@
           "search_title": "Zootropolis 2",
           "film_slug": "zootropolis-2",
           "synopsis": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find their partnership isn't as solid as they thought when...",
-          "cast": "Ginnifer Goodwin (Judy Hopps (voice)), Jason Bateman (Nick Wilde (voice)), Ke Huy Quan (Gary De'Snake (voice)), Fortune Feimster (Nibbles Maplestick (voice)), Andy Samberg (Pawbert Lynxley (voice)), David Strathairn (Milton Lynxley (voice)), Idris Elba (Chief Bogo (voice)), Shakira (Gazelle (voice)), Patrick Warburton (Mayor Winddancer (voice)), Quinta Brunson (Dr. Fuzzby (voice)), Danny Trejo (Jesús (voice)), Nate Torrence (Clawhauser (voice))",
+          "cast": "Ginnifer Goodwin, Jason Bateman, Ke Huy Quan",
           "runtime_min": 108,
           "film_url": "https://wtwcinemas.co.uk/film/zootropolis-2/?screen=st-austell",
           "poster_url": "posters/zootropolis-2.jpg",
@@ -894,7 +894,7 @@
           "search_title": "Primate",
           "film_slug": "primate",
           "synopsis": "Home from college, Lucy reunites with family including pet chimp Ben. Ben contracts rabies during a pool party and turns aggressive. Lucy and friends barricade...",
-          "cast": "Johnny Sequoyah (Lucy), Jessica Alexander (Hannah), Troy Kotsur (Adam), Victoria Wyant (Kate), Gia Hunter (Erin), Benjamin Cheng (Nick), Charlie Mann (Drew), Tienne Simon (Brad), Miguel Hernando Torres Umba (Ben), Amina Abdi (Susan), Rob Chalk (Interpreter), Joe Abercrombie (Book Publisher)",
+          "cast": "Jessica Alexander, Troy Kotsur, Victoria Wyant",
           "runtime_min": 89,
           "film_url": "https://wtwcinemas.co.uk/film/primate/?screen=st-austell",
           "poster_url": "posters/primate.jpg",
@@ -960,7 +960,7 @@
           "search_title": "Kangaroo",
           "film_slug": "kangaroo",
           "synopsis": "Ex TV personality, Chris Masterman, becomes stranded in an Outback town outside Alice Springs. There, he teams up with 12-year-old Indigenous girl Charlie. The pair...",
-          "cast": "Lily Whiteley (Charlie), Ryan Corr (Chris Masterman), Rachel House (Jesse), Brooke Satchwell (Liz), Rick Donald (Trap), Deborah Mailman (Rosie), Clarence John Ryan (Nick), Roy Billing (Murray), Rarriwuy Hick (Brenda), Geneviève Lemon (Bernadette), Wayne Blair (Ralph), Ernie Dingo (Dave)",
+          "cast": "Lily Whiteley, Ryan Corr, Rachel House",
           "runtime_min": 107,
           "film_url": "https://wtwcinemas.co.uk/film/kangaroo/?screen=st-austell",
           "poster_url": "posters/kangaroo.jpg",
@@ -1081,7 +1081,7 @@
           "search_title": "Wuthering Heights",
           "film_slug": "wuthering-heights",
           "synopsis": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
-          "cast": "Juliette Binoche (Cathy / Catherine Linton), Ralph Fiennes (Heathcliff), Janet McTeer (Ellen Dean), Sophie Ward (Isabella Linton), Simon Shepherd (Edgar Linton), Jeremy Northam (Hindley Earnshaw), Jason Riddington (Hareton Earnshaw), Simon Ward (Mr. Linton), Robert Demeger (Joseph), Paul Geoffrey (Mr. Lockwood), John Woodvine (Thomas Earnshaw), Jennifer Daniel (Mrs. Linton)",
+          "cast": "Margot Robbie, Jacob Elordi",
           "runtime_min": 137,
           "film_url": "https://wtwcinemas.co.uk/film/wuthering-heights/?screen=st-austell",
           "poster_url": "posters/wuthering-heights.jpg",
@@ -1312,7 +1312,7 @@
           "search_title": "Stitch Head",
           "film_slug": "stitch-head",
           "synopsis": "Stitch Head was the first creature brought to 'almost life' by mad professor Erasmus. In the years since, he's become nursemaid to the master's ever-growing...",
-          "cast": "Asa Butterfield (Stitch Head (voice)), Joel Fry (Creature (voice)), Alison Steadman (Nan (voice)), Rob Brydon (Professor (voice)), Seth Usdenov (Fulbert Freakfinder (voice)), Fern Brady (Madame Miranda (voice)), Tia Bannon (Arabella (voice)), Jamali Maddix (Taj/Tej (voice)), Paul Tylak (Owggagoffakkookkk (voice)), Ruth Gibson (Old Lady (voice)), Rasmus Hardiker (Geoff (voice)), Ryan Sampson (Doctor Dislocation (voice))",
+          "cast": "Asa Butterfield, Joel Fry, Alison Steadman",
           "runtime_min": 91,
           "film_url": "https://wtwcinemas.co.uk/film/stitch-head/?screen=st-austell",
           "poster_url": "posters/stitch-head.jpg",
@@ -1446,7 +1446,7 @@
           "search_title": "GOAT",
           "film_slug": "goat",
           "synopsis": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball - a high-intensity, co-ed, full-contact sport dominated...",
-          "cast": "Caleb McLaughlin (Will Harris (voice)), Gabrielle Union (Jett Fillmore  (voice)), Jenifer Lewis (Florence Everson  (voice)), David Harbour (Archie Everhardt  (voice)), Nick Kroll (Modo Olachenko  (voice)), Nicola Coughlan (Olivia Burke  (voice)), Patton Oswalt (Dennis  (voice)), Stephen Curry (Lenny Williamson  (voice)), Aaron Pierre (Mane Attraction (voice)), Jennifer Hudson (Louise Harris (voice)), Wayne Knight (Frank (voice)), Jelly Roll (Grizz (voice))",
+          "cast": "Caleb McLaughlin, Gabrielle Union, Jenifer Lewis, David Harbour",
           "runtime_min": 100,
           "film_url": "https://wtwcinemas.co.uk/film/goat/?screen=st-austell",
           "poster_url": "posters/goat.jpg",
@@ -1669,6 +1669,19 @@
             },
             {
               "date": "2026-02-15",
+              "time": "11:00",
+              "screen": 3,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76169&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning",
+                "Autism Friendly"
+              ]
+            },
+            {
+              "date": "2026-02-15",
               "time": "16:45",
               "screen": 1,
               "booking_url": "https://wtwcinemas.co.uk/book?performance=76153&screen=staustell",
@@ -1695,43 +1708,11 @@
           "writer": "Aaron Buchsbaum, Teddy Riley, Nicolas Curcio"
         },
         {
-          "title": "GOAT AUTISM FRIENDLY SCREENING",
-          "search_title": "GOAT AUTISM FRIENDLY SCREENING",
-          "film_slug": "goat-autism-friendly-screening",
-          "synopsis": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball - a high-intensity, co-ed, full-contact sport dominated...",
-          "cast": "Caleb McLaughlin, Gabrielle Union, Jenifer Lewis, David Harbour",
-          "runtime_min": 100,
-          "film_url": "https://wtwcinemas.co.uk/film/goat-autism-friendly-screening/?screen=st-austell",
-          "poster_url": "",
-          "showtimes": [
-            {
-              "date": "2026-02-15",
-              "time": "11:00",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76169&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning",
-                "Autism Friendly"
-              ]
-            }
-          ],
-          "trailer_url": "",
-          "vote_average": null,
-          "genres": [],
-          "imdb_id": "",
-          "overview": "",
-          "director": "",
-          "writer": ""
-        },
-        {
           "title": "Crime 101",
           "search_title": "Crime 101",
           "film_slug": "crime-101",
           "synopsis": "When an elusive thief whose high-stakes heists unfold along the iconic 101 freeway in Los Angeles eyes the score of a lifetime, with hopes of...",
-          "cast": "Chris Hemsworth (Mike Davis), Halle Berry (Sharon), Mark Ruffalo (Detective Lou Lubesnick), Barry Keoghan (Ormon), Monica Barbaro (Maya), Corey Hawkins (Tillman), Jennifer Jason Leigh (Angie), Nick Nolte (Money), Tate Donovan (Monroe), Devon Bostick (Devon), Paul Adelstein (Mark), Matthew Del Negro (Police Captain Stewart)",
+          "cast": "Chris Hemsworth, Halle Berry, Mark Ruffalo, Barry Keoghan, Monica Barbaro",
           "runtime_min": 141,
           "film_url": "https://wtwcinemas.co.uk/film/crime-101/?screen=st-austell",
           "poster_url": "posters/crime-101.jpg",
@@ -1859,7 +1840,6 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=WQWlhBXQpqU",
-          "vote_average": 0.0,
           "genres": [
             "Crime",
             "Thriller"
@@ -1867,7 +1847,8 @@
           "imdb_id": "tt32430579",
           "overview": "When an elusive thief whose high-stakes heists unfold along the iconic 101 freeway in Los Angeles eyes the score of a lifetime, with hopes of this being his final job, his path collides with a disillusioned insurance broker who is facing her own crossroads, forcing the two to collaborate. Determined to crack the case, a relentless detective closes in on the operation, raising the stakes even higher.",
           "director": "Bart Layton",
-          "writer": "Don Winslow, Bart Layton"
+          "writer": "Don Winslow, Bart Layton",
+          "vote_average": null
         },
         {
           "title": "The Lost Boys of Carbis Bay (And More!)",
@@ -1903,7 +1884,7 @@
           "search_title": "National Theatre Live: The Audience",
           "film_slug": "national-theatre-live-the-audience",
           "synopsis": "Returning to cinemas for the first time in over a decade, Helen Mirren plays Queen Elizabeth II in the Olivier and Tony Award® -winning hit...",
-          "cast": "Helen Mirren (The Queen), Michael Elwyn (Anthony Eden), Haydn Gwynne (Margaret Thatcher), Richard McCabe (Harold Wilson), Nathaniel Parker (Gordon Brown), Paul Ritter (John Major), Rufus Wright (David Cameron), Edward Fox (Winston Churchill), David Peart (James Callaghan / Private Secretary), Geoffrey Beevers (Equerry), Nell Williams (Young Elizabeth), Charlotte Moore (Bobo MacDonald / Private Secretary)",
+          "cast": "Helen Mirren, Michael Elwyn, Haydn Gwynne",
           "runtime_min": 180,
           "film_url": "https://wtwcinemas.co.uk/film/national-theatre-live-the-audience/?screen=st-austell",
           "poster_url": "posters/national-theatre-live-the-audience.jpg",
@@ -1975,13 +1956,13 @@
               ]
             }
           ],
-          "trailer_url": "",
-          "vote_average": 0.0,
           "genres": [
             "Music"
           ],
-          "imdb_id": "",
           "overview": "The world turns upside down for the peasant girl Giselle when she discovers her lover Albrecht is actually a nobleman promised to another. In despair, she kills herself. Her spirit joins the Wilis, the vengeful ghosts of women who have been jilted and die before their wedding day. The Wilis are hell-bent on killing any man who crosses their path in a dance to the death. Wracked with guilt, Albrecht visits Giselle’s grave, where he must face the Wilis – and Giselle’s ghost. Will he survive?",
+          "trailer_url": "",
+          "vote_average": null,
+          "imdb_id": "",
           "director": "",
           "writer": ""
         },
@@ -2033,7 +2014,7 @@
           "search_title": "SIEGFRIED - RBO 2025-26 Cinema Season",
           "film_slug": "siegfried-rbo-2025-26-cinema-season",
           "synopsis": "Sung in German with subtitles. Raised by a scheming dwarf and unaware of his true family origins, a young man embarks on an epic journey....",
-          "cast": "Peter Hoare, Andreas Schager, Christopher Maltman, Christopher Purves, Elisabet Strid",
+          "cast": "To Be Announced",
           "runtime_min": 330,
           "film_url": "https://wtwcinemas.co.uk/film/siegfried-rbo-2025-26-cinema-season/?screen=st-austell",
           "poster_url": "posters/siegfried-rbo-2025-26-cinema-season.jpg",
@@ -2051,12 +2032,12 @@
               ]
             }
           ],
-          "trailer_url": "",
-          "vote_average": 0.0,
-          "genres": [],
-          "imdb_id": "",
           "overview": "Raised by a scheming dwarf and unaware of his true family origins, a young man embarks on an epic journey.",
           "director": "Barrie Kosky",
+          "trailer_url": "",
+          "vote_average": null,
+          "genres": [],
+          "imdb_id": "",
           "writer": ""
         },
         {
@@ -2064,7 +2045,7 @@
           "search_title": "National Theatre Live: All My Sons",
           "film_slug": "national-theatre-live-all-my-sons",
           "synopsis": "Bryan Cranston (Breaking Bad) and Marianne Jean-Baptiste (Hard Truths) feature in a five-star, triumphantly acclaimed new production of Arthur Miller's classic play, from visionary director...",
-          "cast": "Sally Field (Kate Keller), Bill Pullman (Joe Keller), Jenna Coleman (Ann Deever), Colin Morgan (Chris Keller), Sule Rimi (Dr. Jim Bayliss), Oliver Johnstone (George Deever), Gunnar Cauthery (Frank Lubey), Bessie Carter (Lydia Lubey), Kayla Meikle (Sue Bayliss)",
+          "cast": "Bryan Cranston, Marianne Jean-Baptiste",
           "runtime_min": 130,
           "film_url": "https://wtwcinemas.co.uk/film/national-theatre-live-all-my-sons/?screen=st-austell",
           "poster_url": "posters/national-theatre-live-all-my-sons.jpg",
@@ -2109,7 +2090,7 @@
           "search_title": "THE MAGIC FLUTE - RBO 2025-26 Cinema Season",
           "film_slug": "the-magic-flute-rbo-2025-26-cinema-season",
           "synopsis": "Sung in German with subtitles. Princess Pamina has been captured. Her mother, the Queen of the Night, tasks the young Prince Tamino with her daughter's...",
-          "cast": "Julia Bullock, Amitai Pati, Huw Montague Rendall, Kathyrn Lewek",
+          "cast": "To Be Announced",
           "runtime_min": 210,
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-flute-rbo-2025-26-cinema-season/?screen=st-austell",
           "poster_url": "posters/the-magic-flute-rbo-2025-26-cinema-season.jpg",
@@ -2127,12 +2108,12 @@
               ]
             }
           ],
-          "trailer_url": "",
-          "vote_average": 0.0,
-          "genres": [],
-          "imdb_id": "",
           "overview": "Princess Pamina has been captured. Her mother, the Queen of the Night, tasks the young Prince Tamino with her daughter’s rescue. But when Tamino and his friendly sidekick, Papageno, embark on their adventure, they soon learn that when it comes to the quest for love, nothing is as it really seems.",
           "director": "David McVicar",
+          "trailer_url": "",
+          "vote_average": null,
+          "genres": [],
+          "imdb_id": "",
           "writer": ""
         },
         {
@@ -2140,7 +2121,7 @@
           "search_title": "EUGENE ONEGIN - The MET Opera - RBO 2025-26 Cinema Season",
           "film_slug": "eugene-onegin-the-met-opera-rbo-2025-26-cinema-season",
           "synopsis": "Sung in Russian with English subtitles. Following her acclaimed 2024 company debut in Puccini's Madama Butterfly, soprano Asmik Grigorian returns to the Met as Tatiana,...",
-          "cast": "Anna Netrebko (Tatiana), Peter Mattei (Eugene Onegin), Alexey Dolgov (Lensky), Štefan Kocán (Gremin), Robin Ticciati, MET Orchestra",
+          "cast": "To Be Announced",
           "runtime_min": 245,
           "film_url": "https://wtwcinemas.co.uk/film/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season/?screen=st-austell",
           "poster_url": "posters/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season.jpg",
@@ -2159,12 +2140,12 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=SukbEYbc8Q4",
-          "vote_average": 0.0,
           "genres": [
             "Music"
           ],
-          "imdb_id": "",
           "overview": "Tchaikovsky’s setting of Pushkin’s timeless verse novel is presented on the Met stage in Deborah Warner’s moving production, starring Anna Netrebko as Tatiana and Mariusz Kwiecien and Peter Mattei sharing the title role. Alexey Dolgov sings the role of Lenski, and Robin Ticciati conducts.",
+          "vote_average": null,
+          "imdb_id": "",
           "director": "",
           "writer": ""
         },
@@ -2173,7 +2154,7 @@
           "search_title": "National Theatre Live: The Playboy of the Western World",
           "film_slug": "national-theatre-live-the-playboy-of-the-western-world",
           "synopsis": "Nicola Coughlan (Bridgerton) joins Éanna Hardwicke (The Sixth Commandment) and Siobhán McSweeney (Derry Girls) in John Millington Synge's riveting play of youth and self-discovery. Pegeen...",
-          "cast": "Nicola Coughlan (Pegeen Mike), Éanna Hardwicke (Christy Mahon), Siobhán McSweeney (Widow Quin), Declan Conlon (Old Mahon), Lorcan Cranitch (Michael Flaherty), Megan Cusack (Susan Brady), Naoise Dunbar (Jimmy Farrell), Matthew Forrest (Philly Cullen), Sallay Garnett (Nelly), Fionnuala Gygax (Honor Blake), Erin Hennessey (Fiddle), Peter Mooney (Banjo / Ensemble)",
+          "cast": "Nicola Coughlan, Siobhán McSweeney, Éanna Hardwicke",
           "runtime_min": 150,
           "film_url": "https://wtwcinemas.co.uk/film/national-theatre-live-the-playboy-of-the-western-world/?screen=st-austell",
           "poster_url": "posters/national-theatre-live-the-playboy-of-the-western-world.jpg",
@@ -2201,23 +2182,23 @@
               ]
             }
           ],
-          "trailer_url": "",
-          "vote_average": 0.0,
           "genres": [
             "Drama",
             "Comedy"
           ],
-          "imdb_id": "",
           "overview": "Nicola Coughlan (Bridgerton) joins Éanna Hardwicke (The Sixth Commandment) and Siobhán McSweeney (Derry Girls) in John Millington Synge’s riveting play of youth and self-discovery.  Pegeen Flaherty’s life is turned upside down when a young man walks into her pub claiming that he’s killed his father. Instead of being shunned, the killer becomes a local hero and begins to win hearts, that is until a second man unexpectedly arrives on the scene…  Filmed live on stage at the National Theatre, Caitríona McLaughlin directs this darkly funny tale full to the brim with secrets.",
           "director": "Caitriona McLaughlin",
-          "writer": "John Millington Synge"
+          "writer": "John Millington Synge",
+          "trailer_url": "",
+          "vote_average": null,
+          "imdb_id": ""
         },
         {
           "title": "National Theatre Live: Les Liaisons Dangereuses",
           "search_title": "National Theatre Live: Les Liaisons Dangereuses",
           "film_slug": "national-theatre-live-les-liaisons-dangereuses",
           "synopsis": "BAFTA Award-winner Lesley Manville (Phantom Thread) joins Aidan Turner (Rivals) in a striking new staging of Christopher Hampton's celebrated adaptation of the classic novel, where...",
-          "cast": "Janet McTeer (La Marquise de Merteuil), Dominic West (Le Vicomte de Valmont), Elaine Cassidy (Madame de Tourvel), Adjoa Andoh (Madame de Volanges), Morfydd Clark (Cécile Volanges), Edward Holcroft (Le Chevalier Danceny), Una Stubbs (Madame de Rosemonde), Theo Barklem-Biggs (Azolan), Jennifer Saayeng (Émilie), Thom Petty (Major-Domo), Alison Arnopp (Julie)",
+          "cast": "Lesley Manville, Aidan Turner",
           "runtime_min": 150,
           "film_url": "https://wtwcinemas.co.uk/film/national-theatre-live-les-liaisons-dangereuses/?screen=st-austell",
           "poster_url": "posters/national-theatre-live-les-liaisons-dangereuses.jpg",

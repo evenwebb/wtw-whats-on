@@ -54,6 +54,7 @@ logger = logging.getLogger(__name__)
 # BBFC rating pattern in titles: (15), (12A), (PG), (18), (U), (R18), (with subtitles) etc.
 RATING_PATTERN = re.compile(r"\((\d+A?|U|PG|R18)\)", re.IGNORECASE)
 SUBTITLE_SUFFIX = re.compile(r"\s*\(with subtitles\)\s*$", re.IGNORECASE)
+AUTISM_FRIENDLY_SUFFIX = re.compile(r"\s+autism\s+friendly\s+screening\s*$", re.IGNORECASE)
 # Format suffix: " - HFR 3D" (high frame rate 3D) is not part of the movie name
 FORMAT_SUFFIX = re.compile(r"\s*-\s*HFR\s*3D\s*$", re.IGNORECASE)
 
@@ -82,9 +83,10 @@ def strip_format_suffix(title: str) -> str:
 
 
 def extract_search_title(title: str) -> str:
-    """Strip age rating and 'with subtitles' for search/links. E.g. 'Send Help (15)' -> 'Send Help'."""
+    """Strip age rating, 'with subtitles', 'autism friendly screening' for search/links. E.g. 'GOAT AUTISM FRIENDLY SCREENING' -> 'GOAT'."""
     t = strip_format_suffix(title)
     t = SUBTITLE_SUFFIX.sub("", t).strip()
+    t = AUTISM_FRIENDLY_SUFFIX.sub("", t).strip()
     t = RATING_PATTERN.sub("", t).strip()
     return t.strip(" -")
 
@@ -491,7 +493,7 @@ def enrich_film_tmdb(
 
 
 def _merge_subtitle_variants(films: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    """Merge '(with subtitles)' variants into the main film card; subtitled showtimes go at the bottom."""
+    """Merge '(with subtitles)' and 'Autism Friendly Screening' variants into the main film card; variant showtimes go at the bottom."""
     by_base: Dict[str, List[Dict[str, Any]]] = {}
     for f in films:
         base = (f.get("search_title") or "").strip() or extract_search_title(f.get("title", ""))
@@ -504,10 +506,11 @@ def _merge_subtitle_variants(films: List[Dict[str, Any]]) -> List[Dict[str, Any]
         if len(group) == 1:
             merged.append(group[0])
             continue
-        main = next(
-            (f for f in group if "(with subtitles)" not in (f.get("title") or "").lower()),
-            group[0],
-        )
+        # Prefer the canonical title (no variant suffix)
+        def is_variant(f: Dict) -> bool:
+            t = (f.get("title") or "").lower()
+            return "(with subtitles)" in t or "autism friendly screening" in t
+        main = next((f for f in group if not is_variant(f)), group[0])
         others = [f for f in group if f is not main]
         all_showtimes = list(main.get("showtimes") or [])
         seen_keys: set = set()
@@ -519,9 +522,10 @@ def _merge_subtitle_variants(films: List[Dict[str, Any]]) -> List[Dict[str, Any]
                 if key not in seen_keys:
                     seen_keys.add(key)
                     all_showtimes.append(dict(st))
+        tags = lambda s: s.get("tags") or []
         all_showtimes.sort(
             key=lambda s: (
-                "Subtitles" in (s.get("tags") or []),
+                "Subtitles" in tags(s) or "Autism Friendly" in tags(s),
                 s["date"],
                 s["time"],
             )
@@ -674,6 +678,7 @@ def build_html(data: Dict[str, Any]) -> str:
     """Generate single self-contained index.html with Web3 style and date filtering."""
     cinema = (data.get("cinemas") or {}).get("st-austell") or {}
     films = cinema.get("films") or []
+    build_today_iso = datetime.utcnow().date().isoformat()
 
     # Collect unique dates for tabs
     all_dates = set()
@@ -832,8 +837,10 @@ def build_html(data: Dict[str, Any]) -> str:
             meta_lines.append(f'<p class="cast"><strong>Starring:</strong> {cast_first_esc}{cast_rest_html}{more_btn}</p>')
         crew_html = "\n      ".join(meta_lines)
 
+        earliest = min(showtimes_by_date.keys()) if showtimes_by_date else ""
+        status = "now" if earliest and earliest <= build_today_iso else "coming-soon"
         return f"""
-<article class="film-card" data-dates="{",".join(showtimes_by_date.keys())}">
+<article class="film-card" data-dates="{",".join(showtimes_by_date.keys())}" data-status="{status}">
   <div class="film-header">
     {poster_div}
     <div class="film-meta">
@@ -854,16 +861,21 @@ def build_html(data: Dict[str, Any]) -> str:
 </article>"""
 
     films_sorted = sorted(films, key=lambda f: len(f.get("showtimes") or []), reverse=True)
-    cards_html = "\n".join(film_card(f) for f in films_sorted)
+    now_showing = [f for f in films_sorted if f.get("showtimes") and min(st.get("date", "9999") for st in f["showtimes"]) <= build_today_iso]
+    coming_soon = [f for f in films_sorted if f not in now_showing]
+    now_cards = "\n".join(film_card(f) for f in now_showing)
+    coming_cards = "\n".join(film_card(f) for f in coming_soon)
+    section_now = f'<h3 class="section-title" data-section="now">Now showing</h3>\n{now_cards}' if now_showing else ""
+    section_coming = f'<h3 class="section-title" data-section="coming">Coming soon</h3>\n{coming_cards}' if coming_soon else ""
+    cards_html = "\n".join(s for s in (section_now, section_coming) if s)
 
     # Date filter tabs
-    today_iso = datetime.utcnow().date().isoformat()
     tabs = ['<button type="button" class="tab active" data-date="all">All</button>']
     for d in sorted_dates[:14]:
         try:
             dt = datetime.strptime(d, "%Y-%m-%d")
             label = dt.strftime("%a %d")
-            if d == today_iso:
+            if d == build_today_iso:
                 label = "Today"
             tabs.append(f'<button type="button" class="tab" data-date="{d}">{label}</button>')
         except ValueError:
@@ -883,28 +895,136 @@ def build_html(data: Dict[str, Any]) -> str:
     :root {{
       --bg: #0a0a0f;
       --card-bg: #12121a;
+      --surface: #12121a;
+      --surface-2: #12121a;
+      --surface-3: #1a1a24;
+      --border: rgba(168,85,247,0.25);
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
       --cyan: #00d4ff;
       --purple: #a855f7;
-      --text: #e2e8f0;
-      --muted: #94a3b8;
+      --accent: #00d4ff;
+      --accent-dim: rgba(0,212,255,0.15);
+      --accent-glow: rgba(0,212,255,0.25);
+      --radius: 16px;
+      --radius-sm: 10px;
+      --radius-lg: 24px;
+      --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }}
-    * {{ box-sizing: border-box; }}
-    body {{ margin: 0; font-family: 'Space Grotesk', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }}
-    .wrap {{ max-width: 1400px; margin: 0 auto; padding: 1rem; }}
-    header {{ text-align: center; padding: 2rem 0; border-bottom: 1px solid rgba(0,212,255,0.2); }}
-    header h1 {{ font-size: 1.75rem; font-weight: 700; background: linear-gradient(90deg, var(--cyan), var(--purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }}
-    header p {{ color: var(--muted); font-size: 0.95rem; margin-top: 0.25rem; }}
+    * {{ box-sizing: border-box; margin: 0; padding: 0; }}
+    html {{ scroll-behavior: smooth; }}
+    body {{
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }}
+    .bg-mesh {{
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 100% 80% at 50% -30%, var(--accent-dim) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 50% at 80% 100%, rgba(0,212,255,0.08) 0%, transparent 40%),
+        radial-gradient(ellipse 40% 40% at 10% 90%, rgba(168,85,247,0.05) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }}
+    .bg-grid {{
+      position: fixed;
+      inset: 0;
+      background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+    }}
+    .page {{ position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }}
+    @media (min-width: 640px) {{ .page {{ padding: 3rem 2rem 5rem; }} }}
+    header {{
+      text-align: center;
+      padding: 3rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+      animation: fadeUp 0.8s ease-out;
+    }}
+    @keyframes fadeUp {{
+      from {{ opacity: 0; transform: translateY(20px); }}
+      to {{ opacity: 1; transform: translateY(0); }}
+    }}
+    header h1 {{
+      font-size: clamp(2rem, 5vw, 2.5rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      background: linear-gradient(90deg, var(--cyan), var(--purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }}
+    header p {{ color: var(--text-muted); font-size: 0.95rem; margin-top: 0.25rem; }}
     .tabs {{ display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; padding: 1rem 0; }}
-    .tab {{ font-family: inherit; background: var(--card-bg); border: 1px solid rgba(168,85,247,0.3); color: var(--text); padding: 0.5rem 0.75rem; border-radius: 8px; cursor: pointer; font-size: 0.9rem; }}
+    .tab {{
+      font-family: inherit;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all var(--transition);
+    }}
     .tab:hover {{ border-color: var(--cyan); }}
-    .tab.active {{ background: linear-gradient(135deg, rgba(0,212,255,0.15), rgba(168,85,247,0.15)); border-color: var(--cyan); }}
+    .tab.active {{
+      background: linear-gradient(135deg, var(--accent-dim), rgba(168,85,247,0.15));
+      border-color: var(--cyan);
+    }}
     #films {{ display: grid; grid-template-columns: 1fr; gap: 1.5rem; }}
     @media (min-width: 900px) {{ #films {{ grid-template-columns: repeat(2, 1fr); }} }}
-    .film-card {{ background: var(--card-bg); border: 1px solid rgba(168,85,247,0.25); border-radius: 12px; padding: 1.25rem; transition: box-shadow 0.2s, border-color 0.2s; }}
-    .film-card:hover {{ border-color: rgba(0,212,255,0.4); box-shadow: 0 0 24px rgba(0,212,255,0.08); }}
+    .section-title {{
+      grid-column: 1 / -1;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      margin: 0.5rem 0 0;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--accent);
+    }}
+    .section-title:first-child {{ margin-top: 0; padding-top: 0; }}
+    .film-card {{
+      background: linear-gradient(135deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      transition: all var(--transition);
+      position: relative;
+      overflow: hidden;
+      animation: fadeUp 0.6s ease-out backwards;
+    }}
+    .film-card::before {{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+      opacity: 0;
+      transition: opacity var(--transition);
+    }}
+    .film-card:hover {{
+      border-color: rgba(0,212,255,0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(0,212,255,0.1);
+    }}
+    .film-card:hover::before {{ opacity: 1; }}
     .film-header {{ display: flex; gap: 1.25rem; flex-wrap: wrap; }}
     .poster {{ position: relative; flex-shrink: 0; }}
-    .poster img {{ width: 210px; height: 315px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }}
+    .poster img {{ width: 210px; height: 315px; object-fit: cover; border-radius: var(--radius-sm); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }}
     .poster .icon--hints {{ position: absolute; right: 0; top: 0; width: 105px; height: 105px; pointer-events: none; }}
     .poster .icon--hints.icon--3d {{ background: url(icons/3D-Performance.png) no-repeat; background-size: 100% auto; background-position: top right; }}
     .film-meta {{ flex: 1; min-width: 200px; }}
@@ -915,8 +1035,8 @@ def build_html(data: Dict[str, Any]) -> str:
     .cert--12A {{ background-image: url(certs/cert-12a.png); }}
     .cert--15 {{ background-image: url(certs/cert-15.png); }}
     .cert--18 {{ background-image: url(certs/cert-18.png); }}
-    .cert-fallback {{ background: #333; color: #fff; font-size: 0.65rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; border-radius: 4px; }}
-    .meta-line {{ color: var(--muted); font-size: 0.9rem; margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; }}
+    .cert-fallback {{ background: var(--surface-3); color: #fff; font-size: 0.65rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; border-radius: 4px; }}
+    .meta-line {{ color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; }}
     .rating-wrap {{ display: inline-flex; align-items: center; gap: 0.4rem; }}
     .rating-bar {{ display: block; width: 3rem; height: 0.5rem; background: rgba(255,255,255,0.25); border-radius: 3px; overflow: hidden; }}
     .rating-fill {{ display: block; height: 0.5rem; background: linear-gradient(90deg, #00d4ff, #a855f7); border-radius: 3px; transition: width 0.2s; }}
@@ -927,23 +1047,42 @@ def build_html(data: Dict[str, Any]) -> str:
     .trailer-lightbox {{ position: fixed; inset: 0; z-index: 1000; display: none; align-items: center; justify-content: center; padding: 1rem; box-sizing: border-box; }}
     .trailer-lightbox.is-open {{ display: flex; }}
     .trailer-lightbox-backdrop {{ position: absolute; inset: 0; background: rgba(0,0,0,0.85); cursor: pointer; }}
-    .trailer-lightbox-inner {{ position: relative; width: 100%; max-width: 90vw; max-height: 90vh; aspect-ratio: 16/9; background: #000; border-radius: 8px; box-shadow: 0 0 40px rgba(0,212,255,0.2); overflow: hidden; }}
+    .trailer-lightbox-inner {{ position: relative; width: 100%; max-width: 90vw; max-height: 90vh; aspect-ratio: 16/9; background: #000; border-radius: var(--radius); box-shadow: 0 0 40px var(--accent-glow); overflow: hidden; }}
     .trailer-lightbox-inner iframe {{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }}
-    .trailer-lightbox-close {{ position: absolute; top: -2.5rem; right: 0; background: var(--card-bg); border: 1px solid rgba(168,85,247,0.3); color: var(--text); width: 2rem; height: 2rem; border-radius: 6px; cursor: pointer; font-size: 1.25rem; line-height: 1; display: flex; align-items: center; justify-content: center; z-index: 1; }}
+    .trailer-lightbox-close {{ position: absolute; top: -2.5rem; right: 0; background: var(--surface-2); border: 1px solid var(--border); color: var(--text); width: 2rem; height: 2rem; border-radius: var(--radius-sm); cursor: pointer; font-size: 1.25rem; line-height: 1; display: flex; align-items: center; justify-content: center; z-index: 1; transition: all var(--transition); }}
     .trailer-lightbox-close:hover {{ border-color: var(--cyan); color: var(--cyan); }}
     .trailer-lightbox-fallback {{ position: absolute; bottom: 0.5rem; left: 0.5rem; font-size: 0.85rem; color: var(--cyan); }}
     .trailer-lightbox-fallback:hover {{ color: var(--purple); }}
-    .film-meta .crew {{ font-size: 0.9rem; color: var(--muted); margin: 0; padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); }}
+    .film-meta .crew {{ font-size: 0.9rem; color: var(--text-muted); margin: 0; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }}
     .film-meta .crew:first-of-type {{ padding-top: 0; }}
-    .film-meta .cast {{ font-size: 0.9rem; color: var(--muted); margin: 0; padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); }}
-    .film-meta .synopsis {{ font-size: 0.9rem; color: var(--muted); margin: 0; padding: 0.75rem 0 0.5rem; line-height: 1.5; max-width: 56em; border-top: 1px solid rgba(255,255,255,0.1); }}
+    .film-meta .cast {{ font-size: 0.9rem; color: var(--text-muted); margin: 0; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }}
+    .film-meta .synopsis {{ font-size: 0.9rem; color: var(--text-muted); margin: 0; padding: 0.75rem 0 0.5rem; line-height: 1.5; max-width: 56em; border-top: 1px solid var(--border); }}
     .links {{ margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }}
-    .links a {{ display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.5rem 0.75rem; border-radius: 8px; font-size: 0.9rem; text-decoration: none; }}
-    .links .btn {{ background: linear-gradient(135deg, var(--cyan), var(--purple)); color: var(--bg); font-weight: 600; border: none; }}
-    .links .link {{ color: var(--cyan); background: rgba(255,255,255,0.06); border: 1px solid rgba(0,212,255,0.35); }}
-    .links .link:hover {{ background: rgba(0,212,255,0.12); border-color: var(--cyan); }}
+    .links a {{
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: all var(--transition);
+    }}
+    .links .btn {{
+      background: linear-gradient(135deg, var(--cyan), var(--purple));
+      color: var(--bg);
+      font-weight: 600;
+      border: none;
+    }}
+    .links .btn:hover {{
+      background: linear-gradient(135deg, #20dfff, #b366ff);
+      transform: scale(1.02);
+      box-shadow: 0 4px 20px var(--accent-glow);
+    }}
+    .links .link {{ color: var(--accent); background: rgba(255,255,255,0.06); border: 1px solid var(--border); }}
+    .links .link:hover {{ background: rgba(0,212,255,0.12); border-color: var(--cyan); color: var(--purple); }}
     .ext-logo {{ width: 18px; height: 18px; flex-shrink: 0; }}
-    .showtimes {{ margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.08); font-size: 0.9rem; }}
+    .showtimes {{ margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.9rem; }}
     .day-group {{ margin-bottom: 0.75rem; }}
     .day-group:last-child {{ margin-bottom: 0; }}
     .st-date {{ font-weight: 600; margin-bottom: 0.25rem; color: var(--text); }}
@@ -951,19 +1090,33 @@ def build_html(data: Dict[str, Any]) -> str:
     .st-row:last-child {{ margin-bottom: 0; }}
     .st-time {{ font-variant-numeric: tabular-nums; }}
     .st-time a, .showtime a {{ color: var(--cyan); }}
-    .st-time .past {{ color: var(--muted); }}
-    .st-screen {{ color: var(--muted); }}
+    .st-time .past {{ color: var(--text-muted); }}
+    .st-screen {{ color: var(--text-muted); }}
     .st-tags {{ display: flex; align-items: center; flex-wrap: wrap; gap: 0.25rem; }}
     .cast-more-btn {{ background: none; border: none; color: var(--cyan); cursor: pointer; font-size: 0.85em; padding: 0 0.25rem; font-family: inherit; }}
     .cast-more-btn:hover {{ text-decoration: underline; }}
-    .tag {{ font-size: 0.75rem; color: var(--muted); margin-left: 0.25rem; display: inline-flex; align-items: center; gap: 0.25rem; }}
+    .tag {{ font-size: 0.75rem; color: var(--text-muted); margin-left: 0.25rem; display: inline-flex; align-items: center; gap: 0.25rem; }}
     .tag-icon {{ width: 14px; height: 14px; flex-shrink: 0; vertical-align: middle; }}
     .cal-link {{ color: var(--purple); text-decoration: none; margin-left: 0.25rem; }}
-    footer {{ text-align: center; padding: 2rem; color: var(--muted); font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.06); }}
-    footer a {{ color: var(--cyan); }}
+    footer {{
+      margin-top: 4rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      animation: fadeUp 0.6s ease-out backwards;
+    }}
+    footer a {{ color: var(--accent); text-decoration: none; font-weight: 500; transition: color var(--transition); }}
+    footer a:hover {{ color: var(--purple); }}
+    .footer-disclaimer {{ font-size: 0.9rem; max-width: 36rem; margin: 0 auto 1rem; line-height: 1.6; }}
+    .footer-links {{ display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.5rem; margin-bottom: 1rem; }}
+    .footer-attribution {{ font-size: 0.8rem; opacity: 0.85; margin: 0; line-height: 1.5; }}
   </style>
 </head>
 <body>
+  <div class="bg-mesh"></div>
+  <div class="bg-grid"></div>
   <div id="trailer-lightbox" class="trailer-lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Trailer video">
     <div class="trailer-lightbox-backdrop" id="trailer-lightbox-backdrop"></div>
     <div class="trailer-lightbox-inner">
@@ -990,7 +1143,7 @@ def build_html(data: Dict[str, Any]) -> str:
       <symbol id="icon-kids-club" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M5 21v-2a4 4 0 0 1 4-4h0"/><circle cx="15" cy="10" r="2"/><path d="M15 21v-2a2 2 0 0 0-2-2h0"/></symbol>
     </defs>
   </svg>
-  <div class="wrap">
+  <div class="page">
     <header>
       <h1>What's on at WTW St Austell</h1>
       <p>Ratings, trailers &amp; links to IMDb, RT and Trakt</p>
@@ -998,7 +1151,17 @@ def build_html(data: Dict[str, Any]) -> str:
     <div class="tabs">{tabs_html}</div>
     <main id="films">{cards_html}</main>
     <footer>
-      <a href="{WTW_WHATS_ON_URL}">WTW Cinemas</a>
+      <p class="footer-disclaimer">An open source fan-made project. Not affiliated with WTW Cinemas.</p>
+      <div class="footer-links">
+        <a href="https://wtwcinemas.co.uk/">WTW Cinemas</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/evenwebb/wtw-whats-on">Source</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/evenwebb/">evenwebb</a>
+      </div>
+      <p class="footer-attribution">
+        Posters and ratings via <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">TMDb</a>. This product uses the TMDB API but is not endorsed or certified by TMDB.
+      </p>
     </footer>
   </div>
   <script>
@@ -1007,9 +1170,13 @@ def build_html(data: Dict[str, Any]) -> str:
         document.querySelectorAll('.tab').forEach(function(b) {{ b.classList.remove('active'); }});
         btn.classList.add('active');
         var date = btn.getAttribute('data-date');
+        var isAll = date === 'all';
+        document.querySelectorAll('.section-title').forEach(function(el) {{
+          el.style.display = isAll ? 'block' : 'none';
+        }});
         document.querySelectorAll('.film-card').forEach(function(card) {{
           var dates = (card.getAttribute('data-dates') || '').split(',');
-          var show = date === 'all' || dates.indexOf(date) !== -1;
+          var show = isAll || dates.indexOf(date) !== -1;
           card.style.display = show ? 'block' : 'none';
         }});
       }});
