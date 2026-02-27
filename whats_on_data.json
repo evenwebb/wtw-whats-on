@@ -1,25 +1,25 @@
 {
-  "updated_at": "2026-02-09T22:35:36Z",
+  "updated_at": "2026-02-27T09:51:00Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
       "url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
       "films": [
         {
-          "title": "Send Help",
-          "search_title": "Send Help",
-          "film_slug": "send-help",
-          "synopsis": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work...",
-          "cast": "Rachel McAdams, Dylan O'Brien",
-          "runtime_min": 113,
-          "film_url": "https://wtwcinemas.co.uk/film/send-help/?screen=st-austell",
-          "poster_url": "posters/send-help.jpg",
+          "title": "Wuthering Heights",
+          "search_title": "Wuthering Heights",
+          "film_slug": "wuthering-heights",
+          "synopsis": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
+          "cast": "Margot Robbie, Jacob Elordi",
+          "runtime_min": 137,
+          "film_url": "https://wtwcinemas.co.uk/film/wuthering-heights/?screen=st-austell",
+          "poster_url": "posters/wuthering-heights.jpg",
           "showtimes": [
             {
-              "date": "2026-02-09",
-              "time": "17:15",
-              "screen": 1,
-              "booking_url": "",
+              "date": "2026-02-27",
+              "time": "16:30",
+              "screen": 2,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76350&screen=staustell",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -27,10 +27,10 @@
               ]
             },
             {
-              "date": "2026-02-09",
-              "time": "20:00",
-              "screen": 1,
-              "booking_url": "",
+              "date": "2026-02-27",
+              "time": "19:30",
+              "screen": 2,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76351&screen=staustell",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -38,10 +38,10 @@
               ]
             },
             {
-              "date": "2026-02-10",
-              "time": "17:15",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76102&screen=staustell",
+              "date": "2026-02-28",
+              "time": "14:15",
+              "screen": 3,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76375&screen=staustell",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -49,10 +49,10 @@
               ]
             },
             {
-              "date": "2026-02-10",
-              "time": "20:00",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76103&screen=staustell",
+              "date": "2026-02-28",
+              "time": "19:30",
+              "screen": 2,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76353&screen=staustell",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -60,10 +60,10 @@
               ]
             },
             {
-              "date": "2026-02-11",
-              "time": "20:00",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76112&screen=staustell",
+              "date": "2026-03-01",
+              "time": "16:30",
+              "screen": 2,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76354&screen=staustell",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -71,10 +71,10 @@
               ]
             },
             {
-              "date": "2026-02-12",
-              "time": "17:15",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76119&screen=staustell",
+              "date": "2026-03-02",
+              "time": "16:30",
+              "screen": 2,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76356&screen=staustell",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -82,10 +82,10 @@
               ]
             },
             {
-              "date": "2026-02-12",
-              "time": "20:00",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76120&screen=staustell",
+              "date": "2026-03-02",
+              "time": "19:30",
+              "screen": 2,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76357&screen=staustell",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -93,10 +93,10 @@
               ]
             },
             {
-              "date": "2026-02-13",
-              "time": "17:00",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76135&screen=staustell",
+              "date": "2026-03-03",
+              "time": "19:30",
+              "screen": 2,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76358&screen=staustell",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -104,10 +104,10 @@
               ]
             },
             {
-              "date": "2026-02-13",
-              "time": "19:45",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76136&screen=staustell",
+              "date": "2026-03-04",
+              "time": "14:15",
+              "screen": 2,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76372&screen=staustell",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -115,10 +115,10 @@
               ]
             },
             {
-              "date": "2026-02-14",
-              "time": "17:00",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76142&screen=staustell",
+              "date": "2026-03-04",
+              "time": "19:30",
+              "screen": 2,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76359&screen=staustell",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -126,10 +126,10 @@
               ]
             },
             {
-              "date": "2026-02-14",
-              "time": "19:45",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76143&screen=staustell",
+              "date": "2026-03-05",
+              "time": "19:30",
+              "screen": 2,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76360&screen=staustell",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -137,98 +137,10 @@
               ]
             },
             {
-              "date": "2026-02-15",
-              "time": "17:00",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76158&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-16",
-              "time": "17:00",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76175&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-16",
-              "time": "19:45",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76176&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-17",
-              "time": "19:45",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76192&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-18",
-              "time": "17:00",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76208&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-18",
-              "time": "19:45",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76209&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-19",
-              "time": "17:00",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76224&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-19",
-              "time": "19:45",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76225&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-11",
-              "time": "17:15",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76111&screen=staustell",
+              "date": "2026-02-28",
+              "time": "16:30",
+              "screen": 2,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76352&screen=staustell",
               "tags": [
                 "Audio Description",
                 "Subtitles",
@@ -237,266 +149,200 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=MGzEPxcg4SY",
-          "vote_average": 7.01,
-          "genres": [
-            "Horror",
-            "Thriller",
-            "Comedy"
-          ],
-          "imdb_id": "tt8036976",
-          "overview": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
-          "director": "Sam Raimi",
-          "writer": "Damian Shannon, Mark Swift"
-        },
-        {
-          "title": "Shelter",
-          "search_title": "Shelter",
-          "film_slug": "shelter",
-          "synopsis": "Mason lives in recluse at a remote setting by the sea. When he chooses to rescue a young girl from drowning in a terrible storm,...",
-          "cast": "Jason Statham, Bodhi Rae Breathnach, Bill Nighy",
-          "runtime_min": 107,
-          "film_url": "https://wtwcinemas.co.uk/film/shelter/?screen=st-austell",
-          "poster_url": "posters/shelter.jpg",
-          "showtimes": [
-            {
-              "date": "2026-02-09",
-              "time": "19:30",
-              "screen": 4,
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-10",
-              "time": "19:30",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76109&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-11",
-              "time": "19:30",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76114&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-12",
-              "time": "19:30",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76126&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=kdcxogb4leQ",
-          "vote_average": 7.7,
-          "genres": [
-            "Action",
-            "Crime",
-            "Thriller"
-          ],
-          "imdb_id": "tt32357218",
-          "overview": "A man living in self-imposed exile on a remote island rescues a young girl from a violent storm, setting off a chain of events that forces him out of seclusion to protect her from enemies tied to his past.",
-          "director": "Ric Roman Waugh",
-          "writer": "Ward Parry"
-        },
-        {
-          "title": "Is This Thing On",
-          "search_title": "Is This Thing On",
-          "film_slug": "is-this-thing-on",
-          "synopsis": "As their marriage quietly unravels, Alex faces middle age and an impending divorce, seeking new purpose in the New York comedy scene while Tess confronts...",
-          "cast": "Will Arnett, Laura Dern, Andra Day, Bradley Cooper",
-          "runtime_min": 121,
-          "film_url": "https://wtwcinemas.co.uk/film/is-this-thing-on/?screen=st-austell",
-          "poster_url": "posters/is-this-thing-on.jpg",
-          "showtimes": [
-            {
-              "date": "2026-02-09",
-              "time": "19:45",
-              "screen": 2,
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-10",
-              "time": "19:45",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76105&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-11",
-              "time": "19:45",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76113&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-12",
-              "time": "19:15",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76122&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=DnIZfYuDEvQ",
-          "vote_average": 7.038,
-          "genres": [
-            "Comedy",
-            "Drama"
-          ],
-          "imdb_id": "tt28083456",
-          "overview": "As their marriage quietly unravels, Alex faces middle age and an impending divorce, seeking new purpose in the New York comedy scene while Tess confronts the sacrifices she made for their family—forcing them to navigate co-parenting, identity, and whether love can take a new form.",
-          "director": "Bradley Cooper",
-          "writer": "Mark Chappell, Will Arnett, Bradley Cooper, John Bishop"
-        },
-        {
-          "title": "Hamnet",
-          "search_title": "Hamnet",
-          "film_slug": "hamnet",
-          "synopsis": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
-          "cast": "Jessie Buckley, Paul Mescal",
-          "runtime_min": 126,
-          "film_url": "https://wtwcinemas.co.uk/film/hamnet/?screen=st-austell",
-          "poster_url": "posters/hamnet.jpg",
-          "showtimes": [
-            {
-              "date": "2026-02-09",
-              "time": "16:45",
-              "screen": 4,
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-10",
-              "time": "17:30",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76106&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-11",
-              "time": "15:30",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76116&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-12",
-              "time": "17:30",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76123&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-17",
-              "time": "19:00",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76190&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-18",
-              "time": "19:00",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76207&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-19",
-              "time": "19:00",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76223&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=ZqGffamnFqw",
-          "vote_average": 7.8,
+          "trailer_url": "https://www.youtube.com/watch?v=a6eTho1jxuM",
+          "vote_average": 6.643,
           "genres": [
             "Drama",
-            "Romance",
-            "History"
+            "Romance"
           ],
-          "imdb_id": "tt14905854",
-          "overview": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
-          "director": "Chloé Zhao",
-          "writer": "Maggie O'Farrell, Chloé Zhao"
+          "imdb_id": "tt0104181",
+          "overview": "Young orphan Heathcliff is adopted by the wealthy Earnshaw family and moves into their estate, Wuthering Heights. Soon, the new resident falls for his compassionate foster sister, Cathy. The two share a remarkable bond that seems unbreakable until Cathy, feeling the pressure of social convention, suppresses her feelings and marries Edgar Linton, a man of means who befits her stature. Heathcliff vows to win her back.",
+          "director": "Peter Kosminsky",
+          "writer": "Anne Devlin, Emily Brontë"
         },
         {
-          "title": "Avatar: Fire and Ash",
-          "search_title": "Avatar: Fire and Ash",
-          "film_slug": "avatar-fire-and-ash-hfr-3d",
-          "synopsis": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat...",
-          "cast": "Sam Worthington, Zoe Saldaña, Sigourney Weaver, Kate Winslet",
-          "runtime_min": 197,
-          "film_url": "https://wtwcinemas.co.uk/film/avatar-fire-and-ash-hfr-3d/?screen=st-austell",
-          "poster_url": "posters/avatar-fire-and-ash-hfr-3d.jpg",
+          "title": "Cold Storage",
+          "search_title": "Cold Storage",
+          "film_slug": "cold-storage",
+          "synopsis": "When a mutating, highly contagious fungus escapes a sealed facility, two young employees - joined by a grizzled bioterror operative - must survive the wildest...",
+          "cast": "Georgina Campbell, Joe Keery, Liam Neeson, Lesley Manville, Vanessa Redgrave",
+          "runtime_min": 99,
+          "film_url": "https://wtwcinemas.co.uk/film/cold-storage/?screen=st-austell",
+          "poster_url": "",
           "showtimes": [
             {
-              "date": "2026-02-11",
-              "time": "18:30",
+              "date": "2026-02-27",
+              "time": "20:15",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76385&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-02-28",
+              "time": "20:15",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76386&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-03-01",
+              "time": "17:45",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76384&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-03-02",
+              "time": "20:15",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76387&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-03-03",
+              "time": "17:15",
+              "screen": 2,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76373&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-03-04",
+              "time": "17:15",
+              "screen": 2,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76374&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-03-05",
+              "time": "20:15",
               "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76127&screen=staustell",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76376&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "",
+          "vote_average": null,
+          "genres": [],
+          "imdb_id": "",
+          "overview": "",
+          "director": "",
+          "writer": ""
+        },
+        {
+          "title": "GOAT",
+          "search_title": "GOAT",
+          "film_slug": "goat",
+          "synopsis": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball - a high-intensity, co-ed, full-contact sport dominated...",
+          "cast": "Caleb McLaughlin, Gabrielle Union, Jenifer Lewis, David Harbour",
+          "runtime_min": 100,
+          "film_url": "https://wtwcinemas.co.uk/film/goat/?screen=st-austell",
+          "poster_url": "posters/goat.jpg",
+          "showtimes": [
+            {
+              "date": "2026-02-27",
+              "time": "17:45",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76381&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-02-28",
+              "time": "12:15",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76377&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-02-28",
+              "time": "15:00",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76379&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-02-28",
+              "time": "17:45",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76382&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-01",
+              "time": "12:15",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76378&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-01",
+              "time": "15:00",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76380&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-02",
+              "time": "17:45",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76383&screen=staustell",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -505,292 +351,18 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=RlofL5WU28k",
-          "vote_average": 7.297,
-          "genres": [
-            "Science Fiction",
-            "Adventure",
-            "Fantasy"
-          ],
-          "imdb_id": "tt1757678",
-          "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
-          "director": "James Cameron",
-          "writer": "James Cameron, Shane Salerno, Amanda Silver, Rick Jaffa, Josh Friedman"
-        },
-        {
-          "title": "The Housemaid",
-          "search_title": "The Housemaid",
-          "film_slug": "the-housemaid",
-          "synopsis": "A woman with a troubled past accepts a job as a live-in maid for a wealthy, seemingly perfect family.",
-          "cast": "Sydney Sweeney, Amanda Seyfried, Brandon Sklenar",
-          "runtime_min": 131,
-          "film_url": "https://wtwcinemas.co.uk/film/the-housemaid/?screen=st-austell",
-          "poster_url": "posters/the-housemaid.jpg",
-          "showtimes": [
-            {
-              "date": "2026-02-10",
-              "time": "16:45",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76104&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-12",
-              "time": "11:00",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=75896&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-12",
-              "time": "11:15",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=75897&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-13",
-              "time": "19:00",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76134&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-14",
-              "time": "19:00",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76141&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-16",
-              "time": "19:00",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76174&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=TGdKFCVn6G0",
-          "vote_average": 7.186,
-          "genres": [
-            "Mystery",
-            "Thriller"
-          ],
-          "imdb_id": "tt27543632",
-          "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
-          "director": "Paul Feig",
-          "writer": "Rebecca Sonnenshine, Freida McFadden"
-        },
-        {
-          "title": "Song Sung Blue",
-          "search_title": "Song Sung Blue",
-          "film_slug": "song-sung-blue",
-          "synopsis": "Based on a true story, two down-on-their-luck musicians form a joyous Neil Diamond tribute band, proving it's never too late to find love and follow...",
-          "cast": "Hugh Jackman, Kate Hudson",
-          "runtime_min": 132,
-          "film_url": "https://wtwcinemas.co.uk/film/song-sung-blue/?screen=st-austell",
-          "poster_url": "posters/song-sung-blue.jpg",
-          "showtimes": [
-            {
-              "date": "2026-02-26",
-              "time": "11:00",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=75974&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-26",
-              "time": "11:15",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=75975&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=Hm12K_cuLWA",
-          "vote_average": 7.605,
-          "genres": [
-            "Drama",
-            "Music",
-            "Romance"
-          ],
-          "imdb_id": "tt30343021",
-          "overview": "Based on a true story, two down-on-their-luck musicians form a joyous Neil Diamond tribute band, proving it's never too late to find love and follow your dreams.",
-          "director": "Craig Brewer",
-          "writer": "Craig Brewer"
-        },
-        {
-          "title": "Marty Supreme",
-          "search_title": "Marty Supreme",
-          "film_slug": "marty-supreme",
-          "synopsis": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
-          "cast": "Timothée Chalamet, Gwyneth Paltrow, Odessa A'zion",
-          "runtime_min": 150,
-          "film_url": "https://wtwcinemas.co.uk/film/marty-supreme/?screen=st-austell",
-          "poster_url": "posters/marty-supreme.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "11:00",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76054&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-05",
-              "time": "11:15",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76055&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=pwE3ZG1kIqw",
-          "vote_average": 7.8,
-          "genres": [
-            "Drama"
-          ],
-          "imdb_id": "tt32916440",
-          "overview": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
-          "director": "Josh Safdie",
-          "writer": "Josh Safdie, Ronald Bronstein"
-        },
-        {
-          "title": "The SpongeBob Movie: Search For Squarepants",
-          "search_title": "The SpongeBob Movie: Search For Squarepants",
-          "film_slug": "the-spongebob-movie-search-for-squarepants",
-          "synopsis": "SpongeBob travels to the depths of the ocean and faces off against the ghost of the Flying Dutchman.",
-          "cast": "Tom Kenny, Clancy Brown, Rodger Bumpass, Bill Fagerbakke",
-          "runtime_min": 90,
-          "film_url": "https://wtwcinemas.co.uk/film/the-spongebob-movie-search-for-squarepants/?screen=st-austell",
-          "poster_url": "posters/the-spongebob-movie-search-for-squarepants.jpg",
-          "showtimes": [
-            {
-              "date": "2026-02-14",
-              "time": "11:15",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76146&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-15",
-              "time": "11:15",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76162&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-16",
-              "time": "11:15",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76179&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-17",
-              "time": "11:15",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76195&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-18",
-              "time": "11:15",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76212&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-19",
-              "time": "11:15",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76228&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=UazW5vuAsF0",
-          "vote_average": 6.676,
+          "trailer_url": "https://www.youtube.com/watch?v=4UoscmGBCZ0",
+          "vote_average": 6.6,
           "genres": [
             "Animation",
-            "Family",
             "Comedy",
-            "Adventure",
-            "Fantasy"
+            "Family",
+            "Action"
           ],
-          "imdb_id": "tt23572848",
-          "overview": "Desperate to be a big guy, SpongeBob sets out to prove his bravery to Mr. Krabs by following The Flying Dutchman – a mysterious swashbuckling ghost pirate – on a seafaring adventure that takes him to the deepest depths of the deep sea, where no Sponge has gone before.",
-          "director": "Derek Drymon",
-          "writer": "Pam Brady, Kaz, Matt Lieberman, Marc Ceccarelli, Stephen Hillenburg"
+          "imdb_id": "tt27613895",
+          "overview": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball – a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world. Will's new teammates aren't thrilled about having a little goat on their roster, but Will is determined to revolutionize the sport and prove once and for all that 'smalls can ball'! He has to do something he has never done before.",
+          "director": "Tyree Dillihay",
+          "writer": "Aaron Buchsbaum, Teddy Riley, Nicolas Curcio"
         },
         {
           "title": "Zootropolis 2",
@@ -803,10 +375,10 @@
           "poster_url": "posters/zootropolis-2.jpg",
           "showtimes": [
             {
-              "date": "2026-02-14",
-              "time": "11:45",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76151&screen=staustell",
+              "date": "2026-02-28",
+              "time": "13:45",
+              "screen": 2,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76370&screen=staustell",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -815,58 +387,10 @@
               ]
             },
             {
-              "date": "2026-02-15",
-              "time": "11:45",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76167&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-16",
-              "time": "11:45",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76184&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-17",
-              "time": "11:45",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76200&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-18",
-              "time": "11:45",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76217&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-19",
-              "time": "11:45",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76233&screen=staustell",
+              "date": "2026-03-01",
+              "time": "13:45",
+              "screen": 2,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76371&screen=staustell",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -890,1016 +414,15 @@
           "writer": "Jared Bush"
         },
         {
-          "title": "Primate",
-          "search_title": "Primate",
-          "film_slug": "primate",
-          "synopsis": "Home from college, Lucy reunites with family including pet chimp Ben. Ben contracts rabies during a pool party and turns aggressive. Lucy and friends barricade...",
-          "cast": "Jessica Alexander, Troy Kotsur, Victoria Wyant",
-          "runtime_min": 89,
-          "film_url": "https://wtwcinemas.co.uk/film/primate/?screen=st-austell",
-          "poster_url": "posters/primate.jpg",
-          "showtimes": [
-            {
-              "date": "2026-02-09",
-              "time": "17:30",
-              "screen": 2,
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-10",
-              "time": "20:15",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76107&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-11",
-              "time": "17:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76115&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-12",
-              "time": "20:15",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76124&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=xKGw0q_6aGw",
-          "vote_average": 6.315,
-          "genres": [
-            "Horror",
-            "Thriller"
-          ],
-          "imdb_id": "tt33028778",
-          "overview": "Lucy, a college student, along with her friends, spend their vacation at her family's home in Hawaii, which includes her pet chimpanzee, Ben. However, when Ben contracts rabies after being bitten by a rabid animal, the group must fight for their lives in order to avoid the now-violent chimp.",
-          "director": "Johannes Roberts",
-          "writer": "Johannes Roberts, Ernest Riera"
-        },
-        {
-          "title": "Kangaroo",
-          "search_title": "Kangaroo",
-          "film_slug": "kangaroo",
-          "synopsis": "Ex TV personality, Chris Masterman, becomes stranded in an Outback town outside Alice Springs. There, he teams up with 12-year-old Indigenous girl Charlie. The pair...",
-          "cast": "Lily Whiteley, Ryan Corr, Rachel House",
-          "runtime_min": 107,
-          "film_url": "https://wtwcinemas.co.uk/film/kangaroo/?screen=st-austell",
-          "poster_url": "posters/kangaroo.jpg",
-          "showtimes": [
-            {
-              "date": "2026-02-10",
-              "time": "17:00",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76108&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-11",
-              "time": "17:00",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76118&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-12",
-              "time": "17:00",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76125&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-14",
-              "time": "14:15",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76152&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-15",
-              "time": "14:15",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76168&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-16",
-              "time": "14:15",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76185&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-17",
-              "time": "14:15",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76201&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-18",
-              "time": "14:15",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76218&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-19",
-              "time": "14:15",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76234&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=RvmaXOvLJNc",
-          "vote_average": 6.536,
-          "genres": [
-            "Family",
-            "Comedy"
-          ],
-          "imdb_id": "tt20204886",
-          "overview": "Ex TV personality, Chris Masterman, becomes stranded in an Outback town outside Alice Springs. There, he teams up with 12-year-old Indigenous girl Charlie. The pair form an unlikely friendship and work together to rescue and rehabilitate orphaned joeys in the remote but stunning Outback community—an endeavour that proves to be life-changing for them both.",
-          "director": "Kate Woods",
-          "writer": "Harry Cripps, Melina Marchetta"
-        },
-        {
-          "title": "Wuthering Heights",
-          "search_title": "Wuthering Heights",
-          "film_slug": "wuthering-heights",
-          "synopsis": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
-          "cast": "Margot Robbie, Jacob Elordi",
-          "runtime_min": 137,
-          "film_url": "https://wtwcinemas.co.uk/film/wuthering-heights/?screen=st-austell",
-          "poster_url": "posters/wuthering-heights.jpg",
-          "showtimes": [
-            {
-              "date": "2026-02-13",
-              "time": "16:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76132&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-13",
-              "time": "19:15",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76131&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-14",
-              "time": "13:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76147&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-14",
-              "time": "16:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76139&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-14",
-              "time": "19:15",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76138&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-15",
-              "time": "13:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76163&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-15",
-              "time": "16:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76155&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-16",
-              "time": "13:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76180&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-16",
-              "time": "16:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76172&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-16",
-              "time": "19:15",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76171&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-17",
-              "time": "13:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76196&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-17",
-              "time": "16:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76188&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-17",
-              "time": "19:15",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76187&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-18",
-              "time": "13:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76213&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-18",
-              "time": "16:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76205&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-18",
-              "time": "19:15",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76204&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-19",
-              "time": "13:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76229&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-19",
-              "time": "16:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76221&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-19",
-              "time": "19:15",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76220&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=a6eTho1jxuM",
-          "vote_average": 6.643,
-          "genres": [
-            "Drama",
-            "Romance"
-          ],
-          "imdb_id": "tt0104181",
-          "overview": "Young orphan Heathcliff is adopted by the wealthy Earnshaw family and moves into their estate, Wuthering Heights. Soon, the new resident falls for his compassionate foster sister, Cathy. The two share a remarkable bond that seems unbreakable until Cathy, feeling the pressure of social convention, suppresses her feelings and marries Edgar Linton, a man of means who befits her stature. Heathcliff vows to win her back.",
-          "director": "Peter Kosminsky",
-          "writer": "Anne Devlin, Emily Brontë"
-        },
-        {
-          "title": "Stitch Head",
-          "search_title": "Stitch Head",
-          "film_slug": "stitch-head",
-          "synopsis": "Stitch Head was the first creature brought to 'almost life' by mad professor Erasmus. In the years since, he's become nursemaid to the master's ever-growing...",
-          "cast": "Asa Butterfield, Joel Fry, Alison Steadman",
-          "runtime_min": 91,
-          "film_url": "https://wtwcinemas.co.uk/film/stitch-head/?screen=st-austell",
-          "poster_url": "posters/stitch-head.jpg",
-          "showtimes": [
-            {
-              "date": "2026-02-14",
-              "time": "11:00",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76148&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-14",
-              "time": "13:15",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76149&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-15",
-              "time": "13:15",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76165&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-16",
-              "time": "11:00",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76181&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-16",
-              "time": "13:15",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76182&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-17",
-              "time": "11:00",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76197&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-17",
-              "time": "13:15",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76198&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-18",
-              "time": "11:00",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76214&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-18",
-              "time": "13:15",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76215&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-19",
-              "time": "11:00",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76230&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-19",
-              "time": "13:15",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76231&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=SlHrSRmobKQ",
-          "vote_average": 7.0,
-          "genres": [
-            "Animation",
-            "Adventure",
-            "Family",
-            "Comedy"
-          ],
-          "imdb_id": "tt26720001",
-          "overview": "Stitch Head was the first creature brought to 'almost life' by mad professor Erasmus. In the years since, he’s become nursemaid to the master’s ever-growing menagerie of neglected creatures, tasked with teaching them to suppress their 'inner monster' and hide out in the castle — away from prying eyes and itchy pitchfork fingers, of the village mob in the valley below. But when grubby circus impresario Fulbert Freakfinder arrives offering Stitch Head a starring role in his freak show, our hero is tempted by the promise of love and acceptance.",
-          "director": "Steve Hudson",
-          "writer": "Steve Hudson"
-        },
-        {
-          "title": "GOAT",
-          "search_title": "GOAT",
-          "film_slug": "goat",
-          "synopsis": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball - a high-intensity, co-ed, full-contact sport dominated...",
-          "cast": "Caleb McLaughlin, Gabrielle Union, Jenifer Lewis, David Harbour",
-          "runtime_min": 100,
-          "film_url": "https://wtwcinemas.co.uk/film/goat/?screen=st-austell",
-          "poster_url": "posters/goat.jpg",
-          "showtimes": [
-            {
-              "date": "2026-02-13",
-              "time": "16:45",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76130&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-14",
-              "time": "11:30",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76144&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-14",
-              "time": "14:00",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76145&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-14",
-              "time": "16:45",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76137&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-15",
-              "time": "11:30",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76160&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-15",
-              "time": "14:00",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76161&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-16",
-              "time": "11:30",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76177&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-16",
-              "time": "14:00",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76178&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-16",
-              "time": "16:45",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76170&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-17",
-              "time": "11:30",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76193&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-17",
-              "time": "14:00",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76194&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-17",
-              "time": "16:45",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76186&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-18",
-              "time": "11:30",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76210&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-18",
-              "time": "14:00",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76211&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-18",
-              "time": "16:45",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76203&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-19",
-              "time": "11:30",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76226&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-19",
-              "time": "14:00",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76227&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-19",
-              "time": "16:45",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76219&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-15",
-              "time": "11:00",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76169&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning",
-                "Autism Friendly"
-              ]
-            },
-            {
-              "date": "2026-02-15",
-              "time": "16:45",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76153&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=4UoscmGBCZ0",
-          "vote_average": 6.6,
-          "genres": [
-            "Animation",
-            "Comedy",
-            "Family",
-            "Action"
-          ],
-          "imdb_id": "tt27613895",
-          "overview": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball – a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world. Will's new teammates aren't thrilled about having a little goat on their roster, but Will is determined to revolutionize the sport and prove once and for all that 'smalls can ball'! He has to do something he has never done before.",
-          "director": "Tyree Dillihay",
-          "writer": "Aaron Buchsbaum, Teddy Riley, Nicolas Curcio"
-        },
-        {
-          "title": "Crime 101",
-          "search_title": "Crime 101",
-          "film_slug": "crime-101",
-          "synopsis": "When an elusive thief whose high-stakes heists unfold along the iconic 101 freeway in Los Angeles eyes the score of a lifetime, with hopes of...",
-          "cast": "Chris Hemsworth, Halle Berry, Mark Ruffalo, Barry Keoghan, Monica Barbaro",
-          "runtime_min": 141,
-          "film_url": "https://wtwcinemas.co.uk/film/crime-101/?screen=st-austell",
-          "poster_url": "posters/crime-101.jpg",
-          "showtimes": [
-            {
-              "date": "2026-02-13",
-              "time": "19:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76133&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-14",
-              "time": "15:45",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76150&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-14",
-              "time": "19:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76140&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-15",
-              "time": "15:45",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76166&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-16",
-              "time": "15:45",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76183&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-16",
-              "time": "19:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76173&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-17",
-              "time": "15:45",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76199&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-17",
-              "time": "19:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76189&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-18",
-              "time": "15:45",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76216&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-19",
-              "time": "15:45",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76232&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-19",
-              "time": "19:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76222&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-18",
-              "time": "19:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76206&screen=staustell",
-              "tags": [
-                "Subtitles",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=WQWlhBXQpqU",
-          "genres": [
-            "Crime",
-            "Thriller"
-          ],
-          "imdb_id": "tt32430579",
-          "overview": "When an elusive thief whose high-stakes heists unfold along the iconic 101 freeway in Los Angeles eyes the score of a lifetime, with hopes of this being his final job, his path collides with a disillusioned insurance broker who is facing her own crossroads, forcing the two to collaborate. Determined to crack the case, a relentless detective closes in on the operation, raising the stakes even higher.",
-          "director": "Bart Layton",
-          "writer": "Don Winslow, Bart Layton",
-          "vote_average": null
-        },
-        {
-          "title": "The Lost Boys of Carbis Bay (And More!)",
-          "search_title": "The Lost Boys of Carbis Bay (And More!)",
-          "film_slug": "the-lost-boys-of-carbis-bay-and-more",
-          "synopsis": "Join us for a one-off screening featuring the award-winning The Lost Boys of Carbis Bay, alongside a hand-picked selection of outdoor short documentaries designed to...",
-          "cast": "",
-          "runtime_min": 70,
-          "film_url": "https://wtwcinemas.co.uk/film/the-lost-boys-of-carbis-bay-and-more/?screen=st-austell",
-          "poster_url": "",
-          "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "18:00",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76129&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "",
-          "vote_average": null,
-          "genres": [],
-          "imdb_id": "",
-          "overview": "",
-          "director": "",
-          "writer": ""
-        },
-        {
           "title": "National Theatre Live: The Audience",
           "search_title": "National Theatre Live: The Audience",
           "film_slug": "national-theatre-live-the-audience",
           "synopsis": "Returning to cinemas for the first time in over a decade, Helen Mirren plays Queen Elizabeth II in the Olivier and Tony Award® -winning hit...",
           "cast": "Helen Mirren, Michael Elwyn, Haydn Gwynne",
-          "runtime_min": 180,
+          "runtime_min": 149,
           "film_url": "https://wtwcinemas.co.uk/film/national-theatre-live-the-audience/?screen=st-austell",
           "poster_url": "posters/national-theatre-live-the-audience.jpg",
           "showtimes": [
-            {
-              "date": "2026-02-26",
-              "time": "19:15",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=75467&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Event cinema"
-              ]
-            },
             {
               "date": "2026-03-01",
               "time": "14:00",
@@ -1933,6 +456,355 @@
           "overview": "For sixty years, Elizabeth II has met each of her twelve Prime Ministers in a weekly audience at Buckingham Palace, a meeting like no other in British public life, it is private.",
           "director": "Robin Lough",
           "writer": "Peter Morgan"
+        },
+        {
+          "title": "Scream 7",
+          "search_title": "Scream 7",
+          "film_slug": "scream-7",
+          "synopsis": "When a new Ghostface killer emerges in the quiet town where Sidney Prescott has built a new life, her darkest fears are realized as her...",
+          "cast": "Neve Campbell, Isabel May",
+          "runtime_min": 114,
+          "film_url": "https://wtwcinemas.co.uk/film/scream-7/?screen=st-austell",
+          "poster_url": "",
+          "showtimes": [
+            {
+              "date": "2026-02-27",
+              "time": "17:00",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76236&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-02-27",
+              "time": "19:45",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76237&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-02-28",
+              "time": "17:00",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76240&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-02-28",
+              "time": "19:45",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76241&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-01",
+              "time": "17:00",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76246&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-02",
+              "time": "17:00",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76250&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-02",
+              "time": "19:45",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76251&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-03",
+              "time": "17:00",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76254&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-03",
+              "time": "19:45",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76255&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-04",
+              "time": "19:45",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76363&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-05",
+              "time": "17:00",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76364&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-05",
+              "time": "19:45",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76365&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-04",
+              "time": "17:00",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76362&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Subtitles",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            }
+          ],
+          "trailer_url": "",
+          "vote_average": null,
+          "genres": [],
+          "imdb_id": "",
+          "overview": "",
+          "director": "",
+          "writer": ""
+        },
+        {
+          "title": "EPiC: Elvis Presley in Concert",
+          "search_title": "EPiC: Elvis Presley in Concert",
+          "film_slug": "epic-elvis-presley-in-concert",
+          "synopsis": "A mix of a documentary and concert film made using unused footage from Elvis: That's the Way It Is, the film of Elvis' legendary 1970...",
+          "cast": "Elvis Presley",
+          "runtime_min": 90,
+          "film_url": "https://wtwcinemas.co.uk/film/epic-elvis-presley-in-concert/?screen=st-austell",
+          "poster_url": "",
+          "showtimes": [
+            {
+              "date": "2026-02-27",
+              "time": "17:30",
+              "screen": 3,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76238&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-02-27",
+              "time": "20:00",
+              "screen": 3,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76239&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-02-28",
+              "time": "17:30",
+              "screen": 3,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76244&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-02-28",
+              "time": "20:00",
+              "screen": 3,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76245&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-03-01",
+              "time": "17:30",
+              "screen": 3,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76248&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-03-02",
+              "time": "17:30",
+              "screen": 3,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76252&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-03-02",
+              "time": "20:00",
+              "screen": 3,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76253&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-03-03",
+              "time": "17:30",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76389&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-03-03",
+              "time": "20:00",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76392&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-03-04",
+              "time": "15:00",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76388&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-03-04",
+              "time": "17:30",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76390&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-03-04",
+              "time": "20:00",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76393&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-03-05",
+              "time": "17:30",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76391&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-03-05",
+              "time": "20:00",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76394&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "",
+          "vote_average": null,
+          "genres": [],
+          "imdb_id": "",
+          "overview": "",
+          "director": "",
+          "writer": ""
         },
         {
           "title": "GISELLE - RBO 2025-26 Cinema Season",
@@ -2008,6 +880,296 @@
           "overview": "Manipulated by his jealous ensign Iago, the Moorish general Othello is driven to believe that his new wife Desdemona is unfaithful, setting in motion a chain of deception, jealousy, and violence that leads to tragedy.",
           "director": "Orson Welles",
           "writer": "Jean Sacha, Orson Welles"
+        },
+        {
+          "title": "Marty Supreme",
+          "search_title": "Marty Supreme",
+          "film_slug": "marty-supreme",
+          "synopsis": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
+          "cast": "Timothée Chalamet, Gwyneth Paltrow, Odessa A'zion",
+          "runtime_min": 150,
+          "film_url": "https://wtwcinemas.co.uk/film/marty-supreme/?screen=st-austell",
+          "poster_url": "posters/marty-supreme.jpg",
+          "showtimes": [
+            {
+              "date": "2026-03-05",
+              "time": "11:00",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76260&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "Silver Screen",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-03-05",
+              "time": "11:15",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76055&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Subtitles",
+                "Wheelchair access",
+                "Silver Screen",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=pwE3ZG1kIqw",
+          "vote_average": 7.8,
+          "genres": [
+            "Drama"
+          ],
+          "imdb_id": "tt32916440",
+          "overview": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
+          "director": "Josh Safdie",
+          "writer": "Josh Safdie, Ronald Bronstein"
+        },
+        {
+          "title": "The Lost Boys of Carbis Bay (And More!)",
+          "search_title": "The Lost Boys of Carbis Bay (And More!)",
+          "film_slug": "the-lost-boys-of-carbis-bay-and-more",
+          "synopsis": "Join us for a one-off screening featuring the award-winning The Lost Boys of Carbis Bay, alongside a hand-picked selection of outdoor short documentaries designed to...",
+          "cast": "",
+          "runtime_min": 70,
+          "film_url": "https://wtwcinemas.co.uk/film/the-lost-boys-of-carbis-bay-and-more/?screen=st-austell",
+          "poster_url": "",
+          "showtimes": [
+            {
+              "date": "2026-03-05",
+              "time": "18:00",
+              "screen": 3,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76129&screen=staustell",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "",
+          "vote_average": null,
+          "genres": [],
+          "imdb_id": "",
+          "overview": "",
+          "director": "",
+          "writer": ""
+        },
+        {
+          "title": "Hoppers",
+          "search_title": "Hoppers",
+          "film_slug": "hoppers",
+          "synopsis": "Scientists have discovered how to \"hop\" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an...",
+          "cast": "Piper Curda, Bobby Moynihan, Jon Hamm",
+          "runtime_min": 105,
+          "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=st-austell",
+          "poster_url": "",
+          "showtimes": [
+            {
+              "date": "2026-02-28",
+              "time": "12:00",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76366&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-02-28",
+              "time": "14:30",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76368&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-03-01",
+              "time": "12:00",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76367&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-03-01",
+              "time": "14:30",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76369&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "",
+          "vote_average": null,
+          "genres": [],
+          "imdb_id": "",
+          "overview": "",
+          "director": "",
+          "writer": ""
+        },
+        {
+          "title": "Is This Thing On",
+          "search_title": "Is This Thing On",
+          "film_slug": "is-this-thing-on",
+          "synopsis": "As their marriage quietly unravels, Alex faces middle age and an impending divorce, seeking new purpose in the New York comedy scene while Tess confronts...",
+          "cast": "Will Arnett, Laura Dern, Andra Day, Bradley Cooper",
+          "runtime_min": 121,
+          "film_url": "https://wtwcinemas.co.uk/film/is-this-thing-on/?screen=st-austell",
+          "poster_url": "posters/is-this-thing-on.jpg",
+          "showtimes": [
+            {
+              "date": "2026-03-12",
+              "time": "11:00",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76261&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "Silver Screen",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=DnIZfYuDEvQ",
+          "vote_average": 7.038,
+          "genres": [
+            "Comedy",
+            "Drama"
+          ],
+          "imdb_id": "tt28083456",
+          "overview": "As their marriage quietly unravels, Alex faces middle age and an impending divorce, seeking new purpose in the New York comedy scene while Tess confronts the sacrifices she made for their family—forcing them to navigate co-parenting, identity, and whether love can take a new form.",
+          "director": "Bradley Cooper",
+          "writer": "Mark Chappell, Will Arnett, Bradley Cooper, John Bishop"
+        },
+        {
+          "title": "Is This Thing On? (with subtitles)",
+          "search_title": "Is This Thing On?",
+          "film_slug": "is-this-thing-on-with-subtitles",
+          "synopsis": "As their marriage quietly unravels, Alex faces middle age and an impending divorce, seeking new purpose in the New York comedy scene while Tess confronts...",
+          "cast": "Will Arnett, Laura Dern, Andra Day, Bradley Cooper",
+          "runtime_min": 121,
+          "film_url": "https://wtwcinemas.co.uk/film/is-this-thing-on-with-subtitles/?screen=st-austell",
+          "poster_url": "",
+          "showtimes": [
+            {
+              "date": "2026-03-12",
+              "time": "11:15",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76262&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Subtitles",
+                "Wheelchair access",
+                "Silver Screen",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "",
+          "vote_average": null,
+          "genres": [],
+          "imdb_id": "",
+          "overview": "",
+          "director": "",
+          "writer": ""
+        },
+        {
+          "title": "Mother’s Pride",
+          "search_title": "Mother’s Pride",
+          "film_slug": "mothers-pride",
+          "synopsis": "A comedy about a failing pub, a divided community and a grieving family whose lives are changed by brewing real ale and entering the Great...",
+          "cast": "Mark Addy, Jonno Davies, Gabriella Wilde",
+          "runtime_min": 93,
+          "film_url": "https://wtwcinemas.co.uk/film/mothers-pride/?screen=st-austell",
+          "poster_url": "",
+          "showtimes": [
+            {
+              "date": "2026-03-19",
+              "time": "11:00",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76346&screen=staustell",
+              "tags": [
+                "Wheelchair access",
+                "Silver Screen",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-03-19",
+              "time": "11:15",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76347&screen=staustell",
+              "tags": [
+                "Subtitles",
+                "Wheelchair access",
+                "Silver Screen",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "",
+          "vote_average": null,
+          "genres": [],
+          "imdb_id": "",
+          "overview": "",
+          "director": "",
+          "writer": ""
+        },
+        {
+          "title": "H Is for Hawk",
+          "search_title": "H Is for Hawk",
+          "film_slug": "h-is-for-hawk",
+          "synopsis": "After losing her beloved father, Helen finds herself saved by an unlikely friendship with a stubborn hawk named Mabel. Through the bond, Helen rediscovers the...",
+          "cast": "Claire Foy, Brendan Gleeson, Angus Cooper",
+          "runtime_min": 115,
+          "film_url": "https://wtwcinemas.co.uk/film/h-is-for-hawk/?screen=st-austell",
+          "poster_url": "",
+          "showtimes": [
+            {
+              "date": "2026-03-26",
+              "time": "11:00",
+              "screen": 1,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76348&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "Silver Screen",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-03-26",
+              "time": "11:15",
+              "screen": 4,
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76349&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Subtitles",
+                "Wheelchair access",
+                "Silver Screen",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "",
+          "vote_average": null,
+          "genres": [],
+          "imdb_id": "",
+          "overview": "",
+          "director": "",
+          "writer": ""
         },
         {
           "title": "SIEGFRIED - RBO 2025-26 Cinema Season",

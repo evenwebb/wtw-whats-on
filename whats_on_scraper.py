@@ -12,7 +12,7 @@ import logging
 import os
 import re
 import time
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 from urllib.parse import quote_plus, urljoin
@@ -538,7 +538,7 @@ def _merge_subtitle_variants(films: List[Dict[str, Any]]) -> List[Dict[str, Any]
 
 def scrape_whats_on(scrape_date: Optional[datetime] = None) -> Dict[str, Any]:
     """Fetch whats-on page and return structured data for st-austell."""
-    scrape_date = scrape_date or datetime.utcnow()
+    scrape_date = scrape_date or datetime.now(timezone.utc)
     logger.info("Fetching %s", WTW_WHATS_ON_URL)
     resp = fetch_with_retries(WTW_WHATS_ON_URL)
     soup = BeautifulSoup(resp.text, "html.parser")
@@ -678,7 +678,7 @@ def build_html(data: Dict[str, Any]) -> str:
     """Generate single self-contained index.html with Web3 style and date filtering."""
     cinema = (data.get("cinemas") or {}).get("st-austell") or {}
     films = cinema.get("films") or []
-    build_today_iso = datetime.utcnow().date().isoformat()
+    build_today_iso = datetime.now(timezone.utc).date().isoformat()
 
     # Collect unique dates for tabs
     all_dates = set()
@@ -1230,7 +1230,7 @@ def build_html(data: Dict[str, Any]) -> str:
 
 
 def main() -> None:
-    scrape_date = datetime.utcnow()
+    scrape_date = datetime.now(timezone.utc)
     data = scrape_whats_on(scrape_date)
 
     api_key = os.environ.get("TMDB_API_KEY")

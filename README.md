@@ -1,45 +1,156 @@
-# WTW What's On
+<div align="center">
 
-What's on at **White River Cinema, St Austell** (WTW Cinemas) — ratings, trailers, posters and links to IMDb, RT and Trakt.
+# 🎬 WTW What's On
 
-## Features
+Automatically scrapes WTW Cinemas St Austell listings, optionally enriches films with TMDb metadata, and publishes an updated static site in `docs/` for GitHub Pages.
 
-- **Listings** — Films and showtimes scraped from the [St Austell whats-on page](https://wtwcinemas.co.uk/st-austell/whats-on/), with date tabs to filter.
-- **TMDb enrichment** (optional) — Posters, trailers, ratings (with visual bar), genres, cast, director, writer and synopsis when `TMDB_API_KEY` is set.
-- **Age ratings** — BBFC-style cert icons (U, PG, 12A, 15, 18) and 3D badge on posters where applicable.
-- **Trailer lightbox** — Play trailers in a dimmed overlay without leaving the page.
-- **Accessibility tags** — AD, Subs, WA, 2D, Strobe etc. with tooltips; aligned showtime grid (date, time, screen, tags).
-- **Links** — Book at WTW, IMDb, RT (Rotten Tomatoes), Trakt in a single chip-style row.
+</div>
 
-## Run locally
+---
+
+## 📚 Table of Contents
+
+- [⚡ Quick Start](#-quick-start)
+- [✨ Features](#-features)
+- [📦 Installation](#-installation)
+- [🚀 Usage](#-usage)
+- [⚙️ Configuration](#️-configuration)
+- [🤖 GitHub Actions Automation](#-github-actions-automation)
+- [🌐 GitHub Pages Deployment](#-github-pages-deployment)
+- [🧩 Dependencies](#-dependencies)
+- [🛠️ Troubleshooting](#️-troubleshooting)
+- [⚠️ Known Limitations](#️-known-limitations)
+- [📄 License](#-license)
+
+---
+
+## ⚡ Quick Start
 
 ```bash
+git clone https://github.com/evenwebb/wtw-whats-on.git
+cd wtw-whats-on
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
-python whats_on_scraper.py
+python3 whats_on_scraper.py
 ```
 
-- Writes `whats_on_data.json` and regenerates `docs/index.html` (and assets in `docs/`) every run.
-- **Optional:** set `TMDB_API_KEY` (from [themoviedb.org](https://www.themoviedb.org/settings/api)) for posters, trailers, ratings and genres. Without it, existing TMDb data in the repo is preserved.
+Generated outputs:
 
-## Production (GitHub Pages)
+- `whats_on_data.json`
+- `docs/index.html`
+- `docs/posters/` and related assets
 
-1. **Settings → Pages** — Source: **Deploy from a branch** → Branch: **main** → **/docs** → Save.  
-   Site: [https://evenwebb.github.io/wtw-whats-on](https://evenwebb.github.io/wtw-whats-on).
+---
 
-2. **TMDb (optional)** — **Settings → Secrets and variables → Actions** → New repository secret: **TMDB_API_KEY**. The workflow uses it to refresh posters and metadata.
+## ✨ Features
 
-3. **Workflow** — `.github/workflows/whats_on_html.yml` runs daily (09:00 UTC) and on manual trigger. It commits `whats_on_data.json`, `.tmdb_cache.json`, `.whats_on_fingerprint` and `docs/` only when the data fingerprint changes.
+| Feature | Description |
+|---|---|
+| `🎬 Listings + Showtimes` | Scrapes current films and grouped showtimes from WTW St Austell. |
+| `🏷️ Rich Showtime Metadata` | Preserves screen labels and accessibility/format tags in generated output. |
+| `🧩 Optional TMDb Enrichment` | Adds posters, trailers, ratings, cast, crew, and genres when `TMDB_API_KEY` is set. |
+| `💾 Smart Caching` | Reuses TMDb cache data to reduce API requests and runtime cost. |
+| `🧮 Fingerprint-Based Commits` | Uses deterministic fingerprinting to avoid unnecessary repository commits. |
+| `🌐 Static Site Output` | Regenerates `docs/index.html` and assets for GitHub Pages publishing. |
+| `🤖 Automated Daily Updates` | GitHub Actions runs on schedule/manual trigger with retries and optional failure issue creation. |
 
-## Files
+---
 
-| Path | Purpose |
-|------|--------|
-| `whats_on_scraper.py` | Scrape listings, TMDb enrich, build HTML |
-| `whats_on_data.json` | Cinema data (films, showtimes); committed when changed |
-| `docs/` | Generated site: `index.html`, `posters/`, `certs/`, `icons/` |
-| `.tmdb_cache.json` | TMDb cache; committed to limit API use |
-| `.whats_on_fingerprint` | Hash used to decide whether to commit after a run |
+## 📦 Installation
 
-## License
+```bash
+git clone https://github.com/evenwebb/wtw-whats-on.git
+cd wtw-whats-on
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
 
-[LICENSE](LICENSE).
+---
+
+## 🚀 Usage
+
+```bash
+python3 whats_on_scraper.py
+```
+
+The script refreshes listings, updates `whats_on_data.json`, and regenerates the `docs/` site output.
+
+---
+
+## ⚙️ Configuration
+
+Configuration is set in `whats_on_scraper.py` and via environment variables.
+
+| Variable/Option | Default | Description |
+|---|---|---|
+| `TMDB_API_KEY` (env) | unset | Enables TMDb enrichment when provided. |
+| `HTTP_TIMEOUT` | `60` | Request timeout in seconds. |
+| `HTTP_RETRIES` | `3` | Number of HTTP retries per request. |
+| `HTTP_RETRY_DELAY` | `1` | Initial backoff delay in seconds. |
+| `HTTP_RETRY_MULTIPLIER` | `2` | Retry delay multiplier. |
+| `TMDB_CACHE_FILE` | `.tmdb_cache.json` | TMDb cache storage file. |
+| `TMDB_CACHE_DAYS` | `30` | Cache retention window in days. |
+| `DATA_FILE` | `whats_on_data.json` | Scraped data output file. |
+| `FINGERPRINT_FILE` | `.whats_on_fingerprint` | Hash file used to detect meaningful changes. |
+| `SITE_DIR` | `docs` | Generated static site output directory. |
+
+---
+
+## 🤖 GitHub Actions Automation
+
+This repo includes `.github/workflows/whats_on_html.yml`:
+
+- `⏰` Runs daily at `09:00 UTC`
+- `🖱️` Supports manual runs (`workflow_dispatch`)
+- `🔁` Retries scraper runs before failing (`SCRAPER_RUN_ATTEMPTS`, default `2`)
+- `📝` Commits output files only when changed
+- `🚨` Optionally opens or updates a GitHub issue on failure (`CREATE_FAILURE_ISSUE=true`)
+
+Configure these repository secrets as needed:
+
+- `TMDB_API_KEY` (optional)
+- `CREATE_FAILURE_ISSUE` (`true`/`false`)
+- `SCRAPER_RUN_ATTEMPTS` (integer)
+
+---
+
+## 🌐 GitHub Pages Deployment
+
+1. In GitHub, open **Settings -> Pages**.
+2. Set source to **Deploy from a branch**.
+3. Select branch `main` and folder `/docs`.
+4. Save.
+
+After each workflow update, the published site refreshes from the latest committed `docs/` output.
+
+---
+
+## 🧩 Dependencies
+
+| Package | Purpose |
+|---|---|
+| `requests` | HTTP requests for listings, metadata, and assets |
+| `beautifulsoup4` | HTML parsing for listing extraction |
+
+---
+
+## 🛠️ Troubleshooting
+
+- `🧱` If listings fail to parse, the source HTML structure may have changed.
+- `🔑` If posters/trailers are missing, verify `TMDB_API_KEY` and API quota.
+- `🚦` If updates are not appearing, check workflow logs and Pages build status.
+
+---
+
+## ⚠️ Known Limitations
+
+- `🌐` Site parsing depends on current WTW page markup.
+- `🎯` TMDb matches are best-effort and may occasionally select imperfect title matches.
+
+---
+
+## 📄 License
+
+[GPL-3.0](LICENSE)

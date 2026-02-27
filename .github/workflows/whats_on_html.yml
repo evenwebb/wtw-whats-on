@@ -7,15 +7,27 @@ on:
     - cron: "0 9 * * *"   # 09:00 UTC daily
   workflow_dispatch:
 
+concurrency:
+  group: wtw-whats-on-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: write
+  issues: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PIP_DISABLE_PIP_VERSION_CHECK: "1"
+      CREATE_FAILURE_ISSUE: ${{ secrets.CREATE_FAILURE_ISSUE }}
+      SCRAPER_RUN_ATTEMPTS: ${{ secrets.SCRAPER_RUN_ATTEMPTS }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -26,22 +38,96 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run scraper and generate HTML
+      - name: Run scraper and generate HTML (with retries)
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
-        run: python3 whats_on_scraper.py
-
-      - name: Commit and push if listings changed or docs/ missing
         run: |
-          # Commit when fingerprint changed (new/removed films or showtimes) OR when docs/ is not in the repo yet.
-          DOCS_EXISTED=$(git ls-files docs/ 2>/dev/null | head -1)
-          OLD_FP=$(cat .whats_on_fingerprint 2>/dev/null || true)
-          NEW_FP=$(cat .whats_on_fingerprint)
-          if [ "$OLD_FP" = "$NEW_FP" ] && [ -n "$DOCS_EXISTED" ]; then
-            echo "Fingerprint unchanged and docs/ already in repo; skipping commit."
-            exit 0
+          ATTEMPTS="${SCRAPER_RUN_ATTEMPTS:-2}"
+          if [ "$ATTEMPTS" -lt 1 ]; then
+            ATTEMPTS=1
           fi
+
+          attempt=1
+          while [ "$attempt" -le "$ATTEMPTS" ]; do
+            echo "Scraper attempt $attempt/$ATTEMPTS"
+            if python3 whats_on_scraper.py; then
+              echo "Scraper completed successfully"
+              exit 0
+            fi
+
+            if [ "$attempt" -lt "$ATTEMPTS" ]; then
+              sleep_seconds=$((attempt * 20))
+              echo "Attempt $attempt failed; retrying in ${sleep_seconds}s..."
+              sleep "$sleep_seconds"
+            fi
+            attempt=$((attempt + 1))
+          done
+
+          echo "All scraper attempts failed"
+          exit 1
+
+      - name: Commit and push if output changed
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add whats_on_data.json .tmdb_cache.json .whats_on_fingerprint docs/
-          git diff --staged --quiet || (git commit -m "chore: update whats-on data and HTML" && git push)
+          for f in whats_on_data.json .tmdb_cache.json .whats_on_fingerprint; do
+            if [ -f "$f" ]; then
+              git add "$f"
+            fi
+          done
+          if [ -d docs ]; then
+            git add docs/
+          fi
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: update whats-on data and HTML"
+          git push
+
+      - name: Create or update failure issue
+        if: failure() && env.CREATE_FAILURE_ISSUE == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const title = "What's On scraper failure";
+            const labels = ["automation", "scraper-failure"];
+            const runUrl = `https://github.com/${owner}/${repo}/actions/runs/${context.runId}`;
+            const body = [
+              "The scheduled/manual What's On workflow failed after configured retries.",
+              "",
+              `- Workflow: ${context.workflow}`,
+              `- Job: ${context.job}`,
+              `- Run: ${runUrl}`,
+              `- Commit: ${context.sha}`,
+              "",
+              "Please review the run logs and fix the scraping/configuration issue."
+            ].join("\\n");
+
+            const existing = await github.rest.issues.listForRepo({
+              owner,
+              repo,
+              state: "open",
+              labels: labels.join(","),
+              per_page: 100
+            });
+
+            const issue = existing.data.find((item) => item.title === title);
+            if (issue) {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: issue.number,
+                body
+              });
+            } else {
+              await github.rest.issues.create({
+                owner,
+                repo,
+                title,
+                body,
+                labels
+              });
+            }
