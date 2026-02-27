@@ -49,7 +49,7 @@ Generated outputs:
 |---|---|
 | `🎬 Listings + Showtimes` | Scrapes current films and grouped showtimes from WTW St Austell. |
 | `🏷️ Rich Showtime Metadata` | Preserves screen labels and accessibility/format tags in generated output. |
-| `🧩 Optional TMDb Enrichment` | Adds posters, trailers, ratings, cast, crew, and genres when `TMDB_API_KEY` is set. |
+| `🧩 TMDb Enrichment` | Adds posters, trailers, ratings, cast, crew, and genres (required for CI publishing). |
 | `💾 Smart Caching` | Reuses TMDb cache data to reduce API requests and runtime cost. |
 | `🧮 Fingerprint-Based Commits` | Uses deterministic fingerprinting to avoid unnecessary repository commits. |
 | `🌐 Static Site Output` | Regenerates `docs/index.html` and assets for GitHub Pages publishing. |
@@ -85,7 +85,8 @@ Configuration is set in `whats_on_scraper.py` and via environment variables.
 
 | Variable/Option | Default | Description |
 |---|---|---|
-| `TMDB_API_KEY` (env) | unset | Enables TMDb enrichment when provided. |
+| `TMDB_API_KEY` (env) | unset | Enables TMDb enrichment. Required in CI workflow. |
+| `POSTER_MISSING_FAIL_THRESHOLD` (env) | unset locally | Optional quality gate. If set, scraper fails when missing-poster count exceeds threshold. |
 | `HTTP_TIMEOUT` | `60` | Request timeout in seconds. |
 | `HTTP_RETRIES` | `3` | Number of HTTP retries per request. |
 | `HTTP_RETRY_DELAY` | `1` | Initial backoff delay in seconds. |
@@ -110,9 +111,13 @@ This repo includes `.github/workflows/whats_on_html.yml`:
 
 Configure these repository secrets as needed:
 
-- `TMDB_API_KEY` (optional)
+- `TMDB_API_KEY` (required)
 - `CREATE_FAILURE_ISSUE` (`true`/`false`)
 - `SCRAPER_RUN_ATTEMPTS` (integer)
+
+Optional repository variable:
+
+- `POSTER_MISSING_FAIL_THRESHOLD` (default workflow value: `8`)
 
 ---
 
@@ -140,6 +145,7 @@ After each workflow update, the published site refreshes from the latest committ
 
 - `🧱` If listings fail to parse, the source HTML structure may have changed.
 - `🔑` If posters/trailers are missing, verify `TMDB_API_KEY` and API quota.
+- `🖼️` Missing posters render a local fallback image (`docs/posters/placeholder.svg`) instead of blank space.
 - `🚦` If updates are not appearing, check workflow logs and Pages build status.
 
 ---

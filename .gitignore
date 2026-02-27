@@ -13,3 +13,6 @@ env/
 
 # Old scraper log (legacy)
 cinema_log.txt
+
+# macOS metadata
+.DS_Store
