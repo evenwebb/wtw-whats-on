@@ -256,7 +256,7 @@
     "director": "Barrie Kosky",
     "writer": "",
     "cast": "Peter Hoare, Andreas Schager, Christopher Maltman, Christopher Purves, Elisabet Strid",
-    "cached_at": "2026-02-09T22:19:10.413164"
+    "cached_at": "2026-02-27T10:29:25.688137"
   },
   "national-theatre-live-all-my-sons": {
     "poster_url": "https://image.tmdb.org/t/p/w342/jWblUug4V4LcMnkJUtF2MhFMl5X.jpg",
@@ -282,7 +282,7 @@
     "director": "David McVicar",
     "writer": "",
     "cast": "Julia Bullock, Amitai Pati, Huw Montague Rendall, Kathyrn Lewek",
-    "cached_at": "2026-02-09T22:19:11.412051"
+    "cached_at": "2026-02-27T10:29:27.032365"
   },
   "eugene-onegin-the-met-opera-rbo-2025-26-cinema-season": {
     "poster_url": "https://image.tmdb.org/t/p/w342/5VpQ0JRs0SQLGMcahan8FLzjedN.jpg",
@@ -466,6 +466,98 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-02-09T22:19:09.394506"
+    "cached_at": "2026-02-27T10:29:21.659142"
+  },
+  "epic-elvis-presley-in-concert": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/nor2u3bC7xn2L4PhAMi7RRg04n9.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=PalDl9XNjn8",
+    "vote_average": 8.2,
+    "genres": [
+      "Music",
+      "Documentary"
+    ],
+    "imdb_id": "tt35003538",
+    "overview": "Long-lost footage from Elvis Presely's legendary Las Vegas residency in the 1970s woven together with rare 16mm footage from Elvis on Tour, and 8mm from the Graceland archive, plus recordings of Elvis telling \"his side of the story\" rediscovered during Baz Luhrmann's research for his 2022 film, Elvis.",
+    "director": "Baz Luhrmann",
+    "writer": "",
+    "cast": "Elvis Presley (Self (archive footage)), Sammy Davis Jr. (Self (archive footage)), Cary Grant (Self (archive footage)), Tom Parker (Self (archive footage)), Bono (Self (voice)), James Burton (Self (archive footage)), John Wilkinson (Self (archive footage)), Jerry Scheff (Self (archive footage)), Glen D. Hardin (Self (archive footage)), Ronnie Tutt (Self (archive footage)), Kathy Westmoreland (Self (archive footage)), J.D. Sumner (Self (archive footage))",
+    "cached_at": "2026-02-27T10:29:19.421050"
+  },
+  "scream-7": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/jjyuk0edLiW8vOSnlfwWCCLpbh5.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=FHzHfuEwC_k",
+    "vote_average": 6.1,
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Crime"
+    ],
+    "imdb_id": "tt27047903",
+    "overview": "When a new Ghostface killer emerges in the quiet town where Sidney Prescott has built a new life, her darkest fears are realized as her daughter becomes the next target. Determined to protect her family, Sidney must face the horrors of her past to put an end to the bloodshed once and for all.",
+    "director": "Kevin Williamson",
+    "writer": "Guy Busick, James Vanderbilt, Kevin Williamson",
+    "cast": "Neve Campbell (Sidney Evans), Courteney Cox (Gale Weathers), Isabel May (Tatum Evans), Jasmin Savoy Brown (Mindy Meeks-Martin), Mason Gooding (Chad Meeks-Martin), Anna Camp (Jessica Bowden), Joel McHale (Mark Evans), Mckenna Grace (Hannah Thurman), Michelle Randolph (Madison), Jimmy Tatro (Scott), Asa Germann (Lucas Bowden), Celeste O'Connor (Chloe Parker)",
+    "cached_at": "2026-02-27T10:29:20.303867"
+  },
+  "cold-storage": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/pfqkETJ2A3zXZJuNcufZbAJNnKA.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=dZpbZg9AChk",
+    "vote_average": 6.222,
+    "genres": [
+      "Comedy",
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdb_id": "tt8879928",
+    "overview": "When a mutating, highly contagious fungus escapes a sealed facility, two young employees – joined by a grizzled bioterror operative – must survive the wildest night shift ever to save humanity from extinction.",
+    "director": "Jonny Campbell",
+    "writer": "David Koepp",
+    "cast": "Joe Keery (Travis 'Teacake' Meacham), Georgina Campbell (Naomi Williams), Liam Neeson (Robert Quinn), Lesley Manville (Trini Romano), Sosie Bacon (Dr. Hero Martins), Aaron Heffernan (Mike), Andrew Brooke (Ironhead), Rob Collins (Enos Minjarra), Darrell D'Silva (The Rev), Clare Holman (Annie), Vanessa Redgrave (Ma Rooney), Richard Brake (Jerabek)",
+    "cached_at": "2026-02-27T10:29:21.209755"
+  },
+  "hoppers": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/d7WizU73PscO3dQor0Ogfx9xy8N.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=nIKsi-Ud3w8",
+    "vote_average": 8.0,
+    "genres": [
+      "Animation",
+      "Family",
+      "Comedy",
+      "Science Fiction"
+    ],
+    "imdb_id": "tt26443616",
+    "overview": "Scientists have discovered how to \"hop\" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world that are beyond anything she could have imagined.",
+    "director": "Daniel Chong",
+    "writer": "Jesse Andrews, Daniel Chong",
+    "cast": "Piper Curda (Mabel Tanaka / Mabel Beaver (voice)), Bobby Moynihan (King George (voice)), Jon Hamm (Mayor Jerry Generazzo (voice)), Kathy Najimy (Dr. Sam (voice)), Eduardo Franco (Loaf (voice)), Aparna Nancherla (Nisha (voice)), Meryl Streep (Insect Queen (voice)), Dave Franco (Insect King (voice)), Eman Abdul-Razzak (Insect Prince (voice)), Tom Law (Tom Lizard (voice)), Sam Richardson (Conner (voice)), Melissa Villaseñor (Ellen Bear (voice))",
+    "cached_at": "2026-02-27T10:29:22.557033"
+  },
+  "mother-s-pride": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/jWrNT4QawuM5OclbjkbrhpbI2Wf.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=D-Ui79xGMTI",
+    "vote_average": 0.0,
+    "genres": [
+      "Comedy"
+    ],
+    "imdb_id": "tt32569057",
+    "overview": "A comedy about a failing pub, a divided community and a grieving family whose lives are changed by brewing real ale and entering the Great British Beer Awards.",
+    "director": "Nick Moorcroft",
+    "writer": "Nick Moorcroft, Meg Leonard",
+    "cast": "Jonno Davies (Cal), James Buckley (Jake), Martin Clunes (Mick), Mark Addy (Paxman), Gabriella Wilde (Abi), Luke Treadaway (Pritchard), Josie Lawrence (Edith), Miles Jupp (Jeremy), Karl Collins (Wilf), Richard Glover (Jim), Emily Lloyd-Saini (Amy), Dominic Kinnaird (Traffic warden)",
+    "cached_at": "2026-02-27T10:29:23.455695"
+  },
+  "h-is-for-hawk": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/lIS8Ow290hwNtS8VEeboYGV30Dx.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=fH0H3RkNmeU",
+    "vote_average": 6.8,
+    "genres": [
+      "Drama"
+    ],
+    "imdb_id": "tt10329560",
+    "overview": "After losing her beloved father, Helen finds herself saved by an unlikely friendship with a stubborn hawk named Mabel. Through the bond, Helen rediscovers the beauty of being alive.",
+    "director": "Philippa Lowthorpe",
+    "writer": "Emma Donoghue, Helen Macdonald",
+    "cast": "Claire Foy (Helen Macdonald), Brendan Gleeson (Alisdair Macdonald), Angus Cooper, Sam Spruell (Stuart), Josh Dylan (James), Eden Hamilton (Young Helen), Denise Gough (Christina), Lindsay Duncan, Arty Froushan (Amar), Emma Cunniffe (Mandy), Imogen Dufty (Female Undergrad), Sean Kearns (Breeder)",
+    "cached_at": "2026-02-27T10:29:24.341312"
   }
 }

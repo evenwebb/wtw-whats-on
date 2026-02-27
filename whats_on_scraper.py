@@ -47,6 +47,8 @@ ICONS_DIR = "docs/icons"
 WTW_3D_ICON_URL = "https://wtwcinemas.co.uk/wp-content/uploads/2022/11/3D-Performance.png"
 TMDB_CACHE_DAYS = 30
 TMDB_DELAY_SEC = 0.2
+TMDB_EMPTY_CACHE_TTL_DAYS = 7
+POSTER_PLACEHOLDER_REL = "posters/placeholder.svg"
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
@@ -217,6 +219,40 @@ def _download_3d_icon() -> None:
         logger.warning("3D icon download failed: %s", e)
 
 
+def _ensure_placeholder_poster() -> None:
+    """Ensure a local placeholder poster exists for films without a TMDb poster."""
+    path = Path(SITE_DIR) / POSTER_PLACEHOLDER_REL
+    if path.exists():
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    svg = """<svg xmlns="http://www.w3.org/2000/svg" width="420" height="630" viewBox="0 0 420 630" role="img" aria-label="Poster unavailable">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+  </defs>
+  <rect width="420" height="630" fill="url(#bg)"/>
+  <rect x="24" y="24" width="372" height="582" rx="18" ry="18" fill="none" stroke="#334155" stroke-width="2"/>
+  <circle cx="210" cy="250" r="68" fill="none" stroke="#64748b" stroke-width="8"/>
+  <path d="M210 200v60m0 45h.01" stroke="#94a3b8" stroke-width="10" stroke-linecap="round"/>
+  <text x="210" y="390" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="26" font-weight="700">Poster unavailable</text>
+  <text x="210" y="425" text-anchor="middle" fill="#94a3b8" font-family="Arial, sans-serif" font-size="18">WTW St Austell</text>
+</svg>
+"""
+    path.write_text(svg, encoding="utf-8")
+
+
+def _parse_cached_at(value: str) -> Optional[datetime]:
+    """Parse cached_at timestamp safely."""
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except Exception:
+        return None
+
+
 def _download_poster(url: str, slug: str) -> str:
     """Download poster image and save under POSTERS_DIR; return relative path or '' on failure."""
     if not url or not url.startswith("http"):
@@ -341,9 +377,19 @@ def enrich_film_tmdb(
 
     if cache_key in cache:
         entry = cache[cache_key]
+        cached_at = _parse_cached_at(entry.get("cached_at", ""))
+        stale_empty_cache = False
+        if not entry.get("poster_url"):
+            if not cached_at:
+                stale_empty_cache = True
+            else:
+                stale_empty_cache = datetime.now(cached_at.tzinfo) - cached_at >= timedelta(days=TMDB_EMPTY_CACHE_TTL_DAYS)
         # Refetch if we have poster but no genres (backfill for old cache entries)
         if (not (entry.get("genres") or [])) and entry.get("poster_url"):
             pass  # Fall through to API call to get genres (and refresh cache)
+        # Retry empty-cache misses after TTL so new TMDb records can be picked up later
+        elif stale_empty_cache:
+            pass
         # Retry with event cinema fallback if cache has no poster and this is an RBO title
         elif not entry.get("poster_url") and _event_cinema_fallback_queries(film.get("title", "")):
             pass  # Fall through to API call with fallback
@@ -799,13 +845,14 @@ def build_html(data: Dict[str, Any]) -> str:
         showtimes_html = "\n".join(rows)
 
         has_3d = any("3D" in (st.get("tags") or []) for st in (f.get("showtimes") or []))
-        if poster_url:
-            poster_inner = f'<img src="{poster_url}" alt="" loading="lazy"/>'
-            if has_3d:
-                poster_inner += '<i class="icon--hints icon--3d" aria-hidden="true"></i>'
-            poster_div = f'<div class="poster">{poster_inner}</div>'
-        else:
-            poster_div = ""
+        poster_src = poster_url or POSTER_PLACEHOLDER_REL
+        poster_alt = f"Poster for {title}" if poster_url else f"No poster available for {title}"
+        poster_inner = f'<img src="{poster_src}" alt="{poster_alt}" loading="lazy"/>'
+        if poster_url and has_3d:
+            poster_inner += '<i class="icon--hints icon--3d" aria-hidden="true"></i>'
+        if not poster_url:
+            poster_inner += '<span class="poster-fallback-label">No poster yet</span>'
+        poster_div = f'<div class="poster">{poster_inner}</div>'
         # YouTube embed URL for lightbox; use nocookie domain and add fallback watch URL for Error 153 (embed disabled)
         trailer_embed = ""
         trailer_watch_esc = ""
@@ -839,8 +886,10 @@ def build_html(data: Dict[str, Any]) -> str:
 
         earliest = min(showtimes_by_date.keys()) if showtimes_by_date else ""
         status = "now" if earliest and earliest <= build_today_iso else "coming-soon"
+        status_label = "Now Showing" if status == "now" else "Coming Soon"
         return f"""
 <article class="film-card" data-dates="{",".join(showtimes_by_date.keys())}" data-status="{status}">
+  <span class="status-pill status-pill--{status}">{status_label}</span>
   <div class="film-header">
     {poster_div}
     <div class="film-meta">
@@ -865,8 +914,24 @@ def build_html(data: Dict[str, Any]) -> str:
     coming_soon = [f for f in films_sorted if f not in now_showing]
     now_cards = "\n".join(film_card(f) for f in now_showing)
     coming_cards = "\n".join(film_card(f) for f in coming_soon)
-    section_now = f'<h3 class="section-title" data-section="now">Now showing</h3>\n{now_cards}' if now_showing else ""
-    section_coming = f'<h3 class="section-title" data-section="coming">Coming soon</h3>\n{coming_cards}' if coming_soon else ""
+    section_now = (
+        f'<section class="film-section film-section--now" data-section="now">\n'
+        f'  <div class="section-title-wrap">\n'
+        f'    <h3 class="section-title" data-section="now">Now Showing</h3>\n'
+        f'    <span class="section-count">{len(now_showing)} films</span>\n'
+        f'  </div>\n'
+        f'{now_cards}\n'
+        f'</section>'
+    ) if now_showing else ""
+    section_coming = (
+        f'<section class="film-section film-section--coming" data-section="coming">\n'
+        f'  <div class="section-title-wrap">\n'
+        f'    <h3 class="section-title" data-section="coming">Coming Soon</h3>\n'
+        f'    <span class="section-count">{len(coming_soon)} films</span>\n'
+        f'  </div>\n'
+        f'{coming_cards}\n'
+        f'</section>'
+    ) if coming_soon else ""
     cards_html = "\n".join(s for s in (section_now, section_coming) if s)
 
     # Date filter tabs
@@ -981,18 +1046,56 @@ def build_html(data: Dict[str, Any]) -> str:
       border-color: var(--cyan);
     }}
     #films {{ display: grid; grid-template-columns: 1fr; gap: 1.5rem; }}
-    @media (min-width: 900px) {{ #films {{ grid-template-columns: repeat(2, 1fr); }} }}
-    .section-title {{
+    .film-section {{
       grid-column: 1 / -1;
-      font-size: 1.1rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      margin: 0.5rem 0 0;
-      padding: 0.75rem 0;
-      border-bottom: 1px solid var(--border);
-      color: var(--accent);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1rem;
+      background: linear-gradient(160deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
     }}
-    .section-title:first-child {{ margin-top: 0; padding-top: 0; }}
+    @media (min-width: 900px) {{
+      .film-section {{ grid-template-columns: repeat(2, 1fr); }}
+    }}
+    .film-section--now {{
+      border-color: rgba(0,212,255,0.45);
+      box-shadow: inset 0 0 0 1px rgba(0,212,255,0.08);
+    }}
+    .film-section--coming {{
+      border-color: rgba(168,85,247,0.45);
+      box-shadow: inset 0 0 0 1px rgba(168,85,247,0.1);
+    }}
+    .section-title-wrap {{
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.9rem 1rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.02);
+    }}
+    .film-section--now .section-title-wrap {{
+      border-color: rgba(0,212,255,0.5);
+      background: linear-gradient(90deg, rgba(0,212,255,0.2), rgba(0,212,255,0.06));
+    }}
+    .film-section--coming .section-title-wrap {{
+      border-color: rgba(168,85,247,0.5);
+      background: linear-gradient(90deg, rgba(168,85,247,0.24), rgba(168,85,247,0.08));
+    }}
+    .section-title {{
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      margin: 0;
+      text-transform: uppercase;
+    }}
+    .film-section--now .section-title {{ color: var(--cyan); }}
+    .film-section--coming .section-title {{ color: #cf90ff; }}
+    .section-count {{ font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--text); opacity: 0.95; }}
     .film-card {{
       background: linear-gradient(135deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
       backdrop-filter: blur(20px);
@@ -1005,6 +1108,22 @@ def build_html(data: Dict[str, Any]) -> str:
       overflow: hidden;
       animation: fadeUp 0.6s ease-out backwards;
     }}
+    .status-pill {{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 1.7rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      border: 1px solid transparent;
+      margin-bottom: 0.7rem;
+    }}
+    .status-pill--now {{ background: rgba(0,212,255,0.16); border-color: rgba(0,212,255,0.45); color: #8beeff; }}
+    .status-pill--coming-soon {{ background: rgba(168,85,247,0.2); border-color: rgba(168,85,247,0.5); color: #e0b8ff; }}
     .film-card::before {{
       content: '';
       position: absolute;
@@ -1025,6 +1144,19 @@ def build_html(data: Dict[str, Any]) -> str:
     .film-header {{ display: flex; gap: 1.25rem; flex-wrap: wrap; }}
     .poster {{ position: relative; flex-shrink: 0; }}
     .poster img {{ width: 210px; height: 315px; object-fit: cover; border-radius: var(--radius-sm); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }}
+    .poster-fallback-label {{
+      position: absolute;
+      left: 0.5rem;
+      right: 0.5rem;
+      bottom: 0.55rem;
+      padding: 0.2rem 0.4rem;
+      border-radius: 6px;
+      background: rgba(0, 0, 0, 0.62);
+      color: #e2e8f0;
+      font-size: 0.72rem;
+      text-align: center;
+      letter-spacing: 0.02em;
+    }}
     .poster .icon--hints {{ position: absolute; right: 0; top: 0; width: 105px; height: 105px; pointer-events: none; }}
     .poster .icon--hints.icon--3d {{ background: url(icons/3D-Performance.png) no-repeat; background-size: 100% auto; background-position: top right; }}
     .film-meta {{ flex: 1; min-width: 200px; }}
@@ -1171,13 +1303,21 @@ def build_html(data: Dict[str, Any]) -> str:
         btn.classList.add('active');
         var date = btn.getAttribute('data-date');
         var isAll = date === 'all';
-        document.querySelectorAll('.section-title').forEach(function(el) {{
-          el.style.display = isAll ? 'block' : 'none';
-        }});
+        var sectionVisibility = {{ now: false, coming: false }};
         document.querySelectorAll('.film-card').forEach(function(card) {{
           var dates = (card.getAttribute('data-dates') || '').split(',');
           var show = isAll || dates.indexOf(date) !== -1;
           card.style.display = show ? 'block' : 'none';
+          if (show) {{
+            var status = card.getAttribute('data-status') || '';
+            if (status === 'now') sectionVisibility.now = true;
+            if (status === 'coming-soon') sectionVisibility.coming = true;
+          }}
+        }});
+        document.querySelectorAll('.film-section').forEach(function(section) {{
+          var sectionType = section.getAttribute('data-section') || '';
+          var showSection = sectionType === 'now' ? sectionVisibility.now : sectionVisibility.coming;
+          section.style.display = showSection ? 'grid' : 'none';
         }});
       }});
     }});
@@ -1248,8 +1388,12 @@ def main() -> None:
                 with open(DATA_FILE, encoding="utf-8") as f:
                     old_data = json.load(f)
                 old_films = {f.get("film_url"): f for f in (old_data.get("cinemas", {}).get("st-austell", {}).get("films") or []) if f.get("film_url")}
+                old_films_by_key = {
+                    _tmdb_cache_key(f): f
+                    for f in (old_data.get("cinemas", {}).get("st-austell", {}).get("films") or [])
+                }
                 for film in data["cinemas"]["st-austell"]["films"]:
-                    old = old_films.get(film.get("film_url"))
+                    old = old_films_by_key.get(_tmdb_cache_key(film)) or old_films.get(film.get("film_url"))
                     if old:
                         for key in ("poster_url", "trailer_url", "vote_average", "genres", "imdb_id", "overview", "director", "writer", "cast"):
                             if film.get(key) in (None, "", []) and old.get(key):
@@ -1277,6 +1421,21 @@ def main() -> None:
             local = _download_poster(poster_url, slug)
             if local:
                 film["poster_url"] = local
+    _ensure_placeholder_poster()
+
+    missing_posters = [f.get("title", "") for f in data["cinemas"]["st-austell"]["films"] if not (f.get("poster_url") or "").strip()]
+    if missing_posters:
+        logger.warning("Missing posters for %d film(s): %s", len(missing_posters), ", ".join(missing_posters))
+    fail_threshold_raw = os.environ.get("POSTER_MISSING_FAIL_THRESHOLD", "").strip()
+    if fail_threshold_raw:
+        try:
+            fail_threshold = int(fail_threshold_raw)
+            if fail_threshold >= 0 and len(missing_posters) > fail_threshold:
+                raise RuntimeError(
+                    f"Poster quality gate failed: {len(missing_posters)} missing poster(s) exceeds threshold {fail_threshold}"
+                )
+        except ValueError:
+            logger.warning("Invalid POSTER_MISSING_FAIL_THRESHOLD value: %s", fail_threshold_raw)
 
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)

@@ -23,6 +23,7 @@ jobs:
       PIP_DISABLE_PIP_VERSION_CHECK: "1"
       CREATE_FAILURE_ISSUE: ${{ secrets.CREATE_FAILURE_ISSUE }}
       SCRAPER_RUN_ATTEMPTS: ${{ secrets.SCRAPER_RUN_ATTEMPTS }}
+      POSTER_MISSING_FAIL_THRESHOLD: ${{ vars.POSTER_MISSING_FAIL_THRESHOLD || '8' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -41,7 +42,13 @@ jobs:
       - name: Run scraper and generate HTML (with retries)
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          POSTER_MISSING_FAIL_THRESHOLD: ${{ env.POSTER_MISSING_FAIL_THRESHOLD }}
         run: |
+          if [ -z "${TMDB_API_KEY}" ]; then
+            echo "TMDB_API_KEY is required for reliable poster enrichment. Set repository secret TMDB_API_KEY."
+            exit 1
+          fi
+
           ATTEMPTS="${SCRAPER_RUN_ATTEMPTS:-2}"
           if [ "$ATTEMPTS" -lt 1 ]; then
             ATTEMPTS=1

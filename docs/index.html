@@ -97,18 +97,56 @@
       border-color: var(--cyan);
     }
     #films { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
-    @media (min-width: 900px) { #films { grid-template-columns: repeat(2, 1fr); } }
-    .section-title {
+    .film-section {
       grid-column: 1 / -1;
-      font-size: 1.1rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      margin: 0.5rem 0 0;
-      padding: 0.75rem 0;
-      border-bottom: 1px solid var(--border);
-      color: var(--accent);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1rem;
+      background: linear-gradient(160deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
     }
-    .section-title:first-child { margin-top: 0; padding-top: 0; }
+    @media (min-width: 900px) {
+      .film-section { grid-template-columns: repeat(2, 1fr); }
+    }
+    .film-section--now {
+      border-color: rgba(0,212,255,0.45);
+      box-shadow: inset 0 0 0 1px rgba(0,212,255,0.08);
+    }
+    .film-section--coming {
+      border-color: rgba(168,85,247,0.45);
+      box-shadow: inset 0 0 0 1px rgba(168,85,247,0.1);
+    }
+    .section-title-wrap {
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.9rem 1rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.02);
+    }
+    .film-section--now .section-title-wrap {
+      border-color: rgba(0,212,255,0.5);
+      background: linear-gradient(90deg, rgba(0,212,255,0.2), rgba(0,212,255,0.06));
+    }
+    .film-section--coming .section-title-wrap {
+      border-color: rgba(168,85,247,0.5);
+      background: linear-gradient(90deg, rgba(168,85,247,0.24), rgba(168,85,247,0.08));
+    }
+    .section-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    .film-section--now .section-title { color: var(--cyan); }
+    .film-section--coming .section-title { color: #cf90ff; }
+    .section-count { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--text); opacity: 0.95; }
     .film-card {
       background: linear-gradient(135deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
       backdrop-filter: blur(20px);
@@ -121,6 +159,22 @@
       overflow: hidden;
       animation: fadeUp 0.6s ease-out backwards;
     }
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 1.7rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      border: 1px solid transparent;
+      margin-bottom: 0.7rem;
+    }
+    .status-pill--now { background: rgba(0,212,255,0.16); border-color: rgba(0,212,255,0.45); color: #8beeff; }
+    .status-pill--coming-soon { background: rgba(168,85,247,0.2); border-color: rgba(168,85,247,0.5); color: #e0b8ff; }
     .film-card::before {
       content: '';
       position: absolute;
@@ -141,6 +195,19 @@
     .film-header { display: flex; gap: 1.25rem; flex-wrap: wrap; }
     .poster { position: relative; flex-shrink: 0; }
     .poster img { width: 210px; height: 315px; object-fit: cover; border-radius: var(--radius-sm); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+    .poster-fallback-label {
+      position: absolute;
+      left: 0.5rem;
+      right: 0.5rem;
+      bottom: 0.55rem;
+      padding: 0.2rem 0.4rem;
+      border-radius: 6px;
+      background: rgba(0, 0, 0, 0.62);
+      color: #e2e8f0;
+      font-size: 0.72rem;
+      text-align: center;
+      letter-spacing: 0.02em;
+    }
     .poster .icon--hints { position: absolute; right: 0; top: 0; width: 105px; height: 105px; pointer-events: none; }
     .poster .icon--hints.icon--3d { background: url(icons/3D-Performance.png) no-repeat; background-size: 100% auto; background-position: top right; }
     .film-meta { flex: 1; min-width: 200px; }
@@ -279,20 +346,26 @@
 <button type="button" class="tab" data-date="2026-03-31">Tue 31</button>
 <button type="button" class="tab" data-date="2026-04-16">Thu 16</button>
 <button type="button" class="tab" data-date="2026-04-19">Sun 19</button></div>
-    <main id="films"><h3 class="section-title" data-section="now">Now showing</h3>
+    <main id="films"><section class="film-section film-section--now" data-section="now">
+  <div class="section-title-wrap">
+    <h3 class="section-title" data-section="now">Now Showing</h3>
+    <span class="section-count">5 films</span>
+  </div>
 
 <article class="film-card" data-dates="2026-02-27,2026-02-28,2026-03-01,2026-03-02,2026-03-03,2026-03-04,2026-03-05" data-status="now">
+  <span class="status-pill status-pill--now">Now Showing</span>
   <div class="film-header">
-    
+    <div class="poster"><img src="posters/epic-elvis-presley-in-concert.jpg" alt="Poster for EPiC: Elvis Presley in Concert" loading="lazy"/></div>
     <div class="film-meta">
       <h2>EPiC: Elvis Presley in Concert </h2>
-      <div class="meta-line">90 min (1 hour 30 mins)  </div>
-      
-      <p class="cast"><strong>Starring:</strong> Elvis Presley</p>
-      <p class="synopsis">A mix of a documentary and concert film made using unused footage from Elvis: That's the Way It Is, the film of Elvis' legendary 1970...</p>
+      <div class="meta-line">90 min (1 hour 30 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:82%"></span></span><span class="rating-text">8.2/10</span></span> <span class="genres">Music, Documentary</span></div>
+      <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/PalDl9XNjn8?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=PalDl9XNjn8" aria-label="Play trailer">Trailer</button>
+      <p class="crew"><strong>Director:</strong> Baz Luhrmann</p>
+      <p class="cast"><strong>Starring:</strong> Elvis Presley (Self (archive footage)), Sammy Davis Jr. (Self (archive footage)), Cary Grant (Self (archive footage)), Tom Parker (Self (archive footage)), Bono (Self (voice)), James Burton (Self (archive footage))<span class="cast-rest" hidden>, John Wilkinson (Self (archive footage)), Jerry Scheff (Self (archive footage)), Glen D. Hardin (Self (archive footage)), Ronnie Tutt (Self (archive footage)), Kathy Westmoreland (Self (archive footage)), J.D. Sumner (Self (archive footage))</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="synopsis">Long-lost footage from Elvis Presely's legendary Las Vegas residency in the 1970s woven together with rare 16mm footage from Elvis on Tour, and 8mm from the Graceland archive, plus recordings of Elvis telling "his side of the story" rediscovered during Baz Luhrmann's research for his 2022 film, Elvis.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/epic-elvis-presley-in-concert/?screen=st-austell" class="btn book">Book at WTW</a>
-        <a href="https://www.imdb.com/find/?q=EPiC%3A+Elvis+Presley+in+Concert" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
+        <a href="https://www.imdb.com/title/tt35003538/" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
         <a href="https://www.rottentomatoes.com/search?search=EPiC%3A+Elvis+Presley+in+Concert" class="link ext-link" target="_blank" rel="noopener" title="Rotten Tomatoes"><svg class="ext-logo" aria-hidden="true"><use href="#rt-logo"/></svg> RT</a>
         <a href="https://trakt.tv/search?query=EPiC%3A+Elvis+Presley+in+Concert" class="link ext-link" target="_blank" rel="noopener" title="Trakt"><svg class="ext-logo" aria-hidden="true"><use href="#trakt-logo"/></svg> Trakt</a>
       </div>
@@ -308,17 +381,20 @@
 </article>
 
 <article class="film-card" data-dates="2026-02-27,2026-02-28,2026-03-01,2026-03-02,2026-03-03,2026-03-04,2026-03-05" data-status="now">
+  <span class="status-pill status-pill--now">Now Showing</span>
   <div class="film-header">
-    
+    <div class="poster"><img src="posters/scream-7.jpg" alt="Poster for Scream 7" loading="lazy"/></div>
     <div class="film-meta">
       <h2>Scream 7 </h2>
-      <div class="meta-line">114 min (1 hour 54 mins)  </div>
-      
-      <p class="cast"><strong>Starring:</strong> Neve Campbell, Isabel May</p>
-      <p class="synopsis">When a new Ghostface killer emerges in the quiet town where Sidney Prescott has built a new life, her darkest fears are realized as her...</p>
+      <div class="meta-line">114 min (1 hour 54 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:61%"></span></span><span class="rating-text">6.1/10</span></span> <span class="genres">Horror, Mystery, Crime</span></div>
+      <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/FHzHfuEwC_k?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=FHzHfuEwC_k" aria-label="Play trailer">Trailer</button>
+      <p class="crew"><strong>Director:</strong> Kevin Williamson</p>
+      <p class="crew"><strong>Writer(s):</strong> Guy Busick, James Vanderbilt, Kevin Williamson</p>
+      <p class="cast"><strong>Starring:</strong> Neve Campbell (Sidney Evans), Courteney Cox (Gale Weathers), Isabel May (Tatum Evans), Jasmin Savoy Brown (Mindy Meeks-Martin), Mason Gooding (Chad Meeks-Martin), Anna Camp (Jessica Bowden)<span class="cast-rest" hidden>, Joel McHale (Mark Evans), Mckenna Grace (Hannah Thurman), Michelle Randolph (Madison), Jimmy Tatro (Scott), Asa Germann (Lucas Bowden), Celeste O'Connor (Chloe Parker)</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="synopsis">When a new Ghostface killer emerges in the quiet town where Sidney Prescott has built a new life, her darkest fears are realized as her daughter becomes the next target. Determined to protect her family, Sidney must face the horrors of her past to put an end to the bloodshed once and for all.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/scream-7/?screen=st-austell" class="btn book">Book at WTW</a>
-        <a href="https://www.imdb.com/find/?q=Scream+7" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
+        <a href="https://www.imdb.com/title/tt27047903/" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
         <a href="https://www.rottentomatoes.com/search?search=Scream+7" class="link ext-link" target="_blank" rel="noopener" title="Rotten Tomatoes"><svg class="ext-logo" aria-hidden="true"><use href="#rt-logo"/></svg> RT</a>
         <a href="https://trakt.tv/search?query=Scream+7" class="link ext-link" target="_blank" rel="noopener" title="Trakt"><svg class="ext-logo" aria-hidden="true"><use href="#trakt-logo"/></svg> Trakt</a>
       </div>
@@ -334,15 +410,16 @@
 </article>
 
 <article class="film-card" data-dates="2026-02-27,2026-02-28,2026-03-01,2026-03-02,2026-03-03,2026-03-04,2026-03-05" data-status="now">
+  <span class="status-pill status-pill--now">Now Showing</span>
   <div class="film-header">
-    <div class="poster"><img src="posters/wuthering-heights.jpg" alt="" loading="lazy"/></div>
+    <div class="poster"><img src="posters/wuthering-heights.jpg" alt="Poster for Wuthering Heights" loading="lazy"/></div>
     <div class="film-meta">
       <h2>Wuthering Heights </h2>
       <div class="meta-line">137 min (2 hours 17 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:66%"></span></span><span class="rating-text">6.6/10</span></span> <span class="genres">Drama, Romance</span></div>
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/a6eTho1jxuM?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=a6eTho1jxuM" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Peter Kosminsky</p>
       <p class="crew"><strong>Writer(s):</strong> Anne Devlin, Emily Brontë</p>
-      <p class="cast"><strong>Starring:</strong> Margot Robbie, Jacob Elordi</p>
+      <p class="cast"><strong>Starring:</strong> Juliette Binoche (Cathy / Catherine Linton), Ralph Fiennes (Heathcliff), Janet McTeer (Ellen Dean), Sophie Ward (Isabella Linton), Simon Shepherd (Edgar Linton), Jeremy Northam (Hindley Earnshaw)<span class="cast-rest" hidden>, Jason Riddington (Hareton Earnshaw), Simon Ward (Mr. Linton), Robert Demeger (Joseph), Paul Geoffrey (Mr. Lockwood), John Woodvine (Thomas Earnshaw), Jennifer Daniel (Mrs. Linton)</span> <button type="button" class="cast-more-btn">More</button></p>
       <p class="synopsis">Young orphan Heathcliff is adopted by the wealthy Earnshaw family and moves into their estate, Wuthering Heights. Soon, the new resident falls for his compassionate foster sister, Cathy. The two share a remarkable bond that seems unbreakable until Cathy, feeling the pressure of social convention, suppresses her feelings and marries Edgar Linton, a man of means who befits her stature. Heathcliff vows to win her back.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/wuthering-heights/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -362,17 +439,20 @@
 </article>
 
 <article class="film-card" data-dates="2026-02-27,2026-02-28,2026-03-01,2026-03-02,2026-03-03,2026-03-04,2026-03-05" data-status="now">
+  <span class="status-pill status-pill--now">Now Showing</span>
   <div class="film-header">
-    
+    <div class="poster"><img src="posters/cold-storage.jpg" alt="Poster for Cold Storage" loading="lazy"/></div>
     <div class="film-meta">
       <h2>Cold Storage </h2>
-      <div class="meta-line">99 min (1 hour 39 mins)  </div>
-      
-      <p class="cast"><strong>Starring:</strong> Georgina Campbell, Joe Keery, Liam Neeson, Lesley Manville, Vanessa Redgrave</p>
-      <p class="synopsis">When a mutating, highly contagious fungus escapes a sealed facility, two young employees - joined by a grizzled bioterror operative - must survive the wildest...</p>
+      <div class="meta-line">99 min (1 hour 39 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:62%"></span></span><span class="rating-text">6.2/10</span></span> <span class="genres">Comedy, Horror, Science Fiction</span></div>
+      <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/dZpbZg9AChk?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=dZpbZg9AChk" aria-label="Play trailer">Trailer</button>
+      <p class="crew"><strong>Director:</strong> Jonny Campbell</p>
+      <p class="crew"><strong>Writer(s):</strong> David Koepp</p>
+      <p class="cast"><strong>Starring:</strong> Joe Keery (Travis 'Teacake' Meacham), Georgina Campbell (Naomi Williams), Liam Neeson (Robert Quinn), Lesley Manville (Trini Romano), Sosie Bacon (Dr. Hero Martins), Aaron Heffernan (Mike)<span class="cast-rest" hidden>, Andrew Brooke (Ironhead), Rob Collins (Enos Minjarra), Darrell D'Silva (The Rev), Clare Holman (Annie), Vanessa Redgrave (Ma Rooney), Richard Brake (Jerabek)</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="synopsis">When a mutating, highly contagious fungus escapes a sealed facility, two young employees – joined by a grizzled bioterror operative – must survive the wildest night shift ever to save humanity from extinction.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/cold-storage/?screen=st-austell" class="btn book">Book at WTW</a>
-        <a href="https://www.imdb.com/find/?q=Cold+Storage" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
+        <a href="https://www.imdb.com/title/tt8879928/" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
         <a href="https://www.rottentomatoes.com/search?search=Cold+Storage" class="link ext-link" target="_blank" rel="noopener" title="Rotten Tomatoes"><svg class="ext-logo" aria-hidden="true"><use href="#rt-logo"/></svg> RT</a>
         <a href="https://trakt.tv/search?query=Cold+Storage" class="link ext-link" target="_blank" rel="noopener" title="Trakt"><svg class="ext-logo" aria-hidden="true"><use href="#trakt-logo"/></svg> Trakt</a>
       </div>
@@ -388,15 +468,16 @@
 </article>
 
 <article class="film-card" data-dates="2026-02-27,2026-02-28,2026-03-01,2026-03-02" data-status="now">
+  <span class="status-pill status-pill--now">Now Showing</span>
   <div class="film-header">
-    <div class="poster"><img src="posters/goat.jpg" alt="" loading="lazy"/></div>
+    <div class="poster"><img src="posters/goat.jpg" alt="Poster for GOAT" loading="lazy"/></div>
     <div class="film-meta">
       <h2>GOAT </h2>
       <div class="meta-line">100 min (1 hour 40 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:66%"></span></span><span class="rating-text">6.6/10</span></span> <span class="genres">Animation, Comedy, Family, Action</span></div>
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/4UoscmGBCZ0?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=4UoscmGBCZ0" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Tyree Dillihay</p>
       <p class="crew"><strong>Writer(s):</strong> Aaron Buchsbaum, Teddy Riley, Nicolas Curcio</p>
-      <p class="cast"><strong>Starring:</strong> Caleb McLaughlin, Gabrielle Union, Jenifer Lewis, David Harbour</p>
+      <p class="cast"><strong>Starring:</strong> Caleb McLaughlin (Will Harris (voice)), Gabrielle Union (Jett Fillmore  (voice)), Jenifer Lewis (Florence Everson  (voice)), David Harbour (Archie Everhardt  (voice)), Nick Kroll (Modo Olachenko  (voice)), Nicola Coughlan (Olivia Burke  (voice))<span class="cast-rest" hidden>, Patton Oswalt (Dennis  (voice)), Stephen Curry (Lenny Williamson  (voice)), Aaron Pierre (Mane Attraction (voice)), Jennifer Hudson (Louise Harris (voice)), Wayne Knight (Frank (voice)), Jelly Roll (Grizz (voice))</span> <button type="button" class="cast-more-btn">More</button></p>
       <p class="synopsis">Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball – a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world. Will's new teammates aren't thrilled about having a little goat on their roster, but Will is determined to revolutionize the sport and prove once and for all that 'smalls can ball'! He has to do something he has never done before.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/goat/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -411,20 +492,28 @@
 <div class="day-group"><div class="st-date">Sun 01 Mar</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76378&screen=staustell">12:15</a></span><span class="st-screen">Screen 4</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76380&screen=staustell">15:00</a></span><span class="st-screen">Screen 4</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div></div>
 <div class="day-group"><div class="st-date">Mon 02 Mar</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=76383&screen=staustell">17:45</a></span><span class="st-screen">Screen 4</span><span class="st-tags"><span class="tag" title="Audio description"><svg class="tag-icon" aria-hidden="true"><use href="#icon-audio-desc"/></svg>AD</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag" title="Strobe lighting may affect photosensitive viewers"><svg class="tag-icon" aria-hidden="true"><use href="#icon-strobe"/></svg>Strobe</span></span></div></div></div>
 </article>
-<h3 class="section-title" data-section="coming">Coming soon</h3>
+</section>
+<section class="film-section film-section--coming" data-section="coming">
+  <div class="section-title-wrap">
+    <h3 class="section-title" data-section="coming">Coming Soon</h3>
+    <span class="section-count">17 films</span>
+  </div>
 
 <article class="film-card" data-dates="2026-02-28,2026-03-01" data-status="coming-soon">
+  <span class="status-pill status-pill--coming-soon">Coming Soon</span>
   <div class="film-header">
-    
+    <div class="poster"><img src="posters/hoppers.jpg" alt="Poster for Hoppers" loading="lazy"/></div>
     <div class="film-meta">
       <h2>Hoppers </h2>
-      <div class="meta-line">105 min (1 hour 45 mins)  </div>
-      
-      <p class="cast"><strong>Starring:</strong> Piper Curda, Bobby Moynihan, Jon Hamm</p>
-      <p class="synopsis">Scientists have discovered how to "hop" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an...</p>
+      <div class="meta-line">105 min (1 hour 45 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:80%"></span></span><span class="rating-text">8.0/10</span></span> <span class="genres">Animation, Family, Comedy, Science Fiction</span></div>
+      <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/nIKsi-Ud3w8?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=nIKsi-Ud3w8" aria-label="Play trailer">Trailer</button>
+      <p class="crew"><strong>Director:</strong> Daniel Chong</p>
+      <p class="crew"><strong>Writer(s):</strong> Jesse Andrews, Daniel Chong</p>
+      <p class="cast"><strong>Starring:</strong> Piper Curda (Mabel Tanaka / Mabel Beaver (voice)), Bobby Moynihan (King George (voice)), Jon Hamm (Mayor Jerry Generazzo (voice)), Kathy Najimy (Dr. Sam (voice)), Eduardo Franco (Loaf (voice)), Aparna Nancherla (Nisha (voice))<span class="cast-rest" hidden>, Meryl Streep (Insect Queen (voice)), Dave Franco (Insect King (voice)), Eman Abdul-Razzak (Insect Prince (voice)), Tom Law (Tom Lizard (voice)), Sam Richardson (Conner (voice)), Melissa Villaseñor (Ellen Bear (voice))</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="synopsis">Scientists have discovered how to "hop" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world that are beyond anything she could have imagined.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/hoppers/?screen=st-austell" class="btn book">Book at WTW</a>
-        <a href="https://www.imdb.com/find/?q=Hoppers" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
+        <a href="https://www.imdb.com/title/tt26443616/" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
         <a href="https://www.rottentomatoes.com/search?search=Hoppers" class="link ext-link" target="_blank" rel="noopener" title="Rotten Tomatoes"><svg class="ext-logo" aria-hidden="true"><use href="#rt-logo"/></svg> RT</a>
         <a href="https://trakt.tv/search?query=Hoppers" class="link ext-link" target="_blank" rel="noopener" title="Trakt"><svg class="ext-logo" aria-hidden="true"><use href="#trakt-logo"/></svg> Trakt</a>
       </div>
@@ -435,15 +524,16 @@
 </article>
 
 <article class="film-card" data-dates="2026-02-28,2026-03-01" data-status="coming-soon">
+  <span class="status-pill status-pill--coming-soon">Coming Soon</span>
   <div class="film-header">
-    <div class="poster"><img src="posters/zootropolis-2.jpg" alt="" loading="lazy"/></div>
+    <div class="poster"><img src="posters/zootropolis-2.jpg" alt="Poster for Zootropolis 2" loading="lazy"/></div>
     <div class="film-meta">
       <h2>Zootropolis 2 </h2>
       <div class="meta-line">108 min (1 hour 48 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:76%"></span></span><span class="rating-text">7.6/10</span></span> <span class="genres">Animation, Comedy, Adventure, Family</span></div>
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/k8t8rvRO7Ug?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=k8t8rvRO7Ug" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Jared Bush, Byron Howard</p>
       <p class="crew"><strong>Writer(s):</strong> Jared Bush</p>
-      <p class="cast"><strong>Starring:</strong> Ginnifer Goodwin, Jason Bateman, Ke Huy Quan</p>
+      <p class="cast"><strong>Starring:</strong> Ginnifer Goodwin (Judy Hopps (voice)), Jason Bateman (Nick Wilde (voice)), Ke Huy Quan (Gary De'Snake (voice)), Fortune Feimster (Nibbles Maplestick (voice)), Andy Samberg (Pawbert Lynxley (voice)), David Strathairn (Milton Lynxley (voice))<span class="cast-rest" hidden>, Idris Elba (Chief Bogo (voice)), Shakira (Gazelle (voice)), Patrick Warburton (Mayor Winddancer (voice)), Quinta Brunson (Dr. Fuzzby (voice)), Danny Trejo (Jesús (voice)), Nate Torrence (Clawhauser (voice))</span> <button type="button" class="cast-more-btn">More</button></p>
       <p class="synopsis">After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/zootropolis-2/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -458,15 +548,16 @@
 </article>
 
 <article class="film-card" data-dates="2026-03-01,2026-03-04" data-status="coming-soon">
+  <span class="status-pill status-pill--coming-soon">Coming Soon</span>
   <div class="film-header">
-    <div class="poster"><img src="posters/national-theatre-live-the-audience.jpg" alt="" loading="lazy"/></div>
+    <div class="poster"><img src="posters/national-theatre-live-the-audience.jpg" alt="Poster for National Theatre Live: The Audience" loading="lazy"/></div>
     <div class="film-meta">
       <h2>National Theatre Live: The Audience </h2>
       <div class="meta-line">149 min (2 hours 29 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:83%"></span></span><span class="rating-text">8.3/10</span></span> <span class="genres">Drama, History</span></div>
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/AxO6VfSRAqs?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=AxO6VfSRAqs" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Robin Lough</p>
       <p class="crew"><strong>Writer(s):</strong> Peter Morgan</p>
-      <p class="cast"><strong>Starring:</strong> Helen Mirren, Michael Elwyn, Haydn Gwynne</p>
+      <p class="cast"><strong>Starring:</strong> Helen Mirren (The Queen), Michael Elwyn (Anthony Eden), Haydn Gwynne (Margaret Thatcher), Richard McCabe (Harold Wilson), Nathaniel Parker (Gordon Brown), Paul Ritter (John Major)<span class="cast-rest" hidden>, Rufus Wright (David Cameron), Edward Fox (Winston Churchill), David Peart (James Callaghan / Private Secretary), Geoffrey Beevers (Equerry), Nell Williams (Young Elizabeth), Charlotte Moore (Bobo MacDonald / Private Secretary)</span> <button type="button" class="cast-more-btn">More</button></p>
       <p class="synopsis">For sixty years, Elizabeth II has met each of her twelve Prime Ministers in a weekly audience at Buckingham Palace, a meeting like no other in British public life, it is private.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/national-theatre-live-the-audience/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -481,8 +572,9 @@
 </article>
 
 <article class="film-card" data-dates="2026-03-04,2026-03-08" data-status="coming-soon">
+  <span class="status-pill status-pill--coming-soon">Coming Soon</span>
   <div class="film-header">
-    <div class="poster"><img src="posters/othello.jpg" alt="" loading="lazy"/></div>
+    <div class="poster"><img src="posters/othello.jpg" alt="Poster for Othello" loading="lazy"/></div>
     <div class="film-meta">
       <h2>Othello </h2>
       <div class="meta-line">165 min (2 hours 45 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:74%"></span></span><span class="rating-text">7.4/10</span></span> <span class="genres">Drama</span></div>
@@ -504,15 +596,16 @@
 </article>
 
 <article class="film-card" data-dates="2026-03-05" data-status="coming-soon">
+  <span class="status-pill status-pill--coming-soon">Coming Soon</span>
   <div class="film-header">
-    <div class="poster"><img src="posters/marty-supreme.jpg" alt="" loading="lazy"/></div>
+    <div class="poster"><img src="posters/marty-supreme.jpg" alt="Poster for Marty Supreme" loading="lazy"/></div>
     <div class="film-meta">
       <h2>Marty Supreme </h2>
       <div class="meta-line">150 min (2 hours 30 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:78%"></span></span><span class="rating-text">7.8/10</span></span> <span class="genres">Drama</span></div>
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/pwE3ZG1kIqw?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=pwE3ZG1kIqw" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Josh Safdie</p>
       <p class="crew"><strong>Writer(s):</strong> Josh Safdie, Ronald Bronstein</p>
-      <p class="cast"><strong>Starring:</strong> Timothée Chalamet, Gwyneth Paltrow, Odessa A'zion</p>
+      <p class="cast"><strong>Starring:</strong> Timothée Chalamet (Marty Mauser), Gwyneth Paltrow (Kay Stone), Odessa A'zion (Rachel Mizler), Kevin O'Leary (Milton Rockwell), Tyler, The Creator (Wally)<span class="cast-rest" hidden>, Fran Drescher (Rebecca Mauser), Abel Ferrara (Ezra Mishkin), Emory Cohen (Ira Mizler), Géza Röhrig (Béla Kletzki), Koto Kawaguchi (Koto Endo), Larry Sloman (Murray Norkin), Luke Manley (Dion Galanis)</span> <button type="button" class="cast-more-btn">More</button></p>
       <p class="synopsis">Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/marty-supreme/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -526,17 +619,20 @@
 </article>
 
 <article class="film-card" data-dates="2026-03-19" data-status="coming-soon">
+  <span class="status-pill status-pill--coming-soon">Coming Soon</span>
   <div class="film-header">
-    
+    <div class="poster"><img src="posters/mothers-pride.jpg" alt="Poster for Mother’s Pride" loading="lazy"/></div>
     <div class="film-meta">
       <h2>Mother’s Pride </h2>
-      <div class="meta-line">93 min (1 hour 33 mins)  </div>
-      
-      <p class="cast"><strong>Starring:</strong> Mark Addy, Jonno Davies, Gabriella Wilde</p>
-      <p class="synopsis">A comedy about a failing pub, a divided community and a grieving family whose lives are changed by brewing real ale and entering the Great...</p>
+      <div class="meta-line">93 min (1 hour 33 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:0%"></span></span><span class="rating-text">0.0/10</span></span> <span class="genres">Comedy</span></div>
+      <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/D-Ui79xGMTI?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=D-Ui79xGMTI" aria-label="Play trailer">Trailer</button>
+      <p class="crew"><strong>Director:</strong> Nick Moorcroft</p>
+      <p class="crew"><strong>Writer(s):</strong> Nick Moorcroft, Meg Leonard</p>
+      <p class="cast"><strong>Starring:</strong> Jonno Davies (Cal), James Buckley (Jake), Martin Clunes (Mick), Mark Addy (Paxman), Gabriella Wilde (Abi), Luke Treadaway (Pritchard)<span class="cast-rest" hidden>, Josie Lawrence (Edith), Miles Jupp (Jeremy), Karl Collins (Wilf), Richard Glover (Jim), Emily Lloyd-Saini (Amy), Dominic Kinnaird (Traffic warden)</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="synopsis">A comedy about a failing pub, a divided community and a grieving family whose lives are changed by brewing real ale and entering the Great British Beer Awards.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/mothers-pride/?screen=st-austell" class="btn book">Book at WTW</a>
-        <a href="https://www.imdb.com/find/?q=Mother%E2%80%99s+Pride" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
+        <a href="https://www.imdb.com/title/tt32569057/" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
         <a href="https://www.rottentomatoes.com/search?search=Mother%E2%80%99s+Pride" class="link ext-link" target="_blank" rel="noopener" title="Rotten Tomatoes"><svg class="ext-logo" aria-hidden="true"><use href="#rt-logo"/></svg> RT</a>
         <a href="https://trakt.tv/search?query=Mother%E2%80%99s+Pride" class="link ext-link" target="_blank" rel="noopener" title="Trakt"><svg class="ext-logo" aria-hidden="true"><use href="#trakt-logo"/></svg> Trakt</a>
       </div>
@@ -546,17 +642,20 @@
 </article>
 
 <article class="film-card" data-dates="2026-03-26" data-status="coming-soon">
+  <span class="status-pill status-pill--coming-soon">Coming Soon</span>
   <div class="film-header">
-    
+    <div class="poster"><img src="posters/h-is-for-hawk.jpg" alt="Poster for H Is for Hawk" loading="lazy"/></div>
     <div class="film-meta">
       <h2>H Is for Hawk </h2>
-      <div class="meta-line">115 min (1 hour 55 mins)  </div>
-      
-      <p class="cast"><strong>Starring:</strong> Claire Foy, Brendan Gleeson, Angus Cooper</p>
-      <p class="synopsis">After losing her beloved father, Helen finds herself saved by an unlikely friendship with a stubborn hawk named Mabel. Through the bond, Helen rediscovers the...</p>
+      <div class="meta-line">115 min (1 hour 55 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:68%"></span></span><span class="rating-text">6.8/10</span></span> <span class="genres">Drama</span></div>
+      <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/fH0H3RkNmeU?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=fH0H3RkNmeU" aria-label="Play trailer">Trailer</button>
+      <p class="crew"><strong>Director:</strong> Philippa Lowthorpe</p>
+      <p class="crew"><strong>Writer(s):</strong> Emma Donoghue, Helen Macdonald</p>
+      <p class="cast"><strong>Starring:</strong> Claire Foy (Helen Macdonald), Brendan Gleeson (Alisdair Macdonald), Angus Cooper, Sam Spruell (Stuart), Josh Dylan (James), Eden Hamilton (Young Helen)<span class="cast-rest" hidden>, Denise Gough (Christina), Lindsay Duncan, Arty Froushan (Amar), Emma Cunniffe (Mandy), Imogen Dufty (Female Undergrad), Sean Kearns (Breeder)</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="synopsis">After losing her beloved father, Helen finds herself saved by an unlikely friendship with a stubborn hawk named Mabel. Through the bond, Helen rediscovers the beauty of being alive.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/h-is-for-hawk/?screen=st-austell" class="btn book">Book at WTW</a>
-        <a href="https://www.imdb.com/find/?q=H+Is+for+Hawk" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
+        <a href="https://www.imdb.com/title/tt10329560/" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
         <a href="https://www.rottentomatoes.com/search?search=H+Is+for+Hawk" class="link ext-link" target="_blank" rel="noopener" title="Rotten Tomatoes"><svg class="ext-logo" aria-hidden="true"><use href="#rt-logo"/></svg> RT</a>
         <a href="https://trakt.tv/search?query=H+Is+for+Hawk" class="link ext-link" target="_blank" rel="noopener" title="Trakt"><svg class="ext-logo" aria-hidden="true"><use href="#trakt-logo"/></svg> Trakt</a>
       </div>
@@ -566,15 +665,16 @@
 </article>
 
 <article class="film-card" data-dates="2026-04-16,2026-04-19" data-status="coming-soon">
+  <span class="status-pill status-pill--coming-soon">Coming Soon</span>
   <div class="film-header">
-    <div class="poster"><img src="posters/national-theatre-live-all-my-sons.jpg" alt="" loading="lazy"/></div>
+    <div class="poster"><img src="posters/national-theatre-live-all-my-sons.jpg" alt="Poster for National Theatre Live: All My Sons" loading="lazy"/></div>
     <div class="film-meta">
       <h2>National Theatre Live: All My Sons </h2>
       <div class="meta-line">130 min (2 hours 10 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:85%"></span></span><span class="rating-text">8.5/10</span></span> <span class="genres">Drama</span></div>
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/FP6C8jmrpN4?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=FP6C8jmrpN4" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Ross MacGibbon</p>
       <p class="crew"><strong>Writer(s):</strong> Arthur Miller</p>
-      <p class="cast"><strong>Starring:</strong> Bryan Cranston, Marianne Jean-Baptiste</p>
+      <p class="cast"><strong>Starring:</strong> Sally Field (Kate Keller), Bill Pullman (Joe Keller), Jenna Coleman (Ann Deever), Colin Morgan (Chris Keller), Sule Rimi (Dr. Jim Bayliss), Oliver Johnstone (George Deever)<span class="cast-rest" hidden>, Gunnar Cauthery (Frank Lubey), Bessie Carter (Lydia Lubey), Kayla Meikle (Sue Bayliss)</span> <button type="button" class="cast-more-btn">More</button></p>
       <p class="synopsis">America, 1947. Despite hard choices and even harder knocks, Joe and Kate Keller are a success story. They have built a home, raised two sons and established a thriving business.  But nothing lasts forever and their contented lives, already shadowed by the loss of their eldest boy to war, are about to shatter. With the return of a figure from the past, long buried truths are forced to the surface and the price of their American dream is laid bare.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/national-theatre-live-all-my-sons/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -589,15 +689,16 @@
 </article>
 
 <article class="film-card" data-dates="2026-05-28,2026-05-31" data-status="coming-soon">
+  <span class="status-pill status-pill--coming-soon">Coming Soon</span>
   <div class="film-header">
-    <div class="poster"><img src="posters/national-theatre-live-the-playboy-of-the-western-world.jpg" alt="" loading="lazy"/></div>
+    <div class="poster"><img src="posters/national-theatre-live-the-playboy-of-the-western-world.jpg" alt="Poster for National Theatre Live: The Playboy of the Western World" loading="lazy"/></div>
     <div class="film-meta">
       <h2>National Theatre Live: The Playboy of the Western World </h2>
-      <div class="meta-line">150 min (2 hours 30 mins)  <span class="genres">Drama, Comedy</span></div>
+      <div class="meta-line">150 min (2 hours 30 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:0%"></span></span><span class="rating-text">0.0/10</span></span> <span class="genres">Drama, Comedy</span></div>
       
       <p class="crew"><strong>Director:</strong> Caitriona McLaughlin</p>
       <p class="crew"><strong>Writer(s):</strong> John Millington Synge</p>
-      <p class="cast"><strong>Starring:</strong> Nicola Coughlan, Siobhán McSweeney, Éanna Hardwicke</p>
+      <p class="cast"><strong>Starring:</strong> Nicola Coughlan (Pegeen Mike), Éanna Hardwicke (Christy Mahon), Siobhán McSweeney (Widow Quin), Declan Conlon (Old Mahon), Lorcan Cranitch (Michael Flaherty), Megan Cusack (Susan Brady)<span class="cast-rest" hidden>, Naoise Dunbar (Jimmy Farrell), Matthew Forrest (Philly Cullen), Sallay Garnett (Nelly), Fionnuala Gygax (Honor Blake), Erin Hennessey (Fiddle), Peter Mooney (Banjo / Ensemble)</span> <button type="button" class="cast-more-btn">More</button></p>
       <p class="synopsis">Nicola Coughlan (Bridgerton) joins Éanna Hardwicke (The Sixth Commandment) and Siobhán McSweeney (Derry Girls) in John Millington Synge’s riveting play of youth and self-discovery.  Pegeen Flaherty’s life is turned upside down when a young man walks into her pub claiming that he’s killed his father. Instead of being shunned, the killer becomes a local hero and begins to win hearts, that is until a second man unexpectedly arrives on the scene…  Filmed live on stage at the National Theatre, Caitrí</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/national-theatre-live-the-playboy-of-the-western-world/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -612,15 +713,16 @@
 </article>
 
 <article class="film-card" data-dates="2026-06-25,2026-06-28" data-status="coming-soon">
+  <span class="status-pill status-pill--coming-soon">Coming Soon</span>
   <div class="film-header">
-    <div class="poster"><img src="posters/national-theatre-live-les-liaisons-dangereuses.jpg" alt="" loading="lazy"/></div>
+    <div class="poster"><img src="posters/national-theatre-live-les-liaisons-dangereuses.jpg" alt="Poster for National Theatre Live: Les Liaisons Dangereuses" loading="lazy"/></div>
     <div class="film-meta">
       <h2>National Theatre Live: Les Liaisons Dangereuses </h2>
       <div class="meta-line">150 min (2 hours 30 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:60%"></span></span><span class="rating-text">6.0/10</span></span> <span class="genres">Drama, Romance</span></div>
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/IcWwthReeUk?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=IcWwthReeUk" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Tony Grech-Smith, Josie Rourke</p>
       <p class="crew"><strong>Writer(s):</strong> Choderlos de Laclos</p>
-      <p class="cast"><strong>Starring:</strong> Lesley Manville, Aidan Turner</p>
+      <p class="cast"><strong>Starring:</strong> Janet McTeer (La Marquise de Merteuil), Dominic West (Le Vicomte de Valmont), Elaine Cassidy (Madame de Tourvel), Adjoa Andoh (Madame de Volanges), Morfydd Clark (Cécile Volanges), Edward Holcroft (Le Chevalier Danceny)<span class="cast-rest" hidden>, Una Stubbs (Madame de Rosemonde), Theo Barklem-Biggs (Azolan), Jennifer Saayeng (Émilie), Thom Petty (Major-Domo), Alison Arnopp (Julie)</span> <button type="button" class="cast-more-btn">More</button></p>
       <p class="synopsis">Marquise de Merteuil, former lover of Vicomte de Valmont, incites him to corrupt the innocent Cécile de Volanges before her wedding night, but Valmont has targeted the peerlessly virtuous and beautiful Madame de Tourvel.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/national-theatre-live-les-liaisons-dangereuses/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -635,11 +737,12 @@
 </article>
 
 <article class="film-card" data-dates="2026-03-03" data-status="coming-soon">
+  <span class="status-pill status-pill--coming-soon">Coming Soon</span>
   <div class="film-header">
-    <div class="poster"><img src="posters/giselle-rbo-2025-26-cinema-season.jpg" alt="" loading="lazy"/></div>
+    <div class="poster"><img src="posters/giselle-rbo-2025-26-cinema-season.jpg" alt="Poster for GISELLE - RBO 2025-26 Cinema Season" loading="lazy"/></div>
     <div class="film-meta">
       <h2>GISELLE - RBO 2025-26 Cinema Season </h2>
-      <div class="meta-line">210 min (3 hours 30 mins)  <span class="genres">Music</span></div>
+      <div class="meta-line">210 min (3 hours 30 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:0%"></span></span><span class="rating-text">0.0/10</span></span> <span class="genres">Music</span></div>
       
       <p class="cast"><strong>Starring:</strong> To Be Announced</p>
       <p class="synopsis">The world turns upside down for the peasant girl Giselle when she discovers her lover Albrecht is actually a nobleman promised to another. In despair, she kills herself. Her spirit joins the Wilis, the vengeful ghosts of women who have been jilted and die before their wedding day. The Wilis are hell-bent on killing any man who crosses their path in a dance to the death. Wracked with guilt, Albrecht visits Giselle’s grave, where he must face the Wilis – and Giselle’s ghost. Will he survive?</p>
@@ -655,8 +758,9 @@
 </article>
 
 <article class="film-card" data-dates="2026-03-05" data-status="coming-soon">
+  <span class="status-pill status-pill--coming-soon">Coming Soon</span>
   <div class="film-header">
-    
+    <div class="poster"><img src="posters/placeholder.svg" alt="No poster available for The Lost Boys of Carbis Bay (And More!)" loading="lazy"/><span class="poster-fallback-label">No poster yet</span></div>
     <div class="film-meta">
       <h2>The Lost Boys of Carbis Bay (And More!) </h2>
       <div class="meta-line">70 min (1 hour 10 mins)  </div>
@@ -675,15 +779,16 @@
 </article>
 
 <article class="film-card" data-dates="2026-03-12" data-status="coming-soon">
+  <span class="status-pill status-pill--coming-soon">Coming Soon</span>
   <div class="film-header">
-    <div class="poster"><img src="posters/is-this-thing-on.jpg" alt="" loading="lazy"/></div>
+    <div class="poster"><img src="posters/is-this-thing-on.jpg" alt="Poster for Is This Thing On" loading="lazy"/></div>
     <div class="film-meta">
       <h2>Is This Thing On </h2>
       <div class="meta-line">121 min (2 hours 1 min) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:70%"></span></span><span class="rating-text">7.0/10</span></span> <span class="genres">Comedy, Drama</span></div>
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/DnIZfYuDEvQ?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=DnIZfYuDEvQ" aria-label="Play trailer">Trailer</button>
       <p class="crew"><strong>Director:</strong> Bradley Cooper</p>
       <p class="crew"><strong>Writer(s):</strong> Mark Chappell, Will Arnett, Bradley Cooper, John Bishop</p>
-      <p class="cast"><strong>Starring:</strong> Will Arnett, Laura Dern, Andra Day, Bradley Cooper</p>
+      <p class="cast"><strong>Starring:</strong> Will Arnett (Alex Novak), Laura Dern (Tess Novak), Andra Day (Christine), Bradley Cooper (Balls), Christine Ebersole (Marilyn), Ciarán Hinds (Jan)<span class="cast-rest" hidden>, Sean Hayes (Stephen), Amy Sedaris (Kemp), Chloe Radcliffe (Nina), Scott Icenogle (Geoffrey), Jordan Jensen (Jill), Peyton Manning (Laird)</span> <button type="button" class="cast-more-btn">More</button></p>
       <p class="synopsis">As their marriage quietly unravels, Alex faces middle age and an impending divorce, seeking new purpose in the New York comedy scene while Tess confronts the sacrifices she made for their family—forcing them to navigate co-parenting, identity, and whether love can take a new form.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/is-this-thing-on/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -697,17 +802,20 @@
 </article>
 
 <article class="film-card" data-dates="2026-03-12" data-status="coming-soon">
+  <span class="status-pill status-pill--coming-soon">Coming Soon</span>
   <div class="film-header">
-    
+    <div class="poster"><img src="posters/is-this-thing-on-with-subtitles.jpg" alt="Poster for Is This Thing On? (with subtitles)" loading="lazy"/></div>
     <div class="film-meta">
       <h2>Is This Thing On? (with subtitles) </h2>
-      <div class="meta-line">121 min (2 hours 1 min)  </div>
-      
-      <p class="cast"><strong>Starring:</strong> Will Arnett, Laura Dern, Andra Day, Bradley Cooper</p>
-      <p class="synopsis">As their marriage quietly unravels, Alex faces middle age and an impending divorce, seeking new purpose in the New York comedy scene while Tess confronts...</p>
+      <div class="meta-line">121 min (2 hours 1 min) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:70%"></span></span><span class="rating-text">7.0/10</span></span> <span class="genres">Comedy, Drama</span></div>
+      <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/DnIZfYuDEvQ?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=DnIZfYuDEvQ" aria-label="Play trailer">Trailer</button>
+      <p class="crew"><strong>Director:</strong> Bradley Cooper</p>
+      <p class="crew"><strong>Writer(s):</strong> Mark Chappell, Will Arnett, Bradley Cooper, John Bishop</p>
+      <p class="cast"><strong>Starring:</strong> Will Arnett (Alex Novak), Laura Dern (Tess Novak), Andra Day (Christine), Bradley Cooper (Balls), Christine Ebersole (Marilyn), Ciarán Hinds (Jan)<span class="cast-rest" hidden>, Sean Hayes (Stephen), Amy Sedaris (Kemp), Chloe Radcliffe (Nina), Scott Icenogle (Geoffrey), Jordan Jensen (Jill), Peyton Manning (Laird)</span> <button type="button" class="cast-more-btn">More</button></p>
+      <p class="synopsis">As their marriage quietly unravels, Alex faces middle age and an impending divorce, seeking new purpose in the New York comedy scene while Tess confronts the sacrifices she made for their family—forcing them to navigate co-parenting, identity, and whether love can take a new form.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/is-this-thing-on-with-subtitles/?screen=st-austell" class="btn book">Book at WTW</a>
-        <a href="https://www.imdb.com/find/?q=Is+This+Thing+On%3F" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
+        <a href="https://www.imdb.com/title/tt28083456/" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
         <a href="https://www.rottentomatoes.com/search?search=Is+This+Thing+On%3F" class="link ext-link" target="_blank" rel="noopener" title="Rotten Tomatoes"><svg class="ext-logo" aria-hidden="true"><use href="#rt-logo"/></svg> RT</a>
         <a href="https://trakt.tv/search?query=Is+This+Thing+On%3F" class="link ext-link" target="_blank" rel="noopener" title="Trakt"><svg class="ext-logo" aria-hidden="true"><use href="#trakt-logo"/></svg> Trakt</a>
       </div>
@@ -717,14 +825,15 @@
 </article>
 
 <article class="film-card" data-dates="2026-03-31" data-status="coming-soon">
+  <span class="status-pill status-pill--coming-soon">Coming Soon</span>
   <div class="film-header">
-    <div class="poster"><img src="posters/siegfried-rbo-2025-26-cinema-season.jpg" alt="" loading="lazy"/></div>
+    <div class="poster"><img src="posters/siegfried-rbo-2025-26-cinema-season.jpg" alt="Poster for SIEGFRIED - RBO 2025-26 Cinema Season" loading="lazy"/></div>
     <div class="film-meta">
       <h2>SIEGFRIED - RBO 2025-26 Cinema Season </h2>
-      <div class="meta-line">330 min (5 hours 30 mins)  </div>
+      <div class="meta-line">330 min (5 hours 30 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:0%"></span></span><span class="rating-text">0.0/10</span></span> </div>
       
       <p class="crew"><strong>Director:</strong> Barrie Kosky</p>
-      <p class="cast"><strong>Starring:</strong> To Be Announced</p>
+      <p class="cast"><strong>Starring:</strong> Peter Hoare, Andreas Schager, Christopher Maltman, Christopher Purves, Elisabet Strid</p>
       <p class="synopsis">Raised by a scheming dwarf and unaware of his true family origins, a young man embarks on an epic journey.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/siegfried-rbo-2025-26-cinema-season/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -738,14 +847,15 @@
 </article>
 
 <article class="film-card" data-dates="2026-04-21" data-status="coming-soon">
+  <span class="status-pill status-pill--coming-soon">Coming Soon</span>
   <div class="film-header">
-    <div class="poster"><img src="posters/the-magic-flute-rbo-2025-26-cinema-season.jpg" alt="" loading="lazy"/></div>
+    <div class="poster"><img src="posters/the-magic-flute-rbo-2025-26-cinema-season.jpg" alt="Poster for THE MAGIC FLUTE - RBO 2025-26 Cinema Season" loading="lazy"/></div>
     <div class="film-meta">
       <h2>THE MAGIC FLUTE - RBO 2025-26 Cinema Season </h2>
-      <div class="meta-line">210 min (3 hours 30 mins)  </div>
+      <div class="meta-line">210 min (3 hours 30 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:0%"></span></span><span class="rating-text">0.0/10</span></span> </div>
       
       <p class="crew"><strong>Director:</strong> David McVicar</p>
-      <p class="cast"><strong>Starring:</strong> To Be Announced</p>
+      <p class="cast"><strong>Starring:</strong> Julia Bullock, Amitai Pati, Huw Montague Rendall, Kathyrn Lewek</p>
       <p class="synopsis">Princess Pamina has been captured. Her mother, the Queen of the Night, tasks the young Prince Tamino with her daughter’s rescue. But when Tamino and his friendly sidekick, Papageno, embark on their adventure, they soon learn that when it comes to the quest for love, nothing is as it really seems.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/the-magic-flute-rbo-2025-26-cinema-season/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -759,13 +869,14 @@
 </article>
 
 <article class="film-card" data-dates="2026-05-05" data-status="coming-soon">
+  <span class="status-pill status-pill--coming-soon">Coming Soon</span>
   <div class="film-header">
-    <div class="poster"><img src="posters/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season.jpg" alt="" loading="lazy"/></div>
+    <div class="poster"><img src="posters/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season.jpg" alt="Poster for EUGENE ONEGIN - The MET Opera - RBO 2025-26 Cinema Season" loading="lazy"/></div>
     <div class="film-meta">
       <h2>EUGENE ONEGIN - The MET Opera - RBO 2025-26 Cinema Season </h2>
-      <div class="meta-line">245 min (4 hours 5 mins)  <span class="genres">Music</span></div>
+      <div class="meta-line">245 min (4 hours 5 mins) <span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:0%"></span></span><span class="rating-text">0.0/10</span></span> <span class="genres">Music</span></div>
       <button type="button" class="trailer trailer-lightbox-trigger" data-embed="https://www.youtube-nocookie.com/embed/SukbEYbc8Q4?autoplay=1&amp;rel=0" data-watch="https://www.youtube.com/watch?v=SukbEYbc8Q4" aria-label="Play trailer">Trailer</button>
-      <p class="cast"><strong>Starring:</strong> To Be Announced</p>
+      <p class="cast"><strong>Starring:</strong> Anna Netrebko (Tatiana), Peter Mattei (Eugene Onegin), Alexey Dolgov (Lensky), Štefan Kocán (Gremin), Robin Ticciati, MET Orchestra</p>
       <p class="synopsis">Tchaikovsky’s setting of Pushkin’s timeless verse novel is presented on the Met stage in Deborah Warner’s moving production, starring Anna Netrebko as Tatiana and Mariusz Kwiecien and Peter Mattei sharing the title role. Alexey Dolgov sings the role of Lenski, and Robin Ticciati conducts.</p>
       <div class="links">
         <a href="https://wtwcinemas.co.uk/film/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season/?screen=st-austell" class="btn book">Book at WTW</a>
@@ -776,7 +887,8 @@
     </div>
   </div>
   <div class="showtimes"><div class="day-group"><div class="st-date">Tue 05 May</div><div class="st-row"><span class="st-time"><a href="https://wtwcinemas.co.uk/book?performance=73035&screen=staustell">18:00</a></span><span class="st-screen">Screen 3</span><span class="st-tags"><span class="tag" title="Subtitled screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-subtitles"/></svg>Subs</span> <span class="tag" title="Wheelchair accessible"><svg class="tag-icon" aria-hidden="true"><use href="#icon-wheelchair"/></svg>WA</span> <span class="tag" title="Standard 2D screening"><svg class="tag-icon" aria-hidden="true"><use href="#icon-2d"/></svg>2D</span> <span class="tag"><svg class="tag-icon" aria-hidden="true"><use href="#icon-event-cinema"/></svg>Event cinema</span></span></div></div></div>
-</article></main>
+</article>
+</section></main>
     <footer>
       <p class="footer-disclaimer">An open source fan-made project. Not affiliated with WTW Cinemas.</p>
       <div class="footer-links">
@@ -798,13 +910,21 @@
         btn.classList.add('active');
         var date = btn.getAttribute('data-date');
         var isAll = date === 'all';
-        document.querySelectorAll('.section-title').forEach(function(el) {
-          el.style.display = isAll ? 'block' : 'none';
-        });
+        var sectionVisibility = { now: false, coming: false };
         document.querySelectorAll('.film-card').forEach(function(card) {
           var dates = (card.getAttribute('data-dates') || '').split(',');
           var show = isAll || dates.indexOf(date) !== -1;
           card.style.display = show ? 'block' : 'none';
+          if (show) {
+            var status = card.getAttribute('data-status') || '';
+            if (status === 'now') sectionVisibility.now = true;
+            if (status === 'coming-soon') sectionVisibility.coming = true;
+          }
+        });
+        document.querySelectorAll('.film-section').forEach(function(section) {
+          var sectionType = section.getAttribute('data-section') || '';
+          var showSection = sectionType === 'now' ? sectionVisibility.now : sectionVisibility.coming;
+          section.style.display = showSection ? 'grid' : 'none';
         });
       });
     });
