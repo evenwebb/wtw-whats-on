@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27T10:29:17Z",
+  "updated_at": "2026-02-28T09:20:00Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -15,28 +15,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/epic-elvis-presley-in-concert/?screen=st-austell",
           "poster_url": "posters/epic-elvis-presley-in-concert.jpg",
           "showtimes": [
-            {
-              "date": "2026-02-27",
-              "time": "17:30",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76238&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-27",
-              "time": "20:00",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76239&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-02-28",
               "time": "17:30",
@@ -191,30 +169,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/scream-7/?screen=st-austell",
           "poster_url": "posters/scream-7.jpg",
           "showtimes": [
-            {
-              "date": "2026-02-27",
-              "time": "17:00",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76236&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-27",
-              "time": "19:45",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76237&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-02-28",
               "time": "17:00",
@@ -372,28 +326,6 @@
           "poster_url": "posters/wuthering-heights.jpg",
           "showtimes": [
             {
-              "date": "2026-02-27",
-              "time": "16:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76350&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-27",
-              "time": "19:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76351&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-02-28",
               "time": "14:15",
               "screen": 3,
@@ -527,17 +459,6 @@
           "poster_url": "posters/cold-storage.jpg",
           "showtimes": [
             {
-              "date": "2026-02-27",
-              "time": "20:15",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76385&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-02-28",
               "time": "20:15",
               "screen": 4,
@@ -626,18 +547,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/goat/?screen=st-austell",
           "poster_url": "posters/goat.jpg",
           "showtimes": [
-            {
-              "date": "2026-02-27",
-              "time": "17:45",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76381&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-02-28",
               "time": "12:15",
