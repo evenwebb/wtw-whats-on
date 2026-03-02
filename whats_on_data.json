@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-28T09:20:00Z",
+  "updated_at": "2026-03-02T09:40:24Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -15,39 +15,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/epic-elvis-presley-in-concert/?screen=st-austell",
           "poster_url": "posters/epic-elvis-presley-in-concert.jpg",
           "showtimes": [
-            {
-              "date": "2026-02-28",
-              "time": "17:30",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76244&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-28",
-              "time": "20:00",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76245&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-01",
-              "time": "17:30",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76248&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-02",
               "time": "17:30",
@@ -170,42 +137,6 @@
           "poster_url": "posters/scream-7.jpg",
           "showtimes": [
             {
-              "date": "2026-02-28",
-              "time": "17:00",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76240&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-28",
-              "time": "19:45",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76241&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-03-01",
-              "time": "17:00",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76246&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-03-02",
               "time": "17:00",
               "screen": 1,
@@ -326,39 +257,6 @@
           "poster_url": "posters/wuthering-heights.jpg",
           "showtimes": [
             {
-              "date": "2026-02-28",
-              "time": "14:15",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76375&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-28",
-              "time": "19:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76353&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-01",
-              "time": "16:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76354&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-02",
               "time": "16:30",
               "screen": 2,
@@ -423,18 +321,6 @@
                 "Wheelchair access",
                 "2D"
               ]
-            },
-            {
-              "date": "2026-02-28",
-              "time": "16:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76352&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "2D"
-              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=a6eTho1jxuM",
@@ -458,28 +344,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/cold-storage/?screen=st-austell",
           "poster_url": "posters/cold-storage.jpg",
           "showtimes": [
-            {
-              "date": "2026-02-28",
-              "time": "20:15",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76386&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-01",
-              "time": "17:45",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76384&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-02",
               "time": "20:15",
@@ -548,66 +412,6 @@
           "poster_url": "posters/goat.jpg",
           "showtimes": [
             {
-              "date": "2026-02-28",
-              "time": "12:15",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76377&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-28",
-              "time": "15:00",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76379&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-02-28",
-              "time": "17:45",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76382&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-03-01",
-              "time": "12:15",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76378&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-03-01",
-              "time": "15:00",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76380&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-03-02",
               "time": "17:45",
               "screen": 4,
@@ -634,55 +438,6 @@
           "writer": "Aaron Buchsbaum, Teddy Riley, Nicolas Curcio"
         },
         {
-          "title": "Zootropolis 2",
-          "search_title": "Zootropolis 2",
-          "film_slug": "zootropolis-2",
-          "synopsis": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find their partnership isn't as solid as they thought when...",
-          "cast": "Ginnifer Goodwin (Judy Hopps (voice)), Jason Bateman (Nick Wilde (voice)), Ke Huy Quan (Gary De'Snake (voice)), Fortune Feimster (Nibbles Maplestick (voice)), Andy Samberg (Pawbert Lynxley (voice)), David Strathairn (Milton Lynxley (voice)), Idris Elba (Chief Bogo (voice)), Shakira (Gazelle (voice)), Patrick Warburton (Mayor Winddancer (voice)), Quinta Brunson (Dr. Fuzzby (voice)), Danny Trejo (Jesús (voice)), Nate Torrence (Clawhauser (voice))",
-          "runtime_min": 108,
-          "film_url": "https://wtwcinemas.co.uk/film/zootropolis-2/?screen=st-austell",
-          "poster_url": "posters/zootropolis-2.jpg",
-          "showtimes": [
-            {
-              "date": "2026-02-28",
-              "time": "13:45",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76370&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-03-01",
-              "time": "13:45",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76371&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=k8t8rvRO7Ug",
-          "vote_average": 7.624,
-          "genres": [
-            "Animation",
-            "Comedy",
-            "Adventure",
-            "Family",
-            "Mystery"
-          ],
-          "imdb_id": "tt26443597",
-          "overview": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
-          "director": "Jared Bush, Byron Howard",
-          "writer": "Jared Bush"
-        },
-        {
           "title": "National Theatre Live: The Audience",
           "search_title": "National Theatre Live: The Audience",
           "film_slug": "national-theatre-live-the-audience",
@@ -692,17 +447,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/national-theatre-live-the-audience/?screen=st-austell",
           "poster_url": "posters/national-theatre-live-the-audience.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-01",
-              "time": "14:00",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=75468&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Event cinema"
-              ]
-            },
             {
               "date": "2026-03-04",
               "time": "14:00",
@@ -875,74 +619,6 @@
           "overview": "",
           "director": "",
           "writer": ""
-        },
-        {
-          "title": "Hoppers",
-          "search_title": "Hoppers",
-          "film_slug": "hoppers",
-          "synopsis": "Scientists have discovered how to \"hop\" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an...",
-          "cast": "Piper Curda (Mabel Tanaka / Mabel Beaver (voice)), Bobby Moynihan (King George (voice)), Jon Hamm (Mayor Jerry Generazzo (voice)), Kathy Najimy (Dr. Sam (voice)), Eduardo Franco (Loaf (voice)), Aparna Nancherla (Nisha (voice)), Meryl Streep (Insect Queen (voice)), Dave Franco (Insect King (voice)), Eman Abdul-Razzak (Insect Prince (voice)), Tom Law (Tom Lizard (voice)), Sam Richardson (Conner (voice)), Melissa Villaseñor (Ellen Bear (voice))",
-          "runtime_min": 105,
-          "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=st-austell",
-          "poster_url": "posters/hoppers.jpg",
-          "showtimes": [
-            {
-              "date": "2026-02-28",
-              "time": "12:00",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76366&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-02-28",
-              "time": "14:30",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76368&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-01",
-              "time": "12:00",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76367&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-01",
-              "time": "14:30",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76369&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=nIKsi-Ud3w8",
-          "vote_average": 8.0,
-          "genres": [
-            "Animation",
-            "Family",
-            "Comedy",
-            "Science Fiction"
-          ],
-          "imdb_id": "tt26443616",
-          "overview": "Scientists have discovered how to \"hop\" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world that are beyond anything she could have imagined.",
-          "director": "Daniel Chong",
-          "writer": "Jesse Andrews, Daniel Chong"
         },
         {
           "title": "Is This Thing On",
