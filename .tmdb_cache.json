@@ -256,7 +256,7 @@
     "director": "Barrie Kosky",
     "writer": "",
     "cast": "Peter Hoare, Andreas Schager, Christopher Maltman, Christopher Purves, Elisabet Strid",
-    "cached_at": "2026-03-02T09:40:27.223902"
+    "cached_at": "2026-03-03T09:34:30.196411"
   },
   "national-theatre-live-all-my-sons": {
     "poster_url": "https://image.tmdb.org/t/p/w342/jWblUug4V4LcMnkJUtF2MhFMl5X.jpg",
@@ -282,7 +282,7 @@
     "director": "David McVicar",
     "writer": "",
     "cast": "Julia Bullock, Amitai Pati, Huw Montague Rendall, Kathyrn Lewek",
-    "cached_at": "2026-03-02T09:40:28.108917"
+    "cached_at": "2026-03-03T09:34:31.012934"
   },
   "eugene-onegin-the-met-opera-rbo-2025-26-cinema-season": {
     "poster_url": "https://image.tmdb.org/t/p/w342/5VpQ0JRs0SQLGMcahan8FLzjedN.jpg",
@@ -559,5 +559,21 @@
     "writer": "Emma Donoghue, Helen Macdonald",
     "cast": "Claire Foy (Helen Macdonald), Brendan Gleeson (Alisdair Macdonald), Angus Cooper, Sam Spruell (Stuart), Josh Dylan (James), Eden Hamilton (Young Helen), Denise Gough (Christina), Lindsay Duncan, Arty Froushan (Amar), Emma Cunniffe (Mandy), Imogen Dufty (Female Undergrad), Sean Kearns (Breeder)",
     "cached_at": "2026-02-27T10:29:24.341312"
+  },
+  "the-bride": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/lV8YHwGkYZsm6EfIqnhaSz2avKt.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=i4F3oZYj6Mk",
+    "vote_average": 10.0,
+    "genres": [
+      "Science Fiction",
+      "Horror",
+      "Comedy"
+    ],
+    "imdb_id": "tt30851137",
+    "overview": "A lonely Frankenstein travels to 1930s Chicago to ask groundbreaking scientist Dr. Euphronious to create a companion for him. The two revive a murdered young woman and The Bride is born. But what ensues is beyond what either of them imagined.",
+    "director": "Maggie Gyllenhaal",
+    "writer": "Maggie Gyllenhaal, Mary Shelley",
+    "cast": "Jessie Buckley (The Bride / Ida / Mary Shelley), Christian Bale (Frank), Jake Gyllenhaal (Ronnie Reed), Annette Bening (Dr. Euphronious), Peter Sarsgaard, Penélope Cruz (Myrna), Jeannie Berlin, John Magaro, Julianne Hough, Louis Cancelmi, Linda Emond, Matthew Maher",
+    "cached_at": "2026-03-03T09:34:29.411426"
   }
 }
