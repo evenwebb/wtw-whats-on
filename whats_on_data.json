@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-03T09:34:27Z",
+  "updated_at": "2026-03-04T09:33:16Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -15,28 +15,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/epic-elvis-presley-in-concert/?screen=st-austell",
           "poster_url": "posters/epic-elvis-presley-in-concert.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-03",
-              "time": "17:30",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76389&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-03",
-              "time": "20:00",
-              "screen": 4,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76392&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-04",
               "time": "15:00",
@@ -169,30 +147,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/scream-7/?screen=st-austell",
           "poster_url": "posters/scream-7.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-03",
-              "time": "17:00",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76254&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-03-03",
-              "time": "19:45",
-              "screen": 1,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76255&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-03-04",
               "time": "19:45",
@@ -386,17 +340,6 @@
           "poster_url": "posters/wuthering-heights.jpg",
           "showtimes": [
             {
-              "date": "2026-03-03",
-              "time": "19:30",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76358&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-04",
               "time": "14:15",
               "screen": 2,
@@ -495,17 +438,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/cold-storage/?screen=st-austell",
           "poster_url": "posters/cold-storage.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-03",
-              "time": "17:15",
-              "screen": 2,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76373&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-04",
               "time": "17:15",
@@ -670,38 +602,6 @@
           "overview": "For sixty years, Elizabeth II has met each of her twelve Prime Ministers in a weekly audience at Buckingham Palace, a meeting like no other in British public life, it is private.",
           "director": "Robin Lough",
           "writer": "Peter Morgan"
-        },
-        {
-          "title": "GISELLE - RBO 2025-26 Cinema Season",
-          "search_title": "GISELLE - RBO 2025-26 Cinema Season",
-          "film_slug": "giselle-rbo-2025-26-cinema-season",
-          "synopsis": "The peasant girl Giselle has fallen in love with Albrecht. When she discovers that he is actually a nobleman promised to another, she kills herself...",
-          "cast": "To Be Announced",
-          "runtime_min": 210,
-          "film_url": "https://wtwcinemas.co.uk/film/giselle-rbo-2025-26-cinema-season/?screen=st-austell",
-          "poster_url": "posters/giselle-rbo-2025-26-cinema-season.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-03",
-              "time": "19:15",
-              "screen": 3,
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=73032&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Event cinema"
-              ]
-            }
-          ],
-          "trailer_url": "",
-          "vote_average": 0.0,
-          "genres": [
-            "Music"
-          ],
-          "imdb_id": "",
-          "overview": "The world turns upside down for the peasant girl Giselle when she discovers her lover Albrecht is actually a nobleman promised to another. In despair, she kills herself. Her spirit joins the Wilis, the vengeful ghosts of women who have been jilted and die before their wedding day. The Wilis are hell-bent on killing any man who crosses their path in a dance to the death. Wracked with guilt, Albrecht visits Giselle’s grave, where he must face the Wilis – and Giselle’s ghost. Will he survive?",
-          "director": "",
-          "writer": ""
         },
         {
           "title": "Othello",
