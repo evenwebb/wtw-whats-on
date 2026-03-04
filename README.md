@@ -2,7 +2,13 @@
 
 # 🎬 WTW What's On
 
-Automatically scrapes WTW Cinemas St Austell listings, optionally enriches films with TMDb metadata, and publishes an updated static site in `docs/` for GitHub Pages.
+[![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Workflow](https://img.shields.io/badge/Workflow-GitHub%20Actions-2088FF?logo=github-actions&logoColor=white)](https://github.com/evenwebb/wtw-whats-on/actions)
+[![Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-222222?logo=githubpages&logoColor=white)](https://evenwebb.github.io/wtw-whats-on/)
+
+Automated scraper and static-site generator for WTW Cinemas listings across **St Austell, Newquay, Truro, and Wadebridge**.
+It enriches films with TMDb metadata and publishes a production-ready `docs/` site via GitHub Actions.
 
 </div>
 
@@ -15,11 +21,12 @@ Automatically scrapes WTW Cinemas St Austell listings, optionally enriches films
 - [📦 Installation](#-installation)
 - [🚀 Usage](#-usage)
 - [⚙️ Configuration](#️-configuration)
-- [🤖 GitHub Actions Automation](#-github-actions-automation)
+- [🩺 Health Checks](#-health-checks)
+- [🤖 GitHub Actions](#-github-actions)
+- [🚨 Failure Handling](#-failure-handling)
 - [🌐 GitHub Pages Deployment](#-github-pages-deployment)
 - [🧩 Dependencies](#-dependencies)
 - [🛠️ Troubleshooting](#️-troubleshooting)
-- [⚠️ Known Limitations](#️-known-limitations)
 - [📄 License](#-license)
 
 ---
@@ -32,14 +39,17 @@ cd wtw-whats-on
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-python3 whats_on_scraper.py
+TMDB_API_KEY=your_key_here python3 whats_on_scraper.py
 ```
 
-Generated outputs:
+Outputs:
 
 - `whats_on_data.json`
 - `docs/index.html`
-- `docs/posters/` and related assets
+- `docs/posters/`, `docs/certs/`, `docs/icons/`
+- `.tmdb_cache.json`
+- `.whats_on_fingerprint`
+- `.cinema_failure_state.json`
 
 ---
 
@@ -47,21 +57,21 @@ Generated outputs:
 
 | Feature | Description |
 |---|---|
-| `🎬 Listings + Showtimes` | Scrapes current films and grouped showtimes from WTW St Austell. |
-| `🏷️ Rich Showtime Metadata` | Preserves screen labels and accessibility/format tags in generated output. |
-| `🧩 TMDb Enrichment` | Adds posters, trailers, ratings, cast, crew, and genres (required for CI publishing). |
-| `💾 Smart Caching` | Reuses TMDb cache data to reduce API requests and runtime cost. |
-| `🧮 Fingerprint-Based Commits` | Uses deterministic fingerprinting to avoid unnecessary repository commits. |
-| `🌐 Static Site Output` | Regenerates `docs/index.html` and assets for GitHub Pages publishing. |
-| `🤖 Automated Daily Updates` | GitHub Actions runs on schedule/manual trigger with retries and optional failure issue creation. |
+| `🏢 Multi-cinema scraping` | Scrapes all configured WTW cinemas concurrently. |
+| `🧠 Markup drift diagnostics` | Primary selector + fallback selector mode tracking with per-cinema health metrics. |
+| `🩺 Health-gated deploys` | Configurable minimum film/showtime/cinema thresholds to fail bad runs before publish. |
+| `🧯 Outage tolerance` | Single-cinema failures can restore prior data and only fail after consecutive threshold breaches. |
+| `🧩 TMDb enrichment` | Adds posters, trailers, ratings, cast/crew, and genres using `TMDB_API_KEY`. |
+| `⚡ Fast no-change path` | Fingerprint skip avoids expensive enrichment/render when nothing changed. |
+| `🖼️ Poster optimization` | Dedupe by movie key, local caching, and parallel poster download pass. |
+| `🚨 Failure issue automation` | Structured failure issues with log/artifact links and signature-based dedupe. |
+| `✅ Auto-close stale incidents` | Failure issues auto-close after 2 consecutive successful runs. |
 
 ---
 
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/evenwebb/wtw-whats-on.git
-cd wtw-whats-on
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -71,64 +81,125 @@ pip install -r requirements.txt
 
 ## 🚀 Usage
 
+Run locally:
+
 ```bash
-python3 whats_on_scraper.py
+TMDB_API_KEY=your_key_here python3 whats_on_scraper.py
 ```
 
-The script refreshes listings, updates `whats_on_data.json`, and regenerates the `docs/` site output.
+Run with selected cinemas only:
+
+```bash
+WTW_ENABLED_CINEMAS="st-austell,truro" TMDB_API_KEY=your_key_here python3 whats_on_scraper.py
+```
+
+Force rebuild even if fingerprint unchanged:
+
+```bash
+FORCE_REBUILD=true TMDB_API_KEY=your_key_here python3 whats_on_scraper.py
+```
 
 ---
 
 ## ⚙️ Configuration
 
-Configuration is set in `whats_on_scraper.py` and via environment variables.
+### Core
 
-| Variable/Option | Default | Description |
+| Variable | Default | Purpose |
 |---|---|---|
-| `TMDB_API_KEY` (env) | unset | Enables TMDb enrichment. Required in CI workflow. |
-| `POSTER_MISSING_FAIL_THRESHOLD` (env) | unset locally | Optional quality gate. If set, scraper fails when missing-poster count exceeds threshold. |
-| `HTTP_TIMEOUT` | `60` | Request timeout in seconds. |
-| `HTTP_RETRIES` | `3` | Number of HTTP retries per request. |
-| `HTTP_RETRY_DELAY` | `1` | Initial backoff delay in seconds. |
-| `HTTP_RETRY_MULTIPLIER` | `2` | Retry delay multiplier. |
-| `TMDB_CACHE_FILE` | `.tmdb_cache.json` | TMDb cache storage file. |
-| `TMDB_CACHE_DAYS` | `30` | Cache retention window in days. |
-| `DATA_FILE` | `whats_on_data.json` | Scraped data output file. |
-| `FINGERPRINT_FILE` | `.whats_on_fingerprint` | Hash file used to detect meaningful changes. |
-| `SITE_DIR` | `docs` | Generated static site output directory. |
+| `TMDB_API_KEY` | unset | Required for TMDb enrichment in CI and recommended locally. |
+| `WTW_ENABLED_CINEMAS` | all enabled | Comma-separated cinema slugs to scrape. |
+| `WTW_INITIAL_SHOWINGS_VISIBLE` | `10` | Initial showings rendered per film card before "Show more". |
+| `FORCE_REBUILD` | unset | If true, bypasses fingerprint skip. |
+| `POSTER_MISSING_FAIL_THRESHOLD` | unset | Optional hard fail if too many unique films lack posters. |
+| `MAX_CONSECUTIVE_CINEMA_FAILURES` | `2` | Fail run when a cinema keeps failing across runs. |
+
+### Backward-compatible gates
+
+| Variable | Default |
+|---|---|
+| `WTW_MIN_TOTAL_FILMS` | `1` |
+| `WTW_MIN_TOTAL_SHOWTIMES` | `1` |
+| `WTW_MIN_FILMS_PER_CINEMA` | `0` |
+| `WTW_FAIL_ON_MARKUP_DRIFT` | `false` |
 
 ---
 
-## 🤖 GitHub Actions Automation
+## 🩺 Health Checks
 
-This repo includes `.github/workflows/whats_on_html.yml`:
+This project now supports explicit health gates for safer deploys.
 
-- `⏰` Runs daily at `09:00 UTC`
-- `🖱️` Supports manual runs (`workflow_dispatch`)
-- `🔁` Retries scraper runs before failing (`SCRAPER_RUN_ATTEMPTS`, default `2`)
-- `📝` Commits output files only when changed
-- `🚨` Optionally opens or updates a GitHub issue on failure (`CREATE_FAILURE_ISSUE=true`)
+| Variable | Default in CI | Meaning |
+|---|---|---|
+| `HEALTHCHECK_ENFORCE` | `true` | Fail run when any health gate is breached. |
+| `HEALTH_MIN_TOTAL_FILMS` | `8` | Minimum total parsed films across non-excluded cinemas. |
+| `HEALTH_MIN_TOTAL_SHOWTIMES` | `20` | Minimum total parsed showtimes across non-excluded cinemas. |
+| `HEALTH_MIN_CINEMAS_WITH_FILMS` | `3` | Minimum cinemas with at least one parsed film. |
+| `HEALTH_MIN_NOW_SHOWING_FILMS` | `3` | Minimum films classified as now showing. |
+| `HEALTH_MAX_MARKUP_SUSPECT_CINEMAS` | `1` | Maximum cinemas allowed in fallback/none parser mode. |
+| `HEALTH_EXCLUDED_CINEMAS` | `st-ives` | Comma list excluded from gating calculations. |
 
-Configure these repository secrets as needed:
+Health summary is logged on every run, including:
 
-- `TMDB_API_KEY` (required)
+- total cinemas, films, showtimes
+- cinemas with films
+- now-showing films
+- markup-suspect cinema count
+
+---
+
+## 🤖 GitHub Actions
+
+Workflow file: [`.github/workflows/whats_on_html.yml`](.github/workflows/whats_on_html.yml)
+
+It runs daily and on manual trigger, then:
+
+1. Installs dependencies with pip cache.
+2. Masks TMDb secret in logs.
+3. Writes config snapshot to `logs/health_env.txt`.
+4. Runs scraper and captures full output to `logs/scraper.log`.
+5. Uploads `logs/` artifacts on failure.
+6. Commits updated outputs only when changed.
+
+Required repository secrets:
+
+- `TMDB_API_KEY`
 - `CREATE_FAILURE_ISSUE` (`true`/`false`)
-- `SCRAPER_RUN_ATTEMPTS` (integer)
 
-Optional repository variable:
+Recommended repository variables (optional overrides):
 
-- `POSTER_MISSING_FAIL_THRESHOLD` (default workflow value: `8`)
+- `HEALTH_MIN_TOTAL_FILMS`
+- `HEALTH_MIN_TOTAL_SHOWTIMES`
+- `HEALTH_MIN_CINEMAS_WITH_FILMS`
+- `HEALTH_MIN_NOW_SHOWING_FILMS`
+- `HEALTH_MAX_MARKUP_SUSPECT_CINEMAS`
+- `HEALTH_EXCLUDED_CINEMAS`
+- `MAX_CONSECUTIVE_CINEMA_FAILURES`
+- `POSTER_MISSING_FAIL_THRESHOLD`
+
+---
+
+## 🚨 Failure Handling
+
+When workflow fails and `CREATE_FAILURE_ISSUE=true`:
+
+- Uses a stable failure signature derived from step context + normalized error excerpt.
+- Opens/updates a single issue thread (`What's On workflow failures`).
+- Adds one comment per **new signature** only (prevents spam).
+- Reopens the issue if it was closed and failure recurs.
+- Includes run link, artifacts link, config snapshot, and log excerpt.
+- Tracks success streak and auto-closes after 2 consecutive successful runs.
 
 ---
 
 ## 🌐 GitHub Pages Deployment
 
-1. In GitHub, open **Settings -> Pages**.
-2. Set source to **Deploy from a branch**.
+1. Go to **Settings -> Pages**.
+2. Set source: **Deploy from branch**.
 3. Select branch `main` and folder `/docs`.
 4. Save.
 
-After each workflow update, the published site refreshes from the latest committed `docs/` output.
+Published site updates after workflow commits.
 
 ---
 
@@ -136,27 +207,50 @@ After each workflow update, the published site refreshes from the latest committ
 
 | Package | Purpose |
 |---|---|
-| `requests` | HTTP requests for listings, metadata, and assets |
-| `beautifulsoup4` | HTML parsing for listing extraction |
+| `requests` | HTTP requests and API calls |
+| `beautifulsoup4` | HTML parsing |
 
 ---
 
 ## 🛠️ Troubleshooting
 
-- `🧱` If listings fail to parse, the source HTML structure may have changed.
-- `🔑` If posters/trailers are missing, verify `TMDB_API_KEY` and API quota.
-- `🖼️` Missing posters render a local fallback image (`docs/posters/placeholder.svg`) instead of blank space.
-- `🚦` If updates are not appearing, check workflow logs and Pages build status.
+<details>
+<summary><strong>Scraper suddenly returns very few films/showtimes</strong></summary>
 
----
+- Check latest workflow run logs and `logs/health_env.txt` artifact.
+- Look for `parser_mode=fallback` or selector warnings.
+- Adjust `HEALTH_*` thresholds temporarily only if source data is genuinely low.
 
-## ⚠️ Known Limitations
+</details>
 
-- `🌐` Site parsing depends on current WTW page markup.
-- `🎯` TMDb matches are best-effort and may occasionally select imperfect title matches.
+<details>
+<summary><strong>No posters/trailers in output</strong></summary>
+
+- Ensure `TMDB_API_KEY` exists in repo secrets.
+- Confirm API key has valid TMDb access and is not rate-limited.
+- Verify workflow logs for TMDb warnings.
+
+</details>
+
+<details>
+<summary><strong>One cinema keeps failing</strong></summary>
+
+- The scraper restores prior data for that cinema when possible.
+- Check `.cinema_failure_state.json` counters.
+- Increase `MAX_CONSECUTIVE_CINEMA_FAILURES` only if needed.
+
+</details>
 
 ---
 
 ## 📄 License
 
-[GPL-3.0](LICENSE)
+This project is licensed under [GPL-3.0](LICENSE).
+
+---
+
+<div align="center">
+
+Built by [evenwebb](https://github.com/evenwebb) • If this helps, star the repo ⭐
+
+</div>

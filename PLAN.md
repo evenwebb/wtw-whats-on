@@ -1,6 +1,6 @@
 ---
 name: WTW Cinemas HTML Listings
-overview: Create a Python script that scrapes the St Austell whats-on page, generates a stylish Web3-themed HTML page with cinema listings and links to IMDB/Trakt/Rotten Tomatoes, and a GitHub Actions workflow that only commits when new movies are added.
+overview: Create a Python script that scrapes all WTW cinemas whats-on pages, generates a stylish Web3-themed HTML page with cinema listings and links to IMDB/Trakt/Rotten Tomatoes, and a GitHub Actions workflow that only commits when new movies are added.
 todos: []
 isProject: false
 ---
@@ -13,9 +13,9 @@ isProject: false
 
 Build on the existing repo by adding a new scraper for the **whats-on** page (current showtimes), store results in a JSON file, generate a Web3-style HTML page, and run a GitHub Actions workflow that only commits when the film lineup changes.
 
-**Cinema scope:** WTW has multiple cinemas (St Austell, Newquay, Truro, Wadebridge), each with different movies. We only monitor the **main one (St Austell)** for simplicity; the JSON structure still allows for multiple cinemas later if needed.
+**Cinema scope:** WTW has multiple cinemas (St Austell, Newquay, Truro, Wadebridge), each with different movies. The implementation scrapes all supported cinemas and aggregates films across venues in the HTML.
 
-**Value proposition:** The cinema site lists times and booking; this site gives people a reason to visit by adding **richer information** they can't get there: ratings, trailers, posters, genres, and links to IMDB, Rotten Tomatoes, and Trakt. The page should clearly position itself as "more than the cinema" (e.g. header or short tagline: "What's on at WTW St Austell — with ratings, trailers & links").
+**Value proposition:** The cinema site lists times and booking; this site gives people a reason to visit by adding **richer information** they can't get there: ratings, trailers, posters, genres, and links to IMDB, Rotten Tomatoes, and Trakt. The page should clearly position itself as "more than the cinema" (e.g. header or short tagline: "What's on at WTW Cinemas — with ratings, trailers & links").
 
 ---
 
@@ -24,7 +24,7 @@ Build on the existing repo by adding a new scraper for the **whats-on** page (cu
 ```mermaid
 flowchart LR
     subgraph scrape [Scrape]
-        A[fetch St Austell whats-on] --> B[parse films + showtimes]
+        A[fetch all WTW whats-on pages] --> B[parse films + showtimes]
         B --> C[build data model]
     end
     subgraph persist [Persist]
@@ -45,12 +45,12 @@ flowchart LR
 
 ## 1. New Script: `whats_on_scraper.py`
 
-**Purpose:** Scrape the main cinema (St Austell) [whats-on page](https://wtwcinemas.co.uk/st-austell/whats-on/) and **store data in JSON**, then generate HTML. Multi-cinema is acknowledged (other venues have different lineups) but only St Austell is scraped.
+**Purpose:** Scrape all supported WTW [whats-on pages](https://wtwcinemas.co.uk/st-austell/whats-on/) and **store data in JSON**, then generate HTML.
 
 **JSON data file: `whats_on_data.json`**
 
 - Single source of truth: scraper always writes this file first.
-- Structure supports multiple cinemas for future use; for now one key, e.g. `"st-austell"`:
+- Structure supports multiple cinemas, e.g. keys `"st-austell"`, `"newquay"`, `"truro"`, `"wadebridge"`:
 
 ```json
 {
@@ -68,10 +68,15 @@ flowchart LR
           "runtime_min": 113,
           "film_url": "https://wtwcinemas.co.uk/film/send-help/?screen=st-austell",
           "showtimes": [
-            { "date": "2026-02-09", "time": "17:15", "screen": 1, "booking_url": "...", "tags": ["2D", "Audio Description"] }
+            { "date": "2026-02-09", "time": "17:15", "screen": 1, "cinema_name": "White River Cinema, St Austell", "booking_url": "...", "tags": ["2D", "Audio Description"] }
           ]
         }
       ]
+    },
+    "truro": {
+      "name": "Plaza Cinema, Truro",
+      "url": "https://wtwcinemas.co.uk/truro/whats-on/",
+      "films": []
     }
   }
 }
@@ -86,7 +91,7 @@ flowchart LR
 **Implementation approach:**
 
 - **Standalone script:** Implement `fetch_with_retries`, `USER_AGENT`, and logging inside `whats_on_scraper.py` (copy patterns from existing code as reference only; do not depend on or keep the old script).
-- Parse the whats-on page HTML; build the structure above for `st-austell` only
+- Parse each configured WTW cinema whats-on page and build the structure above across all cinemas
 - **TMDb:** Read API key from `os.environ.get("TMDB_API_KEY")` only—never hardcode. If set, enrich each film with poster, trailer, genre (and optionally `imdb_id`); if unset, skip enrichment.
 - Write `whats_on_data.json` first; then compute fingerprint from it; then generate `index.html` only if fingerprint changed
 
@@ -130,7 +135,7 @@ Title for search: strip "(15)", "(with subtitles)", etc. to get base film name (
 
 **Structure:**
 
-- Header + short tagline that reflects the value prop (e.g. "What's on at WTW St Austell — ratings, trailers & links to more").
+- Header + short tagline that reflects the value prop (e.g. "What's on at WTW Cinemas — ratings, trailers & links to more").
 - Date filter tabs: Today, Tomorrow, Tue, Wed, etc. (or "All")
 - Film cards: title, runtime, **rating** (e.g. TMDb score), cast, synopsis snippet, showtimes grouped by date
 - Each card: WTW Book link + external links (IMDB, Trakt, Rotten Tomatoes) so users can dig into reviews and info.

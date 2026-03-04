@@ -2,7 +2,7 @@
 """
 WTW Cinemas What's On scraper.
 
-Scrapes the St Austell whats-on page, optionally enriches with TMDb data,
+Scrapes whats-on pages across WTW cinemas, optionally enriches with TMDb data,
 writes whats_on_data.json and regenerates docs/index.html (and assets) on every run.
 Commits (e.g. in CI) are driven by fingerprint change.
 """
@@ -12,6 +12,8 @@ import logging
 import os
 import re
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from copy import deepcopy
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -32,12 +34,34 @@ USER_AGENT = (
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
 )
 
-WTW_WHATS_ON_URL = "https://wtwcinemas.co.uk/st-austell/whats-on/"
 WTW_BASE = "https://wtwcinemas.co.uk"
+WTW_CINEMAS = {
+    "st-austell": {
+        "enabled": True,
+        "name": "White River Cinema, St Austell",
+        "url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+    },
+    "newquay": {
+        "enabled": True,
+        "name": "Lighthouse Cinema, Newquay",
+        "url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+    },
+    "truro": {
+        "enabled": True,
+        "name": "Plaza Cinema, Truro",
+        "url": "https://wtwcinemas.co.uk/truro/whats-on/",
+    },
+    "wadebridge": {
+        "enabled": True,
+        "name": "Regal Cinema, Wadebridge",
+        "url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+    },
+}
 
 DATA_FILE = "whats_on_data.json"
 FINGERPRINT_FILE = ".whats_on_fingerprint"
 TMDB_CACHE_FILE = ".tmdb_cache.json"
+CINEMA_FAILURE_STATE_FILE = ".cinema_failure_state.json"
 SITE_DIR = "docs"  # GitHub Pages: only /(root) and /docs are offered; use Deploy from branch → /docs
 POSTERS_DIR = "docs/posters"
 CERTS_DIR = "docs/certs"
@@ -49,9 +73,56 @@ TMDB_CACHE_DAYS = 30
 TMDB_DELAY_SEC = 0.2
 TMDB_EMPTY_CACHE_TTL_DAYS = 7
 POSTER_PLACEHOLDER_REL = "posters/placeholder.svg"
+ENRICHMENT_FIELDS = ("poster_url", "trailer_url", "vote_average", "genres", "imdb_id", "overview", "director", "writer", "cast")
+
+
+def _env_int(name: str, default: int, minimum: int, maximum: int) -> int:
+    raw = (os.environ.get(name) or "").strip()
+    if not raw:
+        return default
+    try:
+        value = int(raw)
+    except ValueError:
+        logging.getLogger(__name__).warning("Invalid %s value %r, using default %d", name, raw, default)
+        return default
+    if value < minimum:
+        return minimum
+    if value > maximum:
+        return maximum
+    return value
+
+
+def _env_bool(name: str, default: bool = False) -> bool:
+    raw = (os.environ.get(name) or "").strip().lower()
+    if not raw:
+        return default
+    return raw in {"1", "true", "yes", "on"}
+
+
+def _env_csv(name: str, default: str = "") -> List[str]:
+    raw = (os.environ.get(name) or default or "").strip()
+    if not raw:
+        return []
+    return [item.strip().lower() for item in raw.split(",") if item.strip()]
+
+
+INITIAL_SHOWINGS_VISIBLE = _env_int("WTW_INITIAL_SHOWINGS_VISIBLE", default=10, minimum=3, maximum=30)
+MIN_TOTAL_FILMS = _env_int("WTW_MIN_TOTAL_FILMS", default=1, minimum=0, maximum=10000)
+MIN_TOTAL_SHOWTIMES = _env_int("WTW_MIN_TOTAL_SHOWTIMES", default=1, minimum=0, maximum=100000)
+MIN_FILMS_PER_CINEMA = _env_int("WTW_MIN_FILMS_PER_CINEMA", default=0, minimum=0, maximum=10000)
+FAIL_ON_MARKUP_DRIFT = _env_bool("WTW_FAIL_ON_MARKUP_DRIFT", default=False)
+HEALTH_MIN_TOTAL_FILMS = _env_int("HEALTH_MIN_TOTAL_FILMS", default=MIN_TOTAL_FILMS, minimum=0, maximum=10000)
+HEALTH_MIN_TOTAL_SHOWTIMES = _env_int("HEALTH_MIN_TOTAL_SHOWTIMES", default=MIN_TOTAL_SHOWTIMES, minimum=0, maximum=100000)
+HEALTH_MIN_CINEMAS_WITH_FILMS = _env_int("HEALTH_MIN_CINEMAS_WITH_FILMS", default=0, minimum=0, maximum=1000)
+HEALTH_MIN_NOW_SHOWING_FILMS = _env_int("HEALTH_MIN_NOW_SHOWING_FILMS", default=0, minimum=0, maximum=10000)
+HEALTH_MAX_MARKUP_SUSPECT_CINEMAS = _env_int("HEALTH_MAX_MARKUP_SUSPECT_CINEMAS", default=1000, minimum=0, maximum=1000)
+HEALTHCHECK_ENFORCE = _env_bool("HEALTHCHECK_ENFORCE", default=FAIL_ON_MARKUP_DRIFT)
+HEALTH_EXCLUDED_CINEMAS = set(_env_csv("HEALTH_EXCLUDED_CINEMAS", default=""))
+MAX_CONSECUTIVE_CINEMA_FAILURES = _env_int("MAX_CONSECUTIVE_CINEMA_FAILURES", default=2, minimum=1, maximum=30)
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
+HTTP_SESSION = requests.Session()
 
 # BBFC rating pattern in titles: (15), (12A), (PG), (18), (U), (R18), (with subtitles) etc.
 RATING_PATTERN = re.compile(r"\((\d+A?|U|PG|R18)\)", re.IGNORECASE)
@@ -61,13 +132,34 @@ AUTISM_FRIENDLY_SUFFIX = re.compile(r"\s+autism\s+friendly\s+screening\s*$", re.
 FORMAT_SUFFIX = re.compile(r"\s*-\s*HFR\s*3D\s*$", re.IGNORECASE)
 
 
+def get_selected_cinemas() -> Dict[str, Dict[str, Any]]:
+    """Return cinemas selected for this run.
+
+    Selection order:
+    1. `WTW_ENABLED_CINEMAS` env (comma-separated slugs, e.g. "st-austell,truro")
+    2. `enabled: True` flags in `WTW_CINEMAS` (default: all enabled)
+    """
+    selected_env = (os.environ.get("WTW_ENABLED_CINEMAS") or "").strip().lower()
+    if not selected_env or selected_env == "all":
+        selected = {slug: info for slug, info in WTW_CINEMAS.items() if info.get("enabled", True)}
+    else:
+        requested = [s.strip() for s in selected_env.split(",") if s.strip()]
+        selected = {slug: WTW_CINEMAS[slug] for slug in requested if slug in WTW_CINEMAS}
+        unknown = [slug for slug in requested if slug not in WTW_CINEMAS]
+        if unknown:
+            logger.warning("Ignoring unknown cinema slug(s) in WTW_ENABLED_CINEMAS: %s", ", ".join(unknown))
+    if not selected:
+        raise RuntimeError("No cinemas selected. Enable at least one in WTW_CINEMAS or set WTW_ENABLED_CINEMAS.")
+    return selected
+
+
 def fetch_with_retries(url: str, retries: int = HTTP_RETRIES, timeout: int = HTTP_TIMEOUT) -> requests.Response:
     """Fetch URL with exponential backoff on failure."""
     headers = {"User-Agent": USER_AGENT}
     delay = HTTP_RETRY_DELAY
     for attempt in range(retries):
         try:
-            r = requests.get(url, headers=headers, timeout=timeout)
+            r = HTTP_SESSION.get(url, headers=headers, timeout=timeout)
             r.raise_for_status()
             return r
         except requests.RequestException as e:
@@ -178,8 +270,55 @@ def save_tmdb_cache(cache: Dict[str, Dict]) -> None:
         logger.warning("Cache save failed: %s", e)
 
 
+def load_cinema_failure_state() -> Dict[str, int]:
+    """Load per-cinema consecutive scrape failures."""
+    path = Path(CINEMA_FAILURE_STATE_FILE)
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(payload, dict):
+            return {}
+        return {str(k): int(v) for k, v in payload.items() if str(v).isdigit() or isinstance(v, int)}
+    except Exception:
+        return {}
+
+
+def save_cinema_failure_state(state: Dict[str, int]) -> None:
+    """Persist per-cinema consecutive scrape failures."""
+    try:
+        Path(CINEMA_FAILURE_STATE_FILE).write_text(json.dumps(state, indent=2, sort_keys=True), encoding="utf-8")
+    except OSError as e:
+        logger.warning("Cinema failure state save failed: %s", e)
+
+
+def tmdb_get_json(url: str, params: Dict[str, Any], max_retries: int = 4) -> Dict[str, Any]:
+    """TMDb GET with 429-aware retry/backoff."""
+    delay = 1.0
+    for attempt in range(max_retries):
+        resp = HTTP_SESSION.get(url, params=params, timeout=10)
+        if resp.status_code == 429:
+            retry_after_raw = resp.headers.get("Retry-After", "")
+            try:
+                retry_after = float(retry_after_raw) if retry_after_raw else delay
+            except ValueError:
+                retry_after = delay
+            logger.warning("TMDb rate-limited (429). Retrying in %.1fs (attempt %d/%d)", retry_after, attempt + 1, max_retries)
+            time.sleep(retry_after)
+            delay = min(delay * 2, 16)
+            continue
+        if 500 <= resp.status_code < 600 and attempt < max_retries - 1:
+            logger.warning("TMDb server error %s. Retrying in %.1fs (attempt %d/%d)", resp.status_code, delay, attempt + 1, max_retries)
+            time.sleep(delay)
+            delay = min(delay * 2, 16)
+            continue
+        resp.raise_for_status()
+        return resp.json()
+    raise RuntimeError(f"TMDb request failed after {max_retries} retries: {url}")
+
+
 def slug_from_film_url(url: str) -> str:
-    """Extract slug from film URL for cache key. E.g. /film/send-help/?screen=st-austell -> send-help."""
+    """Extract slug from film URL for cache key. E.g. /film/send-help/?screen=truro -> send-help."""
     if not url:
         return ""
     path = url.split("?")[0].rstrip("/")
@@ -196,7 +335,7 @@ def _download_cert_images() -> None:
             continue
         url = f"{WTW_CERT_BASE}/{filename}"
         try:
-            r = requests.get(url, headers=headers, timeout=10)
+            r = HTTP_SESSION.get(url, headers=headers, timeout=10)
             r.raise_for_status()
             path.write_bytes(r.content)
             logger.info("Downloaded cert %s", filename)
@@ -211,7 +350,7 @@ def _download_3d_icon() -> None:
         return
     path.parent.mkdir(parents=True, exist_ok=True)
     try:
-        r = requests.get(WTW_3D_ICON_URL, headers={"User-Agent": USER_AGENT, "Referer": WTW_BASE + "/"}, timeout=10)
+        r = HTTP_SESSION.get(WTW_3D_ICON_URL, headers={"User-Agent": USER_AGENT, "Referer": WTW_BASE + "/"}, timeout=10)
         r.raise_for_status()
         path.write_bytes(r.content)
         logger.info("Downloaded 3D icon")
@@ -237,7 +376,7 @@ def _ensure_placeholder_poster() -> None:
   <circle cx="210" cy="250" r="68" fill="none" stroke="#64748b" stroke-width="8"/>
   <path d="M210 200v60m0 45h.01" stroke="#94a3b8" stroke-width="10" stroke-linecap="round"/>
   <text x="210" y="390" text-anchor="middle" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="26" font-weight="700">Poster unavailable</text>
-  <text x="210" y="425" text-anchor="middle" fill="#94a3b8" font-family="Arial, sans-serif" font-size="18">WTW St Austell</text>
+  <text x="210" y="425" text-anchor="middle" fill="#94a3b8" font-family="Arial, sans-serif" font-size="18">WTW Cinemas</text>
 </svg>
 """
     path.write_text(svg, encoding="utf-8")
@@ -258,18 +397,25 @@ def _download_poster(url: str, slug: str) -> str:
     if not url or not url.startswith("http"):
         return ""
     slug = re.sub(r"[^a-z0-9-]", "", slug.lower()) or "poster"
+    posters_dir = Path(POSTERS_DIR)
+    posters_dir.mkdir(parents=True, exist_ok=True)
+    # Reuse any existing poster for this slug to avoid unnecessary downloads.
+    existing = sorted(posters_dir.glob(f"{slug}.*"))
+    if existing:
+        return f"posters/{existing[0].name}"
     ext = "jpg"
     if ".webp" in url.lower():
         ext = "webp"
     elif ".png" in url.lower():
         ext = "png"
-    path = Path(POSTERS_DIR) / f"{slug}.{ext}"
-    path.parent.mkdir(parents=True, exist_ok=True)
+    path = posters_dir / f"{slug}.{ext}"
+    if path.exists():
+        return f"posters/{slug}.{ext}"
     try:
         headers = {"User-Agent": USER_AGENT}
         if "wtwcinemas.co.uk" in url:
             headers["Referer"] = WTW_BASE + "/"
-        r = requests.get(url, headers=headers, timeout=15)
+        r = HTTP_SESSION.get(url, headers=headers, timeout=15)
         r.raise_for_status()
         path.write_bytes(r.content)
         return f"posters/{slug}.{ext}"  # relative to SITE_DIR for HTML
@@ -408,26 +554,20 @@ def enrich_film_tmdb(
     time.sleep(TMDB_DELAY_SEC)
     try:
         search_url = "https://api.themoviedb.org/3/search/movie"
-        search_r = requests.get(
+        data = tmdb_get_json(
             search_url,
             params={"api_key": api_key, "query": search_title, "language": "en-GB"},
-            timeout=10,
         )
-        search_r.raise_for_status()
-        data = search_r.json()
         results = data.get("results") or []
         match_title = search_title
         # Event cinema fallback: try RBO/Met Opera queries when full title returns nothing
         fallback_queries = _event_cinema_fallback_queries(film.get("title", "")) if not results else []
         for fq in fallback_queries:
             time.sleep(TMDB_DELAY_SEC)
-            search_r = requests.get(
+            data = tmdb_get_json(
                 search_url,
                 params={"api_key": api_key, "query": fq, "language": "en-GB"},
-                timeout=10,
             )
-            search_r.raise_for_status()
-            data = search_r.json()
             results = data.get("results") or []
             if results:
                 match_title = fq
@@ -453,13 +593,10 @@ def enrich_film_tmdb(
 
         time.sleep(TMDB_DELAY_SEC)
         detail_url = f"https://api.themoviedb.org/3/movie/{movie_id}"
-        detail_r = requests.get(
+        movie = tmdb_get_json(
             detail_url,
             params={"api_key": api_key, "append_to_response": "videos,credits", "language": "en-GB"},
-            timeout=10,
         )
-        detail_r.raise_for_status()
-        movie = detail_r.json()
 
         poster_path = (movie.get("poster_path") or "").lstrip("/")
         poster_url = f"https://image.tmdb.org/t/p/w342/{poster_path}" if poster_path else ""
@@ -582,20 +719,32 @@ def _merge_subtitle_variants(films: List[Dict[str, Any]]) -> List[Dict[str, Any]
     return merged
 
 
-def scrape_whats_on(scrape_date: Optional[datetime] = None) -> Dict[str, Any]:
-    """Fetch whats-on page and return structured data for st-austell."""
-    scrape_date = scrape_date or datetime.now(timezone.utc)
-    logger.info("Fetching %s", WTW_WHATS_ON_URL)
-    resp = fetch_with_retries(WTW_WHATS_ON_URL)
+def _scrape_single_cinema(cinema_slug: str, cinema_info: Dict[str, str], scrape_date: datetime) -> Dict[str, Any]:
+    """Fetch one WTW cinema whats-on page and return a cinema payload."""
+    cinema_url = cinema_info["url"]
+    logger.info("Fetching %s", cinema_url)
+    resp = fetch_with_retries(cinema_url)
     soup = BeautifulSoup(resp.text, "html.parser")
 
     films: List[Dict[str, Any]] = []
-    # Page structure: ul.listing--items > li.js-film per film; each has ul.dates > li.js-performance-date > li.js-performance
-    film_items = soup.select("li.js-film")
+    # Primary parser + fallback parser mode for markup drift.
+    primary_items = soup.select("li.js-film")
+    fallback_items = soup.select("div[data-film]")
+    parser_mode = "primary"
+    film_items = primary_items
+    if not film_items:
+        if fallback_items:
+            parser_mode = "fallback"
+            film_items = fallback_items
+            logger.warning("Primary selector empty for %s; using fallback selector div[data-film]", cinema_slug)
+        else:
+            parser_mode = "none"
+            logger.warning("No film nodes matched selectors for %s (%s)", cinema_slug, cinema_url)
     tag_names = ("Audio Description", "Subtitles", "Wheelchair access", "Silver Screen", "2D", "3D", "Event cinema", "Strobe Light warning", "Parent & Baby", "Autism Friendly", "Kids Club")
 
     for li in film_items:
-        film_a = li.find("a", href=lambda h: h and "/film/" in h and "st-austell" in h)
+        # Be permissive: some WTW film links may omit explicit ?screen=<cinema>.
+        film_a = li.find("a", href=lambda h: h and "/film/" in h)
         if not film_a:
             continue
         href = film_a.get("href", "")
@@ -610,8 +759,6 @@ def scrape_whats_on(scrape_date: Optional[datetime] = None) -> Dict[str, Any]:
 
         search_title = extract_search_title(title)
         film_slug = slug_from_film_url(href)
-        text = li.get_text(separator=" ", strip=True)
-
         # Poster: only from TMDb (portrait). WTW listing uses landscape WEB/card images, not movie posters.
         poster_url = ""
 
@@ -668,6 +815,8 @@ def scrape_whats_on(scrape_date: Optional[datetime] = None) -> Dict[str, Any]:
                         "date": parsed_date,
                         "time": time_str,
                         "screen": screen,
+                        "cinema_name": cinema_info["name"],
+                        "cinema_url": cinema_url,
                         "booking_url": booking_url,
                         "tags": tags or ["2D"],
                     })
@@ -696,34 +845,267 @@ def scrape_whats_on(scrape_date: Optional[datetime] = None) -> Dict[str, Any]:
         f["showtimes"].sort(key=lambda s: (s["date"], s["time"]))
 
     films = _merge_subtitle_variants(films)
-
+    showtimes_count = sum(len(f.get("showtimes") or []) for f in films)
     return {
-        "updated_at": scrape_date.strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "cinemas": {
-            "st-austell": {
-                "name": "White River Cinema, St Austell",
-                "url": WTW_WHATS_ON_URL,
-                "films": films,
-            }
+        "name": cinema_info["name"],
+        "url": cinema_url,
+        "films": films,
+        "_health": {
+            "parser_mode": parser_mode,
+            "raw_cards": len(film_items),
+            "selector_film_nodes": len(film_items),
+            "primary_selector_nodes": len(primary_items),
+            "fallback_selector_nodes": len(fallback_items),
+            "parsed_films": len(films),
+            "parsed_showtimes": showtimes_count,
         },
     }
 
 
+def scrape_whats_on(scrape_date: Optional[datetime] = None) -> Dict[str, Any]:
+    """Fetch whats-on pages for all configured WTW cinemas."""
+    scrape_date = scrape_date or datetime.now(timezone.utc)
+    cinemas_scraped: Dict[str, Dict[str, Any]] = {}
+    scrape_errors: Dict[str, str] = {}
+    selected_cinemas = get_selected_cinemas()
+
+    max_workers = max(1, min(len(selected_cinemas), (os.cpu_count() or 4)))
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {
+            executor.submit(_scrape_single_cinema, cinema_slug, cinema_info, scrape_date): cinema_slug
+            for cinema_slug, cinema_info in selected_cinemas.items()
+        }
+        for future in as_completed(futures):
+            cinema_slug = futures[future]
+            try:
+                payload = future.result()
+            except Exception as e:
+                logger.error("Failed scraping cinema %s: %s", cinema_slug, e)
+                scrape_errors[cinema_slug] = str(e)
+                continue
+            cinemas_scraped[cinema_slug] = payload
+
+    if scrape_errors:
+        previous_cinemas = {}
+        if Path(DATA_FILE).exists():
+            try:
+                old_data = json.loads(Path(DATA_FILE).read_text(encoding="utf-8"))
+                previous_cinemas = old_data.get("cinemas") or {}
+            except Exception:
+                previous_cinemas = {}
+        for slug, err in scrape_errors.items():
+            if slug in cinemas_scraped:
+                continue
+            old_payload = previous_cinemas.get(slug)
+            if old_payload:
+                restored = deepcopy(old_payload)
+                restored_health = restored.get("_health") or {}
+                restored_health.update({
+                    "restored_from_previous": True,
+                    "scrape_error": err,
+                })
+                restored["_health"] = restored_health
+                cinemas_scraped[slug] = restored
+                logger.warning("Restored previous data for failed cinema %s", slug)
+
+    failure_state = load_cinema_failure_state()
+    threshold_breaches: List[str] = []
+    for slug in selected_cinemas:
+        if slug in scrape_errors:
+            failure_state[slug] = int(failure_state.get(slug, 0)) + 1
+            if failure_state[slug] >= MAX_CONSECUTIVE_CINEMA_FAILURES:
+                threshold_breaches.append(f"{slug}={failure_state[slug]}")
+        else:
+            failure_state[slug] = 0
+    save_cinema_failure_state(failure_state)
+    if threshold_breaches:
+        raise RuntimeError(
+            "Exceeded MAX_CONSECUTIVE_CINEMA_FAILURES="
+            f"{MAX_CONSECUTIVE_CINEMA_FAILURES} for cinema(s): {', '.join(threshold_breaches)}"
+        )
+
+    ordered_cinemas = {slug: cinemas_scraped[slug] for slug in selected_cinemas if slug in cinemas_scraped}
+    if not ordered_cinemas:
+        raise RuntimeError("No cinema data scraped successfully.")
+    return {"updated_at": scrape_date.strftime("%Y-%m-%dT%H:%M:%SZ"), "cinemas": ordered_cinemas}
+
+
+def validate_scrape_health(data: Dict[str, Any]) -> None:
+    """Fail fast when scraped payload looks suspiciously small or selectors stop matching."""
+    cinemas = data.get("cinemas") or {}
+    if not cinemas:
+        raise RuntimeError("Health check failed: no cinemas scraped.")
+
+    total_films = 0
+    total_showtimes = 0
+    cinemas_with_films = 0
+    markup_suspect_cinemas = 0
+    now_showing_films = 0
+    today_iso = datetime.now(timezone.utc).date().isoformat()
+    issues: List[str] = []
+
+    for slug, cinema in cinemas.items():
+        if slug in HEALTH_EXCLUDED_CINEMAS:
+            continue
+        films = cinema.get("films") or []
+        health = cinema.get("_health") or {}
+        selector_nodes = int(health.get("selector_film_nodes") or 0)
+        parser_mode = str(health.get("parser_mode") or "unknown")
+        parsed_films = int(health.get("parsed_films") or len(films))
+        parsed_showtimes = int(
+            health.get("parsed_showtimes")
+            or sum(len(f.get("showtimes") or []) for f in films)
+        )
+        total_films += parsed_films
+        total_showtimes += parsed_showtimes
+        if parsed_films > 0:
+            cinemas_with_films += 1
+        now_showing_films += sum(
+            1
+            for film in films
+            if (film.get("showtimes") or [])
+            and min((st.get("date") or "9999-99-99") for st in (film.get("showtimes") or [])) <= today_iso
+        )
+
+        if selector_nodes == 0 or parser_mode in {"fallback", "none"}:
+            markup_suspect_cinemas += 1
+        if selector_nodes == 0:
+            issues.append(f"{slug}: selector matched 0 nodes")
+        if parsed_films < MIN_FILMS_PER_CINEMA:
+            issues.append(f"{slug}: parsed_films={parsed_films} below MIN_FILMS_PER_CINEMA={MIN_FILMS_PER_CINEMA}")
+
+    logger.info(
+        "Health summary: cinemas=%d films=%d showtimes=%d cinemas_with_films=%d now_showing=%d markup_suspect=%d",
+        len(cinemas),
+        total_films,
+        total_showtimes,
+        cinemas_with_films,
+        now_showing_films,
+        markup_suspect_cinemas,
+    )
+
+    if total_films < HEALTH_MIN_TOTAL_FILMS:
+        issues.append(f"total films {total_films} below HEALTH_MIN_TOTAL_FILMS={HEALTH_MIN_TOTAL_FILMS}")
+    if total_showtimes < HEALTH_MIN_TOTAL_SHOWTIMES:
+        issues.append(f"total showtimes {total_showtimes} below HEALTH_MIN_TOTAL_SHOWTIMES={HEALTH_MIN_TOTAL_SHOWTIMES}")
+    if cinemas_with_films < HEALTH_MIN_CINEMAS_WITH_FILMS:
+        issues.append(
+            f"cinemas_with_films {cinemas_with_films} below HEALTH_MIN_CINEMAS_WITH_FILMS={HEALTH_MIN_CINEMAS_WITH_FILMS}"
+        )
+    if now_showing_films < HEALTH_MIN_NOW_SHOWING_FILMS:
+        issues.append(
+            f"now_showing_films {now_showing_films} below HEALTH_MIN_NOW_SHOWING_FILMS={HEALTH_MIN_NOW_SHOWING_FILMS}"
+        )
+    if markup_suspect_cinemas > HEALTH_MAX_MARKUP_SUSPECT_CINEMAS:
+        issues.append(
+            f"markup_suspect_cinemas {markup_suspect_cinemas} above HEALTH_MAX_MARKUP_SUSPECT_CINEMAS={HEALTH_MAX_MARKUP_SUSPECT_CINEMAS}"
+        )
+    # Backward compatibility gates.
+    if total_films < MIN_TOTAL_FILMS:
+        issues.append(f"total films {total_films} below WTW_MIN_TOTAL_FILMS={MIN_TOTAL_FILMS}")
+    if total_showtimes < MIN_TOTAL_SHOWTIMES:
+        issues.append(f"total showtimes {total_showtimes} below WTW_MIN_TOTAL_SHOWTIMES={MIN_TOTAL_SHOWTIMES}")
+
+    if issues:
+        msg = "Health check warnings: " + "; ".join(issues)
+        if HEALTHCHECK_ENFORCE:
+            raise RuntimeError(msg)
+        logger.warning(msg)
+
+
 def compute_fingerprint(data: Dict[str, Any]) -> str:
     """Stable hash of data (film titles + showtime counts + dates) for change detection."""
-    canonical = []
-    for cinema in (data.get("cinemas") or {}).values():
-        for film in cinema.get("films") or []:
-            canonical.append(film.get("title", ""))
-            for st in film.get("showtimes") or []:
-                canonical.append(f"{st.get('date')}_{st.get('time')}_{st.get('screen')}")
-    return hashlib.sha256(json.dumps(canonical, sort_keys=True).encode()).hexdigest()
+    parts: List[str] = []
+    cinemas = data.get("cinemas") or {}
+    for cinema_slug in sorted(cinemas.keys()):
+        cinema = cinemas.get(cinema_slug) or {}
+        films = sorted(
+            cinema.get("films") or [],
+            key=lambda f: (
+                (f.get("film_slug") or ""),
+                (f.get("search_title") or ""),
+                (f.get("title") or ""),
+            ),
+        )
+        for film in films:
+            parts.append(f"T|{cinema_slug}|{film.get('title', '')}")
+            showtimes = sorted(
+                film.get("showtimes") or [],
+                key=lambda st: (
+                    st.get("date", ""),
+                    st.get("time", ""),
+                    str(st.get("screen", "")),
+                    st.get("booking_url", ""),
+                    st.get("cinema_name", ""),
+                ),
+            )
+            for st in showtimes:
+                parts.append(
+                    "S|{slug}|{cinema}|{date}|{time}|{screen}|{booking}".format(
+                        slug=cinema_slug,
+                        cinema=st.get("cinema_name", ""),
+                        date=st.get("date", ""),
+                        time=st.get("time", ""),
+                        screen=st.get("screen", ""),
+                        booking=st.get("booking_url", ""),
+                    )
+                )
+    return hashlib.sha256("\n".join(parts).encode("utf-8")).hexdigest()
 
 
 def build_html(data: Dict[str, Any]) -> str:
     """Generate single self-contained index.html with Web3 style and date filtering."""
-    cinema = (data.get("cinemas") or {}).get("st-austell") or {}
-    films = cinema.get("films") or []
+    def short_cinema_name(name: str) -> str:
+        value = (name or "").strip()
+        if not value:
+            return ""
+        if "," in value:
+            return value.split(",")[-1].strip()
+        return value
+
+    aggregated: Dict[str, Dict[str, Any]] = {}
+    for cinema in (data.get("cinemas") or {}).values():
+        cinema_name = cinema.get("name", "")
+        for film in cinema.get("films") or []:
+            search_title = (film.get("search_title") or extract_search_title(film.get("title", ""))).strip()
+            film_slug = (film.get("film_slug") or "").strip()
+            key = f"slug:{film_slug}" if film_slug else f"title:{re.sub(r'[^a-z0-9]+', '-', search_title.lower()).strip('-')}"
+            if key not in aggregated:
+                base = dict(film)
+                base["showtimes"] = [dict(st) for st in (film.get("showtimes") or [])]
+                base["cinema_names"] = set([cinema_name]) if cinema_name else set()
+                base["genres"] = list(base.get("genres") or [])
+                aggregated[key] = base
+                continue
+            current = aggregated[key]
+            if cinema_name:
+                current["cinema_names"].add(cinema_name)
+            current["showtimes"].extend(dict(st) for st in (film.get("showtimes") or []))
+            for field in ("poster_url", "trailer_url", "overview", "synopsis", "cast", "director", "writer", "imdb_id", "film_url"):
+                if not (current.get(field) or "").strip() and (film.get(field) or "").strip():
+                    current[field] = film[field]
+            if current.get("runtime_min") is None and film.get("runtime_min") is not None:
+                current["runtime_min"] = film.get("runtime_min")
+            if current.get("vote_average") is None and film.get("vote_average") is not None:
+                current["vote_average"] = film.get("vote_average")
+            current["genres"] = sorted(set((current.get("genres") or []) + (film.get("genres") or [])))
+
+    films: List[Dict[str, Any]] = []
+    for film in aggregated.values():
+        seen_showtimes = set()
+        deduped_showtimes = []
+        for st in sorted(film.get("showtimes") or [], key=lambda s: (s.get("date", ""), s.get("time", ""), str(s.get("screen", "")), s.get("booking_url", ""))):
+            k = (st.get("date"), st.get("time"), st.get("screen"), st.get("booking_url"), st.get("cinema_name"))
+            if k in seen_showtimes:
+                continue
+            seen_showtimes.add(k)
+            deduped_showtimes.append(st)
+        film["showtimes"] = deduped_showtimes
+        cinema_names_full = sorted(film.pop("cinema_names", set()))
+        cinema_names_short = sorted({short_cinema_name(x) for x in cinema_names_full if short_cinema_name(x)})
+        film["cinema_names_list"] = cinema_names_short
+        film["cinema_name"] = ", ".join(cinema_names_short)
+        films.append(film)
     build_today_iso = datetime.now(timezone.utc).date().isoformat()
 
     # Collect unique dates for tabs
@@ -780,69 +1162,100 @@ def build_html(data: Dict[str, Any]) -> str:
         rt_link = f"https://www.rottentomatoes.com/search?search={quote_plus(search_title)}"
         trakt_link = f"https://trakt.tv/search?query={quote_plus(search_title)}"
 
-        showtimes_by_date: Dict[str, List[Dict]] = {}
-        for st in f.get("showtimes") or []:
-            d = st.get("date", "")
-            if d not in showtimes_by_date:
-                showtimes_by_date[d] = []
-            showtimes_by_date[d].append(st)
+        tag_icon_ids = {
+            "Audio Description": "icon-audio-desc",
+            "Wheelchair access": "icon-wheelchair",
+            "2D": "icon-2d",
+            "3D": "icon-3d",
+            "Subtitles": "icon-subtitles",
+            "Silver Screen": "icon-silver-screen",
+            "Event cinema": "icon-event-cinema",
+            "Strobe Light warning": "icon-strobe",
+            "Parent & Baby": "icon-parent-baby",
+            "Autism Friendly": "icon-autism-friendly",
+            "Kids Club": "icon-kids-club",
+        }
+        tag_short_labels = {"Audio Description": "AD", "Subtitles": "Subs", "Wheelchair access": "WA", "Strobe Light warning": "Strobe"}
+        tag_tooltips = {
+            "Audio Description": "Audio description",
+            "Subtitles": "Subtitled screening",
+            "Wheelchair access": "Wheelchair accessible",
+            "2D": "Standard 2D screening",
+            "Strobe Light warning": "Strobe lighting may affect photosensitive viewers",
+        }
 
-        rows = []
-        for d in sorted(showtimes_by_date.keys()):
-            times = showtimes_by_date[d]
-            time_parts = []
-            for st in times:
-                t = st.get("time", "")
-                screen = st.get("screen", 0)
-                booking = st.get("booking_url", "")
-                tags = st.get("tags") or []
-                tag_icon_ids = {
-                    "Audio Description": "icon-audio-desc",
-                    "Wheelchair access": "icon-wheelchair",
-                    "2D": "icon-2d",
-                    "3D": "icon-3d",
-                    "Subtitles": "icon-subtitles",
-                    "Silver Screen": "icon-silver-screen",
-                    "Event cinema": "icon-event-cinema",
-                    "Strobe Light warning": "icon-strobe",
-                    "Parent & Baby": "icon-parent-baby",
-                    "Autism Friendly": "icon-autism-friendly",
-                    "Kids Club": "icon-kids-club",
+        def tag_html(tag: str) -> str:
+            icon_id = tag_icon_ids.get(tag)
+            label = tag_short_labels.get(tag, tag)
+            tooltip = tag_tooltips.get(tag) or (tag if tag in tag_short_labels else None)
+            title_esc = (tooltip or "").replace("&", "&amp;").replace('"', "&quot;")
+            title_attr = f' title="{title_esc}"' if title_esc else ""
+            if icon_id:
+                return f'<span class="tag"{title_attr}><svg class="tag-icon" aria-hidden="true"><use href="#{icon_id}"/></svg>{label}</span>'
+            return f'<span class="tag"{title_attr}>{label}</span>'
+
+        def render_showings(showings: List[Dict[str, Any]]) -> str:
+            grouped: Dict[str, List[Dict[str, Any]]] = {}
+            for st in showings:
+                d = st.get("date", "")
+                grouped.setdefault(d, []).append(st)
+            rows: List[str] = []
+            for d in sorted(grouped.keys()):
+                time_parts = []
+                for st in grouped[d]:
+                    t = st.get("time", "")
+                    cinema_short = short_cinema_name(str(st.get("cinema_name") or ""))
+                    screen_num = st.get("screen", "")
+                    screen_label = f"{cinema_short} (Screen {screen_num})" if cinema_short and screen_num else (cinema_short or f"Screen {screen_num}")
+                    booking = st.get("booking_url", "")
+                    tags = st.get("tags") or []
+                    tag_span = " ".join(tag_html(tag) for tag in tags[:4])
+                    time_el = f'<a href="{booking}">{t}</a>' if booking else f'<span class="past">{t}</span>'
+                    time_parts.append(
+                        f'<div class="st-row">'
+                        f'<span class="st-time">{time_el}</span>'
+                        f'<span class="st-screen">{screen_label}</span>'
+                        f'<span class="st-tags">{tag_span}</span>'
+                        f'</div>'
+                    )
+                date_label = d
+                try:
+                    dt = datetime.strptime(d, "%Y-%m-%d")
+                    date_label = dt.strftime("%a %d %b")
+                except ValueError:
+                    pass
+                rows.append(f'<div class="day-group"><div class="st-date">{date_label}</div>' + "".join(time_parts) + "</div>")
+            return "\n".join(rows)
+
+        showtimes_all = sorted(f.get("showtimes") or [], key=lambda s: (s.get("date", ""), s.get("time", ""), str(s.get("screen", "")), s.get("booking_url", "")))
+        showtimes_by_date: Dict[str, List[Dict]] = {}
+        for st in showtimes_all:
+            d = st.get("date", "")
+            showtimes_by_date.setdefault(d, []).append(st)
+        visible_showings = showtimes_all[:INITIAL_SHOWINGS_VISIBLE]
+        hidden_showings = showtimes_all[INITIAL_SHOWINGS_VISIBLE:]
+        showtimes_html = render_showings(visible_showings)
+        show_more_block = ""
+        if hidden_showings:
+            hidden_payload = [
+                {
+                    "date": st.get("date", ""),
+                    "time": st.get("time", ""),
+                    "screen": st.get("screen", ""),
+                    "cinema_name": st.get("cinema_name", ""),
+                    "booking_url": st.get("booking_url", ""),
+                    "tags": st.get("tags") or [],
                 }
-                tag_short_labels = {"Audio Description": "AD", "Subtitles": "Subs", "Wheelchair access": "WA", "Strobe Light warning": "Strobe"}
-                tag_tooltips = {
-                    "Audio Description": "Audio description",
-                    "Subtitles": "Subtitled screening",
-                    "Wheelchair access": "Wheelchair accessible",
-                    "2D": "Standard 2D screening",
-                    "Strobe Light warning": "Strobe lighting may affect photosensitive viewers",
-                }
-                def tag_html(tag: str) -> str:
-                    icon_id = tag_icon_ids.get(tag)
-                    label = tag_short_labels.get(tag, tag)
-                    tooltip = tag_tooltips.get(tag) or (tag if tag in tag_short_labels else None)
-                    title_esc = (tooltip or "").replace("&", "&amp;").replace('"', "&quot;")
-                    title_attr = f' title="{title_esc}"' if title_esc else ""
-                    if icon_id:
-                        return f'<span class="tag"{title_attr}><svg class="tag-icon" aria-hidden="true"><use href="#{icon_id}"/></svg>{label}</span>'
-                    return f'<span class="tag"{title_attr}>{label}</span>'
-                tag_span = " ".join(tag_html(tag) for tag in tags[:4])
-                time_el = f'<a href="{booking}">{t}</a>' if booking else f'<span class="past">{t}</span>'
-                time_parts.append(
-                    f'<div class="st-row">'
-                    f'<span class="st-time">{time_el}</span>'
-                    f'<span class="st-screen">Screen {screen}</span>'
-                    f'<span class="st-tags">{tag_span}</span>'
-                    f'</div>'
-                )
-            date_label = d
-            try:
-                dt = datetime.strptime(d, "%Y-%m-%d")
-                date_label = dt.strftime("%a %d %b")
-            except ValueError:
-                pass
-            rows.append(f'<div class="day-group"><div class="st-date">{date_label}</div>' + "".join(time_parts) + "</div>")
-        showtimes_html = "\n".join(rows)
+                for st in hidden_showings
+            ]
+            hidden_json = json.dumps(hidden_payload, ensure_ascii=False).replace("</", "<\\/")
+            count = len(hidden_showings)
+            noun = "showing" if count == 1 else "showings"
+            show_more_block = (
+                f'<script type="application/json" class="showtimes-more-data">{hidden_json}</script>'
+                f'<div class="showtimes-more" hidden></div>'
+                f'<button type="button" class="showtimes-more-btn" aria-expanded="false">Show {count} more {noun}</button>'
+            )
 
         has_3d = any("3D" in (st.get("tags") or []) for st in (f.get("showtimes") or []))
         poster_src = poster_url or POSTER_PLACEHOLDER_REL
@@ -874,6 +1287,9 @@ def build_html(data: Dict[str, Any]) -> str:
         writer_esc = esc(writer)
         description_esc = esc(description)
         meta_lines = []
+        cinema_name = (f.get("cinema_name") or "").strip()
+        if cinema_name:
+            meta_lines.append(f'<p class="crew"><strong>Cinemas:</strong> {esc(cinema_name)}</p>')
         if director_esc:
             meta_lines.append(f'<p class="crew"><strong>Director:</strong> {director_esc}</p>')
         if writer_esc:
@@ -906,7 +1322,7 @@ def build_html(data: Dict[str, Any]) -> str:
       </div>
     </div>
   </div>
-  <div class="showtimes">{showtimes_html}</div>
+  <div class="showtimes">{showtimes_html}{show_more_block}</div>
 </article>"""
 
     films_sorted = sorted(films, key=lambda f: len(f.get("showtimes") or []), reverse=True)
@@ -952,7 +1368,7 @@ def build_html(data: Dict[str, Any]) -> str:
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>What's on at WTW St Austell — ratings, trailers &amp; links</title>
+  <title>What's on at WTW Cinemas — ratings, trailers &amp; links</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
@@ -1218,13 +1634,27 @@ def build_html(data: Dict[str, Any]) -> str:
     .day-group {{ margin-bottom: 0.75rem; }}
     .day-group:last-child {{ margin-bottom: 0; }}
     .st-date {{ font-weight: 600; margin-bottom: 0.25rem; color: var(--text); }}
-    .st-row {{ display: grid; grid-template-columns: 4.5rem 6rem 1fr; gap: 0 1rem; align-items: center; margin-bottom: 0.2rem; }}
+    .st-row {{ display: grid; grid-template-columns: 4.5rem minmax(9rem, 1fr) 2fr; gap: 0 0.75rem; align-items: center; margin-bottom: 0.2rem; }}
     .st-row:last-child {{ margin-bottom: 0; }}
     .st-time {{ font-variant-numeric: tabular-nums; }}
     .st-time a, .showtime a {{ color: var(--cyan); }}
     .st-time .past {{ color: var(--text-muted); }}
     .st-screen {{ color: var(--text-muted); }}
     .st-tags {{ display: flex; align-items: center; flex-wrap: wrap; gap: 0.25rem; }}
+    .showtimes-more {{ margin-top: 0.5rem; }}
+    .showtimes-more-btn {{
+      margin-top: 0.65rem;
+      padding: 0.38rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.04);
+      color: var(--accent);
+      font-family: inherit;
+      font-size: 0.82rem;
+      cursor: pointer;
+      transition: all var(--transition);
+    }}
+    .showtimes-more-btn:hover {{ border-color: var(--cyan); background: rgba(0,212,255,0.1); }}
     .cast-more-btn {{ background: none; border: none; color: var(--cyan); cursor: pointer; font-size: 0.85em; padding: 0 0.25rem; font-family: inherit; }}
     .cast-more-btn:hover {{ text-decoration: underline; }}
     .tag {{ font-size: 0.75rem; color: var(--text-muted); margin-left: 0.25rem; display: inline-flex; align-items: center; gap: 0.25rem; }}
@@ -1277,7 +1707,7 @@ def build_html(data: Dict[str, Any]) -> str:
   </svg>
   <div class="page">
     <header>
-      <h1>What's on at WTW St Austell</h1>
+      <h1>What's on at WTW Cinemas</h1>
       <p>Ratings, trailers &amp; links to IMDb, RT and Trakt</p>
     </header>
     <div class="tabs">{tabs_html}</div>
@@ -1332,6 +1762,106 @@ def build_html(data: Dict[str, Any]) -> str:
       }});
     }});
     (function() {{
+      function escHtml(value) {{
+        return String(value || '')
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;');
+      }}
+      function formatDateLabel(isoDate) {{
+        if (!isoDate) return '';
+        var dt = new Date(isoDate + 'T00:00:00Z');
+        if (Number.isNaN(dt.getTime())) return isoDate;
+        return dt.toLocaleDateString('en-GB', {{ weekday: 'short', day: '2-digit', month: 'short', timeZone: 'UTC' }});
+      }}
+      function tagHtml(tag) {{
+        var iconMap = {{
+          'Audio Description': 'icon-audio-desc',
+          'Wheelchair access': 'icon-wheelchair',
+          '2D': 'icon-2d',
+          '3D': 'icon-3d',
+          'Subtitles': 'icon-subtitles',
+          'Silver Screen': 'icon-silver-screen',
+          'Event cinema': 'icon-event-cinema',
+          'Strobe Light warning': 'icon-strobe',
+          'Parent & Baby': 'icon-parent-baby',
+          'Autism Friendly': 'icon-autism-friendly',
+          'Kids Club': 'icon-kids-club'
+        }};
+        var shortLabelMap = {{ 'Audio Description': 'AD', 'Subtitles': 'Subs', 'Wheelchair access': 'WA', 'Strobe Light warning': 'Strobe' }};
+        var tooltipMap = {{
+          'Audio Description': 'Audio description',
+          'Subtitles': 'Subtitled screening',
+          'Wheelchair access': 'Wheelchair accessible',
+          '2D': 'Standard 2D screening',
+          'Strobe Light warning': 'Strobe lighting may affect photosensitive viewers'
+        }};
+        var iconId = iconMap[tag];
+        var label = shortLabelMap[tag] || tag;
+        var tooltip = tooltipMap[tag] || (shortLabelMap[tag] ? tag : '');
+        var titleAttr = tooltip ? ' title="' + escHtml(tooltip) + '"' : '';
+        if (iconId) {{
+          return '<span class="tag"' + titleAttr + '><svg class="tag-icon" aria-hidden="true"><use href="#' + iconId + '"/></svg>' + escHtml(label) + '</span>';
+        }}
+        return '<span class="tag"' + titleAttr + '>' + escHtml(label) + '</span>';
+      }}
+      function renderExtraShowings(list) {{
+        var grouped = {{}};
+        list.forEach(function(st) {{
+          var d = st.date || '';
+          if (!grouped[d]) grouped[d] = [];
+          grouped[d].push(st);
+        }});
+        return Object.keys(grouped).sort().map(function(d) {{
+          var rows = grouped[d].map(function(st) {{
+            var time = escHtml(st.time || '');
+            var cinema = String(st.cinema_name || '').trim();
+            cinema = cinema.indexOf(',') !== -1 ? cinema.split(',').pop().trim() : cinema;
+            var screen = String(st.screen || '');
+            var screenLabel = cinema && screen ? (cinema + ' (Screen ' + screen + ')') : (cinema || ('Screen ' + screen));
+            var booking = String(st.booking_url || '');
+            var timeEl = booking ? '<a href="' + escHtml(booking) + '">' + time + '</a>' : '<span class="past">' + time + '</span>';
+            var tags = Array.isArray(st.tags) ? st.tags.slice(0, 4) : [];
+            var tagSpan = tags.map(tagHtml).join(' ');
+            return '<div class="st-row"><span class="st-time">' + timeEl + '</span><span class="st-screen">' + escHtml(screenLabel) + '</span><span class="st-tags">' + tagSpan + '</span></div>';
+          }}).join('');
+          return '<div class="day-group"><div class="st-date">' + escHtml(formatDateLabel(d)) + '</div>' + rows + '</div>';
+        }}).join('');
+      }}
+
+      document.querySelectorAll('.showtimes-more-btn').forEach(function(btn) {{
+        btn.addEventListener('click', function() {{
+          var card = btn.closest('.film-card');
+          if (!card) return;
+          var holder = card.querySelector('.showtimes-more');
+          var dataNode = card.querySelector('.showtimes-more-data');
+          if (!holder || !dataNode) return;
+
+          var expanded = btn.getAttribute('aria-expanded') === 'true';
+          if (expanded) {{
+            holder.setAttribute('hidden', '');
+            btn.setAttribute('aria-expanded', 'false');
+            btn.textContent = btn.getAttribute('data-show-label') || 'Show more';
+            return;
+          }}
+
+          if (!holder.hasChildNodes()) {{
+            try {{
+              var list = JSON.parse(dataNode.textContent || '[]');
+              holder.innerHTML = renderExtraShowings(list);
+            }} catch (e) {{
+              holder.innerHTML = '';
+            }}
+          }}
+          holder.removeAttribute('hidden');
+          btn.setAttribute('aria-expanded', 'true');
+          if (!btn.getAttribute('data-show-label')) btn.setAttribute('data-show-label', btn.textContent);
+          btn.textContent = 'Show less';
+        }});
+      }});
+    }})();
+    (function() {{
       var lb = document.getElementById('trailer-lightbox');
       var iframe = document.getElementById('trailer-lightbox-iframe');
       var backdrop = document.getElementById('trailer-lightbox-backdrop');
@@ -1372,13 +1902,39 @@ def build_html(data: Dict[str, Any]) -> str:
 def main() -> None:
     scrape_date = datetime.now(timezone.utc)
     data = scrape_whats_on(scrape_date)
+    validate_scrape_health(data)
+    fingerprint = compute_fingerprint(data)
+    prev_fingerprint = ""
+    if Path(FINGERPRINT_FILE).exists():
+        prev_fingerprint = Path(FINGERPRINT_FILE).read_text(encoding="utf-8").strip()
+    unchanged = (
+        fingerprint == prev_fingerprint
+        and Path(DATA_FILE).exists()
+        and Path(SITE_DIR, "index.html").exists()
+    )
+    force_rebuild = os.environ.get("FORCE_REBUILD", "").strip().lower() in {"1", "true", "yes"}
+    if unchanged and not force_rebuild:
+        logger.info("Fingerprint unchanged; skipping TMDb enrichment and HTML rebuild.")
+        return
+
+    all_films = [film for cinema in (data.get("cinemas") or {}).values() for film in (cinema.get("films") or [])]
+    for film in all_films:
+        film["film_slug"] = film.get("film_slug") or slug_from_film_url(film.get("film_url", ""))
+    films_by_tmdb_key: Dict[str, List[Dict[str, Any]]] = {}
+    for film in all_films:
+        films_by_tmdb_key.setdefault(_tmdb_cache_key(film), []).append(film)
 
     api_key = os.environ.get("TMDB_API_KEY")
     tmdb_cache = load_tmdb_cache()
     if api_key:
-        for film in data["cinemas"]["st-austell"]["films"]:
-            film["film_slug"] = film.get("film_slug") or slug_from_film_url(film.get("film_url", ""))
-            enrich_film_tmdb(film, api_key, tmdb_cache)
+        for group in films_by_tmdb_key.values():
+            primary = group[0]
+            enrich_film_tmdb(primary, api_key, tmdb_cache)
+            for sibling in group[1:]:
+                for key in ENRICHMENT_FIELDS:
+                    value = primary.get(key)
+                    if value not in (None, "", []):
+                        sibling[key] = deepcopy(value) if isinstance(value, (dict, list)) else value
         save_tmdb_cache(tmdb_cache)
     else:
         logger.info("TMDB_API_KEY not set; skipping TMDb enrichment")
@@ -1387,22 +1943,23 @@ def main() -> None:
             try:
                 with open(DATA_FILE, encoding="utf-8") as f:
                     old_data = json.load(f)
-                old_films = {f.get("film_url"): f for f in (old_data.get("cinemas", {}).get("st-austell", {}).get("films") or []) if f.get("film_url")}
+                old_all_films = [f for c in (old_data.get("cinemas") or {}).values() for f in (c.get("films") or [])]
+                old_films = {f.get("film_url"): f for f in old_all_films if f.get("film_url")}
                 old_films_by_key = {
                     _tmdb_cache_key(f): f
-                    for f in (old_data.get("cinemas", {}).get("st-austell", {}).get("films") or [])
+                    for f in old_all_films
                 }
-                for film in data["cinemas"]["st-austell"]["films"]:
+                for film in all_films:
                     old = old_films_by_key.get(_tmdb_cache_key(film)) or old_films.get(film.get("film_url"))
                     if old:
-                        for key in ("poster_url", "trailer_url", "vote_average", "genres", "imdb_id", "overview", "director", "writer", "cast"):
+                        for key in ENRICHMENT_FIELDS:
                             if film.get(key) in (None, "", []) and old.get(key):
                                 film[key] = old[key]
             except Exception as e:
                 logger.warning("Could not merge previous TMDb data: %s", e)
 
     # Ensure search_title and default enrichment keys
-    for film in data["cinemas"]["st-austell"]["films"]:
+    for film in all_films:
         film.setdefault("search_title", extract_search_title(film.get("title", "")))
         film.setdefault("poster_url", film.get("poster_url") or "")
         film.setdefault("trailer_url", "")
@@ -1413,26 +1970,52 @@ def main() -> None:
         film.setdefault("director", "")
         film.setdefault("writer", "")
 
-    # Download TMDb posters locally (they are proper portrait posters; WTW listing images are landscape cards)
-    for film in data["cinemas"]["st-austell"]["films"]:
-        poster_url = film.get("poster_url") or ""
-        if poster_url.startswith("http"):
+    # Download TMDb posters locally in parallel (deduped by slug).
+    poster_jobs: Dict[str, str] = {}
+    for film in all_films:
+        poster_url = (film.get("poster_url") or "").strip()
+        if not poster_url.startswith("http"):
+            continue
+        slug = film.get("film_slug") or _tmdb_cache_key(film)
+        poster_jobs.setdefault(slug, poster_url)
+    poster_results: Dict[str, str] = {}
+    if poster_jobs:
+        max_workers = max(1, min(8, len(poster_jobs)))
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            futures = {
+                executor.submit(_download_poster, url, slug): slug
+                for slug, url in poster_jobs.items()
+            }
+            for future in as_completed(futures):
+                slug = futures[future]
+                try:
+                    local = future.result() or ""
+                except Exception as e:
+                    logger.warning("Poster download task failed for %s: %s", slug, e)
+                    local = ""
+                poster_results[slug] = local
+        for film in all_films:
             slug = film.get("film_slug") or _tmdb_cache_key(film)
-            local = _download_poster(poster_url, slug)
+            local = poster_results.get(slug) or ""
             if local:
                 film["poster_url"] = local
     _ensure_placeholder_poster()
 
-    missing_posters = [f.get("title", "") for f in data["cinemas"]["st-austell"]["films"] if not (f.get("poster_url") or "").strip()]
-    if missing_posters:
-        logger.warning("Missing posters for %d film(s): %s", len(missing_posters), ", ".join(missing_posters))
+    missing_by_key: Dict[str, str] = {}
+    for film in all_films:
+        if (film.get("poster_url") or "").strip():
+            continue
+        missing_by_key.setdefault(_tmdb_cache_key(film), film.get("title", ""))
+    missing_titles = sorted(t for t in missing_by_key.values() if t)
+    if missing_titles:
+        logger.warning("Missing posters for %d unique film(s): %s", len(missing_titles), ", ".join(missing_titles))
     fail_threshold_raw = os.environ.get("POSTER_MISSING_FAIL_THRESHOLD", "").strip()
     if fail_threshold_raw:
         try:
             fail_threshold = int(fail_threshold_raw)
-            if fail_threshold >= 0 and len(missing_posters) > fail_threshold:
+            if fail_threshold >= 0 and len(missing_titles) > fail_threshold:
                 raise RuntimeError(
-                    f"Poster quality gate failed: {len(missing_posters)} missing poster(s) exceeds threshold {fail_threshold}"
+                    f"Poster quality gate failed: {len(missing_titles)} missing unique film poster(s) exceeds threshold {fail_threshold}"
                 )
         except ValueError:
             logger.warning("Invalid POSTER_MISSING_FAIL_THRESHOLD value: %s", fail_threshold_raw)
@@ -1440,11 +2023,6 @@ def main() -> None:
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
     logger.info("Wrote %s", DATA_FILE)
-
-    fingerprint = compute_fingerprint(data)
-    prev_fingerprint = ""
-    if Path(FINGERPRINT_FILE).exists():
-        prev_fingerprint = Path(FINGERPRINT_FILE).read_text(encoding="utf-8").strip()
 
     _download_cert_images()
     _download_3d_icon()
