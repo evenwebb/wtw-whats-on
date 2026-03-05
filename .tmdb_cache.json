@@ -256,7 +256,7 @@
     "director": "Barrie Kosky",
     "writer": "",
     "cast": "Peter Hoare, Andreas Schager, Christopher Maltman, Christopher Purves, Elisabet Strid",
-    "cached_at": "2026-03-04T09:33:18.478254"
+    "cached_at": "2026-03-05T09:35:30.344754"
   },
   "national-theatre-live-all-my-sons": {
     "poster_url": "https://image.tmdb.org/t/p/w342/jWblUug4V4LcMnkJUtF2MhFMl5X.jpg",
@@ -282,7 +282,7 @@
     "director": "David McVicar",
     "writer": "",
     "cast": "Julia Bullock, Amitai Pati, Huw Montague Rendall, Kathyrn Lewek",
-    "cached_at": "2026-03-04T09:33:19.268716"
+    "cached_at": "2026-03-05T09:35:31.021146"
   },
   "eugene-onegin-the-met-opera-rbo-2025-26-cinema-season": {
     "poster_url": "https://image.tmdb.org/t/p/w342/5VpQ0JRs0SQLGMcahan8FLzjedN.jpg",
@@ -575,5 +575,130 @@
     "writer": "Maggie Gyllenhaal, Mary Shelley",
     "cast": "Jessie Buckley (The Bride / Ida / Mary Shelley), Christian Bale (Frank), Jake Gyllenhaal (Ronnie Reed), Annette Bening (Dr. Euphronious), Peter Sarsgaard, Penélope Cruz (Myrna), Jeannie Berlin, John Magaro, Julianne Hough, Louis Cancelmi, Linda Emond, Matthew Maher",
     "cached_at": "2026-03-03T09:34:29.411426"
+  },
+  "good-luck-have-fun-don-t-die": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/af7yguGbWQyvYtk6QCD5l4yBbKN.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=NlFijiSrMzA",
+    "vote_average": 7.5,
+    "genres": [
+      "Science Fiction",
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
+    "imdb_id": "tt1341338",
+    "overview": "A man claiming to be from the future takes the patrons of an iconic Los Angeles diner hostage in search of unlikely recruits in a quest to save the world.",
+    "director": "Gore Verbinski",
+    "writer": "Matthew Robinson",
+    "cast": "Sam Rockwell (Man From The Future), Juno Temple (Susan), Haley Lu Richardson (Ingrid), Michael Peña (Mark), Zazie Beetz (Janet), Asim Chaudhry (Scott), Tom Taylor (Tim), Georgia Goodman (Marie), Daniel Barnett (Bob), Artie Wilkinson-Hunt (AI Boy), Riccardo Drayton (Darren), Dominique Maher (Samantha)",
+    "cached_at": "2026-03-05T09:35:31.458205"
+  },
+  "don-t-be-prey-plus-q-a-with-tim-denyer-mark-sowerby-mike-tipton-mbe": {
+    "poster_url": "",
+    "trailer_url": "",
+    "vote_average": null,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-03-05T09:35:31.680825"
+  },
+  "the-testament-of-ann-lee": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/hBGg3IGRM7LM6ydMmDrl8mEx33Y.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=gL1hHLMqLfI",
+    "vote_average": 7.0,
+    "genres": [
+      "Drama",
+      "History",
+      "Music"
+    ],
+    "imdb_id": "tt34819091",
+    "overview": "An epic fable about religious leader Ann Lee, the founding leader of the Shaker Movement, who was proclaimed by her followers as the female Christ.",
+    "director": "Mona Fastvold",
+    "writer": "Mona Fastvold, Brady Corbet",
+    "cast": "Amanda Seyfried (Ann Lee), Lewis Pullman (William Lee), Thomasin McKenzie (Mary Partington / Narrator), Matthew Beard (James Whittaker), Christopher Abbott (Abraham Standerin), Viola Prettejohn (Nancy Lee), David Cale (John Hocknell), Stacy Martin (Jane Wardly), Scott Handy (James Wardley), Jeremy Wheeler (John Townley), Tim Blake Nelson (Pastor Reuben Wight), Daniel Blumberg (Deacon Talmadge Bishop)",
+    "cached_at": "2026-03-05T09:35:32.131671"
+  },
+  "how-to-make-a-killing": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/kw7x5mSmHhoeeqwXLwXTBsofD1N.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=V7wXKa6LIBU",
+    "vote_average": 6.9,
+    "genres": [
+      "Comedy",
+      "Thriller"
+    ],
+    "imdb_id": "tt4357198",
+    "overview": "Disowned at birth by his obscenely wealthy family, blue-collar Becket Redfellow will stop at nothing to reclaim his inheritance, no matter how many relatives stand in his way.",
+    "director": "John Patton Ford",
+    "writer": "John Patton Ford",
+    "cast": "Glen Powell (Becket Redfellow), Margaret Qualley (Julia Steinway), Jessica Henwick (Ruth), Ed Harris (Whitelaw Redfellow), Bill Camp (Warren Redfellow), Topher Grace (Pastor Steven J. Redfellow), Zach Woods (Noah Redfellow), Bianca Amato (Cassandra Redfellow), Raff Law (Taylor Redfellow), Alexander Hanson (McArthur Redfellow), Nell Williams (Mary Redfellow), Sean Cameron Michael (Charles)",
+    "cached_at": "2026-03-05T09:35:32.569990"
+  },
+  "when-harry-met-sally-a-few-good-men-double-bill-pat-s-film-club": {
+    "poster_url": "",
+    "trailer_url": "",
+    "vote_average": null,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-03-05T09:35:32.798535"
+  },
+  "turner-constable-exhibition-on-screen": {
+    "poster_url": "",
+    "trailer_url": "",
+    "vote_average": null,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-03-05T09:35:33.025382"
+  },
+  "pat-s-film-club-abode-special-st-patrick-s-day-preview": {
+    "poster_url": "",
+    "trailer_url": "",
+    "vote_average": null,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-03-05T09:35:33.248864"
+  },
+  "frida-kahlo-exhibition-on-screen": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/fzHHWd3dB2Dns936AWkEu7cJAUQ.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=D76y2YhjV8A",
+    "vote_average": 7.2,
+    "genres": [
+      "Documentary"
+    ],
+    "imdb_id": "tt13011980",
+    "overview": "She was a prolific self-portraitist, using the canvas as a mirror through all stages of her turbulent and, at times, tragic life. This highly engaging film takes us on a journey through the life of one of the most prevalent female icons: Frida Kahlo. Displaying a treasure trove of colour and a feast of vibrancy on screen, this personal and intimate film offers privileged access to her works and highlights the source of her feverish creativity, her resilience and her unmatched lust for life, men, women, politics and her cultural heritage.",
+    "director": "Ali Ray",
+    "writer": "",
+    "cast": "Frida Kahlo (Self (archive footage))",
+    "cached_at": "2026-03-05T09:35:33.704540"
+  },
+  "saving-grace": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/hBiP2rlKiBTJnYJPdYCWolDSvrc.jpg",
+    "trailer_url": "",
+    "vote_average": 6.1,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "imdb_id": "tt0091895",
+    "overview": "A newly-elected Pope Leo XIV finds himself accidentally locked out of the Vatican. Unknown to the outside world, he winds up in an impoverished Italian village, where his adventures ultimately teach the Pope and his new friends some important lessons about friendship and self-esteem. Written by Chris DeSantis",
+    "director": "Robert M. Young",
+    "writer": "Celia Gittelson, Richard Kramer, David S. Ward",
+    "cast": "Tom Conti (Pope Leo XIV), Fernando Rey (Cardinal Stefano Biondi), Erland Josephson (Monsignor Francesco Ghezzi), Giancarlo Giannini (Abalardi), Donald Hewlett (Monsignor Colin McGee), Edward James Olmos (Ciolino), Patricia Mauceri (Lucia), Angelo Evans (Giuliano), Marta Zoffoli (Isabella), Guido Alberti (Cardinal Augusto Morante), Massimo Sarchielli (Fortunato), Massimo Serato (Monsignor Betti)",
+    "cached_at": "2026-03-05T09:35:34.143717"
   }
 }
