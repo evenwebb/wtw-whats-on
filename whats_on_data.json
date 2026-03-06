@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-05T09:35:27Z",
+  "updated_at": "2026-03-06T09:31:19Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -15,34 +15,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/epic-elvis-presley-in-concert/?screen=st-austell",
           "poster_url": "posters/epic-elvis-presley-in-concert.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "17:30",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76391&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-03-05",
-              "time": "20:00",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76394&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-03-06",
               "time": "18:00",
@@ -135,34 +107,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/scream-7/?screen=st-austell",
           "poster_url": "posters/scream-7.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "17:00",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76364&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-03-05",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76365&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-03-06",
               "time": "17:15",
@@ -327,19 +271,6 @@
           "poster_url": "posters/wuthering-heights.jpg",
           "showtimes": [
             {
-              "date": "2026-03-05",
-              "time": "19:30",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76360&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-07",
               "time": "14:00",
               "screen": 3,
@@ -402,42 +333,6 @@
           "overview": "Young orphan Heathcliff is adopted by the wealthy Earnshaw family and moves into their estate, Wuthering Heights. Soon, the new resident falls for his compassionate foster sister, Cathy. The two share a remarkable bond that seems unbreakable until Cathy, feeling the pressure of social convention, suppresses her feelings and marries Edgar Linton, a man of means who befits her stature. Heathcliff vows to win her back.",
           "director": "Peter Kosminsky",
           "writer": "Anne Devlin, Emily Brontë"
-        },
-        {
-          "title": "Cold Storage",
-          "search_title": "Cold Storage",
-          "film_slug": "cold-storage",
-          "synopsis": "When a mutating, highly contagious fungus escapes a sealed facility, two young employees - joined by a grizzled bioterror operative - must survive the wildest...",
-          "cast": "Joe Keery (Travis 'Teacake' Meacham), Georgina Campbell (Naomi Williams), Liam Neeson (Robert Quinn), Lesley Manville (Trini Romano), Sosie Bacon (Dr. Hero Martins), Aaron Heffernan (Mike), Andrew Brooke (Ironhead), Rob Collins (Enos Minjarra), Darrell D'Silva (The Rev), Clare Holman (Annie), Vanessa Redgrave (Ma Rooney), Richard Brake (Jerabek)",
-          "runtime_min": 99,
-          "film_url": "https://wtwcinemas.co.uk/film/cold-storage/?screen=st-austell",
-          "poster_url": "posters/cold-storage.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "20:15",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76376&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=dZpbZg9AChk",
-          "vote_average": 6.222,
-          "genres": [
-            "Comedy",
-            "Horror",
-            "Science Fiction"
-          ],
-          "imdb_id": "tt8879928",
-          "overview": "When a mutating, highly contagious fungus escapes a sealed facility, two young employees – joined by a grizzled bioterror operative – must survive the wildest night shift ever to save humanity from extinction.",
-          "director": "Jonny Campbell",
-          "writer": "David Koepp"
         },
         {
           "title": "GOAT",
@@ -577,87 +472,6 @@
           "overview": "Manipulated by his jealous ensign Iago, the Moorish general Othello is driven to believe that his new wife Desdemona is unfaithful, setting in motion a chain of deception, jealousy, and violence that leads to tragedy.",
           "director": "Orson Welles",
           "writer": "Jean Sacha, Orson Welles"
-        },
-        {
-          "title": "Marty Supreme",
-          "search_title": "Marty Supreme",
-          "film_slug": "marty-supreme",
-          "synopsis": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
-          "cast": "Timothée Chalamet (Marty Mauser), Gwyneth Paltrow (Kay Stone), Odessa A'zion (Rachel Mizler), Kevin O'Leary (Milton Rockwell), Tyler, The Creator (Wally), Fran Drescher (Rebecca Mauser), Abel Ferrara (Ezra Mishkin), Emory Cohen (Ira Mizler), Géza Röhrig (Béla Kletzki), Koto Kawaguchi (Koto Endo), Larry Sloman (Murray Norkin), Luke Manley (Dion Galanis)",
-          "runtime_min": 150,
-          "film_url": "https://wtwcinemas.co.uk/film/marty-supreme/?screen=st-austell",
-          "poster_url": "posters/marty-supreme.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "11:00",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76260&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-05",
-              "time": "11:15",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76055&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=pwE3ZG1kIqw",
-          "vote_average": 7.8,
-          "genres": [
-            "Drama"
-          ],
-          "imdb_id": "tt32916440",
-          "overview": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
-          "director": "Josh Safdie",
-          "writer": "Josh Safdie, Ronald Bronstein"
-        },
-        {
-          "title": "The Lost Boys of Carbis Bay (And More!)",
-          "search_title": "The Lost Boys of Carbis Bay (And More!)",
-          "film_slug": "the-lost-boys-of-carbis-bay-and-more",
-          "synopsis": "Join us for a one-off screening featuring the award-winning The Lost Boys of Carbis Bay, alongside a hand-picked selection of outdoor short documentaries designed to...",
-          "cast": "",
-          "runtime_min": 70,
-          "film_url": "https://wtwcinemas.co.uk/film/the-lost-boys-of-carbis-bay-and-more/?screen=st-austell",
-          "poster_url": "",
-          "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "18:00",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76129&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "",
-          "vote_average": null,
-          "genres": [],
-          "imdb_id": "",
-          "overview": "",
-          "director": "",
-          "writer": ""
         },
         {
           "title": "Hoppers",
@@ -1482,6 +1296,120 @@
           "writer": "Nick Moorcroft, Meg Leonard"
         },
         {
+          "title": "Project Hail Mary",
+          "search_title": "Project Hail Mary",
+          "film_slug": "project-hail-mary",
+          "synopsis": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there....",
+          "cast": "Ryan Gosling (Ryland Grace), Sandra Hüller (Eva Stratt), Lionel Boyce (Martin DuBois), Ken Leung (Yáo Li-Jie), Milana Vayntrub (Olesya Ilyukhina), Liz Kingsman (Annie Shapiro), James Ortiz (Rocky (voice)), Orion Lee (Xi), Priya Kansara (Mary (voice))",
+          "runtime_min": 156,
+          "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=st-austell",
+          "poster_url": "posters/project-hail-mary.jpg",
+          "showtimes": [
+            {
+              "date": "2026-03-19",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76475&screen=staustell",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-20",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76474&screen=staustell",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-21",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76476&screen=staustell",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-23",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76477&screen=staustell",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-24",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76478&screen=staustell",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-25",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76479&screen=staustell",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-26",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76480&screen=staustell",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=NKYea63tQmI",
+          "vote_average": 9.3,
+          "genres": [
+            "Science Fiction",
+            "Adventure",
+            "Mystery"
+          ],
+          "imdb_id": "tt12042730",
+          "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction… but an unexpected friendship means he may not have to do it alone.",
+          "director": "Phil Lord, Christopher Miller",
+          "writer": "Andy Weir, Drew Goddard"
+        },
+        {
           "title": "H Is for Hawk",
           "search_title": "H Is for Hawk",
           "film_slug": "h-is-for-hawk",
@@ -1562,6 +1490,37 @@
           "imdb_id": "",
           "overview": "Raised by a scheming dwarf and unaware of his true family origins, a young man embarks on an epic journey.",
           "director": "Barrie Kosky",
+          "writer": ""
+        },
+        {
+          "title": "Rose of Nevada Plus Q&A with Director Mark Jenkin",
+          "search_title": "Rose of Nevada Plus Q&A with Director Mark Jenkin",
+          "film_slug": "rose-of-nevada-plus-qa-with-director-mark-jenkin",
+          "synopsis": "Mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves...",
+          "cast": "George MacKay, Callum Turner, Francis Magee, Edward Rowe, Rosalind Eleazar, Mary Woodvine",
+          "runtime_min": 180,
+          "film_url": "https://wtwcinemas.co.uk/film/rose-of-nevada-plus-qa-with-director-mark-jenkin/?screen=st-austell",
+          "poster_url": "",
+          "showtimes": [
+            {
+              "date": "2026-04-13",
+              "time": "17:45",
+              "screen": 3,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=76473&screen=staustell",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "",
+          "vote_average": null,
+          "genres": [],
+          "imdb_id": "",
+          "overview": "",
+          "director": "",
           "writer": ""
         },
         {
@@ -1780,12 +1739,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 26,
-        "selector_film_nodes": 26,
-        "primary_selector_nodes": 26,
+        "raw_cards": 24,
+        "selector_film_nodes": 24,
+        "primary_selector_nodes": 24,
         "fallback_selector_nodes": 0,
-        "parsed_films": 21,
-        "parsed_showtimes": 97
+        "parsed_films": 20,
+        "parsed_showtimes": 96
       }
     },
     "newquay": {
@@ -1802,19 +1761,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/epic-elvis-presley-in-concert/?screen=newquay",
           "poster_url": "posters/epic-elvis-presley-in-concert.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "20:15",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64786&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-06",
               "time": "18:00",
@@ -1902,32 +1848,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/scream-7/?screen=newquay",
           "poster_url": "posters/scream-7.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "17:00",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64676&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-05",
-              "time": "19:45",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64675&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-06",
               "time": "17:15",
@@ -2082,19 +2002,6 @@
           "poster_url": "posters/wuthering-heights.jpg",
           "showtimes": [
             {
-              "date": "2026-03-05",
-              "time": "19:30",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64788&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-07",
               "time": "14:00",
               "screen": 2,
@@ -2157,43 +2064,6 @@
           "overview": "Young orphan Heathcliff is adopted by the wealthy Earnshaw family and moves into their estate, Wuthering Heights. Soon, the new resident falls for his compassionate foster sister, Cathy. The two share a remarkable bond that seems unbreakable until Cathy, feeling the pressure of social convention, suppresses her feelings and marries Edgar Linton, a man of means who befits her stature. Heathcliff vows to win her back.",
           "director": "Peter Kosminsky",
           "writer": "Anne Devlin, Emily Brontë"
-        },
-        {
-          "title": "Good Luck, Have Fun, Don’t Die",
-          "search_title": "Good Luck, Have Fun, Don’t Die",
-          "film_slug": "good-luck-have-fun-dont-die",
-          "synopsis": "A man from the future arrives at a diner in Los Angeles where he must recruit the precise combination of disgruntled patrons to join him...",
-          "cast": "Sam Rockwell (Man From The Future), Juno Temple (Susan), Haley Lu Richardson (Ingrid), Michael Peña (Mark), Zazie Beetz (Janet), Asim Chaudhry (Scott), Tom Taylor (Tim), Georgia Goodman (Marie), Daniel Barnett (Bob), Artie Wilkinson-Hunt (AI Boy), Riccardo Drayton (Darren), Dominique Maher (Samantha)",
-          "runtime_min": 134,
-          "film_url": "https://wtwcinemas.co.uk/film/good-luck-have-fun-dont-die/?screen=newquay",
-          "poster_url": "posters/good-luck-have-fun-dont-die.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "16:30",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64787&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=NlFijiSrMzA",
-          "vote_average": 7.5,
-          "genres": [
-            "Science Fiction",
-            "Action",
-            "Adventure",
-            "Comedy"
-          ],
-          "imdb_id": "tt1341338",
-          "overview": "A man claiming to be from the future takes the patrons of an iconic Los Angeles diner hostage in search of unlikely recruits in a quest to save the world.",
-          "director": "Gore Verbinski",
-          "writer": "Matthew Robinson"
         },
         {
           "title": "GOAT",
@@ -2333,87 +2203,6 @@
           "overview": "Manipulated by his jealous ensign Iago, the Moorish general Othello is driven to believe that his new wife Desdemona is unfaithful, setting in motion a chain of deception, jealousy, and violence that leads to tragedy.",
           "director": "Orson Welles",
           "writer": "Jean Sacha, Orson Welles"
-        },
-        {
-          "title": "Marty Supreme",
-          "search_title": "Marty Supreme",
-          "film_slug": "marty-supreme",
-          "synopsis": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
-          "cast": "Timothée Chalamet (Marty Mauser), Gwyneth Paltrow (Kay Stone), Odessa A'zion (Rachel Mizler), Kevin O'Leary (Milton Rockwell), Tyler, The Creator (Wally), Fran Drescher (Rebecca Mauser), Abel Ferrara (Ezra Mishkin), Emory Cohen (Ira Mizler), Géza Röhrig (Béla Kletzki), Koto Kawaguchi (Koto Endo), Larry Sloman (Murray Norkin), Luke Manley (Dion Galanis)",
-          "runtime_min": 150,
-          "film_url": "https://wtwcinemas.co.uk/film/marty-supreme/?screen=newquay",
-          "poster_url": "posters/marty-supreme.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "11:00",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64454&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-05",
-              "time": "11:15",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64455&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=pwE3ZG1kIqw",
-          "vote_average": 7.8,
-          "genres": [
-            "Drama"
-          ],
-          "imdb_id": "tt32916440",
-          "overview": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
-          "director": "Josh Safdie",
-          "writer": "Josh Safdie, Ronald Bronstein"
-        },
-        {
-          "title": "The Lost Boys of Carbis Bay (And More!)",
-          "search_title": "The Lost Boys of Carbis Bay (And More!)",
-          "film_slug": "the-lost-boys-of-carbis-bay-and-more",
-          "synopsis": "Join us for a one-off screening featuring the award-winning The Lost Boys of Carbis Bay, alongside a hand-picked selection of outdoor short documentaries designed to...",
-          "cast": "",
-          "runtime_min": 70,
-          "film_url": "https://wtwcinemas.co.uk/film/the-lost-boys-of-carbis-bay-and-more/?screen=newquay",
-          "poster_url": "",
-          "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "18:00",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64650&screen=newquay",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "",
-          "vote_average": null,
-          "genres": [],
-          "imdb_id": "",
-          "overview": "",
-          "director": "",
-          "writer": ""
         },
         {
           "title": "Hoppers",
@@ -3206,6 +2995,107 @@
           "writer": "Nick Moorcroft, Meg Leonard"
         },
         {
+          "title": "Project Hail Mary",
+          "search_title": "Project Hail Mary",
+          "film_slug": "project-hail-mary",
+          "synopsis": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there....",
+          "cast": "Ryan Gosling (Ryland Grace), Sandra Hüller (Eva Stratt), Lionel Boyce (Martin DuBois), Ken Leung (Yáo Li-Jie), Milana Vayntrub (Olesya Ilyukhina), Liz Kingsman (Annie Shapiro), James Ortiz (Rocky (voice)), Orion Lee (Xi), Priya Kansara (Mary (voice))",
+          "runtime_min": 156,
+          "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=newquay",
+          "poster_url": "posters/project-hail-mary.jpg",
+          "showtimes": [
+            {
+              "date": "2026-03-20",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=64866&screen=newquay",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-21",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=64867&screen=newquay",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-23",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=64868&screen=newquay",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-24",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=64869&screen=newquay",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-25",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=64870&screen=newquay",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-26",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=64871&screen=newquay",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=NKYea63tQmI",
+          "vote_average": 9.3,
+          "genres": [
+            "Science Fiction",
+            "Adventure",
+            "Mystery"
+          ],
+          "imdb_id": "tt12042730",
+          "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction… but an unexpected friendship means he may not have to do it alone.",
+          "director": "Phil Lord, Christopher Miller",
+          "writer": "Andy Weir, Drew Goddard"
+        },
+        {
           "title": "H Is for Hawk",
           "search_title": "H Is for Hawk",
           "film_slug": "h-is-for-hawk",
@@ -3286,6 +3176,37 @@
           "trailer_url": "",
           "genres": [],
           "imdb_id": "",
+          "writer": ""
+        },
+        {
+          "title": "Rose of Nevada Plus Q&A with Director Mark Jenkin",
+          "search_title": "Rose of Nevada Plus Q&A with Director Mark Jenkin",
+          "film_slug": "rose-of-nevada-plus-qa-with-director-mark-jenkin",
+          "synopsis": "Mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves...",
+          "cast": "George MacKay, Callum Turner, Francis Magee, Edward Rowe, Rosalind Eleazar, Mary Woodvine",
+          "runtime_min": 180,
+          "film_url": "https://wtwcinemas.co.uk/film/rose-of-nevada-plus-qa-with-director-mark-jenkin/?screen=newquay",
+          "poster_url": "",
+          "showtimes": [
+            {
+              "date": "2026-04-11",
+              "time": "17:30",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=64865&screen=newquay",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "",
+          "vote_average": null,
+          "genres": [],
+          "imdb_id": "",
+          "overview": "",
+          "director": "",
           "writer": ""
         },
         {
@@ -3504,12 +3425,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 26,
-        "selector_film_nodes": 26,
-        "primary_selector_nodes": 26,
+        "raw_cards": 24,
+        "selector_film_nodes": 24,
+        "primary_selector_nodes": 24,
         "fallback_selector_nodes": 0,
-        "parsed_films": 21,
-        "parsed_showtimes": 95
+        "parsed_films": 20,
+        "parsed_showtimes": 94
       }
     },
     "truro": {
@@ -3526,32 +3447,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/epic-elvis-presley-in-concert/?screen=truro",
           "poster_url": "posters/epic-elvis-presley-in-concert.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "17:45",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119350&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-05",
-              "time": "20:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119351&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-06",
               "time": "18:15",
@@ -3650,19 +3545,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/scream-7/?screen=truro",
           "poster_url": "posters/scream-7.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "20:15",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119349&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-06",
               "time": "16:45",
@@ -3861,21 +3743,6 @@
                 "Wheelchair access",
                 "2D"
               ]
-            },
-            {
-              "date": "2026-03-05",
-              "time": "17:15",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119352&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=FHzHfuEwC_k",
@@ -3900,19 +3767,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/wuthering-heights/?screen=truro",
           "poster_url": "posters/wuthering-heights.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "19:45",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119354&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-06",
               "time": "17:15",
@@ -4082,42 +3936,6 @@
           "writer": "Anne Devlin, Emily Brontë"
         },
         {
-          "title": "Cold Storage",
-          "search_title": "Cold Storage",
-          "film_slug": "cold-storage",
-          "synopsis": "When a mutating, highly contagious fungus escapes a sealed facility, two young employees - joined by a grizzled bioterror operative - must survive the wildest...",
-          "cast": "Joe Keery (Travis 'Teacake' Meacham), Georgina Campbell (Naomi Williams), Liam Neeson (Robert Quinn), Lesley Manville (Trini Romano), Sosie Bacon (Dr. Hero Martins), Aaron Heffernan (Mike), Andrew Brooke (Ironhead), Rob Collins (Enos Minjarra), Darrell D'Silva (The Rev), Clare Holman (Annie), Vanessa Redgrave (Ma Rooney), Richard Brake (Jerabek)",
-          "runtime_min": 99,
-          "film_url": "https://wtwcinemas.co.uk/film/cold-storage/?screen=truro",
-          "poster_url": "posters/cold-storage.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "20:30",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119355&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=dZpbZg9AChk",
-          "vote_average": 6.222,
-          "genres": [
-            "Comedy",
-            "Horror",
-            "Science Fiction"
-          ],
-          "imdb_id": "tt8879928",
-          "overview": "When a mutating, highly contagious fungus escapes a sealed facility, two young employees – joined by a grizzled bioterror operative – must survive the wildest night shift ever to save humanity from extinction.",
-          "director": "Jonny Campbell",
-          "writer": "David Koepp"
-        },
-        {
           "title": "GOAT",
           "search_title": "GOAT",
           "film_slug": "goat",
@@ -4237,54 +4055,6 @@
           "writer": "Jared Bush"
         },
         {
-          "title": "The Testament of Ann Lee",
-          "search_title": "The Testament of Ann Lee",
-          "film_slug": "the-testament-of-ann-lee",
-          "synopsis": "The extraordinary true legend of Ann Lee, founder of the devotional sect known as the Shakers.",
-          "cast": "Amanda Seyfried (Ann Lee), Lewis Pullman (William Lee), Thomasin McKenzie (Mary Partington / Narrator), Matthew Beard (James Whittaker), Christopher Abbott (Abraham Standerin), Viola Prettejohn (Nancy Lee), David Cale (John Hocknell), Stacy Martin (Jane Wardly), Scott Handy (James Wardley), Jeremy Wheeler (John Townley), Tim Blake Nelson (Pastor Reuben Wight), Daniel Blumberg (Deacon Talmadge Bishop)",
-          "runtime_min": 137,
-          "film_url": "https://wtwcinemas.co.uk/film/the-testament-of-ann-lee/?screen=truro",
-          "poster_url": "posters/the-testament-of-ann-lee.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "16:45",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119358&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-05",
-              "time": "19:30",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119357&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=gL1hHLMqLfI",
-          "vote_average": 7.0,
-          "genres": [
-            "Drama",
-            "History",
-            "Music"
-          ],
-          "imdb_id": "tt34819091",
-          "overview": "An epic fable about religious leader Ann Lee, the founding leader of the Shaker Movement, who was proclaimed by her followers as the female Christ.",
-          "director": "Mona Fastvold",
-          "writer": "Mona Fastvold, Brady Corbet"
-        },
-        {
           "title": "Othello",
           "search_title": "Othello",
           "film_slug": "othello",
@@ -4317,87 +4087,6 @@
           "overview": "Manipulated by his jealous ensign Iago, the Moorish general Othello is driven to believe that his new wife Desdemona is unfaithful, setting in motion a chain of deception, jealousy, and violence that leads to tragedy.",
           "director": "Orson Welles",
           "writer": "Jean Sacha, Orson Welles"
-        },
-        {
-          "title": "Marty Supreme",
-          "search_title": "Marty Supreme",
-          "film_slug": "marty-supreme",
-          "synopsis": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
-          "cast": "Timothée Chalamet (Marty Mauser), Gwyneth Paltrow (Kay Stone), Odessa A'zion (Rachel Mizler), Kevin O'Leary (Milton Rockwell), Tyler, The Creator (Wally), Fran Drescher (Rebecca Mauser), Abel Ferrara (Ezra Mishkin), Emory Cohen (Ira Mizler), Géza Röhrig (Béla Kletzki), Koto Kawaguchi (Koto Endo), Larry Sloman (Murray Norkin), Luke Manley (Dion Galanis)",
-          "runtime_min": 150,
-          "film_url": "https://wtwcinemas.co.uk/film/marty-supreme/?screen=truro",
-          "poster_url": "posters/marty-supreme.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "11:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=118955&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-05",
-              "time": "11:15",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=118956&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=pwE3ZG1kIqw",
-          "vote_average": 7.8,
-          "genres": [
-            "Drama"
-          ],
-          "imdb_id": "tt32916440",
-          "overview": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
-          "director": "Josh Safdie",
-          "writer": "Josh Safdie, Ronald Bronstein"
-        },
-        {
-          "title": "The Lost Boys of Carbis Bay (And More!)",
-          "search_title": "The Lost Boys of Carbis Bay (And More!)",
-          "film_slug": "the-lost-boys-of-carbis-bay-and-more",
-          "synopsis": "Join us for a one-off screening featuring the award-winning The Lost Boys of Carbis Bay, alongside a hand-picked selection of outdoor short documentaries designed to...",
-          "cast": "",
-          "runtime_min": 70,
-          "film_url": "https://wtwcinemas.co.uk/film/the-lost-boys-of-carbis-bay-and-more/?screen=truro",
-          "poster_url": "",
-          "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "18:00",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119065&screen=truro",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "",
-          "vote_average": null,
-          "genres": [],
-          "imdb_id": "",
-          "overview": "",
-          "director": "",
-          "writer": ""
         },
         {
           "title": "Hoppers",
@@ -5407,6 +5096,120 @@
           "writer": "Nick Moorcroft, Meg Leonard"
         },
         {
+          "title": "Project Hail Mary",
+          "search_title": "Project Hail Mary",
+          "film_slug": "project-hail-mary",
+          "synopsis": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there....",
+          "cast": "Ryan Gosling (Ryland Grace), Sandra Hüller (Eva Stratt), Lionel Boyce (Martin DuBois), Ken Leung (Yáo Li-Jie), Milana Vayntrub (Olesya Ilyukhina), Liz Kingsman (Annie Shapiro), James Ortiz (Rocky (voice)), Orion Lee (Xi), Priya Kansara (Mary (voice))",
+          "runtime_min": 156,
+          "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=truro",
+          "poster_url": "posters/project-hail-mary.jpg",
+          "showtimes": [
+            {
+              "date": "2026-03-19",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=119458&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-20",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=119457&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-21",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=119459&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-23",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=119460&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-24",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=119461&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-25",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=119462&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-26",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=119463&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=NKYea63tQmI",
+          "vote_average": 9.3,
+          "genres": [
+            "Science Fiction",
+            "Adventure",
+            "Mystery"
+          ],
+          "imdb_id": "tt12042730",
+          "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction… but an unexpected friendship means he may not have to do it alone.",
+          "director": "Phil Lord, Christopher Miller",
+          "writer": "Andy Weir, Drew Goddard"
+        },
+        {
           "title": "H Is for Hawk",
           "search_title": "H Is for Hawk",
           "film_slug": "h-is-for-hawk",
@@ -5487,6 +5290,37 @@
           "trailer_url": "",
           "genres": [],
           "imdb_id": "",
+          "writer": ""
+        },
+        {
+          "title": "Rose of Nevada Plus Q&A with Director Mark Jenkin",
+          "search_title": "Rose of Nevada Plus Q&A with Director Mark Jenkin",
+          "film_slug": "rose-of-nevada-plus-qa-with-director-mark-jenkin",
+          "synopsis": "Mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves...",
+          "cast": "George MacKay, Callum Turner, Francis Magee, Edward Rowe, Rosalind Eleazar, Mary Woodvine",
+          "runtime_min": 180,
+          "film_url": "https://wtwcinemas.co.uk/film/rose-of-nevada-plus-qa-with-director-mark-jenkin/?screen=truro",
+          "poster_url": "",
+          "showtimes": [
+            {
+              "date": "2026-04-11",
+              "time": "20:00",
+              "screen": 2,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=119456&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "",
+          "vote_average": null,
+          "genres": [],
+          "imdb_id": "",
+          "overview": "",
+          "director": "",
           "writer": ""
         },
         {
@@ -5752,12 +5586,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 33,
-        "selector_film_nodes": 33,
-        "primary_selector_nodes": 33,
+        "raw_cards": 29,
+        "selector_film_nodes": 29,
+        "primary_selector_nodes": 29,
         "fallback_selector_nodes": 0,
-        "parsed_films": 27,
-        "parsed_showtimes": 127
+        "parsed_films": 25,
+        "parsed_showtimes": 124
       }
     },
     "wadebridge": {
@@ -5774,32 +5608,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/scream-7/?screen=wadebridge",
           "poster_url": "posters/scream-7.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "17:15",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28348&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-05",
-              "time": "19:50",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28347&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-06",
               "time": "19:45",
@@ -5916,19 +5724,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/wuthering-heights/?screen=wadebridge",
           "poster_url": "posters/wuthering-heights.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "19:45",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28349&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-07",
               "time": "14:15",
@@ -6091,86 +5886,6 @@
           "overview": "Manipulated by his jealous ensign Iago, the Moorish general Othello is driven to believe that his new wife Desdemona is unfaithful, setting in motion a chain of deception, jealousy, and violence that leads to tragedy.",
           "director": "Orson Welles",
           "writer": "Jean Sacha, Orson Welles"
-        },
-        {
-          "title": "Marty Supreme",
-          "search_title": "Marty Supreme",
-          "film_slug": "marty-supreme",
-          "synopsis": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
-          "cast": "Timothée Chalamet (Marty Mauser), Gwyneth Paltrow (Kay Stone), Odessa A'zion (Rachel Mizler), Kevin O'Leary (Milton Rockwell), Tyler, The Creator (Wally), Fran Drescher (Rebecca Mauser), Abel Ferrara (Ezra Mishkin), Emory Cohen (Ira Mizler), Géza Röhrig (Béla Kletzki), Koto Kawaguchi (Koto Endo), Larry Sloman (Murray Norkin), Luke Manley (Dion Galanis)",
-          "runtime_min": 150,
-          "film_url": "https://wtwcinemas.co.uk/film/marty-supreme/?screen=wadebridge",
-          "poster_url": "posters/marty-supreme.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "11:00",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28177&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-05",
-              "time": "11:15",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28178&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=pwE3ZG1kIqw",
-          "vote_average": 7.8,
-          "genres": [
-            "Drama"
-          ],
-          "imdb_id": "tt32916440",
-          "overview": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
-          "director": "Josh Safdie",
-          "writer": "Josh Safdie, Ronald Bronstein"
-        },
-        {
-          "title": "The Lost Boys of Carbis Bay (And More!)",
-          "search_title": "The Lost Boys of Carbis Bay (And More!)",
-          "film_slug": "the-lost-boys-of-carbis-bay-and-more",
-          "synopsis": "Join us for a one-off screening featuring the award-winning The Lost Boys of Carbis Bay, alongside a hand-picked selection of outdoor short documentaries designed to...",
-          "cast": "",
-          "runtime_min": 70,
-          "film_url": "https://wtwcinemas.co.uk/film/the-lost-boys-of-carbis-bay-and-more/?screen=wadebridge",
-          "poster_url": "",
-          "showtimes": [
-            {
-              "date": "2026-03-05",
-              "time": "18:00",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28212&screen=wadebridge",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "",
-          "vote_average": null,
-          "genres": [],
-          "imdb_id": "",
-          "overview": "",
-          "director": "",
-          "writer": ""
         },
         {
           "title": "Hoppers",
@@ -6670,6 +6385,120 @@
           "writer": "Nick Moorcroft, Meg Leonard"
         },
         {
+          "title": "Project Hail Mary",
+          "search_title": "Project Hail Mary",
+          "film_slug": "project-hail-mary",
+          "synopsis": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there....",
+          "cast": "Ryan Gosling (Ryland Grace), Sandra Hüller (Eva Stratt), Lionel Boyce (Martin DuBois), Ken Leung (Yáo Li-Jie), Milana Vayntrub (Olesya Ilyukhina), Liz Kingsman (Annie Shapiro), James Ortiz (Rocky (voice)), Orion Lee (Xi), Priya Kansara (Mary (voice))",
+          "runtime_min": 156,
+          "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=wadebridge",
+          "poster_url": "posters/project-hail-mary.jpg",
+          "showtimes": [
+            {
+              "date": "2026-03-19",
+              "time": "19:15",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28387&screen=wadebridge",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-20",
+              "time": "19:15",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28388&screen=wadebridge",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-21",
+              "time": "19:15",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28389&screen=wadebridge",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-23",
+              "time": "19:15",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28390&screen=wadebridge",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-24",
+              "time": "19:15",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28391&screen=wadebridge",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-25",
+              "time": "19:15",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28392&screen=wadebridge",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-03-26",
+              "time": "19:15",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28393&screen=wadebridge",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=NKYea63tQmI",
+          "vote_average": 9.3,
+          "genres": [
+            "Science Fiction",
+            "Adventure",
+            "Mystery"
+          ],
+          "imdb_id": "tt12042730",
+          "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction… but an unexpected friendship means he may not have to do it alone.",
+          "director": "Phil Lord, Christopher Miller",
+          "writer": "Andy Weir, Drew Goddard"
+        },
+        {
           "title": "H Is for Hawk",
           "search_title": "H Is for Hawk",
           "film_slug": "h-is-for-hawk",
@@ -6750,6 +6579,37 @@
           "trailer_url": "",
           "genres": [],
           "imdb_id": "",
+          "writer": ""
+        },
+        {
+          "title": "Rose of Nevada Plus Q&A with Director Mark Jenkin",
+          "search_title": "Rose of Nevada Plus Q&A with Director Mark Jenkin",
+          "film_slug": "rose-of-nevada-plus-qa-with-director-mark-jenkin",
+          "synopsis": "Mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves...",
+          "cast": "George MacKay, Callum Turner, Francis Magee, Edward Rowe, Rosalind Eleazar, Mary Woodvine",
+          "runtime_min": 180,
+          "film_url": "https://wtwcinemas.co.uk/film/rose-of-nevada-plus-qa-with-director-mark-jenkin/?screen=wadebridge",
+          "poster_url": "",
+          "showtimes": [
+            {
+              "date": "2026-04-12",
+              "time": "17:30",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28386&screen=wadebridge",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "",
+          "vote_average": null,
+          "genres": [],
+          "imdb_id": "",
+          "overview": "",
+          "director": "",
           "writer": ""
         },
         {
@@ -7001,12 +6861,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 24,
-        "selector_film_nodes": 24,
-        "primary_selector_nodes": 24,
+        "raw_cards": 23,
+        "selector_film_nodes": 23,
+        "primary_selector_nodes": 23,
         "fallback_selector_nodes": 0,
         "parsed_films": 20,
-        "parsed_showtimes": 61
+        "parsed_showtimes": 63
       }
     }
   }
