@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-08T09:22:20Z",
+  "updated_at": "2026-03-09T09:41:23Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -15,32 +15,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=st-austell",
           "poster_url": "posters/hoppers.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "12:00",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76415&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-08",
-              "time": "14:30",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76412&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-09",
               "time": "17:00",
@@ -157,20 +131,6 @@
                 "Wheelchair access",
                 "2D"
               ]
-            },
-            {
-              "date": "2026-03-08",
-              "time": "17:00",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76401&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "2D"
-              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=nIKsi-Ud3w8",
@@ -196,32 +156,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mothers-pride/?screen=st-austell",
           "poster_url": "posters/mothers-pride.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "13:30",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76452&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-08",
-              "time": "18:00",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76461&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-09",
               "time": "15:45",
@@ -389,20 +323,6 @@
           "poster_url": "posters/the-bride.jpg",
           "showtimes": [
             {
-              "date": "2026-03-08",
-              "time": "16:45",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76427&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-03-09",
               "time": "16:45",
               "screen": 2,
@@ -552,20 +472,6 @@
           "poster_url": "posters/epic-elvis-presley-in-concert.jpg",
           "showtimes": [
             {
-              "date": "2026-03-08",
-              "time": "15:45",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76457&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-03-09",
               "time": "18:00",
               "screen": 4,
@@ -615,20 +521,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/scream-7/?screen=st-austell",
           "poster_url": "posters/scream-7.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "17:45",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76443&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-03-09",
               "time": "20:00",
@@ -772,117 +664,6 @@
           "overview": "Young orphan Heathcliff is adopted by the wealthy Earnshaw family and moves into their estate, Wuthering Heights. Soon, the new resident falls for his compassionate foster sister, Cathy. The two share a remarkable bond that seems unbreakable until Cathy, feeling the pressure of social convention, suppresses her feelings and marries Edgar Linton, a man of means who befits her stature. Heathcliff vows to win her back.",
           "director": "Peter Kosminsky",
           "writer": "Anne Devlin, Emily Brontë"
-        },
-        {
-          "title": "GOAT",
-          "search_title": "GOAT",
-          "film_slug": "goat",
-          "synopsis": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball - a high-intensity, co-ed, full-contact sport dominated...",
-          "cast": "Caleb McLaughlin (Will Harris (voice)), Gabrielle Union (Jett Fillmore  (voice)), Jenifer Lewis (Florence Everson  (voice)), David Harbour (Archie Everhardt  (voice)), Nick Kroll (Modo Olachenko  (voice)), Nicola Coughlan (Olivia Burke  (voice)), Patton Oswalt (Dennis  (voice)), Stephen Curry (Lenny Williamson  (voice)), Aaron Pierre (Mane Attraction (voice)), Jennifer Hudson (Louise Harris (voice)), Wayne Knight (Frank (voice)), Jelly Roll (Grizz (voice))",
-          "runtime_min": 100,
-          "film_url": "https://wtwcinemas.co.uk/film/goat/?screen=st-austell",
-          "poster_url": "posters/goat.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "14:15",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76419&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=4UoscmGBCZ0",
-          "vote_average": 6.6,
-          "genres": [
-            "Animation",
-            "Comedy",
-            "Family",
-            "Action"
-          ],
-          "imdb_id": "tt27613895",
-          "overview": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball – a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world. Will's new teammates aren't thrilled about having a little goat on their roster, but Will is determined to revolutionize the sport and prove once and for all that 'smalls can ball'! He has to do something he has never done before.",
-          "director": "Tyree Dillihay",
-          "writer": "Aaron Buchsbaum, Teddy Riley, Nicolas Curcio"
-        },
-        {
-          "title": "Zootropolis 2",
-          "search_title": "Zootropolis 2",
-          "film_slug": "zootropolis-2",
-          "synopsis": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find their partnership isn't as solid as they thought when...",
-          "cast": "Ginnifer Goodwin (Judy Hopps (voice)), Jason Bateman (Nick Wilde (voice)), Ke Huy Quan (Gary De'Snake (voice)), Fortune Feimster (Nibbles Maplestick (voice)), Andy Samberg (Pawbert Lynxley (voice)), David Strathairn (Milton Lynxley (voice)), Idris Elba (Chief Bogo (voice)), Shakira (Gazelle (voice)), Patrick Warburton (Mayor Winddancer (voice)), Quinta Brunson (Dr. Fuzzby (voice)), Danny Trejo (Jesús (voice)), Nate Torrence (Clawhauser (voice))",
-          "runtime_min": 108,
-          "film_url": "https://wtwcinemas.co.uk/film/zootropolis-2/?screen=st-austell",
-          "poster_url": "posters/zootropolis-2.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "11:45",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76417&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=k8t8rvRO7Ug",
-          "vote_average": 7.624,
-          "genres": [
-            "Animation",
-            "Comedy",
-            "Adventure",
-            "Family",
-            "Mystery"
-          ],
-          "imdb_id": "tt26443597",
-          "overview": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
-          "director": "Jared Bush, Byron Howard",
-          "writer": "Jared Bush"
-        },
-        {
-          "title": "Othello",
-          "search_title": "Othello",
-          "film_slug": "othello",
-          "synopsis": "",
-          "cast": "Orson Welles (Othello), Micheál Mac Liammóir (Iago), Robert Coote (Roderigo), Suzanne Cloutier (Desdemona), Hilton Edwards (Brabantio), Nicholas Bruce (Lodovico), Michael Laurence (Michael Cassio), Fay Compton (Emilia), Doris Dowling (Bianca), Joan Fontaine (Page), Joseph Cotten (Senator (uncredited)), Robert Rietti (Lodovico (voice))",
-          "runtime_min": 165,
-          "film_url": "https://wtwcinemas.co.uk/film/othello/?screen=st-austell",
-          "poster_url": "posters/othello.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "14:00",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=75475&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Event cinema"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=fCZ0obRJa08",
-          "vote_average": 7.351,
-          "genres": [
-            "Drama"
-          ],
-          "imdb_id": "tt0045251",
-          "overview": "Manipulated by his jealous ensign Iago, the Moorish general Othello is driven to believe that his new wife Desdemona is unfaithful, setting in motion a chain of deception, jealousy, and violence that leads to tragedy.",
-          "director": "Orson Welles",
-          "writer": "Jean Sacha, Orson Welles"
         },
         {
           "title": "Is This Thing On",
@@ -1401,12 +1182,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 23,
-        "selector_film_nodes": 23,
-        "primary_selector_nodes": 23,
+        "raw_cards": 19,
+        "selector_film_nodes": 19,
+        "primary_selector_nodes": 19,
         "fallback_selector_nodes": 0,
-        "parsed_films": 20,
-        "parsed_showtimes": 71
+        "parsed_films": 17,
+        "parsed_showtimes": 60
       }
     },
     "newquay": {
@@ -1423,45 +1204,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=newquay",
           "poster_url": "posters/hoppers.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "12:00",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64823&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-08",
-              "time": "14:30",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64824&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-08",
-              "time": "17:00",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64814&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-09",
               "time": "17:00",
@@ -1591,32 +1333,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mothers-pride/?screen=newquay",
           "poster_url": "posters/mothers-pride.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "13:30",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64825&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-08",
-              "time": "18:00",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64820&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-09",
               "time": "15:45",
@@ -1784,19 +1500,6 @@
           "poster_url": "posters/the-bride.jpg",
           "showtimes": [
             {
-              "date": "2026-03-08",
-              "time": "16:45",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64821&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-09",
               "time": "16:45",
               "screen": 4,
@@ -1937,19 +1640,6 @@
           "poster_url": "posters/epic-elvis-presley-in-concert.jpg",
           "showtimes": [
             {
-              "date": "2026-03-08",
-              "time": "15:45",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64819&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-09",
               "time": "18:00",
               "screen": 3,
@@ -1997,19 +1687,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/scream-7/?screen=newquay",
           "poster_url": "posters/scream-7.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "17:45",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64816&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-09",
               "time": "20:00",
@@ -2148,117 +1825,6 @@
           "overview": "Young orphan Heathcliff is adopted by the wealthy Earnshaw family and moves into their estate, Wuthering Heights. Soon, the new resident falls for his compassionate foster sister, Cathy. The two share a remarkable bond that seems unbreakable until Cathy, feeling the pressure of social convention, suppresses her feelings and marries Edgar Linton, a man of means who befits her stature. Heathcliff vows to win her back.",
           "director": "Peter Kosminsky",
           "writer": "Anne Devlin, Emily Brontë"
-        },
-        {
-          "title": "GOAT",
-          "search_title": "GOAT",
-          "film_slug": "goat",
-          "synopsis": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball - a high-intensity, co-ed, full-contact sport dominated...",
-          "cast": "Caleb McLaughlin (Will Harris (voice)), Gabrielle Union (Jett Fillmore  (voice)), Jenifer Lewis (Florence Everson  (voice)), David Harbour (Archie Everhardt  (voice)), Nick Kroll (Modo Olachenko  (voice)), Nicola Coughlan (Olivia Burke  (voice)), Patton Oswalt (Dennis  (voice)), Stephen Curry (Lenny Williamson  (voice)), Aaron Pierre (Mane Attraction (voice)), Jennifer Hudson (Louise Harris (voice)), Wayne Knight (Frank (voice)), Jelly Roll (Grizz (voice))",
-          "runtime_min": 100,
-          "film_url": "https://wtwcinemas.co.uk/film/goat/?screen=newquay",
-          "poster_url": "posters/goat.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "14:15",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64827&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=4UoscmGBCZ0",
-          "vote_average": 6.6,
-          "genres": [
-            "Animation",
-            "Comedy",
-            "Family",
-            "Action"
-          ],
-          "imdb_id": "tt27613895",
-          "overview": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball – a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world. Will's new teammates aren't thrilled about having a little goat on their roster, but Will is determined to revolutionize the sport and prove once and for all that 'smalls can ball'! He has to do something he has never done before.",
-          "director": "Tyree Dillihay",
-          "writer": "Aaron Buchsbaum, Teddy Riley, Nicolas Curcio"
-        },
-        {
-          "title": "Zootropolis 2",
-          "search_title": "Zootropolis 2",
-          "film_slug": "zootropolis-2",
-          "synopsis": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find their partnership isn't as solid as they thought when...",
-          "cast": "Ginnifer Goodwin (Judy Hopps (voice)), Jason Bateman (Nick Wilde (voice)), Ke Huy Quan (Gary De'Snake (voice)), Fortune Feimster (Nibbles Maplestick (voice)), Andy Samberg (Pawbert Lynxley (voice)), David Strathairn (Milton Lynxley (voice)), Idris Elba (Chief Bogo (voice)), Shakira (Gazelle (voice)), Patrick Warburton (Mayor Winddancer (voice)), Quinta Brunson (Dr. Fuzzby (voice)), Danny Trejo (Jesús (voice)), Nate Torrence (Clawhauser (voice))",
-          "runtime_min": 108,
-          "film_url": "https://wtwcinemas.co.uk/film/zootropolis-2/?screen=newquay",
-          "poster_url": "posters/zootropolis-2.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "11:45",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64826&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=k8t8rvRO7Ug",
-          "vote_average": 7.624,
-          "genres": [
-            "Animation",
-            "Comedy",
-            "Adventure",
-            "Family",
-            "Mystery"
-          ],
-          "imdb_id": "tt26443597",
-          "overview": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
-          "director": "Jared Bush, Byron Howard",
-          "writer": "Jared Bush"
-        },
-        {
-          "title": "Othello",
-          "search_title": "Othello",
-          "film_slug": "othello",
-          "synopsis": "",
-          "cast": "Orson Welles (Othello), Micheál Mac Liammóir (Iago), Robert Coote (Roderigo), Suzanne Cloutier (Desdemona), Hilton Edwards (Brabantio), Nicholas Bruce (Lodovico), Michael Laurence (Michael Cassio), Fay Compton (Emilia), Doris Dowling (Bianca), Joan Fontaine (Page), Joseph Cotten (Senator (uncredited)), Robert Rietti (Lodovico (voice))",
-          "runtime_min": 165,
-          "film_url": "https://wtwcinemas.co.uk/film/othello/?screen=newquay",
-          "poster_url": "posters/othello.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "14:00",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=63955&screen=newquay",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Event cinema"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=fCZ0obRJa08",
-          "vote_average": 7.351,
-          "genres": [
-            "Drama"
-          ],
-          "imdb_id": "tt0045251",
-          "overview": "Manipulated by his jealous ensign Iago, the Moorish general Othello is driven to believe that his new wife Desdemona is unfaithful, setting in motion a chain of deception, jealousy, and violence that leads to tragedy.",
-          "director": "Orson Welles",
-          "writer": "Jean Sacha, Orson Welles"
         },
         {
           "title": "The Housemaid",
@@ -2773,12 +2339,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 24,
-        "selector_film_nodes": 24,
-        "primary_selector_nodes": 24,
+        "raw_cards": 21,
+        "selector_film_nodes": 21,
+        "primary_selector_nodes": 21,
         "fallback_selector_nodes": 0,
-        "parsed_films": 20,
-        "parsed_showtimes": 70
+        "parsed_films": 17,
+        "parsed_showtimes": 59
       }
     },
     "truro": {
@@ -2795,45 +2361,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=truro",
           "poster_url": "posters/hoppers.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "11:30",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119404&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-08",
-              "time": "14:45",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119361&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-08",
-              "time": "17:30",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119362&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-09",
               "time": "17:30",
@@ -2946,19 +2473,6 @@
                 "Audio Description",
                 "2D"
               ]
-            },
-            {
-              "date": "2026-03-08",
-              "time": "19:15",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119376&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "2D"
-              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=nIKsi-Ud3w8",
@@ -2984,45 +2498,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mothers-pride/?screen=truro",
           "poster_url": "posters/mothers-pride.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "16:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119425&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-08",
-              "time": "18:15",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119418&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-08",
-              "time": "20:30",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119419&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-09",
               "time": "16:00",
@@ -3190,45 +2665,6 @@
           "poster_url": "posters/the-bride.jpg",
           "showtimes": [
             {
-              "date": "2026-03-08",
-              "time": "13:45",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119384&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-08",
-              "time": "17:00",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119388&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-08",
-              "time": "20:00",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119451&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-09",
               "time": "17:00",
               "screen": 4,
@@ -3371,18 +2807,6 @@
           "poster_url": "posters/epic-elvis-presley-in-concert.jpg",
           "showtimes": [
             {
-              "date": "2026-03-08",
-              "time": "11:45",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119364&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-09",
               "time": "18:15",
               "screen": 2,
@@ -3443,43 +2867,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/scream-7/?screen=truro",
           "poster_url": "posters/scream-7.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "14:00",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119366&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-08",
-              "time": "16:45",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119369&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-08",
-              "time": "20:15",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119399&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-09",
               "time": "16:45",
@@ -3604,19 +2991,6 @@
           "poster_url": "posters/wuthering-heights.jpg",
           "showtimes": [
             {
-              "date": "2026-03-08",
-              "time": "13:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119421&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-09",
               "time": "17:15",
               "screen": 3,
@@ -3707,117 +3081,6 @@
           "writer": "Anne Devlin, Emily Brontë"
         },
         {
-          "title": "GOAT",
-          "search_title": "GOAT",
-          "film_slug": "goat",
-          "synopsis": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball - a high-intensity, co-ed, full-contact sport dominated...",
-          "cast": "Caleb McLaughlin (Will Harris (voice)), Gabrielle Union (Jett Fillmore  (voice)), Jenifer Lewis (Florence Everson  (voice)), David Harbour (Archie Everhardt  (voice)), Nick Kroll (Modo Olachenko  (voice)), Nicola Coughlan (Olivia Burke  (voice)), Patton Oswalt (Dennis  (voice)), Stephen Curry (Lenny Williamson  (voice)), Aaron Pierre (Mane Attraction (voice)), Jennifer Hudson (Louise Harris (voice)), Wayne Knight (Frank (voice)), Jelly Roll (Grizz (voice))",
-          "runtime_min": 100,
-          "film_url": "https://wtwcinemas.co.uk/film/goat/?screen=truro",
-          "poster_url": "posters/goat.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "12:00",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119442&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=4UoscmGBCZ0",
-          "vote_average": 6.6,
-          "genres": [
-            "Animation",
-            "Comedy",
-            "Family",
-            "Action"
-          ],
-          "imdb_id": "tt27613895",
-          "overview": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball – a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world. Will's new teammates aren't thrilled about having a little goat on their roster, but Will is determined to revolutionize the sport and prove once and for all that 'smalls can ball'! He has to do something he has never done before.",
-          "director": "Tyree Dillihay",
-          "writer": "Aaron Buchsbaum, Teddy Riley, Nicolas Curcio"
-        },
-        {
-          "title": "Zootropolis 2",
-          "search_title": "Zootropolis 2",
-          "film_slug": "zootropolis-2",
-          "synopsis": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find their partnership isn't as solid as they thought when...",
-          "cast": "Ginnifer Goodwin (Judy Hopps (voice)), Jason Bateman (Nick Wilde (voice)), Ke Huy Quan (Gary De'Snake (voice)), Fortune Feimster (Nibbles Maplestick (voice)), Andy Samberg (Pawbert Lynxley (voice)), David Strathairn (Milton Lynxley (voice)), Idris Elba (Chief Bogo (voice)), Shakira (Gazelle (voice)), Patrick Warburton (Mayor Winddancer (voice)), Quinta Brunson (Dr. Fuzzby (voice)), Danny Trejo (Jesús (voice)), Nate Torrence (Clawhauser (voice))",
-          "runtime_min": 108,
-          "film_url": "https://wtwcinemas.co.uk/film/zootropolis-2/?screen=truro",
-          "poster_url": "posters/zootropolis-2.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "11:00",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119382&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=k8t8rvRO7Ug",
-          "vote_average": 7.624,
-          "genres": [
-            "Animation",
-            "Comedy",
-            "Adventure",
-            "Family",
-            "Mystery"
-          ],
-          "imdb_id": "tt26443597",
-          "overview": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
-          "director": "Jared Bush, Byron Howard",
-          "writer": "Jared Bush"
-        },
-        {
-          "title": "Othello",
-          "search_title": "Othello",
-          "film_slug": "othello",
-          "synopsis": "",
-          "cast": "Orson Welles (Othello), Micheál Mac Liammóir (Iago), Robert Coote (Roderigo), Suzanne Cloutier (Desdemona), Hilton Edwards (Brabantio), Nicholas Bruce (Lodovico), Michael Laurence (Michael Cassio), Fay Compton (Emilia), Doris Dowling (Bianca), Joan Fontaine (Page), Joseph Cotten (Senator (uncredited)), Robert Rietti (Lodovico (voice))",
-          "runtime_min": 165,
-          "film_url": "https://wtwcinemas.co.uk/film/othello/?screen=truro",
-          "poster_url": "posters/othello.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "14:00",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=118317&screen=truro",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Event cinema"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=fCZ0obRJa08",
-          "vote_average": 7.351,
-          "genres": [
-            "Drama"
-          ],
-          "imdb_id": "tt0045251",
-          "overview": "Manipulated by his jealous ensign Iago, the Moorish general Othello is driven to believe that his new wife Desdemona is unfaithful, setting in motion a chain of deception, jealousy, and violence that leads to tragedy.",
-          "director": "Orson Welles",
-          "writer": "Jean Sacha, Orson Welles"
-        },
-        {
           "title": "How to Make a Killing",
           "search_title": "How to Make a Killing",
           "film_slug": "how-to-make-a-killing",
@@ -3862,38 +3125,6 @@
           "overview": "Disowned at birth by his obscenely wealthy family, blue-collar Becket Redfellow will stop at nothing to reclaim his inheritance, no matter how many relatives stand in his way.",
           "director": "John Patton Ford",
           "writer": "John Patton Ford"
-        },
-        {
-          "title": "When Harry Met Sally & A Few Good Men Double Bill - Pat’s Film Club",
-          "search_title": "When Harry Met Sally & A Few Good Men Double Bill - Pat’s Film Club",
-          "film_slug": "when-harry-met-sally-a-few-good-men-double-bill-pats-film-club",
-          "synopsis": "Join us for a special double bill in tribute to the great Rob Reiner. First up is the classic romance When Harry Met Sally. Harry...",
-          "cast": "",
-          "runtime_min": 250,
-          "film_url": "https://wtwcinemas.co.uk/film/when-harry-met-sally-a-few-good-men-double-bill-pats-film-club/?screen=truro",
-          "poster_url": "",
-          "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "18:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=118952&screen=truro",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Event cinema"
-              ]
-            }
-          ],
-          "trailer_url": "",
-          "vote_average": null,
-          "genres": [],
-          "imdb_id": "",
-          "overview": "",
-          "director": "",
-          "writer": ""
         },
         {
           "title": "Turner & Constable - Exhibition On Screen",
@@ -4534,12 +3765,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 29,
-        "selector_film_nodes": 29,
-        "primary_selector_nodes": 29,
+        "raw_cards": 24,
+        "selector_film_nodes": 24,
+        "primary_selector_nodes": 24,
         "fallback_selector_nodes": 0,
-        "parsed_films": 25,
-        "parsed_showtimes": 93
+        "parsed_films": 21,
+        "parsed_showtimes": 74
       }
     },
     "wadebridge": {
@@ -4556,32 +3787,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=wadebridge",
           "poster_url": "posters/hoppers.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "12:30",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28363&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-08",
-              "time": "15:00",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28364&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-09",
               "time": "17:15",
@@ -4658,19 +3863,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mothers-pride/?screen=wadebridge",
           "poster_url": "posters/mothers-pride.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "17:45",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28365&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-09",
               "time": "20:00",
@@ -4785,19 +3977,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/scream-7/?screen=wadebridge",
           "poster_url": "posters/scream-7.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "17:30",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28368&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-09",
               "time": "19:45",
@@ -4938,78 +4117,6 @@
           "overview": "Young orphan Heathcliff is adopted by the wealthy Earnshaw family and moves into their estate, Wuthering Heights. Soon, the new resident falls for his compassionate foster sister, Cathy. The two share a remarkable bond that seems unbreakable until Cathy, feeling the pressure of social convention, suppresses her feelings and marries Edgar Linton, a man of means who befits her stature. Heathcliff vows to win her back.",
           "director": "Peter Kosminsky",
           "writer": "Anne Devlin, Emily Brontë"
-        },
-        {
-          "title": "GOAT",
-          "search_title": "GOAT",
-          "film_slug": "goat",
-          "synopsis": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball - a high-intensity, co-ed, full-contact sport dominated...",
-          "cast": "Caleb McLaughlin (Will Harris (voice)), Gabrielle Union (Jett Fillmore  (voice)), Jenifer Lewis (Florence Everson  (voice)), David Harbour (Archie Everhardt  (voice)), Nick Kroll (Modo Olachenko  (voice)), Nicola Coughlan (Olivia Burke  (voice)), Patton Oswalt (Dennis  (voice)), Stephen Curry (Lenny Williamson  (voice)), Aaron Pierre (Mane Attraction (voice)), Jennifer Hudson (Louise Harris (voice)), Wayne Knight (Frank (voice)), Jelly Roll (Grizz (voice))",
-          "runtime_min": 100,
-          "film_url": "https://wtwcinemas.co.uk/film/goat/?screen=wadebridge",
-          "poster_url": "posters/goat.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "11:45",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28367&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=4UoscmGBCZ0",
-          "vote_average": 6.6,
-          "genres": [
-            "Animation",
-            "Comedy",
-            "Family",
-            "Action"
-          ],
-          "imdb_id": "tt27613895",
-          "overview": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball – a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world. Will's new teammates aren't thrilled about having a little goat on their roster, but Will is determined to revolutionize the sport and prove once and for all that 'smalls can ball'! He has to do something he has never done before.",
-          "director": "Tyree Dillihay",
-          "writer": "Aaron Buchsbaum, Teddy Riley, Nicolas Curcio"
-        },
-        {
-          "title": "Othello",
-          "search_title": "Othello",
-          "film_slug": "othello",
-          "synopsis": "",
-          "cast": "Orson Welles (Othello), Micheál Mac Liammóir (Iago), Robert Coote (Roderigo), Suzanne Cloutier (Desdemona), Hilton Edwards (Brabantio), Nicholas Bruce (Lodovico), Michael Laurence (Michael Cassio), Fay Compton (Emilia), Doris Dowling (Bianca), Joan Fontaine (Page), Joseph Cotten (Senator (uncredited)), Robert Rietti (Lodovico (voice))",
-          "runtime_min": 165,
-          "film_url": "https://wtwcinemas.co.uk/film/othello/?screen=wadebridge",
-          "poster_url": "posters/othello.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-08",
-              "time": "14:00",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=27899&screen=wadebridge",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Event cinema"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=fCZ0obRJa08",
-          "vote_average": 7.351,
-          "genres": [
-            "Drama"
-          ],
-          "imdb_id": "tt0045251",
-          "overview": "Manipulated by his jealous ensign Iago, the Moorish general Othello is driven to believe that his new wife Desdemona is unfaithful, setting in motion a chain of deception, jealousy, and violence that leads to tragedy.",
-          "director": "Orson Welles",
-          "writer": "Jean Sacha, Orson Welles"
         },
         {
           "title": "Turner & Constable - Exhibition On Screen",
@@ -5652,12 +4759,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 23,
-        "selector_film_nodes": 23,
-        "primary_selector_nodes": 23,
+        "raw_cards": 21,
+        "selector_film_nodes": 21,
+        "primary_selector_nodes": 21,
         "fallback_selector_nodes": 0,
-        "parsed_films": 20,
-        "parsed_showtimes": 51
+        "parsed_films": 18,
+        "parsed_showtimes": 45
       }
     }
   }
