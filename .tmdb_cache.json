@@ -1,251 +1,4 @@
 {
-  "send-help": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/mlV70IuchLZXcXKowjwSpSfdfUB.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=MGzEPxcg4SY",
-    "vote_average": 7.01,
-    "genres": [
-      "Horror",
-      "Thriller",
-      "Comedy"
-    ],
-    "imdb_id": "tt8036976",
-    "overview": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
-    "director": "Sam Raimi",
-    "writer": "Damian Shannon, Mark Swift",
-    "cast": "Rachel McAdams (Linda Liddle), Dylan O'Brien (Bradley Preston), Edyll Ismail (Zuri), Dennis Haysbert (Franklin), Xavier Samuel (Donovan), Chris Pang (Chase), Thaneth Warakulnukroh (Boat Captain), Emma Raimi (River), Kristy Best (Polly Perera), Francesca Waters (Barbara), Olivia Sawyer (Applicant), Brad Flett (Trainer)",
-    "cached_at": "2026-02-08T20:45:13.673032"
-  },
-  "send-help-with-subtitles": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/mlV70IuchLZXcXKowjwSpSfdfUB.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=MGzEPxcg4SY",
-    "vote_average": 7.01,
-    "genres": [],
-    "imdb_id": "tt8036976",
-    "overview": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
-    "director": "Sam Raimi",
-    "writer": "Damian Shannon, Mark Swift",
-    "cast": "Rachel McAdams (Linda Liddle), Dylan O'Brien (Bradley Preston), Edyll Ismail (Zuri), Dennis Haysbert (Franklin), Xavier Samuel (Donovan), Chris Pang (Chase), Thaneth Warakulnukroh (Boat Captain), Emma Raimi (River), Kristy Best (Polly Perera), Francesca Waters (Barbara), Olivia Sawyer (Applicant), Brad Flett (Trainer)",
-    "cached_at": "2026-02-08T17:54:50.336839"
-  },
-  "shelter": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/klvZs66SG19qmacdwxSRkdFQhQS.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=kdcxogb4leQ",
-    "vote_average": 7.7,
-    "genres": [
-      "Action",
-      "Crime",
-      "Thriller"
-    ],
-    "imdb_id": "tt32357218",
-    "overview": "A man living in self-imposed exile on a remote island rescues a young girl from a violent storm, setting off a chain of events that forces him out of seclusion to protect her from enemies tied to his past.",
-    "director": "Ric Roman Waugh",
-    "writer": "Ward Parry",
-    "cast": "Jason Statham (Mason), Bodhi Rae Breathnach (Jesse), Michael Shaeffer (Uncle), Anna Crilly (Haneron), Bill Nighy (Manafort), Harriet Walter (Prime Minister Fordham), Eugenia Caruso (Shop Clerk), Celine Buckens (Maddison), Naomi Ackie (Roberta), Bally Gill (Aziz), Bronson Webb (Deakins), Lohan Buson (Commando)",
-    "cached_at": "2026-02-08T20:45:14.523884"
-  },
-  "is-this-thing-on": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/45Nvc1QVa5FqSmZItpZ359GyaCE.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=DnIZfYuDEvQ",
-    "vote_average": 7.038,
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "imdb_id": "tt28083456",
-    "overview": "As their marriage quietly unravels, Alex faces middle age and an impending divorce, seeking new purpose in the New York comedy scene while Tess confronts the sacrifices she made for their family—forcing them to navigate co-parenting, identity, and whether love can take a new form.",
-    "director": "Bradley Cooper",
-    "writer": "Mark Chappell, Will Arnett, Bradley Cooper, John Bishop",
-    "cast": "Will Arnett (Alex Novak), Laura Dern (Tess Novak), Andra Day (Christine), Bradley Cooper (Balls), Christine Ebersole (Marilyn), Ciarán Hinds (Jan), Sean Hayes (Stephen), Amy Sedaris (Kemp), Chloe Radcliffe (Nina), Scott Icenogle (Geoffrey), Jordan Jensen (Jill), Peyton Manning (Laird)",
-    "cached_at": "2026-02-08T20:45:15.372547"
-  },
-  "hamnet": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/vbeyOZm2bvBXcbgPD3v6o94epPX.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=ZqGffamnFqw",
-    "vote_average": 7.8,
-    "genres": [
-      "Drama",
-      "Romance",
-      "History"
-    ],
-    "imdb_id": "tt14905854",
-    "overview": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
-    "director": "Chloé Zhao",
-    "writer": "Maggie O'Farrell, Chloé Zhao",
-    "cast": "Jessie Buckley (Agnes), Paul Mescal (Will), Emily Watson (Mary), Joe Alwyn (Bartholomew), Jacobi Jupe (Hamnet), Noah Jupe (Hamlet), Bodhi Rae Breathnach (Susanna), Olivia Lynes (Judith), David Wilmot (John), Justine Mitchell (Joan), Faith Delaney (Young Agnes), Smylie Bradwell (Young Bartholomew)",
-    "cached_at": "2026-02-08T20:45:16.252959"
-  },
-  "avatar-fire-and-ash-hfr-3d": {
-    "cached_at": "2026-02-08T17:54:53.797029"
-  },
-  "the-housemaid": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=TGdKFCVn6G0",
-    "vote_average": 7.186,
-    "genres": [
-      "Mystery",
-      "Thriller"
-    ],
-    "imdb_id": "tt27543632",
-    "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
-    "director": "Paul Feig",
-    "writer": "Rebecca Sonnenshine, Freida McFadden",
-    "cast": "Sydney Sweeney (Millie Calloway), Amanda Seyfried (Nina Winchester), Brandon Sklenar (Andrew Winchester), Michele Morrone (Enzo), Indiana Elle (Cece Winchester), Sarah Cooper (Pam), Elizabeth Perkins (Mrs. Winchester), Ellen Tamaki (Patrice), Megan Ferguson (Jilliane), Amanda Joy Erickson (Suzanne), Alaina Surgener (Amanda), Peter Colandro (Cashier)",
-    "cached_at": "2026-02-08T20:45:17.116283"
-  },
-  "the-housemaid-with-subtitles": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=TGdKFCVn6G0",
-    "vote_average": 7.186,
-    "genres": [],
-    "imdb_id": "tt27543632",
-    "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
-    "director": "Paul Feig",
-    "writer": "Rebecca Sonnenshine, Freida McFadden",
-    "cast": "Sydney Sweeney (Millie Calloway), Amanda Seyfried (Nina Winchester), Brandon Sklenar (Andrew Winchester), Michele Morrone (Enzo), Indiana Elle (Cece Winchester), Sarah Cooper (Pam), Elizabeth Perkins (Mrs. Winchester), Ellen Tamaki (Patrice), Megan Ferguson (Jilliane), Amanda Joy Erickson (Suzanne), Alaina Surgener (Amanda), Peter Colandro (Cashier)",
-    "cached_at": "2026-02-08T17:54:55.617047"
-  },
-  "song-sung-blue": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/kQzDdxI0F5z16qo2vzDoqdVMl4O.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=Hm12K_cuLWA",
-    "vote_average": 7.605,
-    "genres": [
-      "Drama",
-      "Music",
-      "Romance"
-    ],
-    "imdb_id": "tt30343021",
-    "overview": "Based on a true story, two down-on-their-luck musicians form a joyous Neil Diamond tribute band, proving it's never too late to find love and follow your dreams.",
-    "director": "Craig Brewer",
-    "writer": "Craig Brewer",
-    "cast": "Hugh Jackman (Mike Sardina), Kate Hudson (Claire Sardina), Michael Imperioli (Mark Shurilla), Fisher Stevens (Dr. Dave Watson), Jim Belushi (Tom D'Amato), Ella Anderson (Rachel), King Princess (Angelina), Mustafa Shakir (Sex Machine), Hudson Hilbert Hensley (Dayna), Shyaporn Theerakulstit (Somechai), John Beckwith (Eddie Vedder), Jayson Warner Smith (Earl / TCB)",
-    "cached_at": "2026-02-08T20:45:17.965624"
-  },
-  "song-sung-blue-with-subtitles": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/kQzDdxI0F5z16qo2vzDoqdVMl4O.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=Hm12K_cuLWA",
-    "vote_average": 7.605,
-    "genres": [],
-    "imdb_id": "tt30343021",
-    "overview": "Based on a true story, two down-on-their-luck musicians form a joyous Neil Diamond tribute band, proving it's never too late to find love and follow your dreams.",
-    "director": "Craig Brewer",
-    "writer": "Craig Brewer",
-    "cast": "Hugh Jackman (Mike Sardina), Kate Hudson (Claire Sardina), Michael Imperioli (Mark Shurilla), Fisher Stevens (Dr. Dave Watson), Jim Belushi (Tom D'Amato), Ella Anderson (Rachel), King Princess (Angelina), Mustafa Shakir (Sex Machine), Hudson Hilbert Hensley (Dayna), Shyaporn Theerakulstit (Somechai), John Beckwith (Eddie Vedder), Jayson Warner Smith (Earl / TCB)",
-    "cached_at": "2026-02-08T17:54:57.501332"
-  },
-  "marty-supreme": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=pwE3ZG1kIqw",
-    "vote_average": 7.8,
-    "genres": [
-      "Drama"
-    ],
-    "imdb_id": "tt32916440",
-    "overview": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
-    "director": "Josh Safdie",
-    "writer": "Josh Safdie, Ronald Bronstein",
-    "cast": "Timothée Chalamet (Marty Mauser), Gwyneth Paltrow (Kay Stone), Odessa A'zion (Rachel Mizler), Kevin O'Leary (Milton Rockwell), Tyler, The Creator (Wally), Fran Drescher (Rebecca Mauser), Abel Ferrara (Ezra Mishkin), Emory Cohen (Ira Mizler), Géza Röhrig (Béla Kletzki), Koto Kawaguchi (Koto Endo), Larry Sloman (Murray Norkin), Luke Manley (Dion Galanis)",
-    "cached_at": "2026-02-08T20:45:18.821008"
-  },
-  "marty-supreme-with-subtitles": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/firAhZA0uQvRL2slp7v3AnOj0ZX.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=pwE3ZG1kIqw",
-    "vote_average": 7.8,
-    "genres": [],
-    "imdb_id": "tt32916440",
-    "overview": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
-    "director": "Josh Safdie",
-    "writer": "Josh Safdie, Ronald Bronstein",
-    "cast": "Timothée Chalamet (Marty Mauser), Gwyneth Paltrow (Kay Stone), Odessa A'zion (Rachel Mizler), Kevin O'Leary (Milton Rockwell), Tyler, The Creator (Wally), Fran Drescher (Rebecca Mauser), Abel Ferrara (Ezra Mishkin), Emory Cohen (Ira Mizler), Géza Röhrig (Béla Kletzki), Koto Kawaguchi (Koto Endo), Larry Sloman (Murray Norkin), Luke Manley (Dion Galanis)",
-    "cached_at": "2026-02-08T17:54:59.222202"
-  },
-  "primate": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/5Q1zdYe9PYEXMGELzjfjyx8Eb7H.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=xKGw0q_6aGw",
-    "vote_average": 6.315,
-    "genres": [
-      "Horror",
-      "Thriller"
-    ],
-    "imdb_id": "tt33028778",
-    "overview": "Lucy, a college student, along with her friends, spend their vacation at her family's home in Hawaii, which includes her pet chimpanzee, Ben. However, when Ben contracts rabies after being bitten by a rabid animal, the group must fight for their lives in order to avoid the now-violent chimp.",
-    "director": "Johannes Roberts",
-    "writer": "Johannes Roberts, Ernest Riera",
-    "cast": "Johnny Sequoyah (Lucy), Jessica Alexander (Hannah), Troy Kotsur (Adam), Victoria Wyant (Kate), Gia Hunter (Erin), Benjamin Cheng (Nick), Charlie Mann (Drew), Tienne Simon (Brad), Miguel Hernando Torres Umba (Ben), Amina Abdi (Susan), Rob Chalk (Interpreter), Joe Abercrombie (Book Publisher)",
-    "cached_at": "2026-02-08T20:45:19.679445"
-  },
-  "kangaroo": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/pNHpDkFPlObUfyWpuz3tC6xBYm3.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=RvmaXOvLJNc",
-    "vote_average": 6.536,
-    "genres": [
-      "Family",
-      "Comedy"
-    ],
-    "imdb_id": "tt20204886",
-    "overview": "Ex TV personality, Chris Masterman, becomes stranded in an Outback town outside Alice Springs. There, he teams up with 12-year-old Indigenous girl Charlie. The pair form an unlikely friendship and work together to rescue and rehabilitate orphaned joeys in the remote but stunning Outback community—an endeavour that proves to be life-changing for them both.",
-    "director": "Kate Woods",
-    "writer": "Harry Cripps, Melina Marchetta",
-    "cast": "Lily Whiteley (Charlie), Ryan Corr (Chris Masterman), Rachel House (Jesse), Brooke Satchwell (Liz), Rick Donald (Trap), Deborah Mailman (Rosie), Clarence John Ryan (Nick), Roy Billing (Murray), Rarriwuy Hick (Brenda), Geneviève Lemon (Bernadette), Wayne Blair (Ralph), Ernie Dingo (Dave)",
-    "cached_at": "2026-02-08T20:45:20.530879"
-  },
-  "the-lost-boys-of-carbis-bay-with-introduction-and-qa": {
-    "cached_at": "2026-02-08T17:55:01.677201"
-  },
-  "woolf-works-rbo-2025-26-cinema-season": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/mAQXkFFCUpCYdlUnmidR7vc9BW7.jpg",
-    "trailer_url": "",
-    "vote_average": 0.0,
-    "genres": [],
-    "imdb_id": "",
-    "overview": "",
-    "director": "",
-    "writer": "",
-    "cast": "To Be Announced",
-    "cached_at": "2026-02-09T22:18:54.481821"
-  },
-  "national-theatre-live-the-audience": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/suj6ShOEIWysMf3dqBgmDWggWvi.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=AxO6VfSRAqs",
-    "vote_average": 8.3,
-    "genres": [
-      "Drama",
-      "History"
-    ],
-    "imdb_id": "tt3154822",
-    "overview": "For sixty years, Elizabeth II has met each of her twelve Prime Ministers in a weekly audience at Buckingham Palace, a meeting like no other in British public life, it is private.",
-    "director": "Robin Lough",
-    "writer": "Peter Morgan",
-    "cast": "Helen Mirren (The Queen), Michael Elwyn (Anthony Eden), Haydn Gwynne (Margaret Thatcher), Richard McCabe (Harold Wilson), Nathaniel Parker (Gordon Brown), Paul Ritter (John Major), Rufus Wright (David Cameron), Edward Fox (Winston Churchill), David Peart (James Callaghan / Private Secretary), Geoffrey Beevers (Equerry), Nell Williams (Young Elizabeth), Charlotte Moore (Bobo MacDonald / Private Secretary)",
-    "cached_at": "2026-02-08T20:45:21.384369"
-  },
-  "giselle-rbo-2025-26-cinema-season": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/pYjzu4ubAX8JuGkdzDp6OKc9T56.jpg",
-    "trailer_url": "",
-    "vote_average": 0.0,
-    "genres": [
-      "Music"
-    ],
-    "imdb_id": "",
-    "overview": "The world turns upside down for the peasant girl Giselle when she discovers her lover Albrecht is actually a nobleman promised to another. In despair, she kills herself. Her spirit joins the Wilis, the vengeful ghosts of women who have been jilted and die before their wedding day. The Wilis are hell-bent on killing any man who crosses their path in a dance to the death. Wracked with guilt, Albrecht visits Giselle’s grave, where he must face the Wilis – and Giselle’s ghost. Will he survive?",
-    "director": "",
-    "writer": "",
-    "cast": "To Be Announced",
-    "cached_at": "2026-02-09T22:17:09.495275"
-  },
-  "othello": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/61A7EJqfMsrQO0YWsUWq8gbgbu0.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=fCZ0obRJa08",
-    "vote_average": 7.351,
-    "genres": [
-      "Drama"
-    ],
-    "imdb_id": "tt0045251",
-    "overview": "Manipulated by his jealous ensign Iago, the Moorish general Othello is driven to believe that his new wife Desdemona is unfaithful, setting in motion a chain of deception, jealousy, and violence that leads to tragedy.",
-    "director": "Orson Welles",
-    "writer": "Jean Sacha, Orson Welles",
-    "cast": "Orson Welles (Othello), Micheál Mac Liammóir (Iago), Robert Coote (Roderigo), Suzanne Cloutier (Desdemona), Hilton Edwards (Brabantio), Nicholas Bruce (Lodovico), Michael Laurence (Michael Cassio), Fay Compton (Emilia), Doris Dowling (Bianca), Joan Fontaine (Page), Joseph Cotten (Senator (uncredited)), Robert Rietti (Lodovico (voice))",
-    "cached_at": "2026-02-08T20:45:22.257514"
-  },
   "siegfried-rbo-2025-26-cinema-season": {
     "poster_url": "https://image.tmdb.org/t/p/w342/7yEc8lAVG0Sklfj1e6UqAgypsxX.jpg",
     "trailer_url": "",
@@ -256,21 +9,7 @@
     "director": "Barrie Kosky",
     "writer": "",
     "cast": "Peter Hoare, Andreas Schager, Christopher Maltman, Christopher Purves, Elisabet Strid",
-    "cached_at": "2026-03-10T09:36:51.077287"
-  },
-  "national-theatre-live-all-my-sons": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/jWblUug4V4LcMnkJUtF2MhFMl5X.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=FP6C8jmrpN4",
-    "vote_average": 8.5,
-    "genres": [
-      "Drama"
-    ],
-    "imdb_id": "tt9382224",
-    "overview": "America, 1947. Despite hard choices and even harder knocks, Joe and Kate Keller are a success story. They have built a home, raised two sons and established a thriving business.  But nothing lasts forever and their contented lives, already shadowed by the loss of their eldest boy to war, are about to shatter. With the return of a figure from the past, long buried truths are forced to the surface and the price of their American dream is laid bare.",
-    "director": "Ross MacGibbon",
-    "writer": "Arthur Miller",
-    "cast": "Sally Field (Kate Keller), Bill Pullman (Joe Keller), Jenna Coleman (Ann Deever), Colin Morgan (Chris Keller), Sule Rimi (Dr. Jim Bayliss), Oliver Johnstone (George Deever), Gunnar Cauthery (Frank Lubey), Bessie Carter (Lydia Lubey), Kayla Meikle (Sue Bayliss)",
-    "cached_at": "2026-02-08T20:45:23.101102"
+    "cached_at": "2026-03-16T09:58:06.176168"
   },
   "the-magic-flute-rbo-2025-26-cinema-season": {
     "poster_url": "https://image.tmdb.org/t/p/w342/ff62NuReokkFchk3zJmapEesyPz.jpg",
@@ -282,179 +21,7 @@
     "director": "David McVicar",
     "writer": "",
     "cast": "Julia Bullock, Amitai Pati, Huw Montague Rendall, Kathyrn Lewek",
-    "cached_at": "2026-03-10T09:36:51.835415"
-  },
-  "eugene-onegin-the-met-opera-rbo-2025-26-cinema-season": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/5VpQ0JRs0SQLGMcahan8FLzjedN.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=SukbEYbc8Q4",
-    "vote_average": 0.0,
-    "genres": [
-      "Music"
-    ],
-    "imdb_id": "",
-    "overview": "Tchaikovsky’s setting of Pushkin’s timeless verse novel is presented on the Met stage in Deborah Warner’s moving production, starring Anna Netrebko as Tatiana and Mariusz Kwiecien and Peter Mattei sharing the title role. Alexey Dolgov sings the role of Lenski, and Robin Ticciati conducts.",
-    "director": "",
-    "writer": "",
-    "cast": "Anna Netrebko (Tatiana), Peter Mattei (Eugene Onegin), Alexey Dolgov (Lensky), Štefan Kocán (Gremin), Robin Ticciati, MET Orchestra",
-    "cached_at": "2026-02-09T22:18:59.274968"
-  },
-  "national-theatre-live-the-playboy-of-the-western-world": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/bRotcH0mzGtNJ40dYt4eVFTjdAL.jpg",
-    "trailer_url": "",
-    "vote_average": 0.0,
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "imdb_id": "",
-    "overview": "Nicola Coughlan (Bridgerton) joins Éanna Hardwicke (The Sixth Commandment) and Siobhán McSweeney (Derry Girls) in John Millington Synge’s riveting play of youth and self-discovery.  Pegeen Flaherty’s life is turned upside down when a young man walks into her pub claiming that he’s killed his father. Instead of being shunned, the killer becomes a local hero and begins to win hearts, that is until a second man unexpectedly arrives on the scene…  Filmed live on stage at the National Theatre, Caitríona McLaughlin directs this darkly funny tale full to the brim with secrets.",
-    "director": "Caitriona McLaughlin",
-    "writer": "John Millington Synge",
-    "cast": "Nicola Coughlan (Pegeen Mike), Éanna Hardwicke (Christy Mahon), Siobhán McSweeney (Widow Quin), Declan Conlon (Old Mahon), Lorcan Cranitch (Michael Flaherty), Megan Cusack (Susan Brady), Naoise Dunbar (Jimmy Farrell), Matthew Forrest (Philly Cullen), Sallay Garnett (Nelly), Fionnuala Gygax (Honor Blake), Erin Hennessey (Fiddle), Peter Mooney (Banjo / Ensemble)",
-    "cached_at": "2026-02-08T20:45:24.033751"
-  },
-  "national-theatre-live-les-liaisons-dangereuses": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/lCMzzD5XZbp2IL2dY6tbtEuX3JB.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=IcWwthReeUk",
-    "vote_average": 6.0,
-    "genres": [
-      "Drama",
-      "Romance"
-    ],
-    "imdb_id": "tt5536316",
-    "overview": "Marquise de Merteuil, former lover of Vicomte de Valmont, incites him to corrupt the innocent Cécile de Volanges before her wedding night, but Valmont has targeted the peerlessly virtuous and beautiful Madame de Tourvel.",
-    "director": "Tony Grech-Smith, Josie Rourke",
-    "writer": "Choderlos de Laclos",
-    "cast": "Janet McTeer (La Marquise de Merteuil), Dominic West (Le Vicomte de Valmont), Elaine Cassidy (Madame de Tourvel), Adjoa Andoh (Madame de Volanges), Morfydd Clark (Cécile Volanges), Edward Holcroft (Le Chevalier Danceny), Una Stubbs (Madame de Rosemonde), Theo Barklem-Biggs (Azolan), Jennifer Saayeng (Émilie), Thom Petty (Major-Domo), Alison Arnopp (Julie)",
-    "cached_at": "2026-02-08T20:45:24.896212"
-  },
-  "avatar-fire-and-ash": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=RlofL5WU28k",
-    "vote_average": 7.297,
-    "genres": [
-      "Science Fiction",
-      "Adventure",
-      "Fantasy"
-    ],
-    "imdb_id": "tt1757678",
-    "overview": "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits.",
-    "director": "James Cameron",
-    "writer": "James Cameron, Shane Salerno, Amanda Silver, Rick Jaffa, Josh Friedman",
-    "cast": "Sam Worthington (Jake), Zoe Saldaña (Neytiri), Sigourney Weaver (Kiri), Stephen Lang (Quaritch), Oona Chaplin (Varang), Jack Champion (Spider), Kate Winslet (Ronal), Cliff Curtis (Tonowari), Joel David Moore (Norm), CCH Pounder (Mo'at), Edie Falco (General Ardmore), Brendan Cowell (Scoresby)",
-    "cached_at": "2026-02-08T20:34:07.302673"
-  },
-  "the-spongebob-movie-search-for-squarepants": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/pDWYW9v8fmJdA7N0I1MOdQA3ETq.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=UazW5vuAsF0",
-    "vote_average": 6.676,
-    "genres": [
-      "Animation",
-      "Family",
-      "Comedy",
-      "Adventure",
-      "Fantasy"
-    ],
-    "imdb_id": "tt23572848",
-    "overview": "Desperate to be a big guy, SpongeBob sets out to prove his bravery to Mr. Krabs by following The Flying Dutchman – a mysterious swashbuckling ghost pirate – on a seafaring adventure that takes him to the deepest depths of the deep sea, where no Sponge has gone before.",
-    "director": "Derek Drymon",
-    "writer": "Pam Brady, Kaz, Matt Lieberman, Marc Ceccarelli, Stephen Hillenburg",
-    "cast": "Tom Kenny (SpongeBob SquarePants / Gary / Morning DJ (voice)), Clancy Brown (Mr. Krabs / Pirate / Narrator), Rodger Bumpass (Squidward Tentacles (voice)), Bill Fagerbakke (Patrick Star (voice)), Carolyn Lawrence (Sandy Cheeks (voice)), Mr. Lawrence (Sheldon J. Plankton (voice)), George López (JK Fishlips (voice)), Ice Spice (Ticket Taker (voice)), Arturo Castro (Ride Operator), Sherry Cola (Studio Spokesperson / Krusty Krab Patron (voice)), Regina Hall (Barb (voice)), Mark Hamill (Flying Dutchman (voice))",
-    "cached_at": "2026-02-09T22:19:04.446983"
-  },
-  "zootropolis-2": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=k8t8rvRO7Ug",
-    "vote_average": 7.624,
-    "genres": [
-      "Animation",
-      "Comedy",
-      "Adventure",
-      "Family",
-      "Mystery"
-    ],
-    "imdb_id": "tt26443597",
-    "overview": "After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives and turns the animal metropolis upside down. To crack the case, Judy and Nick must go undercover to unexpected new parts of town, where their growing partnership is tested like never before.",
-    "director": "Jared Bush, Byron Howard",
-    "writer": "Jared Bush",
-    "cast": "Ginnifer Goodwin (Judy Hopps (voice)), Jason Bateman (Nick Wilde (voice)), Ke Huy Quan (Gary De'Snake (voice)), Fortune Feimster (Nibbles Maplestick (voice)), Andy Samberg (Pawbert Lynxley (voice)), David Strathairn (Milton Lynxley (voice)), Idris Elba (Chief Bogo (voice)), Shakira (Gazelle (voice)), Patrick Warburton (Mayor Winddancer (voice)), Quinta Brunson (Dr. Fuzzby (voice)), Danny Trejo (Jesús (voice)), Nate Torrence (Clawhauser (voice))",
-    "cached_at": "2026-02-09T22:19:05.310220"
-  },
-  "wuthering-heights": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/pZBQ6KfITjufDMCp6FFkqjCoIMN.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=a6eTho1jxuM",
-    "vote_average": 6.643,
-    "genres": [
-      "Drama",
-      "Romance"
-    ],
-    "imdb_id": "tt0104181",
-    "overview": "Young orphan Heathcliff is adopted by the wealthy Earnshaw family and moves into their estate, Wuthering Heights. Soon, the new resident falls for his compassionate foster sister, Cathy. The two share a remarkable bond that seems unbreakable until Cathy, feeling the pressure of social convention, suppresses her feelings and marries Edgar Linton, a man of means who befits her stature. Heathcliff vows to win her back.",
-    "director": "Peter Kosminsky",
-    "writer": "Anne Devlin, Emily Brontë",
-    "cast": "Juliette Binoche (Cathy / Catherine Linton), Ralph Fiennes (Heathcliff), Janet McTeer (Ellen Dean), Sophie Ward (Isabella Linton), Simon Shepherd (Edgar Linton), Jeremy Northam (Hindley Earnshaw), Jason Riddington (Hareton Earnshaw), Simon Ward (Mr. Linton), Robert Demeger (Joseph), Paul Geoffrey (Mr. Lockwood), John Woodvine (Thomas Earnshaw), Jennifer Daniel (Mrs. Linton)",
-    "cached_at": "2026-02-09T22:19:06.063198"
-  },
-  "stitch-head": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/p0ZOIaQ8oLEGmQVrYcmvIOUuSqs.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=SlHrSRmobKQ",
-    "vote_average": 7.0,
-    "genres": [
-      "Animation",
-      "Adventure",
-      "Family",
-      "Comedy"
-    ],
-    "imdb_id": "tt26720001",
-    "overview": "Stitch Head was the first creature brought to 'almost life' by mad professor Erasmus. In the years since, he’s become nursemaid to the master’s ever-growing menagerie of neglected creatures, tasked with teaching them to suppress their 'inner monster' and hide out in the castle — away from prying eyes and itchy pitchfork fingers, of the village mob in the valley below. But when grubby circus impresario Fulbert Freakfinder arrives offering Stitch Head a starring role in his freak show, our hero is tempted by the promise of love and acceptance.",
-    "director": "Steve Hudson",
-    "writer": "Steve Hudson",
-    "cast": "Asa Butterfield (Stitch Head (voice)), Joel Fry (Creature (voice)), Alison Steadman (Nan (voice)), Rob Brydon (Professor (voice)), Seth Usdenov (Fulbert Freakfinder (voice)), Fern Brady (Madame Miranda (voice)), Tia Bannon (Arabella (voice)), Jamali Maddix (Taj/Tej (voice)), Paul Tylak (Owggagoffakkookkk (voice)), Ruth Gibson (Old Lady (voice)), Rasmus Hardiker (Geoff (voice)), Ryan Sampson (Doctor Dislocation (voice))",
-    "cached_at": "2026-02-09T22:19:06.994290"
-  },
-  "goat": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=4UoscmGBCZ0",
-    "vote_average": 6.6,
-    "genres": [
-      "Animation",
-      "Comedy",
-      "Family",
-      "Action"
-    ],
-    "imdb_id": "tt27613895",
-    "overview": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball – a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world. Will's new teammates aren't thrilled about having a little goat on their roster, but Will is determined to revolutionize the sport and prove once and for all that 'smalls can ball'! He has to do something he has never done before.",
-    "director": "Tyree Dillihay",
-    "writer": "Aaron Buchsbaum, Teddy Riley, Nicolas Curcio",
-    "cast": "Caleb McLaughlin (Will Harris (voice)), Gabrielle Union (Jett Fillmore  (voice)), Jenifer Lewis (Florence Everson  (voice)), David Harbour (Archie Everhardt  (voice)), Nick Kroll (Modo Olachenko  (voice)), Nicola Coughlan (Olivia Burke  (voice)), Patton Oswalt (Dennis  (voice)), Stephen Curry (Lenny Williamson  (voice)), Aaron Pierre (Mane Attraction (voice)), Jennifer Hudson (Louise Harris (voice)), Wayne Knight (Frank (voice)), Jelly Roll (Grizz (voice))",
-    "cached_at": "2026-02-09T22:19:07.754014"
-  },
-  "goat-autism-friendly-screening": {
-    "poster_url": "",
-    "trailer_url": "",
-    "vote_average": null,
-    "genres": [],
-    "imdb_id": "",
-    "overview": "",
-    "director": "",
-    "writer": "",
-    "cast": "",
-    "cached_at": "2026-02-09T22:19:08.182586"
-  },
-  "crime-101": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/fDj8ZATOTmiFy7BF43L3XLIOrf0.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=WQWlhBXQpqU",
-    "vote_average": 0.0,
-    "genres": [
-      "Crime",
-      "Thriller"
-    ],
-    "imdb_id": "tt32430579",
-    "overview": "When an elusive thief whose high-stakes heists unfold along the iconic 101 freeway in Los Angeles eyes the score of a lifetime, with hopes of this being his final job, his path collides with a disillusioned insurance broker who is facing her own crossroads, forcing the two to collaborate. Determined to crack the case, a relentless detective closes in on the operation, raising the stakes even higher.",
-    "director": "Bart Layton",
-    "writer": "Don Winslow, Bart Layton",
-    "cast": "Chris Hemsworth (Mike Davis), Halle Berry (Sharon), Mark Ruffalo (Detective Lou Lubesnick), Barry Keoghan (Ormon), Monica Barbaro (Maya), Corey Hawkins (Tillman), Jennifer Jason Leigh (Angie), Nick Nolte (Money), Tate Donovan (Monroe), Devon Bostick (Devon), Paul Adelstein (Mark), Matthew Del Negro (Police Captain Stewart)",
-    "cached_at": "2026-02-09T22:19:08.964100"
+    "cached_at": "2026-03-16T09:58:08.759174"
   },
   "the-lost-boys-of-carbis-bay-and-more": {
     "poster_url": "",
@@ -670,7 +237,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-03-05T09:35:33.248864"
+    "cached_at": "2026-03-16T09:58:12.201785"
   },
   "frida-kahlo-exhibition-on-screen": {
     "poster_url": "https://image.tmdb.org/t/p/w342/fzHHWd3dB2Dns936AWkEu7cJAUQ.jpg",
@@ -727,7 +294,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-03-06T09:31:23.432371"
+    "cached_at": "2026-03-16T09:58:07.143451"
   },
   "reminders-of-him": {
     "poster_url": "https://image.tmdb.org/t/p/w342/8hEBaGD2sx4uVe4A1E44NkFIrDm.jpg",
@@ -779,5 +346,191 @@
     "writer": "",
     "cast": "",
     "cached_at": "2026-03-10T09:36:53.075301"
+  },
+  "wuthering-heights": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/lV8zMPqaK8Qg39zKLzfvnYkiBiC.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=a6eTho1jxuM",
+    "vote_average": 6.622,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "imdb_id": "tt0104181",
+    "overview": "Young orphan Heathcliff is adopted by the wealthy Earnshaw family and moves into their estate, Wuthering Heights. Soon, the new resident falls for his compassionate foster sister, Cathy. The two share a remarkable bond that seems unbreakable until Cathy, feeling the pressure of social convention, suppresses her feelings and marries Edgar Linton, a man of means who befits her stature. Heathcliff vows to win her back.",
+    "director": "Peter Kosminsky",
+    "writer": "Anne Devlin, Emily Brontë",
+    "cast": "Juliette Binoche (Cathy / Catherine), Ralph Fiennes (Heathcliff), Janet McTeer (Ellen Dean), Sophie Ward (Isabella Linton), Simon Shepherd (Edgar Linton), Jeremy Northam (Hindley Earnshaw), Jason Riddington (Hareton Earnshaw), Simon Ward (Mr. Linton), Robert Demeger (Joseph), Paul Geoffrey (Mr. Lockwood), John Woodvine (Thomas Earnshaw), Jennifer Daniel (Mrs. Linton)",
+    "cached_at": "2026-03-16T09:58:03.694175"
+  },
+  "hamnet": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/vbeyOZm2bvBXcbgPD3v6o94epPX.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=ZqGffamnFqw",
+    "vote_average": 7.7,
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdb_id": "tt14905854",
+    "overview": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
+    "director": "Chloé Zhao",
+    "writer": "Maggie O'Farrell, Chloé Zhao",
+    "cast": "Jessie Buckley (Agnes), Paul Mescal (Will), Emily Watson (Mary), Joe Alwyn (Bartholomew), Jacobi Jupe (Hamnet), Noah Jupe (Hamlet), Olivia Lynes (Judith), Justine Mitchell (Joan), David Wilmot (John), Louisa Harland (Rowan), Freya Hannan-Mills (Eliza), Bodhi Rae Breathnach (Susanna)",
+    "cached_at": "2026-03-16T09:58:04.308686"
+  },
+  "edge-of-summer-in-association-with-the-cornwall-film-festival": {
+    "poster_url": "",
+    "trailer_url": "",
+    "vote_average": null,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-03-16T09:58:04.624935"
+  },
+  "the-magic-faraway-tree": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/mtS8mW6aLuartATut8TrD39zTIG.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=b9qyzVCW9sc",
+    "vote_average": 0.0,
+    "genres": [
+      "Family",
+      "Fantasy",
+      "Adventure"
+    ],
+    "imdb_id": "tt7734244",
+    "overview": "Soon after the Thompson family’s arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary and eccentric residents, including Moonface, Silky, Dame Washalot, and Saucepan Man. At the top of the tree, they're transported to spectacular and fantastical lands and, through the joys and challenges of their adventures, the Thompsons learn to reconnect and value each other for the first time in years.",
+    "director": "Ben Gregor",
+    "writer": "Simon Farnaby",
+    "cast": "Claire Foy (Polly Thompson), Andrew Garfield (Tim Thompson), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma Thompson), Nicola Coughlan (Silky), Nonso Anozie (Moonface), Pippa Bennett-Warner (Hannah), Rebecca Ferguson (Dame Snap), Jessica Gunning (Dame Washalot), Oliver Chris (Mr Watzisname)",
+    "cached_at": "2026-03-16T09:58:05.239398"
+  },
+  "the-super-mario-galaxy-movie": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=rvmqo89OPvg",
+    "vote_average": 0.0,
+    "genres": [
+      "Family",
+      "Fantasy",
+      "Comedy",
+      "Adventure",
+      "Animation"
+    ],
+    "imdb_id": "tt28650488",
+    "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
+    "director": "Michael Jelenic, Aaron Horvath",
+    "writer": "Matthew Fogel",
+    "cast": "Chris Pratt (Mario (voice)), Anya Taylor-Joy (Princess Peach (voice)), Charlie Day (Luigi (voice)), Jack Black (Bowser (voice)), Benny Safdie (Bowser Jr. (voice)), Keegan-Michael Key (Toad (voice)), Brie Larson (Rosalina (voice)), Kevin Michael Richardson (Kamek (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Juliet Jelenic (Lumalee (voice))",
+    "cached_at": "2026-03-16T09:58:06.828622"
+  },
+  "national-theatre-live-all-my-sons": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/jWblUug4V4LcMnkJUtF2MhFMl5X.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=FP6C8jmrpN4",
+    "vote_average": 8.5,
+    "genres": [
+      "Drama"
+    ],
+    "imdb_id": "tt9382224",
+    "overview": "America, 1947. Despite hard choices and even harder knocks, Joe and Kate Keller are a success story. They have built a home, raised two sons and established a thriving business.  But nothing lasts forever and their contented lives, already shadowed by the loss of their eldest boy to war, are about to shatter. With the return of a figure from the past, long buried truths are forced to the surface and the price of their American dream is laid bare.",
+    "director": "Ross MacGibbon",
+    "writer": "Arthur Miller",
+    "cast": "Sally Field (Kate Keller), Bill Pullman (Joe Keller), Jenna Coleman (Ann Deever), Colin Morgan (Chris Keller), Sule Rimi (Dr. Jim Bayliss), Oliver Johnstone (George Deever), Gunnar Cauthery (Frank Lubey), Bessie Carter (Lydia Lubey), Kayla Meikle (Sue Bayliss)",
+    "cached_at": "2026-03-16T09:58:07.780535"
+  },
+  "eugene-onegin-the-met-opera-rbo-2025-26-cinema-season": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/5VpQ0JRs0SQLGMcahan8FLzjedN.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=SukbEYbc8Q4",
+    "vote_average": 0.0,
+    "genres": [
+      "Music"
+    ],
+    "imdb_id": "",
+    "overview": "Tchaikovsky’s setting of Pushkin’s timeless verse novel is presented on the Met stage in Deborah Warner’s moving production, starring Anna Netrebko as Tatiana and Mariusz Kwiecien and Peter Mattei sharing the title role. Alexey Dolgov sings the role of Lenski, and Robin Ticciati conducts.",
+    "director": "",
+    "writer": "",
+    "cast": "Anna Netrebko (Tatiana), Peter Mattei (Eugene Onegin), Alexey Dolgov (Lensky), Štefan Kocán (Gremin), Robin Ticciati, MET Orchestra",
+    "cached_at": "2026-03-16T09:58:10.015845"
+  },
+  "national-theatre-live-the-playboy-of-the-western-world": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/hFA2KlHAExXZFs7sZ7YtxtblDQC.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=-Q8dTGbY2F0",
+    "vote_average": 0.0,
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "imdb_id": "tt40031882",
+    "overview": "Nicola Coughlan (Bridgerton) joins Éanna Hardwicke (The Sixth Commandment) and Siobhán McSweeney (Derry Girls) in John Millington Synge’s riveting play of youth and self-discovery.  Pegeen Flaherty’s life is turned upside down when a young man walks into her pub claiming that he’s killed his father. Instead of being shunned, the killer becomes a local hero and begins to win hearts, that is until a second man unexpectedly arrives on the scene…  Filmed live on stage at the National Theatre, Caitríona McLaughlin directs this darkly funny tale full to the brim with secrets.",
+    "director": "Caitriona McLaughlin",
+    "writer": "John Millington Synge",
+    "cast": "Nicola Coughlan (Pegeen Mike), Éanna Hardwicke (Christy Mahon), Siobhán McSweeney (Widow Quin), Declan Conlon (Old Mahon), Lorcan Cranitch (Michael Flaherty), Megan Cusack (Susan Brady), Naoise Dunbar (Jimmy Farrell), Matthew Forrest (Philly Cullen), Sallay Garnett (Nelly), Fionnuala Gygax (Honor Blake), Erin Hennessey (Fiddle), Peter Mooney (Banjo / Ensemble)",
+    "cached_at": "2026-03-16T09:58:10.641411"
+  },
+  "national-theatre-live-les-liaisons-dangereuses": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/lCMzzD5XZbp2IL2dY6tbtEuX3JB.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=IcWwthReeUk",
+    "vote_average": 6.0,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "imdb_id": "tt5536316",
+    "overview": "Marquise de Merteuil, former lover of Vicomte de Valmont, incites him to corrupt the innocent Cécile de Volanges before her wedding night, but Valmont has targeted the peerlessly virtuous and beautiful Madame de Tourvel.",
+    "director": "Tony Grech-Smith, Josie Rourke",
+    "writer": "Choderlos de Laclos",
+    "cast": "Janet McTeer (La Marquise de Merteuil), Dominic West (Le Vicomte de Valmont), Elaine Cassidy (Madame de Tourvel), Adjoa Andoh (Madame de Volanges), Morfydd Clark (Cécile Volanges), Edward Holcroft (Le Chevalier Danceny), Una Stubbs (Madame de Rosemonde), Theo Barklem-Biggs (Azolan), Jennifer Saayeng (Émilie), Thom Petty (Major-Domo), Alison Arnopp (Julie)",
+    "cached_at": "2026-03-16T09:58:11.265177"
+  },
+  "aadu-3": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/zeGcaKTiHiRXpF16eH5eA90ujPY.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=DQfmKXQqVD0",
+    "vote_average": 0.0,
+    "genres": [
+      "Comedy",
+      "Fantasy"
+    ],
+    "imdb_id": "tt8142672",
+    "overview": "Shaji Pappan and Co. opens a Pandora's box of reincarnations and multiple timelines  leading to comic chaos of epic proportions.",
+    "director": "Midhun Manuel Thomas",
+    "writer": "Midhun Manuel Thomas",
+    "cast": "Jayasurya (Shaji Pappan), Vinayakan (Dude), Sunny Wayne (Saathaan Xavier), Saiju Kurup (Arakkal Abu), Vijay Babu (SI 'Sarbath' Shameer), Vineeth Mohan (Kuttan Moonga), Dharmajan Bolgatty (Captain Sachin Cleetus), Harikrishnan (Lalan P. K. 'Lolan'), Bhagath Manuel (Krishnan Mandaram), Indrans (P.P Sasi Aashan), Bijukuttan (Battery Simon), Sudhi Koppa ('Kanjavu' Soman)",
+    "cached_at": "2026-03-16T09:58:11.886472"
+  },
+  "the-last-blossom-anime-season-subtitled": {
+    "poster_url": "",
+    "trailer_url": "",
+    "vote_average": null,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-03-16T09:58:12.516413"
+  },
+  "akira-anime-season-subtitled": {
+    "poster_url": "",
+    "trailer_url": "",
+    "vote_average": null,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-03-16T09:58:12.830312"
+  },
+  "akira-anime-season-dubbed": {
+    "poster_url": "",
+    "trailer_url": "",
+    "vote_average": null,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-03-16T09:58:13.144892"
   }
 }
