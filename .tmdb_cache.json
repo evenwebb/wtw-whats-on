@@ -9,7 +9,7 @@
     "director": "Barrie Kosky",
     "writer": "",
     "cast": "Peter Hoare, Andreas Schager, Christopher Maltman, Christopher Purves, Elisabet Strid",
-    "cached_at": "2026-03-23T09:56:51.006700"
+    "cached_at": "2026-03-24T09:48:56.105236"
   },
   "the-magic-flute-rbo-2025-26-cinema-season": {
     "poster_url": "https://image.tmdb.org/t/p/w342/ff62NuReokkFchk3zJmapEesyPz.jpg",
@@ -21,7 +21,7 @@
     "director": "David McVicar",
     "writer": "",
     "cast": "Julia Bullock, Amitai Pati, Huw Montague Rendall, Kathyrn Lewek",
-    "cached_at": "2026-03-23T09:56:51.949290"
+    "cached_at": "2026-03-24T09:48:57.093820"
   },
   "the-lost-boys-of-carbis-bay-and-more": {
     "poster_url": "",
@@ -294,7 +294,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-03-16T09:58:07.143451"
+    "cached_at": "2026-03-24T09:48:56.357125"
   },
   "reminders-of-him": {
     "poster_url": "https://image.tmdb.org/t/p/w342/8hEBaGD2sx4uVe4A1E44NkFIrDm.jpg",
@@ -388,7 +388,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-03-16T09:58:04.624935"
+    "cached_at": "2026-03-24T09:48:55.377704"
   },
   "the-magic-faraway-tree": {
     "poster_url": "https://image.tmdb.org/t/p/w342/mtS8mW6aLuartATut8TrD39zTIG.jpg",
@@ -507,7 +507,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-03-16T09:58:12.516413"
+    "cached_at": "2026-03-24T09:48:58.324668"
   },
   "akira-anime-season-subtitled": {
     "poster_url": "",
@@ -519,7 +519,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-03-16T09:58:12.830312"
+    "cached_at": "2026-03-24T09:48:58.578864"
   },
   "akira-anime-season-dubbed": {
     "poster_url": "",
@@ -531,7 +531,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-03-16T09:58:13.144892"
+    "cached_at": "2026-03-24T09:48:58.832181"
   },
   "ready-or-not-2-here-i-come": {
     "poster_url": "https://image.tmdb.org/t/p/w342/1tfvaktQ578jMCMYW4rFZE2STrv.jpg",
@@ -622,5 +622,55 @@
     "writer": "Jeff W. Tseng, Steven Sander",
     "cast": "Tim Denyer (Self), Steven Munatones (Self), Mark Sowerby (Self), Heidi Sowerby (Self), Bengisu Avci (Self), Jamie Mackay (Self), Paul Leonard (Self), Joanne Norman (Self)",
     "cached_at": "2026-03-21T09:25:22.319257"
+  },
+  "they-will-kill-you": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/vyatCfOSe33r8SL1biaXPcSs9tT.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=xXRC_wLttqE",
+    "vote_average": 6.643,
+    "genres": [
+      "Action",
+      "Comedy",
+      "Horror"
+    ],
+    "imdb_id": "tt31728330",
+    "overview": "A woman answers a help wanted ad to be a housekeeper in a mysterious high-rise in New York City, not realizing she is entering a community that has seen a number of disappearances over the years and may be under the grip of a Satanic cult.",
+    "director": "Kirill Sokolov",
+    "writer": "Kirill Sokolov, Alex Litvak",
+    "cast": "Zazie Beetz (Asia Reaves), Myha'la (Maria Reaves), Paterson Joseph, Tom Felton (Kevin), Heather Graham (Sharon), Patricia Arquette (Lilith), Armando Rivera, David Viviers, Lindzay Naidoo (Maid), Chris van Rensburg (The Manager), Gabe Gabriel (Short Steve), Megan Alexander (Prisoner)",
+    "cached_at": "2026-03-24T09:48:55.124632"
+  },
+  "rose-of-nevada": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/baFW06cijsli2OFewKgEIFpuFc2.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=bw371ui9cTk",
+    "vote_average": 0.0,
+    "genres": [
+      "Mystery",
+      "Drama",
+      "Science Fiction"
+    ],
+    "imdb_id": "tt35674521",
+    "overview": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves transported back in time, mistaken for the original crew.",
+    "director": "Mark Jenkin",
+    "writer": "Mark Jenkin",
+    "cast": "George MacKay (Nick), Callum Turner (Liam), Francis Magee, Edward Rowe, Rosalind Eleazar, Mary Woodvine",
+    "cached_at": "2026-03-24T09:48:57.587648"
+  },
+  "arco": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/mWlvHFxTDhq9O5WSOHywa32QIez.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=Ud0DK17iF1w",
+    "vote_average": 7.489,
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Fantasy",
+      "Family",
+      "Science Fiction"
+    ],
+    "imdb_id": "tt14883538",
+    "overview": "10-year-old Arco lives in a far future. During his first flight in his rainbow suit, he loses control and falls into the past. Iris, a girl his age from 2075, comes to his rescue and tries by all means to help send him back to his era.",
+    "director": "Ugo Bienvenu",
+    "writer": "Ugo Bienvenu, Félix de Givry",
+    "cast": "Margot Ringard Oldra (Iris (voice)), Oscar Tresanini (Arco (voice)), Nathanaël Perrot (Clifford (voice)), Alma Jodorowsky (Jeanne / Mikki (voice)), Swann Arlaud (Tom / Mikki  (voice)), Vincent Macaigne (Dougie (voice)), Louis Garrel (Stewie (voice)), William Lebghil (Frankie (voice)), Sophie Mas (La mère d'Arco (voix)), Frédérique Cantrel (La mère d'Arco - séquence finale (voix)), Oxmo Puccino (Dom (voice)), Joséphine Mancini (Ada (voix))",
+    "cached_at": "2026-03-24T09:48:58.077661"
   }
 }
