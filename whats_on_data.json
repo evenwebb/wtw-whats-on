@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T09:45:27Z",
+  "updated_at": "2026-03-26T09:55:34Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -15,48 +15,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=st-austell",
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-25",
-              "time": "14:00",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76712&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-03-25",
-              "time": "16:00",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76704&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-03-25",
-              "time": "19:30",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76479&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-03-26",
               "time": "16:00",
@@ -463,19 +421,6 @@
           "poster_url": "posters/hoppers.jpg",
           "showtimes": [
             {
-              "date": "2026-03-25",
-              "time": "17:15",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76705&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-26",
               "time": "17:15",
               "screen": 2,
@@ -565,19 +510,6 @@
           "poster_url": "posters/mothers-pride.jpg",
           "showtimes": [
             {
-              "date": "2026-03-25",
-              "time": "14:45",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76711&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-26",
               "time": "17:00",
               "screen": 3,
@@ -656,19 +588,6 @@
               ]
             },
             {
-              "date": "2026-03-25",
-              "time": "17:00",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76709&screen=staustell",
-              "tags": [
-                "Subtitles",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-28",
               "time": "17:30",
               "screen": 3,
@@ -702,32 +621,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/ready-or-not-2-here-i-come/?screen=st-austell",
           "poster_url": "posters/ready-or-not-2-here-i-come.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-25",
-              "time": "17:30",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76707&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-03-25",
-              "time": "20:15",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76708&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-03-26",
               "time": "17:30",
@@ -1015,41 +908,6 @@
           "writer": "Maggie O'Farrell, Chloé Zhao"
         },
         {
-          "title": "How to Make a Killing",
-          "search_title": "How to Make a Killing",
-          "film_slug": "how-to-make-a-killing",
-          "synopsis": "Disowned at birth by his obscenely wealthy family, blue-collar Becket Redfellow will stop at nothing to reclaim his inheritance, no matter how many relatives stand...",
-          "cast": "Glen Powell (Becket Redfellow), Margaret Qualley (Julia Steinway), Jessica Henwick (Ruth), Ed Harris (Whitelaw Redfellow), Bill Camp (Warren Redfellow), Topher Grace (Pastor Steven J. Redfellow), Zach Woods (Noah Redfellow), Bianca Amato (Cassandra Redfellow), Raff Law (Taylor Redfellow), Alexander Hanson (McArthur Redfellow), Nell Williams (Mary Redfellow), Sean Cameron Michael (Charles)",
-          "runtime_min": 105,
-          "film_url": "https://wtwcinemas.co.uk/film/how-to-make-a-killing/?screen=st-austell",
-          "poster_url": "posters/how-to-make-a-killing.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-25",
-              "time": "19:15",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76710&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=V7wXKa6LIBU",
-          "vote_average": 6.9,
-          "genres": [
-            "Comedy",
-            "Thriller"
-          ],
-          "imdb_id": "tt4357198",
-          "overview": "Disowned at birth by his obscenely wealthy family, blue-collar Becket Redfellow will stop at nothing to reclaim his inheritance, no matter how many relatives stand in his way.",
-          "director": "John Patton Ford",
-          "writer": "John Patton Ford"
-        },
-        {
           "title": "Peaky Blinders: The Immortal Man",
           "search_title": "Peaky Blinders: The Immortal Man",
           "film_slug": "peaky-blinders-the-immortal-man",
@@ -1059,32 +917,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/peaky-blinders-the-immortal-man/?screen=st-austell",
           "poster_url": "posters/peaky-blinders-the-immortal-man.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-25",
-              "time": "14:30",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76713&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-25",
-              "time": "20:00",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76706&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-26",
               "time": "20:00",
@@ -2687,12 +2519,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 29,
-        "selector_film_nodes": 29,
-        "primary_selector_nodes": 29,
+        "raw_cards": 28,
+        "selector_film_nodes": 28,
+        "primary_selector_nodes": 28,
         "fallback_selector_nodes": 0,
-        "parsed_films": 22,
-        "parsed_showtimes": 171
+        "parsed_films": 21,
+        "parsed_showtimes": 160
       }
     },
     "newquay": {
@@ -2709,34 +2541,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=newquay",
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-25",
-              "time": "16:00",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65108&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-03-25",
-              "time": "19:30",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64870&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-03-26",
               "time": "16:00",
@@ -3033,19 +2837,6 @@
           "poster_url": "posters/hoppers.jpg",
           "showtimes": [
             {
-              "date": "2026-03-25",
-              "time": "17:00",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65109&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-26",
               "time": "17:00",
               "screen": 2,
@@ -3134,19 +2925,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mothers-pride/?screen=newquay",
           "poster_url": "posters/mothers-pride.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-25",
-              "time": "19:45",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65110&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-26",
               "time": "19:45",
@@ -3285,32 +3063,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/ready-or-not-2-here-i-come/?screen=newquay",
           "poster_url": "posters/ready-or-not-2-here-i-come.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-25",
-              "time": "17:30",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65111&screen=newquay",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-03-25",
-              "time": "20:15",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65112&screen=newquay",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-03-26",
               "time": "17:30",
@@ -3490,32 +3242,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/reminders-of-him/?screen=newquay",
           "poster_url": "posters/reminders-of-him.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-25",
-              "time": "17:15",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65113&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-25",
-              "time": "20:00",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65114&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-26",
               "time": "17:15",
@@ -5361,7 +5087,7 @@
         "primary_selector_nodes": 27,
         "fallback_selector_nodes": 0,
         "parsed_films": 22,
-        "parsed_showtimes": 169
+        "parsed_showtimes": 161
       }
     },
     "truro": {
@@ -5378,45 +5104,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=truro",
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-25",
-              "time": "13:15",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119736&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-25",
-              "time": "16:30",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119573&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-25",
-              "time": "19:30",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119572&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-26",
               "time": "19:30",
@@ -5883,18 +5570,6 @@
           "poster_url": "posters/hoppers.jpg",
           "showtimes": [
             {
-              "date": "2026-03-25",
-              "time": "17:00",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119734&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-28",
               "time": "11:30",
               "screen": 1,
@@ -5970,32 +5645,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mothers-pride/?screen=truro",
           "poster_url": "posters/mothers-pride.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-25",
-              "time": "14:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119737&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-25",
-              "time": "18:15",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119730&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-26",
               "time": "17:45",
@@ -6121,32 +5770,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/reminders-of-him/?screen=truro",
           "poster_url": "posters/reminders-of-him.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-25",
-              "time": "16:45",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119727&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-25",
-              "time": "20:15",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119728&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-26",
               "time": "16:45",
@@ -6397,30 +6020,6 @@
           "poster_url": "posters/if-i-had-legs-id-kick-you.jpg",
           "showtimes": [
             {
-              "date": "2026-03-25",
-              "time": "14:15",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119739&screen=truro",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-25",
-              "time": "17:30",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119732&screen=truro",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-26",
               "time": "20:00",
               "screen": 4,
@@ -6505,19 +6104,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/wuthering-heights/?screen=truro",
           "poster_url": "posters/wuthering-heights.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-25",
-              "time": "20:00",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119733&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-30",
               "time": "11:00",
@@ -6671,19 +6257,6 @@
           "poster_url": "posters/how-to-make-a-killing.jpg",
           "showtimes": [
             {
-              "date": "2026-03-25",
-              "time": "20:30",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119731&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-26",
               "time": "17:00",
               "screen": 5,
@@ -6750,44 +6323,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/midwinter-break/?screen=truro",
           "poster_url": "posters/midwinter-break.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-25",
-              "time": "13:45",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119738&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-25",
-              "time": "16:00",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119729&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-25",
-              "time": "19:45",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119735&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-26",
               "time": "17:00",
@@ -8667,7 +8202,7 @@
         "primary_selector_nodes": 38,
         "fallback_selector_nodes": 0,
         "parsed_films": 32,
-        "parsed_showtimes": 207
+        "parsed_showtimes": 192
       }
     },
     "wadebridge": {
@@ -8684,34 +8219,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=wadebridge",
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-25",
-              "time": "15:45",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28555&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-03-25",
-              "time": "19:15",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28392&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-03-26",
               "time": "15:45",
@@ -8953,32 +8460,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mothers-pride/?screen=wadebridge",
           "poster_url": "posters/mothers-pride.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-25",
-              "time": "17:00",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28550&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-25",
-              "time": "19:30",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28551&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-26",
               "time": "17:00",
@@ -10573,7 +10054,7 @@
         "primary_selector_nodes": 22,
         "fallback_selector_nodes": 0,
         "parsed_films": 18,
-        "parsed_showtimes": 117
+        "parsed_showtimes": 113
       }
     }
   }
