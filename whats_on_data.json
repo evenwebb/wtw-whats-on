@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-26T09:55:34Z",
+  "updated_at": "2026-03-27T09:47:12Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -15,34 +15,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=st-austell",
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "16:00",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76714&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-03-26",
-              "time": "19:30",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76480&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-03-27",
               "time": "15:45",
@@ -421,19 +393,6 @@
           "poster_url": "posters/hoppers.jpg",
           "showtimes": [
             {
-              "date": "2026-03-26",
-              "time": "17:15",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76715&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-28",
               "time": "12:00",
               "screen": 4,
@@ -509,19 +468,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mothers-pride/?screen=st-austell",
           "poster_url": "posters/mothers-pride.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "17:00",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76720&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-27",
               "time": "17:30",
@@ -621,32 +567,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/ready-or-not-2-here-i-come/?screen=st-austell",
           "poster_url": "posters/ready-or-not-2-here-i-come.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "17:30",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76721&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-03-26",
-              "time": "20:15",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76722&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-03-27",
               "time": "20:00",
@@ -906,123 +826,6 @@
           "overview": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
           "director": "Chloé Zhao",
           "writer": "Maggie O'Farrell, Chloé Zhao"
-        },
-        {
-          "title": "Peaky Blinders: The Immortal Man",
-          "search_title": "Peaky Blinders: The Immortal Man",
-          "film_slug": "peaky-blinders-the-immortal-man",
-          "synopsis": "After his estranged son gets embroiled in a Nazi plot, self-exiled gangster Tommy Shelby must return to Birmingham to save his family — and his...",
-          "cast": "Cillian Murphy (Thomas 'Tommy' Shelby), Tim Roth (Beckett), Rebecca Ferguson (Kaulo/Zelda), Barry Keoghan (Duke Shelby), Sophie Rundle (Ada Shelby), Stephen Graham (Hayden Stagg), Ned Dennehy (Charlie Strong), Packy Lee (Johnny Dogs), Ian Peck (Curly), Jay Lycurgo (Elijah), Kasper Hilton-Hille (Karl Thorne), Ruby Ashbourne Serkis (Agnes Shelby)",
-          "runtime_min": 112,
-          "film_url": "https://wtwcinemas.co.uk/film/peaky-blinders-the-immortal-man/?screen=st-austell",
-          "poster_url": "posters/peaky-blinders-the-immortal-man.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "20:00",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76734&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=lcvUGs3xaDM",
-          "vote_average": 8.3,
-          "genres": [
-            "Crime",
-            "Drama",
-            "War"
-          ],
-          "imdb_id": "tt15574124",
-          "overview": "After his estranged son gets embroiled in a Nazi plot, self-exiled gangster Tommy Shelby must return to Birmingham to save his family — and his nation.",
-          "director": "Tom Harper",
-          "writer": "Steven Knight"
-        },
-        {
-          "title": "H Is for Hawk",
-          "search_title": "H Is for Hawk",
-          "film_slug": "h-is-for-hawk",
-          "synopsis": "After losing her beloved father, Helen finds herself saved by an unlikely friendship with a stubborn hawk named Mabel. Through the bond, Helen rediscovers the...",
-          "cast": "Claire Foy (Helen Macdonald), Brendan Gleeson (Alisdair Macdonald), Angus Cooper, Sam Spruell (Stuart), Josh Dylan (James), Eden Hamilton (Young Helen), Denise Gough (Christina), Lindsay Duncan, Arty Froushan (Amar), Emma Cunniffe (Mandy), Imogen Dufty (Female Undergrad), Sean Kearns (Breeder)",
-          "runtime_min": 115,
-          "film_url": "https://wtwcinemas.co.uk/film/h-is-for-hawk/?screen=st-austell",
-          "poster_url": "posters/h-is-for-hawk.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "11:00",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76348&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-26",
-              "time": "11:15",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76349&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=fH0H3RkNmeU",
-          "vote_average": 6.8,
-          "genres": [
-            "Drama"
-          ],
-          "imdb_id": "tt10329560",
-          "overview": "After losing her beloved father, Helen finds herself saved by an unlikely friendship with a stubborn hawk named Mabel. Through the bond, Helen rediscovers the beauty of being alive.",
-          "director": "Philippa Lowthorpe",
-          "writer": "Emma Donoghue, Helen Macdonald"
-        },
-        {
-          "title": "Edge of Summer - in association with The Cornwall Film Festival",
-          "search_title": "Edge of Summer - in association with The Cornwall Film Festival",
-          "film_slug": "edge-of-summer-in-association-with-the-cornwall-film-festival",
-          "synopsis": "Set on the Cornish coast in the early 90s, a pre-digital era, where childhood was so different, where holidays were spent fighting the boredom and...",
-          "cast": "Flora Hylton, Joel Sefton-longi, Skyer Dennett",
-          "runtime_min": 98,
-          "film_url": "https://wtwcinemas.co.uk/film/edge-of-summer-in-association-with-the-cornwall-film-festival/?screen=st-austell",
-          "poster_url": "",
-          "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "19:45",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76655&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "",
-          "vote_average": null,
-          "genres": [],
-          "imdb_id": "",
-          "overview": "",
-          "director": "",
-          "writer": ""
         },
         {
           "title": "The Magic Faraway Tree",
@@ -2519,12 +2322,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 28,
-        "selector_film_nodes": 28,
-        "primary_selector_nodes": 28,
+        "raw_cards": 24,
+        "selector_film_nodes": 24,
+        "primary_selector_nodes": 24,
         "fallback_selector_nodes": 0,
-        "parsed_films": 21,
-        "parsed_showtimes": 160
+        "parsed_films": 18,
+        "parsed_showtimes": 150
       }
     },
     "newquay": {
@@ -2541,34 +2344,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=newquay",
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "16:00",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65115&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-03-26",
-              "time": "19:30",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64871&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-03-27",
               "time": "15:45",
@@ -2794,39 +2569,6 @@
           "writer": "Andy Weir, Drew Goddard"
         },
         {
-          "title": "Project Hail Mary PARENT & BABY SCREENING",
-          "search_title": "Project Hail Mary PARENT & BABY SCREENING",
-          "film_slug": "project-hail-mary-parent-baby-screening",
-          "synopsis": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there....",
-          "cast": "Ryan Gosling, Sandra Hüller, Lionel Boyce",
-          "runtime_min": 157,
-          "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary-parent-baby-screening/?screen=newquay",
-          "poster_url": "",
-          "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "10:15",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64872&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            }
-          ],
-          "trailer_url": "",
-          "vote_average": null,
-          "genres": [],
-          "imdb_id": "",
-          "overview": "",
-          "director": "",
-          "writer": ""
-        },
-        {
           "title": "Hoppers",
           "search_title": "Hoppers",
           "film_slug": "hoppers",
@@ -2836,19 +2578,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=newquay",
           "poster_url": "posters/hoppers.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "17:00",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65116&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-28",
               "time": "12:00",
@@ -2925,19 +2654,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mothers-pride/?screen=newquay",
           "poster_url": "posters/mothers-pride.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "19:45",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65117&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-27",
               "time": "17:15",
@@ -3063,32 +2779,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/ready-or-not-2-here-i-come/?screen=newquay",
           "poster_url": "posters/ready-or-not-2-here-i-come.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "17:30",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65118&screen=newquay",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-03-26",
-              "time": "20:15",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65119&screen=newquay",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-03-27",
               "time": "17:30",
@@ -3242,32 +2932,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/reminders-of-him/?screen=newquay",
           "poster_url": "posters/reminders-of-him.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "17:15",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65120&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-26",
-              "time": "20:00",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65121&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-27",
               "time": "19:45",
@@ -3519,56 +3183,6 @@
           "overview": "An edge-of-your-seat adventure into one man’s fight to reclaim his life by taking on the world’s most dangerous marathon swims, the Oceans Seven. Featuring unforgettable characters, raw vulnerability and breathtaking ocean feats, it’s  a gripping, uplifting journey of resilience, reinvention and what it really takes to survive.",
           "director": "Jeff W. Tseng",
           "writer": "Jeff W. Tseng, Steven Sander"
-        },
-        {
-          "title": "H Is for Hawk",
-          "search_title": "H Is for Hawk",
-          "film_slug": "h-is-for-hawk",
-          "synopsis": "After losing her beloved father, Helen finds herself saved by an unlikely friendship with a stubborn hawk named Mabel. Through the bond, Helen rediscovers the...",
-          "cast": "Claire Foy (Helen Macdonald), Brendan Gleeson (Alisdair Macdonald), Angus Cooper, Sam Spruell (Stuart), Josh Dylan (James), Eden Hamilton (Young Helen), Denise Gough (Christina), Lindsay Duncan, Arty Froushan (Amar), Emma Cunniffe (Mandy), Imogen Dufty (Female Undergrad), Sean Kearns (Breeder)",
-          "runtime_min": 115,
-          "film_url": "https://wtwcinemas.co.uk/film/h-is-for-hawk/?screen=newquay",
-          "poster_url": "posters/h-is-for-hawk.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "11:00",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64748&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-26",
-              "time": "11:15",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64749&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=fH0H3RkNmeU",
-          "vote_average": 6.8,
-          "genres": [
-            "Drama"
-          ],
-          "imdb_id": "tt10329560",
-          "overview": "After losing her beloved father, Helen finds herself saved by an unlikely friendship with a stubborn hawk named Mabel. Through the bond, Helen rediscovers the beauty of being alive.",
-          "director": "Philippa Lowthorpe",
-          "writer": "Emma Donoghue, Helen Macdonald"
         },
         {
           "title": "Edge of Summer - in association with The Cornwall Film Festival",
@@ -5082,12 +4696,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 27,
-        "selector_film_nodes": 27,
-        "primary_selector_nodes": 27,
+        "raw_cards": 24,
+        "selector_film_nodes": 24,
+        "primary_selector_nodes": 24,
         "fallback_selector_nodes": 0,
-        "parsed_films": 22,
-        "parsed_showtimes": 161
+        "parsed_films": 20,
+        "parsed_showtimes": 150
       }
     },
     "truro": {
@@ -5104,19 +4718,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=truro",
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "19:30",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119463&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-27",
               "time": "16:30",
@@ -5323,21 +4924,6 @@
                 "Audio Description",
                 "Wheelchair access",
                 "2D"
-              ]
-            },
-            {
-              "date": "2026-03-26",
-              "time": "16:30",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119740&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
               ]
             },
             {
@@ -5646,19 +5232,6 @@
           "poster_url": "posters/mothers-pride.jpg",
           "showtimes": [
             {
-              "date": "2026-03-26",
-              "time": "17:45",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119752&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-28",
               "time": "15:00",
               "screen": 4,
@@ -5770,32 +5343,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/reminders-of-him/?screen=truro",
           "poster_url": "posters/reminders-of-him.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "16:45",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119741&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-26",
-              "time": "20:15",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119742&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-27",
               "time": "20:00",
@@ -6010,39 +5557,6 @@
           "writer": "Ugo Bienvenu, Félix de Givry"
         },
         {
-          "title": "If I Had Legs I’d Kick You",
-          "search_title": "If I Had Legs I’d Kick You",
-          "film_slug": "if-i-had-legs-id-kick-you",
-          "synopsis": "With her life crashing down around her, Linda attempts to navigate her child's mysterious illness, her absent husband, a missing person, and an increasingly hostile...",
-          "cast": "Rose Byrne (Linda), Conan O'Brien (Therapist), A$AP Rocky (James), Danielle Macdonald (Caroline), Delaney Quinn (Child), Mary Bronstein (Dr. Spring), Ivy Wolk (Diana), Mark Stolzenberg (Parking Attendant), Manu Narayan (Landlord), Christian Slater (Father), Eva Kornet (Breathworker), Ella Beatty (Kate)",
-          "runtime_min": 113,
-          "film_url": "https://wtwcinemas.co.uk/film/if-i-had-legs-id-kick-you/?screen=truro",
-          "poster_url": "posters/if-i-had-legs-id-kick-you.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "20:00",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119744&screen=truro",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=-oDLBRLkflo",
-          "vote_average": 6.347,
-          "genres": [
-            "Drama"
-          ],
-          "imdb_id": "tt18382850",
-          "overview": "With her life crashing down around her, Linda attempts to navigate her child's mysterious illness, her absent husband, a missing person, and an increasingly hostile relationship with her therapist.",
-          "director": "Mary Bronstein",
-          "writer": "Mary Bronstein"
-        },
-        {
           "title": "EPiC: Elvis Presley in Concert",
           "search_title": "EPiC: Elvis Presley in Concert",
           "film_slug": "epic-elvis-presley-in-concert",
@@ -6247,40 +5761,6 @@
           "writer": "Maggie O'Farrell, Chloé Zhao"
         },
         {
-          "title": "How to Make a Killing",
-          "search_title": "How to Make a Killing",
-          "film_slug": "how-to-make-a-killing",
-          "synopsis": "Disowned at birth by his obscenely wealthy family, blue-collar Becket Redfellow will stop at nothing to reclaim his inheritance, no matter how many relatives stand...",
-          "cast": "Glen Powell (Becket Redfellow), Margaret Qualley (Julia Steinway), Jessica Henwick (Ruth), Ed Harris (Whitelaw Redfellow), Bill Camp (Warren Redfellow), Topher Grace (Pastor Steven J. Redfellow), Zach Woods (Noah Redfellow), Bianca Amato (Cassandra Redfellow), Raff Law (Taylor Redfellow), Alexander Hanson (McArthur Redfellow), Nell Williams (Mary Redfellow), Sean Cameron Michael (Charles)",
-          "runtime_min": 105,
-          "film_url": "https://wtwcinemas.co.uk/film/how-to-make-a-killing/?screen=truro",
-          "poster_url": "posters/how-to-make-a-killing.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "17:00",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119753&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=V7wXKa6LIBU",
-          "vote_average": 6.9,
-          "genres": [
-            "Comedy",
-            "Thriller"
-          ],
-          "imdb_id": "tt4357198",
-          "overview": "Disowned at birth by his obscenely wealthy family, blue-collar Becket Redfellow will stop at nothing to reclaim his inheritance, no matter how many relatives stand in his way.",
-          "director": "John Patton Ford",
-          "writer": "John Patton Ford"
-        },
-        {
           "title": "Don’t Be Prey",
           "search_title": "Don’t Be Prey",
           "film_slug": "dont-be-prey",
@@ -6323,31 +5803,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/midwinter-break/?screen=truro",
           "poster_url": "posters/midwinter-break.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "17:00",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119743&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-26",
-              "time": "19:45",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119754&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-27",
               "time": "17:15",
@@ -6423,90 +5878,6 @@
           "overview": "Longtime retired couple Stella and Gerry realise that their relationship has reached a crossroads while on holiday in Amsterdam. After so much time and so many memories, long-held promises and deeply concealed wounds threaten to come to light and force them to confront their future.",
           "director": "Polly Findlay",
           "writer": "Nick Payne, Bernard MacLaverty"
-        },
-        {
-          "title": "Aadu 3",
-          "search_title": "Aadu 3",
-          "film_slug": "aadu-3",
-          "synopsis": "The lives of a group of friends and an ancient king are intertwined as they battle across time for a priceless gem in this Malayalam-language...",
-          "cast": "Jayasurya (Shaji Pappan), Vinayakan (Dude), Sunny Wayne (Saathaan Xavier), Saiju Kurup (Arakkal Abu), Vijay Babu (SI 'Sarbath' Shameer), Vineeth Mohan (Kuttan Moonga), Dharmajan Bolgatty (Captain Sachin Cleetus), Harikrishnan (Lalan P. K. 'Lolan'), Bhagath Manuel (Krishnan Mandaram), Indrans (P.P Sasi Aashan), Bijukuttan (Battery Simon), Sudhi Koppa ('Kanjavu' Soman)",
-          "runtime_min": 164,
-          "film_url": "https://wtwcinemas.co.uk/film/aadu-3/?screen=truro",
-          "poster_url": "posters/aadu-3.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "19:15",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119669&screen=truro",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=DQfmKXQqVD0",
-          "vote_average": 0.0,
-          "genres": [
-            "Comedy",
-            "Fantasy"
-          ],
-          "imdb_id": "tt8142672",
-          "overview": "Shaji Pappan and Co. opens a Pandora's box of reincarnations and multiple timelines  leading to comic chaos of epic proportions.",
-          "director": "Midhun Manuel Thomas",
-          "writer": "Midhun Manuel Thomas"
-        },
-        {
-          "title": "H Is for Hawk",
-          "search_title": "H Is for Hawk",
-          "film_slug": "h-is-for-hawk",
-          "synopsis": "After losing her beloved father, Helen finds herself saved by an unlikely friendship with a stubborn hawk named Mabel. Through the bond, Helen rediscovers the...",
-          "cast": "Claire Foy (Helen Macdonald), Brendan Gleeson (Alisdair Macdonald), Angus Cooper, Sam Spruell (Stuart), Josh Dylan (James), Eden Hamilton (Young Helen), Denise Gough (Christina), Lindsay Duncan, Arty Froushan (Amar), Emma Cunniffe (Mandy), Imogen Dufty (Female Undergrad), Sean Kearns (Breeder)",
-          "runtime_min": 115,
-          "film_url": "https://wtwcinemas.co.uk/film/h-is-for-hawk/?screen=truro",
-          "poster_url": "posters/h-is-for-hawk.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "11:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119285&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-26",
-              "time": "11:15",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119286&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=fH0H3RkNmeU",
-          "vote_average": 6.8,
-          "genres": [
-            "Drama"
-          ],
-          "imdb_id": "tt10329560",
-          "overview": "After losing her beloved father, Helen finds herself saved by an unlikely friendship with a stubborn hawk named Mabel. Through the bond, Helen rediscovers the beauty of being alive.",
-          "director": "Philippa Lowthorpe",
-          "writer": "Emma Donoghue, Helen Macdonald"
         },
         {
           "title": "Edge of Summer - in association with The Cornwall Film Festival",
@@ -8197,12 +7568,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 38,
-        "selector_film_nodes": 38,
-        "primary_selector_nodes": 38,
+        "raw_cards": 33,
+        "selector_film_nodes": 33,
+        "primary_selector_nodes": 33,
         "fallback_selector_nodes": 0,
-        "parsed_films": 32,
-        "parsed_showtimes": 192
+        "parsed_films": 28,
+        "parsed_showtimes": 180
       }
     },
     "wadebridge": {
@@ -8219,34 +7590,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=wadebridge",
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "15:45",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28554&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-03-26",
-              "time": "19:15",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28393&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-03-27",
               "time": "15:30",
@@ -8451,53 +7794,6 @@
           "writer": "Jesse Andrews, Daniel Chong"
         },
         {
-          "title": "Mother’s Pride",
-          "search_title": "Mother’s Pride",
-          "film_slug": "mothers-pride",
-          "synopsis": "A comedy about a failing pub, a divided community and a grieving family whose lives are changed by brewing real ale and entering the Great...",
-          "cast": "Jonno Davies (Cal), James Buckley (Jake), Martin Clunes (Mick), Mark Addy (Paxman), Gabriella Wilde (Abi), Luke Treadaway (Pritchard), Josie Lawrence (Edith), Miles Jupp (Jeremy), Karl Collins (Wilf), Richard Glover (Jim), Emily Lloyd-Saini (Amy), Dominic Kinnaird (Traffic warden)",
-          "runtime_min": 93,
-          "film_url": "https://wtwcinemas.co.uk/film/mothers-pride/?screen=wadebridge",
-          "poster_url": "posters/mothers-pride.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "17:00",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28552&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-26",
-              "time": "19:30",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28553&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=D-Ui79xGMTI",
-          "vote_average": 0.0,
-          "genres": [
-            "Comedy"
-          ],
-          "imdb_id": "tt32569057",
-          "overview": "A comedy about a failing pub, a divided community and a grieving family whose lives are changed by brewing real ale and entering the Great British Beer Awards.",
-          "director": "Nick Moorcroft",
-          "writer": "Nick Moorcroft, Meg Leonard"
-        },
-        {
           "title": "EPiC: Elvis Presley in Concert",
           "search_title": "EPiC: Elvis Presley in Concert",
           "film_slug": "epic-elvis-presley-in-concert",
@@ -8652,56 +7948,6 @@
           "overview": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
           "director": "Chloé Zhao",
           "writer": "Maggie O'Farrell, Chloé Zhao"
-        },
-        {
-          "title": "H Is for Hawk",
-          "search_title": "H Is for Hawk",
-          "film_slug": "h-is-for-hawk",
-          "synopsis": "After losing her beloved father, Helen finds herself saved by an unlikely friendship with a stubborn hawk named Mabel. Through the bond, Helen rediscovers the...",
-          "cast": "Claire Foy (Helen Macdonald), Brendan Gleeson (Alisdair Macdonald), Angus Cooper, Sam Spruell (Stuart), Josh Dylan (James), Eden Hamilton (Young Helen), Denise Gough (Christina), Lindsay Duncan, Arty Froushan (Amar), Emma Cunniffe (Mandy), Imogen Dufty (Female Undergrad), Sean Kearns (Breeder)",
-          "runtime_min": 115,
-          "film_url": "https://wtwcinemas.co.uk/film/h-is-for-hawk/?screen=wadebridge",
-          "poster_url": "posters/h-is-for-hawk.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-26",
-              "time": "11:00",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28317&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-26",
-              "time": "11:15",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28318&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=fH0H3RkNmeU",
-          "vote_average": 6.8,
-          "genres": [
-            "Drama"
-          ],
-          "imdb_id": "tt10329560",
-          "overview": "After losing her beloved father, Helen finds herself saved by an unlikely friendship with a stubborn hawk named Mabel. Through the bond, Helen rediscovers the beauty of being alive.",
-          "director": "Philippa Lowthorpe",
-          "writer": "Emma Donoghue, Helen Macdonald"
         },
         {
           "title": "The Magic Faraway Tree",
@@ -10049,12 +9295,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 22,
-        "selector_film_nodes": 22,
-        "primary_selector_nodes": 22,
+        "raw_cards": 19,
+        "selector_film_nodes": 19,
+        "primary_selector_nodes": 19,
         "fallback_selector_nodes": 0,
-        "parsed_films": 18,
-        "parsed_showtimes": 113
+        "parsed_films": 16,
+        "parsed_showtimes": 107
       }
     }
   }
