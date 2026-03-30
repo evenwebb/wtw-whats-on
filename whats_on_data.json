@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-29T09:30:10Z",
+  "updated_at": "2026-03-30T10:09:51Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -15,45 +15,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=st-austell",
           "poster_url": "posters/the-magic-faraway-tree.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-29",
-              "time": "11:45",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76729&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-29",
-              "time": "14:00",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76569&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-29",
-              "time": "16:45",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76568&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-30",
               "time": "16:45",
@@ -455,34 +416,6 @@
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
             {
-              "date": "2026-03-29",
-              "time": "12:15",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76760&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-03-29",
-              "time": "15:45",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76730&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-03-30",
               "time": "15:45",
               "screen": 2,
@@ -619,18 +552,6 @@
           "poster_url": "posters/they-will-kill-you.jpg",
           "showtimes": [
             {
-              "date": "2026-03-29",
-              "time": "17:45",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76758&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-30",
               "time": "17:45",
               "screen": 4,
@@ -704,56 +625,6 @@
           "writer": "Kirill Sokolov, Alex Litvak"
         },
         {
-          "title": "Hoppers",
-          "search_title": "Hoppers",
-          "film_slug": "hoppers",
-          "synopsis": "Scientists have discovered how to \"hop\" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an...",
-          "cast": "Piper Curda (Mabel Tanaka / Mabel Beaver (voice)), Bobby Moynihan (King George (voice)), Jon Hamm (Mayor Jerry Generazzo (voice)), Kathy Najimy (Dr. Sam (voice)), Eduardo Franco (Loaf (voice)), Aparna Nancherla (Nisha (voice)), Meryl Streep (Insect Queen (voice)), Dave Franco (Insect King (voice)), Eman Abdul-Razzak (Insect Prince (voice)), Tom Law (Tom Lizard (voice)), Sam Richardson (Conner (voice)), Melissa Villaseñor (Ellen Bear (voice))",
-          "runtime_min": 105,
-          "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=st-austell",
-          "poster_url": "posters/hoppers.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-29",
-              "time": "12:00",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76762&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-29",
-              "time": "14:45",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76763&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=nIKsi-Ud3w8",
-          "vote_average": 8.0,
-          "genres": [
-            "Animation",
-            "Family",
-            "Comedy",
-            "Science Fiction"
-          ],
-          "imdb_id": "tt26443616",
-          "overview": "Scientists have discovered how to \"hop\" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world that are beyond anything she could have imagined.",
-          "director": "Daniel Chong",
-          "writer": "Jesse Andrews, Daniel Chong"
-        },
-        {
           "title": "Mother’s Pride",
           "search_title": "Mother’s Pride",
           "film_slug": "mothers-pride",
@@ -763,19 +634,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mothers-pride/?screen=st-austell",
           "poster_url": "posters/mothers-pride.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-29",
-              "time": "15:00",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76761&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-30",
               "time": "17:30",
@@ -803,10 +661,11 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=D-Ui79xGMTI",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=u1V8bdl21Bw",
+          "vote_average": 7.0,
           "genres": [
-            "Comedy"
+            "Comedy",
+            "Drama"
           ],
           "imdb_id": "tt32569057",
           "overview": "A comedy about a failing pub, a divided community and a grieving family whose lives are changed by brewing real ale and entering the Great British Beer Awards.",
@@ -823,19 +682,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/ready-or-not-2-here-i-come/?screen=st-austell",
           "poster_url": "posters/ready-or-not-2-here-i-come.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-29",
-              "time": "17:30",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76757&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-03-30",
               "time": "20:00",
@@ -906,7 +752,7 @@
           "search_title": "EPiC: Elvis Presley in Concert",
           "film_slug": "epic-elvis-presley-in-concert",
           "synopsis": "A mix of a documentary and concert film made using unused footage from Elvis: That's the Way It Is, the film of Elvis' legendary 1970...",
-          "cast": "Elvis Presley (Self (archive footage)), Sammy Davis Jr. (Self (archive footage)), Cary Grant (Self (archive footage)), Tom Parker (Self (archive footage)), Bono (Self (voice)), James Burton (Self (archive footage)), John Wilkinson (Self (archive footage)), Jerry Scheff (Self (archive footage)), Glen D. Hardin (Self (archive footage)), Ronnie Tutt (Self (archive footage)), Kathy Westmoreland (Self (archive footage)), J.D. Sumner (Self (archive footage))",
+          "cast": "Elvis Presley (Self (archive footage)), James Burton (Self (archive footage)), John Wilkinson (Self (archive footage)), Charlie Hodge (Self (archive footage)), Jerry Scheff (Self (archive footage)), Glen D. Hardin (Self (archive footage)), Ronnie Tutt (Self (archive footage)), Bono (Self (voice)), Sammy Davis Jr. (Self (archive footage)), Cary Grant (Self (archive footage)), Tom Parker (Self (archive footage)), Kathy Westmoreland (Self (archive footage))",
           "runtime_min": 90,
           "film_url": "https://wtwcinemas.co.uk/film/epic-elvis-presley-in-concert/?screen=st-austell",
           "poster_url": "posters/epic-elvis-presley-in-concert.jpg",
@@ -943,8 +789,8 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=PalDl9XNjn8",
-          "vote_average": 8.2,
+          "trailer_url": "https://www.youtube.com/watch?v=v9fEeCvCLJ8",
+          "vote_average": 8.3,
           "genres": [
             "Music",
             "Documentary"
@@ -2021,12 +1867,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 22,
-        "selector_film_nodes": 22,
-        "primary_selector_nodes": 22,
+        "raw_cards": 21,
+        "selector_film_nodes": 21,
+        "primary_selector_nodes": 21,
         "fallback_selector_nodes": 0,
-        "parsed_films": 18,
-        "parsed_showtimes": 127
+        "parsed_films": 17,
+        "parsed_showtimes": 117
       }
     },
     "newquay": {
@@ -2043,45 +1889,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=newquay",
           "poster_url": "posters/the-magic-faraway-tree.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-29",
-              "time": "11:45",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65133&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-29",
-              "time": "14:00",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64959&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-29",
-              "time": "16:45",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64958&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-30",
               "time": "16:45",
@@ -2483,34 +2290,6 @@
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
             {
-              "date": "2026-03-29",
-              "time": "12:15",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65165&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-03-29",
-              "time": "15:45",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65131&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-03-30",
               "time": "15:45",
               "screen": 4,
@@ -2637,56 +2416,6 @@
           "writer": "Andy Weir, Drew Goddard"
         },
         {
-          "title": "Hoppers",
-          "search_title": "Hoppers",
-          "film_slug": "hoppers",
-          "synopsis": "Scientists have discovered how to \"hop\" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an...",
-          "cast": "Piper Curda (Mabel Tanaka / Mabel Beaver (voice)), Bobby Moynihan (King George (voice)), Jon Hamm (Mayor Jerry Generazzo (voice)), Kathy Najimy (Dr. Sam (voice)), Eduardo Franco (Loaf (voice)), Aparna Nancherla (Nisha (voice)), Meryl Streep (Insect Queen (voice)), Dave Franco (Insect King (voice)), Eman Abdul-Razzak (Insect Prince (voice)), Tom Law (Tom Lizard (voice)), Sam Richardson (Conner (voice)), Melissa Villaseñor (Ellen Bear (voice))",
-          "runtime_min": 105,
-          "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=newquay",
-          "poster_url": "posters/hoppers.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-29",
-              "time": "12:00",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65162&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-29",
-              "time": "14:45",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65176&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=nIKsi-Ud3w8",
-          "vote_average": 8.0,
-          "genres": [
-            "Animation",
-            "Family",
-            "Comedy",
-            "Science Fiction"
-          ],
-          "imdb_id": "tt26443616",
-          "overview": "Scientists have discovered how to \"hop\" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world that are beyond anything she could have imagined.",
-          "director": "Daniel Chong",
-          "writer": "Jesse Andrews, Daniel Chong"
-        },
-        {
           "title": "Mother’s Pride",
           "search_title": "Mother’s Pride",
           "film_slug": "mothers-pride",
@@ -2696,19 +2425,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mothers-pride/?screen=newquay",
           "poster_url": "posters/mothers-pride.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-29",
-              "time": "14:30",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65161&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-30",
               "time": "17:15",
@@ -2762,10 +2478,11 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=D-Ui79xGMTI",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=u1V8bdl21Bw",
+          "vote_average": 7.0,
           "genres": [
-            "Comedy"
+            "Comedy",
+            "Drama"
           ],
           "imdb_id": "tt32569057",
           "overview": "A comedy about a failing pub, a divided community and a grieving family whose lives are changed by brewing real ale and entering the Great British Beer Awards.",
@@ -2782,19 +2499,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/ready-or-not-2-here-i-come/?screen=newquay",
           "poster_url": "posters/ready-or-not-2-here-i-come.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-29",
-              "time": "17:30",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65164&screen=newquay",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-03-30",
               "time": "17:30",
@@ -2913,7 +2617,7 @@
           "search_title": "EPiC: Elvis Presley in Concert",
           "film_slug": "epic-elvis-presley-in-concert",
           "synopsis": "A mix of a documentary and concert film made using unused footage from Elvis: That's the Way It Is, the film of Elvis' legendary 1970...",
-          "cast": "Elvis Presley (Self (archive footage)), Sammy Davis Jr. (Self (archive footage)), Cary Grant (Self (archive footage)), Tom Parker (Self (archive footage)), Bono (Self (voice)), James Burton (Self (archive footage)), John Wilkinson (Self (archive footage)), Jerry Scheff (Self (archive footage)), Glen D. Hardin (Self (archive footage)), Ronnie Tutt (Self (archive footage)), Kathy Westmoreland (Self (archive footage)), J.D. Sumner (Self (archive footage))",
+          "cast": "Elvis Presley (Self (archive footage)), James Burton (Self (archive footage)), John Wilkinson (Self (archive footage)), Charlie Hodge (Self (archive footage)), Jerry Scheff (Self (archive footage)), Glen D. Hardin (Self (archive footage)), Ronnie Tutt (Self (archive footage)), Bono (Self (voice)), Sammy Davis Jr. (Self (archive footage)), Cary Grant (Self (archive footage)), Tom Parker (Self (archive footage)), Kathy Westmoreland (Self (archive footage))",
           "runtime_min": 90,
           "film_url": "https://wtwcinemas.co.uk/film/epic-elvis-presley-in-concert/?screen=newquay",
           "poster_url": "posters/epic-elvis-presley-in-concert.jpg",
@@ -2950,8 +2654,8 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=PalDl9XNjn8",
-          "vote_average": 8.2,
+          "trailer_url": "https://www.youtube.com/watch?v=v9fEeCvCLJ8",
+          "vote_average": 8.3,
           "genres": [
             "Music",
             "Documentary"
@@ -3074,18 +2778,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/dont-be-prey/?screen=newquay",
           "poster_url": "posters/dont-be-prey.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-29",
-              "time": "17:15",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65123&screen=newquay",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-19",
               "time": "17:30",
@@ -4104,12 +3796,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 24,
-        "selector_film_nodes": 24,
-        "primary_selector_nodes": 24,
+        "raw_cards": 23,
+        "selector_film_nodes": 23,
+        "primary_selector_nodes": 23,
         "fallback_selector_nodes": 0,
-        "parsed_films": 20,
-        "parsed_showtimes": 128
+        "parsed_films": 19,
+        "parsed_showtimes": 118
       }
     },
     "truro": {
@@ -4126,57 +3818,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=truro",
           "poster_url": "posters/the-magic-faraway-tree.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-29",
-              "time": "11:45",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119793&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-29",
-              "time": "14:00",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119581&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-29",
-              "time": "16:45",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119580&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-29",
-              "time": "19:15",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119803&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-30",
               "time": "16:45",
@@ -4496,45 +4137,6 @@
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
             {
-              "date": "2026-03-29",
-              "time": "13:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119790&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-29",
-              "time": "16:30",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119791&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-29",
-              "time": "19:30",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119579&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-30",
               "time": "16:30",
               "screen": 2,
@@ -4677,30 +4279,6 @@
           "poster_url": "posters/they-will-kill-you.jpg",
           "showtimes": [
             {
-              "date": "2026-03-29",
-              "time": "17:30",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119798&screen=truro",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-29",
-              "time": "20:15",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119792&screen=truro",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-30",
               "time": "17:30",
               "screen": 4,
@@ -4810,56 +4388,6 @@
           "writer": "Kirill Sokolov, Alex Litvak"
         },
         {
-          "title": "Hoppers",
-          "search_title": "Hoppers",
-          "film_slug": "hoppers",
-          "synopsis": "Scientists have discovered how to \"hop\" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an...",
-          "cast": "Piper Curda (Mabel Tanaka / Mabel Beaver (voice)), Bobby Moynihan (King George (voice)), Jon Hamm (Mayor Jerry Generazzo (voice)), Kathy Najimy (Dr. Sam (voice)), Eduardo Franco (Loaf (voice)), Aparna Nancherla (Nisha (voice)), Meryl Streep (Insect Queen (voice)), Dave Franco (Insect King (voice)), Eman Abdul-Razzak (Insect Prince (voice)), Tom Law (Tom Lizard (voice)), Sam Richardson (Conner (voice)), Melissa Villaseñor (Ellen Bear (voice))",
-          "runtime_min": 105,
-          "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=truro",
-          "poster_url": "posters/hoppers.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-29",
-              "time": "11:30",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119789&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-29",
-              "time": "14:30",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119794&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=nIKsi-Ud3w8",
-          "vote_average": 8.0,
-          "genres": [
-            "Animation",
-            "Family",
-            "Comedy",
-            "Science Fiction"
-          ],
-          "imdb_id": "tt26443616",
-          "overview": "Scientists have discovered how to \"hop\" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world that are beyond anything she could have imagined.",
-          "director": "Daniel Chong",
-          "writer": "Jesse Andrews, Daniel Chong"
-        },
-        {
           "title": "Mother’s Pride",
           "search_title": "Mother’s Pride",
           "film_slug": "mothers-pride",
@@ -4869,19 +4397,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mothers-pride/?screen=truro",
           "poster_url": "posters/mothers-pride.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-29",
-              "time": "19:45",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119796&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-30",
               "time": "19:45",
@@ -4935,10 +4450,11 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=D-Ui79xGMTI",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=u1V8bdl21Bw",
+          "vote_average": 7.0,
           "genres": [
-            "Comedy"
+            "Comedy",
+            "Drama"
           ],
           "imdb_id": "tt32569057",
           "overview": "A comedy about a failing pub, a divided community and a grieving family whose lives are changed by brewing real ale and entering the Great British Beer Awards.",
@@ -4967,20 +4483,6 @@
                 "Wheelchair access",
                 "2D"
               ]
-            },
-            {
-              "date": "2026-03-29",
-              "time": "20:00",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119804&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "2D"
-              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=OkTORvuELow",
@@ -5004,40 +4506,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/arco/?screen=truro",
           "poster_url": "posters/arco.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-29",
-              "time": "12:00",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119797&screen=truro",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-29",
-              "time": "14:45",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119801&screen=truro",
-              "tags": [
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-29",
-              "time": "17:00",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119802&screen=truro",
-              "tags": [
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-30",
               "time": "17:00",
@@ -5102,7 +4570,7 @@
           "search_title": "EPiC: Elvis Presley in Concert",
           "film_slug": "epic-elvis-presley-in-concert",
           "synopsis": "A mix of a documentary and concert film made using unused footage from Elvis: That's the Way It Is, the film of Elvis' legendary 1970...",
-          "cast": "Elvis Presley (Self (archive footage)), Sammy Davis Jr. (Self (archive footage)), Cary Grant (Self (archive footage)), Tom Parker (Self (archive footage)), Bono (Self (voice)), James Burton (Self (archive footage)), John Wilkinson (Self (archive footage)), Jerry Scheff (Self (archive footage)), Glen D. Hardin (Self (archive footage)), Ronnie Tutt (Self (archive footage)), Kathy Westmoreland (Self (archive footage)), J.D. Sumner (Self (archive footage))",
+          "cast": "Elvis Presley (Self (archive footage)), James Burton (Self (archive footage)), John Wilkinson (Self (archive footage)), Charlie Hodge (Self (archive footage)), Jerry Scheff (Self (archive footage)), Glen D. Hardin (Self (archive footage)), Ronnie Tutt (Self (archive footage)), Bono (Self (voice)), Sammy Davis Jr. (Self (archive footage)), Cary Grant (Self (archive footage)), Tom Parker (Self (archive footage)), Kathy Westmoreland (Self (archive footage))",
           "runtime_min": 90,
           "film_url": "https://wtwcinemas.co.uk/film/epic-elvis-presley-in-concert/?screen=truro",
           "poster_url": "posters/epic-elvis-presley-in-concert.jpg",
@@ -5138,8 +4606,8 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=PalDl9XNjn8",
-          "vote_average": 8.2,
+          "trailer_url": "https://www.youtube.com/watch?v=v9fEeCvCLJ8",
+          "vote_average": 8.3,
           "genres": [
             "Music",
             "Documentary"
@@ -5199,42 +4667,6 @@
           "overview": "Young orphan Heathcliff is adopted by the wealthy Earnshaw family and moves into their estate, Wuthering Heights. Soon, the new resident falls for his compassionate foster sister, Cathy. The two share a remarkable bond that seems unbreakable until Cathy, feeling the pressure of social convention, suppresses her feelings and marries Edgar Linton, a man of means who befits her stature. Heathcliff vows to win her back.",
           "director": "Peter Kosminsky",
           "writer": "Anne Devlin, Emily Brontë"
-        },
-        {
-          "title": "GOAT",
-          "search_title": "GOAT",
-          "film_slug": "goat",
-          "synopsis": "Will, a small goat with big dreams, gets a once-in-a-lifetime shot to join the pros and play roarball - a high-intensity, co-ed, full-contact sport dominated...",
-          "cast": "Caleb McLaughlin (Will Harris (voice)), Gabrielle Union (Jett Fillmore (voice)), Stephen Curry (Lenny Williamson (voice)), Aaron Pierre (Mane Attraction (voice)), Nicola Coughlan (Olivia Burke (voice)), David Harbour (Archie Everhardt (voice)), Nick Kroll (Modo Olachenko (voice)), Jenifer Lewis (Flo Everson (voice)), Patton Oswalt (Dennis Cooper (voice)), Jelly Roll (Grizz (voice)), Jennifer Hudson (Louise Harris (voice)), Sherry Cola (Hannah (voice))",
-          "runtime_min": 100,
-          "film_url": "https://wtwcinemas.co.uk/film/goat/?screen=truro",
-          "poster_url": "posters/goat.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-29",
-              "time": "12:15",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119800&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D",
-                "Strobe Light warning"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=WFTAGv9zTAc",
-          "vote_average": 7.582,
-          "genres": [
-            "Animation",
-            "Comedy",
-            "Family"
-          ],
-          "imdb_id": "tt27613895",
-          "overview": "A small goat with big dreams gets a once-in-a-lifetime shot to join the pros and play roarball, a high-intensity, co-ed, full-contact sport dominated by the fastest, fiercest animals in the world.",
-          "director": "Tyree Dillihay",
-          "writer": "Aaron Buchsbaum, Teddy Riley"
         },
         {
           "title": "Hamnet",
@@ -5332,19 +4764,6 @@
           "poster_url": "posters/midwinter-break.jpg",
           "showtimes": [
             {
-              "date": "2026-03-29",
-              "time": "17:15",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119795&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-03-30",
               "time": "17:15",
               "screen": 3,
@@ -5391,19 +4810,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-last-blossom-anime-season-subtitled/?screen=truro",
           "poster_url": "",
           "showtimes": [
-            {
-              "date": "2026-03-29",
-              "time": "14:30",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119659&screen=truro",
-              "tags": [
-                "Subtitles",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-31",
               "time": "20:00",
@@ -6449,6 +5855,68 @@
           "writer": ""
         },
         {
+          "title": "Don’t Look Now - Pat’s (Horror) Film Club",
+          "search_title": "Don’t Look Now - Pat’s (Horror) Film Club",
+          "film_slug": "dont-look-now-pats-horror-film-club",
+          "synopsis": "While grieving a terrible loss, a married couple meet two mysterious sisters, one of whom gives them a message sent from the afterlife.",
+          "cast": "Donald Sutherland, Julie Christie, Hilary Mason",
+          "runtime_min": 110,
+          "film_url": "https://wtwcinemas.co.uk/film/dont-look-now-pats-horror-film-club/?screen=truro",
+          "poster_url": "",
+          "showtimes": [
+            {
+              "date": "2026-05-08",
+              "time": "20:30",
+              "screen": 3,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=119851&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "",
+          "vote_average": null,
+          "genres": [],
+          "imdb_id": "",
+          "overview": "",
+          "director": "",
+          "writer": ""
+        },
+        {
+          "title": "A Clockwork Orange - Pat’s Film Club",
+          "search_title": "A Clockwork Orange - Pat’s Film Club",
+          "film_slug": "a-clockwork-orange-pats-film-club",
+          "synopsis": "In a near-future Britain, young Alexander DeLarge and his pals get their kicks beating and raping anyone they please. When not destroying the lives of...",
+          "cast": "Malcolm McDowell, Patrick Magee, Carl Duering",
+          "runtime_min": 137,
+          "film_url": "https://wtwcinemas.co.uk/film/a-clockwork-orange-pats-film-club/?screen=truro",
+          "poster_url": "",
+          "showtimes": [
+            {
+              "date": "2026-05-17",
+              "time": "18:00",
+              "screen": 3,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=119852&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "",
+          "vote_average": null,
+          "genres": [],
+          "imdb_id": "",
+          "overview": "",
+          "director": "",
+          "writer": ""
+        },
+        {
           "title": "Frida Kahlo - Exhibition On Screen",
           "search_title": "Frida Kahlo - Exhibition On Screen",
           "film_slug": "frida-kahlo-exhibition-on-screen",
@@ -6594,12 +6062,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 32,
-        "selector_film_nodes": 32,
-        "primary_selector_nodes": 32,
+        "raw_cards": 31,
+        "selector_film_nodes": 31,
+        "primary_selector_nodes": 31,
         "fallback_selector_nodes": 0,
         "parsed_films": 27,
-        "parsed_showtimes": 151
+        "parsed_showtimes": 134
       }
     },
     "wadebridge": {
@@ -6616,32 +6084,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=wadebridge",
           "poster_url": "posters/the-magic-faraway-tree.jpg",
           "showtimes": [
-            {
-              "date": "2026-03-29",
-              "time": "13:45",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28440&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-03-29",
-              "time": "16:30",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28439&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-03-30",
               "time": "16:30",
@@ -6913,20 +6355,6 @@
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
             {
-              "date": "2026-03-29",
-              "time": "15:30",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28566&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-03-30",
               "time": "15:30",
               "screen": 2,
@@ -7010,48 +6438,11 @@
           "writer": "Andy Weir, Drew Goddard"
         },
         {
-          "title": "Hoppers",
-          "search_title": "Hoppers",
-          "film_slug": "hoppers",
-          "synopsis": "Scientists have discovered how to \"hop\" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an...",
-          "cast": "Piper Curda (Mabel Tanaka / Mabel Beaver (voice)), Bobby Moynihan (King George (voice)), Jon Hamm (Mayor Jerry Generazzo (voice)), Kathy Najimy (Dr. Sam (voice)), Eduardo Franco (Loaf (voice)), Aparna Nancherla (Nisha (voice)), Meryl Streep (Insect Queen (voice)), Dave Franco (Insect King (voice)), Eman Abdul-Razzak (Insect Prince (voice)), Tom Law (Tom Lizard (voice)), Sam Richardson (Conner (voice)), Melissa Villaseñor (Ellen Bear (voice))",
-          "runtime_min": 105,
-          "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=wadebridge",
-          "poster_url": "posters/hoppers.jpg",
-          "showtimes": [
-            {
-              "date": "2026-03-29",
-              "time": "13:00",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28571&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=nIKsi-Ud3w8",
-          "vote_average": 8.0,
-          "genres": [
-            "Animation",
-            "Family",
-            "Comedy",
-            "Science Fiction"
-          ],
-          "imdb_id": "tt26443616",
-          "overview": "Scientists have discovered how to \"hop\" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world that are beyond anything she could have imagined.",
-          "director": "Daniel Chong",
-          "writer": "Jesse Andrews, Daniel Chong"
-        },
-        {
           "title": "EPiC: Elvis Presley in Concert",
           "search_title": "EPiC: Elvis Presley in Concert",
           "film_slug": "epic-elvis-presley-in-concert",
           "synopsis": "A mix of a documentary and concert film made using unused footage from Elvis: That's the Way It Is, the film of Elvis' legendary 1970...",
-          "cast": "Elvis Presley (Self (archive footage)), Sammy Davis Jr. (Self (archive footage)), Cary Grant (Self (archive footage)), Tom Parker (Self (archive footage)), Bono (Self (voice)), James Burton (Self (archive footage)), John Wilkinson (Self (archive footage)), Jerry Scheff (Self (archive footage)), Glen D. Hardin (Self (archive footage)), Ronnie Tutt (Self (archive footage)), Kathy Westmoreland (Self (archive footage)), J.D. Sumner (Self (archive footage))",
+          "cast": "Elvis Presley (Self (archive footage)), James Burton (Self (archive footage)), John Wilkinson (Self (archive footage)), Charlie Hodge (Self (archive footage)), Jerry Scheff (Self (archive footage)), Glen D. Hardin (Self (archive footage)), Ronnie Tutt (Self (archive footage)), Bono (Self (voice)), Sammy Davis Jr. (Self (archive footage)), Cary Grant (Self (archive footage)), Tom Parker (Self (archive footage)), Kathy Westmoreland (Self (archive footage))",
           "runtime_min": 90,
           "film_url": "https://wtwcinemas.co.uk/film/epic-elvis-presley-in-concert/?screen=wadebridge",
           "poster_url": "posters/epic-elvis-presley-in-concert.jpg",
@@ -7088,8 +6479,8 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=PalDl9XNjn8",
-          "vote_average": 8.2,
+          "trailer_url": "https://www.youtube.com/watch?v=v9fEeCvCLJ8",
+          "vote_average": 8.3,
           "genres": [
             "Music",
             "Documentary"
@@ -8187,12 +7578,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 19,
-        "selector_film_nodes": 19,
-        "primary_selector_nodes": 19,
+        "raw_cards": 18,
+        "selector_film_nodes": 18,
+        "primary_selector_nodes": 18,
         "fallback_selector_nodes": 0,
-        "parsed_films": 16,
-        "parsed_showtimes": 97
+        "parsed_films": 15,
+        "parsed_showtimes": 93
       }
     }
   }
