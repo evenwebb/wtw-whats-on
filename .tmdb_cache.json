@@ -21,7 +21,7 @@
     "director": "David McVicar",
     "writer": "",
     "cast": "Julia Bullock, Amitai Pati, Huw Montague Rendall, Kathyrn Lewek",
-    "cached_at": "2026-04-03T09:46:58.179572"
+    "cached_at": "2026-04-04T09:30:41.339649"
   },
   "good-luck-have-fun-don-t-die": {
     "poster_url": "https://image.tmdb.org/t/p/w342/af7yguGbWQyvYtk6QCD5l4yBbKN.jpg",
@@ -679,5 +679,20 @@
     "writer": "",
     "cast": "",
     "cached_at": "2026-04-02T09:53:54.067283"
+  },
+  "you-me-tuscany": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/mJS0IF7Af3WpPRhSTDT6rGpiLzw.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=rb7-mWMNkFE",
+    "vote_average": 0.0,
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
+    "imdb_id": "tt36352591",
+    "overview": "A free-spirited American chef and reserved British lawyer embark on a whirlwind romance during a destination wedding in coastal Italy.",
+    "director": "Kat Coiro",
+    "writer": "Ryan Engle",
+    "cast": "Halle Bailey (Anna), Regé-Jean Page (Michael), Marco Calvani, Aziza Scott (Claire), Lorenzo de Moor (Matteo), Isabella Ferrari (Gabriella), Nia Vardalos (Mrs. Dunn), Stefania Casini (Nonna Alessia), Desirée Popper (Isabella), Tommaso Cassissa (Enzo), Stella Pecollo (Francesca), Paolo Sassanelli (Vincenzo)",
+    "cached_at": "2026-04-04T09:30:40.668857"
   }
 }
