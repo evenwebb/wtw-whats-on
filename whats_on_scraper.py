@@ -17,6 +17,7 @@ from copy import deepcopy
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
+from zoneinfo import ZoneInfo
 from urllib.parse import quote_plus, urljoin
 
 import requests
@@ -35,6 +36,9 @@ USER_AGENT = (
 )
 
 WTW_BASE = "https://wtwcinemas.co.uk"
+# WTW cinemas are in England; use UK civil date for "Today", tabs, and now/coming split.
+DISPLAY_TZ = ZoneInfo("Europe/London")
+SHOWTIMES_JSON_VERSION = 1
 WTW_CINEMAS = {
     "st-austell": {
         "enabled": True,
@@ -123,6 +127,31 @@ MAX_CONSECUTIVE_CINEMA_FAILURES = _env_int("MAX_CONSECUTIVE_CINEMA_FAILURES", de
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
 HTTP_SESSION = requests.Session()
+
+
+def uk_today_iso() -> str:
+    return datetime.now(DISPLAY_TZ).date().isoformat()
+
+
+def showtimes_compact_json(showtimes: List[Dict[str, Any]]) -> str:
+    """Compact JSON for embedded HTML: shorter than list of objects (field names omitted per row)."""
+    rows = [
+        [
+            st.get("date", ""),
+            st.get("time", ""),
+            st.get("screen", ""),
+            st.get("cinema_name", ""),
+            st.get("booking_url", ""),
+            st.get("tags") or [],
+        ]
+        for st in showtimes
+    ]
+    return json.dumps(
+        {"v": SHOWTIMES_JSON_VERSION, "r": rows},
+        ensure_ascii=False,
+        separators=(",", ":"),
+    ).replace("</", "<\\/")
+
 
 # BBFC rating pattern in titles: (15), (12A), (PG), (18), (U), (R18), (with subtitles) etc.
 RATING_PATTERN = re.compile(r"\((\d+A?|U|PG|R18)\)", re.IGNORECASE)
@@ -941,7 +970,7 @@ def validate_scrape_health(data: Dict[str, Any]) -> None:
     cinemas_with_films = 0
     markup_suspect_cinemas = 0
     now_showing_films = 0
-    today_iso = datetime.now(timezone.utc).date().isoformat()
+    today_iso = uk_today_iso()
     issues: List[str] = []
 
     for slug, cinema in cinemas.items():
@@ -1106,7 +1135,7 @@ def build_html(data: Dict[str, Any]) -> str:
         film["cinema_names_list"] = cinema_names_short
         film["cinema_name"] = ", ".join(cinema_names_short)
         films.append(film)
-    build_today_iso = datetime.now(timezone.utc).date().isoformat()
+    build_today_iso = uk_today_iso()
 
     # Collect unique dates for tabs
     all_dates = set()
@@ -1236,19 +1265,9 @@ def build_html(data: Dict[str, Any]) -> str:
         hidden_showings = showtimes_all[INITIAL_SHOWINGS_VISIBLE:]
         showtimes_html = render_showings(visible_showings)
         show_more_block = ""
+        full_showtimes_json = showtimes_compact_json(showtimes_all)
         if hidden_showings:
-            hidden_payload = [
-                {
-                    "date": st.get("date", ""),
-                    "time": st.get("time", ""),
-                    "screen": st.get("screen", ""),
-                    "cinema_name": st.get("cinema_name", ""),
-                    "booking_url": st.get("booking_url", ""),
-                    "tags": st.get("tags") or [],
-                }
-                for st in hidden_showings
-            ]
-            hidden_json = json.dumps(hidden_payload, ensure_ascii=False).replace("</", "<\\/")
+            hidden_json = showtimes_compact_json(hidden_showings)
             count = len(hidden_showings)
             noun = "showing" if count == 1 else "showings"
             show_more_block = (
@@ -1305,6 +1324,7 @@ def build_html(data: Dict[str, Any]) -> str:
         status_label = "Now Showing" if status == "now" else "Coming Soon"
         return f"""
 <article class="film-card" data-dates="{",".join(showtimes_by_date.keys())}" data-status="{status}">
+  <script type="application/json" class="film-showtimes-full">{full_showtimes_json}</script>
   <span class="status-pill status-pill--{status}">{status_label}</span>
   <div class="film-header">
     {poster_div}
@@ -1711,7 +1731,7 @@ def build_html(data: Dict[str, Any]) -> str:
       <p>Ratings, trailers &amp; links to IMDb, RT and Trakt</p>
     </header>
     <div class="tabs">{tabs_html}</div>
-    <main id="films">{cards_html}</main>
+    <main id="films" data-initial-showings="{INITIAL_SHOWINGS_VISIBLE}">{cards_html}</main>
     <footer>
       <p class="footer-disclaimer">An open source fan-made project. Not affiliated with WTW Cinemas.</p>
       <div class="footer-links">
@@ -1727,30 +1747,6 @@ def build_html(data: Dict[str, Any]) -> str:
     </footer>
   </div>
   <script>
-    document.querySelectorAll('.tab').forEach(function(btn) {{
-      btn.addEventListener('click', function() {{
-        document.querySelectorAll('.tab').forEach(function(b) {{ b.classList.remove('active'); }});
-        btn.classList.add('active');
-        var date = btn.getAttribute('data-date');
-        var isAll = date === 'all';
-        var sectionVisibility = {{ now: false, coming: false }};
-        document.querySelectorAll('.film-card').forEach(function(card) {{
-          var dates = (card.getAttribute('data-dates') || '').split(',');
-          var show = isAll || dates.indexOf(date) !== -1;
-          card.style.display = show ? 'block' : 'none';
-          if (show) {{
-            var status = card.getAttribute('data-status') || '';
-            if (status === 'now') sectionVisibility.now = true;
-            if (status === 'coming-soon') sectionVisibility.coming = true;
-          }}
-        }});
-        document.querySelectorAll('.film-section').forEach(function(section) {{
-          var sectionType = section.getAttribute('data-section') || '';
-          var showSection = sectionType === 'now' ? sectionVisibility.now : sectionVisibility.coming;
-          section.style.display = showSection ? 'grid' : 'none';
-        }});
-      }});
-    }});
     document.querySelectorAll('.cast-more-btn').forEach(function(btn) {{
       btn.addEventListener('click', function() {{
         var rest = btn.previousElementSibling;
@@ -1762,6 +1758,35 @@ def build_html(data: Dict[str, Any]) -> str:
       }});
     }});
     (function() {{
+      var filmsMain = document.getElementById('films');
+      var initialShowings = parseInt((filmsMain && filmsMain.getAttribute('data-initial-showings')) || '10', 10);
+      var se = 'script';
+
+      function showtimeFromRow(row) {{
+        if (!row) return {{ date: '', time: '', screen: '', cinema_name: '', booking_url: '', tags: [] }};
+        if (!Array.isArray(row)) return row;
+        return {{
+          date: row[0] || '',
+          time: row[1] || '',
+          screen: row[2],
+          cinema_name: row[3] || '',
+          booking_url: row[4] || '',
+          tags: Array.isArray(row[5]) ? row[5] : []
+        }};
+      }}
+      function showtimesFromParsed(raw) {{
+        if (!raw) return [];
+        if (raw.v === 1 && Array.isArray(raw.r)) return raw.r.map(showtimeFromRow);
+        if (Array.isArray(raw)) {{
+          if (raw.length && Array.isArray(raw[0])) return raw.map(showtimeFromRow);
+          return raw.slice();
+        }}
+        return [];
+      }}
+      function showtimeToCompactRow(st) {{
+        return [st.date || '', st.time || '', st.screen, st.cinema_name || '', st.booking_url || '', st.tags || []];
+      }}
+
       function escHtml(value) {{
         return String(value || '')
           .replace(/&/g, '&amp;')
@@ -1771,9 +1796,9 @@ def build_html(data: Dict[str, Any]) -> str:
       }}
       function formatDateLabel(isoDate) {{
         if (!isoDate) return '';
-        var dt = new Date(isoDate + 'T00:00:00Z');
+        var dt = new Date(isoDate + 'T12:00:00Z');
         if (Number.isNaN(dt.getTime())) return isoDate;
-        return dt.toLocaleDateString('en-GB', {{ weekday: 'short', day: '2-digit', month: 'short', timeZone: 'UTC' }});
+        return dt.toLocaleDateString('en-GB', {{ weekday: 'short', day: '2-digit', month: 'short', timeZone: 'Europe/London' }});
       }}
       function tagHtml(tag) {{
         var iconMap = {{
@@ -1806,7 +1831,7 @@ def build_html(data: Dict[str, Any]) -> str:
         }}
         return '<span class="tag"' + titleAttr + '>' + escHtml(label) + '</span>';
       }}
-      function renderExtraShowings(list) {{
+      function renderShowingsHtml(list) {{
         var grouped = {{}};
         list.forEach(function(st) {{
           var d = st.date || '';
@@ -1830,8 +1855,87 @@ def build_html(data: Dict[str, Any]) -> str:
         }}).join('');
       }}
 
-      document.querySelectorAll('.showtimes-more-btn').forEach(function(btn) {{
+      function sortShowtimes(list) {{
+        list.sort(function(a, b) {{
+          var ad = a.date || '';
+          var bd = b.date || '';
+          if (ad !== bd) return ad < bd ? -1 : ad > bd ? 1 : 0;
+          var at = a.time || '';
+          var bt = b.time || '';
+          if (at !== bt) return at < bt ? -1 : at > bt ? 1 : 0;
+          var as = String(a.screen || '');
+          var bs = String(b.screen || '');
+          if (as !== bs) return as < bs ? -1 : as > bs ? 1 : 0;
+          var ab = a.booking_url || '';
+          var bb = b.booking_url || '';
+          return ab < bb ? -1 : ab > bb ? 1 : 0;
+        }});
+      }}
+
+      function buildShowtimesInner(list) {{
+        var copy = list.slice();
+        sortShowtimes(copy);
+        var visible = copy.slice(0, initialShowings);
+        var hidden = copy.slice(initialShowings);
+        var html = renderShowingsHtml(visible);
+        if (hidden.length) {{
+          var hiddenJson = JSON.stringify({{ v: 1, r: hidden.map(showtimeToCompactRow) }}).replace(/<\\//g, '<\\/');
+          var count = hidden.length;
+          var noun = count === 1 ? 'showing' : 'showings';
+          html += '<' + se + ' type="application/json" class="showtimes-more-data">' + hiddenJson + '</' + se + '>';
+          html += '<div class="showtimes-more" hidden></div>';
+          html += '<button type="button" class="showtimes-more-btn" aria-expanded="false">Show ' + count + ' more ' + noun + '</button>';
+        }}
+        return html;
+      }}
+
+      function applyShowtimesForSelectedDate(selectedDate) {{
+        var isAll = selectedDate === 'all';
+        document.querySelectorAll('.film-card').forEach(function(card) {{
+          var dataScript = card.querySelector('script.film-showtimes-full');
+          var showtimesEl = card.querySelector('.showtimes');
+          if (!dataScript || !showtimesEl) return;
+          var all = [];
+          try {{
+            all = showtimesFromParsed(JSON.parse(dataScript.textContent || 'null'));
+          }} catch (e1) {{
+            return;
+          }}
+          var picked = isAll ? all.slice() : all.filter(function(st) {{ return st.date === selectedDate; }});
+          showtimesEl.innerHTML = buildShowtimesInner(picked);
+        }});
+      }}
+
+      document.querySelectorAll('.tab').forEach(function(btn) {{
         btn.addEventListener('click', function() {{
+          document.querySelectorAll('.tab').forEach(function(b) {{ b.classList.remove('active'); }});
+          btn.classList.add('active');
+          var date = btn.getAttribute('data-date');
+          var isAll = date === 'all';
+          var sectionVisibility = {{ now: false, coming: false }};
+          document.querySelectorAll('.film-card').forEach(function(card) {{
+            var dates = (card.getAttribute('data-dates') || '').split(',');
+            var show = isAll || dates.indexOf(date) !== -1;
+            card.style.display = show ? 'block' : 'none';
+            if (show) {{
+              var status = card.getAttribute('data-status') || '';
+              if (status === 'now') sectionVisibility.now = true;
+              if (status === 'coming-soon') sectionVisibility.coming = true;
+            }}
+          }});
+          document.querySelectorAll('.film-section').forEach(function(section) {{
+            var sectionType = section.getAttribute('data-section') || '';
+            var showSection = sectionType === 'now' ? sectionVisibility.now : sectionVisibility.coming;
+            section.style.display = showSection ? 'grid' : 'none';
+          }});
+          applyShowtimesForSelectedDate(date);
+        }});
+      }});
+
+      if (filmsMain) {{
+        filmsMain.addEventListener('click', function(e) {{
+          var btn = e.target.closest('.showtimes-more-btn');
+          if (!btn || !filmsMain.contains(btn)) return;
           var card = btn.closest('.film-card');
           if (!card) return;
           var holder = card.querySelector('.showtimes-more');
@@ -1848,9 +1952,9 @@ def build_html(data: Dict[str, Any]) -> str:
 
           if (!holder.hasChildNodes()) {{
             try {{
-              var list = JSON.parse(dataNode.textContent || '[]');
-              holder.innerHTML = renderExtraShowings(list);
-            }} catch (e) {{
+              var list = showtimesFromParsed(JSON.parse(dataNode.textContent || 'null'));
+              holder.innerHTML = renderShowingsHtml(list);
+            }} catch (e2) {{
               holder.innerHTML = '';
             }}
           }}
@@ -1859,7 +1963,7 @@ def build_html(data: Dict[str, Any]) -> str:
           if (!btn.getAttribute('data-show-label')) btn.setAttribute('data-show-label', btn.textContent);
           btn.textContent = 'Show less';
         }});
-      }});
+      }}
     }})();
     (function() {{
       var lb = document.getElementById('trailer-lightbox');
