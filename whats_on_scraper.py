@@ -15,6 +15,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from copy import deepcopy
 from datetime import datetime, timedelta, timezone
+from html import escape as html_escape
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 from zoneinfo import ZoneInfo
@@ -1144,6 +1145,15 @@ def build_html(data: Dict[str, Any]) -> str:
             all_dates.add(st.get("date", ""))
     sorted_dates = sorted(all_dates) if all_dates else []
 
+    all_cinemas_short = sorted(
+        {
+            short_cinema_name(str(st.get("cinema_name") or ""))
+            for f in films
+            for st in (f.get("showtimes") or [])
+            if short_cinema_name(str(st.get("cinema_name") or ""))
+        }
+    )
+
     def cert_span(rating: Optional[str]) -> str:
         """WTW-style cert icon: <span class="cert cert--15"></span>. Uses scraped cert images for U, PG, 12A, 15, 18; fallback for 12/R18."""
         if not rating:
@@ -1322,8 +1332,9 @@ def build_html(data: Dict[str, Any]) -> str:
         earliest = min(showtimes_by_date.keys()) if showtimes_by_date else ""
         status = "now" if earliest and earliest <= build_today_iso else "coming-soon"
         status_label = "Now Showing" if status == "now" else "Coming Soon"
+        cinemas_on_card = ",".join(f.get("cinema_names_list") or [])
         return f"""
-<article class="film-card" data-dates="{",".join(showtimes_by_date.keys())}" data-status="{status}">
+<article class="film-card" data-dates="{",".join(showtimes_by_date.keys())}" data-cinemas="{html_escape(cinemas_on_card, quote=True)}" data-status="{status}">
   <script type="application/json" class="film-showtimes-full">{full_showtimes_json}</script>
   <span class="status-pill status-pill--{status}">{status_label}</span>
   <div class="film-header">
@@ -1371,17 +1382,41 @@ def build_html(data: Dict[str, Any]) -> str:
     cards_html = "\n".join(s for s in (section_now, section_coming) if s)
 
     # Date filter tabs
-    tabs = ['<button type="button" class="tab active" data-date="all">All</button>']
+    tabs = ['<button type="button" class="tab tab-date active" data-date="all">All dates</button>']
     for d in sorted_dates[:14]:
         try:
             dt = datetime.strptime(d, "%Y-%m-%d")
             label = dt.strftime("%a %d")
             if d == build_today_iso:
                 label = "Today"
-            tabs.append(f'<button type="button" class="tab" data-date="{d}">{label}</button>')
+            tabs.append(f'<button type="button" class="tab tab-date" data-date="{html_escape(d, quote=True)}">{html_escape(label)}</button>')
         except ValueError:
-            tabs.append(f'<button type="button" class="tab" data-date="{d}">{d}</button>')
+            tabs.append(
+                f'<button type="button" class="tab tab-date" data-date="{html_escape(d, quote=True)}">{html_escape(d)}</button>'
+            )
     tabs_html = "\n".join(tabs)
+
+    cinema_tabs = [
+        '<button type="button" class="tab tab-cinema active" data-cinema="all">All cinemas</button>'
+    ]
+    for c in all_cinemas_short:
+        cinema_tabs.append(
+            f'<button type="button" class="tab tab-cinema" data-cinema="{html_escape(c, quote=True)}">{html_escape(c)}</button>'
+        )
+    cinema_tabs_html = "\n".join(cinema_tabs)
+
+    filter_tabs_html = (
+        f'<div class="filter-tabs">'
+        f'<div class="tabs-wrap" role="group" aria-label="Filter by cinema">'
+        f'<div class="tabs-label">Cinema</div>'
+        f'<div class="tabs">{cinema_tabs_html}</div>'
+        f"</div>"
+        f'<div class="tabs-wrap" role="group" aria-label="Filter by date">'
+        f'<div class="tabs-label">Date</div>'
+        f'<div class="tabs">{tabs_html}</div>'
+        f"</div>"
+        f"</div>"
+    )
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -1464,7 +1499,16 @@ def build_html(data: Dict[str, Any]) -> str:
       background-clip: text;
     }}
     header p {{ color: var(--text-muted); font-size: 0.95rem; margin-top: 0.25rem; }}
-    .tabs {{ display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; padding: 1rem 0; }}
+    .filter-tabs {{ display: flex; flex-direction: column; gap: 1rem; padding: 1rem 0 0.5rem; }}
+    .tabs-wrap {{ display: flex; flex-direction: column; gap: 0.4rem; align-items: center; }}
+    .tabs-label {{
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+    }}
+    .tabs {{ display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }}
     .tab {{
       font-family: inherit;
       background: var(--surface-2);
@@ -1730,7 +1774,7 @@ def build_html(data: Dict[str, Any]) -> str:
       <h1>What's on at WTW Cinemas</h1>
       <p>Ratings, trailers &amp; links to IMDb, RT and Trakt</p>
     </header>
-    <div class="tabs">{tabs_html}</div>
+    {filter_tabs_html}
     <main id="films" data-initial-showings="{INITIAL_SHOWINGS_VISIBLE}">{cards_html}</main>
     <footer>
       <p class="footer-disclaimer">An open source fan-made project. Not affiliated with WTW Cinemas.</p>
@@ -1889,48 +1933,108 @@ def build_html(data: Dict[str, Any]) -> str:
         return html;
       }}
 
-      function applyShowtimesForSelectedDate(selectedDate) {{
-        var isAll = selectedDate === 'all';
+      function shortCinemaName(full) {{
+        var s = String(full || '').trim();
+        if (!s) return '';
+        var parts = s.split(',');
+        return parts.length > 1 ? parts[parts.length - 1].trim() : s;
+      }}
+
+      var selectedDate = 'all';
+      var selectedCinema = 'all';
+      var STORAGE_CINEMA = 'wtw-whats-on-cinema';
+
+      function cinemaTabValues() {{
+        var vals = [];
+        document.querySelectorAll('.tab-cinema').forEach(function(b) {{
+          var v = b.getAttribute('data-cinema');
+          if (v != null && vals.indexOf(v) === -1) vals.push(v);
+        }});
+        return vals;
+      }}
+
+      function readPersistedCinema() {{
+        try {{
+          var raw = localStorage.getItem(STORAGE_CINEMA);
+          if (raw == null || raw === '') return null;
+          if (cinemaTabValues().indexOf(raw) !== -1) return raw;
+        }} catch (e0) {{}}
+        try {{ localStorage.removeItem(STORAGE_CINEMA); }} catch (e1) {{}}
+        return null;
+      }}
+
+      function writePersistedCinema(v) {{
+        try {{
+          if (v === 'all') localStorage.removeItem(STORAGE_CINEMA);
+          else localStorage.setItem(STORAGE_CINEMA, v);
+        }} catch (e2) {{}}
+      }}
+
+      function applyFilters() {{
+        var sectionVisibility = {{ now: false, coming: false }};
         document.querySelectorAll('.film-card').forEach(function(card) {{
           var dataScript = card.querySelector('script.film-showtimes-full');
           var showtimesEl = card.querySelector('.showtimes');
-          if (!dataScript || !showtimesEl) return;
+          if (!dataScript || !showtimesEl) {{
+            card.style.display = 'none';
+            return;
+          }}
           var all = [];
           try {{
             all = showtimesFromParsed(JSON.parse(dataScript.textContent || 'null'));
           }} catch (e1) {{
+            card.style.display = 'none';
             return;
           }}
-          var picked = isAll ? all.slice() : all.filter(function(st) {{ return st.date === selectedDate; }});
-          showtimesEl.innerHTML = buildShowtimesInner(picked);
+          var picked = all.filter(function(st) {{
+            var dateOk = selectedDate === 'all' || st.date === selectedDate;
+            var cinemaOk = selectedCinema === 'all' || shortCinemaName(st.cinema_name) === selectedCinema;
+            return dateOk && cinemaOk;
+          }});
+          var show = picked.length > 0;
+          card.style.display = show ? 'block' : 'none';
+          if (show) {{
+            var status = card.getAttribute('data-status') || '';
+            if (status === 'now') sectionVisibility.now = true;
+            if (status === 'coming-soon') sectionVisibility.coming = true;
+            showtimesEl.innerHTML = buildShowtimesInner(picked);
+          }}
+        }});
+        document.querySelectorAll('.film-section').forEach(function(section) {{
+          var sectionType = section.getAttribute('data-section') || '';
+          var showSection = sectionType === 'now' ? sectionVisibility.now : sectionVisibility.coming;
+          section.style.display = showSection ? 'grid' : 'none';
         }});
       }}
 
-      document.querySelectorAll('.tab').forEach(function(btn) {{
+      document.querySelectorAll('.tab-date').forEach(function(btn) {{
         btn.addEventListener('click', function() {{
-          document.querySelectorAll('.tab').forEach(function(b) {{ b.classList.remove('active'); }});
+          document.querySelectorAll('.tab-date').forEach(function(b) {{ b.classList.remove('active'); }});
           btn.classList.add('active');
-          var date = btn.getAttribute('data-date');
-          var isAll = date === 'all';
-          var sectionVisibility = {{ now: false, coming: false }};
-          document.querySelectorAll('.film-card').forEach(function(card) {{
-            var dates = (card.getAttribute('data-dates') || '').split(',');
-            var show = isAll || dates.indexOf(date) !== -1;
-            card.style.display = show ? 'block' : 'none';
-            if (show) {{
-              var status = card.getAttribute('data-status') || '';
-              if (status === 'now') sectionVisibility.now = true;
-              if (status === 'coming-soon') sectionVisibility.coming = true;
-            }}
-          }});
-          document.querySelectorAll('.film-section').forEach(function(section) {{
-            var sectionType = section.getAttribute('data-section') || '';
-            var showSection = sectionType === 'now' ? sectionVisibility.now : sectionVisibility.coming;
-            section.style.display = showSection ? 'grid' : 'none';
-          }});
-          applyShowtimesForSelectedDate(date);
+          selectedDate = btn.getAttribute('data-date') || 'all';
+          applyFilters();
         }});
       }});
+      document.querySelectorAll('.tab-cinema').forEach(function(btn) {{
+        btn.addEventListener('click', function() {{
+          document.querySelectorAll('.tab-cinema').forEach(function(b) {{ b.classList.remove('active'); }});
+          btn.classList.add('active');
+          selectedCinema = btn.getAttribute('data-cinema') || 'all';
+          writePersistedCinema(selectedCinema);
+          applyFilters();
+        }});
+      }});
+
+      (function restoreCinemaFromStorage() {{
+        var saved = readPersistedCinema();
+        if (saved == null) return;
+        selectedCinema = saved;
+        document.querySelectorAll('.tab-cinema').forEach(function(b) {{
+          if ((b.getAttribute('data-cinema') || '') === saved) b.classList.add('active');
+          else b.classList.remove('active');
+        }});
+        applyFilters();
+      }})();
 
       if (filmsMain) {{
         filmsMain.addEventListener('click', function(e) {{
