@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-04T20:46:47Z",
+  "updated_at": "2026-04-05T09:32:36Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -10,76 +10,11 @@
           "search_title": "The Super Mario Galaxy Movie",
           "film_slug": "super-mario-galaxy",
           "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
-          "cast": "Chris Pratt, Anya Taylor-Joy, Charlie Day, Jack Black, Keegan-Michael Key",
+          "cast": "Chris Pratt (Mario (voice)), Anya Taylor-Joy (Princess Peach (voice)), Charlie Day (Luigi (voice)), Jack Black (Bowser (voice)), Benny Safdie (Bowser Jr. (voice)), Keegan-Michael Key (Toad (voice)), Brie Larson (Rosalina (voice)), Kevin Michael Richardson (Kamek (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Juliet Jelenic (Lumalee (voice))",
           "runtime_min": 98,
           "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=st-austell",
           "poster_url": "posters/super-mario-galaxy.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "11:45",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "13:00",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "14:30",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "17:15",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "11:45",
@@ -718,20 +653,6 @@
               ]
             },
             {
-              "date": "2026-04-04",
-              "time": "10:45",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Autism Friendly"
-              ]
-            },
-            {
               "date": "2026-04-08",
               "time": "10:45",
               "screen": 3,
@@ -775,6 +696,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=rvmqo89OPvg",
+          "vote_average": 0.0,
           "genres": [
             "Family",
             "Fantasy",
@@ -785,71 +707,18 @@
           "imdb_id": "tt28650488",
           "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
           "director": "Michael Jelenic, Aaron Horvath",
-          "writer": "Matthew Fogel",
-          "vote_average": null
+          "writer": "Matthew Fogel"
         },
         {
           "title": "The Magic Faraway Tree",
           "search_title": "The Magic Faraway Tree",
           "film_slug": "the-magic-faraway-tree",
           "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children - Joe, Beth, and Fran - discover a magical tree and its extraordinary...",
-          "cast": "Claire Foy, Andrew Garfield, Nicola Coughlan, Jennifer Saunders",
+          "cast": "Claire Foy (Polly Thompson), Andrew Garfield (Tim Thompson), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma Thompson), Nicola Coughlan (Silky), Nonso Anozie (Moonface), Pippa Bennett-Warner (Hannah), Rebecca Ferguson (Dame Snap), Jessica Gunning (Dame Washalot), Oliver Chris (Mr Watzisname)",
           "runtime_min": 110,
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=st-austell",
           "poster_url": "posters/the-magic-faraway-tree.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "11:15",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "14:00",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "16:45",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "19:30",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "11:15",
@@ -1346,6 +1215,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=b9qyzVCW9sc",
+          "vote_average": 0.0,
           "genres": [
             "Family",
             "Fantasy",
@@ -1354,8 +1224,7 @@
           "imdb_id": "tt7734244",
           "overview": "Soon after the Thompson family’s arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary and eccentric residents, including Moonface, Silky, Dame Washalot, and Saucepan Man. At the top of the tree, they're transported to spectacular and fantastical lands and, through the joys and challenges of their adventures, the Thompsons learn to reconnect and value each other for the first time in years.",
           "director": "Ben Gregor",
-          "writer": "Simon Farnaby",
-          "vote_average": null
+          "writer": "Simon Farnaby"
         },
         {
           "title": "Bluey at the Cinema Collection: Playdates With Friends",
@@ -1367,18 +1236,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/bluey-at-the-cinema-collection-playdates-with-friends/?screen=st-austell",
           "poster_url": "",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "11:00",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "11:00",
@@ -1537,39 +1394,11 @@
           "search_title": "Project Hail Mary",
           "film_slug": "project-hail-mary",
           "synopsis": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there....",
-          "cast": "Ryan Gosling, Sandra Hüller",
+          "cast": "Ryan Gosling (Ryland Grace), James Ortiz (Rocky (voice)), Sandra Hüller (Eva Stratt), Lionel Boyce (Carl), Milana Vayntrub (Olesya Ilyukhina), Ken Leung (Yao), Priya Kansara (Mary (voice)), Mia Soteriou (Dr. Browne), Annelle Olaleye (Olivia), Maya Eva Hosein (Rekha), Bastian Antonio Fuentes (Parker), Alice Brittain (Hardware Store Cashier)",
           "runtime_min": 156,
           "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=st-austell",
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "15:45",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "19:15",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "15:45",
@@ -1852,12 +1681,11 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=NKYea63tQmI",
-          "vote_average": 9.3,
+          "trailer_url": "https://www.youtube.com/watch?v=a9Kdjy_m4ck",
+          "vote_average": 8.2,
           "genres": [
             "Science Fiction",
-            "Adventure",
-            "Mystery"
+            "Adventure"
           ],
           "imdb_id": "tt12042730",
           "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction… but an unexpected friendship means he may not have to do it alone.",
@@ -1869,50 +1697,11 @@
           "search_title": "The Drama",
           "film_slug": "the-drama",
           "synopsis": "A happily engaged couple is put to the test when an unexpected turn sends their wedding week off the rails.",
-          "cast": "Zendaya , Robert Pattinson, Alana Haim",
+          "cast": "Zendaya (Emma), Robert Pattinson (Charlie), Alana Haim (Rachel), Mamoudou Athie (Mike), Zoë Winters (Frances), Hailey Benton Gates (Misha), Jordyn Curet (Young Emma), Michael Abbott Jr. (Blake), YaYa Gosselin (Jessica), Sydney Lemmon (Pauline), Anna Baryshnikov (Sam), Greer Cohen (Grace)",
           "runtime_min": 105,
           "film_url": "https://wtwcinemas.co.uk/film/the-drama/?screen=st-austell",
           "poster_url": "posters/the-drama.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "15:15",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "17:40",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "20:05",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "15:15",
@@ -2112,24 +1901,11 @@
           "search_title": "Hoppers",
           "film_slug": "hoppers",
           "synopsis": "Scientists have discovered how to \"hop\" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an...",
-          "cast": "Piper Curda, Bobby Moynihan, Jon Hamm",
+          "cast": "Piper Curda (Mabel (voice)), Bobby Moynihan (King George (voice)), Jon Hamm (Mayor Jerry Generazzo (voice)), Kathy Najimy (Dr. Sam (voice)), Dave Franco (Insect King (voice)), Eduardo Franco (Loaf (voice)), Aparna Nancherla (Nisha (voice)), Tom Law (Tom Lizard (voice)), Sam Richardson (Conner (voice)), Melissa Villaseñor (Ellen (voice)), Isiah Whitlock Jr. (Bird King (voice)), Steve Purcell (Amphibian King (voice))",
           "runtime_min": 105,
           "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=st-austell",
           "poster_url": "posters/hoppers.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "12:45",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "12:45",
@@ -2215,7 +1991,7 @@
           "search_title": "You, Me & Tuscany",
           "film_slug": "you-me-tuscany",
           "synopsis": "A free-spirited American chef and reserved British lawyer embark on a whirlwind romance during a destination wedding in coastal Italy.",
-          "cast": "Halle Bailey, Regé-Jean Page, Marco Calvani",
+          "cast": "Halle Bailey (Anna), Regé-Jean Page (Michael), Marco Calvani, Aziza Scott (Claire), Lorenzo de Moor (Matteo), Isabella Ferrari (Gabriella), Nia Vardalos (Mrs. Dunn), Stefania Casini (Nonna Alessia), Desirée Popper (Isabella), Tommaso Cassissa (Enzo), Stella Pecollo (Francesca), Paolo Sassanelli (Vincenzo)",
           "runtime_min": 105,
           "film_url": "https://wtwcinemas.co.uk/film/you-me-tuscany/?screen=st-austell",
           "poster_url": "posters/you-me-tuscany.jpg",
@@ -2450,6 +2226,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=rb7-mWMNkFE",
+          "vote_average": 0.0,
           "genres": [
             "Romance",
             "Comedy"
@@ -2457,8 +2234,7 @@
           "imdb_id": "tt36352591",
           "overview": "A free-spirited American chef and reserved British lawyer embark on a whirlwind romance during a destination wedding in coastal Italy.",
           "director": "Kat Coiro",
-          "writer": "Ryan Engle",
-          "vote_average": null
+          "writer": "Ryan Engle"
         },
         {
           "title": "Rose of Nevada Plus Q&A with Director Mark Jenkin",
@@ -2497,7 +2273,7 @@
           "search_title": "National Theatre Live: All My Sons",
           "film_slug": "national-theatre-live-all-my-sons",
           "synopsis": "Bryan Cranston (Breaking Bad) and Marianne Jean-Baptiste (Hard Truths) feature in a five-star, triumphantly acclaimed new production of Arthur Miller's classic play, from visionary director...",
-          "cast": "Bryan Cranston, Marianne Jean-Baptiste",
+          "cast": "Sally Field (Kate Keller), Bill Pullman (Joe Keller), Jenna Coleman (Ann Deever), Colin Morgan (Chris Keller), Sule Rimi (Dr. Jim Bayliss), Oliver Johnstone (George Deever), Gunnar Cauthery (Frank Lubey), Bessie Carter (Lydia Lubey), Kayla Meikle (Sue Bayliss)",
           "runtime_min": 130,
           "film_url": "https://wtwcinemas.co.uk/film/national-theatre-live-all-my-sons/?screen=st-austell",
           "poster_url": "posters/national-theatre-live-all-my-sons.jpg",
@@ -2546,7 +2322,7 @@
           "search_title": "THE MAGIC FLUTE - RBO 2025-26 Cinema Season",
           "film_slug": "the-magic-flute-rbo-2025-26-cinema-season",
           "synopsis": "Sung in German with subtitles. Princess Pamina has been captured. Her mother, the Queen of the Night, tasks the young Prince Tamino with her daughter's...",
-          "cast": "To Be Announced",
+          "cast": "Julia Bullock, Amitai Pati, Huw Montague Rendall, Kathyrn Lewek",
           "runtime_min": 210,
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-flute-rbo-2025-26-cinema-season/?screen=st-austell",
           "poster_url": "posters/the-magic-flute-rbo-2025-26-cinema-season.jpg",
@@ -2566,12 +2342,12 @@
               ]
             }
           ],
-          "overview": "Princess Pamina has been captured. Her mother, the Queen of the Night, tasks the young Prince Tamino with her daughter’s rescue. But when Tamino and his friendly sidekick, Papageno, embark on their adventure, they soon learn that when it comes to the quest for love, nothing is as it really seems.",
-          "director": "David McVicar",
           "trailer_url": "",
-          "vote_average": null,
+          "vote_average": 0.0,
           "genres": [],
           "imdb_id": "",
+          "overview": "Princess Pamina has been captured. Her mother, the Queen of the Night, tasks the young Prince Tamino with her daughter’s rescue. But when Tamino and his friendly sidekick, Papageno, embark on their adventure, they soon learn that when it comes to the quest for love, nothing is as it really seems.",
+          "director": "David McVicar",
           "writer": ""
         },
         {
@@ -2579,7 +2355,7 @@
           "search_title": "Hamnet",
           "film_slug": "hamnet",
           "synopsis": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
-          "cast": "Jessie Buckley, Paul Mescal",
+          "cast": "Jessie Buckley (Agnes), Paul Mescal (Will), Emily Watson (Mary), Joe Alwyn (Bartholomew), Jacobi Jupe (Hamnet), Noah Jupe (Hamlet), Olivia Lynes (Judith), Justine Mitchell (Joan), David Wilmot (John), Louisa Harland (Rowan), Freya Hannan-Mills (Eliza), Bodhi Rae Breathnach (Susanna)",
           "runtime_min": 126,
           "film_url": "https://wtwcinemas.co.uk/film/hamnet/?screen=st-austell",
           "poster_url": "posters/hamnet.jpg",
@@ -2631,7 +2407,7 @@
           "search_title": "Rose of Nevada",
           "film_slug": "rose-of-nevada",
           "synopsis": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find...",
-          "cast": "George MacKay, Callum Turner, Francis Magee",
+          "cast": "George MacKay (Nick), Callum Turner (Liam), Francis Magee, Edward Rowe, Rosalind Eleazar, Mary Woodvine",
           "runtime_min": 114,
           "film_url": "https://wtwcinemas.co.uk/film/rose-of-nevada/?screen=st-austell",
           "poster_url": "posters/rose-of-nevada.jpg",
@@ -2716,6 +2492,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=bw371ui9cTk",
+          "vote_average": 0.0,
           "genres": [
             "Mystery",
             "Drama",
@@ -2724,15 +2501,14 @@
           "imdb_id": "tt35674521",
           "overview": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves transported back in time, mistaken for the original crew.",
           "director": "Mark Jenkin",
-          "writer": "Mark Jenkin",
-          "vote_average": null
+          "writer": "Mark Jenkin"
         },
         {
           "title": "Wuthering Heights",
           "search_title": "Wuthering Heights",
           "film_slug": "wuthering-heights",
           "synopsis": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
-          "cast": "Margot Robbie, Jacob Elordi",
+          "cast": "Juliette Binoche (Cathy / Catherine), Ralph Fiennes (Heathcliff), Janet McTeer (Ellen Dean), Sophie Ward (Isabella Linton), Simon Shepherd (Edgar Linton), Jeremy Northam (Hindley Earnshaw), Jason Riddington (Hareton Earnshaw), Simon Ward (Mr. Linton), Robert Demeger (Joseph), Paul Geoffrey (Mr. Lockwood), John Woodvine (Thomas Earnshaw), Jennifer Daniel (Mrs. Linton)",
           "runtime_min": 137,
           "film_url": "https://wtwcinemas.co.uk/film/wuthering-heights/?screen=st-austell",
           "poster_url": "posters/wuthering-heights.jpg",
@@ -2783,7 +2559,7 @@
           "search_title": "EUGENE ONEGIN - The MET Opera - RBO 2025-26 Cinema Season",
           "film_slug": "eugene-onegin-the-met-opera-rbo-2025-26-cinema-season",
           "synopsis": "Sung in Russian with English subtitles. Following her acclaimed 2024 company debut in Puccini's Madama Butterfly, soprano Asmik Grigorian returns to the Met as Tatiana,...",
-          "cast": "To Be Announced",
+          "cast": "Anna Netrebko (Tatiana), Peter Mattei (Eugene Onegin), Alexey Dolgov (Lensky), Štefan Kocán (Gremin), Robin Ticciati, MET Orchestra",
           "runtime_min": 245,
           "film_url": "https://wtwcinemas.co.uk/film/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season/?screen=st-austell",
           "poster_url": "posters/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season.jpg",
@@ -2804,12 +2580,12 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=SukbEYbc8Q4",
+          "vote_average": 0.0,
           "genres": [
             "Music"
           ],
-          "overview": "Tchaikovsky’s setting of Pushkin’s timeless verse novel is presented on the Met stage in Deborah Warner’s moving production, starring Anna Netrebko as Tatiana and Mariusz Kwiecien and Peter Mattei sharing the title role. Alexey Dolgov sings the role of Lenski, and Robin Ticciati conducts.",
-          "vote_average": null,
           "imdb_id": "",
+          "overview": "Tchaikovsky’s setting of Pushkin’s timeless verse novel is presented on the Met stage in Deborah Warner’s moving production, starring Anna Netrebko as Tatiana and Mariusz Kwiecien and Peter Mattei sharing the title role. Alexey Dolgov sings the role of Lenski, and Robin Ticciati conducts.",
           "director": "",
           "writer": ""
         },
@@ -2818,7 +2594,7 @@
           "search_title": "National Theatre Live: The Playboy of the Western World",
           "film_slug": "national-theatre-live-the-playboy-of-the-western-world",
           "synopsis": "Nicola Coughlan (Bridgerton) joins Éanna Hardwicke (The Sixth Commandment) and Siobhán McSweeney (Derry Girls) in John Millington Synge's riveting play of youth and self-discovery. Pegeen...",
-          "cast": "Nicola Coughlan, Siobhán McSweeney, Éanna Hardwicke",
+          "cast": "Nicola Coughlan (Pegeen Mike), Éanna Hardwicke (Christy Mahon), Siobhán McSweeney (Widow Quin), Declan Conlon (Old Mahon), Lorcan Cranitch (Michael Flaherty), Megan Cusack (Susan Brady), Naoise Dunbar (Jimmy Farrell), Matthew Forrest (Philly Cullen), Sallay Garnett (Nelly), Fionnuala Gygax (Honor Blake), Erin Hennessey (Fiddle), Peter Mooney (Banjo / Ensemble)",
           "runtime_min": 150,
           "film_url": "https://wtwcinemas.co.uk/film/national-theatre-live-the-playboy-of-the-western-world/?screen=st-austell",
           "poster_url": "posters/national-theatre-live-the-playboy-of-the-western-world.jpg",
@@ -2851,6 +2627,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=-Q8dTGbY2F0",
+          "vote_average": 0.0,
           "genres": [
             "Drama",
             "Comedy"
@@ -2858,15 +2635,14 @@
           "imdb_id": "tt40031882",
           "overview": "Nicola Coughlan (Bridgerton) joins Éanna Hardwicke (The Sixth Commandment) and Siobhán McSweeney (Derry Girls) in John Millington Synge’s riveting play of youth and self-discovery.  Pegeen Flaherty’s life is turned upside down when a young man walks into her pub claiming that he’s killed his father. Instead of being shunned, the killer becomes a local hero and begins to win hearts, that is until a second man unexpectedly arrives on the scene…  Filmed live on stage at the National Theatre, Caitríona McLaughlin directs this darkly funny tale full to the brim with secrets.",
           "director": "Caitriona McLaughlin",
-          "writer": "John Millington Synge",
-          "vote_average": null
+          "writer": "John Millington Synge"
         },
         {
           "title": "National Theatre Live: Les Liaisons Dangereuses",
           "search_title": "National Theatre Live: Les Liaisons Dangereuses",
           "film_slug": "national-theatre-live-les-liaisons-dangereuses",
           "synopsis": "BAFTA Award-winner Lesley Manville (Phantom Thread) joins Aidan Turner (Rivals) in a striking new staging of Christopher Hampton's celebrated adaptation of the classic novel, where...",
-          "cast": "Lesley Manville, Aidan Turner",
+          "cast": "Janet McTeer (La Marquise de Merteuil), Dominic West (Le Vicomte de Valmont), Elaine Cassidy (Madame de Tourvel), Adjoa Andoh (Madame de Volanges), Morfydd Clark (Cécile Volanges), Edward Holcroft (Le Chevalier Danceny), Una Stubbs (Madame de Rosemonde), Theo Barklem-Biggs (Azolan), Jennifer Saayeng (Émilie), Thom Petty (Major-Domo), Alison Arnopp (Julie)",
           "runtime_min": 150,
           "film_url": "https://wtwcinemas.co.uk/film/national-theatre-live-les-liaisons-dangereuses/?screen=st-austell",
           "poster_url": "posters/national-theatre-live-les-liaisons-dangereuses.jpg",
@@ -2917,7 +2693,7 @@
         "primary_selector_nodes": 22,
         "fallback_selector_nodes": 0,
         "parsed_films": 16,
-        "parsed_showtimes": 196
+        "parsed_showtimes": 179
       }
     },
     "newquay": {
@@ -2929,76 +2705,11 @@
           "search_title": "The Super Mario Galaxy Movie",
           "film_slug": "super-mario-galaxy",
           "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
-          "cast": "Chris Pratt, Anya Taylor-Joy, Charlie Day, Jack Black, Keegan-Michael Key",
+          "cast": "Chris Pratt (Mario (voice)), Anya Taylor-Joy (Princess Peach (voice)), Charlie Day (Luigi (voice)), Jack Black (Bowser (voice)), Benny Safdie (Bowser Jr. (voice)), Keegan-Michael Key (Toad (voice)), Brie Larson (Rosalina (voice)), Kevin Michael Richardson (Kamek (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Juliet Jelenic (Lumalee (voice))",
           "runtime_min": 98,
           "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=newquay",
           "poster_url": "posters/super-mario-galaxy.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "11:45",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "14:30",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "15:15",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "17:15",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "11:45",
@@ -3678,6 +3389,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=rvmqo89OPvg",
+          "vote_average": 0.0,
           "genres": [
             "Family",
             "Fantasy",
@@ -3688,71 +3400,18 @@
           "imdb_id": "tt28650488",
           "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
           "director": "Michael Jelenic, Aaron Horvath",
-          "writer": "Matthew Fogel",
-          "vote_average": null
+          "writer": "Matthew Fogel"
         },
         {
           "title": "The Magic Faraway Tree",
           "search_title": "The Magic Faraway Tree",
           "film_slug": "the-magic-faraway-tree",
           "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children - Joe, Beth, and Fran - discover a magical tree and its extraordinary...",
-          "cast": "Claire Foy, Andrew Garfield, Nicola Coughlan, Jennifer Saunders",
+          "cast": "Claire Foy (Polly Thompson), Andrew Garfield (Tim Thompson), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma Thompson), Nicola Coughlan (Silky), Nonso Anozie (Moonface), Pippa Bennett-Warner (Hannah), Rebecca Ferguson (Dame Snap), Jessica Gunning (Dame Washalot), Oliver Chris (Mr Watzisname)",
           "runtime_min": 110,
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=newquay",
           "poster_url": "posters/the-magic-faraway-tree.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "11:15",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "14:00",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "16:45",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "18:00",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "11:15",
@@ -4132,6 +3791,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=b9qyzVCW9sc",
+          "vote_average": 0.0,
           "genres": [
             "Family",
             "Fantasy",
@@ -4140,8 +3800,7 @@
           "imdb_id": "tt7734244",
           "overview": "Soon after the Thompson family’s arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary and eccentric residents, including Moonface, Silky, Dame Washalot, and Saucepan Man. At the top of the tree, they're transported to spectacular and fantastical lands and, through the joys and challenges of their adventures, the Thompsons learn to reconnect and value each other for the first time in years.",
           "director": "Ben Gregor",
-          "writer": "Simon Farnaby",
-          "vote_average": null
+          "writer": "Simon Farnaby"
         },
         {
           "title": "Bluey at the Cinema Collection: Playdates With Friends",
@@ -4153,18 +3812,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/bluey-at-the-cinema-collection-playdates-with-friends/?screen=newquay",
           "poster_url": "",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "11:00",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "11:00",
@@ -4299,39 +3946,11 @@
           "search_title": "Project Hail Mary",
           "film_slug": "project-hail-mary",
           "synopsis": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there....",
-          "cast": "Ryan Gosling, Sandra Hüller",
+          "cast": "Ryan Gosling (Ryland Grace), James Ortiz (Rocky (voice)), Sandra Hüller (Eva Stratt), Lionel Boyce (Carl), Milana Vayntrub (Olesya Ilyukhina), Ken Leung (Yao), Priya Kansara (Mary (voice)), Mia Soteriou (Dr. Browne), Annelle Olaleye (Olivia), Maya Eva Hosein (Rekha), Bastian Antonio Fuentes (Parker), Alice Brittain (Hardware Store Cashier)",
           "runtime_min": 156,
           "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=newquay",
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "12:00",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "19:30",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "12:00",
@@ -4599,12 +4218,11 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=NKYea63tQmI",
-          "vote_average": 9.3,
+          "trailer_url": "https://www.youtube.com/watch?v=a9Kdjy_m4ck",
+          "vote_average": 8.2,
           "genres": [
             "Science Fiction",
-            "Adventure",
-            "Mystery"
+            "Adventure"
           ],
           "imdb_id": "tt12042730",
           "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction… but an unexpected friendship means he may not have to do it alone.",
@@ -4616,37 +4234,11 @@
           "search_title": "Fuze",
           "film_slug": "fuze",
           "synopsis": "An unexploded WWII bomb is discovered on a busy construction site in the centre of London. Chaos ensues as the military and police begin a...",
-          "cast": "Aaron Taylor-Johnson, Theo James, Gugu Mbatha-Raw",
+          "cast": "Aaron Taylor-Johnson (Will Tranter), Theo James (Karalis), Gugu Mbatha-Raw (Zuzana), Sam Worthington (X), Honor Swinton Byrne (Clareese), Saffron Hocking, Luke Mably (Headley), Elham Ehsas, Atul Sharma (Mullah), Richa Prakash, Iain Fletcher (Minton), Nabil Elouahabi (Z)",
           "runtime_min": 96,
           "film_url": "https://wtwcinemas.co.uk/film/fuze/?screen=newquay",
           "poster_url": "posters/fuze.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "15:30",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "20:30",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "15:30",
@@ -4782,37 +4374,11 @@
           "search_title": "The Drama",
           "film_slug": "the-drama",
           "synopsis": "A happily engaged couple is put to the test when an unexpected turn sends their wedding week off the rails.",
-          "cast": "Zendaya , Robert Pattinson, Alana Haim",
+          "cast": "Zendaya (Emma), Robert Pattinson (Charlie), Alana Haim (Rachel), Mamoudou Athie (Mike), Zoë Winters (Frances), Hailey Benton Gates (Misha), Jordyn Curet (Young Emma), Michael Abbott Jr. (Blake), YaYa Gosselin (Jessica), Sydney Lemmon (Pauline), Anna Baryshnikov (Sam), Greer Cohen (Grace)",
           "runtime_min": 105,
           "film_url": "https://wtwcinemas.co.uk/film/the-drama/?screen=newquay",
           "poster_url": "posters/the-drama.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "17:45",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "20:15",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "17:45",
@@ -4947,24 +4513,11 @@
           "search_title": "Hoppers",
           "film_slug": "hoppers",
           "synopsis": "Scientists have discovered how to \"hop\" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an...",
-          "cast": "Piper Curda, Bobby Moynihan, Jon Hamm",
+          "cast": "Piper Curda (Mabel (voice)), Bobby Moynihan (King George (voice)), Jon Hamm (Mayor Jerry Generazzo (voice)), Kathy Najimy (Dr. Sam (voice)), Dave Franco (Insect King (voice)), Eduardo Franco (Loaf (voice)), Aparna Nancherla (Nisha (voice)), Tom Law (Tom Lizard (voice)), Sam Richardson (Conner (voice)), Melissa Villaseñor (Ellen (voice)), Isiah Whitlock Jr. (Bird King (voice)), Steve Purcell (Amphibian King (voice))",
           "runtime_min": 105,
           "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=newquay",
           "poster_url": "posters/hoppers.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "12:45",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "12:45",
@@ -5082,7 +4635,7 @@
           "search_title": "National Theatre Live: All My Sons",
           "film_slug": "national-theatre-live-all-my-sons",
           "synopsis": "Bryan Cranston (Breaking Bad) and Marianne Jean-Baptiste (Hard Truths) feature in a five-star, triumphantly acclaimed new production of Arthur Miller's classic play, from visionary director...",
-          "cast": "Bryan Cranston, Marianne Jean-Baptiste",
+          "cast": "Sally Field (Kate Keller), Bill Pullman (Joe Keller), Jenna Coleman (Ann Deever), Colin Morgan (Chris Keller), Sule Rimi (Dr. Jim Bayliss), Oliver Johnstone (George Deever), Gunnar Cauthery (Frank Lubey), Bessie Carter (Lydia Lubey), Kayla Meikle (Sue Bayliss)",
           "runtime_min": 130,
           "film_url": "https://wtwcinemas.co.uk/film/national-theatre-live-all-my-sons/?screen=newquay",
           "poster_url": "posters/national-theatre-live-all-my-sons.jpg",
@@ -5131,7 +4684,7 @@
           "search_title": "Don’t Be Prey",
           "film_slug": "dont-be-prey",
           "synopsis": "Don't Be Prey is an edge-of-your-seat adventure into one man's fight to reclaim his life by taking on the world's most dangerous marathon swims, the...",
-          "cast": "Tim Denyer, Steven Munatones, Mark Sowerby",
+          "cast": "Tim Denyer (Self), Steven Munatones (Self), Mark Sowerby (Self), Heidi Sowerby (Self), Bengisu Avci (Self), Jamie Mackay (Self), Paul Leonard (Self), Joanne Norman (Self)",
           "runtime_min": 91,
           "film_url": "https://wtwcinemas.co.uk/film/dont-be-prey/?screen=newquay",
           "poster_url": "posters/dont-be-prey.jpg",
@@ -5150,21 +4703,21 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=AGRn44WQvlU",
+          "vote_average": 0.0,
           "genres": [
             "Documentary"
           ],
           "imdb_id": "tt37673318",
           "overview": "An edge-of-your-seat adventure into one man’s fight to reclaim his life by taking on the world’s most dangerous marathon swims, the Oceans Seven. Featuring unforgettable characters, raw vulnerability and breathtaking ocean feats, it’s  a gripping, uplifting journey of resilience, reinvention and what it really takes to survive.",
           "director": "Jeff W. Tseng",
-          "writer": "Jeff W. Tseng, Steven Sander",
-          "vote_average": null
+          "writer": "Jeff W. Tseng, Steven Sander"
         },
         {
           "title": "THE MAGIC FLUTE - RBO 2025-26 Cinema Season",
           "search_title": "THE MAGIC FLUTE - RBO 2025-26 Cinema Season",
           "film_slug": "the-magic-flute-rbo-2025-26-cinema-season",
           "synopsis": "Sung in German with subtitles. Princess Pamina has been captured. Her mother, the Queen of the Night, tasks the young Prince Tamino with her daughter's...",
-          "cast": "To Be Announced",
+          "cast": "Julia Bullock, Amitai Pati, Huw Montague Rendall, Kathyrn Lewek",
           "runtime_min": 210,
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-flute-rbo-2025-26-cinema-season/?screen=newquay",
           "poster_url": "posters/the-magic-flute-rbo-2025-26-cinema-season.jpg",
@@ -5184,10 +4737,10 @@
               ]
             }
           ],
+          "vote_average": 0.0,
           "overview": "Princess Pamina has been captured. Her mother, the Queen of the Night, tasks the young Prince Tamino with her daughter’s rescue. But when Tamino and his friendly sidekick, Papageno, embark on their adventure, they soon learn that when it comes to the quest for love, nothing is as it really seems.",
           "director": "David McVicar",
           "trailer_url": "",
-          "vote_average": null,
           "genres": [],
           "imdb_id": "",
           "writer": ""
@@ -5197,7 +4750,7 @@
           "search_title": "Hamnet",
           "film_slug": "hamnet",
           "synopsis": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
-          "cast": "Jessie Buckley, Paul Mescal",
+          "cast": "Jessie Buckley (Agnes), Paul Mescal (Will), Emily Watson (Mary), Joe Alwyn (Bartholomew), Jacobi Jupe (Hamnet), Noah Jupe (Hamlet), Olivia Lynes (Judith), Justine Mitchell (Joan), David Wilmot (John), Louisa Harland (Rowan), Freya Hannan-Mills (Eliza), Bodhi Rae Breathnach (Susanna)",
           "runtime_min": 126,
           "film_url": "https://wtwcinemas.co.uk/film/hamnet/?screen=newquay",
           "poster_url": "posters/hamnet.jpg",
@@ -5249,7 +4802,7 @@
           "search_title": "Rose of Nevada",
           "film_slug": "rose-of-nevada",
           "synopsis": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find...",
-          "cast": "George MacKay, Callum Turner, Francis Magee",
+          "cast": "George MacKay (Nick), Callum Turner (Liam), Francis Magee, Edward Rowe, Rosalind Eleazar, Mary Woodvine",
           "runtime_min": 114,
           "film_url": "https://wtwcinemas.co.uk/film/rose-of-nevada/?screen=newquay",
           "poster_url": "posters/rose-of-nevada.jpg",
@@ -5334,6 +4887,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=bw371ui9cTk",
+          "vote_average": 0.0,
           "genres": [
             "Mystery",
             "Drama",
@@ -5342,15 +4896,14 @@
           "imdb_id": "tt35674521",
           "overview": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves transported back in time, mistaken for the original crew.",
           "director": "Mark Jenkin",
-          "writer": "Mark Jenkin",
-          "vote_average": null
+          "writer": "Mark Jenkin"
         },
         {
           "title": "Wuthering Heights",
           "search_title": "Wuthering Heights",
           "film_slug": "wuthering-heights",
           "synopsis": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
-          "cast": "Margot Robbie, Jacob Elordi",
+          "cast": "Juliette Binoche (Cathy / Catherine), Ralph Fiennes (Heathcliff), Janet McTeer (Ellen Dean), Sophie Ward (Isabella Linton), Simon Shepherd (Edgar Linton), Jeremy Northam (Hindley Earnshaw), Jason Riddington (Hareton Earnshaw), Simon Ward (Mr. Linton), Robert Demeger (Joseph), Paul Geoffrey (Mr. Lockwood), John Woodvine (Thomas Earnshaw), Jennifer Daniel (Mrs. Linton)",
           "runtime_min": 137,
           "film_url": "https://wtwcinemas.co.uk/film/wuthering-heights/?screen=newquay",
           "poster_url": "posters/wuthering-heights.jpg",
@@ -5401,7 +4954,7 @@
           "search_title": "EUGENE ONEGIN - The MET Opera - RBO 2025-26 Cinema Season",
           "film_slug": "eugene-onegin-the-met-opera-rbo-2025-26-cinema-season",
           "synopsis": "Sung in Russian with English subtitles. Following her acclaimed 2024 company debut in Puccini's Madama Butterfly, soprano Asmik Grigorian returns to the Met as Tatiana,...",
-          "cast": "To Be Announced",
+          "cast": "Anna Netrebko (Tatiana), Peter Mattei (Eugene Onegin), Alexey Dolgov (Lensky), Štefan Kocán (Gremin), Robin Ticciati, MET Orchestra",
           "runtime_min": 245,
           "film_url": "https://wtwcinemas.co.uk/film/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season/?screen=newquay",
           "poster_url": "posters/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season.jpg",
@@ -5422,11 +4975,11 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=SukbEYbc8Q4",
+          "vote_average": 0.0,
           "genres": [
             "Music"
           ],
           "overview": "Tchaikovsky’s setting of Pushkin’s timeless verse novel is presented on the Met stage in Deborah Warner’s moving production, starring Anna Netrebko as Tatiana and Mariusz Kwiecien and Peter Mattei sharing the title role. Alexey Dolgov sings the role of Lenski, and Robin Ticciati conducts.",
-          "vote_average": null,
           "imdb_id": "",
           "director": "",
           "writer": ""
@@ -5467,7 +5020,7 @@
           "search_title": "National Theatre Live: The Playboy of the Western World",
           "film_slug": "national-theatre-live-the-playboy-of-the-western-world",
           "synopsis": "Nicola Coughlan (Bridgerton) joins Éanna Hardwicke (The Sixth Commandment) and Siobhán McSweeney (Derry Girls) in John Millington Synge's riveting play of youth and self-discovery. Pegeen...",
-          "cast": "Nicola Coughlan, Siobhán McSweeney, Éanna Hardwicke",
+          "cast": "Nicola Coughlan (Pegeen Mike), Éanna Hardwicke (Christy Mahon), Siobhán McSweeney (Widow Quin), Declan Conlon (Old Mahon), Lorcan Cranitch (Michael Flaherty), Megan Cusack (Susan Brady), Naoise Dunbar (Jimmy Farrell), Matthew Forrest (Philly Cullen), Sallay Garnett (Nelly), Fionnuala Gygax (Honor Blake), Erin Hennessey (Fiddle), Peter Mooney (Banjo / Ensemble)",
           "runtime_min": 150,
           "film_url": "https://wtwcinemas.co.uk/film/national-theatre-live-the-playboy-of-the-western-world/?screen=newquay",
           "poster_url": "posters/national-theatre-live-the-playboy-of-the-western-world.jpg",
@@ -5500,6 +5053,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=-Q8dTGbY2F0",
+          "vote_average": 0.0,
           "genres": [
             "Drama",
             "Comedy"
@@ -5507,15 +5061,14 @@
           "imdb_id": "tt40031882",
           "overview": "Nicola Coughlan (Bridgerton) joins Éanna Hardwicke (The Sixth Commandment) and Siobhán McSweeney (Derry Girls) in John Millington Synge’s riveting play of youth and self-discovery.  Pegeen Flaherty’s life is turned upside down when a young man walks into her pub claiming that he’s killed his father. Instead of being shunned, the killer becomes a local hero and begins to win hearts, that is until a second man unexpectedly arrives on the scene…  Filmed live on stage at the National Theatre, Caitríona McLaughlin directs this darkly funny tale full to the brim with secrets.",
           "director": "Caitriona McLaughlin",
-          "writer": "John Millington Synge",
-          "vote_average": null
+          "writer": "John Millington Synge"
         },
         {
           "title": "National Theatre Live: Les Liaisons Dangereuses",
           "search_title": "National Theatre Live: Les Liaisons Dangereuses",
           "film_slug": "national-theatre-live-les-liaisons-dangereuses",
           "synopsis": "BAFTA Award-winner Lesley Manville (Phantom Thread) joins Aidan Turner (Rivals) in a striking new staging of Christopher Hampton's celebrated adaptation of the classic novel, where...",
-          "cast": "Lesley Manville, Aidan Turner",
+          "cast": "Janet McTeer (La Marquise de Merteuil), Dominic West (Le Vicomte de Valmont), Elaine Cassidy (Madame de Tourvel), Adjoa Andoh (Madame de Volanges), Morfydd Clark (Cécile Volanges), Edward Holcroft (Le Chevalier Danceny), Una Stubbs (Madame de Rosemonde), Theo Barklem-Biggs (Azolan), Jennifer Saayeng (Émilie), Thom Petty (Major-Domo), Alison Arnopp (Julie)",
           "runtime_min": 150,
           "film_url": "https://wtwcinemas.co.uk/film/national-theatre-live-les-liaisons-dangereuses/?screen=newquay",
           "poster_url": "posters/national-theatre-live-les-liaisons-dangereuses.jpg",
@@ -5566,7 +5119,7 @@
         "primary_selector_nodes": 22,
         "fallback_selector_nodes": 0,
         "parsed_films": 18,
-        "parsed_showtimes": 171
+        "parsed_showtimes": 154
       }
     },
     "truro": {
@@ -5578,76 +5131,11 @@
           "search_title": "The Super Mario Galaxy Movie",
           "film_slug": "super-mario-galaxy",
           "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
-          "cast": "Chris Pratt, Anya Taylor-Joy, Charlie Day, Jack Black, Keegan-Michael Key",
+          "cast": "Chris Pratt (Mario (voice)), Anya Taylor-Joy (Princess Peach (voice)), Charlie Day (Luigi (voice)), Jack Black (Bowser (voice)), Benny Safdie (Bowser Jr. (voice)), Keegan-Michael Key (Toad (voice)), Brie Larson (Rosalina (voice)), Kevin Michael Richardson (Kamek (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Juliet Jelenic (Lumalee (voice))",
           "runtime_min": 98,
           "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=truro",
           "poster_url": "posters/super-mario-galaxy.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "11:15",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "12:30",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "14:30",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "17:15",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "11:15",
@@ -6303,6 +5791,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=rvmqo89OPvg",
+          "vote_average": 0.0,
           "genres": [
             "Family",
             "Fantasy",
@@ -6313,70 +5802,18 @@
           "imdb_id": "tt28650488",
           "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
           "director": "Michael Jelenic, Aaron Horvath",
-          "writer": "Matthew Fogel",
-          "vote_average": null
+          "writer": "Matthew Fogel"
         },
         {
           "title": "The Magic Faraway Tree",
           "search_title": "The Magic Faraway Tree",
           "film_slug": "the-magic-faraway-tree",
           "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children - Joe, Beth, and Fran - discover a magical tree and its extraordinary...",
-          "cast": "Claire Foy, Andrew Garfield, Nicola Coughlan, Jennifer Saunders",
+          "cast": "Claire Foy (Polly Thompson), Andrew Garfield (Tim Thompson), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma Thompson), Nicola Coughlan (Silky), Nonso Anozie (Moonface), Pippa Bennett-Warner (Hannah), Rebecca Ferguson (Dame Snap), Jessica Gunning (Dame Washalot), Oliver Chris (Mr Watzisname)",
           "runtime_min": 110,
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=truro",
           "poster_url": "posters/the-magic-faraway-tree.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "11:45",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "14:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "16:45",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "19:00",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "11:45",
@@ -6868,6 +6305,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=b9qyzVCW9sc",
+          "vote_average": 0.0,
           "genres": [
             "Family",
             "Fantasy",
@@ -6876,8 +6314,7 @@
           "imdb_id": "tt7734244",
           "overview": "Soon after the Thompson family’s arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary and eccentric residents, including Moonface, Silky, Dame Washalot, and Saucepan Man. At the top of the tree, they're transported to spectacular and fantastical lands and, through the joys and challenges of their adventures, the Thompsons learn to reconnect and value each other for the first time in years.",
           "director": "Ben Gregor",
-          "writer": "Simon Farnaby",
-          "vote_average": null
+          "writer": "Simon Farnaby"
         },
         {
           "title": "Bluey at the Cinema Collection: Playdates With Friends",
@@ -6889,18 +6326,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/bluey-at-the-cinema-collection-playdates-with-friends/?screen=truro",
           "poster_url": "",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "10:45",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "10:45",
@@ -7047,36 +6472,11 @@
           "search_title": "Project Hail Mary",
           "film_slug": "project-hail-mary",
           "synopsis": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there....",
-          "cast": "Ryan Gosling, Sandra Hüller",
+          "cast": "Ryan Gosling (Ryland Grace), James Ortiz (Rocky (voice)), Sandra Hüller (Eva Stratt), Lionel Boyce (Carl), Milana Vayntrub (Olesya Ilyukhina), Ken Leung (Yao), Priya Kansara (Mary (voice)), Mia Soteriou (Dr. Browne), Annelle Olaleye (Olivia), Maya Eva Hosein (Rekha), Bastian Antonio Fuentes (Parker), Alice Brittain (Hardware Store Cashier)",
           "runtime_min": 156,
           "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=truro",
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "13:00",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "19:30",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "13:00",
@@ -7352,12 +6752,11 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=NKYea63tQmI",
-          "vote_average": 9.3,
+          "trailer_url": "https://www.youtube.com/watch?v=a9Kdjy_m4ck",
+          "vote_average": 8.2,
           "genres": [
             "Science Fiction",
-            "Adventure",
-            "Mystery"
+            "Adventure"
           ],
           "imdb_id": "tt12042730",
           "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction… but an unexpected friendship means he may not have to do it alone.",
@@ -7369,24 +6768,11 @@
           "search_title": "They Will Kill You",
           "film_slug": "they-will-kill-you",
           "synopsis": "A woman answers a help wanted ad to be a housekeeper in a mysterious high-rise in New York City, not realizing she is entering a...",
-          "cast": "Zazie Beetz, Patricia Arquette, Heather Graham",
+          "cast": "Zazie Beetz (Asia Reaves), Myha'la (Maria Reaves), Paterson Joseph, Tom Felton (Kevin), Heather Graham (Sharon), Patricia Arquette (Lilith), Armando Rivera, David Viviers, Lindzay Naidoo (Maid), Chris van Rensburg (The Manager), Gabe Gabriel (Short Steve), Megan Alexander (Prisoner)",
           "runtime_min": 94,
           "film_url": "https://wtwcinemas.co.uk/film/they-will-kill-you/?screen=truro",
           "poster_url": "posters/they-will-kill-you.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "18:00",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "18:00",
@@ -7470,37 +6856,11 @@
           "search_title": "Fuze",
           "film_slug": "fuze",
           "synopsis": "An unexploded WWII bomb is discovered on a busy construction site in the centre of London. Chaos ensues as the military and police begin a...",
-          "cast": "Aaron Taylor-Johnson, Theo James, Gugu Mbatha-Raw",
+          "cast": "Aaron Taylor-Johnson (Will Tranter), Theo James (Karalis), Gugu Mbatha-Raw (Zuzana), Sam Worthington (X), Honor Swinton Byrne (Clareese), Saffron Hocking, Luke Mably (Headley), Elham Ehsas, Atul Sharma (Mullah), Richa Prakash, Iain Fletcher (Minton), Nabil Elouahabi (Z)",
           "runtime_min": 96,
           "film_url": "https://wtwcinemas.co.uk/film/fuze/?screen=truro",
           "poster_url": "posters/fuze.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "17:45",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "20:30",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "17:45",
@@ -7650,49 +7010,11 @@
           "search_title": "The Drama",
           "film_slug": "the-drama",
           "synopsis": "A happily engaged couple is put to the test when an unexpected turn sends their wedding week off the rails.",
-          "cast": "Zendaya , Robert Pattinson, Alana Haim",
+          "cast": "Zendaya (Emma), Robert Pattinson (Charlie), Alana Haim (Rachel), Mamoudou Athie (Mike), Zoë Winters (Frances), Hailey Benton Gates (Misha), Jordyn Curet (Young Emma), Michael Abbott Jr. (Blake), YaYa Gosselin (Jessica), Sydney Lemmon (Pauline), Anna Baryshnikov (Sam), Greer Cohen (Grace)",
           "runtime_min": 105,
           "film_url": "https://wtwcinemas.co.uk/film/the-drama/?screen=truro",
           "poster_url": "posters/the-drama.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "13:15",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "16:30",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "20:15",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "13:15",
@@ -7900,43 +7222,18 @@
           "search_title": "Hoppers",
           "film_slug": "hoppers",
           "synopsis": "Scientists have discovered how to \"hop\" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an...",
-          "cast": "Piper Curda, Bobby Moynihan, Jon Hamm",
+          "cast": "Piper Curda (Mabel (voice)), Bobby Moynihan (King George (voice)), Jon Hamm (Mayor Jerry Generazzo (voice)), Kathy Najimy (Dr. Sam (voice)), Dave Franco (Insect King (voice)), Eduardo Franco (Loaf (voice)), Aparna Nancherla (Nisha (voice)), Tom Law (Tom Lizard (voice)), Sam Richardson (Conner (voice)), Melissa Villaseñor (Ellen (voice)), Isiah Whitlock Jr. (Bird King (voice)), Steve Purcell (Amphibian King (voice))",
           "runtime_min": 105,
           "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=truro",
           "poster_url": "posters/hoppers.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "10:30",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "15:00",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "10:30",
               "screen": 5,
               "cinema_name": "Plaza Cinema, Truro",
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119946&screen=truro",
+              "booking_url": "",
               "tags": [
                 "Audio Description",
                 "2D"
@@ -8075,24 +7372,11 @@
           "search_title": "Mother’s Pride",
           "film_slug": "mothers-pride",
           "synopsis": "A comedy about a failing pub, a divided community and a grieving family whose lives are changed by brewing real ale and entering the Great...",
-          "cast": "Mark Addy, Jonno Davies, Gabriella Wilde",
+          "cast": "Jonno Davies (Cal), James Buckley (Jake), Martin Clunes (Mick), Mark Addy (Paxman), Gabriella Wilde (Abi), Luke Treadaway (Pritchard), Josie Lawrence (Edith), Miles Jupp (Jeremy), Karl Collins (Wilf), Richard Glover (Jim), Emily Lloyd-Saini (Amy), Dominic Kinnaird (Traffic warden)",
           "runtime_min": 93,
           "film_url": "https://wtwcinemas.co.uk/film/mothers-pride/?screen=truro",
           "poster_url": "posters/mothers-pride.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "15:45",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "15:45",
@@ -8175,23 +7459,11 @@
           "search_title": "Arco",
           "film_slug": "arco",
           "synopsis": "10-year-old Arco lives in a far future. During his first flight in his rainbow suit, he loses control and falls into the past. Iris, a...",
-          "cast": "Margot Ringard Oldra, Oscar Tresanini, Nathanaël Perrot",
+          "cast": "Margot Ringard Oldra (Iris (voice)), Oscar Tresanini (Arco (voice)), Nathanaël Perrot (Clifford (voice)), Alma Jodorowsky (Jeanne / Mikki (voice)), Swann Arlaud (Tom / Mikki  (voice)), Vincent Macaigne (Dougie (voice)), Louis Garrel (Stewie (voice)), William Lebghil (Frankie (voice)), Sophie Mas (La mère d'Arco (voix)), Frédérique Cantrel (La mère d'Arco - séquence finale (voix)), Oxmo Puccino (Dom (voice)), Joséphine Mancini (Ada (voix))",
           "runtime_min": 89,
           "film_url": "https://wtwcinemas.co.uk/film/arco/?screen=truro",
           "poster_url": "posters/arco.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "11:00",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "11:00",
@@ -8272,7 +7544,7 @@
           "search_title": "You, Me & Tuscany",
           "film_slug": "you-me-tuscany",
           "synopsis": "A free-spirited American chef and reserved British lawyer embark on a whirlwind romance during a destination wedding in coastal Italy.",
-          "cast": "Halle Bailey, Regé-Jean Page, Marco Calvani",
+          "cast": "Halle Bailey (Anna), Regé-Jean Page (Michael), Marco Calvani, Aziza Scott (Claire), Lorenzo de Moor (Matteo), Isabella Ferrari (Gabriella), Nia Vardalos (Mrs. Dunn), Stefania Casini (Nonna Alessia), Desirée Popper (Isabella), Tommaso Cassissa (Enzo), Stella Pecollo (Francesca), Paolo Sassanelli (Vincenzo)",
           "runtime_min": 105,
           "film_url": "https://wtwcinemas.co.uk/film/you-me-tuscany/?screen=truro",
           "poster_url": "posters/you-me-tuscany.jpg",
@@ -8489,6 +7761,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=rb7-mWMNkFE",
+          "vote_average": 0.0,
           "genres": [
             "Romance",
             "Comedy"
@@ -8496,8 +7769,7 @@
           "imdb_id": "tt36352591",
           "overview": "A free-spirited American chef and reserved British lawyer embark on a whirlwind romance during a destination wedding in coastal Italy.",
           "director": "Kat Coiro",
-          "writer": "Ryan Engle",
-          "vote_average": null
+          "writer": "Ryan Engle"
         },
         {
           "title": "Rose of Nevada Plus Q&A with Director Mark Jenkin",
@@ -8536,7 +7808,7 @@
           "search_title": "National Theatre Live: All My Sons",
           "film_slug": "national-theatre-live-all-my-sons",
           "synopsis": "Bryan Cranston (Breaking Bad) and Marianne Jean-Baptiste (Hard Truths) feature in a five-star, triumphantly acclaimed new production of Arthur Miller's classic play, from visionary director...",
-          "cast": "Bryan Cranston, Marianne Jean-Baptiste",
+          "cast": "Sally Field (Kate Keller), Bill Pullman (Joe Keller), Jenna Coleman (Ann Deever), Colin Morgan (Chris Keller), Sule Rimi (Dr. Jim Bayliss), Oliver Johnstone (George Deever), Gunnar Cauthery (Frank Lubey), Bessie Carter (Lydia Lubey), Kayla Meikle (Sue Bayliss)",
           "runtime_min": 130,
           "film_url": "https://wtwcinemas.co.uk/film/national-theatre-live-all-my-sons/?screen=truro",
           "poster_url": "posters/national-theatre-live-all-my-sons.jpg",
@@ -8698,7 +7970,7 @@
           "search_title": "Don’t Be Prey",
           "film_slug": "dont-be-prey",
           "synopsis": "Don't Be Prey is an edge-of-your-seat adventure into one man's fight to reclaim his life by taking on the world's most dangerous marathon swims, the...",
-          "cast": "Tim Denyer, Steven Munatones, Mark Sowerby",
+          "cast": "Tim Denyer (Self), Steven Munatones (Self), Mark Sowerby (Self), Heidi Sowerby (Self), Bengisu Avci (Self), Jamie Mackay (Self), Paul Leonard (Self), Joanne Norman (Self)",
           "runtime_min": 91,
           "film_url": "https://wtwcinemas.co.uk/film/dont-be-prey/?screen=truro",
           "poster_url": "posters/dont-be-prey.jpg",
@@ -8717,21 +7989,21 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=AGRn44WQvlU",
+          "vote_average": 0.0,
           "genres": [
             "Documentary"
           ],
           "imdb_id": "tt37673318",
           "overview": "An edge-of-your-seat adventure into one man’s fight to reclaim his life by taking on the world’s most dangerous marathon swims, the Oceans Seven. Featuring unforgettable characters, raw vulnerability and breathtaking ocean feats, it’s  a gripping, uplifting journey of resilience, reinvention and what it really takes to survive.",
           "director": "Jeff W. Tseng",
-          "writer": "Jeff W. Tseng, Steven Sander",
-          "vote_average": null
+          "writer": "Jeff W. Tseng, Steven Sander"
         },
         {
           "title": "THE MAGIC FLUTE - RBO 2025-26 Cinema Season",
           "search_title": "THE MAGIC FLUTE - RBO 2025-26 Cinema Season",
           "film_slug": "the-magic-flute-rbo-2025-26-cinema-season",
           "synopsis": "Sung in German with subtitles. Princess Pamina has been captured. Her mother, the Queen of the Night, tasks the young Prince Tamino with her daughter's...",
-          "cast": "To Be Announced",
+          "cast": "Julia Bullock, Amitai Pati, Huw Montague Rendall, Kathyrn Lewek",
           "runtime_min": 210,
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-flute-rbo-2025-26-cinema-season/?screen=truro",
           "poster_url": "posters/the-magic-flute-rbo-2025-26-cinema-season.jpg",
@@ -8751,10 +8023,10 @@
               ]
             }
           ],
+          "vote_average": 0.0,
           "overview": "Princess Pamina has been captured. Her mother, the Queen of the Night, tasks the young Prince Tamino with her daughter’s rescue. But when Tamino and his friendly sidekick, Papageno, embark on their adventure, they soon learn that when it comes to the quest for love, nothing is as it really seems.",
           "director": "David McVicar",
           "trailer_url": "",
-          "vote_average": null,
           "genres": [],
           "imdb_id": "",
           "writer": ""
@@ -8764,7 +8036,7 @@
           "search_title": "Hamnet",
           "film_slug": "hamnet",
           "synopsis": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
-          "cast": "Jessie Buckley, Paul Mescal",
+          "cast": "Jessie Buckley (Agnes), Paul Mescal (Will), Emily Watson (Mary), Joe Alwyn (Bartholomew), Jacobi Jupe (Hamnet), Noah Jupe (Hamlet), Olivia Lynes (Judith), Justine Mitchell (Joan), David Wilmot (John), Louisa Harland (Rowan), Freya Hannan-Mills (Eliza), Bodhi Rae Breathnach (Susanna)",
           "runtime_min": 126,
           "film_url": "https://wtwcinemas.co.uk/film/hamnet/?screen=truro",
           "poster_url": "posters/hamnet.jpg",
@@ -8816,7 +8088,7 @@
           "search_title": "Rose of Nevada",
           "film_slug": "rose-of-nevada",
           "synopsis": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find...",
-          "cast": "George MacKay, Callum Turner, Francis Magee",
+          "cast": "George MacKay (Nick), Callum Turner (Liam), Francis Magee, Edward Rowe, Rosalind Eleazar, Mary Woodvine",
           "runtime_min": 114,
           "film_url": "https://wtwcinemas.co.uk/film/rose-of-nevada/?screen=truro",
           "poster_url": "posters/rose-of-nevada.jpg",
@@ -8914,6 +8186,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=bw371ui9cTk",
+          "vote_average": 0.0,
           "genres": [
             "Mystery",
             "Drama",
@@ -8922,8 +8195,7 @@
           "imdb_id": "tt35674521",
           "overview": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves transported back in time, mistaken for the original crew.",
           "director": "Mark Jenkin",
-          "writer": "Mark Jenkin",
-          "vote_average": null
+          "writer": "Mark Jenkin"
         },
         {
           "title": "Funny Girl: The Musical",
@@ -8962,7 +8234,7 @@
           "search_title": "Wuthering Heights",
           "film_slug": "wuthering-heights",
           "synopsis": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
-          "cast": "Margot Robbie, Jacob Elordi",
+          "cast": "Juliette Binoche (Cathy / Catherine), Ralph Fiennes (Heathcliff), Janet McTeer (Ellen Dean), Sophie Ward (Isabella Linton), Simon Shepherd (Edgar Linton), Jeremy Northam (Hindley Earnshaw), Jason Riddington (Hareton Earnshaw), Simon Ward (Mr. Linton), Robert Demeger (Joseph), Paul Geoffrey (Mr. Lockwood), John Woodvine (Thomas Earnshaw), Jennifer Daniel (Mrs. Linton)",
           "runtime_min": 137,
           "film_url": "https://wtwcinemas.co.uk/film/wuthering-heights/?screen=truro",
           "poster_url": "posters/wuthering-heights.jpg",
@@ -9013,7 +8285,7 @@
           "search_title": "EUGENE ONEGIN - The MET Opera - RBO 2025-26 Cinema Season",
           "film_slug": "eugene-onegin-the-met-opera-rbo-2025-26-cinema-season",
           "synopsis": "Sung in Russian with English subtitles. Following her acclaimed 2024 company debut in Puccini's Madama Butterfly, soprano Asmik Grigorian returns to the Met as Tatiana,...",
-          "cast": "To Be Announced",
+          "cast": "Anna Netrebko (Tatiana), Peter Mattei (Eugene Onegin), Alexey Dolgov (Lensky), Štefan Kocán (Gremin), Robin Ticciati, MET Orchestra",
           "runtime_min": 245,
           "film_url": "https://wtwcinemas.co.uk/film/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season/?screen=truro",
           "poster_url": "posters/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season.jpg",
@@ -9034,11 +8306,11 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=SukbEYbc8Q4",
+          "vote_average": 0.0,
           "genres": [
             "Music"
           ],
           "overview": "Tchaikovsky’s setting of Pushkin’s timeless verse novel is presented on the Met stage in Deborah Warner’s moving production, starring Anna Netrebko as Tatiana and Mariusz Kwiecien and Peter Mattei sharing the title role. Alexey Dolgov sings the role of Lenski, and Robin Ticciati conducts.",
-          "vote_average": null,
           "imdb_id": "",
           "director": "",
           "writer": ""
@@ -9110,7 +8382,7 @@
           "search_title": "Frida Kahlo - Exhibition On Screen",
           "film_slug": "frida-kahlo-exhibition-on-screen",
           "synopsis": "Frida Kahlo is a phenomenon. She is arguably the world's favourite female artist – beloved by young and old. Exhibition on Screen's award-winning film –...",
-          "cast": "To Be Announced",
+          "cast": "Frida Kahlo (Self (archive footage))",
           "runtime_min": 90,
           "film_url": "https://wtwcinemas.co.uk/film/frida-kahlo-exhibition-on-screen/?screen=truro",
           "poster_url": "posters/frida-kahlo-exhibition-on-screen.jpg",
@@ -9157,7 +8429,7 @@
           "search_title": "National Theatre Live: The Playboy of the Western World",
           "film_slug": "national-theatre-live-the-playboy-of-the-western-world",
           "synopsis": "Nicola Coughlan (Bridgerton) joins Éanna Hardwicke (The Sixth Commandment) and Siobhán McSweeney (Derry Girls) in John Millington Synge's riveting play of youth and self-discovery. Pegeen...",
-          "cast": "Nicola Coughlan, Siobhán McSweeney, Éanna Hardwicke",
+          "cast": "Nicola Coughlan (Pegeen Mike), Éanna Hardwicke (Christy Mahon), Siobhán McSweeney (Widow Quin), Declan Conlon (Old Mahon), Lorcan Cranitch (Michael Flaherty), Megan Cusack (Susan Brady), Naoise Dunbar (Jimmy Farrell), Matthew Forrest (Philly Cullen), Sallay Garnett (Nelly), Fionnuala Gygax (Honor Blake), Erin Hennessey (Fiddle), Peter Mooney (Banjo / Ensemble)",
           "runtime_min": 150,
           "film_url": "https://wtwcinemas.co.uk/film/national-theatre-live-the-playboy-of-the-western-world/?screen=truro",
           "poster_url": "posters/national-theatre-live-the-playboy-of-the-western-world.jpg",
@@ -9190,6 +8462,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=-Q8dTGbY2F0",
+          "vote_average": 0.0,
           "genres": [
             "Drama",
             "Comedy"
@@ -9197,15 +8470,14 @@
           "imdb_id": "tt40031882",
           "overview": "Nicola Coughlan (Bridgerton) joins Éanna Hardwicke (The Sixth Commandment) and Siobhán McSweeney (Derry Girls) in John Millington Synge’s riveting play of youth and self-discovery.  Pegeen Flaherty’s life is turned upside down when a young man walks into her pub claiming that he’s killed his father. Instead of being shunned, the killer becomes a local hero and begins to win hearts, that is until a second man unexpectedly arrives on the scene…  Filmed live on stage at the National Theatre, Caitríona McLaughlin directs this darkly funny tale full to the brim with secrets.",
           "director": "Caitriona McLaughlin",
-          "writer": "John Millington Synge",
-          "vote_average": null
+          "writer": "John Millington Synge"
         },
         {
           "title": "National Theatre Live: Les Liaisons Dangereuses",
           "search_title": "National Theatre Live: Les Liaisons Dangereuses",
           "film_slug": "national-theatre-live-les-liaisons-dangereuses",
           "synopsis": "BAFTA Award-winner Lesley Manville (Phantom Thread) joins Aidan Turner (Rivals) in a striking new staging of Christopher Hampton's celebrated adaptation of the classic novel, where...",
-          "cast": "Lesley Manville, Aidan Turner",
+          "cast": "Janet McTeer (La Marquise de Merteuil), Dominic West (Le Vicomte de Valmont), Elaine Cassidy (Madame de Tourvel), Adjoa Andoh (Madame de Volanges), Morfydd Clark (Cécile Volanges), Edward Holcroft (Le Chevalier Danceny), Una Stubbs (Madame de Rosemonde), Theo Barklem-Biggs (Azolan), Jennifer Saayeng (Émilie), Thom Petty (Major-Domo), Alison Arnopp (Julie)",
           "runtime_min": 150,
           "film_url": "https://wtwcinemas.co.uk/film/national-theatre-live-les-liaisons-dangereuses/?screen=truro",
           "poster_url": "posters/national-theatre-live-les-liaisons-dangereuses.jpg",
@@ -9256,7 +8528,7 @@
         "primary_selector_nodes": 33,
         "fallback_selector_nodes": 0,
         "parsed_films": 27,
-        "parsed_showtimes": 243
+        "parsed_showtimes": 221
       }
     },
     "wadebridge": {
@@ -9268,63 +8540,11 @@
           "search_title": "The Super Mario Galaxy Movie",
           "film_slug": "super-mario-galaxy",
           "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
-          "cast": "Chris Pratt, Anya Taylor-Joy, Charlie Day, Jack Black, Keegan-Michael Key",
+          "cast": "Chris Pratt (Mario (voice)), Anya Taylor-Joy (Princess Peach (voice)), Charlie Day (Luigi (voice)), Jack Black (Bowser (voice)), Benny Safdie (Bowser Jr. (voice)), Keegan-Michael Key (Toad (voice)), Brie Larson (Rosalina (voice)), Kevin Michael Richardson (Kamek (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Juliet Jelenic (Lumalee (voice))",
           "runtime_min": 98,
           "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=wadebridge",
           "poster_url": "posters/super-mario-galaxy.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "11:45",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "14:30",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "17:15",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "11:45",
@@ -9756,6 +8976,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=rvmqo89OPvg",
+          "vote_average": 0.0,
           "genres": [
             "Family",
             "Fantasy",
@@ -9766,45 +8987,18 @@
           "imdb_id": "tt28650488",
           "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
           "director": "Michael Jelenic, Aaron Horvath",
-          "writer": "Matthew Fogel",
-          "vote_average": null
+          "writer": "Matthew Fogel"
         },
         {
           "title": "The Magic Faraway Tree",
           "search_title": "The Magic Faraway Tree",
           "film_slug": "the-magic-faraway-tree",
           "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children - Joe, Beth, and Fran - discover a magical tree and its extraordinary...",
-          "cast": "Claire Foy, Andrew Garfield, Nicola Coughlan, Jennifer Saunders",
+          "cast": "Claire Foy (Polly Thompson), Andrew Garfield (Tim Thompson), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma Thompson), Nicola Coughlan (Silky), Nonso Anozie (Moonface), Pippa Bennett-Warner (Hannah), Rebecca Ferguson (Dame Snap), Jessica Gunning (Dame Washalot), Oliver Chris (Mr Watzisname)",
           "runtime_min": 110,
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=wadebridge",
           "poster_url": "posters/the-magic-faraway-tree.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "13:45",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-04",
-              "time": "16:30",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "13:45",
@@ -9937,6 +9131,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=b9qyzVCW9sc",
+          "vote_average": 0.0,
           "genres": [
             "Family",
             "Fantasy",
@@ -9945,33 +9140,18 @@
           "imdb_id": "tt7734244",
           "overview": "Soon after the Thompson family’s arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary and eccentric residents, including Moonface, Silky, Dame Washalot, and Saucepan Man. At the top of the tree, they're transported to spectacular and fantastical lands and, through the joys and challenges of their adventures, the Thompsons learn to reconnect and value each other for the first time in years.",
           "director": "Ben Gregor",
-          "writer": "Simon Farnaby",
-          "vote_average": null
+          "writer": "Simon Farnaby"
         },
         {
           "title": "Project Hail Mary",
           "search_title": "Project Hail Mary",
           "film_slug": "project-hail-mary",
           "synopsis": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there....",
-          "cast": "Ryan Gosling, Sandra Hüller",
+          "cast": "Ryan Gosling (Ryland Grace), James Ortiz (Rocky (voice)), Sandra Hüller (Eva Stratt), Lionel Boyce (Carl), Milana Vayntrub (Olesya Ilyukhina), Ken Leung (Yao), Priya Kansara (Mary (voice)), Mia Soteriou (Dr. Browne), Annelle Olaleye (Olivia), Maya Eva Hosein (Rekha), Bastian Antonio Fuentes (Parker), Alice Brittain (Hardware Store Cashier)",
           "runtime_min": 156,
           "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=wadebridge",
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "19:15",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "16:30",
@@ -10044,12 +9224,11 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=NKYea63tQmI",
-          "vote_average": 9.3,
+          "trailer_url": "https://www.youtube.com/watch?v=a9Kdjy_m4ck",
+          "vote_average": 8.2,
           "genres": [
             "Science Fiction",
-            "Adventure",
-            "Mystery"
+            "Adventure"
           ],
           "imdb_id": "tt12042730",
           "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction… but an unexpected friendship means he may not have to do it alone.",
@@ -10061,24 +9240,11 @@
           "search_title": "Hoppers",
           "film_slug": "hoppers",
           "synopsis": "Scientists have discovered how to \"hop\" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an...",
-          "cast": "Piper Curda, Bobby Moynihan, Jon Hamm",
+          "cast": "Piper Curda (Mabel (voice)), Bobby Moynihan (King George (voice)), Jon Hamm (Mayor Jerry Generazzo (voice)), Kathy Najimy (Dr. Sam (voice)), Dave Franco (Insect King (voice)), Eduardo Franco (Loaf (voice)), Aparna Nancherla (Nisha (voice)), Tom Law (Tom Lizard (voice)), Sam Richardson (Conner (voice)), Melissa Villaseñor (Ellen (voice)), Isiah Whitlock Jr. (Bird King (voice)), Steve Purcell (Amphibian King (voice))",
           "runtime_min": 105,
           "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=wadebridge",
           "poster_url": "posters/hoppers.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-04",
-              "time": "11:15",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-05",
               "time": "11:15",
@@ -10196,7 +9362,7 @@
           "search_title": "National Theatre Live: All My Sons",
           "film_slug": "national-theatre-live-all-my-sons",
           "synopsis": "Bryan Cranston (Breaking Bad) and Marianne Jean-Baptiste (Hard Truths) feature in a five-star, triumphantly acclaimed new production of Arthur Miller's classic play, from visionary director...",
-          "cast": "Bryan Cranston, Marianne Jean-Baptiste",
+          "cast": "Sally Field (Kate Keller), Bill Pullman (Joe Keller), Jenna Coleman (Ann Deever), Colin Morgan (Chris Keller), Sule Rimi (Dr. Jim Bayliss), Oliver Johnstone (George Deever), Gunnar Cauthery (Frank Lubey), Bessie Carter (Lydia Lubey), Kayla Meikle (Sue Bayliss)",
           "runtime_min": 130,
           "film_url": "https://wtwcinemas.co.uk/film/national-theatre-live-all-my-sons/?screen=wadebridge",
           "poster_url": "posters/national-theatre-live-all-my-sons.jpg",
@@ -10231,7 +9397,7 @@
           "search_title": "THE MAGIC FLUTE - RBO 2025-26 Cinema Season",
           "film_slug": "the-magic-flute-rbo-2025-26-cinema-season",
           "synopsis": "Sung in German with subtitles. Princess Pamina has been captured. Her mother, the Queen of the Night, tasks the young Prince Tamino with her daughter's...",
-          "cast": "To Be Announced",
+          "cast": "Julia Bullock, Amitai Pati, Huw Montague Rendall, Kathyrn Lewek",
           "runtime_min": 210,
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-flute-rbo-2025-26-cinema-season/?screen=wadebridge",
           "poster_url": "posters/the-magic-flute-rbo-2025-26-cinema-season.jpg",
@@ -10251,10 +9417,10 @@
               ]
             }
           ],
+          "vote_average": 0.0,
           "overview": "Princess Pamina has been captured. Her mother, the Queen of the Night, tasks the young Prince Tamino with her daughter’s rescue. But when Tamino and his friendly sidekick, Papageno, embark on their adventure, they soon learn that when it comes to the quest for love, nothing is as it really seems.",
           "director": "David McVicar",
           "trailer_url": "",
-          "vote_average": null,
           "genres": [],
           "imdb_id": "",
           "writer": ""
@@ -10264,7 +9430,7 @@
           "search_title": "Hamnet",
           "film_slug": "hamnet",
           "synopsis": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
-          "cast": "Jessie Buckley, Paul Mescal",
+          "cast": "Jessie Buckley (Agnes), Paul Mescal (Will), Emily Watson (Mary), Joe Alwyn (Bartholomew), Jacobi Jupe (Hamnet), Noah Jupe (Hamlet), Olivia Lynes (Judith), Justine Mitchell (Joan), David Wilmot (John), Louisa Harland (Rowan), Freya Hannan-Mills (Eliza), Bodhi Rae Breathnach (Susanna)",
           "runtime_min": 126,
           "film_url": "https://wtwcinemas.co.uk/film/hamnet/?screen=wadebridge",
           "poster_url": "posters/hamnet.jpg",
@@ -10316,7 +9482,7 @@
           "search_title": "Rose of Nevada",
           "film_slug": "rose-of-nevada",
           "synopsis": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find...",
-          "cast": "George MacKay, Callum Turner, Francis Magee",
+          "cast": "George MacKay (Nick), Callum Turner (Liam), Francis Magee, Edward Rowe, Rosalind Eleazar, Mary Woodvine",
           "runtime_min": 114,
           "film_url": "https://wtwcinemas.co.uk/film/rose-of-nevada/?screen=wadebridge",
           "poster_url": "posters/rose-of-nevada.jpg",
@@ -10401,6 +9567,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=bw371ui9cTk",
+          "vote_average": 0.0,
           "genres": [
             "Mystery",
             "Drama",
@@ -10409,15 +9576,14 @@
           "imdb_id": "tt35674521",
           "overview": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves transported back in time, mistaken for the original crew.",
           "director": "Mark Jenkin",
-          "writer": "Mark Jenkin",
-          "vote_average": null
+          "writer": "Mark Jenkin"
         },
         {
           "title": "Wuthering Heights",
           "search_title": "Wuthering Heights",
           "film_slug": "wuthering-heights",
           "synopsis": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
-          "cast": "Margot Robbie, Jacob Elordi",
+          "cast": "Juliette Binoche (Cathy / Catherine), Ralph Fiennes (Heathcliff), Janet McTeer (Ellen Dean), Sophie Ward (Isabella Linton), Simon Shepherd (Edgar Linton), Jeremy Northam (Hindley Earnshaw), Jason Riddington (Hareton Earnshaw), Simon Ward (Mr. Linton), Robert Demeger (Joseph), Paul Geoffrey (Mr. Lockwood), John Woodvine (Thomas Earnshaw), Jennifer Daniel (Mrs. Linton)",
           "runtime_min": 137,
           "film_url": "https://wtwcinemas.co.uk/film/wuthering-heights/?screen=wadebridge",
           "poster_url": "posters/wuthering-heights.jpg",
@@ -10468,7 +9634,7 @@
           "search_title": "EUGENE ONEGIN - The MET Opera - RBO 2025-26 Cinema Season",
           "film_slug": "eugene-onegin-the-met-opera-rbo-2025-26-cinema-season",
           "synopsis": "Sung in Russian with English subtitles. Following her acclaimed 2024 company debut in Puccini's Madama Butterfly, soprano Asmik Grigorian returns to the Met as Tatiana,...",
-          "cast": "To Be Announced",
+          "cast": "Anna Netrebko (Tatiana), Peter Mattei (Eugene Onegin), Alexey Dolgov (Lensky), Štefan Kocán (Gremin), Robin Ticciati, MET Orchestra",
           "runtime_min": 245,
           "film_url": "https://wtwcinemas.co.uk/film/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season/?screen=wadebridge",
           "poster_url": "posters/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season.jpg",
@@ -10489,11 +9655,11 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=SukbEYbc8Q4",
+          "vote_average": 0.0,
           "genres": [
             "Music"
           ],
           "overview": "Tchaikovsky’s setting of Pushkin’s timeless verse novel is presented on the Met stage in Deborah Warner’s moving production, starring Anna Netrebko as Tatiana and Mariusz Kwiecien and Peter Mattei sharing the title role. Alexey Dolgov sings the role of Lenski, and Robin Ticciati conducts.",
-          "vote_average": null,
           "imdb_id": "",
           "director": "",
           "writer": ""
@@ -10503,7 +9669,7 @@
           "search_title": "Frida Kahlo - Exhibition On Screen",
           "film_slug": "frida-kahlo-exhibition-on-screen",
           "synopsis": "Frida Kahlo is a phenomenon. She is arguably the world's favourite female artist – beloved by young and old. Exhibition on Screen's award-winning film –...",
-          "cast": "To Be Announced",
+          "cast": "Frida Kahlo (Self (archive footage))",
           "runtime_min": 90,
           "film_url": "https://wtwcinemas.co.uk/film/frida-kahlo-exhibition-on-screen/?screen=wadebridge",
           "poster_url": "posters/frida-kahlo-exhibition-on-screen.jpg",
@@ -10550,7 +9716,7 @@
           "search_title": "National Theatre Live: The Playboy of the Western World",
           "film_slug": "national-theatre-live-the-playboy-of-the-western-world",
           "synopsis": "Nicola Coughlan (Bridgerton) joins Éanna Hardwicke (The Sixth Commandment) and Siobhán McSweeney (Derry Girls) in John Millington Synge's riveting play of youth and self-discovery. Pegeen...",
-          "cast": "Nicola Coughlan, Siobhán McSweeney, Éanna Hardwicke",
+          "cast": "Nicola Coughlan (Pegeen Mike), Éanna Hardwicke (Christy Mahon), Siobhán McSweeney (Widow Quin), Declan Conlon (Old Mahon), Lorcan Cranitch (Michael Flaherty), Megan Cusack (Susan Brady), Naoise Dunbar (Jimmy Farrell), Matthew Forrest (Philly Cullen), Sallay Garnett (Nelly), Fionnuala Gygax (Honor Blake), Erin Hennessey (Fiddle), Peter Mooney (Banjo / Ensemble)",
           "runtime_min": 150,
           "film_url": "https://wtwcinemas.co.uk/film/national-theatre-live-the-playboy-of-the-western-world/?screen=wadebridge",
           "poster_url": "posters/national-theatre-live-the-playboy-of-the-western-world.jpg",
@@ -10583,6 +9749,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=-Q8dTGbY2F0",
+          "vote_average": 0.0,
           "genres": [
             "Drama",
             "Comedy"
@@ -10590,15 +9757,14 @@
           "imdb_id": "tt40031882",
           "overview": "Nicola Coughlan (Bridgerton) joins Éanna Hardwicke (The Sixth Commandment) and Siobhán McSweeney (Derry Girls) in John Millington Synge’s riveting play of youth and self-discovery.  Pegeen Flaherty’s life is turned upside down when a young man walks into her pub claiming that he’s killed his father. Instead of being shunned, the killer becomes a local hero and begins to win hearts, that is until a second man unexpectedly arrives on the scene…  Filmed live on stage at the National Theatre, Caitríona McLaughlin directs this darkly funny tale full to the brim with secrets.",
           "director": "Caitriona McLaughlin",
-          "writer": "John Millington Synge",
-          "vote_average": null
+          "writer": "John Millington Synge"
         },
         {
           "title": "National Theatre Live: Les Liaisons Dangereuses",
           "search_title": "National Theatre Live: Les Liaisons Dangereuses",
           "film_slug": "national-theatre-live-les-liaisons-dangereuses",
           "synopsis": "BAFTA Award-winner Lesley Manville (Phantom Thread) joins Aidan Turner (Rivals) in a striking new staging of Christopher Hampton's celebrated adaptation of the classic novel, where...",
-          "cast": "Lesley Manville, Aidan Turner",
+          "cast": "Janet McTeer (La Marquise de Merteuil), Dominic West (Le Vicomte de Valmont), Elaine Cassidy (Madame de Tourvel), Adjoa Andoh (Madame de Volanges), Morfydd Clark (Cécile Volanges), Edward Holcroft (Le Chevalier Danceny), Una Stubbs (Madame de Rosemonde), Theo Barklem-Biggs (Azolan), Jennifer Saayeng (Émilie), Thom Petty (Major-Domo), Alison Arnopp (Julie)",
           "runtime_min": 150,
           "film_url": "https://wtwcinemas.co.uk/film/national-theatre-live-les-liaisons-dangereuses/?screen=wadebridge",
           "poster_url": "posters/national-theatre-live-les-liaisons-dangereuses.jpg",
@@ -10649,7 +9815,7 @@
         "primary_selector_nodes": 17,
         "fallback_selector_nodes": 0,
         "parsed_films": 14,
-        "parsed_showtimes": 81
+        "parsed_showtimes": 73
       }
     }
   }
