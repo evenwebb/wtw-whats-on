@@ -21,7 +21,7 @@
     "director": "David McVicar",
     "writer": "",
     "cast": "Julia Bullock, Amitai Pati, Huw Montague Rendall, Kathyrn Lewek",
-    "cached_at": "2026-04-13T10:27:10.203343"
+    "cached_at": "2026-04-14T10:10:03.600173"
   },
   "pat-s-film-club-abode-special-st-patrick-s-day-preview": {
     "poster_url": "",
@@ -437,7 +437,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-04-07T10:01:38.198107"
+    "cached_at": "2026-04-14T10:10:04.671626"
   },
   "a-clockwork-orange-pat-s-film-club": {
     "poster_url": "",
@@ -449,7 +449,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-04-07T10:01:38.423926"
+    "cached_at": "2026-04-14T10:10:04.894649"
   },
   "bluey-at-the-cinema-collection-playdates-with-friends": {
     "poster_url": "",
@@ -567,5 +567,81 @@
     "writer": "",
     "cast": "Frida Kahlo (Self (archive footage))",
     "cached_at": "2026-04-05T09:32:40.751038"
+  },
+  "fight-club": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/jSziioSwPVrOy9Yow3XhWIBDjq1.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=dfeUzm6KF4g",
+    "vote_average": 8.439,
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "imdb_id": "tt0137523",
+    "overview": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+    "director": "David Fincher",
+    "writer": "Chuck Palahniuk, Jim Uhls",
+    "cast": "Edward Norton (Narrator), Brad Pitt (Tyler Durden), Helena Bonham Carter (Marla Singer), Meat Loaf (Robert Paulson), Jared Leto (Angel Face), Zach Grenier (Richard Chesler (Regional Manager)), Holt McCallany (The Mechanic), Eion Bailey (Ricky), Richmond Arquette (Intern at Hospital), David Andrews (Thomas at Remaining Men Together), George Maguire (Group Leader at Remaining Men Together), Eugenie Bondurant (Weeping Woman - Onward and Upward)",
+    "cached_at": "2026-04-14T10:10:02.093312"
+  },
+  "glenrothan": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/gNKQETNDN9sVxpiayzF9bTw5a5q.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=z-5Xv0w1zOk",
+    "vote_average": 0.0,
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "imdb_id": "tt16112292",
+    "overview": "After 35 years in Chicago, Donal reluctantly returns to the Scottish Highlands to reconcile with his estranged older brother Sandy. Sandy needs Donal to take over the family's whisky distillery or he'll be forced to sell and give up on the family's legacy. But their reunion forces the brothers to confront the past and the real reason Donal left Glenrothan.",
+    "director": "Brian Cox",
+    "writer": "David Ashton, Jeff Murphy",
+    "cast": "Brian Cox (Sandy), Alan Cumming (Donal), Shirley Henderson (Jess), Alexandra Shipp (Amy), Aidan Redmond (Gus), Jess Douglas-Welsh (Kirsty), John Ritchie (George), Nicole Ansari-Cox (Anna McKinley), Alexandra Wilkie-Millar (Sasha), Saul Davidson (Young Sandy)",
+    "cached_at": "2026-04-14T10:10:02.511204"
+  },
+  "lee-cronin-s-the-mummy": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/lTQoEczVEnkuxHFEGgWYfJB98tL.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=zmUaYPr3Bv8",
+    "vote_average": 8.6,
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "imdb_id": "tt32612507",
+    "overview": "The young daughter of a journalist disappears into the desert without a trace—eight years later, the broken family is shocked when she is returned to them, as what should be a joyful reunion turns into a living nightmare.",
+    "director": "Lee Cronin",
+    "writer": "Lee Cronin",
+    "cast": "Jack Reynor (Charlie), Laia Costa (Larissa), May Calamawy, Natalie Grace (Katie), Veronica Falcón (Carmen), Shylo Molina (Sebastián), Billie Roy (Maud), May Elghety, Hayat Kamille (The Magician), Jonathan Gunning (The First Mummy), Emily Mitchell (Young Katie)",
+    "cached_at": "2026-04-14T10:10:02.935865"
+  },
+  "michael": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=ZV-gn-ZXY8Y",
+    "vote_average": 0.0,
+    "genres": [
+      "Music",
+      "Drama"
+    ],
+    "imdb_id": "tt11378946",
+    "overview": "Discover the story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music, tracing his journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+    "director": "Antoine Fuqua",
+    "writer": "John Logan",
+    "cast": "Jaafar Jackson (Michael Jackson), Colman Domingo (Joe Jackson), Nia Long (Katherine Jackson), Kendrick Sampson (Quincy Jones), Miles Teller (John Branca), Juliano Krue Valdi (Young Michael Jackson), Joseph David-Jones (Jackie Jackson), Jamal Henderson (Jermaine Jackson), Jessica Sula (LaToya Jackson), Kat Graham (Diana Ross), Laura Harrier (Suzanne de Passe), Kevin Shinick (Dick Clark)",
+    "cached_at": "2026-04-14T10:10:04.017892"
+  },
+  "california-schemin": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/2tYRbCPZVQD1AjZ6YGMRx71lbDU.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=GIa-m2yP2tw",
+    "vote_average": 0.0,
+    "genres": [
+      "Music",
+      "Comedy",
+      "Drama"
+    ],
+    "imdb_id": "tt29549490",
+    "overview": "In the late 1990s, Gavin Bain and Billy Boyd had their musical ambitions consistently ridiculed for having the 'wrong' accents, so they went for broke and reinvented themselves as Californian rappers. The duo re-recorded their own tracks with fake accents and turned up in London claiming to be an established duo on the Cali scene as well as childhood friends with Eminem. They quickly bagged themselves a record deal, a hefty sum in advances, and an appearance on MTV... until it all came crashing down.",
+    "director": "James McAvoy",
+    "writer": "Archie Thomson",
+    "cast": "Séamus McLean Ross (Gavin Bain), Samuel Bottomley (Billy Boyd), James McAvoy (Anthony), Lucy Halliday (Mary Boyd), Amber Anderson (Amy), Sonny Poon Tip (Simon), Rebekah Murrell (Tessa), Jennifer Winn (Hayley), David Witts, David Goren, Tayla Kovacevic-Ebong, Chloè Anais Hunt",
+    "cached_at": "2026-04-14T10:10:04.446891"
   }
 }
