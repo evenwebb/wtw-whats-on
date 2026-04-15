@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-14T10:09:59Z",
+  "updated_at": "2026-04-15T10:10:56Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -71,76 +71,11 @@
           "search_title": "The Super Mario Galaxy Movie",
           "film_slug": "super-mario-galaxy",
           "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
-          "cast": "Chris Pratt (Mario (voice)), Anya Taylor-Joy (Princess Peach (voice)), Charlie Day (Luigi (voice)), Jack Black (Bowser (voice)), Benny Safdie (Bowser Jr. (voice)), Keegan-Michael Key (Toad (voice)), Brie Larson (Rosalina (voice)), Kevin Michael Richardson (Kamek (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Juliet Jelenic (Lumalee (voice))",
+          "cast": "Chris Pratt (Mario (voice)), Charlie Day (Luigi (voice)), Anya Taylor-Joy (Princess Peach (voice)), Jack Black (Bowser (voice)), Keegan-Michael Key (Toad (voice)), Benny Safdie (Bowser Jr. (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice)), Brie Larson (Rosalina (voice)), Glen Powell (Fox McCloud (voice))",
           "runtime_min": 98,
           "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=st-austell",
           "poster_url": "posters/super-mario-galaxy.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-14",
-              "time": "11:45",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76894&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "13:00",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76944&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "14:30",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76895&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "17:15",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76896&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76897&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-15",
               "time": "11:45",
@@ -454,18 +389,18 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=rvmqo89OPvg",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=gWfOfyb_6Zs",
+          "vote_average": 6.8,
           "genres": [
             "Family",
-            "Fantasy",
             "Comedy",
             "Adventure",
+            "Fantasy",
             "Animation"
           ],
           "imdb_id": "tt28650488",
           "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-          "director": "Michael Jelenic, Aaron Horvath",
+          "director": "Aaron Horvath, Michael Jelenic",
           "writer": "Matthew Fogel"
         },
         {
@@ -473,50 +408,11 @@
           "search_title": "The Magic Faraway Tree",
           "film_slug": "the-magic-faraway-tree",
           "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary...",
-          "cast": "Claire Foy (Polly Thompson), Andrew Garfield (Tim Thompson), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma Thompson), Nicola Coughlan (Silky), Nonso Anozie (Moonface), Pippa Bennett-Warner (Hannah), Rebecca Ferguson (Dame Snap), Jessica Gunning (Dame Washalot), Oliver Chris (Mr Watzisname)",
+          "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
           "runtime_min": 110,
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=st-austell",
           "poster_url": "posters/the-magic-faraway-tree.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-14",
-              "time": "11:15",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76898&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "14:00",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76899&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "16:45",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76900&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-15",
               "time": "11:15",
@@ -674,15 +570,15 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=b9qyzVCW9sc",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
+          "vote_average": 6.6,
           "genres": [
             "Family",
             "Fantasy",
             "Adventure"
           ],
           "imdb_id": "tt7734244",
-          "overview": "Soon after the Thompson family’s arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary and eccentric residents, including Moonface, Silky, Dame Washalot, and Saucepan Man. At the top of the tree, they're transported to spectacular and fantastical lands and, through the joys and challenges of their adventures, the Thompsons learn to reconnect and value each other for the first time in years.",
+          "overview": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
           "director": "Ben Gregor",
           "writer": "Simon Farnaby"
         },
@@ -697,24 +593,12 @@
           "poster_url": "",
           "showtimes": [
             {
-              "date": "2026-04-14",
-              "time": "11:00",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-15",
               "time": "11:00",
               "screen": 4,
               "cinema_name": "White River Cinema, St Austell",
               "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76916&screen=staustell",
+              "booking_url": "",
               "tags": [
                 "Wheelchair access",
                 "2D"
@@ -787,34 +671,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=st-austell",
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-14",
-              "time": "15:45",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76901&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "19:15",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76902&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-04-15",
               "time": "15:45",
@@ -966,19 +822,6 @@
           "poster_url": "posters/the-drama.jpg",
           "showtimes": [
             {
-              "date": "2026-04-14",
-              "time": "19:30",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76943&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-15",
               "time": "19:30",
               "screen": 2,
@@ -1026,19 +869,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=st-austell",
           "poster_url": "posters/hoppers.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-14",
-              "time": "12:45",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76945&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-15",
               "time": "12:45",
@@ -1129,32 +959,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/you-me-tuscany/?screen=st-austell",
           "poster_url": "posters/you-me-tuscany.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-14",
-              "time": "15:15",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76904&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "20:05",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76906&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-15",
               "time": "15:15",
@@ -2223,7 +2027,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=a6eTho1jxuM",
-          "vote_average": 6.622,
+          "vote_average": 6.6,
           "genres": [
             "Drama",
             "Romance"
@@ -2238,7 +2042,7 @@
           "search_title": "EUGENE ONEGIN - The MET Opera - RBO 2025-26 Cinema Season",
           "film_slug": "eugene-onegin-the-met-opera-rbo-2025-26-cinema-season",
           "synopsis": "Sung in Russian with English subtitles. Following her acclaimed 2024 company debut in Puccini's Madama Butterfly, soprano Asmik Grigorian returns to the Met as Tatiana,...",
-          "cast": "Anna Netrebko (Tatiana), Peter Mattei (Eugene Onegin), Alexey Dolgov (Lensky), Štefan Kocán (Gremin), Robin Ticciati, MET Orchestra",
+          "cast": "To Be Announced",
           "runtime_min": 245,
           "film_url": "https://wtwcinemas.co.uk/film/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season/?screen=st-austell",
           "poster_url": "posters/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season.jpg",
@@ -2258,15 +2062,13 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=SukbEYbc8Q4",
+          "trailer_url": "",
           "vote_average": 0.0,
-          "genres": [
-            "Music"
-          ],
+          "genres": [],
           "imdb_id": "",
-          "overview": "Tchaikovsky’s setting of Pushkin’s timeless verse novel is presented on the Met stage in Deborah Warner’s moving production, starring Anna Netrebko as Tatiana and Mariusz Kwiecien and Peter Mattei sharing the title role. Alexey Dolgov sings the role of Lenski, and Robin Ticciati conducts.",
-          "director": "",
-          "writer": ""
+          "overview": "Soprano Asmik Grigorian returns to the Met as Tatiana, the lovestruck young heroine in this ardent operatic adaptation of Pushkin, which will be transmitted live from the Metropolitan Opera stage to cinemas worldwide on May 2. Baritone Igor Golovatenko is the urbane Onegin, who realizes his affection for her all too late. The Met’s evocative production, directed by Tony Award–winner Deborah Warner, “offers a beautifully detailed reading of … Tchaikovsky’s lyrical romance” (The Telegraph).",
+          "director": "Timur Zangiev, Deborah Warner",
+          "writer": "Pjotr Iljitsch Tschaikowsky"
         },
         {
           "title": "National Theatre Live: The Playboy of the Western World",
@@ -2372,7 +2174,7 @@
         "primary_selector_nodes": 23,
         "fallback_selector_nodes": 0,
         "parsed_films": 19,
-        "parsed_showtimes": 150
+        "parsed_showtimes": 135
       }
     },
     "newquay": {
@@ -2384,89 +2186,11 @@
           "search_title": "The Super Mario Galaxy Movie",
           "film_slug": "super-mario-galaxy",
           "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
-          "cast": "Chris Pratt (Mario (voice)), Anya Taylor-Joy (Princess Peach (voice)), Charlie Day (Luigi (voice)), Jack Black (Bowser (voice)), Benny Safdie (Bowser Jr. (voice)), Keegan-Michael Key (Toad (voice)), Brie Larson (Rosalina (voice)), Kevin Michael Richardson (Kamek (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Juliet Jelenic (Lumalee (voice))",
+          "cast": "Chris Pratt (Mario (voice)), Charlie Day (Luigi (voice)), Anya Taylor-Joy (Princess Peach (voice)), Jack Black (Bowser (voice)), Keegan-Michael Key (Toad (voice)), Benny Safdie (Bowser Jr. (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice)), Brie Larson (Rosalina (voice)), Glen Powell (Fox McCloud (voice))",
           "runtime_min": 98,
           "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=newquay",
           "poster_url": "posters/super-mario-galaxy.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-14",
-              "time": "11:45",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65276&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "13:00",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65278&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "14:30",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65275&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "15:15",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65315&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "17:15",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65274&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65273&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-15",
               "time": "11:45",
@@ -2820,18 +2544,18 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=rvmqo89OPvg",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=gWfOfyb_6Zs",
+          "vote_average": 6.8,
           "genres": [
             "Family",
-            "Fantasy",
             "Comedy",
             "Adventure",
+            "Fantasy",
             "Animation"
           ],
           "imdb_id": "tt28650488",
           "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-          "director": "Michael Jelenic, Aaron Horvath",
+          "director": "Aaron Horvath, Michael Jelenic",
           "writer": "Matthew Fogel"
         },
         {
@@ -2839,50 +2563,11 @@
           "search_title": "The Magic Faraway Tree",
           "film_slug": "the-magic-faraway-tree",
           "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary...",
-          "cast": "Claire Foy (Polly Thompson), Andrew Garfield (Tim Thompson), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma Thompson), Nicola Coughlan (Silky), Nonso Anozie (Moonface), Pippa Bennett-Warner (Hannah), Rebecca Ferguson (Dame Snap), Jessica Gunning (Dame Washalot), Oliver Chris (Mr Watzisname)",
+          "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
           "runtime_min": 110,
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=newquay",
           "poster_url": "posters/the-magic-faraway-tree.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-14",
-              "time": "11:15",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65281&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "14:00",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65282&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "16:45",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65339&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-15",
               "time": "11:15",
@@ -3051,31 +2736,17 @@
                 "Wheelchair access",
                 "2D"
               ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "17:45",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65320&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "2D"
-              ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=b9qyzVCW9sc",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
+          "vote_average": 6.6,
           "genres": [
             "Family",
             "Fantasy",
             "Adventure"
           ],
           "imdb_id": "tt7734244",
-          "overview": "Soon after the Thompson family’s arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary and eccentric residents, including Moonface, Silky, Dame Washalot, and Saucepan Man. At the top of the tree, they're transported to spectacular and fantastical lands and, through the joys and challenges of their adventures, the Thompsons learn to reconnect and value each other for the first time in years.",
+          "overview": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
           "director": "Ben Gregor",
           "writer": "Simon Farnaby"
         },
@@ -3090,24 +2761,12 @@
           "poster_url": "",
           "showtimes": [
             {
-              "date": "2026-04-14",
-              "time": "11:00",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-15",
               "time": "11:00",
               "screen": 2,
               "cinema_name": "Lighthouse Cinema, Newquay",
               "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65287&screen=newquay",
+              "booking_url": "",
               "tags": [
                 "Wheelchair access",
                 "2D"
@@ -3180,34 +2839,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=newquay",
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-14",
-              "time": "15:45",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65279&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "19:15",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65280&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-04-15",
               "time": "15:45",
@@ -3427,19 +3058,6 @@
           "poster_url": "posters/fuze.jpg",
           "showtimes": [
             {
-              "date": "2026-04-14",
-              "time": "20:15",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65327&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-15",
               "time": "20:15",
               "screen": 2,
@@ -3488,19 +3106,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-drama/?screen=newquay",
           "poster_url": "posters/the-drama.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-14",
-              "time": "19:30",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65346&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-15",
               "time": "19:30",
@@ -3588,19 +3193,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=newquay",
           "poster_url": "posters/hoppers.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-14",
-              "time": "12:45",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65307&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-15",
               "time": "12:45",
@@ -4602,7 +4194,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=a6eTho1jxuM",
-          "vote_average": 6.622,
+          "vote_average": 6.6,
           "genres": [
             "Drama",
             "Romance"
@@ -4617,7 +4209,7 @@
           "search_title": "EUGENE ONEGIN - The MET Opera - RBO 2025-26 Cinema Season",
           "film_slug": "eugene-onegin-the-met-opera-rbo-2025-26-cinema-season",
           "synopsis": "Sung in Russian with English subtitles. Following her acclaimed 2024 company debut in Puccini's Madama Butterfly, soprano Asmik Grigorian returns to the Met as Tatiana,...",
-          "cast": "Anna Netrebko (Tatiana), Peter Mattei (Eugene Onegin), Alexey Dolgov (Lensky), Štefan Kocán (Gremin), Robin Ticciati, MET Orchestra",
+          "cast": "To Be Announced",
           "runtime_min": 245,
           "film_url": "https://wtwcinemas.co.uk/film/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season/?screen=newquay",
           "poster_url": "posters/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season.jpg",
@@ -4637,15 +4229,13 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=SukbEYbc8Q4",
           "vote_average": 0.0,
-          "genres": [
-            "Music"
-          ],
-          "overview": "Tchaikovsky’s setting of Pushkin’s timeless verse novel is presented on the Met stage in Deborah Warner’s moving production, starring Anna Netrebko as Tatiana and Mariusz Kwiecien and Peter Mattei sharing the title role. Alexey Dolgov sings the role of Lenski, and Robin Ticciati conducts.",
-          "imdb_id": "",
-          "director": "",
-          "writer": ""
+          "overview": "Soprano Asmik Grigorian returns to the Met as Tatiana, the lovestruck young heroine in this ardent operatic adaptation of Pushkin, which will be transmitted live from the Metropolitan Opera stage to cinemas worldwide on May 2. Baritone Igor Golovatenko is the urbane Onegin, who realizes his affection for her all too late. The Met’s evocative production, directed by Tony Award–winner Deborah Warner, “offers a beautifully detailed reading of … Tchaikovsky’s lyrical romance” (The Telegraph).",
+          "director": "Timur Zangiev, Deborah Warner",
+          "writer": "Pjotr Iljitsch Tschaikowsky",
+          "trailer_url": "",
+          "genres": [],
+          "imdb_id": ""
         },
         {
           "title": "Jo in the Water plus Q&A",
@@ -4777,12 +4367,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 25,
-        "selector_film_nodes": 25,
-        "primary_selector_nodes": 25,
+        "raw_cards": 24,
+        "selector_film_nodes": 24,
+        "primary_selector_nodes": 24,
         "fallback_selector_nodes": 0,
         "parsed_films": 20,
-        "parsed_showtimes": 151
+        "parsed_showtimes": 135
       }
     },
     "truro": {
@@ -4794,63 +4384,11 @@
           "search_title": "The Super Mario Galaxy Movie",
           "film_slug": "super-mario-galaxy",
           "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
-          "cast": "Chris Pratt (Mario (voice)), Anya Taylor-Joy (Princess Peach (voice)), Charlie Day (Luigi (voice)), Jack Black (Bowser (voice)), Benny Safdie (Bowser Jr. (voice)), Keegan-Michael Key (Toad (voice)), Brie Larson (Rosalina (voice)), Kevin Michael Richardson (Kamek (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Juliet Jelenic (Lumalee (voice))",
+          "cast": "Chris Pratt (Mario (voice)), Charlie Day (Luigi (voice)), Anya Taylor-Joy (Princess Peach (voice)), Jack Black (Bowser (voice)), Keegan-Michael Key (Toad (voice)), Benny Safdie (Bowser Jr. (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice)), Brie Larson (Rosalina (voice)), Glen Powell (Fox McCloud (voice))",
           "runtime_min": 98,
           "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=truro",
           "poster_url": "posters/super-mario-galaxy.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-14",
-              "time": "11:15",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120008&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "12:30",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120065&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "14:30",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120005&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "17:15",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120006&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-15",
               "time": "11:15",
@@ -5227,34 +4765,20 @@
                 "Wheelchair access",
                 "2D"
               ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120007&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "2D"
-              ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=rvmqo89OPvg",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=gWfOfyb_6Zs",
+          "vote_average": 6.8,
           "genres": [
             "Family",
-            "Fantasy",
             "Comedy",
             "Adventure",
+            "Fantasy",
             "Animation"
           ],
           "imdb_id": "tt28650488",
           "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-          "director": "Michael Jelenic, Aaron Horvath",
+          "director": "Aaron Horvath, Michael Jelenic",
           "writer": "Matthew Fogel"
         },
         {
@@ -5262,62 +4786,11 @@
           "search_title": "The Magic Faraway Tree",
           "film_slug": "the-magic-faraway-tree",
           "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary...",
-          "cast": "Claire Foy (Polly Thompson), Andrew Garfield (Tim Thompson), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma Thompson), Nicola Coughlan (Silky), Nonso Anozie (Moonface), Pippa Bennett-Warner (Hannah), Rebecca Ferguson (Dame Snap), Jessica Gunning (Dame Washalot), Oliver Chris (Mr Watzisname)",
+          "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
           "runtime_min": 110,
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=truro",
           "poster_url": "posters/the-magic-faraway-tree.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-14",
-              "time": "11:45",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120009&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "14:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120010&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "16:45",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120011&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "19:00",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120071&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-15",
               "time": "11:45",
@@ -5526,15 +4999,15 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=b9qyzVCW9sc",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
+          "vote_average": 6.6,
           "genres": [
             "Family",
             "Fantasy",
             "Adventure"
           ],
           "imdb_id": "tt7734244",
-          "overview": "Soon after the Thompson family’s arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary and eccentric residents, including Moonface, Silky, Dame Washalot, and Saucepan Man. At the top of the tree, they're transported to spectacular and fantastical lands and, through the joys and challenges of their adventures, the Thompsons learn to reconnect and value each other for the first time in years.",
+          "overview": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
           "director": "Ben Gregor",
           "writer": "Simon Farnaby"
         },
@@ -5549,24 +5022,12 @@
           "poster_url": "",
           "showtimes": [
             {
-              "date": "2026-04-14",
-              "time": "10:45",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-15",
               "time": "10:45",
               "screen": 3,
               "cinema_name": "Plaza Cinema, Truro",
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120026&screen=truro",
+              "booking_url": "",
               "tags": [
                 "Wheelchair access",
                 "2D"
@@ -5603,31 +5064,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=truro",
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-14",
-              "time": "13:00",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120017&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "19:30",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120012&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-15",
               "time": "13:00",
@@ -5842,19 +5278,6 @@
           "poster_url": "posters/fuze.jpg",
           "showtimes": [
             {
-              "date": "2026-04-14",
-              "time": "18:00",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120069&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-15",
               "time": "18:00",
               "screen": 4,
@@ -5903,19 +5326,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-drama/?screen=truro",
           "poster_url": "posters/the-drama.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-14",
-              "time": "20:30",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120070&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-15",
               "time": "17:45",
@@ -6110,38 +5520,12 @@
           "poster_url": "posters/hoppers.jpg",
           "showtimes": [
             {
-              "date": "2026-04-14",
-              "time": "10:30",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "15:00",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120063&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-15",
               "time": "10:30",
               "screen": 4,
               "cinema_name": "Plaza Cinema, Truro",
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120075&screen=truro",
+              "booking_url": "",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -6252,19 +5636,6 @@
           "poster_url": "posters/mothers-pride.jpg",
           "showtimes": [
             {
-              "date": "2026-04-14",
-              "time": "15:45",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120067&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-15",
               "time": "15:45",
               "screen": 4,
@@ -6312,44 +5683,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/you-me-tuscany/?screen=truro",
           "poster_url": "posters/you-me-tuscany.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-14",
-              "time": "13:15",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120015&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "16:30",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120016&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "20:15",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120014&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-15",
               "time": "13:15",
@@ -7354,7 +6687,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=a6eTho1jxuM",
-          "vote_average": 6.622,
+          "vote_average": 6.6,
           "genres": [
             "Drama",
             "Romance"
@@ -7369,7 +6702,7 @@
           "search_title": "EUGENE ONEGIN - The MET Opera - RBO 2025-26 Cinema Season",
           "film_slug": "eugene-onegin-the-met-opera-rbo-2025-26-cinema-season",
           "synopsis": "Sung in Russian with English subtitles. Following her acclaimed 2024 company debut in Puccini's Madama Butterfly, soprano Asmik Grigorian returns to the Met as Tatiana,...",
-          "cast": "Anna Netrebko (Tatiana), Peter Mattei (Eugene Onegin), Alexey Dolgov (Lensky), Štefan Kocán (Gremin), Robin Ticciati, MET Orchestra",
+          "cast": "To Be Announced",
           "runtime_min": 245,
           "film_url": "https://wtwcinemas.co.uk/film/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season/?screen=truro",
           "poster_url": "posters/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season.jpg",
@@ -7389,15 +6722,13 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=SukbEYbc8Q4",
           "vote_average": 0.0,
-          "genres": [
-            "Music"
-          ],
-          "overview": "Tchaikovsky’s setting of Pushkin’s timeless verse novel is presented on the Met stage in Deborah Warner’s moving production, starring Anna Netrebko as Tatiana and Mariusz Kwiecien and Peter Mattei sharing the title role. Alexey Dolgov sings the role of Lenski, and Robin Ticciati conducts.",
-          "imdb_id": "",
-          "director": "",
-          "writer": ""
+          "overview": "Soprano Asmik Grigorian returns to the Met as Tatiana, the lovestruck young heroine in this ardent operatic adaptation of Pushkin, which will be transmitted live from the Metropolitan Opera stage to cinemas worldwide on May 2. Baritone Igor Golovatenko is the urbane Onegin, who realizes his affection for her all too late. The Met’s evocative production, directed by Tony Award–winner Deborah Warner, “offers a beautifully detailed reading of … Tchaikovsky’s lyrical romance” (The Telegraph).",
+          "director": "Timur Zangiev, Deborah Warner",
+          "writer": "Pjotr Iljitsch Tschaikowsky",
+          "trailer_url": "",
+          "genres": [],
+          "imdb_id": ""
         },
         {
           "title": "Don’t Look Now - Pat’s (Horror) Film Club",
@@ -7607,12 +6938,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 31,
-        "selector_film_nodes": 31,
-        "primary_selector_nodes": 31,
+        "raw_cards": 30,
+        "selector_film_nodes": 30,
+        "primary_selector_nodes": 30,
         "fallback_selector_nodes": 0,
         "parsed_films": 26,
-        "parsed_showtimes": 176
+        "parsed_showtimes": 156
       }
     },
     "wadebridge": {
@@ -7624,63 +6955,11 @@
           "search_title": "The Super Mario Galaxy Movie",
           "film_slug": "super-mario-galaxy",
           "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
-          "cast": "Chris Pratt (Mario (voice)), Anya Taylor-Joy (Princess Peach (voice)), Charlie Day (Luigi (voice)), Jack Black (Bowser (voice)), Benny Safdie (Bowser Jr. (voice)), Keegan-Michael Key (Toad (voice)), Brie Larson (Rosalina (voice)), Kevin Michael Richardson (Kamek (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Juliet Jelenic (Lumalee (voice))",
+          "cast": "Chris Pratt (Mario (voice)), Charlie Day (Luigi (voice)), Anya Taylor-Joy (Princess Peach (voice)), Jack Black (Bowser (voice)), Keegan-Michael Key (Toad (voice)), Benny Safdie (Bowser Jr. (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice)), Brie Larson (Rosalina (voice)), Glen Powell (Fox McCloud (voice))",
           "runtime_min": 98,
           "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=wadebridge",
           "poster_url": "posters/super-mario-galaxy.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-14",
-              "time": "11:45",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28607&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "14:30",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28606&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "17:15",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28605&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28604&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-15",
               "time": "11:45",
@@ -7739,7 +7018,7 @@
               "screen": 1,
               "cinema_name": "Regal Cinema, Wadebridge",
               "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28620&screen=wadebridge",
+              "booking_url": "",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -7917,18 +7196,18 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=rvmqo89OPvg",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=gWfOfyb_6Zs",
+          "vote_average": 6.8,
           "genres": [
             "Family",
-            "Fantasy",
             "Comedy",
             "Adventure",
+            "Fantasy",
             "Animation"
           ],
           "imdb_id": "tt28650488",
           "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-          "director": "Michael Jelenic, Aaron Horvath",
+          "director": "Aaron Horvath, Michael Jelenic",
           "writer": "Matthew Fogel"
         },
         {
@@ -7936,37 +7215,11 @@
           "search_title": "The Magic Faraway Tree",
           "film_slug": "the-magic-faraway-tree",
           "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary...",
-          "cast": "Claire Foy (Polly Thompson), Andrew Garfield (Tim Thompson), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma Thompson), Nicola Coughlan (Silky), Nonso Anozie (Moonface), Pippa Bennett-Warner (Hannah), Rebecca Ferguson (Dame Snap), Jessica Gunning (Dame Washalot), Oliver Chris (Mr Watzisname)",
+          "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
           "runtime_min": 110,
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=wadebridge",
           "poster_url": "posters/the-magic-faraway-tree.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-14",
-              "time": "13:45",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28609&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-14",
-              "time": "16:30",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28608&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-15",
               "time": "13:45",
@@ -8098,15 +7351,15 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=b9qyzVCW9sc",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
+          "vote_average": 6.6,
           "genres": [
             "Family",
             "Fantasy",
             "Adventure"
           ],
           "imdb_id": "tt7734244",
-          "overview": "Soon after the Thompson family’s arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary and eccentric residents, including Moonface, Silky, Dame Washalot, and Saucepan Man. At the top of the tree, they're transported to spectacular and fantastical lands and, through the joys and challenges of their adventures, the Thompsons learn to reconnect and value each other for the first time in years.",
+          "overview": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
           "director": "Ben Gregor",
           "writer": "Simon Farnaby"
         },
@@ -8120,20 +7373,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=wadebridge",
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-14",
-              "time": "19:15",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28610&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-04-15",
               "time": "19:15",
@@ -8226,19 +7465,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=wadebridge",
           "poster_url": "posters/hoppers.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-14",
-              "time": "11:15",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28611&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-15",
               "time": "11:15",
@@ -8803,7 +8029,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=a6eTho1jxuM",
-          "vote_average": 6.622,
+          "vote_average": 6.6,
           "genres": [
             "Drama",
             "Romance"
@@ -8818,7 +8044,7 @@
           "search_title": "EUGENE ONEGIN - The MET Opera - RBO 2025-26 Cinema Season",
           "film_slug": "eugene-onegin-the-met-opera-rbo-2025-26-cinema-season",
           "synopsis": "Sung in Russian with English subtitles. Following her acclaimed 2024 company debut in Puccini's Madama Butterfly, soprano Asmik Grigorian returns to the Met as Tatiana,...",
-          "cast": "Anna Netrebko (Tatiana), Peter Mattei (Eugene Onegin), Alexey Dolgov (Lensky), Štefan Kocán (Gremin), Robin Ticciati, MET Orchestra",
+          "cast": "To Be Announced",
           "runtime_min": 245,
           "film_url": "https://wtwcinemas.co.uk/film/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season/?screen=wadebridge",
           "poster_url": "posters/eugene-onegin-the-met-opera-rbo-2025-26-cinema-season.jpg",
@@ -8838,15 +8064,13 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=SukbEYbc8Q4",
           "vote_average": 0.0,
-          "genres": [
-            "Music"
-          ],
-          "overview": "Tchaikovsky’s setting of Pushkin’s timeless verse novel is presented on the Met stage in Deborah Warner’s moving production, starring Anna Netrebko as Tatiana and Mariusz Kwiecien and Peter Mattei sharing the title role. Alexey Dolgov sings the role of Lenski, and Robin Ticciati conducts.",
-          "imdb_id": "",
-          "director": "",
-          "writer": ""
+          "overview": "Soprano Asmik Grigorian returns to the Met as Tatiana, the lovestruck young heroine in this ardent operatic adaptation of Pushkin, which will be transmitted live from the Metropolitan Opera stage to cinemas worldwide on May 2. Baritone Igor Golovatenko is the urbane Onegin, who realizes his affection for her all too late. The Met’s evocative production, directed by Tony Award–winner Deborah Warner, “offers a beautifully detailed reading of … Tchaikovsky’s lyrical romance” (The Telegraph).",
+          "director": "Timur Zangiev, Deborah Warner",
+          "writer": "Pjotr Iljitsch Tschaikowsky",
+          "trailer_url": "",
+          "genres": [],
+          "imdb_id": ""
         },
         {
           "title": "Frida Kahlo - Exhibition On Screen",
@@ -8999,7 +8223,7 @@
         "primary_selector_nodes": 18,
         "fallback_selector_nodes": 0,
         "parsed_films": 15,
-        "parsed_showtimes": 79
+        "parsed_showtimes": 71
       }
     }
   }
