@@ -107,20 +107,6 @@
     "cast": "",
     "cached_at": "2026-04-16T10:10:17.005836"
   },
-  "don-t-be-prey": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/73wHvkZ54SQEYUW5lIp0qzOaU7A.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=AGRn44WQvlU",
-    "vote_average": 0.0,
-    "genres": [
-      "Documentary"
-    ],
-    "imdb_id": "tt37673318",
-    "overview": "An edge-of-your-seat adventure into one man’s fight to reclaim his life by taking on the world’s most dangerous marathon swims, the Oceans Seven. Featuring unforgettable characters, raw vulnerability and breathtaking ocean feats, it’s  a gripping, uplifting journey of resilience, reinvention and what it really takes to survive.",
-    "director": "Jeff W. Tseng",
-    "writer": "Jeff W. Tseng, Steven Sander",
-    "cast": "Tim Denyer (Self), Steven Munatones (Self), Mark Sowerby (Self), Heidi Sowerby (Self), Bengisu Avci (Self), Jamie Mackay (Self), Paul Leonard (Self), Joanne Norman (Self)",
-    "cached_at": "2026-03-21T09:25:22.319257"
-  },
   "they-will-kill-you": {
     "poster_url": "https://image.tmdb.org/t/p/w342/vyatCfOSe33r8SL1biaXPcSs9tT.jpg",
     "trailer_url": "https://www.youtube.com/watch?v=xXRC_wLttqE",
@@ -202,28 +188,35 @@
     "cached_at": "2026-03-30T10:09:54.908049"
   },
   "don-t-look-now-pat-s-horror-film-club": {
-    "poster_url": "",
-    "trailer_url": "",
-    "vote_average": null,
-    "genres": [],
-    "imdb_id": "",
-    "overview": "",
-    "director": "",
-    "writer": "",
-    "cast": "",
-    "cached_at": "2026-04-14T10:10:04.671626"
+    "poster_url": "https://image.tmdb.org/t/p/w342/ivWsU3QtcstImCTOjItsH0SAbNn.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=BI9bYR0SoMs",
+    "vote_average": 6.918,
+    "genres": [
+      "Thriller",
+      "Drama",
+      "Horror"
+    ],
+    "imdb_id": "tt0069995",
+    "overview": "While grieving a terrible loss, a married couple meet two mysterious sisters, one of whom gives them a message sent from the afterlife.",
+    "director": "Nicolas Roeg",
+    "writer": "Allan Scott, Chris Bryant",
+    "cast": "Donald Sutherland (John Baxter), Julie Christie (Laura Baxter), Hilary Mason (Heather), Massimo Serato (Bishop Barbarrigo), Clelia Matania (Wendy), Renato Scarpa (Inspector Longhi), Giorgio Trestini (Workman), Leopoldo Trieste (Hotel Manager), David Tree (Anthony Babbage), Ann Rye (Mandy Babbage), Nicholas Salter (Johnny Baxter), Sharon Williams (Christine Baxter)",
+    "cached_at": "2026-04-22T00:55:38.454441"
   },
   "a-clockwork-orange-pat-s-film-club": {
-    "poster_url": "",
-    "trailer_url": "",
-    "vote_average": null,
-    "genres": [],
-    "imdb_id": "",
-    "overview": "",
-    "director": "",
-    "writer": "",
-    "cast": "",
-    "cached_at": "2026-04-14T10:10:04.894649"
+    "poster_url": "https://image.tmdb.org/t/p/w342/4sHeTAp65WrSSuc05nRBKddhBxO.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=T54uZPI4Z8A",
+    "vote_average": 8.2,
+    "genres": [
+      "Science Fiction",
+      "Crime"
+    ],
+    "imdb_id": "tt0066921",
+    "overview": "In a near-future Britain, young Alexander DeLarge and his pals get their kicks beating and raping anyone they please. When not destroying the lives of others, Alex swoons to the music of Beethoven. The state, eager to crack down on juvenile crime, gives an incarcerated Alex the option to undergo an invasive procedure that'll rob him of all personal agency. In a time when conscience is a commodity, can Alex change his tune?",
+    "director": "Stanley Kubrick",
+    "writer": "Stanley Kubrick, Anthony Burgess",
+    "cast": "Malcolm McDowell (Alex), Patrick Magee (Mr. Alexander), Carl Duering (Dr. Brodsky), Michael Bates (Chief Guard), Warren Clarke (Dim), James Marcus (Georgie), Michael Tarn (Pete), Miriam Karlin (Catlady), Adrienne Corri (Mrs. Alexander), Sheila Raynor (Mum), Philip Stone (Dad), Aubrey Morris (Deltoid)",
+    "cached_at": "2026-04-22T00:55:39.070783"
   },
   "bluey-at-the-cinema-collection-playdates-with-friends": {
     "poster_url": "",
@@ -507,7 +500,7 @@
     "director": "Timur Zangiev, Deborah Warner",
     "writer": "Pjotr Iljitsch Tschaikowsky",
     "cast": "To Be Announced",
-    "cached_at": "2026-04-19T09:40:26.174787"
+    "cached_at": "2026-04-22T00:55:36.588807"
   },
   "national-theatre-live-the-playboy-of-the-western-world": {
     "poster_url": "https://image.tmdb.org/t/p/w342/hFA2KlHAExXZFs7sZ7YtxtblDQC.jpg",
@@ -565,5 +558,100 @@
     "writer": "",
     "cast": "",
     "cached_at": "2026-04-16T10:10:15.237530"
+  },
+  "hitpig": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/bYa20LYAZ3Q7lKXtLYybo0yWWTN.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=i0O0VlWwrHU",
+    "vote_average": 6.7,
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Adventure",
+      "Family"
+    ],
+    "imdb_id": "tt13176330",
+    "overview": "A porcine bounty hunter accepts his next hit: Pickles, a naive, ebullient elephant. Though he initially sets out to capture the perky pachyderm, the unlikely pair find themselves crisscrossing the globe on an adventure that brings out the best in both of them.",
+    "director": "David Feiss, Cinzia Angelini",
+    "writer": "Berkeley Breathed, Tyler Werrin, Dave Rosenbaum",
+    "cast": "Jason Sudeikis (Hitpig (voice)), Lilly Singh (Pickles (voice)), Rainn Wilson (Leapin' Lord of the Leotard (voice)), Anitta (Leticia dos Anjos (voice)), Hannah Gadsby (Koala (voice)), RuPaul (Polecat (voice)), Charlie Adler (Super Rooster / Lobster / Nuke Techs (voice)), Flavor Flav (Chef Emcee (voice)), Lorraine Ashbourne (Big Bertha (voice)), Andy Serkis (Newscaster (voice)), Shelby Young (Catchvan (voice)), Dave Rosenbaum (Janitor (voice))",
+    "cached_at": "2026-04-22T00:55:34.964563"
+  },
+  "the-devil-wears-prada-2": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/p35IoKfBtJDNiWJMO8ZEtIMZSfW.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=KdW-osZVMLY",
+    "vote_average": 0.0,
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "imdb_id": "tt33612209",
+    "overview": "Miranda Priestly navigates her career amid the decline of traditional magazine publishing. She faces off against Emily Charlton, her one-time assistant, now a high-powered executive for a luxury group, with advertising dollars that Priestly desperately needs.",
+    "director": "David Frankel",
+    "writer": "Aline Brosh McKenna",
+    "cast": "Meryl Streep (Miranda Priestly), Anne Hathaway (Andy Sachs), Emily Blunt (Emily Charlton), Stanley Tucci (Nigel Kipling), Kenneth Branagh (Stuart), Justin Theroux (Benji Barnes), Lucy Liu (Sasha Barnes), Tracie Thoms (Lily), Tibor Feldman (Irv Ravitz), B. J. Novak (Jay Ravitz), Patrick Brammall (Peter), Simone Ashley (Amari)",
+    "cached_at": "2026-04-22T00:55:35.355669"
+  },
+  "billie-eilish-hit-me-hard-and-soft-the-tour": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/5fudu2BSuUcwsMycHDNA0l1FDPH.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=9ElURjcuWLQ",
+    "vote_average": 0.0,
+    "genres": [
+      "Music",
+      "Documentary"
+    ],
+    "imdb_id": "tt39018643",
+    "overview": "Captured during Billie Eilish's sold-out world tour, a concert experience from one of the most celebrated and successful artists of her generation, presented in immersive 3D.",
+    "director": "James Cameron, Billie Eilish",
+    "writer": "",
+    "cast": "Billie Eilish (Self), James Cameron (Self), FINNEAS (Self), Maggie Baird (Self)",
+    "cached_at": "2026-04-22T00:55:35.786276"
+  },
+  "the-mandalorian-and-grogu": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/m8lEffySgTuKxN3VsMd2gdgx1aw.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=uwild1rw7Aw",
+    "vote_average": 0.0,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
+    ],
+    "imdb_id": "tt30825738",
+    "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+    "director": "Jon Favreau",
+    "writer": "Jon Favreau, Dave Filoni, Noah Kloor, George Lucas",
+    "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo (voice)), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Ardennian Fry Cook (voice)), Hemky Madera (Imperial Warlord), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth)",
+    "cached_at": "2026-04-22T00:55:36.972264"
+  },
+  "star-wars-the-mandalorian-and-grogu": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/m8lEffySgTuKxN3VsMd2gdgx1aw.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=uwild1rw7Aw",
+    "vote_average": 0.0,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Science Fiction"
+    ],
+    "imdb_id": "tt30825738",
+    "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+    "director": "Jon Favreau",
+    "writer": "Jon Favreau, Dave Filoni, Noah Kloor, George Lucas",
+    "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo (voice)), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Ardennian Fry Cook (voice)), Hemky Madera (Imperial Warlord), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth)",
+    "cached_at": "2026-04-22T00:55:37.290615"
+  },
+  "akira-anime-season": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/neZ0ykEsPqxamsX6o5QNUFILQrz.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=Jq4ER-P6NCQ",
+    "vote_average": 7.944,
+    "genres": [
+      "Animation",
+      "Science Fiction",
+      "Action"
+    ],
+    "imdb_id": "tt0094625",
+    "overview": "A secret military project endangers Neo-Tokyo when it turns a biker gang member into a rampaging psychic psychopath that only two teenagers and a group of psychics can stop.",
+    "director": "Katsuhiro Otomo",
+    "writer": "Izo Hashimoto, Katsuhiro Otomo",
+    "cast": "Mitsuo Iwata (Shotaro Kaneda (voice)), Nozomu Sasaki (Tetsuo Shima (voice)), Mami Koyama (Kei (voice)), Taro Ishida (Colonel Shikishima), Mizuho Suzuki (Doctor Ônishi), Tessyo Genda (Ryûsaku (voice)), Koichi Kitamura (Priestess Miyako / Council A (voice)), Yuriko Fuchizaki (Kaori (voice)), Masaaki Okura (Yamagata (voice)), Takeshi Kusao (Kai (voice)), Kazuhiro Kamifuji (Masaru / No. 27 (voice)), Tatsuhiko Nakamura (Takashi / No. 26 (voice))",
+    "cached_at": "2026-04-22T00:55:37.868467"
   }
 }
