@@ -17,7 +17,7 @@ from copy import deepcopy
 from datetime import datetime, timedelta, timezone
 from html import escape as html_escape
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Set
 from zoneinfo import ZoneInfo
 from urllib.parse import quote_plus, urljoin
 
@@ -76,9 +76,17 @@ ICONS_DIR = "docs/icons"
 WTW_3D_ICON_URL = "https://wtwcinemas.co.uk/wp-content/uploads/2022/11/3D-Performance.png"
 TMDB_CACHE_DAYS = 30
 TMDB_DELAY_SEC = 0.2
+# Max /search/movie query strings per film (merged, deduped by id before picking best).
+TMDB_MAX_SEARCH_QUERY_VARIANTS = 8
 TMDB_EMPTY_CACHE_TTL_DAYS = 7
 POSTER_PLACEHOLDER_REL = "posters/placeholder.svg"
 ENRICHMENT_FIELDS = ("poster_url", "trailer_url", "vote_average", "genres", "imdb_id", "overview", "director", "writer", "cast")
+
+
+def _poster_is_placeholder(poster_url: Optional[str]) -> bool:
+    """True if no art yet or the explicit site placeholder path (not a real TMDb/local file)."""
+    u = (poster_url or "").strip()
+    return not u or u == POSTER_PLACEHOLDER_REL
 
 
 def _env_int(name: str, default: int, minimum: int, maximum: int) -> int:
@@ -160,6 +168,84 @@ SUBTITLE_SUFFIX = re.compile(r"\s*\(with subtitles\)\s*$", re.IGNORECASE)
 AUTISM_FRIENDLY_SUFFIX = re.compile(r"\s+autism\s+friendly\s+screening\s*$", re.IGNORECASE)
 # Format suffix: " - HFR 3D" (high frame rate 3D) is not part of the movie name
 FORMAT_SUFFIX = re.compile(r"\s*-\s*HFR\s*3D\s*$", re.IGNORECASE)
+# Trailing exhibition/format parentheticals (not BBFC): (2D), (3D), (Live in 3D), etc.
+_EXHIBITION_PAREN_BLOCK = re.compile(
+    r"\s*\((?:2D|3D|IMAX|4DX|ScreenX|HFR\s*3D|Live\s+in\s+3D|dubbed|subtitled)\)\s*$",
+    re.IGNORECASE,
+)
+# Exhibitor wording "at the Cinema Collection:" vs TMDb "at the Cinema:"
+_CINEMA_COLLECTION_BEFORE_COLON = re.compile(
+    r"(\bat\s+the\s+cinema)\s+collection(\s*:)",
+    re.IGNORECASE,
+)
+# WTW appends film-club / anime season / Q&A to titles; strip for TMDb (Pat's may use ASCII or typographic apostrophe).
+_WTW_TMDB_BRANDING_REDUCERS: List[re.Pattern[str]] = [
+    re.compile(r"\s+plus\s+Q\s*&\s*A\s*$", re.IGNORECASE),
+    re.compile(r"\s+plus\s+Q&A\s*$", re.IGNORECASE),
+    re.compile(r"\s*-\s*[Pp]at['\u2019]s\s*\(Horror\)\s*Film Club\s*$", re.IGNORECASE),
+    re.compile(r"\s*-\s*[Pp]at['\u2019]s\s*Film Club\s*$", re.IGNORECASE),
+    re.compile(r"\s*-\s*Anime Season\s*$", re.IGNORECASE),
+    re.compile(r":\s*The Musical\s*$", re.IGNORECASE),
+]
+# Stopwords dropped when comparing token overlap for TMDb picking (not for search query text).
+_TMDB_TOKEN_STOP = frozenset(
+    {
+        "the",
+        "a",
+        "an",
+        "of",
+        "and",
+        "or",
+        "at",
+        "in",
+        "on",
+        "for",
+        "to",
+        "with",
+        "from",
+        "by",
+    }
+)
+_TMDB_FORMAT_TOKENS = frozenset({"2d", "3d", "imax", "4dx", "hfr", "screenx"})
+
+
+def _strip_trailing_exhibition_suffixes(title: str) -> str:
+    """Remove trailing (2D)/(3D)/(Live in 3D)/… — repeat so multiple tags can be stripped."""
+    t = title.strip()
+    while True:
+        n = _EXHIBITION_PAREN_BLOCK.sub("", t).strip()
+        if n == t:
+            return t
+        t = n
+
+
+def _strip_cinema_collection_word(title: str) -> str:
+    """Map exhibitor phrasing 'at the Cinema Collection:' to 'at the Cinema:' for TMDb alignment."""
+    return _CINEMA_COLLECTION_BEFORE_COLON.sub(r"\1\2", title)
+
+
+def _wtw_branding_search_title_chain(search_title: str) -> List[str]:
+    """Progressively strip WTW film-club / season / Q&A branding for TMDb queries and match scoring."""
+    chain: List[str] = []
+    seen: Set[str] = set()
+    cur = (search_title or "").strip()
+    if not cur:
+        return []
+    while True:
+        k = cur.casefold()
+        if k not in seen:
+            seen.add(k)
+            chain.append(cur)
+        nxt: Optional[str] = None
+        for rx in _WTW_TMDB_BRANDING_REDUCERS:
+            n = rx.sub("", cur).strip()
+            if n and n != cur:
+                nxt = n
+                break
+        if nxt is None:
+            break
+        cur = nxt
+    return chain
 
 
 def get_selected_cinemas() -> Dict[str, Dict[str, Any]]:
@@ -212,6 +298,8 @@ def extract_search_title(title: str) -> str:
     t = SUBTITLE_SUFFIX.sub("", t).strip()
     t = AUTISM_FRIENDLY_SUFFIX.sub("", t).strip()
     t = RATING_PATTERN.sub("", t).strip()
+    t = _strip_trailing_exhibition_suffixes(t)
+    t = _strip_cinema_collection_word(t)
     return t.strip(" -")
 
 
@@ -470,40 +558,115 @@ def _normalize_title_for_match(title: str) -> str:
     return re.sub(r"[\s\-:]+", " ", title.lower()).strip()
 
 
-def _pick_best_tmdb_result(results: List[Dict], search_title: str) -> Optional[Dict]:
-    """Pick the TMDb result that best matches our search title (e.g. 'Avatar: Fire and Ash' not 'Avatar' 2009)."""
-    if not results or not search_title:
+def _significant_tokens_for_tmdb(norm: str) -> Set[str]:
+    """Token set for overlap scoring (strips stopwords and format noise)."""
+    words = re.findall(r"[a-z0-9]+", norm.lower())
+    return {
+        w
+        for w in words
+        if len(w) >= 2 and w not in _TMDB_TOKEN_STOP and w not in _TMDB_FORMAT_TOKENS
+    }
+
+
+def _year_from_tmdb_result(result: Dict) -> int:
+    d = (result.get("release_date") or "")[:4]
+    try:
+        return int(d) if d else 0
+    except ValueError:
+        return 0
+
+
+def _best_tmdb_score_with_variants(result: Dict[str, Any], match_titles: List[str]) -> float:
+    """Best score when WTW lists several branding variants of the same underlying film."""
+    if not match_titles:
+        return 0.0
+    return max(_score_tmdb_result_against_query(t, result) for t in match_titles)
+
+
+def _score_tmdb_result_against_query(search_title: str, result: Dict[str, Any]) -> float:
+    """Higher is better. Prefers exact/substring matches; otherwise token overlap + recency + popularity."""
+    norm_query = _normalize_title_for_match(search_title)
+    rt = (result.get("title") or "").strip()
+    norm_title = _normalize_title_for_match(rt)
+    if not norm_query or not norm_title:
+        return float(result.get("popularity") or 0) * 0.01
+    if norm_query == norm_title:
+        return 1000.0
+    if norm_query in norm_title:
+        return 900.0 + min(80.0, len(norm_query) / max(len(norm_title), 1) * 80.0)
+    if norm_title in norm_query:
+        return 750.0 + min(100.0, len(norm_title) / max(len(norm_query), 1) * 100.0)
+
+    q_tokens = _significant_tokens_for_tmdb(norm_query)
+    t_tokens = _significant_tokens_for_tmdb(norm_title)
+    if not q_tokens:
+        return 50.0 + float(result.get("popularity") or 0) * 0.05
+
+    inter = q_tokens & t_tokens
+    recall = len(inter) / len(q_tokens)
+    prec = len(inter) / len(t_tokens) if t_tokens else 0.0
+    if recall < 0.35:
+        return 50.0 * recall + float(result.get("popularity") or 0) * 0.02
+
+    f1 = 2 * recall * prec / (recall + prec) if (recall + prec) > 0 else 0.0
+    base = 350.0 * f1 + 200.0 * recall
+
+    y = _year_from_tmdb_result(result)
+    if y >= 2020:
+        base += min(45.0, (y - 2000) * 0.4)
+    pop = float(result.get("popularity") or 0.0)
+    base += min(35.0, pop * 0.12)
+    return base
+
+
+def _pick_best_tmdb_result(results: List[Dict], match_titles: List[str]) -> Optional[Dict]:
+    """Pick the TMDb result that best matches our title(s), including stripped WTW branding variants."""
+    if not results or not match_titles:
         return results[0] if results else None
-    norm_search = _normalize_title_for_match(search_title)
-    if not norm_search:
-        return results[0]
-    best = None
-    best_score = -1
+    best: Optional[Dict] = None
+    best_score = -1.0
     for r in results:
-        title = (r.get("title") or "").strip()
-        norm_title = _normalize_title_for_match(title)
-        if norm_title == norm_search:
-            return r  # Exact match
-        score = 0
-        if norm_search in norm_title:
-            score = 90  # Our search is contained in result title (e.g. result "Avatar: Fire and Ash")
-        elif norm_title in norm_search:
-            score = 30  # Result is shorter (e.g. "Avatar" when we want "Avatar: Fire and Ash") - prefer longer
-        else:
-            # Partial: prefer recent films for sequel-style titles
-            release = (r.get("release_date") or "")[:4]
-            try:
-                year = int(release) if release else 0
-                if year >= 2020:
-                    score = 50
-                else:
-                    score = 10
-            except ValueError:
-                score = 10
-        if score > best_score:
-            best_score = score
+        s = _best_tmdb_score_with_variants(r, match_titles)
+        if s > best_score:
+            best_score = s
             best = r
     return best if best is not None else results[0]
+
+
+def _tmdb_search_variant_queries(raw_title: str, search_title: str) -> List[str]:
+    """Ordered unique /search/movie query strings (primary listing vs TMDb naming)."""
+    seen: Set[str] = set()
+    out: List[str] = []
+
+    def add(s: str) -> None:
+        s = (s or "").strip()
+        if len(s) < 2:
+            return
+        k = s.casefold()
+        if k in seen:
+            return
+        seen.add(k)
+        out.append(s)
+
+    for t in _wtw_branding_search_title_chain(search_title):
+        add(t)
+
+    collapsed = _strip_cinema_collection_word(search_title)
+    if collapsed != search_title:
+        add(collapsed)
+
+    if ":" in search_title:
+        head, tail = search_title.split(":", 1)
+        head, tail = head.strip(), tail.strip()
+        if head and tail and len(tail) >= 6:
+            words = re.findall(r"[A-Za-z0-9]+", head)
+            # "FirstWord Tail" helps TMDb match compilations (e.g. Bluey … : Playdates…)
+            if words and len(head) <= 52 and len(words) <= 6:
+                add(f"{words[0]} {tail}")
+
+    for fq in _event_cinema_fallback_queries(raw_title):
+        add(fq)
+    return out
 
 
 def _event_cinema_fallback_queries(title: str) -> List[str]:
@@ -584,28 +747,34 @@ def enrich_film_tmdb(
     time.sleep(TMDB_DELAY_SEC)
     try:
         search_url = "https://api.themoviedb.org/3/search/movie"
-        data = tmdb_get_json(
-            search_url,
-            params={"api_key": api_key, "query": search_title, "language": "en-GB"},
-        )
-        results = data.get("results") or []
-        match_title = search_title
-        # Event cinema fallback: try RBO/Met Opera queries when full title returns nothing
-        fallback_queries = _event_cinema_fallback_queries(film.get("title", "")) if not results else []
-        for fq in fallback_queries:
-            time.sleep(TMDB_DELAY_SEC)
+        raw_title = film.get("title", "") or ""
+        match_titles = _wtw_branding_search_title_chain(search_title)
+        variant_queries = _tmdb_search_variant_queries(raw_title, search_title)
+        merged_results: List[Dict[str, Any]] = []
+        seen_ids: Set[int] = set()
+
+        for qi, q in enumerate(variant_queries[:TMDB_MAX_SEARCH_QUERY_VARIANTS]):
+            if qi > 0:
+                time.sleep(TMDB_DELAY_SEC)
             data = tmdb_get_json(
                 search_url,
-                params={"api_key": api_key, "query": fq, "language": "en-GB"},
+                params={"api_key": api_key, "query": q, "language": "en-GB"},
             )
-            results = data.get("results") or []
-            if results:
-                match_title = fq
-                break
+            for r in data.get("results") or []:
+                rid = r.get("id")
+                if isinstance(rid, int) and rid not in seen_ids:
+                    seen_ids.add(rid)
+                    merged_results.append(r)
+            if merged_results:
+                cand = _pick_best_tmdb_result(merged_results, match_titles)
+                if cand and _best_tmdb_score_with_variants(cand, match_titles) >= 899.0:
+                    break
+
+        results = merged_results
         if not results:
             cache[cache_key] = _empty_tmdb_entry()
             return
-        chosen = _pick_best_tmdb_result(results, match_title)
+        chosen = _pick_best_tmdb_result(results, match_titles)
         if not chosen:
             cache[cache_key] = _empty_tmdb_entry()
             return
@@ -1288,11 +1457,14 @@ def build_html(data: Dict[str, Any]) -> str:
 
         has_3d = any("3D" in (st.get("tags") or []) for st in (f.get("showtimes") or []))
         poster_src = poster_url or POSTER_PLACEHOLDER_REL
-        poster_alt = f"Poster for {title}" if poster_url else f"No poster available for {title}"
+        if _poster_is_placeholder(poster_url):
+            poster_alt = f"No poster available for {title}"
+        else:
+            poster_alt = f"Poster for {title}"
         poster_inner = f'<img src="{poster_src}" alt="{poster_alt}" loading="lazy"/>'
-        if poster_url and has_3d:
+        if poster_url and not _poster_is_placeholder(poster_url) and has_3d:
             poster_inner += '<i class="icon--hints icon--3d" aria-hidden="true"></i>'
-        if not poster_url:
+        if _poster_is_placeholder(poster_url):
             poster_inner += '<span class="poster-fallback-label">No poster yet</span>'
         poster_div = f'<div class="poster">{poster_inner}</div>'
         # YouTube embed URL for lightbox; use nocookie domain and add fallback watch URL for Error 153 (embed disabled)
@@ -2208,6 +2380,19 @@ def main() -> None:
             if local:
                 film["poster_url"] = local
     _ensure_placeholder_poster()
+
+    placeholder_fallback: Dict[str, str] = {}
+    for film in all_films:
+        if _poster_is_placeholder(film.get("poster_url")):
+            film["poster_url"] = POSTER_PLACEHOLDER_REL
+            placeholder_fallback.setdefault(_tmdb_cache_key(film), film.get("title", ""))
+    if placeholder_fallback:
+        titles = sorted(t for t in placeholder_fallback.values() if t)
+        logger.info(
+            "Using placeholder poster for %d unique film(s) without TMDb art: %s",
+            len(placeholder_fallback),
+            ", ".join(titles),
+        )
 
     missing_by_key: Dict[str, str] = {}
     for film in all_films:
