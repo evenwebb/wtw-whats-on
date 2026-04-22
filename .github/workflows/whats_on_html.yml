@@ -1,5 +1,8 @@
 # Generate and publish WTW cinemas what's-on HTML when listings change.
 # Runs daily and on manual trigger; commits only when data or cache changed.
+#
+# Minute savers: job-level env (one place), combined pip+scraper step, faster TMDb pacing in CI
+# (TMDB_DELAY_SEC / TMDB_MAX_SEARCH_QUERY_VARIANTS). Override via repo Variables if needed.
 name: What's On HTML
 
 on:
@@ -18,7 +21,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 12
     env:
       PIP_DISABLE_PIP_VERSION_CHECK: "1"
       CREATE_FAILURE_ISSUE: ${{ secrets.CREATE_FAILURE_ISSUE }}
@@ -32,40 +35,34 @@ jobs:
       HEALTH_MAX_MARKUP_SUSPECT_CINEMAS: ${{ vars.HEALTH_MAX_MARKUP_SUSPECT_CINEMAS || '1' }}
       HEALTH_EXCLUDED_CINEMAS: ${{ vars.HEALTH_EXCLUDED_CINEMAS || 'st-ives' }}
       MAX_CONSECUTIVE_CINEMA_FAILURES: ${{ vars.MAX_CONSECUTIVE_CINEMA_FAILURES || '2' }}
+      TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+      # Tighter pacing than local dev defaults (see whats_on_scraper.py). Tune via repo Variables.
+      TMDB_DELAY_SEC: ${{ vars.TMDB_DELAY_SEC || '0.1' }}
+      TMDB_MAX_SEARCH_QUERY_VARIANTS: ${{ vars.TMDB_MAX_SEARCH_QUERY_VARIANTS || '6' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
         with:
           fetch-depth: 1
+          show-progress: false
 
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.11"
-          cache: "pip"
+          cache: pip
+          cache-dependency-path: requirements.txt
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Run scraper and generate HTML
-        env:
-          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
-          POSTER_MISSING_FAIL_THRESHOLD: ${{ env.POSTER_MISSING_FAIL_THRESHOLD }}
-          WTW_ENABLED_CINEMAS: ${{ env.WTW_ENABLED_CINEMAS }}
-          HEALTHCHECK_ENFORCE: ${{ env.HEALTHCHECK_ENFORCE }}
-          HEALTH_MIN_TOTAL_FILMS: ${{ env.HEALTH_MIN_TOTAL_FILMS }}
-          HEALTH_MIN_TOTAL_SHOWTIMES: ${{ env.HEALTH_MIN_TOTAL_SHOWTIMES }}
-          HEALTH_MIN_CINEMAS_WITH_FILMS: ${{ env.HEALTH_MIN_CINEMAS_WITH_FILMS }}
-          HEALTH_MIN_NOW_SHOWING_FILMS: ${{ env.HEALTH_MIN_NOW_SHOWING_FILMS }}
-          HEALTH_MAX_MARKUP_SUSPECT_CINEMAS: ${{ env.HEALTH_MAX_MARKUP_SUSPECT_CINEMAS }}
-          HEALTH_EXCLUDED_CINEMAS: ${{ env.HEALTH_EXCLUDED_CINEMAS }}
-          MAX_CONSECUTIVE_CINEMA_FAILURES: ${{ env.MAX_CONSECUTIVE_CINEMA_FAILURES }}
+      - name: Install dependencies and run scraper
         run: |
-          set -o pipefail
-          mkdir -p logs
-          if [ -n "${TMDB_API_KEY}" ]; then
-            echo "::add-mask::${TMDB_API_KEY}"
+          set -eu -o pipefail
+          if [ -z "${TMDB_API_KEY:-}" ]; then
+            echo "TMDB_API_KEY is required for reliable poster enrichment. Set repository secret TMDB_API_KEY."
+            exit 1
           fi
+          echo "::add-mask::${TMDB_API_KEY}"
+          pip install -q -r requirements.txt
+          mkdir -p logs
           cat > logs/health_env.txt <<EOF
           WTW_ENABLED_CINEMAS=${WTW_ENABLED_CINEMAS}
           HEALTHCHECK_ENFORCE=${HEALTHCHECK_ENFORCE}
@@ -77,14 +74,10 @@ jobs:
           HEALTH_EXCLUDED_CINEMAS=${HEALTH_EXCLUDED_CINEMAS}
           MAX_CONSECUTIVE_CINEMA_FAILURES=${MAX_CONSECUTIVE_CINEMA_FAILURES}
           POSTER_MISSING_FAIL_THRESHOLD=${POSTER_MISSING_FAIL_THRESHOLD}
+          TMDB_DELAY_SEC=${TMDB_DELAY_SEC}
+          TMDB_MAX_SEARCH_QUERY_VARIANTS=${TMDB_MAX_SEARCH_QUERY_VARIANTS}
           EOF
-          {
-            if [ -z "${TMDB_API_KEY}" ]; then
-              echo "TMDB_API_KEY is required for reliable poster enrichment. Set repository secret TMDB_API_KEY."
-              exit 1
-            fi
-            python3 whats_on_scraper.py
-          } 2>&1 | tee logs/scraper.log
+          python3 whats_on_scraper.py 2>&1 | tee logs/scraper.log
 
       - name: Upload scraper log artifact on failure
         if: failure() && hashFiles('logs/scraper.log') != ''

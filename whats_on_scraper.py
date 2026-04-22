@@ -74,19 +74,6 @@ WTW_CERT_BASE = "https://wtwcinemas.co.uk/wp-content/themes/wtw-2017/dist/images
 CERT_IMAGES = {"U": "cert-u.png", "PG": "cert-pg.png", "12A": "cert-12a.png", "15": "cert-15.png", "18": "cert-18.png"}
 ICONS_DIR = "docs/icons"
 WTW_3D_ICON_URL = "https://wtwcinemas.co.uk/wp-content/uploads/2022/11/3D-Performance.png"
-TMDB_CACHE_DAYS = 30
-TMDB_DELAY_SEC = 0.2
-# Max /search/movie query strings per film (merged, deduped by id before picking best).
-TMDB_MAX_SEARCH_QUERY_VARIANTS = 8
-TMDB_EMPTY_CACHE_TTL_DAYS = 7
-POSTER_PLACEHOLDER_REL = "posters/placeholder.svg"
-ENRICHMENT_FIELDS = ("poster_url", "trailer_url", "vote_average", "genres", "imdb_id", "overview", "director", "writer", "cast")
-
-
-def _poster_is_placeholder(poster_url: Optional[str]) -> bool:
-    """True if no art yet or the explicit site placeholder path (not a real TMDb/local file)."""
-    u = (poster_url or "").strip()
-    return not u or u == POSTER_PLACEHOLDER_REL
 
 
 def _env_int(name: str, default: int, minimum: int, maximum: int) -> int:
@@ -97,6 +84,22 @@ def _env_int(name: str, default: int, minimum: int, maximum: int) -> int:
         value = int(raw)
     except ValueError:
         logging.getLogger(__name__).warning("Invalid %s value %r, using default %d", name, raw, default)
+        return default
+    if value < minimum:
+        return minimum
+    if value > maximum:
+        return maximum
+    return value
+
+
+def _env_float(name: str, default: float, minimum: float, maximum: float) -> float:
+    raw = (os.environ.get(name) or "").strip()
+    if not raw:
+        return default
+    try:
+        value = float(raw)
+    except ValueError:
+        logging.getLogger(__name__).warning("Invalid %s value %r, using default %s", name, raw, default)
         return default
     if value < minimum:
         return minimum
@@ -117,6 +120,24 @@ def _env_csv(name: str, default: str = "") -> List[str]:
     if not raw:
         return []
     return [item.strip().lower() for item in raw.split(",") if item.strip()]
+
+
+TMDB_CACHE_DAYS = 30
+# CI can set TMDB_DELAY_SEC (e.g. 0.1) to trim wall time; TMDb allows ~40 req/10s per IP.
+TMDB_DELAY_SEC = _env_float("TMDB_DELAY_SEC", default=0.2, minimum=0.0, maximum=5.0)
+# Cap variant queries per film (workflow may set 5–6 to save API round-trips when early-exit usually fires).
+TMDB_MAX_SEARCH_QUERY_VARIANTS = _env_int(
+    "TMDB_MAX_SEARCH_QUERY_VARIANTS", default=8, minimum=1, maximum=20
+)
+TMDB_EMPTY_CACHE_TTL_DAYS = 7
+POSTER_PLACEHOLDER_REL = "posters/placeholder.svg"
+ENRICHMENT_FIELDS = ("poster_url", "trailer_url", "vote_average", "genres", "imdb_id", "overview", "director", "writer", "cast")
+
+
+def _poster_is_placeholder(poster_url: Optional[str]) -> bool:
+    """True if no art yet or the explicit site placeholder path (not a real TMDb/local file)."""
+    u = (poster_url or "").strip()
+    return not u or u == POSTER_PLACEHOLDER_REL
 
 
 INITIAL_SHOWINGS_VISIBLE = _env_int("WTW_INITIAL_SHOWINGS_VISIBLE", default=10, minimum=3, maximum=30)
