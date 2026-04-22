@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-22T00:55:31Z",
+  "updated_at": "2026-04-22T10:14:00Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -190,7 +190,7 @@
           "title": "The Magic Faraway Tree",
           "search_title": "The Magic Faraway Tree",
           "film_slug": "the-magic-faraway-tree",
-          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children - Joe, Beth, and Fran - discover a magical tree and its extraordinary...",
+          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary...",
           "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
           "runtime_min": 110,
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=st-austell",
@@ -1455,7 +1455,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77055&screen=staustell",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -1467,7 +1468,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77054&screen=staustell",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -1479,7 +1481,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77058&screen=staustell",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -1491,7 +1494,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77057&screen=staustell",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -1503,7 +1507,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77056&screen=staustell",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -1515,7 +1520,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77061&screen=staustell",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -1527,7 +1533,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77060&screen=staustell",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -1539,7 +1546,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77064&screen=staustell",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -1551,7 +1559,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77063&screen=staustell",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -1563,7 +1572,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77062&screen=staustell",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -1575,7 +1585,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77066&screen=staustell",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -1587,7 +1598,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77065&screen=staustell",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             }
           ],
@@ -2230,7 +2242,7 @@
           "title": "The Magic Faraway Tree",
           "search_title": "The Magic Faraway Tree",
           "film_slug": "the-magic-faraway-tree",
-          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children - Joe, Beth, and Fran - discover a magical tree and its extraordinary...",
+          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary...",
           "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
           "runtime_min": 110,
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=newquay",
@@ -3476,7 +3488,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=65450&screen=newquay",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -3488,7 +3501,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=65449&screen=newquay",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -3500,7 +3514,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=65453&screen=newquay",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -3512,7 +3527,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=65452&screen=newquay",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -3524,7 +3540,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=65451&screen=newquay",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -3536,7 +3553,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=65455&screen=newquay",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -3548,7 +3566,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=65458&screen=newquay",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -3560,7 +3579,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=65457&screen=newquay",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -3572,7 +3592,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=65456&screen=newquay",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             }
           ],
@@ -4250,7 +4271,7 @@
           "title": "The Magic Faraway Tree",
           "search_title": "The Magic Faraway Tree",
           "film_slug": "the-magic-faraway-tree",
-          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children - Joe, Beth, and Fran - discover a magical tree and its extraordinary...",
+          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary...",
           "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
           "runtime_min": 110,
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=truro",
@@ -4923,7 +4944,7 @@
             {
               "date": "2026-05-07",
               "time": "11:00",
-              "screen": 2,
+              "screen": 3,
               "cinema_name": "Plaza Cinema, Truro",
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120234&screen=truro",
@@ -4937,7 +4958,7 @@
             {
               "date": "2026-05-07",
               "time": "11:15",
-              "screen": 3,
+              "screen": 4,
               "cinema_name": "Plaza Cinema, Truro",
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120235&screen=truro",
@@ -5356,7 +5377,7 @@
             {
               "date": "2026-05-14",
               "time": "11:00",
-              "screen": 2,
+              "screen": 3,
               "cinema_name": "Plaza Cinema, Truro",
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120236&screen=truro",
@@ -5385,7 +5406,7 @@
             {
               "date": "2026-05-14",
               "time": "11:15",
-              "screen": 3,
+              "screen": 4,
               "cinema_name": "Plaza Cinema, Truro",
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120237&screen=truro",
@@ -5852,7 +5873,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120208&screen=truro",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -5864,7 +5886,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120207&screen=truro",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -5876,7 +5899,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120210&screen=truro",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -5888,7 +5912,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120209&screen=truro",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -5900,7 +5925,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120212&screen=truro",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -5912,7 +5938,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120211&screen=truro",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -5924,7 +5951,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120213&screen=truro",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -5936,7 +5964,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120214&screen=truro",
               "tags": [
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             }
           ],
@@ -6530,7 +6559,7 @@
           "title": "The Magic Faraway Tree",
           "search_title": "The Magic Faraway Tree",
           "film_slug": "the-magic-faraway-tree",
-          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children - Joe, Beth, and Fran - discover a magical tree and its extraordinary...",
+          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary...",
           "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
           "runtime_min": 110,
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=wadebridge",
