@@ -48,40 +48,20 @@
     "cached_at": "2026-03-25T09:45:31.626387"
   },
   "funny-girl-the-musical": {
-    "poster_url": "",
-    "trailer_url": "",
-    "vote_average": null,
-    "genres": [],
-    "imdb_id": "",
-    "overview": "",
-    "director": "",
-    "writer": "",
-    "cast": "",
-    "cached_at": "2026-04-16T10:10:17.243896"
-  },
-  "edge-of-summer-in-association-with-the-cornwall-film-festival": {
-    "poster_url": "",
-    "trailer_url": "",
-    "vote_average": null,
-    "genres": [],
-    "imdb_id": "",
-    "overview": "",
-    "director": "",
-    "writer": "",
-    "cast": "",
-    "cached_at": "2026-03-24T09:48:55.377704"
-  },
-  "the-last-blossom-anime-season-subtitled": {
-    "poster_url": "",
-    "trailer_url": "",
-    "vote_average": null,
-    "genres": [],
-    "imdb_id": "",
-    "overview": "",
-    "director": "",
-    "writer": "",
-    "cast": "",
-    "cached_at": "2026-03-24T09:48:58.324668"
+    "poster_url": "https://image.tmdb.org/t/p/w342/ywjXHWUK0niM26UKy7DTCErWTFz.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=qzOFC4XiqL0",
+    "vote_average": 7.2,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "imdb_id": "tt0062994",
+    "overview": "The life of famed 1930s comedienne Fanny Brice, from her early days in the Jewish slums of New York, to the height of her career with the Ziegfeld Follies, as well as her marriage to the rakish gambler Nick Arnstein.",
+    "director": "William Wyler",
+    "writer": "Isobel Lennart",
+    "cast": "Barbra Streisand (Fanny Brice), Omar Sharif (Nick Arnstein), Kay Medford (Rose Brice), Anne Francis (Georgia James), Walter Pidgeon (Florenz Ziegfeld), Lee Allen (Eddie Ryan), Mae Questel (Mrs. Strakosh), Gerald Mohr (Branca), Frank Faylen (Keeney), Mittie Lawrence (Emma), Gertrude Flynn (Mrs. O'Malley), Penny Santon (Mrs. Meeker)",
+    "cached_at": "2026-04-23T10:17:14.639078"
   },
   "akira-anime-season-subtitled": {
     "poster_url": "",
@@ -106,56 +86,6 @@
     "writer": "",
     "cast": "",
     "cached_at": "2026-04-16T10:10:17.005836"
-  },
-  "they-will-kill-you": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/vyatCfOSe33r8SL1biaXPcSs9tT.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=xXRC_wLttqE",
-    "vote_average": 6.643,
-    "genres": [
-      "Action",
-      "Comedy",
-      "Horror"
-    ],
-    "imdb_id": "tt31728330",
-    "overview": "A woman answers a help wanted ad to be a housekeeper in a mysterious high-rise in New York City, not realizing she is entering a community that has seen a number of disappearances over the years and may be under the grip of a Satanic cult.",
-    "director": "Kirill Sokolov",
-    "writer": "Kirill Sokolov, Alex Litvak",
-    "cast": "Zazie Beetz (Asia Reaves), Myha'la (Maria Reaves), Paterson Joseph, Tom Felton (Kevin), Heather Graham (Sharon), Patricia Arquette (Lilith), Armando Rivera, David Viviers, Lindzay Naidoo (Maid), Chris van Rensburg (The Manager), Gabe Gabriel (Short Steve), Megan Alexander (Prisoner)",
-    "cached_at": "2026-03-24T09:48:55.124632"
-  },
-  "rose-of-nevada": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/baFW06cijsli2OFewKgEIFpuFc2.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=bw371ui9cTk",
-    "vote_average": 0.0,
-    "genres": [
-      "Mystery",
-      "Drama",
-      "Science Fiction"
-    ],
-    "imdb_id": "tt35674521",
-    "overview": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves transported back in time, mistaken for the original crew.",
-    "director": "Mark Jenkin",
-    "writer": "Mark Jenkin",
-    "cast": "George MacKay (Nick), Callum Turner (Liam), Francis Magee, Edward Rowe, Rosalind Eleazar, Mary Woodvine",
-    "cached_at": "2026-03-24T09:48:57.587648"
-  },
-  "arco": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/mWlvHFxTDhq9O5WSOHywa32QIez.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=Ud0DK17iF1w",
-    "vote_average": 7.489,
-    "genres": [
-      "Animation",
-      "Adventure",
-      "Fantasy",
-      "Family",
-      "Science Fiction"
-    ],
-    "imdb_id": "tt14883538",
-    "overview": "10-year-old Arco lives in a far future. During his first flight in his rainbow suit, he loses control and falls into the past. Iris, a girl his age from 2075, comes to his rescue and tries by all means to help send him back to his era.",
-    "director": "Ugo Bienvenu",
-    "writer": "Ugo Bienvenu, Félix de Givry",
-    "cast": "Margot Ringard Oldra (Iris (voice)), Oscar Tresanini (Arco (voice)), Nathanaël Perrot (Clifford (voice)), Alma Jodorowsky (Jeanne / Mikki (voice)), Swann Arlaud (Tom / Mikki  (voice)), Vincent Macaigne (Dougie (voice)), Louis Garrel (Stewie (voice)), William Lebghil (Frankie (voice)), Sophie Mas (La mère d'Arco (voix)), Frédérique Cantrel (La mère d'Arco - séquence finale (voix)), Oxmo Puccino (Dom (voice)), Joséphine Mancini (Ada (voix))",
-    "cached_at": "2026-03-24T09:48:58.077661"
   },
   "mother-s-pride": {
     "poster_url": "https://image.tmdb.org/t/p/w342/jWrNT4QawuM5OclbjkbrhpbI2Wf.jpg",
@@ -280,16 +210,18 @@
     "cached_at": "2026-04-02T09:53:53.814849"
   },
   "jo-in-the-water-plus-q-a": {
-    "poster_url": "",
-    "trailer_url": "",
-    "vote_average": null,
-    "genres": [],
-    "imdb_id": "",
-    "overview": "",
-    "director": "",
+    "poster_url": "https://image.tmdb.org/t/p/w342/7QS3hrkx6OdPar705vnU9b1tKAp.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=LgwULRkm7Jc",
+    "vote_average": 0.0,
+    "genres": [
+      "Documentary"
+    ],
+    "imdb_id": "tt38991522",
+    "overview": "A passionate sea swimmer turned reluctant activist, Jo Bateman takes on one of the UK’s biggest water companies in a David-and-Goliath battle to protect our oceans from devastating sewage pollution. As Jo’s courage helps ignite a growing movement, this film exposes the dire state of our water system and asks: who will stand up for our right to swim in clean natural waters, for the species and communities that rely upon them?",
+    "director": "Pip Piper",
     "writer": "",
-    "cast": "",
-    "cached_at": "2026-04-16T10:10:16.499211"
+    "cast": "Jo Bateman (Self), Pip Piper (Self)",
+    "cached_at": "2026-04-23T10:17:14.047929"
   },
   "you-me-tuscany": {
     "poster_url": "https://image.tmdb.org/t/p/w342/mJS0IF7Af3WpPRhSTDT6rGpiLzw.jpg",
@@ -500,7 +432,7 @@
     "director": "Timur Zangiev, Deborah Warner",
     "writer": "Pjotr Iljitsch Tschaikowsky",
     "cast": "To Be Announced",
-    "cached_at": "2026-04-22T10:14:04.268887"
+    "cached_at": "2026-04-23T10:17:12.665185"
   },
   "national-theatre-live-the-playboy-of-the-western-world": {
     "poster_url": "https://image.tmdb.org/t/p/w342/hFA2KlHAExXZFs7sZ7YtxtblDQC.jpg",
@@ -653,5 +585,52 @@
     "writer": "Izo Hashimoto, Katsuhiro Otomo",
     "cast": "Mitsuo Iwata (Shotaro Kaneda (voice)), Nozomu Sasaki (Tetsuo Shima (voice)), Mami Koyama (Kei (voice)), Taro Ishida (Colonel Shikishima), Mizuho Suzuki (Doctor Ônishi), Tessyo Genda (Ryûsaku (voice)), Koichi Kitamura (Priestess Miyako / Council A (voice)), Yuriko Fuchizaki (Kaori (voice)), Masaaki Okura (Yamagata (voice)), Takeshi Kusao (Kai (voice)), Kazuhiro Kamifuji (Masaru / No. 27 (voice)), Tatsuhiko Nakamura (Takashi / No. 26 (voice))",
     "cached_at": "2026-04-22T00:55:37.868467"
+  },
+  "rose-of-nevada": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/9f4aOkrINAaoEh95wSNu9Zlac3W.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=bw371ui9cTk",
+    "vote_average": 0.0,
+    "genres": [
+      "Science Fiction",
+      "Mystery",
+      "Drama"
+    ],
+    "imdb_id": "tt35674521",
+    "overview": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves transported back in time, mistaken for the original crew.",
+    "director": "Mark Jenkin",
+    "writer": "Mark Jenkin",
+    "cast": "George MacKay (Nick), Callum Turner (Liam), Francis Magee, Edward Rowe, Rosalind Eleazar, Mary Woodvine",
+    "cached_at": "2026-04-23T10:17:11.870407"
+  },
+  "top-gun": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=Klc__shdj88",
+    "vote_average": 7.1,
+    "genres": [
+      "Action",
+      "Drama",
+      "Romance"
+    ],
+    "imdb_id": "tt0092099",
+    "overview": "For Lieutenant Pete 'Maverick' Mitchell and his friend and co-pilot Nick 'Goose' Bradshaw, being accepted into an elite training school for fighter pilots is a dream come true. But a tragedy, as well as personal demons, will threaten Pete's dreams of becoming an ace pilot.",
+    "director": "Tony Scott",
+    "writer": "Jim Cash, Jack Epps Jr.",
+    "cast": "Tom Cruise (Maverick), Kelly McGillis (Charlie), Val Kilmer (Ice), Anthony Edwards (Goose), Tom Skerritt (Viper), Michael Ironside (Jester), John Stockwell (Cougar), Barry Tubb (Wolfman), Rick Rossovich (Slider), Tim Robbins (Merlin), Clarence Gilyard Jr. (Sundown), Whip Hubley (Hollywood)",
+    "cached_at": "2026-04-23T10:17:13.044242"
+  },
+  "top-gun-maverick": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/n0YuM4f5lvGAP6MAW2kBIzugXnc.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=Klc__shdj88",
+    "vote_average": 8.2,
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "imdb_id": "tt1745960",
+    "overview": "After more than thirty years of service as one of the Navy’s top aviators, and dodging the advancement in rank that would ground him, Pete “Maverick” Mitchell finds himself training a detachment of TOP GUN graduates for a specialized mission the likes of which no living pilot has ever seen.",
+    "director": "Joseph Kosinski",
+    "writer": "Eric Warren Singer, Ehren Kruger, Christopher McQuarrie, Justin Marks, Peter Craig",
+    "cast": "Tom Cruise (Capt. Pete 'Maverick' Mitchell), Miles Teller (Lt. Bradley 'Rooster' Bradshaw), Jennifer Connelly (Penny Benjamin), Bashir Salahuddin (Wo-1. Bernie 'Hondo' Coleman), Jon Hamm (Adm. Beau 'Cyclone' Simpson), Charles Parnell (Adm. Solomon 'Warlock' Bates), Monica Barbaro (Lt. Natasha 'Phoenix' Trace), Lewis Pullman (Lt. Robert 'Bob' Floyd), Jay Ellis (Lt. Reuben 'Payback' Fitch), Danny Ramirez (Lt. Mickey 'Fanboy' Garcia), Glen Powell (Lt. Jake 'Hangman' Seresin), Val Kilmer (Adm. Tom 'Iceman' Kazansky)",
+    "cached_at": "2026-04-23T10:17:13.438341"
   }
 }
