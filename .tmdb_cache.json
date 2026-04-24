@@ -35,18 +35,6 @@
     "cast": "",
     "cached_at": "2026-04-09T10:06:20.937007"
   },
-  "project-hail-mary-parent-baby-screening": {
-    "poster_url": "",
-    "trailer_url": "",
-    "vote_average": null,
-    "genres": [],
-    "imdb_id": "",
-    "overview": "",
-    "director": "",
-    "writer": "",
-    "cast": "",
-    "cached_at": "2026-03-25T09:45:31.626387"
-  },
   "funny-girl-the-musical": {
     "poster_url": "https://image.tmdb.org/t/p/w342/ywjXHWUK0niM26UKy7DTCErWTFz.jpg",
     "trailer_url": "https://www.youtube.com/watch?v=qzOFC4XiqL0",
@@ -432,7 +420,7 @@
     "director": "Timur Zangiev, Deborah Warner",
     "writer": "Pjotr Iljitsch Tschaikowsky",
     "cast": "To Be Announced",
-    "cached_at": "2026-04-23T10:17:12.665185"
+    "cached_at": "2026-04-24T10:16:24.165439"
   },
   "national-theatre-live-the-playboy-of-the-western-world": {
     "poster_url": "https://image.tmdb.org/t/p/w342/hFA2KlHAExXZFs7sZ7YtxtblDQC.jpg",
@@ -632,5 +620,20 @@
     "writer": "Eric Warren Singer, Ehren Kruger, Christopher McQuarrie, Justin Marks, Peter Craig",
     "cast": "Tom Cruise (Capt. Pete 'Maverick' Mitchell), Miles Teller (Lt. Bradley 'Rooster' Bradshaw), Jennifer Connelly (Penny Benjamin), Bashir Salahuddin (Wo-1. Bernie 'Hondo' Coleman), Jon Hamm (Adm. Beau 'Cyclone' Simpson), Charles Parnell (Adm. Solomon 'Warlock' Bates), Monica Barbaro (Lt. Natasha 'Phoenix' Trace), Lewis Pullman (Lt. Robert 'Bob' Floyd), Jay Ellis (Lt. Reuben 'Payback' Fitch), Danny Ramirez (Lt. Mickey 'Fanboy' Garcia), Glen Powell (Lt. Jake 'Hangman' Seresin), Val Kilmer (Adm. Tom 'Iceman' Kazansky)",
     "cached_at": "2026-04-23T10:17:13.438341"
+  },
+  "patriot": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/5LHrtudEt6Mh6VlfGHoYqqjVOHV.jpg",
+    "trailer_url": "",
+    "vote_average": 0.0,
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "imdb_id": "tt33412884",
+    "overview": "A spy thriller following covert operatives as they uncover a surveillance conspiracy that escalates into a national security emergency, racing against time to dismantle the network before it silences opposition.",
+    "director": "Mahesh Narayanan",
+    "writer": "Mahesh Narayanan",
+    "cast": "Mammootty (Dr. Daniel James), Mohanlal (Col. Rahim Naik), Fahadh Faasil (Shakti), Kunchacko Boban (Michael Devassy), Nayanthara, Revathi, Zarin Shihab, Siddique, Darshana Rajendran, Renji Panicker, Danish Husain, Prakash Belawadi",
+    "cached_at": "2026-04-24T10:16:24.628299"
   }
 }
