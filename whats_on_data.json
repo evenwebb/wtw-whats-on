@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-24T10:16:21Z",
+  "updated_at": "2026-04-25T09:44:12Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -15,34 +15,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=st-austell",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-24",
-              "time": "16:45",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76955&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-04-24",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76956&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-04-25",
               "time": "13:45",
@@ -280,32 +252,6 @@
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
             {
-              "date": "2026-04-24",
-              "time": "16:30",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77086&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-24",
-              "time": "20:00",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76735&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-25",
               "time": "16:30",
               "screen": 2,
@@ -471,19 +417,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=st-austell",
           "poster_url": "posters/super-mario-galaxy.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-24",
-              "time": "17:30",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77090&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-25",
               "time": "11:45",
@@ -676,20 +609,6 @@
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
             {
-              "date": "2026-04-24",
-              "time": "19:15",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77089&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-04-27",
               "time": "19:15",
               "screen": 3,
@@ -804,19 +723,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/glenrothan/?screen=st-austell",
           "poster_url": "posters/glenrothan.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-24",
-              "time": "17:00",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77088&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-25",
               "time": "17:00",
@@ -933,18 +839,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-mummy/?screen=st-austell",
           "poster_url": "posters/the-mummy.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-24",
-              "time": "19:30",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77087&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-25",
               "time": "19:30",
@@ -1982,7 +1876,7 @@
         "primary_selector_nodes": 24,
         "fallback_selector_nodes": 0,
         "parsed_films": 20,
-        "parsed_showtimes": 116
+        "parsed_showtimes": 108
       }
     },
     "newquay": {
@@ -1999,32 +1893,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=newquay",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-24",
-              "time": "16:45",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65349&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-24",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65350&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-25",
               "time": "13:45",
@@ -2262,32 +2130,6 @@
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
             {
-              "date": "2026-04-24",
-              "time": "16:30",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65475&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-24",
-              "time": "20:00",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65143&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-25",
               "time": "16:30",
               "screen": 3,
@@ -2453,19 +2295,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=newquay",
           "poster_url": "posters/super-mario-galaxy.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-24",
-              "time": "17:00",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65477&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-25",
               "time": "14:00",
@@ -2633,20 +2462,6 @@
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
             {
-              "date": "2026-04-24",
-              "time": "19:15",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65476&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-04-25",
               "time": "19:15",
               "screen": 3,
@@ -2790,19 +2605,6 @@
           "poster_url": "posters/glenrothan.jpg",
           "showtimes": [
             {
-              "date": "2026-04-24",
-              "time": "17:30",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65474&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-25",
               "time": "17:30",
               "screen": 2,
@@ -2931,18 +2733,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-mummy/?screen=newquay",
           "poster_url": "posters/the-mummy.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-24",
-              "time": "19:30",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65478&screen=newquay",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-25",
               "time": "19:30",
@@ -3781,7 +3571,7 @@
         "primary_selector_nodes": 24,
         "fallback_selector_nodes": 0,
         "parsed_films": 19,
-        "parsed_showtimes": 105
+        "parsed_showtimes": 97
       }
     },
     "truro": {
@@ -3798,32 +3588,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=truro",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-24",
-              "time": "17:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120228&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-24",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120202&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-25",
               "time": "14:00",
@@ -4074,32 +3838,6 @@
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
             {
-              "date": "2026-04-24",
-              "time": "16:30",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120229&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-24",
-              "time": "20:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119759&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-25",
               "time": "16:30",
               "screen": 3,
@@ -4291,19 +4029,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=truro",
           "poster_url": "posters/super-mario-galaxy.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-24",
-              "time": "17:15",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120227&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-25",
               "time": "11:30",
@@ -4536,19 +4261,6 @@
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
             {
-              "date": "2026-04-24",
-              "time": "19:15",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120230&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-25",
               "time": "15:15",
               "screen": 5,
@@ -4720,19 +4432,6 @@
           "poster_url": "posters/california-schemin.jpg",
           "showtimes": [
             {
-              "date": "2026-04-24",
-              "time": "20:15",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120232&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-25",
               "time": "20:15",
               "screen": 4,
@@ -4820,19 +4519,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/glenrothan/?screen=truro",
           "poster_url": "posters/glenrothan.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-24",
-              "time": "17:30",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120231&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-25",
               "time": "17:30",
@@ -5030,18 +4716,6 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120257&screen=truro",
               "tags": [
                 "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-24",
-              "time": "19:00",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120233&screen=truro",
-              "tags": [
-                "Subtitles",
                 "2D"
               ]
             },
@@ -6060,7 +5734,7 @@
         "primary_selector_nodes": 32,
         "fallback_selector_nodes": 0,
         "parsed_films": 26,
-        "parsed_showtimes": 131
+        "parsed_showtimes": 122
       }
     },
     "wadebridge": {
@@ -6077,32 +5751,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=wadebridge",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-24",
-              "time": "16:45",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28673&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-24",
-              "time": "19:35",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28674&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-25",
               "time": "13:55",
@@ -6339,19 +5987,6 @@
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
             {
-              "date": "2026-04-24",
-              "time": "19:45",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28556&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-25",
               "time": "19:45",
               "screen": 2,
@@ -6565,19 +6200,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/glenrothan/?screen=wadebridge",
           "poster_url": "posters/glenrothan.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-24",
-              "time": "17:15",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28675&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-25",
               "time": "17:15",
@@ -6918,7 +6540,7 @@
         "primary_selector_nodes": 13,
         "fallback_selector_nodes": 0,
         "parsed_films": 10,
-        "parsed_showtimes": 47
+        "parsed_showtimes": 43
       }
     }
   }
