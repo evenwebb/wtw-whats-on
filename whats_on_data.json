@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-26T09:46:22Z",
+  "updated_at": "2026-04-27T10:55:55Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -15,34 +15,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=st-austell",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-26",
-              "time": "13:45",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76963&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-04-26",
-              "time": "16:45",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76961&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-04-27",
               "time": "16:45",
@@ -210,19 +182,6 @@
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
             {
-              "date": "2026-04-26",
-              "time": "17:15",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77108&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-27",
               "time": "16:30",
               "screen": 2,
@@ -350,32 +309,6 @@
           "poster_url": "posters/super-mario-galaxy.jpg",
           "showtimes": [
             {
-              "date": "2026-04-26",
-              "time": "11:45",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77104&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-26",
-              "time": "14:30",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77105&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-27",
               "time": "17:30",
               "screen": 4,
@@ -443,42 +376,6 @@
           "writer": "Matthew Fogel"
         },
         {
-          "title": "The Magic Faraway Tree",
-          "search_title": "The Magic Faraway Tree",
-          "film_slug": "the-magic-faraway-tree",
-          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary...",
-          "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
-          "runtime_min": 110,
-          "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=st-austell",
-          "poster_url": "posters/the-magic-faraway-tree.jpg",
-          "showtimes": [
-            {
-              "date": "2026-04-26",
-              "time": "14:45",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77107&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
-          "vote_average": 6.6,
-          "genres": [
-            "Family",
-            "Fantasy",
-            "Adventure"
-          ],
-          "imdb_id": "tt7734244",
-          "overview": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
-          "director": "Ben Gregor",
-          "writer": "Simon Farnaby"
-        },
-        {
           "title": "Project Hail Mary",
           "search_title": "Project Hail Mary",
           "film_slug": "project-hail-mary",
@@ -541,44 +438,6 @@
           "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction… but an unexpected friendship means he may not have to do it alone.",
           "director": "Phil Lord, Christopher Miller",
           "writer": "Andy Weir, Drew Goddard"
-        },
-        {
-          "title": "Hoppers",
-          "search_title": "Hoppers",
-          "film_slug": "hoppers",
-          "synopsis": "Scientists have discovered how to \"hop\" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an...",
-          "cast": "Piper Curda (Mabel (voice)), Bobby Moynihan (King George (voice)), Jon Hamm (Mayor Jerry Generazzo (voice)), Kathy Najimy (Dr. Sam (voice)), Dave Franco (Insect King (voice)), Eduardo Franco (Loaf (voice)), Aparna Nancherla (Nisha (voice)), Tom Law (Tom Lizard (voice)), Sam Richardson (Conner (voice)), Melissa Villaseñor (Ellen (voice)), Isiah Whitlock Jr. (Bird King (voice)), Steve Purcell (Amphibian King (voice))",
-          "runtime_min": 105,
-          "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=st-austell",
-          "poster_url": "posters/hoppers.jpg",
-          "showtimes": [
-            {
-              "date": "2026-04-26",
-              "time": "12:15",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77106&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=Qn8_BuKX5n0",
-          "vote_average": 7.575,
-          "genres": [
-            "Animation",
-            "Family",
-            "Science Fiction",
-            "Comedy",
-            "Adventure"
-          ],
-          "imdb_id": "tt26443616",
-          "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
-          "director": "Daniel Chong",
-          "writer": "Jesse Andrews, Daniel Chong"
         },
         {
           "title": "Glenrothan",
@@ -694,18 +553,6 @@
           "poster_url": "posters/the-mummy.jpg",
           "showtimes": [
             {
-              "date": "2026-04-26",
-              "time": "16:30",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77103&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-27",
               "time": "19:30",
               "screen": 2,
@@ -766,54 +613,6 @@
           "writer": "Lee Cronin"
         },
         {
-          "title": "Hitpig!",
-          "search_title": "Hitpig!",
-          "film_slug": "hitpig",
-          "synopsis": "A porcine bounty hunter accepts his next hit: Pickles, a naive, ebullient elephant. Though he initially sets out to capture the perky pachyderm, the unlikely...",
-          "cast": "Jason Sudeikis (Hitpig (voice)), Lilly Singh (Pickles (voice)), Rainn Wilson (Leapin' Lord of the Leotard (voice)), Anitta (Leticia dos Anjos (voice)), Hannah Gadsby (Koala (voice)), RuPaul (Polecat (voice)), Charlie Adler (Super Rooster / Lobster / Nuke Techs (voice)), Flavor Flav (Chef Emcee (voice)), Lorraine Ashbourne (Big Bertha (voice)), Andy Serkis (Newscaster (voice)), Shelby Young (Catchvan (voice)), Dave Rosenbaum (Janitor (voice))",
-          "runtime_min": 85,
-          "film_url": "https://wtwcinemas.co.uk/film/hitpig/?screen=st-austell",
-          "poster_url": "posters/hitpig.jpg",
-          "showtimes": [
-            {
-              "date": "2026-04-26",
-              "time": "12:00",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77101&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-26",
-              "time": "14:15",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77102&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=i0O0VlWwrHU",
-          "vote_average": 6.7,
-          "genres": [
-            "Animation",
-            "Comedy",
-            "Adventure",
-            "Family"
-          ],
-          "imdb_id": "tt13176330",
-          "overview": "A porcine bounty hunter accepts his next hit: Pickles, a naive, ebullient elephant. Though he initially sets out to capture the perky pachyderm, the unlikely pair find themselves crisscrossing the globe on an adventure that brings out the best in both of them.",
-          "director": "David Feiss, Cinzia Angelini",
-          "writer": "Berkeley Breathed, Tyler Werrin, Dave Rosenbaum"
-        },
-        {
           "title": "Fight Club",
           "search_title": "Fight Club",
           "film_slug": "fight-club",
@@ -823,19 +622,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/fight-club/?screen=st-austell",
           "poster_url": "posters/fight-club.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-26",
-              "time": "17:00",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76969&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-04-29",
               "time": "19:15",
@@ -1676,12 +1462,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 24,
-        "selector_film_nodes": 24,
-        "primary_selector_nodes": 24,
+        "raw_cards": 21,
+        "selector_film_nodes": 21,
+        "primary_selector_nodes": 21,
         "fallback_selector_nodes": 0,
-        "parsed_films": 20,
-        "parsed_showtimes": 93
+        "parsed_films": 17,
+        "parsed_showtimes": 82
       }
     },
     "newquay": {
@@ -1698,32 +1484,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=newquay",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-26",
-              "time": "13:45",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65357&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-26",
-              "time": "16:45",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65355&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-27",
               "time": "16:45",
@@ -1896,19 +1656,6 @@
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
             {
-              "date": "2026-04-26",
-              "time": "16:30",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65489&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-27",
               "time": "16:30",
               "screen": 3,
@@ -2036,19 +1783,6 @@
           "poster_url": "posters/super-mario-galaxy.jpg",
           "showtimes": [
             {
-              "date": "2026-04-26",
-              "time": "14:00",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65491&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-27",
               "time": "17:00",
               "screen": 4,
@@ -2114,42 +1848,6 @@
           "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
           "director": "Aaron Horvath, Michael Jelenic",
           "writer": "Matthew Fogel"
-        },
-        {
-          "title": "The Magic Faraway Tree",
-          "search_title": "The Magic Faraway Tree",
-          "film_slug": "the-magic-faraway-tree",
-          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary...",
-          "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
-          "runtime_min": 110,
-          "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=newquay",
-          "poster_url": "posters/the-magic-faraway-tree.jpg",
-          "showtimes": [
-            {
-              "date": "2026-04-26",
-              "time": "13:30",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65494&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
-          "vote_average": 6.6,
-          "genres": [
-            "Family",
-            "Fantasy",
-            "Adventure"
-          ],
-          "imdb_id": "tt7734244",
-          "overview": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
-          "director": "Ben Gregor",
-          "writer": "Simon Farnaby"
         },
         {
           "title": "Project Hail Mary",
@@ -2230,44 +1928,6 @@
           "writer": "Andy Weir, Drew Goddard"
         },
         {
-          "title": "Hoppers",
-          "search_title": "Hoppers",
-          "film_slug": "hoppers",
-          "synopsis": "Scientists have discovered how to \"hop\" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an...",
-          "cast": "Piper Curda (Mabel (voice)), Bobby Moynihan (King George (voice)), Jon Hamm (Mayor Jerry Generazzo (voice)), Kathy Najimy (Dr. Sam (voice)), Dave Franco (Insect King (voice)), Eduardo Franco (Loaf (voice)), Aparna Nancherla (Nisha (voice)), Tom Law (Tom Lizard (voice)), Sam Richardson (Conner (voice)), Melissa Villaseñor (Ellen (voice)), Isiah Whitlock Jr. (Bird King (voice)), Steve Purcell (Amphibian King (voice))",
-          "runtime_min": 105,
-          "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=newquay",
-          "poster_url": "posters/hoppers.jpg",
-          "showtimes": [
-            {
-              "date": "2026-04-26",
-              "time": "14:45",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65493&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=Qn8_BuKX5n0",
-          "vote_average": 7.575,
-          "genres": [
-            "Animation",
-            "Family",
-            "Science Fiction",
-            "Comedy",
-            "Adventure"
-          ],
-          "imdb_id": "tt26443616",
-          "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
-          "director": "Daniel Chong",
-          "writer": "Jesse Andrews, Daniel Chong"
-        },
-        {
           "title": "Glenrothan",
           "search_title": "Glenrothan",
           "film_slug": "glenrothan",
@@ -2277,19 +1937,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/glenrothan/?screen=newquay",
           "poster_url": "posters/glenrothan.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-26",
-              "time": "17:30",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65488&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-27",
               "time": "17:30",
@@ -2393,18 +2040,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-mummy/?screen=newquay",
           "poster_url": "posters/the-mummy.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-26",
-              "time": "17:00",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65492&screen=newquay",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-27",
               "time": "19:30",
@@ -3214,12 +2849,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 23,
-        "selector_film_nodes": 23,
-        "primary_selector_nodes": 23,
+        "raw_cards": 21,
+        "selector_film_nodes": 21,
+        "primary_selector_nodes": 21,
         "fallback_selector_nodes": 0,
-        "parsed_films": 19,
-        "parsed_showtimes": 85
+        "parsed_films": 17,
+        "parsed_showtimes": 77
       }
     },
     "truro": {
@@ -3236,45 +2871,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=truro",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-26",
-              "time": "14:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120302&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-26",
-              "time": "17:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120293&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-26",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120204&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-27",
               "time": "17:00",
@@ -3447,32 +3043,6 @@
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
             {
-              "date": "2026-04-26",
-              "time": "16:30",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120294&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-26",
-              "time": "20:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119761&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-27",
               "time": "16:30",
               "screen": 3,
@@ -3613,32 +3183,6 @@
           "poster_url": "posters/super-mario-galaxy.jpg",
           "showtimes": [
             {
-              "date": "2026-04-26",
-              "time": "11:30",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120301&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-26",
-              "time": "14:45",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120299&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-27",
               "time": "17:15",
               "screen": 1,
@@ -3689,20 +3233,6 @@
                 "Wheelchair access",
                 "2D"
               ]
-            },
-            {
-              "date": "2026-04-26",
-              "time": "17:15",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120206&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "2D"
-              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=gWfOfyb_6Zs",
@@ -3720,55 +3250,6 @@
           "writer": "Matthew Fogel"
         },
         {
-          "title": "The Magic Faraway Tree",
-          "search_title": "The Magic Faraway Tree",
-          "film_slug": "the-magic-faraway-tree",
-          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary...",
-          "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
-          "runtime_min": 110,
-          "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=truro",
-          "poster_url": "posters/the-magic-faraway-tree.jpg",
-          "showtimes": [
-            {
-              "date": "2026-04-26",
-              "time": "12:00",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120300&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-26",
-              "time": "13:45",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120303&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
-          "vote_average": 6.6,
-          "genres": [
-            "Family",
-            "Fantasy",
-            "Adventure"
-          ],
-          "imdb_id": "tt7734244",
-          "overview": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
-          "director": "Ben Gregor",
-          "writer": "Simon Farnaby"
-        },
-        {
           "title": "Project Hail Mary",
           "search_title": "Project Hail Mary",
           "film_slug": "project-hail-mary",
@@ -3778,31 +3259,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/project-hail-mary/?screen=truro",
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-26",
-              "time": "15:15",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120306&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-26",
-              "time": "19:15",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120295&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-27",
               "time": "19:15",
@@ -3862,44 +3318,6 @@
           "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction… but an unexpected friendship means he may not have to do it alone.",
           "director": "Phil Lord, Christopher Miller",
           "writer": "Andy Weir, Drew Goddard"
-        },
-        {
-          "title": "Hoppers",
-          "search_title": "Hoppers",
-          "film_slug": "hoppers",
-          "synopsis": "Scientists have discovered how to \"hop\" human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an...",
-          "cast": "Piper Curda (Mabel (voice)), Bobby Moynihan (King George (voice)), Jon Hamm (Mayor Jerry Generazzo (voice)), Kathy Najimy (Dr. Sam (voice)), Dave Franco (Insect King (voice)), Eduardo Franco (Loaf (voice)), Aparna Nancherla (Nisha (voice)), Tom Law (Tom Lizard (voice)), Sam Richardson (Conner (voice)), Melissa Villaseñor (Ellen (voice)), Isiah Whitlock Jr. (Bird King (voice)), Steve Purcell (Amphibian King (voice))",
-          "runtime_min": 105,
-          "film_url": "https://wtwcinemas.co.uk/film/hoppers/?screen=truro",
-          "poster_url": "posters/hoppers.jpg",
-          "showtimes": [
-            {
-              "date": "2026-04-26",
-              "time": "12:15",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120305&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=Qn8_BuKX5n0",
-          "vote_average": 7.575,
-          "genres": [
-            "Animation",
-            "Family",
-            "Science Fiction",
-            "Comedy",
-            "Adventure"
-          ],
-          "imdb_id": "tt26443616",
-          "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
-          "director": "Daniel Chong",
-          "writer": "Jesse Andrews, Daniel Chong"
         },
         {
           "title": "California Schemin’",
@@ -3986,19 +3404,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/glenrothan/?screen=truro",
           "poster_url": "posters/glenrothan.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-26",
-              "time": "17:30",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120296&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-27",
               "time": "17:30",
@@ -4200,53 +3605,6 @@
           "overview": "A secret military project endangers Neo-Tokyo when it turns a biker gang member into a rampaging psychic psychopath that only two teenagers and a group of psychics can stop.",
           "director": "Katsuhiro Otomo",
           "writer": "Izo Hashimoto, Katsuhiro Otomo"
-        },
-        {
-          "title": "Hitpig!",
-          "search_title": "Hitpig!",
-          "film_slug": "hitpig",
-          "synopsis": "A porcine bounty hunter accepts his next hit: Pickles, a naive, ebullient elephant. Though he initially sets out to capture the perky pachyderm, the unlikely...",
-          "cast": "Jason Sudeikis (Hitpig (voice)), Lilly Singh (Pickles (voice)), Rainn Wilson (Leapin' Lord of the Leotard (voice)), Anitta (Leticia dos Anjos (voice)), Hannah Gadsby (Koala (voice)), RuPaul (Polecat (voice)), Charlie Adler (Super Rooster / Lobster / Nuke Techs (voice)), Flavor Flav (Chef Emcee (voice)), Lorraine Ashbourne (Big Bertha (voice)), Andy Serkis (Newscaster (voice)), Shelby Young (Catchvan (voice)), Dave Rosenbaum (Janitor (voice))",
-          "runtime_min": 85,
-          "film_url": "https://wtwcinemas.co.uk/film/hitpig/?screen=truro",
-          "poster_url": "posters/hitpig.jpg",
-          "showtimes": [
-            {
-              "date": "2026-04-26",
-              "time": "12:45",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120307&screen=truro",
-              "tags": [
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-26",
-              "time": "15:00",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120304&screen=truro",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=i0O0VlWwrHU",
-          "vote_average": 6.7,
-          "genres": [
-            "Animation",
-            "Comedy",
-            "Adventure",
-            "Family"
-          ],
-          "imdb_id": "tt13176330",
-          "overview": "A porcine bounty hunter accepts his next hit: Pickles, a naive, ebullient elephant. Though he initially sets out to capture the perky pachyderm, the unlikely pair find themselves crisscrossing the globe on an adventure that brings out the best in both of them.",
-          "director": "David Feiss, Cinzia Angelini",
-          "writer": "Berkeley Breathed, Tyler Werrin, Dave Rosenbaum"
         },
         {
           "title": "Funny Girl: The Musical",
@@ -5149,12 +4507,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 32,
-        "selector_film_nodes": 32,
-        "primary_selector_nodes": 32,
+        "raw_cards": 28,
+        "selector_film_nodes": 28,
+        "primary_selector_nodes": 28,
         "fallback_selector_nodes": 0,
-        "parsed_films": 26,
-        "parsed_showtimes": 104
+        "parsed_films": 23,
+        "parsed_showtimes": 88
       }
     },
     "wadebridge": {
@@ -5171,32 +4529,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=wadebridge",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-26",
-              "time": "13:55",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28683&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-26",
-              "time": "16:45",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28684&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-27",
               "time": "16:45",
@@ -5368,19 +4700,6 @@
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
             {
-              "date": "2026-04-26",
-              "time": "17:15",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28688&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-27",
               "time": "19:45",
               "screen": 2,
@@ -5457,80 +4776,6 @@
           "overview": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves transported back in time, mistaken for the original crew.",
           "director": "Mark Jenkin",
           "writer": "Mark Jenkin"
-        },
-        {
-          "title": "The Super Mario Galaxy Movie",
-          "search_title": "The Super Mario Galaxy Movie",
-          "film_slug": "super-mario-galaxy",
-          "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
-          "cast": "Chris Pratt (Mario (voice)), Charlie Day (Luigi (voice)), Anya Taylor-Joy (Princess Peach (voice)), Jack Black (Bowser (voice)), Keegan-Michael Key (Toad (voice)), Benny Safdie (Bowser Jr. (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice)), Brie Larson (Rosalina (voice)), Glen Powell (Fox McCloud (voice))",
-          "runtime_min": 98,
-          "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=wadebridge",
-          "poster_url": "posters/super-mario-galaxy.jpg",
-          "showtimes": [
-            {
-              "date": "2026-04-26",
-              "time": "14:45",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28687&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=gWfOfyb_6Zs",
-          "vote_average": 6.8,
-          "genres": [
-            "Family",
-            "Comedy",
-            "Adventure",
-            "Fantasy",
-            "Animation"
-          ],
-          "imdb_id": "tt28650488",
-          "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-          "director": "Aaron Horvath, Michael Jelenic",
-          "writer": "Matthew Fogel"
-        },
-        {
-          "title": "The Magic Faraway Tree",
-          "search_title": "The Magic Faraway Tree",
-          "film_slug": "the-magic-faraway-tree",
-          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary...",
-          "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
-          "runtime_min": 110,
-          "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=wadebridge",
-          "poster_url": "posters/the-magic-faraway-tree.jpg",
-          "showtimes": [
-            {
-              "date": "2026-04-26",
-              "time": "12:00",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28686&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
-          "vote_average": 6.6,
-          "genres": [
-            "Family",
-            "Fantasy",
-            "Adventure"
-          ],
-          "imdb_id": "tt7734244",
-          "overview": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
-          "director": "Ben Gregor",
-          "writer": "Simon Farnaby"
         },
         {
           "title": "Glenrothan",
@@ -5864,12 +5109,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 13,
-        "selector_film_nodes": 13,
-        "primary_selector_nodes": 13,
+        "raw_cards": 11,
+        "selector_film_nodes": 11,
+        "primary_selector_nodes": 11,
         "fallback_selector_nodes": 0,
-        "parsed_films": 10,
-        "parsed_showtimes": 36
+        "parsed_films": 8,
+        "parsed_showtimes": 31
       }
     }
   }
