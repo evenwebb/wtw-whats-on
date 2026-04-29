@@ -1,16 +1,4 @@
 {
-  "siegfried-rbo-2025-26-cinema-season": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/7yEc8lAVG0Sklfj1e6UqAgypsxX.jpg",
-    "trailer_url": "",
-    "vote_average": 0.0,
-    "genres": [],
-    "imdb_id": "",
-    "overview": "Raised by a scheming dwarf and unaware of his true family origins, a young man embarks on an epic journey.",
-    "director": "Barrie Kosky",
-    "writer": "",
-    "cast": "Peter Hoare, Andreas Schager, Christopher Maltman, Christopher Purves, Elisabet Strid",
-    "cached_at": "2026-03-30T10:09:55.556873"
-  },
   "the-magic-flute-rbo-2025-26-cinema-season": {
     "poster_url": "https://image.tmdb.org/t/p/w342/ff62NuReokkFchk3zJmapEesyPz.jpg",
     "trailer_url": "",
@@ -74,36 +62,6 @@
     "writer": "",
     "cast": "",
     "cached_at": "2026-04-16T10:10:17.005836"
-  },
-  "mother-s-pride": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/jWrNT4QawuM5OclbjkbrhpbI2Wf.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=u1V8bdl21Bw",
-    "vote_average": 7.0,
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "imdb_id": "tt32569057",
-    "overview": "A comedy about a failing pub, a divided community and a grieving family whose lives are changed by brewing real ale and entering the Great British Beer Awards.",
-    "director": "Nick Moorcroft",
-    "writer": "Nick Moorcroft, Meg Leonard",
-    "cast": "Jonno Davies (Cal), James Buckley (Jake), Martin Clunes (Mick), Mark Addy (Paxman), Gabriella Wilde (Abi), Luke Treadaway (Pritchard), Josie Lawrence (Edith), Miles Jupp (Jeremy), Karl Collins (Wilf), Richard Glover (Jim), Emily Lloyd-Saini (Amy), Dominic Kinnaird (Traffic warden)",
-    "cached_at": "2026-03-30T10:09:54.481839"
-  },
-  "epic-elvis-presley-in-concert": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/nor2u3bC7xn2L4PhAMi7RRg04n9.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=v9fEeCvCLJ8",
-    "vote_average": 8.3,
-    "genres": [
-      "Music",
-      "Documentary"
-    ],
-    "imdb_id": "tt35003538",
-    "overview": "Long-lost footage from Elvis Presely's legendary Las Vegas residency in the 1970s woven together with rare 16mm footage from Elvis on Tour, and 8mm from the Graceland archive, plus recordings of Elvis telling \"his side of the story\" rediscovered during Baz Luhrmann's research for his 2022 film, Elvis.",
-    "director": "Baz Luhrmann",
-    "writer": "",
-    "cast": "Elvis Presley (Self (archive footage)), James Burton (Self (archive footage)), John Wilkinson (Self (archive footage)), Charlie Hodge (Self (archive footage)), Jerry Scheff (Self (archive footage)), Glen D. Hardin (Self (archive footage)), Ronnie Tutt (Self (archive footage)), Bono (Self (voice)), Sammy Davis Jr. (Self (archive footage)), Cary Grant (Self (archive footage)), Tom Parker (Self (archive footage)), Kathy Westmoreland (Self (archive footage))",
-    "cached_at": "2026-03-30T10:09:54.908049"
   },
   "don-t-look-now-pat-s-horror-film-club": {
     "poster_url": "https://image.tmdb.org/t/p/w342/ivWsU3QtcstImCTOjItsH0SAbNn.jpg",
@@ -420,7 +378,7 @@
     "director": "Timur Zangiev, Deborah Warner",
     "writer": "Pjotr Iljitsch Tschaikowsky",
     "cast": "To Be Announced",
-    "cached_at": "2026-04-28T10:57:39.865751"
+    "cached_at": "2026-04-29T10:49:20.010026"
   },
   "national-theatre-live-the-playboy-of-the-western-world": {
     "poster_url": "https://image.tmdb.org/t/p/w342/hFA2KlHAExXZFs7sZ7YtxtblDQC.jpg",
@@ -680,5 +638,22 @@
     "writer": "",
     "cast": "",
     "cached_at": "2026-04-28T10:57:40.268252"
+  },
+  "the-amazing-digital-circus-the-last-act": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/uoZeXWuUS2z2F7VaC1iS5RS5cnk.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=dXJRFOrQfTY",
+    "vote_average": 0.0,
+    "genres": [
+      "Animation",
+      "Drama",
+      "Science Fiction",
+      "Thriller"
+    ],
+    "imdb_id": "tt38692727",
+    "overview": "With Caine gone and the circus dark, the cast are left with only the mistakes and traumas of their pasts to keep them company. As the prospect of eternity closes in around them, they discover the truth about the Digital Circus and its history.  Will they come to terms with what they uncover, or will they make… the other choice? Also, presumably at some point someone says something funny, because this ending can’t be THAT depressing, can it? A theatrical screening of episode 8 and the all new, hour-long episode 9.",
+    "director": "Gooseworx",
+    "writer": "Gooseworx",
+    "cast": "Lizzie Freeman (Pomni (voice)), Michael Kovach (Jax (voice)), Amanda Hufford (Ragatha (voice)), Marissa Lenti (Gangle (voice)), Ashley Nichols (Zooble (voice)), Sean Chiplock (Kinger (voice)), Alex Rochon (Caine (voice)), Gooseworx (Bubble (voice)), Skye Redden (Ribbit (voice)), Cassie Ewulu (Queenie (voice))",
+    "cached_at": "2026-04-29T10:49:20.278073"
   }
 }
