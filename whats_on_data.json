@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-29T10:49:17Z",
+  "updated_at": "2026-04-30T10:48:07Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -15,20 +15,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=st-austell",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-29",
-              "time": "16:45",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77119&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-04-30",
               "time": "16:45",
@@ -297,21 +283,6 @@
               ]
             },
             {
-              "date": "2026-04-29",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77120&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-05-14",
               "time": "11:15",
               "screen": 4,
@@ -349,32 +320,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/rose-of-nevada/?screen=st-austell",
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-29",
-              "time": "16:30",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77121&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-29",
-              "time": "20:00",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76739&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-30",
               "time": "16:30",
@@ -441,19 +386,6 @@
               ]
             },
             {
-              "date": "2026-05-05",
-              "time": "17:15",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77185&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-06",
               "time": "19:15",
               "screen": 3,
@@ -502,19 +434,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=st-austell",
           "poster_url": "posters/super-mario-galaxy.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-29",
-              "time": "17:30",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77124&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-30",
               "time": "17:30",
@@ -691,19 +610,6 @@
           "poster_url": "posters/glenrothan.jpg",
           "showtimes": [
             {
-              "date": "2026-04-29",
-              "time": "17:00",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77123&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-30",
               "time": "17:00",
               "screen": 3,
@@ -793,18 +699,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-mummy/?screen=st-austell",
           "poster_url": "posters/the-mummy.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-29",
-              "time": "19:30",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77122&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-30",
               "time": "19:30",
@@ -1030,92 +924,6 @@
           "writer": "Berkeley Breathed, Tyler Werrin, Dave Rosenbaum"
         },
         {
-          "title": "Fight Club",
-          "search_title": "Fight Club",
-          "film_slug": "fight-club",
-          "synopsis": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground...",
-          "cast": "Edward Norton (Narrator), Brad Pitt (Tyler Durden), Helena Bonham Carter (Marla Singer), Meat Loaf (Robert Paulson), Jared Leto (Angel Face), Zach Grenier (Richard Chesler (Regional Manager)), Holt McCallany (The Mechanic), Eion Bailey (Ricky), Richmond Arquette (Intern at Hospital), David Andrews (Thomas at Remaining Men Together), George Maguire (Group Leader at Remaining Men Together), Eugenie Bondurant (Weeping Woman - Onward and Upward)",
-          "runtime_min": 139,
-          "film_url": "https://wtwcinemas.co.uk/film/fight-club/?screen=st-austell",
-          "poster_url": "posters/fight-club.jpg",
-          "showtimes": [
-            {
-              "date": "2026-04-29",
-              "time": "19:15",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76970&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=dfeUzm6KF4g",
-          "vote_average": 8.439,
-          "genres": [
-            "Drama",
-            "Thriller"
-          ],
-          "imdb_id": "tt0137523",
-          "overview": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
-          "director": "David Fincher",
-          "writer": "Chuck Palahniuk, Jim Uhls"
-        },
-        {
-          "title": "Wuthering Heights",
-          "search_title": "Wuthering Heights",
-          "film_slug": "wuthering-heights",
-          "synopsis": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
-          "cast": "Juliette Binoche (Cathy / Catherine), Ralph Fiennes (Heathcliff), Janet McTeer (Ellen Dean), Sophie Ward (Isabella Linton), Simon Shepherd (Edgar Linton), Jeremy Northam (Hindley Earnshaw), Jason Riddington (Hareton Earnshaw), Simon Ward (Mr. Linton), Robert Demeger (Joseph), Paul Geoffrey (Mr. Lockwood), John Woodvine (Thomas Earnshaw), Jennifer Daniel (Mrs. Linton)",
-          "runtime_min": 137,
-          "film_url": "https://wtwcinemas.co.uk/film/wuthering-heights/?screen=st-austell",
-          "poster_url": "posters/wuthering-heights.jpg",
-          "showtimes": [
-            {
-              "date": "2026-04-30",
-              "time": "11:00",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76560&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-30",
-              "time": "11:15",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=76561&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=a6eTho1jxuM",
-          "vote_average": 6.6,
-          "genres": [
-            "Drama",
-            "Romance"
-          ],
-          "imdb_id": "tt0104181",
-          "overview": "Young orphan Heathcliff is adopted by the wealthy Earnshaw family and moves into their estate, Wuthering Heights. Soon, the new resident falls for his compassionate foster sister, Cathy. The two share a remarkable bond that seems unbreakable until Cathy, feeling the pressure of social convention, suppresses her feelings and marries Edgar Linton, a man of means who befits her stature. Heathcliff vows to win her back.",
-          "director": "Peter Kosminsky",
-          "writer": "Anne Devlin, Emily Brontë"
-        },
-        {
           "title": "The Devil Wears Prada 2",
           "search_title": "The Devil Wears Prada 2",
           "film_slug": "the-devil-wears-prada-2",
@@ -1336,6 +1144,21 @@
               ]
             },
             {
+              "date": "2026-05-21",
+              "time": "11:00",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77207&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "Silver Screen",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
               "date": "2026-05-06",
               "time": "19:30",
               "screen": 1,
@@ -1345,6 +1168,20 @@
               "tags": [
                 "Subtitles",
                 "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "11:15",
+              "screen": 4,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77208&screen=staustell",
+              "tags": [
+                "Subtitles",
+                "Wheelchair access",
+                "Silver Screen",
                 "2D"
               ]
             }
@@ -2090,12 +1927,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 28,
-        "selector_film_nodes": 28,
-        "primary_selector_nodes": 28,
+        "raw_cards": 25,
+        "selector_film_nodes": 25,
+        "primary_selector_nodes": 25,
         "fallback_selector_nodes": 0,
-        "parsed_films": 22,
-        "parsed_showtimes": 121
+        "parsed_films": 20,
+        "parsed_showtimes": 112
       }
     },
     "newquay": {
@@ -2112,45 +1949,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=newquay",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-29",
-              "time": "13:45",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65514&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-29",
-              "time": "16:45",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65508&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-29",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65509&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-30",
               "time": "16:45",
@@ -2451,32 +2249,6 @@
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
             {
-              "date": "2026-04-29",
-              "time": "16:30",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65510&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-29",
-              "time": "20:00",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65147&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-30",
               "time": "16:30",
               "screen": 3,
@@ -2617,19 +2389,6 @@
           "poster_url": "posters/super-mario-galaxy.jpg",
           "showtimes": [
             {
-              "date": "2026-04-29",
-              "time": "17:00",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65512&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-30",
               "time": "17:00",
               "screen": 4,
@@ -2769,19 +2528,6 @@
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
             {
-              "date": "2026-04-29",
-              "time": "19:15",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65511&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-30",
               "time": "19:15",
               "screen": 3,
@@ -2816,19 +2562,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/glenrothan/?screen=newquay",
           "poster_url": "posters/glenrothan.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-29",
-              "time": "14:30",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65515&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-30",
               "time": "17:30",
@@ -2919,18 +2652,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-mummy/?screen=newquay",
           "poster_url": "posters/the-mummy.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-29",
-              "time": "19:30",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65513&screen=newquay",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-30",
               "time": "19:30",
@@ -3094,57 +2815,6 @@
           "overview": "When novelist Ohm Bauman retreats to a remote inn to scatter his parents' ashes, he is consumed by tales of a witch haunting the honeymoon suite. Disturbing visions and a shocking disappearance forces him to confront dark corners of his past.",
           "director": "Damian McCarthy",
           "writer": "Damian McCarthy"
-        },
-        {
-          "title": "Wuthering Heights",
-          "search_title": "Wuthering Heights",
-          "film_slug": "wuthering-heights",
-          "synopsis": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
-          "cast": "Juliette Binoche (Cathy / Catherine), Ralph Fiennes (Heathcliff), Janet McTeer (Ellen Dean), Sophie Ward (Isabella Linton), Simon Shepherd (Edgar Linton), Jeremy Northam (Hindley Earnshaw), Jason Riddington (Hareton Earnshaw), Simon Ward (Mr. Linton), Robert Demeger (Joseph), Paul Geoffrey (Mr. Lockwood), John Woodvine (Thomas Earnshaw), Jennifer Daniel (Mrs. Linton)",
-          "runtime_min": 137,
-          "film_url": "https://wtwcinemas.co.uk/film/wuthering-heights/?screen=newquay",
-          "poster_url": "posters/wuthering-heights.jpg",
-          "showtimes": [
-            {
-              "date": "2026-04-30",
-              "time": "11:00",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64877&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-30",
-              "time": "11:15",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=64878&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=a6eTho1jxuM",
-          "vote_average": 6.6,
-          "genres": [
-            "Drama",
-            "Romance"
-          ],
-          "imdb_id": "tt0104181",
-          "overview": "Young orphan Heathcliff is adopted by the wealthy Earnshaw family and moves into their estate, Wuthering Heights. Soon, the new resident falls for his compassionate foster sister, Cathy. The two share a remarkable bond that seems unbreakable until Cathy, feeling the pressure of social convention, suppresses her feelings and marries Edgar Linton, a man of means who befits her stature. Heathcliff vows to win her back.",
-          "director": "Peter Kosminsky",
-          "writer": "Anne Devlin, Emily Brontë"
         },
         {
           "title": "The Devil Wears Prada 2",
@@ -3365,6 +3035,20 @@
               ]
             },
             {
+              "date": "2026-05-21",
+              "time": "11:00",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65600&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "Silver Screen",
+                "2D"
+              ]
+            },
+            {
               "date": "2026-05-05",
               "time": "19:30",
               "screen": 1,
@@ -3374,6 +3058,20 @@
               "tags": [
                 "Subtitles",
                 "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "11:15",
+              "screen": 2,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65601&screen=newquay",
+              "tags": [
+                "Subtitles",
+                "Wheelchair access",
+                "Silver Screen",
                 "2D"
               ]
             }
@@ -4093,12 +3791,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 27,
-        "selector_film_nodes": 27,
-        "primary_selector_nodes": 27,
+        "raw_cards": 25,
+        "selector_film_nodes": 25,
+        "primary_selector_nodes": 25,
         "fallback_selector_nodes": 0,
-        "parsed_films": 21,
-        "parsed_showtimes": 118
+        "parsed_films": 20,
+        "parsed_showtimes": 109
       }
     },
     "truro": {
@@ -4115,45 +3813,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=truro",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-29",
-              "time": "14:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120266&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-29",
-              "time": "17:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120260&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-29",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120258&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-30",
               "time": "19:45",
@@ -4469,45 +4128,6 @@
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
             {
-              "date": "2026-04-29",
-              "time": "13:45",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120267&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-29",
-              "time": "16:30",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120261&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-29",
-              "time": "20:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119764&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-30",
               "time": "16:30",
               "screen": 3,
@@ -4696,19 +4316,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=truro",
           "poster_url": "posters/super-mario-galaxy.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-29",
-              "time": "17:15",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120259&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-30",
               "time": "17:15",
@@ -4924,18 +4531,6 @@
           "poster_url": "posters/project-hail-mary.jpg",
           "showtimes": [
             {
-              "date": "2026-04-29",
-              "time": "19:15",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120265&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-30",
               "time": "19:15",
               "screen": 5,
@@ -5022,19 +4617,6 @@
           "poster_url": "posters/california-schemin.jpg",
           "showtimes": [
             {
-              "date": "2026-04-29",
-              "time": "20:15",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120263&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-30",
               "time": "20:15",
               "screen": 4,
@@ -5070,32 +4652,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/glenrothan/?screen=truro",
           "poster_url": "posters/glenrothan.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-29",
-              "time": "14:45",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120268&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-29",
-              "time": "17:30",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120262&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-30",
               "time": "17:30",
@@ -5258,42 +4814,6 @@
           "overview": "America, 1947. Despite hard choices and even harder knocks, Joe and Kate Keller are a success story. They have built a home, raised two sons and established a thriving business.  But nothing lasts forever and their contented lives, already shadowed by the loss of their eldest boy to war, are about to shatter. With the return of a figure from the past, long buried truths are forced to the surface and the price of their American dream is laid bare.",
           "director": "Ross MacGibbon",
           "writer": "Arthur Miller"
-        },
-        {
-          "title": "Akira - Anime Season (subtitled)",
-          "search_title": "Akira - Anime Season",
-          "film_slug": "akira-anime-season-subtitled",
-          "synopsis": "Iconic and game-changing, AKIRA is the definitive anime masterpiece! Katsuhiro Otomo's landmark cyberpunk classic obliterated the boundaries of Japanese animation and forced the world to...",
-          "cast": "Mitsuo Iwata (Shotaro Kaneda (voice)), Nozomu Sasaki (Tetsuo Shima (voice)), Mami Koyama (Kei (voice)), Taro Ishida (Colonel Shikishima), Mizuho Suzuki (Doctor Ônishi), Tessyo Genda (Ryûsaku (voice)), Koichi Kitamura (Priestess Miyako / Council A (voice)), Yuriko Fuchizaki (Kaori (voice)), Masaaki Okura (Yamagata (voice)), Takeshi Kusao (Kai (voice)), Kazuhiro Kamifuji (Masaru / No. 27 (voice)), Tatsuhiko Nakamura (Takashi / No. 26 (voice))",
-          "runtime_min": 124,
-          "film_url": "https://wtwcinemas.co.uk/film/akira-anime-season-subtitled/?screen=truro",
-          "poster_url": "posters/akira-anime-season-subtitled.jpg",
-          "showtimes": [
-            {
-              "date": "2026-04-29",
-              "time": "19:00",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120264&screen=truro",
-              "tags": [
-                "Subtitles",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=Jq4ER-P6NCQ",
-          "vote_average": 7.944,
-          "genres": [
-            "Animation",
-            "Science Fiction",
-            "Action"
-          ],
-          "imdb_id": "tt0094625",
-          "overview": "A secret military project endangers Neo-Tokyo when it turns a biker gang member into a rampaging psychic psychopath that only two teenagers and a group of psychics can stop.",
-          "director": "Katsuhiro Otomo",
-          "writer": "Izo Hashimoto, Katsuhiro Otomo"
         },
         {
           "title": "Hokum",
@@ -5497,57 +5017,6 @@
           "overview": "The life of famed 1930s comedienne Fanny Brice, from her early days in the Jewish slums of New York, to the height of her career with the Ziegfeld Follies, as well as her marriage to the rakish gambler Nick Arnstein.",
           "director": "William Wyler",
           "writer": "Isobel Lennart"
-        },
-        {
-          "title": "Wuthering Heights",
-          "search_title": "Wuthering Heights",
-          "film_slug": "wuthering-heights",
-          "synopsis": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
-          "cast": "Juliette Binoche (Cathy / Catherine), Ralph Fiennes (Heathcliff), Janet McTeer (Ellen Dean), Sophie Ward (Isabella Linton), Simon Shepherd (Edgar Linton), Jeremy Northam (Hindley Earnshaw), Jason Riddington (Hareton Earnshaw), Simon Ward (Mr. Linton), Robert Demeger (Joseph), Paul Geoffrey (Mr. Lockwood), John Woodvine (Thomas Earnshaw), Jennifer Daniel (Mrs. Linton)",
-          "runtime_min": 137,
-          "film_url": "https://wtwcinemas.co.uk/film/wuthering-heights/?screen=truro",
-          "poster_url": "posters/wuthering-heights.jpg",
-          "showtimes": [
-            {
-              "date": "2026-04-30",
-              "time": "11:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119469&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-30",
-              "time": "11:15",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119470&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=a6eTho1jxuM",
-          "vote_average": 6.6,
-          "genres": [
-            "Drama",
-            "Romance"
-          ],
-          "imdb_id": "tt0104181",
-          "overview": "Young orphan Heathcliff is adopted by the wealthy Earnshaw family and moves into their estate, Wuthering Heights. Soon, the new resident falls for his compassionate foster sister, Cathy. The two share a remarkable bond that seems unbreakable until Cathy, feeling the pressure of social convention, suppresses her feelings and marries Edgar Linton, a man of means who befits her stature. Heathcliff vows to win her back.",
-          "director": "Peter Kosminsky",
-          "writer": "Anne Devlin, Emily Brontë"
         },
         {
           "title": "The Devil Wears Prada 2",
@@ -5781,6 +5250,20 @@
               ]
             },
             {
+              "date": "2026-05-21",
+              "time": "11:00",
+              "screen": 2,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120406&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "Silver Screen",
+                "2D"
+              ]
+            },
+            {
               "date": "2026-05-07",
               "time": "16:45",
               "screen": 3,
@@ -5790,6 +5273,20 @@
               "tags": [
                 "Subtitles",
                 "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "11:15",
+              "screen": 4,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120407&screen=truro",
+              "tags": [
+                "Subtitles",
+                "Wheelchair access",
+                "Silver Screen",
                 "2D"
               ]
             }
@@ -6665,12 +6162,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 34,
-        "selector_film_nodes": 34,
-        "primary_selector_nodes": 34,
+        "raw_cards": 31,
+        "selector_film_nodes": 31,
+        "primary_selector_nodes": 31,
         "fallback_selector_nodes": 0,
-        "parsed_films": 28,
-        "parsed_showtimes": 151
+        "parsed_films": 26,
+        "parsed_showtimes": 139
       }
     },
     "wadebridge": {
@@ -6687,45 +6184,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=wadebridge",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-04-29",
-              "time": "13:55",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28697&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-29",
-              "time": "16:45",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28693&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-29",
-              "time": "19:35",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28694&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-04-30",
               "time": "16:45",
@@ -6936,32 +6394,6 @@
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
             {
-              "date": "2026-04-29",
-              "time": "14:30",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28698&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-29",
-              "time": "19:45",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28560&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-30",
               "time": "19:45",
               "screen": 2,
@@ -7124,19 +6556,6 @@
           "poster_url": "posters/glenrothan.jpg",
           "showtimes": [
             {
-              "date": "2026-04-29",
-              "time": "17:15",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28699&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-04-30",
               "time": "17:15",
               "screen": 2,
@@ -7201,57 +6620,6 @@
           "overview": "After 35 years in Chicago, Donal reluctantly returns to the Scottish Highlands to reconcile with his estranged older brother Sandy. Sandy needs Donal to take over the family's whisky distillery or he'll be forced to sell and give up on the family's legacy. But their reunion forces the brothers to confront the past and the real reason Donal left Glenrothan.",
           "director": "Brian Cox",
           "writer": "David Ashton, Jeff Murphy"
-        },
-        {
-          "title": "Wuthering Heights",
-          "search_title": "Wuthering Heights",
-          "film_slug": "wuthering-heights",
-          "synopsis": "Tragedy strikes when Heathcliff falls in love with Catherine Earnshaw, a woman from a wealthy family in 18th-century England.",
-          "cast": "Juliette Binoche (Cathy / Catherine), Ralph Fiennes (Heathcliff), Janet McTeer (Ellen Dean), Sophie Ward (Isabella Linton), Simon Shepherd (Edgar Linton), Jeremy Northam (Hindley Earnshaw), Jason Riddington (Hareton Earnshaw), Simon Ward (Mr. Linton), Robert Demeger (Joseph), Paul Geoffrey (Mr. Lockwood), John Woodvine (Thomas Earnshaw), Jennifer Daniel (Mrs. Linton)",
-          "runtime_min": 137,
-          "film_url": "https://wtwcinemas.co.uk/film/wuthering-heights/?screen=wadebridge",
-          "poster_url": "posters/wuthering-heights.jpg",
-          "showtimes": [
-            {
-              "date": "2026-04-30",
-              "time": "11:00",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28398&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-04-30",
-              "time": "11:15",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28399&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=a6eTho1jxuM",
-          "vote_average": 6.6,
-          "genres": [
-            "Drama",
-            "Romance"
-          ],
-          "imdb_id": "tt0104181",
-          "overview": "Young orphan Heathcliff is adopted by the wealthy Earnshaw family and moves into their estate, Wuthering Heights. Soon, the new resident falls for his compassionate foster sister, Cathy. The two share a remarkable bond that seems unbreakable until Cathy, feeling the pressure of social convention, suppresses her feelings and marries Edgar Linton, a man of means who befits her stature. Heathcliff vows to win her back.",
-          "director": "Peter Kosminsky",
-          "writer": "Anne Devlin, Emily Brontë"
         },
         {
           "title": "The Devil Wears Prada 2",
@@ -7455,6 +6823,33 @@
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "11:00",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28756&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "Silver Screen",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "11:15",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28757&screen=wadebridge",
+              "tags": [
+                "Wheelchair access",
+                "Silver Screen",
                 "2D"
               ]
             },
@@ -7765,12 +7160,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 17,
-        "selector_film_nodes": 17,
-        "primary_selector_nodes": 17,
+        "raw_cards": 15,
+        "selector_film_nodes": 15,
+        "primary_selector_nodes": 15,
         "fallback_selector_nodes": 0,
-        "parsed_films": 13,
-        "parsed_showtimes": 61
+        "parsed_films": 12,
+        "parsed_showtimes": 55
       }
     }
   }
