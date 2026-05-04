@@ -120,21 +120,6 @@
     "cast": "Jo Bateman (Self), Pip Piper (Self)",
     "cached_at": "2026-04-23T10:17:14.047929"
   },
-  "you-me-tuscany": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/mJS0IF7Af3WpPRhSTDT6rGpiLzw.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=rb7-mWMNkFE",
-    "vote_average": 0.0,
-    "genres": [
-      "Romance",
-      "Comedy"
-    ],
-    "imdb_id": "tt36352591",
-    "overview": "A free-spirited American chef and reserved British lawyer embark on a whirlwind romance during a destination wedding in coastal Italy.",
-    "director": "Kat Coiro",
-    "writer": "Ryan Engle",
-    "cast": "Halle Bailey (Anna), Regé-Jean Page (Michael), Marco Calvani, Aziza Scott (Claire), Lorenzo de Moor (Matteo), Isabella Ferrari (Gabriella), Nia Vardalos (Mrs. Dunn), Stefania Casini (Nonna Alessia), Desirée Popper (Isabella), Tommaso Cassissa (Enzo), Stella Pecollo (Francesca), Paolo Sassanelli (Vincenzo)",
-    "cached_at": "2026-04-04T09:30:40.668857"
-  },
   "project-hail-mary": {
     "poster_url": "https://image.tmdb.org/t/p/w342/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
     "trailer_url": "https://www.youtube.com/watch?v=a9Kdjy_m4ck",
@@ -323,13 +308,15 @@
     "poster_url": "https://image.tmdb.org/t/p/w342/zvfz5Dds1LFtHv76XcSnYWjyoes.jpg",
     "trailer_url": "",
     "vote_average": 0.0,
-    "genres": [],
+    "genres": [
+      "Music"
+    ],
     "imdb_id": "",
-    "overview": "Soprano Asmik Grigorian returns to the Met as Tatiana, the lovestruck young heroine in this ardent operatic adaptation of Pushkin, which will be transmitted live from the Metropolitan Opera stage to cinemas worldwide on May 2. Baritone Igor Golovatenko is the urbane Onegin, who realizes his affection for her all too late. The Met’s evocative production, directed by Tony Award–winner Deborah Warner, “offers a beautifully detailed reading of … Tchaikovsky’s lyrical romance” (The Telegraph).",
-    "director": "Timur Zangiev, Deborah Warner",
-    "writer": "Pjotr Iljitsch Tschaikowsky",
-    "cast": "To Be Announced",
-    "cached_at": "2026-05-03T09:59:38.688333"
+    "overview": "Tchaikovsky’s many moods—tender, grand, melancholy—are all given free rein in Eugene Onegin. The opera is based on Pushkin’s iconic verse novel, which reimagines the Byronic romantic anti-hero as the definitive bored Russian aristocrat caught between convention and ennui; Tchaikovsky, similarly, took Western European operatic forms and transformed them into an authentic and undeniably Russian work. At the core of the opera is the young girl Tatiana, who grows from a sentimental adolescent into a complete woman in one of the operatic stage’s most convincing character developments.",
+    "director": "Deborah Warner",
+    "writer": "Pyotr Ilyich Tchaikovsky, Alexander Pushkin",
+    "cast": "Timur Zangiev (Conductor), Asmik Grigorian (Tatiana), Maria Barakova (Olga), Larissa Diadkova (Filippyevna), Stanislas de Barbeyrac (Lenski), Iurii Samoilov (Eugene Onegin), Alexander Tsymbalyuk (Gremin)",
+    "cached_at": "2026-05-04T10:59:18.720878"
   },
   "national-theatre-live-the-playboy-of-the-western-world": {
     "poster_url": "https://image.tmdb.org/t/p/w342/hFA2KlHAExXZFs7sZ7YtxtblDQC.jpg",
