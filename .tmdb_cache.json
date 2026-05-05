@@ -120,35 +120,6 @@
     "cast": "Jo Bateman (Self), Pip Piper (Self)",
     "cached_at": "2026-04-23T10:17:14.047929"
   },
-  "project-hail-mary": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=a9Kdjy_m4ck",
-    "vote_average": 8.2,
-    "genres": [
-      "Science Fiction",
-      "Adventure"
-    ],
-    "imdb_id": "tt12042730",
-    "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction… but an unexpected friendship means he may not have to do it alone.",
-    "director": "Phil Lord, Christopher Miller",
-    "writer": "Andy Weir, Drew Goddard",
-    "cast": "Ryan Gosling (Ryland Grace), James Ortiz (Rocky (voice)), Sandra Hüller (Eva Stratt), Lionel Boyce (Carl), Milana Vayntrub (Olesya Ilyukhina), Ken Leung (Yao), Priya Kansara (Mary (voice)), Mia Soteriou (Dr. Browne), Annelle Olaleye (Olivia), Maya Eva Hosein (Rekha), Bastian Antonio Fuentes (Parker), Alice Brittain (Hardware Store Cashier)",
-    "cached_at": "2026-04-05T09:32:39.542106"
-  },
-  "frida-kahlo-exhibition-on-screen": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/fzHHWd3dB2Dns936AWkEu7cJAUQ.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=D76y2YhjV8A",
-    "vote_average": 7.2,
-    "genres": [
-      "Documentary"
-    ],
-    "imdb_id": "tt13011980",
-    "overview": "She was a prolific self-portraitist, using the canvas as a mirror through all stages of her turbulent and, at times, tragic life. This highly engaging film takes us on a journey through the life of one of the most prevalent female icons: Frida Kahlo. Displaying a treasure trove of colour and a feast of vibrancy on screen, this personal and intimate film offers privileged access to her works and highlights the source of her feverish creativity, her resilience and her unmatched lust for life, men, women, politics and her cultural heritage.",
-    "director": "Ali Ray",
-    "writer": "",
-    "cast": "Frida Kahlo (Self (archive footage))",
-    "cached_at": "2026-04-05T09:32:40.751038"
-  },
   "fight-club": {
     "poster_url": "https://image.tmdb.org/t/p/w342/jSziioSwPVrOy9Yow3XhWIBDjq1.jpg",
     "trailer_url": "https://www.youtube.com/watch?v=dfeUzm6KF4g",
@@ -621,5 +592,19 @@
     "writer": "Jeremy Slater",
     "cast": "Karl Urban (Johnny Cage), Adeline Rudolph (Kitana), Jessica McNamee (Sonya Blade), Josh Lawson (Revenant Kano), Ludi Lin (Liu Kang), Mehcad Brooks (Jackson 'Jax' Briggs), Tati Gabrielle (Jade), Lewis Tan (Cole Young), Damon Herriman (Quan Chi), Chin Han (Shang Tsung), Tadanobu Asano (Lord Raiden), Joe Taslim (Bi-Han)",
     "cached_at": "2026-05-01T10:18:05.736927"
+  },
+  "frida-kahlo-exhibition-on-screen": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/fzHHWd3dB2Dns936AWkEu7cJAUQ.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=D76y2YhjV8A",
+    "vote_average": 7.2,
+    "genres": [
+      "Documentary"
+    ],
+    "imdb_id": "tt13011980",
+    "overview": "She was a prolific self-portraitist, using the canvas as a mirror through all stages of her turbulent and, at times, tragic life. This highly engaging film takes us on a journey through the life of one of the most prevalent female icons: Frida Kahlo. Displaying a treasure trove of colour and a feast of vibrancy on screen, this personal and intimate film offers privileged access to her works and highlights the source of her feverish creativity, her resilience and her unmatched lust for life, men, women, politics and her cultural heritage.",
+    "director": "Ali Ray",
+    "writer": "",
+    "cast": "Frida Kahlo (Self (archive footage))",
+    "cached_at": "2026-05-05T10:28:29.741464"
   }
 }
