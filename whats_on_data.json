@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-10T10:07:08Z",
+  "updated_at": "2026-05-11T11:59:02Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -15,19 +15,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=st-austell",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "16:45",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77251&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-11",
               "time": "16:45",
@@ -157,32 +144,6 @@
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
             {
-              "date": "2026-05-10",
-              "time": "12:00",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77238&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-10",
-              "time": "14:30",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77239&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-11",
               "time": "17:15",
               "screen": 2,
@@ -233,20 +194,6 @@
                 "Wheelchair access",
                 "2D"
               ]
-            },
-            {
-              "date": "2026-05-10",
-              "time": "17:15",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77234&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "2D"
-              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=62U-qGO52mY",
@@ -272,34 +219,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=st-austell",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "13:30",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77216&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-05-10",
-              "time": "16:30",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77217&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-05-11",
               "time": "16:30",
@@ -466,20 +385,6 @@
           "poster_url": "posters/michael.jpg",
           "showtimes": [
             {
-              "date": "2026-05-10",
-              "time": "13:45",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77271&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-05-11",
               "time": "19:45",
               "screen": 4,
@@ -628,80 +533,6 @@
           "writer": "Mark Jenkin"
         },
         {
-          "title": "The Super Mario Galaxy Movie",
-          "search_title": "The Super Mario Galaxy Movie",
-          "film_slug": "super-mario-galaxy",
-          "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
-          "cast": "Chris Pratt (Mario (voice)), Charlie Day (Luigi (voice)), Anya Taylor-Joy (Princess Peach (voice)), Jack Black (Bowser (voice)), Keegan-Michael Key (Toad (voice)), Benny Safdie (Bowser Jr. (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice)), Brie Larson (Rosalina (voice)), Glen Powell (Fox McCloud (voice))",
-          "runtime_min": 98,
-          "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=st-austell",
-          "poster_url": "posters/super-mario-galaxy.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "11:45",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77268&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=gWfOfyb_6Zs",
-          "vote_average": 6.8,
-          "genres": [
-            "Family",
-            "Comedy",
-            "Adventure",
-            "Fantasy",
-            "Animation"
-          ],
-          "imdb_id": "tt28650488",
-          "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-          "director": "Aaron Horvath, Michael Jelenic",
-          "writer": "Matthew Fogel"
-        },
-        {
-          "title": "The Magic Faraway Tree",
-          "search_title": "The Magic Faraway Tree",
-          "film_slug": "the-magic-faraway-tree",
-          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary...",
-          "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
-          "runtime_min": 110,
-          "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=st-austell",
-          "poster_url": "posters/the-magic-faraway-tree.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "14:15",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77269&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
-          "vote_average": 6.6,
-          "genres": [
-            "Family",
-            "Fantasy",
-            "Adventure"
-          ],
-          "imdb_id": "tt7734244",
-          "overview": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
-          "director": "Ben Gregor",
-          "writer": "Simon Farnaby"
-        },
-        {
           "title": "Hokum",
           "search_title": "Hokum",
           "film_slug": "hokum",
@@ -775,79 +606,6 @@
           "overview": "When novelist Ohm Bauman retreats to a remote inn to scatter his parents' ashes, he is consumed by tales of a witch haunting the honeymoon suite. Disturbing visions and a shocking disappearance forces him to confront dark corners of his past.",
           "director": "Damian McCarthy",
           "writer": "Damian McCarthy"
-        },
-        {
-          "title": "Hitpig!",
-          "search_title": "Hitpig!",
-          "film_slug": "hitpig",
-          "synopsis": "A porcine bounty hunter accepts his next hit: Pickles, a naive, ebullient elephant. Though he initially sets out to capture the perky pachyderm, the unlikely...",
-          "cast": "Jason Sudeikis (Hitpig (voice)), Lilly Singh (Pickles (voice)), Rainn Wilson (Leapin' Lord of the Leotard (voice)), Anitta (Leticia dos Anjos (voice)), Hannah Gadsby (Koala (voice)), RuPaul (Polecat (voice)), Charlie Adler (Super Rooster / Lobster / Nuke Techs (voice)), Flavor Flav (Chef Emcee (voice)), Lorraine Ashbourne (Big Bertha (voice)), Andy Serkis (Newscaster (voice)), Shelby Young (Catchvan (voice)), Dave Rosenbaum (Janitor (voice))",
-          "runtime_min": 85,
-          "film_url": "https://wtwcinemas.co.uk/film/hitpig/?screen=st-austell",
-          "poster_url": "posters/hitpig.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "11:30",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77270&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=i0O0VlWwrHU",
-          "vote_average": 6.7,
-          "genres": [
-            "Animation",
-            "Comedy",
-            "Adventure",
-            "Family"
-          ],
-          "imdb_id": "tt13176330",
-          "overview": "A porcine bounty hunter accepts his next hit: Pickles, a naive, ebullient elephant. Though he initially sets out to capture the perky pachyderm, the unlikely pair find themselves crisscrossing the globe on an adventure that brings out the best in both of them.",
-          "director": "David Feiss, Cinzia Angelini",
-          "writer": "Berkeley Breathed, Tyler Werrin, Dave Rosenbaum"
-        },
-        {
-          "title": "Billie Eilish - Hit Me Hard and Soft: The Tour (3D)",
-          "search_title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
-          "film_slug": "billie-eilish-hit-me-hard-and-soft-the-tour-3d",
-          "synopsis": "Captured during Billie Eilish's sold-out world tour, a concert experience from one of the most celebrated and successful artists of her generation, presented in immersive...",
-          "cast": "Billie Eilish (Self), James Cameron (Self), FINNEAS (Self), Maggie Baird (Self)",
-          "runtime_min": 115,
-          "film_url": "https://wtwcinemas.co.uk/film/billie-eilish-hit-me-hard-and-soft-the-tour-3d/?screen=st-austell",
-          "poster_url": "posters/billie-eilish-hit-me-hard-and-soft-the-tour-3d.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "17:30",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77053&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "3D",
-                "Strobe Light warning"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=9ElURjcuWLQ",
-          "vote_average": 0.0,
-          "genres": [
-            "Music",
-            "Documentary"
-          ],
-          "imdb_id": "tt39018643",
-          "overview": "Captured during Billie Eilish's sold-out world tour, a concert experience from one of the most celebrated and successful artists of her generation, presented in immersive 3D.",
-          "director": "James Cameron, Billie Eilish",
-          "writer": ""
         },
         {
           "title": "Top Gun",
@@ -1452,12 +1210,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 22,
-        "selector_film_nodes": 22,
-        "primary_selector_nodes": 22,
+        "raw_cards": 17,
+        "selector_film_nodes": 17,
+        "primary_selector_nodes": 17,
         "fallback_selector_nodes": 0,
-        "parsed_films": 18,
-        "parsed_showtimes": 78
+        "parsed_films": 14,
+        "parsed_showtimes": 67
       }
     },
     "newquay": {
@@ -1474,19 +1232,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=newquay",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "16:45",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65620&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-11",
               "time": "16:45",
@@ -1603,32 +1348,6 @@
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
             {
-              "date": "2026-05-10",
-              "time": "12:00",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65627&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-10",
-              "time": "14:30",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65629&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-11",
               "time": "17:15",
               "screen": 3,
@@ -1679,20 +1398,6 @@
                 "Wheelchair access",
                 "2D"
               ]
-            },
-            {
-              "date": "2026-05-10",
-              "time": "17:15",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65632&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "2D"
-              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=62U-qGO52mY",
@@ -1718,32 +1423,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=newquay",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "13:30",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65617&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-10",
-              "time": "16:30",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65606&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-11",
               "time": "16:30",
@@ -1901,19 +1580,6 @@
           "poster_url": "posters/michael.jpg",
           "showtimes": [
             {
-              "date": "2026-05-10",
-              "time": "13:45",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65655&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-11",
               "time": "19:45",
               "screen": 2,
@@ -2057,80 +1723,6 @@
           "writer": "Mark Jenkin"
         },
         {
-          "title": "The Super Mario Galaxy Movie",
-          "search_title": "The Super Mario Galaxy Movie",
-          "film_slug": "super-mario-galaxy",
-          "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
-          "cast": "Chris Pratt (Mario (voice)), Charlie Day (Luigi (voice)), Anya Taylor-Joy (Princess Peach (voice)), Jack Black (Bowser (voice)), Keegan-Michael Key (Toad (voice)), Benny Safdie (Bowser Jr. (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice)), Brie Larson (Rosalina (voice)), Glen Powell (Fox McCloud (voice))",
-          "runtime_min": 98,
-          "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=newquay",
-          "poster_url": "posters/super-mario-galaxy.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "11:45",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65657&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=gWfOfyb_6Zs",
-          "vote_average": 6.8,
-          "genres": [
-            "Family",
-            "Comedy",
-            "Adventure",
-            "Fantasy",
-            "Animation"
-          ],
-          "imdb_id": "tt28650488",
-          "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-          "director": "Aaron Horvath, Michael Jelenic",
-          "writer": "Matthew Fogel"
-        },
-        {
-          "title": "The Magic Faraway Tree",
-          "search_title": "The Magic Faraway Tree",
-          "film_slug": "the-magic-faraway-tree",
-          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary...",
-          "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
-          "runtime_min": 110,
-          "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=newquay",
-          "poster_url": "posters/the-magic-faraway-tree.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "14:15",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65659&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
-          "vote_average": 6.6,
-          "genres": [
-            "Family",
-            "Fantasy",
-            "Adventure"
-          ],
-          "imdb_id": "tt7734244",
-          "overview": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
-          "director": "Ben Gregor",
-          "writer": "Simon Farnaby"
-        },
-        {
           "title": "Hokum",
           "search_title": "Hokum",
           "film_slug": "hokum",
@@ -2204,41 +1796,6 @@
           "overview": "When novelist Ohm Bauman retreats to a remote inn to scatter his parents' ashes, he is consumed by tales of a witch haunting the honeymoon suite. Disturbing visions and a shocking disappearance forces him to confront dark corners of his past.",
           "director": "Damian McCarthy",
           "writer": "Damian McCarthy"
-        },
-        {
-          "title": "Billie Eilish - Hit Me Hard and Soft: The Tour (3D)",
-          "search_title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
-          "film_slug": "billie-eilish-hit-me-hard-and-soft-the-tour-3d",
-          "synopsis": "Captured during Billie Eilish's sold-out world tour, a concert experience from one of the most celebrated and successful artists of her generation, presented in immersive...",
-          "cast": "Billie Eilish (Self), James Cameron (Self), FINNEAS (Self), Maggie Baird (Self)",
-          "runtime_min": 115,
-          "film_url": "https://wtwcinemas.co.uk/film/billie-eilish-hit-me-hard-and-soft-the-tour-3d/?screen=newquay",
-          "poster_url": "posters/billie-eilish-hit-me-hard-and-soft-the-tour-3d.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "17:30",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65447&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "3D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=9ElURjcuWLQ",
-          "vote_average": 0.0,
-          "genres": [
-            "Music",
-            "Documentary"
-          ],
-          "imdb_id": "tt39018643",
-          "overview": "Captured during Billie Eilish's sold-out world tour, a concert experience from one of the most celebrated and successful artists of her generation, presented in immersive 3D.",
-          "director": "James Cameron, Billie Eilish",
-          "writer": ""
         },
         {
           "title": "Jo in the Water plus Q&A",
@@ -2808,12 +2365,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 22,
-        "selector_film_nodes": 22,
-        "primary_selector_nodes": 22,
+        "raw_cards": 18,
+        "selector_film_nodes": 18,
+        "primary_selector_nodes": 18,
         "fallback_selector_nodes": 0,
-        "parsed_films": 18,
-        "parsed_showtimes": 72
+        "parsed_films": 15,
+        "parsed_showtimes": 62
       }
     },
     "truro": {
@@ -2830,19 +2387,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=truro",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "16:30",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120438&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-11",
               "time": "16:30",
@@ -2942,19 +2486,6 @@
                 "Audio Description",
                 "2D"
               ]
-            },
-            {
-              "date": "2026-05-10",
-              "time": "20:15",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120449&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "2D"
-              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=ul90WGVm5aU",
@@ -2979,45 +2510,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=truro",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "11:45",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120433&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-10",
-              "time": "14:00",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120435&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-10",
-              "time": "17:15",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120427&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-11",
               "time": "17:15",
@@ -3107,45 +2599,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=truro",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "14:30",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120416&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-10",
-              "time": "16:45",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120418&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-10",
-              "time": "20:00",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120410&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-11",
               "time": "16:45",
@@ -3318,31 +2771,6 @@
           "poster_url": "posters/michael.jpg",
           "showtimes": [
             {
-              "date": "2026-05-10",
-              "time": "13:30",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120459&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-10",
-              "time": "19:15",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120461&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-11",
               "time": "19:15",
               "screen": 4,
@@ -3511,80 +2939,6 @@
           "writer": "Mark Jenkin"
         },
         {
-          "title": "The Super Mario Galaxy Movie",
-          "search_title": "The Super Mario Galaxy Movie",
-          "film_slug": "super-mario-galaxy",
-          "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
-          "cast": "Chris Pratt (Mario (voice)), Charlie Day (Luigi (voice)), Anya Taylor-Joy (Princess Peach (voice)), Jack Black (Bowser (voice)), Keegan-Michael Key (Toad (voice)), Benny Safdie (Bowser Jr. (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice)), Brie Larson (Rosalina (voice)), Glen Powell (Fox McCloud (voice))",
-          "runtime_min": 98,
-          "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=truro",
-          "poster_url": "posters/super-mario-galaxy.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "11:30",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120456&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=gWfOfyb_6Zs",
-          "vote_average": 6.8,
-          "genres": [
-            "Family",
-            "Comedy",
-            "Adventure",
-            "Fantasy",
-            "Animation"
-          ],
-          "imdb_id": "tt28650488",
-          "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-          "director": "Aaron Horvath, Michael Jelenic",
-          "writer": "Matthew Fogel"
-        },
-        {
-          "title": "The Magic Faraway Tree",
-          "search_title": "The Magic Faraway Tree",
-          "film_slug": "the-magic-faraway-tree",
-          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary...",
-          "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
-          "runtime_min": 110,
-          "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=truro",
-          "poster_url": "posters/the-magic-faraway-tree.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "13:45",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120458&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
-          "vote_average": 6.6,
-          "genres": [
-            "Family",
-            "Fantasy",
-            "Adventure"
-          ],
-          "imdb_id": "tt7734244",
-          "overview": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
-          "director": "Ben Gregor",
-          "writer": "Simon Farnaby"
-        },
-        {
           "title": "National Theatre Live: All My Sons",
           "search_title": "National Theatre Live: All My Sons",
           "film_slug": "national-theatre-live-all-my-sons",
@@ -3629,18 +2983,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/hokum/?screen=truro",
           "poster_url": "posters/hokum.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "17:30",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120460&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-11",
               "time": "17:30",
@@ -3701,78 +3043,6 @@
           "overview": "When novelist Ohm Bauman retreats to a remote inn to scatter his parents' ashes, he is consumed by tales of a witch haunting the honeymoon suite. Disturbing visions and a shocking disappearance forces him to confront dark corners of his past.",
           "director": "Damian McCarthy",
           "writer": "Damian McCarthy"
-        },
-        {
-          "title": "Hitpig!",
-          "search_title": "Hitpig!",
-          "film_slug": "hitpig",
-          "synopsis": "A porcine bounty hunter accepts his next hit: Pickles, a naive, ebullient elephant. Though he initially sets out to capture the perky pachyderm, the unlikely...",
-          "cast": "Jason Sudeikis (Hitpig (voice)), Lilly Singh (Pickles (voice)), Rainn Wilson (Leapin' Lord of the Leotard (voice)), Anitta (Leticia dos Anjos (voice)), Hannah Gadsby (Koala (voice)), RuPaul (Polecat (voice)), Charlie Adler (Super Rooster / Lobster / Nuke Techs (voice)), Flavor Flav (Chef Emcee (voice)), Lorraine Ashbourne (Big Bertha (voice)), Andy Serkis (Newscaster (voice)), Shelby Young (Catchvan (voice)), Dave Rosenbaum (Janitor (voice))",
-          "runtime_min": 85,
-          "film_url": "https://wtwcinemas.co.uk/film/hitpig/?screen=truro",
-          "poster_url": "posters/hitpig.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "11:15",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120457&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=i0O0VlWwrHU",
-          "vote_average": 6.7,
-          "genres": [
-            "Animation",
-            "Comedy",
-            "Adventure",
-            "Family"
-          ],
-          "imdb_id": "tt13176330",
-          "overview": "A porcine bounty hunter accepts his next hit: Pickles, a naive, ebullient elephant. Though he initially sets out to capture the perky pachyderm, the unlikely pair find themselves crisscrossing the globe on an adventure that brings out the best in both of them.",
-          "director": "David Feiss, Cinzia Angelini",
-          "writer": "Berkeley Breathed, Tyler Werrin, Dave Rosenbaum"
-        },
-        {
-          "title": "Billie Eilish - Hit Me Hard and Soft: The Tour (2D)",
-          "search_title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
-          "film_slug": "billie-eilish-hit-me-hard-and-soft-the-tour-2d",
-          "synopsis": "Captured during Billie Eilish's sold-out world tour, a concert experience from one of the most celebrated and successful artists of her generation.",
-          "cast": "Billie Eilish (Self), James Cameron (Self), FINNEAS (Self), Maggie Baird (Self)",
-          "runtime_min": 115,
-          "film_url": "https://wtwcinemas.co.uk/film/billie-eilish-hit-me-hard-and-soft-the-tour-2d/?screen=truro",
-          "poster_url": "posters/billie-eilish-hit-me-hard-and-soft-the-tour-2d.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "20:00",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120201&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=9ElURjcuWLQ",
-          "vote_average": 0.0,
-          "genres": [
-            "Music",
-            "Documentary"
-          ],
-          "imdb_id": "tt39018643",
-          "overview": "Captured during Billie Eilish's sold-out world tour, a concert experience from one of the most celebrated and successful artists of her generation, presented in immersive 3D.",
-          "director": "James Cameron, Billie Eilish",
-          "writer": ""
         },
         {
           "title": "Top Gun",
@@ -4366,12 +3636,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 24,
-        "selector_film_nodes": 24,
-        "primary_selector_nodes": 24,
+        "raw_cards": 19,
+        "selector_film_nodes": 19,
+        "primary_selector_nodes": 19,
         "fallback_selector_nodes": 0,
-        "parsed_films": 21,
-        "parsed_showtimes": 83
+        "parsed_films": 17,
+        "parsed_showtimes": 68
       }
     },
     "wadebridge": {
@@ -4388,19 +3658,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=wadebridge",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "14:30",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28773&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-11",
               "time": "17:10",
@@ -4490,32 +3747,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=wadebridge",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "14:00",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28774&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-10",
-              "time": "16:45",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28791&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-11",
               "time": "16:45",
@@ -4658,19 +3889,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=wadebridge",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-10",
-              "time": "17:10",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28771&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-11",
               "time": "19:30",
@@ -4964,7 +4182,7 @@
         "primary_selector_nodes": 9,
         "fallback_selector_nodes": 0,
         "parsed_films": 7,
-        "parsed_showtimes": 32
+        "parsed_showtimes": 28
       }
     }
   }
