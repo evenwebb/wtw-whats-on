@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-11T11:59:02Z",
+  "updated_at": "2026-05-12T11:14:23Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -15,32 +15,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=st-austell",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-11",
-              "time": "16:45",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77252&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-11",
-              "time": "20:00",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77242&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-12",
               "time": "16:45",
@@ -107,6 +81,175 @@
               ]
             },
             {
+              "date": "2026-05-15",
+              "time": "17:00",
+              "screen": 4,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77291&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-15",
+              "time": "20:00",
+              "screen": 2,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77289&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "17:00",
+              "screen": 4,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77303&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "20:00",
+              "screen": 2,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77299&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "17:00",
+              "screen": 4,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77314&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "17:00",
+              "screen": 4,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77326&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "20:00",
+              "screen": 2,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77322&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "17:00",
+              "screen": 4,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77333&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "20:00",
+              "screen": 2,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77332&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "17:00",
+              "screen": 4,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77341&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "20:00",
+              "screen": 2,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77340&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "17:00",
+              "screen": 4,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77348&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "20:00",
+              "screen": 2,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77347&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
               "date": "2026-05-13",
               "time": "20:00",
               "screen": 2,
@@ -143,19 +286,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=st-austell",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-11",
-              "time": "17:15",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77241&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-12",
               "time": "17:15",
@@ -194,6 +324,124 @@
                 "Wheelchair access",
                 "2D"
               ]
+            },
+            {
+              "date": "2026-05-15",
+              "time": "17:15",
+              "screen": 2,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77288&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "14:30",
+              "screen": 2,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77297&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "17:15",
+              "screen": 2,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77298&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "14:30",
+              "screen": 2,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77308&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "17:15",
+              "screen": 2,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77321&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "17:15",
+              "screen": 2,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77331&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "17:15",
+              "screen": 2,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77339&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "17:15",
+              "screen": 2,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77346&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "17:15",
+              "screen": 2,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77309&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Subtitles",
+                "Wheelchair access",
+                "2D"
+              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=62U-qGO52mY",
@@ -219,34 +467,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=st-austell",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-11",
-              "time": "16:30",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77219&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-05-11",
-              "time": "19:15",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77220&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-05-12",
               "time": "16:30",
@@ -332,6 +552,188 @@
               ]
             },
             {
+              "date": "2026-05-15",
+              "time": "16:30",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77286&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-15",
+              "time": "19:15",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77287&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "13:30",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77293&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "16:30",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77294&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "19:15",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77295&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "13:30",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77305&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "16:30",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77306&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "16:30",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77317&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "19:15",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77318&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "16:30",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77329&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "19:15",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77330&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "16:30",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77337&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "19:15",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77338&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
               "date": "2026-05-21",
               "time": "11:00",
               "screen": 1,
@@ -342,6 +744,34 @@
                 "Audio Description",
                 "Wheelchair access",
                 "Silver Screen",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "16:30",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77344&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "19:15",
+              "screen": 1,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77345&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
                 "2D",
                 "Strobe Light warning"
               ]
@@ -384,20 +814,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=st-austell",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-11",
-              "time": "19:45",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77274&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-05-12",
               "time": "19:45",
@@ -456,6 +872,146 @@
               ]
             },
             {
+              "date": "2026-05-15",
+              "time": "16:45",
+              "screen": 3,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77290&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-15",
+              "time": "19:45",
+              "screen": 4,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77292&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "14:00",
+              "screen": 4,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77302&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "19:45",
+              "screen": 4,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77304&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "14:00",
+              "screen": 4,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77313&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "16:45",
+              "screen": 3,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77328&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "19:45",
+              "screen": 4,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77327&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "19:45",
+              "screen": 4,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77334&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "19:45",
+              "screen": 4,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77342&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "19:45",
+              "screen": 4,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77349&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
               "date": "2026-05-14",
               "time": "11:15",
               "screen": 4,
@@ -494,19 +1050,6 @@
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
             {
-              "date": "2026-05-11",
-              "time": "19:30",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77273&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-12",
               "time": "19:30",
               "screen": 3,
@@ -515,6 +1058,46 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77276&screen=staustell",
               "tags": [
                 "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "16:45",
+              "screen": 3,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77336&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "16:45",
+              "screen": 3,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77350&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "16:45",
+              "screen": 3,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77343&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Subtitles",
                 "Wheelchair access",
                 "2D"
               ]
@@ -533,6 +1116,93 @@
           "writer": "Mark Jenkin"
         },
         {
+          "title": "The Super Mario Galaxy Movie",
+          "search_title": "The Super Mario Galaxy Movie",
+          "film_slug": "super-mario-galaxy",
+          "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
+          "cast": "Chris Pratt (Mario (voice)), Charlie Day (Luigi (voice)), Anya Taylor-Joy (Princess Peach (voice)), Jack Black (Bowser (voice)), Keegan-Michael Key (Toad (voice)), Benny Safdie (Bowser Jr. (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice)), Brie Larson (Rosalina (voice)), Glen Powell (Fox McCloud (voice))",
+          "runtime_min": 98,
+          "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=st-austell",
+          "poster_url": "posters/super-mario-galaxy.jpg",
+          "showtimes": [
+            {
+              "date": "2026-05-16",
+              "time": "12:00",
+              "screen": 2,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77296&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "12:00",
+              "screen": 2,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77307&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=gWfOfyb_6Zs",
+          "vote_average": 6.8,
+          "genres": [
+            "Family",
+            "Comedy",
+            "Adventure",
+            "Fantasy",
+            "Animation"
+          ],
+          "imdb_id": "tt28650488",
+          "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
+          "director": "Aaron Horvath, Michael Jelenic",
+          "writer": "Matthew Fogel"
+        },
+        {
+          "title": "The Magic Faraway Tree",
+          "search_title": "The Magic Faraway Tree",
+          "film_slug": "the-magic-faraway-tree",
+          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children - Joe, Beth, and Fran - discover a magical tree and its extraordinary...",
+          "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
+          "runtime_min": 110,
+          "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=st-austell",
+          "poster_url": "posters/the-magic-faraway-tree.jpg",
+          "showtimes": [
+            {
+              "date": "2026-05-16",
+              "time": "13:45",
+              "screen": 3,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77300&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
+          "vote_average": 6.6,
+          "genres": [
+            "Family",
+            "Fantasy",
+            "Adventure"
+          ],
+          "imdb_id": "tt7734244",
+          "overview": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
+          "director": "Ben Gregor",
+          "writer": "Simon Farnaby"
+        },
+        {
           "title": "Hokum",
           "search_title": "Hokum",
           "film_slug": "hokum",
@@ -542,19 +1212,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/hokum/?screen=st-austell",
           "poster_url": "posters/hokum.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-11",
-              "time": "17:00",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77272&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-12",
               "time": "17:00",
@@ -670,6 +1327,19 @@
               ]
             },
             {
+              "date": "2026-05-17",
+              "time": "13:45",
+              "screen": 3,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77310&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
               "date": "2026-05-18",
               "time": "19:30",
               "screen": 3,
@@ -712,6 +1382,19 @@
               "cinema_name": "White River Cinema, St Austell",
               "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77136&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "16:45",
+              "screen": 3,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77311&screen=staustell",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -808,7 +1491,8 @@
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -821,7 +1505,8 @@
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -834,7 +1519,8 @@
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -847,7 +1533,8 @@
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -860,7 +1547,8 @@
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -873,7 +1561,8 @@
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -886,7 +1575,8 @@
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -899,7 +1589,8 @@
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -912,7 +1603,8 @@
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -925,7 +1617,8 @@
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -938,7 +1631,8 @@
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -951,7 +1645,8 @@
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -964,7 +1659,8 @@
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
-                "2D"
+                "2D",
+                "Strobe Light warning"
               ]
             }
           ],
@@ -999,7 +1695,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77072&screen=staustell",
               "tags": [
                 "Wheelchair access",
-                "3D"
+                "3D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -1011,7 +1708,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77071&screen=staustell",
               "tags": [
                 "Wheelchair access",
-                "3D"
+                "3D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -1023,7 +1721,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77080&screen=staustell",
               "tags": [
                 "Wheelchair access",
-                "3D"
+                "3D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -1035,7 +1734,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77084&screen=staustell",
               "tags": [
                 "Wheelchair access",
-                "3D"
+                "3D",
+                "Strobe Light warning"
               ]
             }
           ],
@@ -1050,6 +1750,55 @@
           "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
           "director": "Jon Favreau",
           "writer": "Jon Favreau, Dave Filoni, Noah Kloor, George Lucas"
+        },
+        {
+          "title": "Charlie The Wonderdog",
+          "search_title": "Charlie The Wonderdog",
+          "film_slug": "charlie-the-wonderdog",
+          "synopsis": "Timid 9-year-old Danny teams up with his beloved family dog Charlie, who gets abducted by aliens and returns with superpowers, to thwart a plan by...",
+          "cast": "Owen Wilson (Charlie (voice)), Dawson Littman (Danny (voice)), Tabitha St. Germain (President Rose (voice)), Sebastian Billingsley-Rodriguez (Alien Prince (voice)), Rhona Rees (Alien Queen (voice)), Anthony Bolognese (Jacob (voice)), Caitlynne Medrek (Kitten (voice)), Emily Delahunty (Emma (voice)), Ruairi MacDonald (Puddy (voice)), Mela Pietropaolo (Madison (voice)), Lindsay Gibson (Judge Gruff (voice)), Jenn Rogan (Sam (voice))",
+          "runtime_min": 92,
+          "film_url": "https://wtwcinemas.co.uk/film/charlie-the-wonderdog/?screen=st-austell",
+          "poster_url": "posters/charlie-the-wonderdog.jpg",
+          "showtimes": [
+            {
+              "date": "2026-05-16",
+              "time": "11:45",
+              "screen": 4,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77301&screen=staustell",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "11:45",
+              "screen": 4,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77312&screen=staustell",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=uUDfO0Q4sog",
+          "vote_average": 6.8,
+          "genres": [
+            "Animation",
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Family"
+          ],
+          "imdb_id": "tt29612071",
+          "overview": "Timid 9-year-old Danny teams up with his beloved family dog Charlie, who gets abducted by aliens and returns with superpowers, to thwart a plan by the neighbor's sinister cat Puddy to destroy humanity.",
+          "director": "Shea Wageman",
+          "writer": "Shea Wageman, Steve Ball, Raul Sanchez Inglis"
         },
         {
           "title": "National Theatre Live: The Playboy of the Western World",
@@ -1210,12 +1959,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 17,
-        "selector_film_nodes": 17,
-        "primary_selector_nodes": 17,
+        "raw_cards": 22,
+        "selector_film_nodes": 22,
+        "primary_selector_nodes": 22,
         "fallback_selector_nodes": 0,
-        "parsed_films": 14,
-        "parsed_showtimes": 67
+        "parsed_films": 17,
+        "parsed_showtimes": 116
       }
     },
     "newquay": {
@@ -1232,32 +1981,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=newquay",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-11",
-              "time": "16:45",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65621&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-11",
-              "time": "20:00",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65639&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-12",
               "time": "20:00",
@@ -1311,6 +2034,175 @@
               ]
             },
             {
+              "date": "2026-05-15",
+              "time": "17:00",
+              "screen": 2,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65670&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-15",
+              "time": "20:00",
+              "screen": 3,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65673&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "17:00",
+              "screen": 2,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65677&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "20:00",
+              "screen": 3,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65680&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "17:00",
+              "screen": 2,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65691&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "17:00",
+              "screen": 2,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65703&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "20:00",
+              "screen": 3,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65706&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "17:00",
+              "screen": 2,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65710&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "20:00",
+              "screen": 3,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65713&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "17:00",
+              "screen": 2,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65717&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "20:00",
+              "screen": 3,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65720&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "17:00",
+              "screen": 2,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65727&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "20:00",
+              "screen": 3,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65730&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
               "date": "2026-05-12",
               "time": "16:45",
               "screen": 2,
@@ -1347,19 +2239,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=newquay",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-11",
-              "time": "17:15",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65633&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-12",
               "time": "17:15",
@@ -1398,6 +2277,137 @@
                 "Wheelchair access",
                 "2D"
               ]
+            },
+            {
+              "date": "2026-05-15",
+              "time": "17:15",
+              "screen": 3,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65672&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "14:30",
+              "screen": 3,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65686&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "17:15",
+              "screen": 3,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65679&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "14:30",
+              "screen": 3,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65700&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "17:15",
+              "screen": 3,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65693&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "17:15",
+              "screen": 3,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65705&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "14:30",
+              "screen": 3,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65724&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "17:15",
+              "screen": 3,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65719&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "17:15",
+              "screen": 3,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65729&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "17:15",
+              "screen": 3,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65712&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Subtitles",
+                "Wheelchair access",
+                "2D"
+              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=62U-qGO52mY",
@@ -1423,32 +2433,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=newquay",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-11",
-              "time": "16:30",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65607&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-11",
-              "time": "19:15",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65614&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-12",
               "time": "16:30",
@@ -1528,6 +2512,188 @@
               ]
             },
             {
+              "date": "2026-05-15",
+              "time": "16:30",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65668&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-15",
+              "time": "19:15",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65669&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "13:30",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65682&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "16:30",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65675&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "19:15",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65676&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "13:30",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65696&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "16:30",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65689&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "16:30",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65701&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "19:15",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65702&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "16:30",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65708&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "19:15",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65709&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "13:30",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65722&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "16:30",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65715&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "19:15",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65716&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
               "date": "2026-05-21",
               "time": "11:00",
               "screen": 1,
@@ -1538,6 +2704,32 @@
                 "Audio Description",
                 "Wheelchair access",
                 "Silver Screen",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "16:30",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65725&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "19:15",
+              "screen": 1,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65726&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
                 "2D"
               ]
             },
@@ -1579,19 +2771,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=newquay",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-11",
-              "time": "19:45",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65645&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-12",
               "time": "19:45",
@@ -1646,6 +2825,149 @@
               ]
             },
             {
+              "date": "2026-05-15",
+              "time": "16:45",
+              "screen": 4,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65674&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-15",
+              "time": "19:45",
+              "screen": 2,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65671&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "14:00",
+              "screen": 2,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65684&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "19:45",
+              "screen": 2,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65678&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "14:00",
+              "screen": 2,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65698&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "16:45",
+              "screen": 4,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65707&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "19:45",
+              "screen": 2,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65704&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "19:45",
+              "screen": 2,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65711&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "14:00",
+              "screen": 2,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65723&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "19:45",
+              "screen": 2,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65718&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "19:45",
+              "screen": 2,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65728&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
               "date": "2026-05-14",
               "time": "11:15",
               "screen": 2,
@@ -1684,12 +3006,12 @@
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
             {
-              "date": "2026-05-11",
+              "date": "2026-05-12",
               "time": "19:30",
               "screen": 4,
               "cinema_name": "Lighthouse Cinema, Newquay",
               "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65660&screen=newquay",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65661&screen=newquay",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -1697,12 +3019,25 @@
               ]
             },
             {
-              "date": "2026-05-12",
-              "time": "19:30",
+              "date": "2026-05-19",
+              "time": "16:45",
               "screen": 4,
               "cinema_name": "Lighthouse Cinema, Newquay",
               "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65661&screen=newquay",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65714&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "16:45",
+              "screen": 4,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65731&screen=newquay",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -1723,6 +3058,93 @@
           "writer": "Mark Jenkin"
         },
         {
+          "title": "The Super Mario Galaxy Movie",
+          "search_title": "The Super Mario Galaxy Movie",
+          "film_slug": "super-mario-galaxy",
+          "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
+          "cast": "Chris Pratt (Mario (voice)), Charlie Day (Luigi (voice)), Anya Taylor-Joy (Princess Peach (voice)), Jack Black (Bowser (voice)), Keegan-Michael Key (Toad (voice)), Benny Safdie (Bowser Jr. (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice)), Brie Larson (Rosalina (voice)), Glen Powell (Fox McCloud (voice))",
+          "runtime_min": 98,
+          "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=newquay",
+          "poster_url": "posters/super-mario-galaxy.jpg",
+          "showtimes": [
+            {
+              "date": "2026-05-16",
+              "time": "12:00",
+              "screen": 3,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65685&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "12:00",
+              "screen": 3,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65699&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=gWfOfyb_6Zs",
+          "vote_average": 6.8,
+          "genres": [
+            "Family",
+            "Comedy",
+            "Adventure",
+            "Fantasy",
+            "Animation"
+          ],
+          "imdb_id": "tt28650488",
+          "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
+          "director": "Aaron Horvath, Michael Jelenic",
+          "writer": "Matthew Fogel"
+        },
+        {
+          "title": "The Magic Faraway Tree",
+          "search_title": "The Magic Faraway Tree",
+          "film_slug": "the-magic-faraway-tree",
+          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children - Joe, Beth, and Fran - discover a magical tree and its extraordinary...",
+          "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
+          "runtime_min": 110,
+          "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=newquay",
+          "poster_url": "posters/the-magic-faraway-tree.jpg",
+          "showtimes": [
+            {
+              "date": "2026-05-16",
+              "time": "13:45",
+              "screen": 4,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65681&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
+          "vote_average": 6.6,
+          "genres": [
+            "Family",
+            "Fantasy",
+            "Adventure"
+          ],
+          "imdb_id": "tt7734244",
+          "overview": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
+          "director": "Ben Gregor",
+          "writer": "Simon Farnaby"
+        },
+        {
           "title": "Hokum",
           "search_title": "Hokum",
           "film_slug": "hokum",
@@ -1732,19 +3154,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/hokum/?screen=newquay",
           "poster_url": "posters/hokum.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-11",
-              "time": "17:00",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65650&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-12",
               "time": "17:00",
@@ -1889,6 +3298,18 @@
               ]
             },
             {
+              "date": "2026-05-17",
+              "time": "13:45",
+              "screen": 4,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65695&screen=newquay",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
               "date": "2026-05-18",
               "time": "19:30",
               "screen": 4,
@@ -1935,6 +3356,19 @@
                 "Wheelchair access",
                 "2D"
               ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "16:45",
+              "screen": 4,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65687&screen=newquay",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=Klc__shdj88",
@@ -1965,6 +3399,18 @@
               "cinema_name": "Lighthouse Cinema, Newquay",
               "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=65663&screen=newquay",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "16:15",
+              "screen": 4,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65721&screen=newquay",
               "tags": [
                 "Wheelchair access",
                 "2D"
@@ -2166,7 +3612,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=65461&screen=newquay",
               "tags": [
                 "Wheelchair access",
-                "3D"
+                "3D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -2178,7 +3625,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=65464&screen=newquay",
               "tags": [
                 "Wheelchair access",
-                "3D"
+                "3D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -2190,7 +3638,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=65472&screen=newquay",
               "tags": [
                 "Wheelchair access",
-                "3D"
+                "3D",
+                "Strobe Light warning"
               ]
             }
           ],
@@ -2205,6 +3654,55 @@
           "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
           "director": "Jon Favreau",
           "writer": "Jon Favreau, Dave Filoni, Noah Kloor, George Lucas"
+        },
+        {
+          "title": "Charlie The Wonderdog",
+          "search_title": "Charlie The Wonderdog",
+          "film_slug": "charlie-the-wonderdog",
+          "synopsis": "Timid 9-year-old Danny teams up with his beloved family dog Charlie, who gets abducted by aliens and returns with superpowers, to thwart a plan by...",
+          "cast": "Owen Wilson (Charlie (voice)), Dawson Littman (Danny (voice)), Tabitha St. Germain (President Rose (voice)), Sebastian Billingsley-Rodriguez (Alien Prince (voice)), Rhona Rees (Alien Queen (voice)), Anthony Bolognese (Jacob (voice)), Caitlynne Medrek (Kitten (voice)), Emily Delahunty (Emma (voice)), Ruairi MacDonald (Puddy (voice)), Mela Pietropaolo (Madison (voice)), Lindsay Gibson (Judge Gruff (voice)), Jenn Rogan (Sam (voice))",
+          "runtime_min": 92,
+          "film_url": "https://wtwcinemas.co.uk/film/charlie-the-wonderdog/?screen=newquay",
+          "poster_url": "posters/charlie-the-wonderdog.jpg",
+          "showtimes": [
+            {
+              "date": "2026-05-16",
+              "time": "11:45",
+              "screen": 2,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65683&screen=newquay",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "11:45",
+              "screen": 2,
+              "cinema_name": "Lighthouse Cinema, Newquay",
+              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=65697&screen=newquay",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=uUDfO0Q4sog",
+          "vote_average": 6.8,
+          "genres": [
+            "Animation",
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Family"
+          ],
+          "imdb_id": "tt29612071",
+          "overview": "Timid 9-year-old Danny teams up with his beloved family dog Charlie, who gets abducted by aliens and returns with superpowers, to thwart a plan by the neighbor's sinister cat Puddy to destroy humanity.",
+          "director": "Shea Wageman",
+          "writer": "Shea Wageman, Steve Ball, Raul Sanchez Inglis"
         },
         {
           "title": "National Theatre Live: The Playboy of the Western World",
@@ -2365,12 +3863,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 18,
-        "selector_film_nodes": 18,
-        "primary_selector_nodes": 18,
+        "raw_cards": 22,
+        "selector_film_nodes": 22,
+        "primary_selector_nodes": 22,
         "fallback_selector_nodes": 0,
-        "parsed_films": 15,
-        "parsed_showtimes": 62
+        "parsed_films": 18,
+        "parsed_showtimes": 114
       }
     },
     "truro": {
@@ -2387,31 +3885,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=truro",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-11",
-              "time": "16:30",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120439&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-11",
-              "time": "20:15",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120445&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-12",
               "time": "16:30",
@@ -2486,6 +3959,97 @@
                 "Audio Description",
                 "2D"
               ]
+            },
+            {
+              "date": "2026-05-15",
+              "time": "20:15",
+              "screen": 4,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120486&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "20:15",
+              "screen": 4,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120536&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "20:15",
+              "screen": 4,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120549&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "20:15",
+              "screen": 4,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120493&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "20:15",
+              "screen": 4,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120502&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "20:15",
+              "screen": 4,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120525&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "20:15",
+              "screen": 4,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120512&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=ul90WGVm5aU",
@@ -2510,19 +4074,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=truro",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-11",
-              "time": "17:15",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120428&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-12",
               "time": "17:15",
@@ -2574,6 +4125,149 @@
                 "Wheelchair access",
                 "2D"
               ]
+            },
+            {
+              "date": "2026-05-15",
+              "time": "17:00",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120482&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "11:30",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120540&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "13:45",
+              "screen": 3,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120541&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "17:00",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120533&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "11:30",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120553&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "14:30",
+              "screen": 5,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120559&screen=truro",
+              "tags": [
+                "Audio Description",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "17:00",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120489&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "17:00",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120499&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "17:00",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120523&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "17:00",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120510&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "17:00",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120480&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Subtitles",
+                "Wheelchair access",
+                "2D"
+              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=62U-qGO52mY",
@@ -2599,32 +4293,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=truro",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-11",
-              "time": "16:45",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120419&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-11",
-              "time": "20:00",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120411&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-12",
               "time": "16:45",
@@ -2704,6 +4372,175 @@
               ]
             },
             {
+              "date": "2026-05-15",
+              "time": "16:45",
+              "screen": 3,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120484&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-15",
+              "time": "19:45",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120483&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "14:15",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120539&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "19:45",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120534&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "14:15",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120552&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "19:45",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120547&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "16:45",
+              "screen": 3,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120491&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "19:45",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120490&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "16:45",
+              "screen": 4,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120507&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "19:45",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120500&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "14:15",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120530&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "16:45",
+              "screen": 2,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120527&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "19:45",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120524&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
               "date": "2026-05-21",
               "time": "11:00",
               "screen": 2,
@@ -2714,6 +4551,32 @@
                 "Audio Description",
                 "Wheelchair access",
                 "Silver Screen",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "16:45",
+              "screen": 2,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120516&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "19:45",
+              "screen": 1,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120511&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
                 "2D"
               ]
             },
@@ -2770,19 +4633,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=truro",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-11",
-              "time": "19:15",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120463&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-12",
               "time": "19:15",
@@ -2849,6 +4699,107 @@
               ]
             },
             {
+              "date": "2026-05-15",
+              "time": "17:15",
+              "screen": 4,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120485&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "14:30",
+              "screen": 5,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120545&screen=truro",
+              "tags": [
+                "Audio Description",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "17:15",
+              "screen": 4,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120535&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "17:15",
+              "screen": 4,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120548&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "19:15",
+              "screen": 2,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120496&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "20:00",
+              "screen": 5,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120508&screen=truro",
+              "tags": [
+                "Audio Description",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "13:45",
+              "screen": 2,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120531&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "20:00",
+              "screen": 5,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120519&screen=truro",
+              "tags": [
+                "Audio Description",
+                "2D"
+              ]
+            },
+            {
               "date": "2026-05-14",
               "time": "11:15",
               "screen": 4,
@@ -2860,6 +4811,20 @@
                 "Subtitles",
                 "Wheelchair access",
                 "Silver Screen",
+                "2D",
+                "Strobe Light warning"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "20:00",
+              "screen": 5,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120481&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Subtitles",
                 "2D",
                 "Strobe Light warning"
               ]
@@ -2887,19 +4852,6 @@
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
             {
-              "date": "2026-05-11",
-              "time": "19:30",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120462&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-12",
               "time": "19:30",
               "screen": 3,
@@ -2924,6 +4876,45 @@
                 "Wheelchair access",
                 "2D"
               ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "17:15",
+              "screen": 4,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120497&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "17:15",
+              "screen": 4,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120529&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "17:15",
+              "screen": 4,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120518&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=bw371ui9cTk",
@@ -2937,6 +4928,106 @@
           "overview": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves transported back in time, mistaken for the original crew.",
           "director": "Mark Jenkin",
           "writer": "Mark Jenkin"
+        },
+        {
+          "title": "The Super Mario Galaxy Movie",
+          "search_title": "The Super Mario Galaxy Movie",
+          "film_slug": "super-mario-galaxy",
+          "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
+          "cast": "Chris Pratt (Mario (voice)), Charlie Day (Luigi (voice)), Anya Taylor-Joy (Princess Peach (voice)), Jack Black (Bowser (voice)), Keegan-Michael Key (Toad (voice)), Benny Safdie (Bowser Jr. (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice)), Brie Larson (Rosalina (voice)), Glen Powell (Fox McCloud (voice))",
+          "runtime_min": 98,
+          "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=truro",
+          "poster_url": "posters/super-mario-galaxy.jpg",
+          "showtimes": [
+            {
+              "date": "2026-05-16",
+              "time": "14:45",
+              "screen": 4,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120543&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "14:45",
+              "screen": 4,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120556&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=gWfOfyb_6Zs",
+          "vote_average": 6.8,
+          "genres": [
+            "Family",
+            "Comedy",
+            "Adventure",
+            "Fantasy",
+            "Animation"
+          ],
+          "imdb_id": "tt28650488",
+          "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
+          "director": "Aaron Horvath, Michael Jelenic",
+          "writer": "Matthew Fogel"
+        },
+        {
+          "title": "The Magic Faraway Tree",
+          "search_title": "The Magic Faraway Tree",
+          "film_slug": "the-magic-faraway-tree",
+          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children - Joe, Beth, and Fran - discover a magical tree and its extraordinary...",
+          "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
+          "runtime_min": 110,
+          "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=truro",
+          "poster_url": "posters/the-magic-faraway-tree.jpg",
+          "showtimes": [
+            {
+              "date": "2026-05-16",
+              "time": "11:45",
+              "screen": 4,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120542&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "11:45",
+              "screen": 4,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120555&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
+          "vote_average": 6.6,
+          "genres": [
+            "Family",
+            "Fantasy",
+            "Adventure"
+          ],
+          "imdb_id": "tt7734244",
+          "overview": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
+          "director": "Ben Gregor",
+          "writer": "Simon Farnaby"
         },
         {
           "title": "National Theatre Live: All My Sons",
@@ -2983,18 +5074,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/hokum/?screen=truro",
           "poster_url": "posters/hokum.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-11",
-              "time": "17:30",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120464&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-12",
               "time": "17:30",
@@ -3103,6 +5182,18 @@
               ]
             },
             {
+              "date": "2026-05-17",
+              "time": "12:30",
+              "screen": 3,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120560&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
               "date": "2026-05-18",
               "time": "19:30",
               "screen": 3,
@@ -3144,6 +5235,19 @@
               "cinema_name": "Plaza Cinema, Truro",
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120314&screen=truro",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "15:00",
+              "screen": 3,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120561&screen=truro",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -3200,7 +5304,7 @@
           "title": "Frida Kahlo - Exhibition On Screen",
           "search_title": "Frida Kahlo - Exhibition On Screen",
           "film_slug": "frida-kahlo-exhibition-on-screen",
-          "synopsis": "Frida Kahlo is a phenomenon. She is arguably the world's favourite female artist – beloved by young and old. Exhibition on Screen's award-winning film –...",
+          "synopsis": "Frida Kahlo is a phenomenon. She is arguably the world's favourite female artist - beloved by young and old. Exhibition on Screen's award-winning film -...",
           "cast": "Frida Kahlo (Self (archive footage))",
           "runtime_min": 90,
           "film_url": "https://wtwcinemas.co.uk/film/frida-kahlo-exhibition-on-screen/?screen=truro",
@@ -3242,6 +5346,197 @@
           "overview": "She was a prolific self-portraitist, using the canvas as a mirror through all stages of her turbulent and, at times, tragic life. This highly engaging film takes us on a journey through the life of one of the most prevalent female icons: Frida Kahlo. Displaying a treasure trove of colour and a feast of vibrancy on screen, this personal and intimate film offers privileged access to her works and highlights the source of her feverish creativity, her resilience and her unmatched lust for life, men, women, politics and her cultural heritage.",
           "director": "Ali Ray",
           "writer": ""
+        },
+        {
+          "title": "The Christophers",
+          "search_title": "The Christophers",
+          "film_slug": "the-christophers",
+          "synopsis": "The estranged children of a once-famous artist hire a forger to complete his unfinished works so they can be \"discovered\" and sold after his death.",
+          "cast": "Michaela Coel (Lori Butler), Ian McKellen (Julian Sklar), Jessica Gunning (Sally Sklar), James Corden (Barnaby Sklar), Ferdy Roberts (Owen Appleton), Tilly Botsford (Esme), Lucy McCormick (Lori's Flatmate #1), Le Fil (Lori's Flatmate #2), Daniel Fearn (Locksmith), Dmitri Prokopiev (Food Truck Patron), Dallas Campbell (Art Fight Moderator), Stuart Cooke (Press (uncredited))",
+          "runtime_min": 100,
+          "film_url": "https://wtwcinemas.co.uk/film/the-christophers/?screen=truro",
+          "poster_url": "posters/the-christophers.jpg",
+          "showtimes": [
+            {
+              "date": "2026-05-15",
+              "time": "17:30",
+              "screen": 5,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120487&screen=truro",
+              "tags": [
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-15",
+              "time": "20:00",
+              "screen": 5,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120488&screen=truro",
+              "tags": [
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "17:30",
+              "screen": 5,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120537&screen=truro",
+              "tags": [
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "20:00",
+              "screen": 5,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120538&screen=truro",
+              "tags": [
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "17:30",
+              "screen": 5,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120550&screen=truro",
+              "tags": [
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "20:00",
+              "screen": 5,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120551&screen=truro",
+              "tags": [
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "17:30",
+              "screen": 5,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120494&screen=truro",
+              "tags": [
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "20:00",
+              "screen": 5,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120495&screen=truro",
+              "tags": [
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "17:30",
+              "screen": 5,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120503&screen=truro",
+              "tags": [
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "20:40",
+              "screen": 2,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120506&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "14:45",
+              "screen": 4,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120532&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "17:30",
+              "screen": 5,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120526&screen=truro",
+              "tags": [
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "19:30",
+              "screen": 2,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120528&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "17:30",
+              "screen": 5,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120513&screen=truro",
+              "tags": [
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "19:30",
+              "screen": 2,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120517&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=42GkXhRVLUQ",
+          "vote_average": 6.8,
+          "genres": [
+            "Crime",
+            "Comedy"
+          ],
+          "imdb_id": "tt34966562",
+          "overview": "The estranged children of a once-famous artist hire a forger to complete his unfinished works so they can be \"discovered\" and sold after his death.",
+          "director": "Steven Soderbergh",
+          "writer": "Ed Solomon"
         },
         {
           "title": "The Mandalorian And Grogu (2D)",
@@ -3389,7 +5684,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120217&screen=truro",
               "tags": [
                 "Wheelchair access",
-                "3D"
+                "3D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -3401,7 +5697,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120220&screen=truro",
               "tags": [
                 "Wheelchair access",
-                "3D"
+                "3D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -3413,7 +5710,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120223&screen=truro",
               "tags": [
                 "Wheelchair access",
-                "3D"
+                "3D",
+                "Strobe Light warning"
               ]
             },
             {
@@ -3425,7 +5723,8 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120226&screen=truro",
               "tags": [
                 "Wheelchair access",
-                "3D"
+                "3D",
+                "Strobe Light warning"
               ]
             }
           ],
@@ -3440,6 +5739,53 @@
           "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
           "director": "Jon Favreau",
           "writer": "Jon Favreau, Dave Filoni, Noah Kloor, George Lucas"
+        },
+        {
+          "title": "Charlie The Wonderdog",
+          "search_title": "Charlie The Wonderdog",
+          "film_slug": "charlie-the-wonderdog",
+          "synopsis": "Timid 9-year-old Danny teams up with his beloved family dog Charlie, who gets abducted by aliens and returns with superpowers, to thwart a plan by...",
+          "cast": "Owen Wilson (Charlie (voice)), Dawson Littman (Danny (voice)), Tabitha St. Germain (President Rose (voice)), Sebastian Billingsley-Rodriguez (Alien Prince (voice)), Rhona Rees (Alien Queen (voice)), Anthony Bolognese (Jacob (voice)), Caitlynne Medrek (Kitten (voice)), Emily Delahunty (Emma (voice)), Ruairi MacDonald (Puddy (voice)), Mela Pietropaolo (Madison (voice)), Lindsay Gibson (Judge Gruff (voice)), Jenn Rogan (Sam (voice))",
+          "runtime_min": 92,
+          "film_url": "https://wtwcinemas.co.uk/film/charlie-the-wonderdog/?screen=truro",
+          "poster_url": "posters/charlie-the-wonderdog.jpg",
+          "showtimes": [
+            {
+              "date": "2026-05-16",
+              "time": "12:00",
+              "screen": 5,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120544&screen=truro",
+              "tags": [
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "12:00",
+              "screen": 5,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120557&screen=truro",
+              "tags": [
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=uUDfO0Q4sog",
+          "vote_average": 6.8,
+          "genres": [
+            "Animation",
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Family"
+          ],
+          "imdb_id": "tt29612071",
+          "overview": "Timid 9-year-old Danny teams up with his beloved family dog Charlie, who gets abducted by aliens and returns with superpowers, to thwart a plan by the neighbor's sinister cat Puddy to destroy humanity.",
+          "director": "Shea Wageman",
+          "writer": "Shea Wageman, Steve Ball, Raul Sanchez Inglis"
         },
         {
           "title": "National Theatre Live: The Playboy of the Western World",
@@ -3636,12 +5982,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 19,
-        "selector_film_nodes": 19,
-        "primary_selector_nodes": 19,
+        "raw_cards": 24,
+        "selector_film_nodes": 24,
+        "primary_selector_nodes": 24,
         "fallback_selector_nodes": 0,
-        "parsed_films": 17,
-        "parsed_showtimes": 68
+        "parsed_films": 21,
+        "parsed_showtimes": 128
       }
     },
     "wadebridge": {
@@ -3658,19 +6004,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=wadebridge",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-11",
-              "time": "17:10",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28775&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-12",
               "time": "17:10",
@@ -3722,6 +6055,125 @@
                 "Wheelchair access",
                 "2D"
               ]
+            },
+            {
+              "date": "2026-05-15",
+              "time": "17:10",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28796&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "14:30",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28804&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "17:10",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28800&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "14:30",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28809&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "17:10",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28813&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "17:10",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28818&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "17:10",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28820&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "19:45",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28811&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Subtitles",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "17:10",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28824&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Subtitles",
+                "Wheelchair access",
+                "2D"
+              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=62U-qGO52mY",
@@ -3747,32 +6199,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=wadebridge",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-11",
-              "time": "16:45",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28777&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-11",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28776&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-12",
               "time": "16:45",
@@ -3839,6 +6265,123 @@
               ]
             },
             {
+              "date": "2026-05-15",
+              "time": "16:45",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28798&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-15",
+              "time": "19:45",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28797&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "16:45",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28802&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "19:45",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28801&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "16:45",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28808&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "16:45",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28815&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "19:45",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28814&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "20:15",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28817&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "19:45",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28821&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
               "date": "2026-05-21",
               "time": "11:00",
               "screen": 1,
@@ -3866,6 +6409,19 @@
                 "2D",
                 "Strobe Light warning"
               ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "19:45",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28825&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=KdW-osZVMLY",
@@ -3889,19 +6445,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=wadebridge",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-11",
-              "time": "19:30",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28778&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-12",
               "time": "19:30",
@@ -3969,6 +6512,97 @@
                 "Wheelchair access",
                 "2D"
               ]
+            },
+            {
+              "date": "2026-05-15",
+              "time": "19:30",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28799&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-16",
+              "time": "19:30",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28803&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "17:10",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28806&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-18",
+              "time": "19:30",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28816&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-19",
+              "time": "19:30",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28819&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "19:30",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28823&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "19:30",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28827&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=ZV-gn-ZXY8Y",
@@ -4017,6 +6651,32 @@
                 "Wheelchair access",
                 "2D"
               ]
+            },
+            {
+              "date": "2026-05-20",
+              "time": "16:45",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28822&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "16:45",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28826&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=bw371ui9cTk",
@@ -4032,10 +6692,59 @@
           "writer": "Mark Jenkin"
         },
         {
+          "title": "The Magic Faraway Tree",
+          "search_title": "The Magic Faraway Tree",
+          "film_slug": "the-magic-faraway-tree",
+          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children - Joe, Beth, and Fran - discover a magical tree and its extraordinary...",
+          "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
+          "runtime_min": 110,
+          "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=wadebridge",
+          "poster_url": "posters/the-magic-faraway-tree.jpg",
+          "showtimes": [
+            {
+              "date": "2026-05-16",
+              "time": "14:00",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28805&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-17",
+              "time": "14:00",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28810&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
+          "vote_average": 6.6,
+          "genres": [
+            "Family",
+            "Fantasy",
+            "Adventure"
+          ],
+          "imdb_id": "tt7734244",
+          "overview": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
+          "director": "Ben Gregor",
+          "writer": "Simon Farnaby"
+        },
+        {
           "title": "Frida Kahlo - Exhibition On Screen",
           "search_title": "Frida Kahlo - Exhibition On Screen",
           "film_slug": "frida-kahlo-exhibition-on-screen",
-          "synopsis": "Frida Kahlo is a phenomenon. She is arguably the world's favourite female artist – beloved by young and old. Exhibition on Screen's award-winning film –...",
+          "synopsis": "Frida Kahlo is a phenomenon. She is arguably the world's favourite female artist - beloved by young and old. Exhibition on Screen's award-winning film -...",
           "cast": "Frida Kahlo (Self (archive footage))",
           "runtime_min": 90,
           "film_url": "https://wtwcinemas.co.uk/film/frida-kahlo-exhibition-on-screen/?screen=wadebridge",
@@ -4077,6 +6786,276 @@
           "overview": "She was a prolific self-portraitist, using the canvas as a mirror through all stages of her turbulent and, at times, tragic life. This highly engaging film takes us on a journey through the life of one of the most prevalent female icons: Frida Kahlo. Displaying a treasure trove of colour and a feast of vibrancy on screen, this personal and intimate film offers privileged access to her works and highlights the source of her feverish creativity, her resilience and her unmatched lust for life, men, women, politics and her cultural heritage.",
           "director": "Ali Ray",
           "writer": ""
+        },
+        {
+          "title": "The Mandalorian And Grogu (2D)",
+          "search_title": "The Mandalorian And Grogu",
+          "film_slug": "the-mandalorian-and-grogu",
+          "synopsis": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought...",
+          "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo (voice)), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Ardennian Fry Cook (voice)), Hemky Madera (Imperial Warlord), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth)",
+          "runtime_min": 132,
+          "film_url": "https://wtwcinemas.co.uk/film/the-mandalorian-and-grogu/?screen=wadebridge",
+          "poster_url": "posters/the-mandalorian-and-grogu.jpg",
+          "showtimes": [
+            {
+              "date": "2026-05-22",
+              "time": "16:15",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28828&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-22",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28829&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-23",
+              "time": "13:00",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28832&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-23",
+              "time": "16:15",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28830&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-23",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28831&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-24",
+              "time": "13:00",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28835&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-24",
+              "time": "16:15",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28833&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-25",
+              "time": "13:00",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28838&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-25",
+              "time": "16:15",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28837&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-25",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28839&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-26",
+              "time": "13:00",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28841&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-26",
+              "time": "16:15",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28840&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-26",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28842&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-27",
+              "time": "13:00",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28844&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-27",
+              "time": "16:15",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28843&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-27",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28845&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-28",
+              "time": "13:00",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28846&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-28",
+              "time": "16:15",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28847&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-05-28",
+              "time": "19:30",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28848&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=uwild1rw7Aw",
+          "vote_average": 0.0,
+          "genres": [
+            "Action",
+            "Adventure",
+            "Science Fiction"
+          ],
+          "imdb_id": "tt30825738",
+          "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+          "director": "Jon Favreau",
+          "writer": "Jon Favreau, Dave Filoni, Noah Kloor, George Lucas"
         },
         {
           "title": "National Theatre Live: The Playboy of the Western World",
@@ -4177,12 +7156,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 9,
-        "selector_film_nodes": 9,
-        "primary_selector_nodes": 9,
+        "raw_cards": 12,
+        "selector_film_nodes": 12,
+        "primary_selector_nodes": 12,
         "fallback_selector_nodes": 0,
-        "parsed_films": 7,
-        "parsed_showtimes": 28
+        "parsed_films": 9,
+        "parsed_showtimes": 73
       }
     }
   }
