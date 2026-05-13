@@ -658,5 +658,43 @@
     "writer": "Ed Solomon",
     "cast": "Michaela Coel (Lori Butler), Ian McKellen (Julian Sklar), Jessica Gunning (Sally Sklar), James Corden (Barnaby Sklar), Ferdy Roberts (Owen Appleton), Tilly Botsford (Esme), Lucy McCormick (Lori's Flatmate #1), Le Fil (Lori's Flatmate #2), Daniel Fearn (Locksmith), Dmitri Prokopiev (Food Truck Patron), Dallas Campbell (Art Fight Moderator), Stuart Cooke (Press (uncredited))",
     "cached_at": "2026-05-12T11:14:26.945938"
+  },
+  "james-mcneill-whistler-exhibition-on-screen": {
+    "poster_url": "",
+    "trailer_url": "",
+    "vote_average": null,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-05-13T11:26:40.161974"
+  },
+  "renoir-love-exhibition-on-screen": {
+    "poster_url": "",
+    "trailer_url": "",
+    "vote_average": null,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-05-13T11:26:40.358167"
+  },
+  "monet-exhibition-on-screen": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/cYKPVyJLtSwMZ3cs46jCQOdLOIB.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=oUvcsP0Eg8k",
+    "vote_average": 6.2,
+    "genres": [
+      "Documentary"
+    ],
+    "imdb_id": "tt6233946",
+    "overview": "From award-winning director Phil Grabsky comes this fresh new look at arguably the world’s favourite artist – through his own words.  Using letters and other private writings I, Claude Monet reveals new insight into the man who not only painted the picture that gave birth to impressionism but who was perhaps the most influential and successful painter of the 19th and early 20th centuries.  Despite this, and perhaps because of it, Monet’s life is a gripping tale about a man who, behind his sun-dazzled canvases, suffered from feelings of depression, loneliness, even suicide. Then, as his art developed and his love of gardening led to the glories of his garden at Giverney, his humour, insight and love of life is revealed.  Shot on location in Paris, London, Normandy and Venice I, Claude Monet is a cinematic immersion into some of the most loved and iconic scenes in Western Art.",
+    "director": "Phil Grabsky",
+    "writer": "",
+    "cast": "Henry Goodman (Claude Monet)",
+    "cached_at": "2026-05-13T11:26:40.759735"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-12T11:14:23Z",
+  "updated_at": "2026-05-13T11:26:37Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -15,32 +15,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=st-austell",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-12",
-              "time": "16:45",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77253&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-12",
-              "time": "20:00",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77244&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-13",
               "time": "16:45",
@@ -287,19 +261,6 @@
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
             {
-              "date": "2026-05-12",
-              "time": "17:15",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77243&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-13",
               "time": "17:15",
               "screen": 2,
@@ -467,34 +428,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=st-austell",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-12",
-              "time": "16:30",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77227&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-05-12",
-              "time": "19:15",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77228&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-05-13",
               "time": "16:30",
@@ -815,20 +748,6 @@
           "poster_url": "posters/michael.jpg",
           "showtimes": [
             {
-              "date": "2026-05-12",
-              "time": "19:45",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77277&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-05-13",
               "time": "19:45",
               "screen": 4,
@@ -1050,19 +969,6 @@
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
             {
-              "date": "2026-05-12",
-              "time": "19:30",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77276&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-19",
               "time": "16:45",
               "screen": 3,
@@ -1212,19 +1118,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/hokum/?screen=st-austell",
           "poster_url": "posters/hokum.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-12",
-              "time": "17:00",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77275&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-13",
               "time": "17:00",
@@ -1737,6 +1630,20 @@
                 "3D",
                 "Strobe Light warning"
               ]
+            },
+            {
+              "date": "2026-05-27",
+              "time": "18:45",
+              "screen": 3,
+              "cinema_name": "White River Cinema, St Austell",
+              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=77351&screen=staustell",
+              "tags": [
+                "Audio Description",
+                "Subtitles",
+                "Wheelchair access",
+                "2D"
+              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=uwild1rw7Aw",
@@ -1769,6 +1676,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77301&screen=staustell",
               "tags": [
+                "Audio Description",
                 "Wheelchair access",
                 "2D"
               ]
@@ -1781,6 +1689,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77312&screen=staustell",
               "tags": [
+                "Audio Description",
                 "Wheelchair access",
                 "2D"
               ]
@@ -1959,12 +1868,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 22,
-        "selector_film_nodes": 22,
-        "primary_selector_nodes": 22,
+        "raw_cards": 23,
+        "selector_film_nodes": 23,
+        "primary_selector_nodes": 23,
         "fallback_selector_nodes": 0,
         "parsed_films": 17,
-        "parsed_showtimes": 116
+        "parsed_showtimes": 109
       }
     },
     "newquay": {
@@ -1981,19 +1890,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=newquay",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-12",
-              "time": "20:00",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65640&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-13",
               "time": "20:00",
@@ -2201,20 +2097,6 @@
                 "Wheelchair access",
                 "2D"
               ]
-            },
-            {
-              "date": "2026-05-12",
-              "time": "16:45",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65622&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "2D"
-              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=ul90WGVm5aU",
@@ -2239,19 +2121,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=newquay",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-12",
-              "time": "17:15",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65634&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-13",
               "time": "17:15",
@@ -2433,32 +2302,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=newquay",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-12",
-              "time": "16:30",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65608&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-12",
-              "time": "19:15",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65615&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-13",
               "time": "16:30",
@@ -2772,19 +2615,6 @@
           "poster_url": "posters/michael.jpg",
           "showtimes": [
             {
-              "date": "2026-05-12",
-              "time": "19:45",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65646&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-13",
               "time": "16:00",
               "screen": 1,
@@ -3006,19 +2836,6 @@
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
             {
-              "date": "2026-05-12",
-              "time": "19:30",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65661&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-19",
               "time": "16:45",
               "screen": 4,
@@ -3154,19 +2971,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/hokum/?screen=newquay",
           "poster_url": "posters/hokum.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-12",
-              "time": "17:00",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65651&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-13",
               "time": "17:00",
@@ -3863,12 +3667,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 22,
-        "selector_film_nodes": 22,
-        "primary_selector_nodes": 22,
+        "raw_cards": 21,
+        "selector_film_nodes": 21,
+        "primary_selector_nodes": 21,
         "fallback_selector_nodes": 0,
         "parsed_films": 18,
-        "parsed_showtimes": 114
+        "parsed_showtimes": 106
       }
     },
     "truro": {
@@ -3885,31 +3689,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=truro",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-12",
-              "time": "16:30",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120440&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-12",
-              "time": "20:15",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120446&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-13",
               "time": "16:30",
@@ -4074,19 +3853,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=truro",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-12",
-              "time": "17:15",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120429&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-13",
               "time": "14:00",
@@ -4293,32 +4059,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=truro",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-12",
-              "time": "16:45",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120420&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-12",
-              "time": "20:00",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120412&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-13",
               "time": "14:30",
@@ -4634,19 +4374,6 @@
           "poster_url": "posters/michael.jpg",
           "showtimes": [
             {
-              "date": "2026-05-12",
-              "time": "19:15",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120466&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-13",
               "time": "13:30",
               "screen": 5,
@@ -4851,19 +4578,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/rose-of-nevada/?screen=truro",
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-12",
-              "time": "19:30",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120465&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-13",
               "time": "13:45",
@@ -5074,18 +4788,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/hokum/?screen=truro",
           "poster_url": "posters/hokum.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-12",
-              "time": "17:30",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120467&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-13",
               "time": "17:30",
@@ -5304,7 +5006,7 @@
           "title": "Frida Kahlo - Exhibition On Screen",
           "search_title": "Frida Kahlo - Exhibition On Screen",
           "film_slug": "frida-kahlo-exhibition-on-screen",
-          "synopsis": "Frida Kahlo is a phenomenon. She is arguably the world's favourite female artist - beloved by young and old. Exhibition on Screen's award-winning film -...",
+          "synopsis": "Frida Kahlo is a phenomenon. She is arguably the world's favourite female artist – beloved by young and old. Exhibition on Screen's award-winning film –...",
           "cast": "Frida Kahlo (Self (archive footage))",
           "runtime_min": 90,
           "film_url": "https://wtwcinemas.co.uk/film/frida-kahlo-exhibition-on-screen/?screen=truro",
@@ -5365,6 +5067,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120487&screen=truro",
               "tags": [
+                "Audio Description",
                 "2D"
               ]
             },
@@ -5376,6 +5079,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120488&screen=truro",
               "tags": [
+                "Audio Description",
                 "2D"
               ]
             },
@@ -5387,6 +5091,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120537&screen=truro",
               "tags": [
+                "Audio Description",
                 "2D"
               ]
             },
@@ -5398,6 +5103,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120538&screen=truro",
               "tags": [
+                "Audio Description",
                 "2D"
               ]
             },
@@ -5409,6 +5115,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120550&screen=truro",
               "tags": [
+                "Audio Description",
                 "2D"
               ]
             },
@@ -5420,6 +5127,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120551&screen=truro",
               "tags": [
+                "Audio Description",
                 "2D"
               ]
             },
@@ -5431,6 +5139,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120494&screen=truro",
               "tags": [
+                "Audio Description",
                 "2D"
               ]
             },
@@ -5442,6 +5151,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120495&screen=truro",
               "tags": [
+                "Audio Description",
                 "2D"
               ]
             },
@@ -5453,6 +5163,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120503&screen=truro",
               "tags": [
+                "Audio Description",
                 "2D"
               ]
             },
@@ -5464,6 +5175,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120506&screen=truro",
               "tags": [
+                "Audio Description",
                 "Wheelchair access",
                 "2D"
               ]
@@ -5476,6 +5188,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120532&screen=truro",
               "tags": [
+                "Audio Description",
                 "Wheelchair access",
                 "2D"
               ]
@@ -5488,6 +5201,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120526&screen=truro",
               "tags": [
+                "Audio Description",
                 "2D"
               ]
             },
@@ -5499,6 +5213,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120528&screen=truro",
               "tags": [
+                "Audio Description",
                 "Wheelchair access",
                 "2D"
               ]
@@ -5511,6 +5226,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120513&screen=truro",
               "tags": [
+                "Audio Description",
                 "2D"
               ]
             },
@@ -5522,6 +5238,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120517&screen=truro",
               "tags": [
+                "Audio Description",
                 "Wheelchair access",
                 "2D"
               ]
@@ -5978,16 +5695,153 @@
           "overview": "Marquise de Merteuil, former lover of Vicomte de Valmont, incites him to corrupt the innocent Cécile de Volanges before her wedding night, but Valmont has targeted the peerlessly virtuous and beautiful Madame de Tourvel.",
           "director": "Tony Grech-Smith, Josie Rourke",
           "writer": "Choderlos de Laclos"
+        },
+        {
+          "title": "James McNeill Whistler - Exhibition On Screen",
+          "search_title": "James McNeill Whistler - Exhibition On Screen",
+          "film_slug": "james-mcneill-whistler-exhibition-on-screen",
+          "synopsis": "Tate Britain is holding the first major retrospective of Whistler in three decades (exhibition dates: 21 May- 27 September). This blockbuster exhibition promises to reawaken...",
+          "cast": "",
+          "runtime_min": 90,
+          "film_url": "https://wtwcinemas.co.uk/film/james-mcneill-whistler-exhibition-on-screen/?screen=truro",
+          "poster_url": "posters/placeholder.svg",
+          "showtimes": [
+            {
+              "date": "2026-09-15",
+              "time": "18:30",
+              "screen": 2,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120562&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Event cinema"
+              ]
+            },
+            {
+              "date": "2026-09-20",
+              "time": "14:30",
+              "screen": 3,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120563&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Event cinema"
+              ]
+            }
+          ],
+          "trailer_url": "",
+          "vote_average": null,
+          "genres": [],
+          "imdb_id": "",
+          "overview": "",
+          "director": "",
+          "writer": ""
+        },
+        {
+          "title": "Renoir & Love - Exhibition On Screen",
+          "search_title": "Renoir & Love - Exhibition On Screen",
+          "film_slug": "renoir-love-exhibition-on-screen",
+          "synopsis": "Pierre-Auguste Renoir is one of the world's favourite artists, a founding member of the Impressionist movement and a constantly evolving artist. With exclusive access to...",
+          "cast": "",
+          "runtime_min": 90,
+          "film_url": "https://wtwcinemas.co.uk/film/renoir-love-exhibition-on-screen/?screen=truro",
+          "poster_url": "posters/placeholder.svg",
+          "showtimes": [
+            {
+              "date": "2027-01-19",
+              "time": "18:30",
+              "screen": 2,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120564&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Event cinema"
+              ]
+            },
+            {
+              "date": "2027-01-24",
+              "time": "14:30",
+              "screen": 3,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120565&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Event cinema"
+              ]
+            }
+          ],
+          "trailer_url": "",
+          "vote_average": null,
+          "genres": [],
+          "imdb_id": "",
+          "overview": "",
+          "director": "",
+          "writer": ""
+        },
+        {
+          "title": "Monet - Exhibition On Screen",
+          "search_title": "Monet - Exhibition On Screen",
+          "film_slug": "monet-exhibition-on-screen",
+          "synopsis": "To celebrate Tate Britain's blockbuster Monet and Time exhibition, Exhibition on Screen is delighted to bring the iconic story of Claude Monet to cinema screens...",
+          "cast": "Henry Goodman (Claude Monet)",
+          "runtime_min": 90,
+          "film_url": "https://wtwcinemas.co.uk/film/monet-exhibition-on-screen/?screen=truro",
+          "poster_url": "posters/monet-exhibition-on-screen.jpg",
+          "showtimes": [
+            {
+              "date": "2027-05-11",
+              "time": "18:30",
+              "screen": 2,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120566&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Event cinema"
+              ]
+            },
+            {
+              "date": "2027-05-16",
+              "time": "14:30",
+              "screen": 3,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120567&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Event cinema"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=oUvcsP0Eg8k",
+          "vote_average": 6.2,
+          "genres": [
+            "Documentary"
+          ],
+          "imdb_id": "tt6233946",
+          "overview": "From award-winning director Phil Grabsky comes this fresh new look at arguably the world’s favourite artist – through his own words.  Using letters and other private writings I, Claude Monet reveals new insight into the man who not only painted the picture that gave birth to impressionism but who was perhaps the most influential and successful painter of the 19th and early 20th centuries.  Despite this, and perhaps because of it, Monet’s life is a gripping tale about a man who, behind his sun-dazzled canvases, suffered from feelings of depression, loneliness, even suicide. Then, as his art developed and his love of gardening led to the glories of his garden at Giverney, his humour, insight and love of life is revealed.  Shot on location in Paris, London, Normandy and Venice I, Claude Monet is a cinematic immersion into some of the most loved and iconic scenes in Western Art.",
+          "director": "Phil Grabsky",
+          "writer": ""
         }
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 24,
-        "selector_film_nodes": 24,
-        "primary_selector_nodes": 24,
+        "raw_cards": 27,
+        "selector_film_nodes": 27,
+        "primary_selector_nodes": 27,
         "fallback_selector_nodes": 0,
-        "parsed_films": 21,
-        "parsed_showtimes": 128
+        "parsed_films": 24,
+        "parsed_showtimes": 126
       }
     },
     "wadebridge": {
@@ -6004,19 +5858,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=wadebridge",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-12",
-              "time": "17:10",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28779&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-13",
               "time": "14:15",
@@ -6200,32 +6041,6 @@
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
             {
-              "date": "2026-05-12",
-              "time": "16:45",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28781&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-12",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28780&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-13",
               "time": "14:30",
               "screen": 1,
@@ -6397,21 +6212,6 @@
             },
             {
               "date": "2026-05-21",
-              "time": "11:15",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28757&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-05-21",
               "time": "19:45",
               "screen": 1,
               "cinema_name": "Regal Cinema, Wadebridge",
@@ -6421,6 +6221,22 @@
                 "Audio Description",
                 "Wheelchair access",
                 "2D"
+              ]
+            },
+            {
+              "date": "2026-05-21",
+              "time": "11:15",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28757&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Subtitles",
+                "Wheelchair access",
+                "Silver Screen",
+                "2D",
+                "Strobe Light warning"
               ]
             }
           ],
@@ -6446,19 +6262,6 @@
           "poster_url": "posters/michael.jpg",
           "showtimes": [
             {
-              "date": "2026-05-12",
-              "time": "19:30",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28782&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-13",
               "time": "19:30",
               "screen": 2,
@@ -6483,21 +6286,6 @@
                 "Wheelchair access",
                 "Silver Screen",
                 "2D"
-              ]
-            },
-            {
-              "date": "2026-05-14",
-              "time": "11:15",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28672&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D",
-                "Strobe Light warning"
               ]
             },
             {
@@ -6602,6 +6390,22 @@
                 "Audio Description",
                 "Wheelchair access",
                 "2D"
+              ]
+            },
+            {
+              "date": "2026-05-14",
+              "time": "11:15",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28672&screen=wadebridge",
+              "tags": [
+                "Audio Description",
+                "Subtitles",
+                "Wheelchair access",
+                "Silver Screen",
+                "2D",
+                "Strobe Light warning"
               ]
             }
           ],
@@ -6744,7 +6548,7 @@
           "title": "Frida Kahlo - Exhibition On Screen",
           "search_title": "Frida Kahlo - Exhibition On Screen",
           "film_slug": "frida-kahlo-exhibition-on-screen",
-          "synopsis": "Frida Kahlo is a phenomenon. She is arguably the world's favourite female artist - beloved by young and old. Exhibition on Screen's award-winning film -...",
+          "synopsis": "Frida Kahlo is a phenomenon. She is arguably the world's favourite female artist – beloved by young and old. Exhibition on Screen's award-winning film –...",
           "cast": "Frida Kahlo (Self (archive footage))",
           "runtime_min": 90,
           "film_url": "https://wtwcinemas.co.uk/film/frida-kahlo-exhibition-on-screen/?screen=wadebridge",
@@ -7152,16 +6956,153 @@
           "overview": "Marquise de Merteuil, former lover of Vicomte de Valmont, incites him to corrupt the innocent Cécile de Volanges before her wedding night, but Valmont has targeted the peerlessly virtuous and beautiful Madame de Tourvel.",
           "director": "Tony Grech-Smith, Josie Rourke",
           "writer": "Choderlos de Laclos"
+        },
+        {
+          "title": "James McNeill Whistler - Exhibition On Screen",
+          "search_title": "James McNeill Whistler - Exhibition On Screen",
+          "film_slug": "james-mcneill-whistler-exhibition-on-screen",
+          "synopsis": "Tate Britain is holding the first major retrospective of Whistler in three decades (exhibition dates: 21 May- 27 September). This blockbuster exhibition promises to reawaken...",
+          "cast": "",
+          "runtime_min": 90,
+          "film_url": "https://wtwcinemas.co.uk/film/james-mcneill-whistler-exhibition-on-screen/?screen=wadebridge",
+          "poster_url": "posters/placeholder.svg",
+          "showtimes": [
+            {
+              "date": "2026-09-15",
+              "time": "18:00",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28849&screen=wadebridge",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Event cinema"
+              ]
+            },
+            {
+              "date": "2026-09-20",
+              "time": "14:30",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28850&screen=wadebridge",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Event cinema"
+              ]
+            }
+          ],
+          "trailer_url": "",
+          "vote_average": null,
+          "genres": [],
+          "imdb_id": "",
+          "overview": "",
+          "director": "",
+          "writer": ""
+        },
+        {
+          "title": "Renoir & Love - Exhibition On Screen",
+          "search_title": "Renoir & Love - Exhibition On Screen",
+          "film_slug": "renoir-love-exhibition-on-screen",
+          "synopsis": "Pierre-Auguste Renoir is one of the world's favourite artists, a founding member of the Impressionist movement and a constantly evolving artist. With exclusive access to...",
+          "cast": "",
+          "runtime_min": 90,
+          "film_url": "https://wtwcinemas.co.uk/film/renoir-love-exhibition-on-screen/?screen=wadebridge",
+          "poster_url": "posters/placeholder.svg",
+          "showtimes": [
+            {
+              "date": "2027-01-19",
+              "time": "18:00",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28851&screen=wadebridge",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Event cinema"
+              ]
+            },
+            {
+              "date": "2027-01-24",
+              "time": "14:30",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28852&screen=wadebridge",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Event cinema"
+              ]
+            }
+          ],
+          "trailer_url": "",
+          "vote_average": null,
+          "genres": [],
+          "imdb_id": "",
+          "overview": "",
+          "director": "",
+          "writer": ""
+        },
+        {
+          "title": "Monet - Exhibition On Screen",
+          "search_title": "Monet - Exhibition On Screen",
+          "film_slug": "monet-exhibition-on-screen",
+          "synopsis": "To celebrate Tate Britain's blockbuster Monet and Time exhibition, Exhibition on Screen is delighted to bring the iconic story of Claude Monet to cinema screens...",
+          "cast": "Henry Goodman (Claude Monet)",
+          "runtime_min": 90,
+          "film_url": "https://wtwcinemas.co.uk/film/monet-exhibition-on-screen/?screen=wadebridge",
+          "poster_url": "posters/monet-exhibition-on-screen.jpg",
+          "showtimes": [
+            {
+              "date": "2027-05-11",
+              "time": "18:00",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28853&screen=wadebridge",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Event cinema"
+              ]
+            },
+            {
+              "date": "2027-05-16",
+              "time": "14:30",
+              "screen": 2,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28854&screen=wadebridge",
+              "tags": [
+                "Wheelchair access",
+                "2D",
+                "Event cinema"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=oUvcsP0Eg8k",
+          "vote_average": 6.2,
+          "genres": [
+            "Documentary"
+          ],
+          "imdb_id": "tt6233946",
+          "overview": "From award-winning director Phil Grabsky comes this fresh new look at arguably the world’s favourite artist – through his own words.  Using letters and other private writings I, Claude Monet reveals new insight into the man who not only painted the picture that gave birth to impressionism but who was perhaps the most influential and successful painter of the 19th and early 20th centuries.  Despite this, and perhaps because of it, Monet’s life is a gripping tale about a man who, behind his sun-dazzled canvases, suffered from feelings of depression, loneliness, even suicide. Then, as his art developed and his love of gardening led to the glories of his garden at Giverney, his humour, insight and love of life is revealed.  Shot on location in Paris, London, Normandy and Venice I, Claude Monet is a cinematic immersion into some of the most loved and iconic scenes in Western Art.",
+          "director": "Phil Grabsky",
+          "writer": ""
         }
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 12,
-        "selector_film_nodes": 12,
-        "primary_selector_nodes": 12,
+        "raw_cards": 15,
+        "selector_film_nodes": 15,
+        "primary_selector_nodes": 15,
         "fallback_selector_nodes": 0,
-        "parsed_films": 9,
-        "parsed_showtimes": 73
+        "parsed_films": 12,
+        "parsed_showtimes": 75
       }
     }
   }
