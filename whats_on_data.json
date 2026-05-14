@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-13T11:26:37Z",
+  "updated_at": "2026-05-14T11:09:56Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -15,19 +15,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=st-austell",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-13",
-              "time": "16:45",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77254&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-14",
               "time": "16:45",
@@ -222,20 +209,6 @@
                 "Wheelchair access",
                 "2D"
               ]
-            },
-            {
-              "date": "2026-05-13",
-              "time": "20:00",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77246&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "2D"
-              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=ul90WGVm5aU",
@@ -260,19 +233,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=st-austell",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-13",
-              "time": "17:15",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77245&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-14",
               "time": "17:15",
@@ -428,34 +388,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=st-austell",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-13",
-              "time": "16:30",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77229&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-05-13",
-              "time": "19:15",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77230&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-05-14",
               "time": "16:30",
@@ -742,32 +674,18 @@
           "search_title": "Michael",
           "film_slug": "michael",
           "synopsis": "Discover the story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music, tracing his...",
-          "cast": "Jaafar Jackson (Michael Jackson), Colman Domingo (Joe Jackson), Nia Long (Katherine Jackson), Kendrick Sampson (Quincy Jones), Miles Teller (John Branca), Juliano Krue Valdi (Young Michael Jackson), Joseph David-Jones (Jackie Jackson), Jamal Henderson (Jermaine Jackson), Jessica Sula (LaToya Jackson), Kat Graham (Diana Ross), Laura Harrier (Suzanne de Passe), Kevin Shinick (Dick Clark)",
+          "cast": "Jaafar Jackson (Michael Jackson), Colman Domingo (Joseph Jackson), Nia Long (Katherine Jackson), Juliano Krue Valdi (Young Michael Jackson), Miles Teller (John Branca), KeiLyn Durrel Jones (Bill Bray), Kendrick Sampson (Quincy Jones), Joseph David-Jones (Jackie Jackson), Rhyan Hill (Tito Jackson), Jamal Henderson (Jermaine Jackson), Trey Horton (Marlon Jackson), Jessica Sula (LaToya Jackson)",
           "runtime_min": 127,
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=st-austell",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-13",
-              "time": "19:45",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77279&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-05-14",
               "time": "11:00",
               "screen": 1,
               "cinema_name": "White River Cinema, St Austell",
               "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77140&screen=staustell",
+              "booking_url": "",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -929,32 +847,16 @@
                 "2D",
                 "Strobe Light warning"
               ]
-            },
-            {
-              "date": "2026-05-14",
-              "time": "11:15",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77141&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D",
-                "Strobe Light warning"
-              ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=ZV-gn-ZXY8Y",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=miLGuFiSAis",
+          "vote_average": 7.554,
           "genres": [
             "Music",
             "Drama"
           ],
           "imdb_id": "tt11378946",
-          "overview": "Discover the story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music, tracing his journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+          "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
           "director": "Antoine Fuqua",
           "writer": "John Logan"
         },
@@ -1119,19 +1021,6 @@
           "poster_url": "posters/hokum.jpg",
           "showtimes": [
             {
-              "date": "2026-05-13",
-              "time": "17:00",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77278&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-14",
               "time": "17:00",
               "screen": 3,
@@ -1167,19 +1056,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/top-gun/?screen=st-austell",
           "poster_url": "posters/top-gun.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-13",
-              "time": "19:30",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77132&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-14",
               "time": "19:30",
@@ -1365,8 +1241,8 @@
           "writer": "David Teague"
         },
         {
-          "title": "The Mandalorian And Grogu (2D)",
-          "search_title": "The Mandalorian And Grogu",
+          "title": "Star Wars: The Mandalorian And Grogu (2D)",
+          "search_title": "Star Wars: The Mandalorian And Grogu",
           "film_slug": "the-mandalorian-and-grogu",
           "synopsis": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought...",
           "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo (voice)), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Ardennian Fry Cook (voice)), Hemky Madera (Imperial Warlord), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth)",
@@ -1868,12 +1744,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 23,
-        "selector_film_nodes": 23,
-        "primary_selector_nodes": 23,
+        "raw_cards": 21,
+        "selector_film_nodes": 21,
+        "primary_selector_nodes": 21,
         "fallback_selector_nodes": 0,
         "parsed_films": 17,
-        "parsed_showtimes": 109
+        "parsed_showtimes": 100
       }
     },
     "newquay": {
@@ -1890,19 +1766,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=newquay",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-13",
-              "time": "20:00",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65641&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-14",
               "time": "16:45",
@@ -2122,19 +1985,6 @@
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
             {
-              "date": "2026-05-13",
-              "time": "17:15",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65635&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-14",
               "time": "17:15",
               "screen": 3,
@@ -2302,32 +2152,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=newquay",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-13",
-              "time": "16:30",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65624&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-13",
-              "time": "19:15",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65625&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-14",
               "time": "16:30",
@@ -2609,31 +2433,18 @@
           "search_title": "Michael",
           "film_slug": "michael",
           "synopsis": "Discover the story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music, tracing his...",
-          "cast": "Jaafar Jackson (Michael Jackson), Colman Domingo (Joe Jackson), Nia Long (Katherine Jackson), Kendrick Sampson (Quincy Jones), Miles Teller (John Branca), Juliano Krue Valdi (Young Michael Jackson), Joseph David-Jones (Jackie Jackson), Jamal Henderson (Jermaine Jackson), Jessica Sula (LaToya Jackson), Kat Graham (Diana Ross), Laura Harrier (Suzanne de Passe), Kevin Shinick (Dick Clark)",
+          "cast": "Jaafar Jackson (Michael Jackson), Colman Domingo (Joseph Jackson), Nia Long (Katherine Jackson), Juliano Krue Valdi (Young Michael Jackson), Miles Teller (John Branca), KeiLyn Durrel Jones (Bill Bray), Kendrick Sampson (Quincy Jones), Joseph David-Jones (Jackie Jackson), Rhyan Hill (Tito Jackson), Jamal Henderson (Jermaine Jackson), Trey Horton (Marlon Jackson), Jessica Sula (LaToya Jackson)",
           "runtime_min": 127,
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=newquay",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-13",
-              "time": "16:00",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65662&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-14",
               "time": "11:00",
               "screen": 1,
               "cinema_name": "Lighthouse Cinema, Newquay",
               "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65525&screen=newquay",
+              "booking_url": "",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -2796,32 +2607,16 @@
                 "Wheelchair access",
                 "2D"
               ]
-            },
-            {
-              "date": "2026-05-14",
-              "time": "11:15",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65526&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D",
-                "Strobe Light warning"
-              ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=ZV-gn-ZXY8Y",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=miLGuFiSAis",
+          "vote_average": 7.554,
           "genres": [
             "Music",
             "Drama"
           ],
           "imdb_id": "tt11378946",
-          "overview": "Discover the story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music, tracing his journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+          "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
           "director": "Antoine Fuqua",
           "writer": "John Logan"
         },
@@ -2972,19 +2767,6 @@
           "poster_url": "posters/hokum.jpg",
           "showtimes": [
             {
-              "date": "2026-05-13",
-              "time": "17:00",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65652&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-14",
               "time": "17:00",
               "screen": 4,
@@ -3011,39 +2793,6 @@
           "writer": "Damian McCarthy"
         },
         {
-          "title": "Jo in the Water plus Q&A",
-          "search_title": "Jo in the Water plus Q&A",
-          "film_slug": "jo-in-the-water-plus-qa",
-          "synopsis": "Jo in the Water follows a passionate sea swimmer turned reluctant activist, Exmouth-based Jo Bateman, as she takes on one of the UK's biggest water...",
-          "cast": "Jo Bateman (Self), Pip Piper (Self)",
-          "runtime_min": 120,
-          "film_url": "https://wtwcinemas.co.uk/film/jo-in-the-water-plus-qa/?screen=newquay",
-          "poster_url": "posters/jo-in-the-water-plus-qa.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-13",
-              "time": "19:00",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65239&screen=newquay",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=LgwULRkm7Jc",
-          "vote_average": 0.0,
-          "genres": [
-            "Documentary"
-          ],
-          "imdb_id": "tt38991522",
-          "overview": "A passionate sea swimmer turned reluctant activist, Jo Bateman takes on one of the UK’s biggest water companies in a David-and-Goliath battle to protect our oceans from devastating sewage pollution. As Jo’s courage helps ignite a growing movement, this film exposes the dire state of our water system and asks: who will stand up for our right to swim in clean natural waters, for the species and communities that rely upon them?",
-          "director": "Pip Piper",
-          "writer": ""
-        },
-        {
           "title": "Top Gun",
           "search_title": "Top Gun",
           "film_slug": "top-gun",
@@ -3053,18 +2802,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/top-gun/?screen=newquay",
           "poster_url": "posters/top-gun.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-13",
-              "time": "19:30",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65527&screen=newquay",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-14",
               "time": "19:30",
@@ -3245,8 +2982,8 @@
           "trailer_url": ""
         },
         {
-          "title": "The Mandalorian And Grogu (2D)",
-          "search_title": "The Mandalorian And Grogu",
+          "title": "Star Wars: The Mandalorian And Grogu (2D)",
+          "search_title": "Star Wars: The Mandalorian And Grogu",
           "film_slug": "the-mandalorian-and-grogu",
           "synopsis": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought...",
           "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo (voice)), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Ardennian Fry Cook (voice)), Hemky Madera (Imperial Warlord), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth)",
@@ -3667,12 +3404,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 21,
-        "selector_film_nodes": 21,
-        "primary_selector_nodes": 21,
+        "raw_cards": 19,
+        "selector_film_nodes": 19,
+        "primary_selector_nodes": 19,
         "fallback_selector_nodes": 0,
-        "parsed_films": 18,
-        "parsed_showtimes": 106
+        "parsed_films": 17,
+        "parsed_showtimes": 97
       }
     },
     "truro": {
@@ -3689,31 +3426,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=truro",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-13",
-              "time": "16:30",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120441&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-13",
-              "time": "20:15",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120447&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-14",
               "time": "16:30",
@@ -3853,32 +3565,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=truro",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-13",
-              "time": "14:00",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120469&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-13",
-              "time": "17:15",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120430&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-14",
               "time": "17:15",
@@ -4059,45 +3745,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=truro",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-13",
-              "time": "14:30",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120468&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-13",
-              "time": "16:45",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120421&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-13",
-              "time": "20:00",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120413&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-14",
               "time": "20:00",
@@ -4368,43 +4015,18 @@
           "search_title": "Michael",
           "film_slug": "michael",
           "synopsis": "Discover the story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music, tracing his...",
-          "cast": "Jaafar Jackson (Michael Jackson), Colman Domingo (Joe Jackson), Nia Long (Katherine Jackson), Kendrick Sampson (Quincy Jones), Miles Teller (John Branca), Juliano Krue Valdi (Young Michael Jackson), Joseph David-Jones (Jackie Jackson), Jamal Henderson (Jermaine Jackson), Jessica Sula (LaToya Jackson), Kat Graham (Diana Ross), Laura Harrier (Suzanne de Passe), Kevin Shinick (Dick Clark)",
+          "cast": "Jaafar Jackson (Michael Jackson), Colman Domingo (Joseph Jackson), Nia Long (Katherine Jackson), Juliano Krue Valdi (Young Michael Jackson), Miles Teller (John Branca), KeiLyn Durrel Jones (Bill Bray), Kendrick Sampson (Quincy Jones), Joseph David-Jones (Jackie Jackson), Rhyan Hill (Tito Jackson), Jamal Henderson (Jermaine Jackson), Trey Horton (Marlon Jackson), Jessica Sula (LaToya Jackson)",
           "runtime_min": 127,
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=truro",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-13",
-              "time": "13:30",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120472&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-13",
-              "time": "19:15",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120471&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-14",
               "time": "11:00",
               "screen": 3,
               "cinema_name": "Plaza Cinema, Truro",
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120236&screen=truro",
+              "booking_url": "",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -4532,7 +4154,7 @@
               "screen": 4,
               "cinema_name": "Plaza Cinema, Truro",
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120237&screen=truro",
+              "booking_url": "",
               "tags": [
                 "Audio Description",
                 "Subtitles",
@@ -4557,14 +4179,14 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=ZV-gn-ZXY8Y",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=miLGuFiSAis",
+          "vote_average": 7.554,
           "genres": [
             "Music",
             "Drama"
           ],
           "imdb_id": "tt11378946",
-          "overview": "Discover the story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music, tracing his journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+          "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
           "director": "Antoine Fuqua",
           "writer": "John Logan"
         },
@@ -4578,19 +4200,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/rose-of-nevada/?screen=truro",
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-13",
-              "time": "13:45",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120470&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-18",
               "time": "17:15",
@@ -4789,18 +4398,6 @@
           "poster_url": "posters/hokum.jpg",
           "showtimes": [
             {
-              "date": "2026-05-13",
-              "time": "17:30",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120473&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-14",
               "time": "17:30",
               "screen": 5,
@@ -4835,18 +4432,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/top-gun/?screen=truro",
           "poster_url": "posters/top-gun.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-13",
-              "time": "19:30",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120309&screen=truro",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-14",
               "time": "19:30",
@@ -5256,8 +4841,8 @@
           "writer": "Ed Solomon"
         },
         {
-          "title": "The Mandalorian And Grogu (2D)",
-          "search_title": "The Mandalorian And Grogu",
+          "title": "Star Wars: The Mandalorian And Grogu (2D)",
+          "search_title": "Star Wars: The Mandalorian And Grogu",
           "film_slug": "the-mandalorian-and-grogu",
           "synopsis": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought...",
           "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo (voice)), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Ardennian Fry Cook (voice)), Hemky Madera (Imperial Warlord), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth)",
@@ -5841,7 +5426,7 @@
         "primary_selector_nodes": 27,
         "fallback_selector_nodes": 0,
         "parsed_films": 24,
-        "parsed_showtimes": 126
+        "parsed_showtimes": 114
       }
     },
     "wadebridge": {
@@ -5858,32 +5443,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=wadebridge",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-13",
-              "time": "14:15",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28793&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-13",
-              "time": "17:10",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28783&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-14",
               "time": "17:10",
@@ -6040,32 +5599,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=wadebridge",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-13",
-              "time": "14:30",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28792&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-13",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28784&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-14",
               "time": "19:45",
@@ -6256,31 +5789,18 @@
           "search_title": "Michael",
           "film_slug": "michael",
           "synopsis": "Discover the story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music, tracing his...",
-          "cast": "Jaafar Jackson (Michael Jackson), Colman Domingo (Joe Jackson), Nia Long (Katherine Jackson), Kendrick Sampson (Quincy Jones), Miles Teller (John Branca), Juliano Krue Valdi (Young Michael Jackson), Joseph David-Jones (Jackie Jackson), Jamal Henderson (Jermaine Jackson), Jessica Sula (LaToya Jackson), Kat Graham (Diana Ross), Laura Harrier (Suzanne de Passe), Kevin Shinick (Dick Clark)",
+          "cast": "Jaafar Jackson (Michael Jackson), Colman Domingo (Joseph Jackson), Nia Long (Katherine Jackson), Juliano Krue Valdi (Young Michael Jackson), Miles Teller (John Branca), KeiLyn Durrel Jones (Bill Bray), Kendrick Sampson (Quincy Jones), Joseph David-Jones (Jackie Jackson), Rhyan Hill (Tito Jackson), Jamal Henderson (Jermaine Jackson), Trey Horton (Marlon Jackson), Jessica Sula (LaToya Jackson)",
           "runtime_min": 127,
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=wadebridge",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-13",
-              "time": "19:30",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28786&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-14",
               "time": "11:00",
               "screen": 1,
               "cinema_name": "Regal Cinema, Wadebridge",
               "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28671&screen=wadebridge",
+              "booking_url": "",
               "tags": [
                 "Audio Description",
                 "Wheelchair access",
@@ -6391,32 +5911,16 @@
                 "Wheelchair access",
                 "2D"
               ]
-            },
-            {
-              "date": "2026-05-14",
-              "time": "11:15",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28672&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D",
-                "Strobe Light warning"
-              ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=ZV-gn-ZXY8Y",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=miLGuFiSAis",
+          "vote_average": 7.554,
           "genres": [
             "Music",
             "Drama"
           ],
           "imdb_id": "tt11378946",
-          "overview": "Discover the story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music, tracing his journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+          "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
           "director": "Antoine Fuqua",
           "writer": "John Logan"
         },
@@ -6430,19 +5934,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/rose-of-nevada/?screen=wadebridge",
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-13",
-              "time": "16:45",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28785&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-14",
               "time": "16:45",
@@ -6592,8 +6083,8 @@
           "writer": ""
         },
         {
-          "title": "The Mandalorian And Grogu (2D)",
-          "search_title": "The Mandalorian And Grogu",
+          "title": "Star Wars: The Mandalorian And Grogu (2D)",
+          "search_title": "Star Wars: The Mandalorian And Grogu",
           "film_slug": "the-mandalorian-and-grogu",
           "synopsis": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought...",
           "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo (voice)), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Ardennian Fry Cook (voice)), Hemky Madera (Imperial Warlord), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth)",
@@ -7097,12 +6588,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 15,
-        "selector_film_nodes": 15,
-        "primary_selector_nodes": 15,
+        "raw_cards": 14,
+        "selector_film_nodes": 14,
+        "primary_selector_nodes": 14,
         "fallback_selector_nodes": 0,
         "parsed_films": 12,
-        "parsed_showtimes": 75
+        "parsed_showtimes": 68
       }
     }
   }
