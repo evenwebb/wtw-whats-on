@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-14T11:09:56Z",
+  "updated_at": "2026-05-15T11:13:59Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -15,32 +15,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=st-austell",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-14",
-              "time": "16:45",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77255&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-14",
-              "time": "20:00",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77248&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-15",
               "time": "17:00",
@@ -234,19 +208,6 @@
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
             {
-              "date": "2026-05-14",
-              "time": "17:15",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77247&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-15",
               "time": "17:15",
               "screen": 2,
@@ -388,34 +349,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=st-austell",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-14",
-              "time": "16:30",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77231&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-05-14",
-              "time": "19:15",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77232&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-05-15",
               "time": "16:30",
@@ -680,35 +613,6 @@
           "poster_url": "posters/michael.jpg",
           "showtimes": [
             {
-              "date": "2026-05-14",
-              "time": "11:00",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-05-14",
-              "time": "19:45",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77281&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-05-15",
               "time": "16:45",
               "screen": 3,
@@ -928,7 +832,7 @@
           "search_title": "The Super Mario Galaxy Movie",
           "film_slug": "super-mario-galaxy",
           "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
-          "cast": "Chris Pratt (Mario (voice)), Charlie Day (Luigi (voice)), Anya Taylor-Joy (Princess Peach (voice)), Jack Black (Bowser (voice)), Keegan-Michael Key (Toad (voice)), Benny Safdie (Bowser Jr. (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice)), Brie Larson (Rosalina (voice)), Glen Powell (Fox McCloud (voice))",
+          "cast": "Chris Pratt (Mario (voice)), Anya Taylor-Joy (Princess Peach (voice)), Charlie Day (Luigi (voice)), Jack Black (Bowser (voice)), Donald Glover (Yoshi (voice)), Benny Safdie (Bowser Jr. (voice)), Brie Larson (Rosalina (voice)), Keegan-Michael Key (Toad (voice)), Glen Powell (Fox McCloud (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice))",
           "runtime_min": 98,
           "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=st-austell",
           "poster_url": "posters/super-mario-galaxy.jpg",
@@ -960,8 +864,8 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=gWfOfyb_6Zs",
-          "vote_average": 6.8,
+          "trailer_url": "https://www.youtube.com/watch?v=fm3oeAGbcd4",
+          "vote_average": 6.686,
           "genres": [
             "Family",
             "Comedy",
@@ -999,7 +903,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
-          "vote_average": 6.6,
+          "vote_average": 6.5,
           "genres": [
             "Family",
             "Fantasy",
@@ -1011,42 +915,6 @@
           "writer": "Simon Farnaby"
         },
         {
-          "title": "Hokum",
-          "search_title": "Hokum",
-          "film_slug": "hokum",
-          "synopsis": "When novelist Ohm Bauman retreats to a remote inn to scatter his parents' ashes, he is consumed by tales of a witch haunting the honeymoon...",
-          "cast": "Adam Scott (Ohm Bauman), Peter Coonan (Mal), David Wilmot (Jerry), Florence Ordesh (Fiona), Will O'Connell (Alby), Michael Patric (Fergal), Brendan Conroy (Mr. Cobb), Austin Amelio (Conquistador), Ezra Carlisle (Boy), Mallory Adams (Delia Bauman), Sioux Carroll (Witch)",
-          "runtime_min": 107,
-          "film_url": "https://wtwcinemas.co.uk/film/hokum/?screen=st-austell",
-          "poster_url": "posters/hokum.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-14",
-              "time": "17:00",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77280&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=dUZmnpdsTXo",
-          "vote_average": 4.0,
-          "genres": [
-            "Horror",
-            "Mystery",
-            "Thriller"
-          ],
-          "imdb_id": "tt35672862",
-          "overview": "When novelist Ohm Bauman retreats to a remote inn to scatter his parents' ashes, he is consumed by tales of a witch haunting the honeymoon suite. Disturbing visions and a shocking disappearance forces him to confront dark corners of his past.",
-          "director": "Damian McCarthy",
-          "writer": "Damian McCarthy"
-        },
-        {
           "title": "Top Gun",
           "search_title": "Top Gun",
           "film_slug": "top-gun",
@@ -1056,19 +924,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/top-gun/?screen=st-austell",
           "poster_url": "posters/top-gun.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-14",
-              "time": "19:30",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77133&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-15",
               "time": "19:30",
@@ -1629,7 +1484,7 @@
             "Comedy"
           ],
           "imdb_id": "tt40031882",
-          "overview": "Nicola Coughlan (Bridgerton) joins Éanna Hardwicke (The Sixth Commandment) and Siobhán McSweeney (Derry Girls) in John Millington Synge’s riveting play of youth and self-discovery.  Pegeen Flaherty’s life is turned upside down when a young man walks into her pub claiming that he’s killed his father. Instead of being shunned, the killer becomes a local hero and begins to win hearts, that is until a second man unexpectedly arrives on the scene…  Filmed live on stage at the National Theatre, Caitríona McLaughlin directs this darkly funny tale full to the brim with secrets.",
+          "overview": "Pegeen Flaherty’s life is turned upside down when a young man walks into her pub claiming that he’s killed his father. Instead of being shunned, the killer becomes a local hero and begins to win hearts, that is until a second man unexpectedly arrives on the scene...",
           "director": "Caitriona McLaughlin",
           "writer": "John Millington Synge"
         },
@@ -1744,12 +1599,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 21,
-        "selector_film_nodes": 21,
-        "primary_selector_nodes": 21,
+        "raw_cards": 20,
+        "selector_film_nodes": 20,
+        "primary_selector_nodes": 20,
         "fallback_selector_nodes": 0,
-        "parsed_films": 17,
-        "parsed_showtimes": 100
+        "parsed_films": 16,
+        "parsed_showtimes": 91
       }
     },
     "newquay": {
@@ -1766,32 +1621,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=newquay",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-14",
-              "time": "16:45",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65623&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-14",
-              "time": "20:00",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65642&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-15",
               "time": "17:00",
@@ -1985,19 +1814,6 @@
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
             {
-              "date": "2026-05-14",
-              "time": "17:15",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65636&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-15",
               "time": "17:15",
               "screen": 3,
@@ -2152,32 +1968,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=newquay",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-14",
-              "time": "16:30",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65609&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-14",
-              "time": "19:15",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65616&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-15",
               "time": "16:30",
@@ -2439,33 +2229,6 @@
           "poster_url": "posters/michael.jpg",
           "showtimes": [
             {
-              "date": "2026-05-14",
-              "time": "11:00",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-14",
-              "time": "19:45",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65647&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-15",
               "time": "16:45",
               "screen": 4,
@@ -2674,7 +2437,7 @@
           "search_title": "The Super Mario Galaxy Movie",
           "film_slug": "super-mario-galaxy",
           "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
-          "cast": "Chris Pratt (Mario (voice)), Charlie Day (Luigi (voice)), Anya Taylor-Joy (Princess Peach (voice)), Jack Black (Bowser (voice)), Keegan-Michael Key (Toad (voice)), Benny Safdie (Bowser Jr. (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice)), Brie Larson (Rosalina (voice)), Glen Powell (Fox McCloud (voice))",
+          "cast": "Chris Pratt (Mario (voice)), Anya Taylor-Joy (Princess Peach (voice)), Charlie Day (Luigi (voice)), Jack Black (Bowser (voice)), Donald Glover (Yoshi (voice)), Benny Safdie (Bowser Jr. (voice)), Brie Larson (Rosalina (voice)), Keegan-Michael Key (Toad (voice)), Glen Powell (Fox McCloud (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice))",
           "runtime_min": 98,
           "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=newquay",
           "poster_url": "posters/super-mario-galaxy.jpg",
@@ -2706,8 +2469,8 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=gWfOfyb_6Zs",
-          "vote_average": 6.8,
+          "trailer_url": "https://www.youtube.com/watch?v=fm3oeAGbcd4",
+          "vote_average": 6.686,
           "genres": [
             "Family",
             "Comedy",
@@ -2745,7 +2508,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
-          "vote_average": 6.6,
+          "vote_average": 6.5,
           "genres": [
             "Family",
             "Fantasy",
@@ -2757,42 +2520,6 @@
           "writer": "Simon Farnaby"
         },
         {
-          "title": "Hokum",
-          "search_title": "Hokum",
-          "film_slug": "hokum",
-          "synopsis": "When novelist Ohm Bauman retreats to a remote inn to scatter his parents' ashes, he is consumed by tales of a witch haunting the honeymoon...",
-          "cast": "Adam Scott (Ohm Bauman), Peter Coonan (Mal), David Wilmot (Jerry), Florence Ordesh (Fiona), Will O'Connell (Alby), Michael Patric (Fergal), Brendan Conroy (Mr. Cobb), Austin Amelio (Conquistador), Ezra Carlisle (Boy), Mallory Adams (Delia Bauman), Sioux Carroll (Witch)",
-          "runtime_min": 107,
-          "film_url": "https://wtwcinemas.co.uk/film/hokum/?screen=newquay",
-          "poster_url": "posters/hokum.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-14",
-              "time": "17:00",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65653&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=dUZmnpdsTXo",
-          "vote_average": 4.0,
-          "genres": [
-            "Horror",
-            "Mystery",
-            "Thriller"
-          ],
-          "imdb_id": "tt35672862",
-          "overview": "When novelist Ohm Bauman retreats to a remote inn to scatter his parents' ashes, he is consumed by tales of a witch haunting the honeymoon suite. Disturbing visions and a shocking disappearance forces him to confront dark corners of his past.",
-          "director": "Damian McCarthy",
-          "writer": "Damian McCarthy"
-        },
-        {
           "title": "Top Gun",
           "search_title": "Top Gun",
           "film_slug": "top-gun",
@@ -2802,18 +2529,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/top-gun/?screen=newquay",
           "poster_url": "posters/top-gun.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-14",
-              "time": "19:30",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65529&screen=newquay",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-15",
               "time": "19:30",
@@ -3289,7 +3004,7 @@
             "Comedy"
           ],
           "imdb_id": "tt40031882",
-          "overview": "Nicola Coughlan (Bridgerton) joins Éanna Hardwicke (The Sixth Commandment) and Siobhán McSweeney (Derry Girls) in John Millington Synge’s riveting play of youth and self-discovery.  Pegeen Flaherty’s life is turned upside down when a young man walks into her pub claiming that he’s killed his father. Instead of being shunned, the killer becomes a local hero and begins to win hearts, that is until a second man unexpectedly arrives on the scene…  Filmed live on stage at the National Theatre, Caitríona McLaughlin directs this darkly funny tale full to the brim with secrets.",
+          "overview": "Pegeen Flaherty’s life is turned upside down when a young man walks into her pub claiming that he’s killed his father. Instead of being shunned, the killer becomes a local hero and begins to win hearts, that is until a second man unexpectedly arrives on the scene...",
           "director": "Caitriona McLaughlin",
           "writer": "John Millington Synge"
         },
@@ -3404,12 +3119,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 19,
-        "selector_film_nodes": 19,
-        "primary_selector_nodes": 19,
+        "raw_cards": 18,
+        "selector_film_nodes": 18,
+        "primary_selector_nodes": 18,
         "fallback_selector_nodes": 0,
-        "parsed_films": 17,
-        "parsed_showtimes": 97
+        "parsed_films": 16,
+        "parsed_showtimes": 88
       }
     },
     "truro": {
@@ -3426,31 +3141,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=truro",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-14",
-              "time": "16:30",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120442&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-14",
-              "time": "20:15",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120448&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-15",
               "time": "20:15",
@@ -3565,19 +3255,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=truro",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-14",
-              "time": "17:15",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120431&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-15",
               "time": "17:00",
@@ -3745,19 +3422,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=truro",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-14",
-              "time": "20:00",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120414&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-15",
               "time": "16:45",
@@ -3968,21 +3632,6 @@
               ]
             },
             {
-              "date": "2026-05-14",
-              "time": "16:45",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120423&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-05-21",
               "time": "11:15",
               "screen": 4,
@@ -4020,33 +3669,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=truro",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-14",
-              "time": "11:00",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-14",
-              "time": "19:15",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120474&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-15",
               "time": "17:15",
@@ -4149,22 +3771,6 @@
               ]
             },
             {
-              "date": "2026-05-14",
-              "time": "11:15",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-05-21",
               "time": "20:00",
               "screen": 5,
@@ -4257,7 +3863,7 @@
           "search_title": "The Super Mario Galaxy Movie",
           "film_slug": "super-mario-galaxy",
           "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
-          "cast": "Chris Pratt (Mario (voice)), Charlie Day (Luigi (voice)), Anya Taylor-Joy (Princess Peach (voice)), Jack Black (Bowser (voice)), Keegan-Michael Key (Toad (voice)), Benny Safdie (Bowser Jr. (voice)), Donald Glover (Yoshi (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice)), Brie Larson (Rosalina (voice)), Glen Powell (Fox McCloud (voice))",
+          "cast": "Chris Pratt (Mario (voice)), Anya Taylor-Joy (Princess Peach (voice)), Charlie Day (Luigi (voice)), Jack Black (Bowser (voice)), Donald Glover (Yoshi (voice)), Benny Safdie (Bowser Jr. (voice)), Brie Larson (Rosalina (voice)), Keegan-Michael Key (Toad (voice)), Glen Powell (Fox McCloud (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice))",
           "runtime_min": 98,
           "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=truro",
           "poster_url": "posters/super-mario-galaxy.jpg",
@@ -4289,8 +3895,8 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=gWfOfyb_6Zs",
-          "vote_average": 6.8,
+          "trailer_url": "https://www.youtube.com/watch?v=fm3oeAGbcd4",
+          "vote_average": 6.686,
           "genres": [
             "Family",
             "Comedy",
@@ -4341,7 +3947,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
-          "vote_average": 6.6,
+          "vote_average": 6.5,
           "genres": [
             "Family",
             "Fantasy",
@@ -4357,7 +3963,7 @@
           "search_title": "National Theatre Live: All My Sons",
           "film_slug": "national-theatre-live-all-my-sons",
           "synopsis": "Bryan Cranston (Breaking Bad) and Marianne Jean-Baptiste (Hard Truths) feature in a five-star, triumphantly acclaimed new production of Arthur Miller's classic play, from visionary director...",
-          "cast": "Sally Field (Kate Keller), Bill Pullman (Joe Keller), Jenna Coleman (Ann Deever), Colin Morgan (Chris Keller), Sule Rimi (Dr. Jim Bayliss), Oliver Johnstone (George Deever), Gunnar Cauthery (Frank Lubey), Bessie Carter (Lydia Lubey), Kayla Meikle (Sue Bayliss)",
+          "cast": "Bryan Cranston (Joe Keller), Marianne Jean-Baptiste (Kate Keller), Paapa Essiedu (Chris Keller), Tom Glynn-Carney (George Deever), Hayley Squires (Ann Deever), Aliyah Odoffin (Lydia Lubey), Cath Whitefield (Sue Bayliss), Richard Hansell (Dr Jim Bayliss), Zach Wyatt (Frank Lubey), Stevie Raine (Ensemble)",
           "runtime_min": 150,
           "film_url": "https://wtwcinemas.co.uk/film/national-theatre-live-all-my-sons/?screen=truro",
           "poster_url": "posters/national-theatre-live-all-my-sons.jpg",
@@ -4377,50 +3983,15 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=FP6C8jmrpN4",
-          "vote_average": 8.5,
+          "trailer_url": "https://www.youtube.com/watch?v=6RI4M3vrgsk",
+          "vote_average": 0.0,
           "genres": [
             "Drama"
           ],
-          "imdb_id": "tt9382224",
-          "overview": "America, 1947. Despite hard choices and even harder knocks, Joe and Kate Keller are a success story. They have built a home, raised two sons and established a thriving business.  But nothing lasts forever and their contented lives, already shadowed by the loss of their eldest boy to war, are about to shatter. With the return of a figure from the past, long buried truths are forced to the surface and the price of their American dream is laid bare.",
-          "director": "Ross MacGibbon",
+          "imdb_id": "tt39544163",
+          "overview": "One family, the heart of the American dream. When wartime delivers profits for Joe Heller, it comes at a price when his partner is charged with criminal manufacturing deals, and his eldest son goes missing in action. Will peacetime bring peace of mind, or will he be confronted by the consequence of his actions?",
+          "director": "Ivo van Hove",
           "writer": "Arthur Miller"
-        },
-        {
-          "title": "Hokum",
-          "search_title": "Hokum",
-          "film_slug": "hokum",
-          "synopsis": "When novelist Ohm Bauman retreats to a remote inn to scatter his parents' ashes, he is consumed by tales of a witch haunting the honeymoon...",
-          "cast": "Adam Scott (Ohm Bauman), Peter Coonan (Mal), David Wilmot (Jerry), Florence Ordesh (Fiona), Will O'Connell (Alby), Michael Patric (Fergal), Brendan Conroy (Mr. Cobb), Austin Amelio (Conquistador), Ezra Carlisle (Boy), Mallory Adams (Delia Bauman), Sioux Carroll (Witch)",
-          "runtime_min": 107,
-          "film_url": "https://wtwcinemas.co.uk/film/hokum/?screen=truro",
-          "poster_url": "posters/hokum.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-14",
-              "time": "17:30",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120475&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=dUZmnpdsTXo",
-          "vote_average": 4.0,
-          "genres": [
-            "Horror",
-            "Mystery",
-            "Thriller"
-          ],
-          "imdb_id": "tt35672862",
-          "overview": "When novelist Ohm Bauman retreats to a remote inn to scatter his parents' ashes, he is consumed by tales of a witch haunting the honeymoon suite. Disturbing visions and a shocking disappearance forces him to confront dark corners of his past.",
-          "director": "Damian McCarthy",
-          "writer": "Damian McCarthy"
         },
         {
           "title": "Top Gun",
@@ -4432,18 +4003,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/top-gun/?screen=truro",
           "poster_url": "posters/top-gun.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-14",
-              "time": "19:30",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120310&screen=truro",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-15",
               "time": "19:30",
@@ -5133,7 +4692,7 @@
             "Comedy"
           ],
           "imdb_id": "tt40031882",
-          "overview": "Nicola Coughlan (Bridgerton) joins Éanna Hardwicke (The Sixth Commandment) and Siobhán McSweeney (Derry Girls) in John Millington Synge’s riveting play of youth and self-discovery.  Pegeen Flaherty’s life is turned upside down when a young man walks into her pub claiming that he’s killed his father. Instead of being shunned, the killer becomes a local hero and begins to win hearts, that is until a second man unexpectedly arrives on the scene…  Filmed live on stage at the National Theatre, Caitríona McLaughlin directs this darkly funny tale full to the brim with secrets.",
+          "overview": "Pegeen Flaherty’s life is turned upside down when a young man walks into her pub claiming that he’s killed his father. Instead of being shunned, the killer becomes a local hero and begins to win hearts, that is until a second man unexpectedly arrives on the scene...",
           "director": "Caitriona McLaughlin",
           "writer": "John Millington Synge"
         },
@@ -5421,12 +4980,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 27,
-        "selector_film_nodes": 27,
-        "primary_selector_nodes": 27,
+        "raw_cards": 26,
+        "selector_film_nodes": 26,
+        "primary_selector_nodes": 26,
         "fallback_selector_nodes": 0,
-        "parsed_films": 24,
-        "parsed_showtimes": 114
+        "parsed_films": 23,
+        "parsed_showtimes": 104
       }
     },
     "wadebridge": {
@@ -5443,19 +5002,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=wadebridge",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-14",
-              "time": "17:10",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28787&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-15",
               "time": "17:10",
@@ -5599,19 +5145,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=wadebridge",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-14",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28788&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-15",
               "time": "16:45",
@@ -5795,33 +5328,6 @@
           "poster_url": "posters/michael.jpg",
           "showtimes": [
             {
-              "date": "2026-05-14",
-              "time": "11:00",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-14",
-              "time": "19:30",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28790&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-15",
               "time": "19:30",
               "screen": 2,
@@ -5935,19 +5441,6 @@
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
             {
-              "date": "2026-05-14",
-              "time": "16:45",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28789&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-20",
               "time": "16:45",
               "screen": 2,
@@ -6024,7 +5517,7 @@
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
-          "vote_average": 6.6,
+          "vote_average": 6.5,
           "genres": [
             "Family",
             "Fantasy",
@@ -6396,7 +5889,7 @@
             "Comedy"
           ],
           "imdb_id": "tt40031882",
-          "overview": "Nicola Coughlan (Bridgerton) joins Éanna Hardwicke (The Sixth Commandment) and Siobhán McSweeney (Derry Girls) in John Millington Synge’s riveting play of youth and self-discovery.  Pegeen Flaherty’s life is turned upside down when a young man walks into her pub claiming that he’s killed his father. Instead of being shunned, the killer becomes a local hero and begins to win hearts, that is until a second man unexpectedly arrives on the scene…  Filmed live on stage at the National Theatre, Caitríona McLaughlin directs this darkly funny tale full to the brim with secrets.",
+          "overview": "Pegeen Flaherty’s life is turned upside down when a young man walks into her pub claiming that he’s killed his father. Instead of being shunned, the killer becomes a local hero and begins to win hearts, that is until a second man unexpectedly arrives on the scene...",
           "director": "Caitriona McLaughlin",
           "writer": "John Millington Synge"
         },
@@ -6593,7 +6086,7 @@
         "primary_selector_nodes": 14,
         "fallback_selector_nodes": 0,
         "parsed_films": 12,
-        "parsed_showtimes": 68
+        "parsed_showtimes": 63
       }
     }
   }
