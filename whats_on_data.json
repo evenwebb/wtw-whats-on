@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-17T10:18:03Z",
+  "updated_at": "2026-05-18T12:22:48Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -15,19 +15,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=st-austell",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "17:00",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77314&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-18",
               "time": "17:00",
@@ -156,19 +143,6 @@
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
             {
-              "date": "2026-05-17",
-              "time": "14:30",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77308&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-18",
               "time": "17:15",
               "screen": 2,
@@ -219,20 +193,6 @@
                 "Wheelchair access",
                 "2D"
               ]
-            },
-            {
-              "date": "2026-05-17",
-              "time": "17:15",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77309&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "2D"
-              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=62U-qGO52mY",
@@ -258,34 +218,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=st-austell",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "13:30",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77305&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-05-17",
-              "time": "16:30",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77306&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-05-18",
               "time": "16:30",
@@ -452,20 +384,6 @@
           "poster_url": "posters/michael.jpg",
           "showtimes": [
             {
-              "date": "2026-05-17",
-              "time": "14:00",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77313&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-05-18",
               "time": "16:45",
               "screen": 3,
@@ -611,44 +529,6 @@
           "writer": "Mark Jenkin"
         },
         {
-          "title": "The Super Mario Galaxy Movie",
-          "search_title": "The Super Mario Galaxy Movie",
-          "film_slug": "super-mario-galaxy",
-          "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
-          "cast": "Chris Pratt (Mario (voice)), Anya Taylor-Joy (Princess Peach (voice)), Charlie Day (Luigi (voice)), Jack Black (Bowser (voice)), Donald Glover (Yoshi (voice)), Benny Safdie (Bowser Jr. (voice)), Brie Larson (Rosalina (voice)), Keegan-Michael Key (Toad (voice)), Glen Powell (Fox McCloud (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice))",
-          "runtime_min": 98,
-          "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=st-austell",
-          "poster_url": "posters/super-mario-galaxy.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "12:00",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77307&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=fm3oeAGbcd4",
-          "vote_average": 6.686,
-          "genres": [
-            "Family",
-            "Comedy",
-            "Adventure",
-            "Fantasy",
-            "Animation"
-          ],
-          "imdb_id": "tt28650488",
-          "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-          "director": "Aaron Horvath, Michael Jelenic",
-          "writer": "Matthew Fogel"
-        },
-        {
           "title": "Top Gun",
           "search_title": "Top Gun",
           "film_slug": "top-gun",
@@ -658,19 +538,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/top-gun/?screen=st-austell",
           "poster_url": "posters/top-gun.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "13:45",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77310&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-18",
               "time": "19:30",
@@ -696,41 +563,6 @@
           "overview": "For Lieutenant Pete 'Maverick' Mitchell and his friend and co-pilot Nick 'Goose' Bradshaw, being accepted into an elite training school for fighter pilots is a dream come true. But a tragedy, as well as personal demons, will threaten Pete's dreams of becoming an ace pilot.",
           "director": "Tony Scott",
           "writer": "Jim Cash, Jack Epps Jr."
-        },
-        {
-          "title": "Top Gun: Maverick",
-          "search_title": "Top Gun: Maverick",
-          "film_slug": "top-gun-maverick",
-          "synopsis": "After more than thirty years of service as one of the Navy's top aviators, Pete Mitchell is where he belongs, pushing the envelope as a...",
-          "cast": "Tom Cruise (Capt. Pete 'Maverick' Mitchell), Miles Teller (Lt. Bradley 'Rooster' Bradshaw), Jennifer Connelly (Penny Benjamin), Bashir Salahuddin (Wo-1. Bernie 'Hondo' Coleman), Jon Hamm (Adm. Beau 'Cyclone' Simpson), Charles Parnell (Adm. Solomon 'Warlock' Bates), Monica Barbaro (Lt. Natasha 'Phoenix' Trace), Lewis Pullman (Lt. Robert 'Bob' Floyd), Jay Ellis (Lt. Reuben 'Payback' Fitch), Danny Ramirez (Lt. Mickey 'Fanboy' Garcia), Glen Powell (Lt. Jake 'Hangman' Seresin), Val Kilmer (Adm. Tom 'Iceman' Kazansky)",
-          "runtime_min": 131,
-          "film_url": "https://wtwcinemas.co.uk/film/top-gun-maverick/?screen=st-austell",
-          "poster_url": "posters/top-gun-maverick.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "16:45",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77311&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=Klc__shdj88",
-          "vote_average": 8.2,
-          "genres": [
-            "Action",
-            "Drama"
-          ],
-          "imdb_id": "tt1745960",
-          "overview": "After more than thirty years of service as one of the Navy’s top aviators, and dodging the advancement in rank that would ground him, Pete “Maverick” Mitchell finds himself training a detachment of TOP GUN graduates for a specialized mission the likes of which no living pilot has ever seen.",
-          "director": "Joseph Kosinski",
-          "writer": "Eric Warren Singer, Ehren Kruger, Christopher McQuarrie, Justin Marks, Peter Craig"
         },
         {
           "title": "Iron Maiden: Burning Ambition",
@@ -1084,44 +916,6 @@
           "writer": "Jon Favreau, Dave Filoni, Noah Kloor, George Lucas"
         },
         {
-          "title": "Charlie The Wonderdog",
-          "search_title": "Charlie The Wonderdog",
-          "film_slug": "charlie-the-wonderdog",
-          "synopsis": "Timid 9-year-old Danny teams up with his beloved family dog Charlie, who gets abducted by aliens and returns with superpowers, to thwart a plan by...",
-          "cast": "Owen Wilson (Charlie (voice)), Dawson Littman (Danny (voice)), Tabitha St. Germain (President Rose (voice)), Sebastian Billingsley-Rodriguez (Alien Prince (voice)), Rhona Rees (Alien Queen (voice)), Anthony Bolognese (Jacob (voice)), Caitlynne Medrek (Kitten (voice)), Emily Delahunty (Emma (voice)), Ruairi MacDonald (Puddy (voice)), Mela Pietropaolo (Madison (voice)), Lindsay Gibson (Judge Gruff (voice)), Jenn Rogan (Sam (voice))",
-          "runtime_min": 92,
-          "film_url": "https://wtwcinemas.co.uk/film/charlie-the-wonderdog/?screen=st-austell",
-          "poster_url": "posters/charlie-the-wonderdog.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "11:45",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77312&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=uUDfO0Q4sog",
-          "vote_average": 6.8,
-          "genres": [
-            "Animation",
-            "Action",
-            "Adventure",
-            "Comedy",
-            "Family"
-          ],
-          "imdb_id": "tt29612071",
-          "overview": "Timid 9-year-old Danny teams up with his beloved family dog Charlie, who gets abducted by aliens and returns with superpowers, to thwart a plan by the neighbor's sinister cat Puddy to destroy humanity.",
-          "director": "Shea Wageman",
-          "writer": "Shea Wageman, Steve Ball, Raul Sanchez Inglis"
-        },
-        {
           "title": "National Theatre Live: The Playboy of the Western World",
           "search_title": "National Theatre Live: The Playboy of the Western World",
           "film_slug": "national-theatre-live-the-playboy-of-the-western-world",
@@ -1280,12 +1074,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 19,
-        "selector_film_nodes": 19,
-        "primary_selector_nodes": 19,
+        "raw_cards": 15,
+        "selector_film_nodes": 15,
+        "primary_selector_nodes": 15,
         "fallback_selector_nodes": 0,
-        "parsed_films": 15,
-        "parsed_showtimes": 69
+        "parsed_films": 12,
+        "parsed_showtimes": 59
       }
     },
     "newquay": {
@@ -1302,19 +1096,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=newquay",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "17:00",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65691&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-18",
               "time": "17:00",
@@ -1443,32 +1224,6 @@
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
             {
-              "date": "2026-05-17",
-              "time": "14:30",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65700&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-17",
-              "time": "17:15",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65693&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-18",
               "time": "17:15",
               "screen": 3,
@@ -1558,32 +1313,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=newquay",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "13:30",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65696&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-17",
-              "time": "16:30",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65689&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-18",
               "time": "16:30",
@@ -1754,19 +1483,6 @@
           "poster_url": "posters/michael.jpg",
           "showtimes": [
             {
-              "date": "2026-05-17",
-              "time": "14:00",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65698&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-18",
               "time": "16:45",
               "screen": 4,
@@ -1906,44 +1622,6 @@
           "writer": "Mark Jenkin"
         },
         {
-          "title": "The Super Mario Galaxy Movie",
-          "search_title": "The Super Mario Galaxy Movie",
-          "film_slug": "super-mario-galaxy",
-          "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
-          "cast": "Chris Pratt (Mario (voice)), Anya Taylor-Joy (Princess Peach (voice)), Charlie Day (Luigi (voice)), Jack Black (Bowser (voice)), Donald Glover (Yoshi (voice)), Benny Safdie (Bowser Jr. (voice)), Brie Larson (Rosalina (voice)), Keegan-Michael Key (Toad (voice)), Glen Powell (Fox McCloud (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice))",
-          "runtime_min": 98,
-          "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=newquay",
-          "poster_url": "posters/super-mario-galaxy.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "12:00",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65699&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=fm3oeAGbcd4",
-          "vote_average": 6.686,
-          "genres": [
-            "Family",
-            "Comedy",
-            "Adventure",
-            "Fantasy",
-            "Animation"
-          ],
-          "imdb_id": "tt28650488",
-          "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-          "director": "Aaron Horvath, Michael Jelenic",
-          "writer": "Matthew Fogel"
-        },
-        {
           "title": "Top Gun",
           "search_title": "Top Gun",
           "film_slug": "top-gun",
@@ -1953,18 +1631,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/top-gun/?screen=newquay",
           "poster_url": "posters/top-gun.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "13:45",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65695&screen=newquay",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-18",
               "time": "19:30",
@@ -1989,41 +1655,6 @@
           "overview": "For Lieutenant Pete 'Maverick' Mitchell and his friend and co-pilot Nick 'Goose' Bradshaw, being accepted into an elite training school for fighter pilots is a dream come true. But a tragedy, as well as personal demons, will threaten Pete's dreams of becoming an ace pilot.",
           "director": "Tony Scott",
           "writer": "Jim Cash, Jack Epps Jr."
-        },
-        {
-          "title": "Top Gun: Maverick",
-          "search_title": "Top Gun: Maverick",
-          "film_slug": "top-gun-maverick",
-          "synopsis": "After more than thirty years of service as one of the Navy's top aviators, Pete Mitchell is where he belongs, pushing the envelope as a...",
-          "cast": "Tom Cruise (Capt. Pete 'Maverick' Mitchell), Miles Teller (Lt. Bradley 'Rooster' Bradshaw), Jennifer Connelly (Penny Benjamin), Bashir Salahuddin (Wo-1. Bernie 'Hondo' Coleman), Jon Hamm (Adm. Beau 'Cyclone' Simpson), Charles Parnell (Adm. Solomon 'Warlock' Bates), Monica Barbaro (Lt. Natasha 'Phoenix' Trace), Lewis Pullman (Lt. Robert 'Bob' Floyd), Jay Ellis (Lt. Reuben 'Payback' Fitch), Danny Ramirez (Lt. Mickey 'Fanboy' Garcia), Glen Powell (Lt. Jake 'Hangman' Seresin), Val Kilmer (Adm. Tom 'Iceman' Kazansky)",
-          "runtime_min": 131,
-          "film_url": "https://wtwcinemas.co.uk/film/top-gun-maverick/?screen=newquay",
-          "poster_url": "posters/top-gun-maverick.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "16:45",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65687&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=Klc__shdj88",
-          "vote_average": 8.2,
-          "genres": [
-            "Action",
-            "Drama"
-          ],
-          "imdb_id": "tt1745960",
-          "overview": "After more than thirty years of service as one of the Navy’s top aviators, and dodging the advancement in rank that would ground him, Pete “Maverick” Mitchell finds himself training a detachment of TOP GUN graduates for a specialized mission the likes of which no living pilot has ever seen.",
-          "director": "Joseph Kosinski",
-          "writer": "Eric Warren Singer, Ehren Kruger, Christopher McQuarrie, Justin Marks, Peter Craig"
         },
         {
           "title": "Iron Maiden: Burning Ambition",
@@ -2492,43 +2123,6 @@
           "writer": "Jon Favreau, Dave Filoni, Noah Kloor, George Lucas"
         },
         {
-          "title": "Charlie The Wonderdog",
-          "search_title": "Charlie The Wonderdog",
-          "film_slug": "charlie-the-wonderdog",
-          "synopsis": "Timid 9-year-old Danny teams up with his beloved family dog Charlie, who gets abducted by aliens and returns with superpowers, to thwart a plan by...",
-          "cast": "Owen Wilson (Charlie (voice)), Dawson Littman (Danny (voice)), Tabitha St. Germain (President Rose (voice)), Sebastian Billingsley-Rodriguez (Alien Prince (voice)), Rhona Rees (Alien Queen (voice)), Anthony Bolognese (Jacob (voice)), Caitlynne Medrek (Kitten (voice)), Emily Delahunty (Emma (voice)), Ruairi MacDonald (Puddy (voice)), Mela Pietropaolo (Madison (voice)), Lindsay Gibson (Judge Gruff (voice)), Jenn Rogan (Sam (voice))",
-          "runtime_min": 92,
-          "film_url": "https://wtwcinemas.co.uk/film/charlie-the-wonderdog/?screen=newquay",
-          "poster_url": "posters/charlie-the-wonderdog.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "11:45",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65697&screen=newquay",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=uUDfO0Q4sog",
-          "vote_average": 6.8,
-          "genres": [
-            "Animation",
-            "Action",
-            "Adventure",
-            "Comedy",
-            "Family"
-          ],
-          "imdb_id": "tt29612071",
-          "overview": "Timid 9-year-old Danny teams up with his beloved family dog Charlie, who gets abducted by aliens and returns with superpowers, to thwart a plan by the neighbor's sinister cat Puddy to destroy humanity.",
-          "director": "Shea Wageman",
-          "writer": "Shea Wageman, Steve Ball, Raul Sanchez Inglis"
-        },
-        {
           "title": "National Theatre Live: The Playboy of the Western World",
           "search_title": "National Theatre Live: The Playboy of the Western World",
           "film_slug": "national-theatre-live-the-playboy-of-the-western-world",
@@ -2687,12 +2281,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 18,
-        "selector_film_nodes": 18,
-        "primary_selector_nodes": 18,
+        "raw_cards": 15,
+        "selector_film_nodes": 15,
+        "primary_selector_nodes": 15,
         "fallback_selector_nodes": 0,
-        "parsed_films": 16,
-        "parsed_showtimes": 79
+        "parsed_films": 13,
+        "parsed_showtimes": 69
       }
     },
     "truro": {
@@ -2709,19 +2303,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=truro",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "20:15",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120549&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-18",
               "time": "20:15",
@@ -2798,31 +2379,6 @@
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
             {
-              "date": "2026-05-17",
-              "time": "11:30",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120553&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-17",
-              "time": "14:30",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120559&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-18",
               "time": "17:00",
               "screen": 1,
@@ -2873,20 +2429,6 @@
                 "Wheelchair access",
                 "2D"
               ]
-            },
-            {
-              "date": "2026-05-17",
-              "time": "17:00",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120480&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "2D"
-              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=62U-qGO52mY",
@@ -2912,32 +2454,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=truro",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "14:15",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120552&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-17",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120547&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-18",
               "time": "16:45",
@@ -3108,19 +2624,6 @@
           "poster_url": "posters/michael.jpg",
           "showtimes": [
             {
-              "date": "2026-05-17",
-              "time": "17:15",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120548&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-18",
               "time": "19:15",
               "screen": 2,
@@ -3259,80 +2762,6 @@
           "writer": "Mark Jenkin"
         },
         {
-          "title": "The Super Mario Galaxy Movie",
-          "search_title": "The Super Mario Galaxy Movie",
-          "film_slug": "super-mario-galaxy",
-          "synopsis": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate...",
-          "cast": "Chris Pratt (Mario (voice)), Anya Taylor-Joy (Princess Peach (voice)), Charlie Day (Luigi (voice)), Jack Black (Bowser (voice)), Donald Glover (Yoshi (voice)), Benny Safdie (Bowser Jr. (voice)), Brie Larson (Rosalina (voice)), Keegan-Michael Key (Toad (voice)), Glen Powell (Fox McCloud (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice))",
-          "runtime_min": 98,
-          "film_url": "https://wtwcinemas.co.uk/film/super-mario-galaxy/?screen=truro",
-          "poster_url": "posters/super-mario-galaxy.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "14:45",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120556&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=fm3oeAGbcd4",
-          "vote_average": 6.686,
-          "genres": [
-            "Family",
-            "Comedy",
-            "Adventure",
-            "Fantasy",
-            "Animation"
-          ],
-          "imdb_id": "tt28650488",
-          "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-          "director": "Aaron Horvath, Michael Jelenic",
-          "writer": "Matthew Fogel"
-        },
-        {
-          "title": "The Magic Faraway Tree",
-          "search_title": "The Magic Faraway Tree",
-          "film_slug": "the-magic-faraway-tree",
-          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children - Joe, Beth, and Fran - discover a magical tree and its extraordinary...",
-          "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
-          "runtime_min": 110,
-          "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=truro",
-          "poster_url": "posters/the-magic-faraway-tree.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "11:45",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120555&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
-          "vote_average": 6.5,
-          "genres": [
-            "Family",
-            "Fantasy",
-            "Adventure"
-          ],
-          "imdb_id": "tt7734244",
-          "overview": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
-          "director": "Ben Gregor",
-          "writer": "Simon Farnaby"
-        },
-        {
           "title": "National Theatre Live: All My Sons",
           "search_title": "National Theatre Live: All My Sons",
           "film_slug": "national-theatre-live-all-my-sons",
@@ -3378,18 +2807,6 @@
           "poster_url": "posters/top-gun.jpg",
           "showtimes": [
             {
-              "date": "2026-05-17",
-              "time": "12:30",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120560&screen=truro",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-18",
               "time": "19:30",
               "screen": 3,
@@ -3413,75 +2830,6 @@
           "overview": "For Lieutenant Pete 'Maverick' Mitchell and his friend and co-pilot Nick 'Goose' Bradshaw, being accepted into an elite training school for fighter pilots is a dream come true. But a tragedy, as well as personal demons, will threaten Pete's dreams of becoming an ace pilot.",
           "director": "Tony Scott",
           "writer": "Jim Cash, Jack Epps Jr."
-        },
-        {
-          "title": "Top Gun: Maverick",
-          "search_title": "Top Gun: Maverick",
-          "film_slug": "top-gun-maverick",
-          "synopsis": "After more than thirty years of service as one of the Navy's top aviators, Pete Mitchell is where he belongs, pushing the envelope as a...",
-          "cast": "Tom Cruise (Capt. Pete 'Maverick' Mitchell), Miles Teller (Lt. Bradley 'Rooster' Bradshaw), Jennifer Connelly (Penny Benjamin), Bashir Salahuddin (Wo-1. Bernie 'Hondo' Coleman), Jon Hamm (Adm. Beau 'Cyclone' Simpson), Charles Parnell (Adm. Solomon 'Warlock' Bates), Monica Barbaro (Lt. Natasha 'Phoenix' Trace), Lewis Pullman (Lt. Robert 'Bob' Floyd), Jay Ellis (Lt. Reuben 'Payback' Fitch), Danny Ramirez (Lt. Mickey 'Fanboy' Garcia), Glen Powell (Lt. Jake 'Hangman' Seresin), Val Kilmer (Adm. Tom 'Iceman' Kazansky)",
-          "runtime_min": 131,
-          "film_url": "https://wtwcinemas.co.uk/film/top-gun-maverick/?screen=truro",
-          "poster_url": "posters/top-gun-maverick.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "15:00",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120561&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=Klc__shdj88",
-          "vote_average": 8.2,
-          "genres": [
-            "Action",
-            "Drama"
-          ],
-          "imdb_id": "tt1745960",
-          "overview": "After more than thirty years of service as one of the Navy’s top aviators, and dodging the advancement in rank that would ground him, Pete “Maverick” Mitchell finds himself training a detachment of TOP GUN graduates for a specialized mission the likes of which no living pilot has ever seen.",
-          "director": "Joseph Kosinski",
-          "writer": "Eric Warren Singer, Ehren Kruger, Christopher McQuarrie, Justin Marks, Peter Craig"
-        },
-        {
-          "title": "A Clockwork Orange - Pat’s Film Club",
-          "search_title": "A Clockwork Orange - Pat’s Film Club",
-          "film_slug": "a-clockwork-orange-pats-film-club",
-          "synopsis": "In a near-future Britain, young Alexander DeLarge and his pals get their kicks beating and raping anyone they please. When not destroying the lives of...",
-          "cast": "Malcolm McDowell (Alex), Patrick Magee (Mr. Alexander), Carl Duering (Dr. Brodsky), Michael Bates (Chief Guard), Warren Clarke (Dim), James Marcus (Georgie), Michael Tarn (Pete), Miriam Karlin (Catlady), Adrienne Corri (Mrs. Alexander), Sheila Raynor (Mum), Philip Stone (Dad), Aubrey Morris (Deltoid)",
-          "runtime_min": 137,
-          "film_url": "https://wtwcinemas.co.uk/film/a-clockwork-orange-pats-film-club/?screen=truro",
-          "poster_url": "posters/a-clockwork-orange-pats-film-club.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "18:00",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=119852&screen=truro",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=T54uZPI4Z8A",
-          "vote_average": 8.2,
-          "genres": [
-            "Science Fiction",
-            "Crime"
-          ],
-          "imdb_id": "tt0066921",
-          "overview": "In a near-future Britain, young Alexander DeLarge and his pals get their kicks beating and raping anyone they please. When not destroying the lives of others, Alex swoons to the music of Beethoven. The state, eager to crack down on juvenile crime, gives an incarcerated Alex the option to undergo an invasive procedure that'll rob him of all personal agency. In a time when conscience is a commodity, can Alex change his tune?",
-          "director": "Stanley Kubrick",
-          "writer": "Stanley Kubrick, Anthony Burgess"
         },
         {
           "title": "Frida Kahlo - Exhibition On Screen",
@@ -3540,30 +2888,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-christophers/?screen=truro",
           "poster_url": "posters/the-christophers.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "17:30",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120550&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-17",
-              "time": "20:00",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120551&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-18",
               "time": "17:30",
@@ -3889,42 +3213,6 @@
           "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
           "director": "Jon Favreau",
           "writer": "Jon Favreau, Dave Filoni, Noah Kloor, George Lucas"
-        },
-        {
-          "title": "Charlie The Wonderdog",
-          "search_title": "Charlie The Wonderdog",
-          "film_slug": "charlie-the-wonderdog",
-          "synopsis": "Timid 9-year-old Danny teams up with his beloved family dog Charlie, who gets abducted by aliens and returns with superpowers, to thwart a plan by...",
-          "cast": "Owen Wilson (Charlie (voice)), Dawson Littman (Danny (voice)), Tabitha St. Germain (President Rose (voice)), Sebastian Billingsley-Rodriguez (Alien Prince (voice)), Rhona Rees (Alien Queen (voice)), Anthony Bolognese (Jacob (voice)), Caitlynne Medrek (Kitten (voice)), Emily Delahunty (Emma (voice)), Ruairi MacDonald (Puddy (voice)), Mela Pietropaolo (Madison (voice)), Lindsay Gibson (Judge Gruff (voice)), Jenn Rogan (Sam (voice))",
-          "runtime_min": 92,
-          "film_url": "https://wtwcinemas.co.uk/film/charlie-the-wonderdog/?screen=truro",
-          "poster_url": "posters/charlie-the-wonderdog.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "12:00",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120557&screen=truro",
-              "tags": [
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=uUDfO0Q4sog",
-          "vote_average": 6.8,
-          "genres": [
-            "Animation",
-            "Action",
-            "Adventure",
-            "Comedy",
-            "Family"
-          ],
-          "imdb_id": "tt29612071",
-          "overview": "Timid 9-year-old Danny teams up with his beloved family dog Charlie, who gets abducted by aliens and returns with superpowers, to thwart a plan by the neighbor's sinister cat Puddy to destroy humanity.",
-          "director": "Shea Wageman",
-          "writer": "Shea Wageman, Steve Ball, Raul Sanchez Inglis"
         },
         {
           "title": "National Theatre Live: The Playboy of the Western World",
@@ -4258,12 +3546,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 26,
-        "selector_film_nodes": 26,
-        "primary_selector_nodes": 26,
+        "raw_cards": 20,
+        "selector_film_nodes": 20,
+        "primary_selector_nodes": 20,
         "fallback_selector_nodes": 0,
-        "parsed_films": 23,
-        "parsed_showtimes": 81
+        "parsed_films": 18,
+        "parsed_showtimes": 66
       }
     },
     "wadebridge": {
@@ -4280,19 +3568,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=wadebridge",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "14:30",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28809&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-18",
               "time": "17:10",
@@ -4328,20 +3603,6 @@
               "booking_url": "https://wtwcinemas.co.uk/book?performance=28820&screen=wadebridge",
               "tags": [
                 "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-17",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28811&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
                 "Wheelchair access",
                 "2D"
               ]
@@ -4384,19 +3645,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=wadebridge",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "16:45",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28808&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-18",
               "time": "16:45",
@@ -4515,19 +3763,6 @@
           "poster_url": "posters/michael.jpg",
           "showtimes": [
             {
-              "date": "2026-05-17",
-              "time": "17:10",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28806&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-18",
               "time": "19:30",
               "screen": 2,
@@ -4639,42 +3874,6 @@
           "overview": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves transported back in time, mistaken for the original crew.",
           "director": "Mark Jenkin",
           "writer": "Mark Jenkin"
-        },
-        {
-          "title": "The Magic Faraway Tree",
-          "search_title": "The Magic Faraway Tree",
-          "film_slug": "the-magic-faraway-tree",
-          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children - Joe, Beth, and Fran - discover a magical tree and its extraordinary...",
-          "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
-          "runtime_min": 110,
-          "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=wadebridge",
-          "poster_url": "posters/the-magic-faraway-tree.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-17",
-              "time": "14:00",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28810&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
-          "vote_average": 6.5,
-          "genres": [
-            "Family",
-            "Fantasy",
-            "Adventure"
-          ],
-          "imdb_id": "tt7734244",
-          "overview": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
-          "director": "Ben Gregor",
-          "writer": "Simon Farnaby"
         },
         {
           "title": "Frida Kahlo - Exhibition On Screen",
@@ -5229,12 +4428,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 14,
-        "selector_film_nodes": 14,
-        "primary_selector_nodes": 14,
+        "raw_cards": 13,
+        "selector_film_nodes": 13,
+        "primary_selector_nodes": 13,
         "fallback_selector_nodes": 0,
-        "parsed_films": 12,
-        "parsed_showtimes": 53
+        "parsed_films": 11,
+        "parsed_showtimes": 48
       }
     }
   }
