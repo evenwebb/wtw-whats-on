@@ -409,7 +409,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-05-13T11:26:40.161974"
+    "cached_at": "2026-05-20T11:44:00.198922"
   },
   "renoir-love-exhibition-on-screen": {
     "poster_url": "",
@@ -421,7 +421,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-05-13T11:26:40.358167"
+    "cached_at": "2026-05-20T11:44:00.393273"
   },
   "monet-exhibition-on-screen": {
     "poster_url": "https://image.tmdb.org/t/p/w342/cYKPVyJLtSwMZ3cs46jCQOdLOIB.jpg",
@@ -583,5 +583,19 @@
     "writer": "T. W. Burgess, Zachary Donohue",
     "cast": "Lou Llobell (Maddie), Jacob Scipio (Tyler), Melissa Leo (Diana), Joseph Lopez (The Passenger), Tony Doupe (Preacher), Bonni Dichone (Diner Waitress), Devielle Johnson (Neighborhood Volunteer), Jessica Cruz (Diner Customer), Miles Fowler, Alan Trong",
     "cached_at": "2026-05-19T11:55:40.042756"
+  },
+  "the-north": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/9VM5eHTgwTYk9ElQMRm9qMepwbT.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=AWWU4hrapC4",
+    "vote_average": 7.0,
+    "genres": [
+      "Drama"
+    ],
+    "imdb_id": "tt35331003",
+    "overview": "A decade after they were best friends and roommates, Chris and Lluis set out on a 600 kilometer hike through the Scottish Highlands to reconnect with each other, nature and parts of themselves they lost.",
+    "director": "Bart Schrijver",
+    "writer": "Bart Schrijver",
+    "cast": "Bart Harder (Chris), Carlos Pulido (Lluis), Matthijs van de Sande Bakhuyzen (Tom), Olly Bassi (Richard)",
+    "cached_at": "2026-05-20T11:44:00.778017"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-19T11:55:36Z",
+  "updated_at": "2026-05-20T11:43:57Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -9,38 +9,12 @@
           "title": "Mortal Kombat II",
           "search_title": "Mortal Kombat II",
           "film_slug": "mortal-kombat-ii",
-          "synopsis": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule...",
+          "synopsis": "The fan favorite champions-now joined by Johnny Cage himself-are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule...",
           "cast": "Karl Urban (Johnny Cage), Adeline Rudolph (Kitana), Jessica McNamee (Sonya Blade), Josh Lawson (Revenant Kano), Ludi Lin (Liu Kang), Mehcad Brooks (Jackson 'Jax' Briggs), Tati Gabrielle (Jade), Lewis Tan (Cole Young), Damon Herriman (Quan Chi), Chin Han (Shang Tsung), Tadanobu Asano (Lord Raiden), Joe Taslim (Bi-Han)",
           "runtime_min": 116,
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=st-austell",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-19",
-              "time": "17:00",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77333&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-19",
-              "time": "20:00",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77332&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-20",
               "time": "17:00",
@@ -116,19 +90,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=st-austell",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-19",
-              "time": "17:15",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77331&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-20",
               "time": "17:15",
@@ -349,34 +310,6 @@
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
             {
-              "date": "2026-05-19",
-              "time": "16:30",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77329&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-05-19",
-              "time": "19:15",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77330&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-05-20",
               "time": "16:30",
               "screen": 1,
@@ -584,20 +517,6 @@
           "poster_url": "posters/michael.jpg",
           "showtimes": [
             {
-              "date": "2026-05-19",
-              "time": "19:45",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77334&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-05-20",
               "time": "19:45",
               "screen": 4,
@@ -731,19 +650,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/rose-of-nevada/?screen=st-austell",
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-19",
-              "time": "16:45",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77336&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-21",
               "time": "16:45",
@@ -943,7 +849,7 @@
           "title": "The Magic Faraway Tree",
           "search_title": "The Magic Faraway Tree",
           "film_slug": "the-magic-faraway-tree",
-          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary...",
+          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children - Joe, Beth, and Fran - discover a magical tree and its extraordinary...",
           "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
           "runtime_min": 110,
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=st-austell",
@@ -1011,18 +917,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/iron-maiden-burning-ambition/?screen=st-austell",
           "poster_url": "posters/iron-maiden-burning-ambition.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-19",
-              "time": "19:30",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77282&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-20",
               "time": "19:30",
@@ -1842,7 +1736,7 @@
           "title": "The Amazing Digital Circus: The Last Act",
           "search_title": "The Amazing Digital Circus: The Last Act",
           "film_slug": "the-amazing-digital-circus-the-last-act",
-          "synopsis": "The viral internet sensation “The Amazing Digital Circus” comes to its long-awaited conclusion in a feature-length theatrical release! This “Last Act” combines episode 8 with...",
+          "synopsis": "The viral internet sensation \"The Amazing Digital Circus\" comes to its long-awaited conclusion in a feature-length theatrical release! This \"Last Act\" combines episode 8 with...",
           "cast": "Lizzie Freeman (Pomni (voice)), Michael Kovach (Jax (voice)), Amanda Hufford (Ragatha (voice)), Marissa Lenti (Gangle (voice)), Ashley Nichols (Zooble (voice)), Sean Chiplock (Kinger (voice)), Alex Rochon (Caine (voice)), Gooseworx (Bubble (voice)), Skye Redden (Ribbit (voice)), Cassie Ewulu (Queenie (voice))",
           "runtime_min": 93,
           "film_url": "https://wtwcinemas.co.uk/film/the-amazing-digital-circus-the-last-act/?screen=st-austell",
@@ -1999,7 +1893,7 @@
         "primary_selector_nodes": 21,
         "fallback_selector_nodes": 0,
         "parsed_films": 17,
-        "parsed_showtimes": 122
+        "parsed_showtimes": 114
       }
     },
     "newquay": {
@@ -2010,38 +1904,12 @@
           "title": "Mortal Kombat II",
           "search_title": "Mortal Kombat II",
           "film_slug": "mortal-kombat-ii",
-          "synopsis": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule...",
+          "synopsis": "The fan favorite champions-now joined by Johnny Cage himself-are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule...",
           "cast": "Karl Urban (Johnny Cage), Adeline Rudolph (Kitana), Jessica McNamee (Sonya Blade), Josh Lawson (Revenant Kano), Ludi Lin (Liu Kang), Mehcad Brooks (Jackson 'Jax' Briggs), Tati Gabrielle (Jade), Lewis Tan (Cole Young), Damon Herriman (Quan Chi), Chin Han (Shang Tsung), Tadanobu Asano (Lord Raiden), Joe Taslim (Bi-Han)",
           "runtime_min": 116,
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=newquay",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-19",
-              "time": "17:00",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65710&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-19",
-              "time": "20:00",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65713&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-20",
               "time": "17:00",
@@ -2324,20 +2192,6 @@
                 "Wheelchair access",
                 "2D"
               ]
-            },
-            {
-              "date": "2026-05-19",
-              "time": "17:15",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65712&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "2D"
-              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=62U-qGO52mY",
@@ -2363,32 +2217,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=newquay",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-19",
-              "time": "16:30",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65708&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-19",
-              "time": "19:15",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65709&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-20",
               "time": "13:30",
@@ -2639,19 +2467,6 @@
           "poster_url": "posters/michael.jpg",
           "showtimes": [
             {
-              "date": "2026-05-19",
-              "time": "19:45",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65711&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-20",
               "time": "14:00",
               "screen": 2,
@@ -2871,19 +2686,6 @@
           "poster_url": "posters/rose-of-nevada.jpg",
           "showtimes": [
             {
-              "date": "2026-05-19",
-              "time": "16:45",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65714&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-21",
               "time": "16:45",
               "screen": 4,
@@ -3068,7 +2870,7 @@
           "title": "The Magic Faraway Tree",
           "search_title": "The Magic Faraway Tree",
           "film_slug": "the-magic-faraway-tree",
-          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary...",
+          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children - Joe, Beth, and Fran - discover a magical tree and its extraordinary...",
           "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
           "runtime_min": 110,
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=newquay",
@@ -3136,18 +2938,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/iron-maiden-burning-ambition/?screen=newquay",
           "poster_url": "posters/iron-maiden-burning-ambition.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-19",
-              "time": "19:30",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65663&screen=newquay",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-20",
               "time": "16:15",
@@ -3847,7 +3637,7 @@
           "title": "The Amazing Digital Circus: The Last Act",
           "search_title": "The Amazing Digital Circus: The Last Act",
           "film_slug": "the-amazing-digital-circus-the-last-act",
-          "synopsis": "The viral internet sensation “The Amazing Digital Circus” comes to its long-awaited conclusion in a feature-length theatrical release! This “Last Act” combines episode 8 with...",
+          "synopsis": "The viral internet sensation \"The Amazing Digital Circus\" comes to its long-awaited conclusion in a feature-length theatrical release! This \"Last Act\" combines episode 8 with...",
           "cast": "Lizzie Freeman (Pomni (voice)), Michael Kovach (Jax (voice)), Amanda Hufford (Ragatha (voice)), Marissa Lenti (Gangle (voice)), Ashley Nichols (Zooble (voice)), Sean Chiplock (Kinger (voice)), Alex Rochon (Caine (voice)), Gooseworx (Bubble (voice)), Skye Redden (Ribbit (voice)), Cassie Ewulu (Queenie (voice))",
           "runtime_min": 93,
           "film_url": "https://wtwcinemas.co.uk/film/the-amazing-digital-circus-the-last-act/?screen=newquay",
@@ -3999,12 +3789,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 21,
-        "selector_film_nodes": 21,
-        "primary_selector_nodes": 21,
+        "raw_cards": 20,
+        "selector_film_nodes": 20,
+        "primary_selector_nodes": 20,
         "fallback_selector_nodes": 0,
         "parsed_films": 18,
-        "parsed_showtimes": 123
+        "parsed_showtimes": 115
       }
     },
     "truro": {
@@ -4015,25 +3805,12 @@
           "title": "Mortal Kombat II",
           "search_title": "Mortal Kombat II",
           "film_slug": "mortal-kombat-ii",
-          "synopsis": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule...",
+          "synopsis": "The fan favorite champions-now joined by Johnny Cage himself-are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule...",
           "cast": "Karl Urban (Johnny Cage), Adeline Rudolph (Kitana), Jessica McNamee (Sonya Blade), Josh Lawson (Revenant Kano), Ludi Lin (Liu Kang), Mehcad Brooks (Jackson 'Jax' Briggs), Tati Gabrielle (Jade), Lewis Tan (Cole Young), Damon Herriman (Quan Chi), Chin Han (Shang Tsung), Tadanobu Asano (Lord Raiden), Joe Taslim (Bi-Han)",
           "runtime_min": 116,
           "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=truro",
           "poster_url": "posters/mortal-kombat-ii.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-19",
-              "time": "20:15",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120502&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-20",
               "time": "20:15",
@@ -4083,19 +3860,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=truro",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-19",
-              "time": "17:00",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120499&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-20",
               "time": "17:00",
@@ -4315,32 +4079,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=truro",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-19",
-              "time": "16:45",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120507&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-19",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120500&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-20",
               "time": "14:15",
@@ -4635,18 +4373,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=truro",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-19",
-              "time": "20:00",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120508&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-20",
               "time": "13:45",
@@ -5100,7 +4826,7 @@
           "title": "The Magic Faraway Tree",
           "search_title": "The Magic Faraway Tree",
           "film_slug": "the-magic-faraway-tree",
-          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children – Joe, Beth, and Fran – discover a magical tree and its extraordinary...",
+          "synopsis": "Soon after the Thompson family's arrival in the countryside, the three children - Joe, Beth, and Fran - discover a magical tree and its extraordinary...",
           "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
           "runtime_min": 110,
           "film_url": "https://wtwcinemas.co.uk/film/the-magic-faraway-tree/?screen=truro",
@@ -5236,25 +4962,12 @@
           "title": "Frida Kahlo - Exhibition On Screen",
           "search_title": "Frida Kahlo - Exhibition On Screen",
           "film_slug": "frida-kahlo-exhibition-on-screen",
-          "synopsis": "Frida Kahlo is a phenomenon. She is arguably the world's favourite female artist – beloved by young and old. Exhibition on Screen's award-winning film –...",
+          "synopsis": "Frida Kahlo is a phenomenon. She is arguably the world's favourite female artist - beloved by young and old. Exhibition on Screen's award-winning film -...",
           "cast": "Frida Kahlo (Self (archive footage))",
           "runtime_min": 90,
           "film_url": "https://wtwcinemas.co.uk/film/frida-kahlo-exhibition-on-screen/?screen=truro",
           "poster_url": "posters/frida-kahlo-exhibition-on-screen.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-19",
-              "time": "18:30",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=115452&screen=truro",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Event cinema"
-              ]
-            },
             {
               "date": "2026-05-24",
               "time": "14:30",
@@ -5289,31 +5002,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-christophers/?screen=truro",
           "poster_url": "posters/the-christophers.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-19",
-              "time": "17:30",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120503&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-19",
-              "time": "20:40",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120506&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-20",
               "time": "14:45",
@@ -6337,7 +6025,7 @@
           "title": "The Amazing Digital Circus: The Last Act",
           "search_title": "The Amazing Digital Circus: The Last Act",
           "film_slug": "the-amazing-digital-circus-the-last-act",
-          "synopsis": "The viral internet sensation “The Amazing Digital Circus” comes to its long-awaited conclusion in a feature-length theatrical release! This “Last Act” combines episode 8 with...",
+          "synopsis": "The viral internet sensation \"The Amazing Digital Circus\" comes to its long-awaited conclusion in a feature-length theatrical release! This \"Last Act\" combines episode 8 with...",
           "cast": "Lizzie Freeman (Pomni (voice)), Michael Kovach (Jax (voice)), Amanda Hufford (Ragatha (voice)), Marissa Lenti (Gangle (voice)), Ashley Nichols (Zooble (voice)), Sean Chiplock (Kinger (voice)), Alex Rochon (Caine (voice)), Gooseworx (Bubble (voice)), Skye Redden (Ribbit (voice)), Cassie Ewulu (Queenie (voice))",
           "runtime_min": 93,
           "film_url": "https://wtwcinemas.co.uk/film/the-amazing-digital-circus-the-last-act/?screen=truro",
@@ -6667,7 +6355,7 @@
         "primary_selector_nodes": 26,
         "fallback_selector_nodes": 0,
         "parsed_films": 23,
-        "parsed_showtimes": 169
+        "parsed_showtimes": 161
       }
     },
     "wadebridge": {
@@ -6684,19 +6372,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=wadebridge",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-19",
-              "time": "17:10",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28818&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-20",
               "time": "17:10",
@@ -6892,19 +6567,6 @@
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
             {
-              "date": "2026-05-19",
-              "time": "20:15",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28817&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-20",
               "time": "19:45",
               "screen": 1,
@@ -7076,19 +6738,6 @@
           "poster_url": "posters/michael.jpg",
           "showtimes": [
             {
-              "date": "2026-05-19",
-              "time": "19:30",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28819&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-05-20",
               "time": "19:30",
               "screen": 2,
@@ -7244,25 +6893,12 @@
           "title": "Frida Kahlo - Exhibition On Screen",
           "search_title": "Frida Kahlo - Exhibition On Screen",
           "film_slug": "frida-kahlo-exhibition-on-screen",
-          "synopsis": "Frida Kahlo is a phenomenon. She is arguably the world's favourite female artist – beloved by young and old. Exhibition on Screen's award-winning film –...",
+          "synopsis": "Frida Kahlo is a phenomenon. She is arguably the world's favourite female artist - beloved by young and old. Exhibition on Screen's award-winning film -...",
           "cast": "Frida Kahlo (Self (archive footage))",
           "runtime_min": 90,
           "film_url": "https://wtwcinemas.co.uk/film/frida-kahlo-exhibition-on-screen/?screen=wadebridge",
           "poster_url": "posters/frida-kahlo-exhibition-on-screen.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-19",
-              "time": "18:00",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=26854&screen=wadebridge",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Event cinema"
-              ]
-            },
             {
               "date": "2026-05-24",
               "time": "14:30",
@@ -7642,6 +7278,51 @@
           "writer": "John Millington Synge"
         },
         {
+          "title": "The North",
+          "search_title": "The North",
+          "film_slug": "the-north",
+          "synopsis": "A decade after they were best friends and roommates, Chris and Lluis set out on a 600 kilometer hike through the Scottish Highlands to reconnect...",
+          "cast": "Bart Harder (Chris), Carlos Pulido (Lluis), Matthijs van de Sande Bakhuyzen (Tom), Olly Bassi (Richard)",
+          "runtime_min": 132,
+          "film_url": "https://wtwcinemas.co.uk/film/the-north/?screen=wadebridge",
+          "poster_url": "posters/the-north.jpg",
+          "showtimes": [
+            {
+              "date": "2026-06-07",
+              "time": "19:30",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28881&screen=wadebridge",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-06-10",
+              "time": "17:00",
+              "screen": 1,
+              "cinema_name": "Regal Cinema, Wadebridge",
+              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=28882&screen=wadebridge",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=AWWU4hrapC4",
+          "vote_average": 7.0,
+          "genres": [
+            "Drama"
+          ],
+          "imdb_id": "tt35331003",
+          "overview": "A decade after they were best friends and roommates, Chris and Lluis set out on a 600 kilometer hike through the Scottish Highlands to reconnect with each other, nature and parts of themselves they lost.",
+          "director": "Bart Schrijver",
+          "writer": "Bart Schrijver"
+        },
+        {
           "title": "National Theatre Live: Les Liaisons Dangereuses",
           "search_title": "National Theatre Live: Les Liaisons Dangereuses",
           "film_slug": "national-theatre-live-les-liaisons-dangereuses",
@@ -7874,12 +7555,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 15,
-        "selector_film_nodes": 15,
-        "primary_selector_nodes": 15,
+        "raw_cards": 16,
+        "selector_film_nodes": 16,
+        "primary_selector_nodes": 16,
         "fallback_selector_nodes": 0,
-        "parsed_films": 13,
-        "parsed_showtimes": 70
+        "parsed_films": 14,
+        "parsed_showtimes": 68
       }
     }
   }
