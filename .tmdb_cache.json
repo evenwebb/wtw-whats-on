@@ -364,7 +364,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-05-14T11:10:03.597726"
+    "cached_at": "2026-05-21T12:09:05.985614"
   },
   "charlie-the-wonderdog": {
     "poster_url": "https://image.tmdb.org/t/p/w342/whvkL0wzxgKmVbaPontq9NlVd5z.jpg",
@@ -597,5 +597,21 @@
     "writer": "Bart Schrijver",
     "cast": "Bart Harder (Chris), Carlos Pulido (Lluis), Matthijs van de Sande Bakhuyzen (Tom), Olly Bassi (Richard)",
     "cached_at": "2026-05-20T11:44:00.778017"
+  },
+  "drishyam-3": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/456FlpiU1iOBnaOxSd783QhZKWw.jpg",
+    "trailer_url": "",
+    "vote_average": 0.0,
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Drama"
+    ],
+    "imdb_id": "tt14113634",
+    "overview": "To protect his family and their dark secret, Georgekutty faces an organized new threat. As walls close in and cracks widen, how much more is he willing to sacrifice ?",
+    "director": "Jeethu Joseph",
+    "writer": "Jeethu Joseph",
+    "cast": "Mohanlal (Georgekutty), Meena (Rani), Siddique (Prabhakar), Asha Sarath (IG Geetha Prabhakar), Murali Gopy (IG Thomas Bastin), Ansiba Hassan (Anju), Esther Anil (Anumol), Veena Nandakumar, K. B. Ganesh Kumar (CI Philip Mathew), Santhi Mayadevi (Adv. Renuka), Saikumar (Vinayachandran), Srikant Murali (Public Prosecutor)",
+    "cached_at": "2026-05-21T12:09:05.691288"
   }
 }
