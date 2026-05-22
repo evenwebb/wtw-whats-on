@@ -1,59 +1,10 @@
 {
-  "updated_at": "2026-05-21T12:09:02Z",
+  "updated_at": "2026-05-22T11:38:58Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
       "url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
       "films": [
-        {
-          "title": "Mortal Kombat II",
-          "search_title": "Mortal Kombat II",
-          "film_slug": "mortal-kombat-ii",
-          "synopsis": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule...",
-          "cast": "Karl Urban (Johnny Cage), Adeline Rudolph (Kitana), Jessica McNamee (Sonya Blade), Josh Lawson (Revenant Kano), Ludi Lin (Liu Kang), Mehcad Brooks (Jackson 'Jax' Briggs), Tati Gabrielle (Jade), Lewis Tan (Cole Young), Damon Herriman (Quan Chi), Chin Han (Shang Tsung), Tadanobu Asano (Lord Raiden), Joe Taslim (Bi-Han)",
-          "runtime_min": 116,
-          "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=st-austell",
-          "poster_url": "posters/mortal-kombat-ii.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "17:00",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77348&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-21",
-              "time": "20:00",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77347&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=ul90WGVm5aU",
-          "vote_average": 0.0,
-          "genres": [
-            "Action",
-            "Fantasy",
-            "Adventure"
-          ],
-          "imdb_id": "tt17490712",
-          "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
-          "director": "Simon McQuoid",
-          "writer": "Jeremy Slater"
-        },
         {
           "title": "The Sheep Detectives",
           "search_title": "The Sheep Detectives",
@@ -64,19 +15,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=st-austell",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "17:15",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77346&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-22",
               "time": "16:00",
@@ -265,54 +203,11 @@
           "search_title": "The Devil Wears Prada 2",
           "film_slug": "the-devil-wears-prada-2",
           "synopsis": "Miranda Priestly navigates her career amid the decline of traditional magazine publishing. She faces off against Emily Charlton, her one-time assistant, now a high-powered executive...",
-          "cast": "Meryl Streep (Miranda Priestly), Anne Hathaway (Andy Sachs), Emily Blunt (Emily Charlton), Stanley Tucci (Nigel Kipling), Kenneth Branagh (Stuart), Justin Theroux (Benji Barnes), Lucy Liu (Sasha Barnes), Tracie Thoms (Lily), Tibor Feldman (Irv Ravitz), B. J. Novak (Jay Ravitz), Patrick Brammall (Peter), Simone Ashley (Amari)",
+          "cast": "Meryl Streep (Miranda Priestly), Anne Hathaway (Andy Sachs), Emily Blunt (Emily), Stanley Tucci (Nigel), Kenneth Branagh (Stuart), Justin Theroux (Benji Barnes), Lucy Liu (Sasha Barnes), Tracie Thoms (Lily), Tibor Feldman (Irv Ravitz), B.J. Novak (Jay Ravitz), Patrick Brammall (Peter), Simone Ashley (Amari)",
           "runtime_min": 119,
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=st-austell",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "11:00",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-05-21",
-              "time": "16:30",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77344&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-05-21",
-              "time": "19:15",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77345&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-05-22",
               "time": "19:45",
@@ -412,16 +307,16 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=KdW-osZVMLY",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=pIofDvwP0sc",
+          "vote_average": 6.628,
           "genres": [
-            "Drama",
-            "Comedy"
+            "Comedy",
+            "Drama"
           ],
           "imdb_id": "tt33612209",
-          "overview": "Miranda Priestly navigates her career amid the decline of traditional magazine publishing. She faces off against Emily Charlton, her one-time assistant, now a high-powered executive for a luxury group, with advertising dollars that Priestly desperately needs.",
+          "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
           "director": "David Frankel",
-          "writer": "Aline Brosh McKenna"
+          "writer": "Aline Brosh McKenna, Lauren Weisberger"
         },
         {
           "title": "Michael",
@@ -433,20 +328,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=st-austell",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "19:45",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77349&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-05-22",
               "time": "16:45",
@@ -542,42 +423,6 @@
           "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
           "director": "Antoine Fuqua",
           "writer": "John Logan"
-        },
-        {
-          "title": "Rose of Nevada",
-          "search_title": "Rose of Nevada",
-          "film_slug": "rose-of-nevada",
-          "synopsis": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find...",
-          "cast": "George MacKay (Nick), Callum Turner (Liam), Francis Magee, Edward Rowe, Rosalind Eleazar, Mary Woodvine",
-          "runtime_min": 114,
-          "film_url": "https://wtwcinemas.co.uk/film/rose-of-nevada/?screen=st-austell",
-          "poster_url": "posters/rose-of-nevada.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "16:45",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77350&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=bw371ui9cTk",
-          "vote_average": 0.0,
-          "genres": [
-            "Science Fiction",
-            "Mystery",
-            "Drama"
-          ],
-          "imdb_id": "tt35674521",
-          "overview": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves transported back in time, mistaken for the original crew.",
-          "director": "Mark Jenkin",
-          "writer": "Mark Jenkin"
         },
         {
           "title": "Shrek - 25th Anniversary",
@@ -797,45 +642,11 @@
           "writer": "Simon Farnaby"
         },
         {
-          "title": "Iron Maiden: Burning Ambition",
-          "search_title": "Iron Maiden: Burning Ambition",
-          "film_slug": "iron-maiden-burning-ambition",
-          "synopsis": "With unprecedented access to the official archives and intimate recollections from the band, both current and past, Iron Maiden: Burning Ambition invites fans to experience...",
-          "cast": "Steve Harris (Self), Bruce Dickinson (Self), Nicko McBrain (Self), Adrian Smith (Self), Dave Murray (Self), Janick Gers (Self), Blaze Bayley (Self), Rod Smallwood (Self), Chuck D (Self), Simon Gallup (Self), Scott Ian (Self), Tom Morello (Self)",
-          "runtime_min": 105,
-          "film_url": "https://wtwcinemas.co.uk/film/iron-maiden-burning-ambition/?screen=st-austell",
-          "poster_url": "posters/iron-maiden-burning-ambition.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "19:30",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77284&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "",
-          "vote_average": 0.0,
-          "genres": [
-            "Documentary",
-            "Music"
-          ],
-          "imdb_id": "tt36163614",
-          "overview": "With unprecedented access to the official archives and intimate recollections from the band, both current and past,  Iron Maiden: Burning Ambition invites fans to experience one of the most iconic journeys in music history.  Spanning five decades, this electrifying documentary charts the band’s rise from the pubs of East London to the world’s biggest stadiums. Featuring exclusive interviews with band members and contributors such as Javier Bardem, Lars Ulrich and Chuck D, as well as all-new animated sequences of the band's legendary mascot, Eddie, the film offers a rare and intimate look at Iron Maiden’s uncompromising vision and unwavering connection with their truly global army of fans.",
-          "director": "Malcolm Venville",
-          "writer": "David Teague"
-        },
-        {
           "title": "Star Wars: The Mandalorian And Grogu (2D)",
           "search_title": "Star Wars: The Mandalorian And Grogu",
           "film_slug": "the-mandalorian-and-grogu",
           "synopsis": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought...",
-          "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo (voice)), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Ardennian Fry Cook (voice)), Hemky Madera (Imperial Warlord), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth)",
+          "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Hugo Durant (voice)), Hemky Madera (Commander Baro), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth), Stephen McKinley Henderson (Gatori), Shirley Henderson (The Anzellans (voice))",
           "runtime_min": 132,
           "film_url": "https://wtwcinemas.co.uk/film/the-mandalorian-and-grogu/?screen=st-austell",
           "poster_url": "posters/the-mandalorian-and-grogu.jpg",
@@ -1107,8 +918,8 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=uwild1rw7Aw",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=yOws9JR3oI0",
+          "vote_average": 6.6,
           "genres": [
             "Action",
             "Adventure",
@@ -1124,7 +935,7 @@
           "search_title": "Star Wars: The Mandalorian and Grogu",
           "film_slug": "star-wars-the-mandalorian-and-grogu-3d",
           "synopsis": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought...",
-          "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo (voice)), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Ardennian Fry Cook (voice)), Hemky Madera (Imperial Warlord), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth)",
+          "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Hugo Durant (voice)), Hemky Madera (Commander Baro), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth), Stephen McKinley Henderson (Gatori), Shirley Henderson (The Anzellans (voice))",
           "runtime_min": 132,
           "film_url": "https://wtwcinemas.co.uk/film/star-wars-the-mandalorian-and-grogu-3d/?screen=st-austell",
           "poster_url": "posters/star-wars-the-mandalorian-and-grogu-3d.jpg",
@@ -1195,8 +1006,8 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=uwild1rw7Aw",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=yOws9JR3oI0",
+          "vote_average": 6.6,
           "genres": [
             "Action",
             "Adventure",
@@ -1765,67 +1576,18 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 19,
-        "selector_film_nodes": 19,
-        "primary_selector_nodes": 19,
+        "raw_cards": 16,
+        "selector_film_nodes": 16,
+        "primary_selector_nodes": 16,
         "fallback_selector_nodes": 0,
-        "parsed_films": 17,
-        "parsed_showtimes": 105
+        "parsed_films": 14,
+        "parsed_showtimes": 96
       }
     },
     "newquay": {
       "name": "Lighthouse Cinema, Newquay",
       "url": "https://wtwcinemas.co.uk/newquay/whats-on/",
       "films": [
-        {
-          "title": "Mortal Kombat II",
-          "search_title": "Mortal Kombat II",
-          "film_slug": "mortal-kombat-ii",
-          "synopsis": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule...",
-          "cast": "Karl Urban (Johnny Cage), Adeline Rudolph (Kitana), Jessica McNamee (Sonya Blade), Josh Lawson (Revenant Kano), Ludi Lin (Liu Kang), Mehcad Brooks (Jackson 'Jax' Briggs), Tati Gabrielle (Jade), Lewis Tan (Cole Young), Damon Herriman (Quan Chi), Chin Han (Shang Tsung), Tadanobu Asano (Lord Raiden), Joe Taslim (Bi-Han)",
-          "runtime_min": 116,
-          "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=newquay",
-          "poster_url": "posters/mortal-kombat-ii.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "17:00",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65727&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-21",
-              "time": "20:00",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65730&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=ul90WGVm5aU",
-          "vote_average": 0.0,
-          "genres": [
-            "Action",
-            "Fantasy",
-            "Adventure"
-          ],
-          "imdb_id": "tt17490712",
-          "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
-          "director": "Simon McQuoid",
-          "writer": "Jeremy Slater"
-        },
         {
           "title": "The Sheep Detectives",
           "search_title": "The Sheep Detectives",
@@ -1836,19 +1598,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=newquay",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "17:15",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65729&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-22",
               "time": "16:00",
@@ -2037,51 +1786,11 @@
           "search_title": "The Devil Wears Prada 2",
           "film_slug": "the-devil-wears-prada-2",
           "synopsis": "Miranda Priestly navigates her career amid the decline of traditional magazine publishing. She faces off against Emily Charlton, her one-time assistant, now a high-powered executive...",
-          "cast": "Meryl Streep (Miranda Priestly), Anne Hathaway (Andy Sachs), Emily Blunt (Emily Charlton), Stanley Tucci (Nigel Kipling), Kenneth Branagh (Stuart), Justin Theroux (Benji Barnes), Lucy Liu (Sasha Barnes), Tracie Thoms (Lily), Tibor Feldman (Irv Ravitz), B. J. Novak (Jay Ravitz), Patrick Brammall (Peter), Simone Ashley (Amari)",
+          "cast": "Meryl Streep (Miranda Priestly), Anne Hathaway (Andy Sachs), Emily Blunt (Emily), Stanley Tucci (Nigel), Kenneth Branagh (Stuart), Justin Theroux (Benji Barnes), Lucy Liu (Sasha Barnes), Tracie Thoms (Lily), Tibor Feldman (Irv Ravitz), B.J. Novak (Jay Ravitz), Patrick Brammall (Peter), Simone Ashley (Amari)",
           "runtime_min": 119,
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=newquay",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "11:00",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-21",
-              "time": "16:30",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65725&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-21",
-              "time": "19:15",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65726&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-22",
               "time": "16:45",
@@ -2200,22 +1909,6 @@
               ]
             },
             {
-              "date": "2026-05-21",
-              "time": "11:15",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-05-26",
               "time": "16:45",
               "screen": 3,
@@ -2231,16 +1924,16 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=KdW-osZVMLY",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=pIofDvwP0sc",
+          "vote_average": 6.628,
           "genres": [
-            "Drama",
-            "Comedy"
+            "Comedy",
+            "Drama"
           ],
           "imdb_id": "tt33612209",
-          "overview": "Miranda Priestly navigates her career amid the decline of traditional magazine publishing. She faces off against Emily Charlton, her one-time assistant, now a high-powered executive for a luxury group, with advertising dollars that Priestly desperately needs.",
+          "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
           "director": "David Frankel",
-          "writer": "Aline Brosh McKenna"
+          "writer": "Aline Brosh McKenna, Lauren Weisberger"
         },
         {
           "title": "Michael",
@@ -2252,19 +1945,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=newquay",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "19:45",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65728&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-22",
               "time": "17:00",
@@ -2434,42 +2114,6 @@
           "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
           "director": "Antoine Fuqua",
           "writer": "John Logan"
-        },
-        {
-          "title": "Rose of Nevada",
-          "search_title": "Rose of Nevada",
-          "film_slug": "rose-of-nevada",
-          "synopsis": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find...",
-          "cast": "George MacKay (Nick), Callum Turner (Liam), Francis Magee, Edward Rowe, Rosalind Eleazar, Mary Woodvine",
-          "runtime_min": 114,
-          "film_url": "https://wtwcinemas.co.uk/film/rose-of-nevada/?screen=newquay",
-          "poster_url": "posters/rose-of-nevada.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "16:45",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65731&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=bw371ui9cTk",
-          "vote_average": 0.0,
-          "genres": [
-            "Science Fiction",
-            "Mystery",
-            "Drama"
-          ],
-          "imdb_id": "tt35674521",
-          "overview": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves transported back in time, mistaken for the original crew.",
-          "director": "Mark Jenkin",
-          "writer": "Mark Jenkin"
         },
         {
           "title": "Shrek - 25th Anniversary",
@@ -2689,45 +2333,11 @@
           "writer": "Simon Farnaby"
         },
         {
-          "title": "Iron Maiden: Burning Ambition",
-          "search_title": "Iron Maiden: Burning Ambition",
-          "film_slug": "iron-maiden-burning-ambition",
-          "synopsis": "With unprecedented access to the official archives and intimate recollections from the band, both current and past, Iron Maiden: Burning Ambition invites fans to experience...",
-          "cast": "Steve Harris (Self), Bruce Dickinson (Self), Nicko McBrain (Self), Adrian Smith (Self), Dave Murray (Self), Janick Gers (Self), Blaze Bayley (Self), Rod Smallwood (Self), Chuck D (Self), Simon Gallup (Self), Scott Ian (Self), Tom Morello (Self)",
-          "runtime_min": 105,
-          "film_url": "https://wtwcinemas.co.uk/film/iron-maiden-burning-ambition/?screen=newquay",
-          "poster_url": "posters/iron-maiden-burning-ambition.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "19:30",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65665&screen=newquay",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "vote_average": 0.0,
-          "genres": [
-            "Documentary",
-            "Music"
-          ],
-          "imdb_id": "tt36163614",
-          "overview": "With unprecedented access to the official archives and intimate recollections from the band, both current and past,  Iron Maiden: Burning Ambition invites fans to experience one of the most iconic journeys in music history.  Spanning five decades, this electrifying documentary charts the band’s rise from the pubs of East London to the world’s biggest stadiums. Featuring exclusive interviews with band members and contributors such as Javier Bardem, Lars Ulrich and Chuck D, as well as all-new animated sequences of the band's legendary mascot, Eddie, the film offers a rare and intimate look at Iron Maiden’s uncompromising vision and unwavering connection with their truly global army of fans.",
-          "director": "Malcolm Venville",
-          "writer": "David Teague",
-          "trailer_url": ""
-        },
-        {
           "title": "Billie Eilish - Hit Me Hard and Soft: The Tour (3D)",
           "search_title": "Billie Eilish - Hit Me Hard and Soft: The Tour",
           "film_slug": "billie-eilish-hit-me-hard-and-soft-the-tour-3d",
           "synopsis": "Captured during Billie Eilish's sold-out world tour, a concert experience from one of the most celebrated and successful artists of her generation, presented in immersive...",
-          "cast": "Billie Eilish (Self), James Cameron (Self), FINNEAS (Self), Maggie Baird (Self)",
+          "cast": "Billie Eilish (Self - Vocals, Piano, Guitar), FINNEAS (Self - Vocals, Piano, Guitar), Andrew Marshall (Self - Drums), Solomon Smith (Self - Bass), Abraham Nouri (Self - Keys, Guitar), Tom Crouch (Self - Keys, Guitar), Jane Horner (Self - Background Vocals), Ava Horner (Self - Background Vocals), James Cameron (Self (uncredited)), Maggie Baird (Self (uncredited)), Charli xcx (Self (archive footage; uncredited))",
           "runtime_min": 115,
           "film_url": "https://wtwcinemas.co.uk/film/billie-eilish-hit-me-hard-and-soft-the-tour-3d/?screen=newquay",
           "poster_url": "posters/billie-eilish-hit-me-hard-and-soft-the-tour-3d.jpg",
@@ -2761,8 +2371,8 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=9ElURjcuWLQ",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=3Mqm_WwhgTE",
+          "vote_average": 7.2,
           "genres": [
             "Music",
             "Documentary"
@@ -2770,14 +2380,14 @@
           "imdb_id": "tt39018643",
           "overview": "Captured during Billie Eilish's sold-out world tour, a concert experience from one of the most celebrated and successful artists of her generation, presented in immersive 3D.",
           "director": "James Cameron, Billie Eilish",
-          "writer": ""
+          "writer": "Tarik Mikou, Billie Eilish"
         },
         {
           "title": "Star Wars: The Mandalorian And Grogu (2D)",
           "search_title": "Star Wars: The Mandalorian And Grogu",
           "film_slug": "the-mandalorian-and-grogu",
           "synopsis": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought...",
-          "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo (voice)), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Ardennian Fry Cook (voice)), Hemky Madera (Imperial Warlord), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth)",
+          "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Hugo Durant (voice)), Hemky Madera (Commander Baro), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth), Stephen McKinley Henderson (Gatori), Shirley Henderson (The Anzellans (voice))",
           "runtime_min": 132,
           "film_url": "https://wtwcinemas.co.uk/film/the-mandalorian-and-grogu/?screen=newquay",
           "poster_url": "posters/the-mandalorian-and-grogu.jpg",
@@ -3030,8 +2640,8 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=uwild1rw7Aw",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=yOws9JR3oI0",
+          "vote_average": 6.6,
           "genres": [
             "Action",
             "Adventure",
@@ -3047,7 +2657,7 @@
           "search_title": "Star Wars: The Mandalorian and Grogu",
           "film_slug": "star-wars-the-mandalorian-and-grogu-3d",
           "synopsis": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought...",
-          "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo (voice)), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Ardennian Fry Cook (voice)), Hemky Madera (Imperial Warlord), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth)",
+          "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Hugo Durant (voice)), Hemky Madera (Commander Baro), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth), Stephen McKinley Henderson (Gatori), Shirley Henderson (The Anzellans (voice))",
           "runtime_min": 132,
           "film_url": "https://wtwcinemas.co.uk/film/star-wars-the-mandalorian-and-grogu-3d/?screen=newquay",
           "poster_url": "posters/star-wars-the-mandalorian-and-grogu-3d.jpg",
@@ -3118,8 +2728,8 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=uwild1rw7Aw",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=yOws9JR3oI0",
+          "vote_average": 6.6,
           "genres": [
             "Action",
             "Adventure",
@@ -3537,54 +3147,18 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 20,
-        "selector_film_nodes": 20,
-        "primary_selector_nodes": 20,
+        "raw_cards": 17,
+        "selector_film_nodes": 17,
+        "primary_selector_nodes": 17,
         "fallback_selector_nodes": 0,
-        "parsed_films": 18,
-        "parsed_showtimes": 105
+        "parsed_films": 15,
+        "parsed_showtimes": 95
       }
     },
     "truro": {
       "name": "Plaza Cinema, Truro",
       "url": "https://wtwcinemas.co.uk/truro/whats-on/",
       "films": [
-        {
-          "title": "Mortal Kombat II",
-          "search_title": "Mortal Kombat II",
-          "film_slug": "mortal-kombat-ii",
-          "synopsis": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule...",
-          "cast": "Karl Urban (Johnny Cage), Adeline Rudolph (Kitana), Jessica McNamee (Sonya Blade), Josh Lawson (Revenant Kano), Ludi Lin (Liu Kang), Mehcad Brooks (Jackson 'Jax' Briggs), Tati Gabrielle (Jade), Lewis Tan (Cole Young), Damon Herriman (Quan Chi), Chin Han (Shang Tsung), Tadanobu Asano (Lord Raiden), Joe Taslim (Bi-Han)",
-          "runtime_min": 116,
-          "film_url": "https://wtwcinemas.co.uk/film/mortal-kombat-ii/?screen=truro",
-          "poster_url": "posters/mortal-kombat-ii.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "20:15",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120512&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=ul90WGVm5aU",
-          "vote_average": 0.0,
-          "genres": [
-            "Action",
-            "Fantasy",
-            "Adventure"
-          ],
-          "imdb_id": "tt17490712",
-          "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
-          "director": "Simon McQuoid",
-          "writer": "Jeremy Slater"
-        },
         {
           "title": "The Sheep Detectives",
           "search_title": "The Sheep Detectives",
@@ -3595,19 +3169,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-sheep-detectives/?screen=truro",
           "poster_url": "posters/the-sheep-detectives.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "17:00",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120510&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-22",
               "time": "16:15",
@@ -3796,51 +3357,11 @@
           "search_title": "The Devil Wears Prada 2",
           "film_slug": "the-devil-wears-prada-2",
           "synopsis": "Miranda Priestly navigates her career amid the decline of traditional magazine publishing. She faces off against Emily Charlton, her one-time assistant, now a high-powered executive...",
-          "cast": "Meryl Streep (Miranda Priestly), Anne Hathaway (Andy Sachs), Emily Blunt (Emily Charlton), Stanley Tucci (Nigel Kipling), Kenneth Branagh (Stuart), Justin Theroux (Benji Barnes), Lucy Liu (Sasha Barnes), Tracie Thoms (Lily), Tibor Feldman (Irv Ravitz), B. J. Novak (Jay Ravitz), Patrick Brammall (Peter), Simone Ashley (Amari)",
+          "cast": "Meryl Streep (Miranda Priestly), Anne Hathaway (Andy Sachs), Emily Blunt (Emily), Stanley Tucci (Nigel), Kenneth Branagh (Stuart), Justin Theroux (Benji Barnes), Lucy Liu (Sasha Barnes), Tracie Thoms (Lily), Tibor Feldman (Irv Ravitz), B.J. Novak (Jay Ravitz), Patrick Brammall (Peter), Simone Ashley (Amari)",
           "runtime_min": 119,
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=truro",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "11:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-21",
-              "time": "16:45",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120516&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-21",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120511&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-22",
               "time": "17:15",
@@ -4004,22 +3525,6 @@
               ]
             },
             {
-              "date": "2026-05-21",
-              "time": "11:15",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-05-28",
               "time": "19:30",
               "screen": 3,
@@ -4035,16 +3540,16 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=KdW-osZVMLY",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=pIofDvwP0sc",
+          "vote_average": 6.628,
           "genres": [
-            "Drama",
-            "Comedy"
+            "Comedy",
+            "Drama"
           ],
           "imdb_id": "tt33612209",
-          "overview": "Miranda Priestly navigates her career amid the decline of traditional magazine publishing. She faces off against Emily Charlton, her one-time assistant, now a high-powered executive for a luxury group, with advertising dollars that Priestly desperately needs.",
+          "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
           "director": "David Frankel",
-          "writer": "Aline Brosh McKenna"
+          "writer": "Aline Brosh McKenna, Lauren Weisberger"
         },
         {
           "title": "Michael",
@@ -4200,20 +3705,6 @@
               ]
             },
             {
-              "date": "2026-05-21",
-              "time": "20:00",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120481&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-05-24",
               "time": "20:00",
               "screen": 4,
@@ -4239,42 +3730,6 @@
           "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
           "director": "Antoine Fuqua",
           "writer": "John Logan"
-        },
-        {
-          "title": "Rose of Nevada",
-          "search_title": "Rose of Nevada",
-          "film_slug": "rose-of-nevada",
-          "synopsis": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find...",
-          "cast": "George MacKay (Nick), Callum Turner (Liam), Francis Magee, Edward Rowe, Rosalind Eleazar, Mary Woodvine",
-          "runtime_min": 114,
-          "film_url": "https://wtwcinemas.co.uk/film/rose-of-nevada/?screen=truro",
-          "poster_url": "posters/rose-of-nevada.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "17:15",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120518&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=bw371ui9cTk",
-          "vote_average": 0.0,
-          "genres": [
-            "Science Fiction",
-            "Mystery",
-            "Drama"
-          ],
-          "imdb_id": "tt35674521",
-          "overview": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves transported back in time, mistaken for the original crew.",
-          "director": "Mark Jenkin",
-          "writer": "Mark Jenkin"
         },
         {
           "title": "Shrek - 25th Anniversary",
@@ -4575,41 +4030,6 @@
           "writer": "Simon Farnaby"
         },
         {
-          "title": "National Theatre Live: All My Sons",
-          "search_title": "National Theatre Live: All My Sons",
-          "film_slug": "national-theatre-live-all-my-sons",
-          "synopsis": "Bryan Cranston (Breaking Bad) and Marianne Jean-Baptiste (Hard Truths) feature in a five-star, triumphantly acclaimed new production of Arthur Miller's classic play, from visionary director...",
-          "cast": "Bryan Cranston (Joe Keller), Marianne Jean-Baptiste (Kate Keller), Paapa Essiedu (Chris Keller), Tom Glynn-Carney (George Deever), Hayley Squires (Ann Deever), Aliyah Odoffin (Lydia Lubey), Cath Whitefield (Sue Bayliss), Richard Hansell (Dr Jim Bayliss), Zach Wyatt (Frank Lubey), Stevie Raine (Ensemble)",
-          "runtime_min": 150,
-          "film_url": "https://wtwcinemas.co.uk/film/national-theatre-live-all-my-sons/?screen=truro",
-          "poster_url": "posters/national-theatre-live-all-my-sons.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "19:00",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120315&screen=truro",
-              "tags": [
-                "Wheelchair access",
-                "2D",
-                "Event cinema",
-                "Strobe Light warning"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=6RI4M3vrgsk",
-          "vote_average": 0.0,
-          "genres": [
-            "Drama"
-          ],
-          "imdb_id": "tt39544163",
-          "overview": "One family, the heart of the American dream. When wartime delivers profits for Joe Heller, it comes at a price when his partner is charged with criminal manufacturing deals, and his eldest son goes missing in action. Will peacetime bring peace of mind, or will he be confronted by the consequence of his actions?",
-          "director": "Ivo van Hove",
-          "writer": "Arthur Miller"
-        },
-        {
           "title": "Frida Kahlo - Exhibition On Screen",
           "search_title": "Frida Kahlo - Exhibition On Screen",
           "film_slug": "frida-kahlo-exhibition-on-screen",
@@ -4653,31 +4073,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-christophers/?screen=truro",
           "poster_url": "posters/the-christophers.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "17:30",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120513&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-21",
-              "time": "19:30",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120517&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-22",
               "time": "17:30",
@@ -4786,7 +4181,7 @@
           "search_title": "Star Wars: The Mandalorian And Grogu",
           "film_slug": "the-mandalorian-and-grogu",
           "synopsis": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought...",
-          "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo (voice)), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Ardennian Fry Cook (voice)), Hemky Madera (Imperial Warlord), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth)",
+          "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Hugo Durant (voice)), Hemky Madera (Commander Baro), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth), Stephen McKinley Henderson (Gatori), Shirley Henderson (The Anzellans (voice))",
           "runtime_min": 132,
           "film_url": "https://wtwcinemas.co.uk/film/the-mandalorian-and-grogu/?screen=truro",
           "poster_url": "posters/the-mandalorian-and-grogu.jpg",
@@ -5130,8 +4525,8 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=uwild1rw7Aw",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=yOws9JR3oI0",
+          "vote_average": 6.6,
           "genres": [
             "Action",
             "Adventure",
@@ -5147,7 +4542,7 @@
           "search_title": "Star Wars: The Mandalorian and Grogu",
           "film_slug": "star-wars-the-mandalorian-and-grogu-3d",
           "synopsis": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought...",
-          "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo (voice)), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Ardennian Fry Cook (voice)), Hemky Madera (Imperial Warlord), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth)",
+          "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Hugo Durant (voice)), Hemky Madera (Commander Baro), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth), Stephen McKinley Henderson (Gatori), Shirley Henderson (The Anzellans (voice))",
           "runtime_min": 132,
           "film_url": "https://wtwcinemas.co.uk/film/star-wars-the-mandalorian-and-grogu-3d/?screen=truro",
           "poster_url": "posters/star-wars-the-mandalorian-and-grogu-3d.jpg",
@@ -5231,8 +4626,8 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=uwild1rw7Aw",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=yOws9JR3oI0",
+          "vote_average": 6.6,
           "genres": [
             "Action",
             "Adventure",
@@ -5638,7 +5033,7 @@
           "title": "Drishyam 3",
           "search_title": "Drishyam 3",
           "film_slug": "drishyam-3",
-          "synopsis": "To protect his family and their dark secret, Georgekutty faces an organized new threat. As walls close in and cracks widen, how much more is...",
+          "synopsis": "",
           "cast": "Mohanlal (Georgekutty), Meena (Rani), Siddique (Prabhakar), Asha Sarath (IG Geetha Prabhakar), Murali Gopy (IG Thomas Bastin), Ansiba Hassan (Anju), Esther Anil (Anumol), Veena Nandakumar, K. B. Ganesh Kumar (CI Philip Mathew), Santhi Mayadevi (Adv. Renuka), Saikumar (Vinayachandran), Srikant Murali (Public Prosecutor)",
           "runtime_min": 159,
           "film_url": "https://wtwcinemas.co.uk/film/drishyam-3/?screen=truro",
@@ -5776,6 +5171,53 @@
           "overview": "Based on the classic 1935 RKO movie starring Fred Astaire and Ginger Rogers, Top Hat is a sparkling romantic cocktail laced with witty comedy, stunning choreography and tap-dancing brilliance, brought to life on stage with lavish sets and gorgeous costumes. Irving Berlin’s irresistible score includes some of Hollywood’s greatest songs, including the immortal Cheek to Cheek, Let’s Face the Music and Dance, Top Hat White Tie and Tails and Puttin’ on the Ritz.  When Broadway star Jerry Travers arrives in London to open a new show, he crosses paths with model Dale Tremont whose beauty sleep is rudely interrupted by Jerry tap dancing in the hotel suite above hers. Instantly smitten, Jerry vows to abandon his bachelor life to win her – but the path of true love never does run smooth.  Put on your top hat, brush off your tails and let this joyous romantic musical comedy sweep you off your feet!",
           "director": "",
           "writer": ""
+        },
+        {
+          "title": "Angel’s Egg - Anime Season",
+          "search_title": "Angel’s Egg - Anime Season",
+          "film_slug": "angels-egg-anime-season",
+          "synopsis": "In the ruins of a strange city, a young girl takes care of a large egg she holds carefully in her arms. She bonds with...",
+          "cast": "Keiichi Noda (Narrator (voice)), Mako Hyodo (Girl (voice)), Jinpachi Nezu (Man (voice))",
+          "runtime_min": 71,
+          "film_url": "https://wtwcinemas.co.uk/film/angels-egg-anime-season/?screen=truro",
+          "poster_url": "posters/angels-egg-anime-season.jpg",
+          "showtimes": [
+            {
+              "date": "2026-06-17",
+              "time": "20:15",
+              "screen": 3,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120686&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            },
+            {
+              "date": "2026-06-18",
+              "time": "20:15",
+              "screen": 3,
+              "cinema_name": "Plaza Cinema, Truro",
+              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
+              "booking_url": "https://wtwcinemas.co.uk/book?performance=120687&screen=truro",
+              "tags": [
+                "Wheelchair access",
+                "2D"
+              ]
+            }
+          ],
+          "trailer_url": "https://www.youtube.com/watch?v=SqyVGzaQFpQ",
+          "vote_average": 7.71,
+          "genres": [
+            "Animation",
+            "Fantasy",
+            "Mystery"
+          ],
+          "imdb_id": "tt0208502",
+          "overview": "In the ruins of a strange city, a young girl takes care of a large egg she holds carefully in her arms. She bonds with a boy who is searching for a bird he saw in a dream.",
+          "director": "Mamoru Oshii",
+          "writer": "Mamoru Oshii"
         },
         {
           "title": "National Theatre Live: Les Liaisons Dangereuses",
@@ -6010,12 +5452,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 27,
-        "selector_film_nodes": 27,
-        "primary_selector_nodes": 27,
+        "raw_cards": 25,
+        "selector_film_nodes": 25,
+        "primary_selector_nodes": 25,
         "fallback_selector_nodes": 0,
-        "parsed_films": 24,
-        "parsed_showtimes": 152
+        "parsed_films": 22,
+        "parsed_showtimes": 143
       }
     },
     "wadebridge": {
@@ -6174,20 +5616,6 @@
                 "Wheelchair access",
                 "2D"
               ]
-            },
-            {
-              "date": "2026-05-21",
-              "time": "17:10",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28824&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "2D"
-              ]
             }
           ],
           "trailer_url": "https://www.youtube.com/watch?v=62U-qGO52mY",
@@ -6208,38 +5636,11 @@
           "search_title": "The Devil Wears Prada 2",
           "film_slug": "the-devil-wears-prada-2",
           "synopsis": "Miranda Priestly navigates her career amid the decline of traditional magazine publishing. She faces off against Emily Charlton, her one-time assistant, now a high-powered executive...",
-          "cast": "Meryl Streep (Miranda Priestly), Anne Hathaway (Andy Sachs), Emily Blunt (Emily Charlton), Stanley Tucci (Nigel Kipling), Kenneth Branagh (Stuart), Justin Theroux (Benji Barnes), Lucy Liu (Sasha Barnes), Tracie Thoms (Lily), Tibor Feldman (Irv Ravitz), B. J. Novak (Jay Ravitz), Patrick Brammall (Peter), Simone Ashley (Amari)",
+          "cast": "Meryl Streep (Miranda Priestly), Anne Hathaway (Andy Sachs), Emily Blunt (Emily), Stanley Tucci (Nigel), Kenneth Branagh (Stuart), Justin Theroux (Benji Barnes), Lucy Liu (Sasha Barnes), Tracie Thoms (Lily), Tibor Feldman (Irv Ravitz), B.J. Novak (Jay Ravitz), Patrick Brammall (Peter), Simone Ashley (Amari)",
           "runtime_min": 119,
           "film_url": "https://wtwcinemas.co.uk/film/the-devil-wears-prada-2/?screen=wadebridge",
           "poster_url": "posters/the-devil-wears-prada-2.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "11:00",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-05-21",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28825&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-22",
               "time": "19:45",
@@ -6319,22 +5720,6 @@
               ]
             },
             {
-              "date": "2026-05-21",
-              "time": "11:15",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Subtitles",
-                "Wheelchair access",
-                "Silver Screen",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
               "date": "2026-05-28",
               "time": "17:00",
               "screen": 2,
@@ -6350,16 +5735,16 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=KdW-osZVMLY",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=pIofDvwP0sc",
+          "vote_average": 6.628,
           "genres": [
-            "Drama",
-            "Comedy"
+            "Comedy",
+            "Drama"
           ],
           "imdb_id": "tt33612209",
-          "overview": "Miranda Priestly navigates her career amid the decline of traditional magazine publishing. She faces off against Emily Charlton, her one-time assistant, now a high-powered executive for a luxury group, with advertising dollars that Priestly desperately needs.",
+          "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
           "director": "David Frankel",
-          "writer": "Aline Brosh McKenna"
+          "writer": "Aline Brosh McKenna, Lauren Weisberger"
         },
         {
           "title": "Michael",
@@ -6371,19 +5756,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/michael/?screen=wadebridge",
           "poster_url": "posters/michael.jpg",
           "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "19:30",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28827&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-05-22",
               "time": "17:00",
@@ -6462,42 +5834,6 @@
           "writer": "John Logan"
         },
         {
-          "title": "Rose of Nevada",
-          "search_title": "Rose of Nevada",
-          "film_slug": "rose-of-nevada",
-          "synopsis": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find...",
-          "cast": "George MacKay (Nick), Callum Turner (Liam), Francis Magee, Edward Rowe, Rosalind Eleazar, Mary Woodvine",
-          "runtime_min": 114,
-          "film_url": "https://wtwcinemas.co.uk/film/rose-of-nevada/?screen=wadebridge",
-          "poster_url": "posters/rose-of-nevada.jpg",
-          "showtimes": [
-            {
-              "date": "2026-05-21",
-              "time": "16:45",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28826&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            }
-          ],
-          "trailer_url": "https://www.youtube.com/watch?v=bw371ui9cTk",
-          "vote_average": 0.0,
-          "genres": [
-            "Science Fiction",
-            "Mystery",
-            "Drama"
-          ],
-          "imdb_id": "tt35674521",
-          "overview": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves transported back in time, mistaken for the original crew.",
-          "director": "Mark Jenkin",
-          "writer": "Mark Jenkin"
-        },
-        {
           "title": "Frida Kahlo - Exhibition On Screen",
           "search_title": "Frida Kahlo - Exhibition On Screen",
           "film_slug": "frida-kahlo-exhibition-on-screen",
@@ -6536,7 +5872,7 @@
           "search_title": "Star Wars: The Mandalorian And Grogu",
           "film_slug": "the-mandalorian-and-grogu",
           "synopsis": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought...",
-          "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo (voice)), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Ardennian Fry Cook (voice)), Hemky Madera (Imperial Warlord), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth)",
+          "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Hugo Durant (voice)), Hemky Madera (Commander Baro), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth), Stephen McKinley Henderson (Gatori), Shirley Henderson (The Anzellans (voice))",
           "runtime_min": 132,
           "film_url": "https://wtwcinemas.co.uk/film/the-mandalorian-and-grogu/?screen=wadebridge",
           "poster_url": "posters/the-mandalorian-and-grogu.jpg",
@@ -6789,8 +6125,8 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=uwild1rw7Aw",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=yOws9JR3oI0",
+          "vote_average": 6.6,
           "genres": [
             "Action",
             "Adventure",
@@ -6806,7 +6142,7 @@
           "search_title": "Star Wars: The Mandalorian and Grogu",
           "film_slug": "star-wars-the-mandalorian-and-grogu-2d-with-subtitles",
           "synopsis": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought...",
-          "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo (voice)), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Ardennian Fry Cook (voice)), Hemky Madera (Imperial Warlord), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth)",
+          "cast": "Pedro Pascal (Din Djarin / The Mandalorian), Jeremy Allen White (Rotta the Hutt (voice)), Sigourney Weaver (Colonel Ward), Jonny Coyne (Lord Janu), Dave Filoni (Trapper Wolf / Embo), Steve Blum (Zeb Orrelios (voice)), Martin Scorsese (Hugo Durant (voice)), Hemky Madera (Commander Baro), Paul Sun-Hyung Lee (Carson Teva), Matthew Willig (Hogsbreth), Stephen McKinley Henderson (Gatori), Shirley Henderson (The Anzellans (voice))",
           "runtime_min": 132,
           "film_url": "https://wtwcinemas.co.uk/film/star-wars-the-mandalorian-and-grogu-2d-with-subtitles/?screen=wadebridge",
           "poster_url": "posters/star-wars-the-mandalorian-and-grogu-2d-with-subtitles.jpg",
@@ -6825,8 +6161,8 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=uwild1rw7Aw",
-          "vote_average": 0.0,
+          "trailer_url": "https://www.youtube.com/watch?v=yOws9JR3oI0",
+          "vote_average": 6.6,
           "genres": [
             "Action",
             "Adventure",
@@ -7163,12 +6499,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 16,
-        "selector_film_nodes": 16,
-        "primary_selector_nodes": 16,
+        "raw_cards": 14,
+        "selector_film_nodes": 14,
+        "primary_selector_nodes": 14,
         "fallback_selector_nodes": 0,
-        "parsed_films": 14,
-        "parsed_showtimes": 64
+        "parsed_films": 13,
+        "parsed_showtimes": 58
       }
     }
   }
