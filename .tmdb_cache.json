@@ -1,34 +1,4 @@
 {
-  "funny-girl-the-musical": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/ywjXHWUK0niM26UKy7DTCErWTFz.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=qzOFC4XiqL0",
-    "vote_average": 7.2,
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance"
-    ],
-    "imdb_id": "tt0062994",
-    "overview": "The life of famed 1930s comedienne Fanny Brice, from her early days in the Jewish slums of New York, to the height of her career with the Ziegfeld Follies, as well as her marriage to the rakish gambler Nick Arnstein.",
-    "director": "William Wyler",
-    "writer": "Isobel Lennart",
-    "cast": "Barbra Streisand (Fanny Brice), Omar Sharif (Nick Arnstein), Kay Medford (Rose Brice), Anne Francis (Georgia James), Walter Pidgeon (Florenz Ziegfeld), Lee Allen (Eddie Ryan), Mae Questel (Mrs. Strakosh), Gerald Mohr (Branca), Frank Faylen (Keeney), Mittie Lawrence (Emma), Gertrude Flynn (Mrs. O'Malley), Penny Santon (Mrs. Meeker)",
-    "cached_at": "2026-04-23T10:17:14.639078"
-  },
-  "jo-in-the-water-plus-q-a": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/7QS3hrkx6OdPar705vnU9b1tKAp.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=LgwULRkm7Jc",
-    "vote_average": 0.0,
-    "genres": [
-      "Documentary"
-    ],
-    "imdb_id": "tt38991522",
-    "overview": "A passionate sea swimmer turned reluctant activist, Jo Bateman takes on one of the UK’s biggest water companies in a David-and-Goliath battle to protect our oceans from devastating sewage pollution. As Jo’s courage helps ignite a growing movement, this film exposes the dire state of our water system and asks: who will stand up for our right to swim in clean natural waters, for the species and communities that rely upon them?",
-    "director": "Pip Piper",
-    "writer": "",
-    "cast": "Jo Bateman (Self), Pip Piper (Self)",
-    "cached_at": "2026-04-23T10:17:14.047929"
-  },
   "eugene-onegin-the-met-opera-rbo-2025-26-cinema-season": {
     "poster_url": "https://image.tmdb.org/t/p/w342/zvfz5Dds1LFtHv76XcSnYWjyoes.jpg",
     "trailer_url": "",
@@ -42,53 +12,6 @@
     "writer": "Pyotr Ilyich Tchaikovsky, Alexander Pushkin",
     "cast": "Timur Zangiev (Conductor), Asmik Grigorian (Tatiana), Maria Barakova (Olga), Larissa Diadkova (Filippyevna), Stanislas de Barbeyrac (Lenski), Iurii Samoilov (Eugene Onegin), Alexander Tsymbalyuk (Gremin)",
     "cached_at": "2026-05-04T10:59:18.720878"
-  },
-  "rose-of-nevada": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/9f4aOkrINAaoEh95wSNu9Zlac3W.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=bw371ui9cTk",
-    "vote_average": 0.0,
-    "genres": [
-      "Science Fiction",
-      "Mystery",
-      "Drama"
-    ],
-    "imdb_id": "tt35674521",
-    "overview": "A mysterious boat returns to a village 30 years after vanishing. Two men join its crew hoping for better fortune. After one voyage, they find themselves transported back in time, mistaken for the original crew.",
-    "director": "Mark Jenkin",
-    "writer": "Mark Jenkin",
-    "cast": "George MacKay (Nick), Callum Turner (Liam), Francis Magee, Edward Rowe, Rosalind Eleazar, Mary Woodvine",
-    "cached_at": "2026-04-23T10:17:11.870407"
-  },
-  "top-gun": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=Klc__shdj88",
-    "vote_average": 7.1,
-    "genres": [
-      "Action",
-      "Drama",
-      "Romance"
-    ],
-    "imdb_id": "tt0092099",
-    "overview": "For Lieutenant Pete 'Maverick' Mitchell and his friend and co-pilot Nick 'Goose' Bradshaw, being accepted into an elite training school for fighter pilots is a dream come true. But a tragedy, as well as personal demons, will threaten Pete's dreams of becoming an ace pilot.",
-    "director": "Tony Scott",
-    "writer": "Jim Cash, Jack Epps Jr.",
-    "cast": "Tom Cruise (Maverick), Kelly McGillis (Charlie), Val Kilmer (Ice), Anthony Edwards (Goose), Tom Skerritt (Viper), Michael Ironside (Jester), John Stockwell (Cougar), Barry Tubb (Wolfman), Rick Rossovich (Slider), Tim Robbins (Merlin), Clarence Gilyard Jr. (Sundown), Whip Hubley (Hollywood)",
-    "cached_at": "2026-04-23T10:17:13.044242"
-  },
-  "top-gun-maverick": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/n0YuM4f5lvGAP6MAW2kBIzugXnc.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=Klc__shdj88",
-    "vote_average": 8.2,
-    "genres": [
-      "Action",
-      "Drama"
-    ],
-    "imdb_id": "tt1745960",
-    "overview": "After more than thirty years of service as one of the Navy’s top aviators, and dodging the advancement in rank that would ground him, Pete “Maverick” Mitchell finds himself training a detachment of TOP GUN graduates for a specialized mission the likes of which no living pilot has ever seen.",
-    "director": "Joseph Kosinski",
-    "writer": "Eric Warren Singer, Ehren Kruger, Christopher McQuarrie, Justin Marks, Peter Craig",
-    "cast": "Tom Cruise (Capt. Pete 'Maverick' Mitchell), Miles Teller (Lt. Bradley 'Rooster' Bradshaw), Jennifer Connelly (Penny Benjamin), Bashir Salahuddin (Wo-1. Bernie 'Hondo' Coleman), Jon Hamm (Adm. Beau 'Cyclone' Simpson), Charles Parnell (Adm. Solomon 'Warlock' Bates), Monica Barbaro (Lt. Natasha 'Phoenix' Trace), Lewis Pullman (Lt. Robert 'Bob' Floyd), Jay Ellis (Lt. Reuben 'Payback' Fitch), Danny Ramirez (Lt. Mickey 'Fanboy' Garcia), Glen Powell (Lt. Jake 'Hangman' Seresin), Val Kilmer (Adm. Tom 'Iceman' Kazansky)",
-    "cached_at": "2026-04-23T10:17:13.438341"
   },
   "patriot": {
     "poster_url": "https://image.tmdb.org/t/p/w342/5LHrtudEt6Mh6VlfGHoYqqjVOHV.jpg",
