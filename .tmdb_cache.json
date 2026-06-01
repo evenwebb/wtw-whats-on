@@ -476,7 +476,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-05-31T10:52:22.279443"
+    "cached_at": "2026-06-01T14:53:16.773450"
   },
   "la-fanciulla-del-west-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -524,7 +524,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-05-31T10:52:22.618030"
+    "cached_at": "2026-06-01T14:53:17.073371"
   },
   "swan-lake-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -560,7 +560,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-05-31T10:52:22.950944"
+    "cached_at": "2026-06-01T14:53:17.358095"
   },
   "backrooms": {
     "poster_url": "https://image.tmdb.org/t/p/w342/vpkNMkbisv5cTaIfCzUduYzXnjb.jpg",
@@ -651,5 +651,67 @@
     "writer": "Gooseworx",
     "cast": "Lizzie Freeman (Pomni (voice)), Michael Kovach (Jax (voice)), Amanda Hufford (Ragatha (voice)), Marissa Lenti (Gangle (voice)), Sean Chiplock (Kinger (voice)), Ashley Nichols (Zooble (voice)), Alex Rochon (Caine (voice)), Gooseworx (Bubble (voice)), Skye Redden (Ribbit (voice)), Cassie Ewulu (Queenie (voice))",
     "cached_at": "2026-05-29T12:09:32.486228"
+  },
+  "savage-house": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/tFWewN33etDjCiteqEkgORNnqcF.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=ub-QNhtPMXM",
+    "vote_average": 0.0,
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "imdb_id": "tt31349852",
+    "overview": "Against the backdrop of 18th century England, a massive pox outbreak, and Jacobite uprising – Sir Chauncey Savage and Lady Savage blindly pursue a better life. It's not without a tinge of irony that their family name is the Savages, for this is a Savage House indeed, filled with duels, decadence, and bloodshed.",
+    "director": "Peter Glanz",
+    "writer": "Peter Glanz",
+    "cast": "Richard E. Grant (Sir Chauncey Savage), Claire Foy (Lady Savage), Sebastian Armesto (Hans), Roger Ashton-Griffiths (Dr. Hemmings), Kíla Lord Cassidy (Fanny Savage), Dominic Charman (Nobleman), Michael Culkin (Lord Ashbury), Jack Farthing (Reginald Halifax), Bel Powley (Dorothy Neville), Richard McCabe (Mr. Bennett), Vicki Pepperdine (Mrs. Bennett), Pip Torrens (Mr. Black)",
+    "cached_at": "2026-06-01T14:53:15.683680"
+  },
+  "scary-movie": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/2OHkZEqQL4OjYXIqWopJu0BijTD.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=lcVxv9i2D2M",
+    "vote_average": 8.0,
+    "genres": [
+      "Comedy",
+      "Horror"
+    ],
+    "imdb_id": "tt32093575",
+    "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
+    "director": "Michael Tiddes",
+    "writer": "Marlon Wayans, Shawn Wayans, Keenen Ivory Wayans, Rick Alvarez, Buddy Johnson",
+    "cast": "Marlon Wayans (Shorty Meeks), Shawn Wayans (Ray Wilkins), Anna Faris (Cindy Campbell), Regina Hall (Brenda Meeks), Damon Wayans Jr., Gregg Wayans (Brad Meeks), Kim Wayans (Nurse Ratchett), Benny Zielke, Cameron Scott Roberts (Jack Campbell), Cheri Oteri (Gail Hailstorm), Chris Elliott (Short Legs), Dave Sheridan (Doofy Gilmore)",
+    "cached_at": "2026-06-01T14:53:15.949283"
+  },
+  "disclosure-day": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=icDuEHSxE-w",
+    "vote_average": 0.0,
+    "genres": [
+      "Mystery",
+      "Science Fiction",
+      "Thriller"
+    ],
+    "imdb_id": "tt15047880",
+    "overview": "If you found out we weren’t alone, if someone showed you, proved it to you, would that frighten you?",
+    "director": "Steven Spielberg",
+    "writer": "Steven Spielberg, David Koepp",
+    "cast": "Emily Blunt (Margaret Fairchild), Josh O'Connor (Daniel Kellner), Colin Firth (Noah Scanlon), Eve Hewson (Jane Blakenship), Colman Domingo (Hugo Wakefield), Wyatt Russell (Jackson), Henry Lloyd-Hughes, Elizabeth Marvel, Michael Gaston, Gabby Beans, Elliot Villar (Agent Diaz), Tommy Martinez (Dave)",
+    "cached_at": "2026-06-01T14:53:16.209504"
+  },
+  "bat-out-of-hell-the-musical": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/qOyrL8DxIYPbaNuiKqsggXsjxU3.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=LPrixtnWPm4",
+    "vote_average": 10.0,
+    "genres": [
+      "Music",
+      "Romance",
+      "Fantasy"
+    ],
+    "imdb_id": "tt37810842",
+    "overview": "Step into the dystopian city of Obsidian, where a rebellious gang called The Lost can never grow old. At the heart of this rock opera is a fiery romance between their leader, Strat, and Raven, the sheltered daughter of the city’s tyrannical ruler, Falco—a love story as defiant as the music itself.",
+    "director": "Jay Scheib",
+    "writer": "Jim Steinman",
+    "cast": "Glenn Adamson (Strat), Katie Tonkinson (Raven), Rob Fowler (Falco), Sharon Sexton (Sloane), Georgia Bradshaw (Zahara), Ryan Carter (Jagwire), Carla Bertran (Tink), Luke Street (Ledoux), Carly Burns (Valkyrie), Leo Abad (Denim), Joshua Dever (Hoffmann), Peter Camilleri (O'Dessasuite)",
+    "cached_at": "2026-06-01T14:53:16.487556"
   }
 }
