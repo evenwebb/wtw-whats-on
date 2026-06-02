@@ -476,7 +476,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-01T14:53:16.773450"
+    "cached_at": "2026-06-02T12:34:58.672092"
   },
   "la-fanciulla-del-west-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -524,7 +524,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-01T14:53:17.073371"
+    "cached_at": "2026-06-02T12:34:59.076806"
   },
   "swan-lake-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -560,7 +560,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-01T14:53:17.358095"
+    "cached_at": "2026-06-02T12:34:59.479594"
   },
   "backrooms": {
     "poster_url": "https://image.tmdb.org/t/p/w342/vpkNMkbisv5cTaIfCzUduYzXnjb.jpg",
@@ -713,5 +713,41 @@
     "writer": "Jim Steinman",
     "cast": "Glenn Adamson (Strat), Katie Tonkinson (Raven), Rob Fowler (Falco), Sharon Sexton (Sloane), Georgia Bradshaw (Zahara), Ryan Carter (Jagwire), Carla Bertran (Tink), Luke Street (Ledoux), Carly Burns (Valkyrie), Leo Abad (Denim), Joshua Dever (Hoffmann), Peter Camilleri (O'Dessasuite)",
     "cached_at": "2026-06-01T14:53:16.487556"
+  },
+  "verdi-s-aida-handa-opera-on-sydney-harbour-summer-season": {
+    "poster_url": "",
+    "trailer_url": "",
+    "vote_average": null,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-06-02T12:34:57.469360"
+  },
+  "puccini-s-turandot-handa-opera-on-sydney-harbour-summer-season": {
+    "poster_url": "",
+    "trailer_url": "",
+    "vote_average": null,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-06-02T12:34:57.948602"
+  },
+  "verdi-s-la-traviata-handa-opera-on-sydney-harbour-summer-season": {
+    "poster_url": "",
+    "trailer_url": "",
+    "vote_average": null,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-06-02T12:34:58.276136"
   }
 }
