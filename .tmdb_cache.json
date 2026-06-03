@@ -1,18 +1,4 @@
 {
-  "eugene-onegin-the-met-opera-rbo-2025-26-cinema-season": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/zvfz5Dds1LFtHv76XcSnYWjyoes.jpg",
-    "trailer_url": "",
-    "vote_average": 0.0,
-    "genres": [
-      "Music"
-    ],
-    "imdb_id": "",
-    "overview": "Tchaikovsky’s many moods—tender, grand, melancholy—are all given free rein in Eugene Onegin. The opera is based on Pushkin’s iconic verse novel, which reimagines the Byronic romantic anti-hero as the definitive bored Russian aristocrat caught between convention and ennui; Tchaikovsky, similarly, took Western European operatic forms and transformed them into an authentic and undeniably Russian work. At the core of the opera is the young girl Tatiana, who grows from a sentimental adolescent into a complete woman in one of the operatic stage’s most convincing character developments.",
-    "director": "Deborah Warner",
-    "writer": "Pyotr Ilyich Tchaikovsky, Alexander Pushkin",
-    "cast": "Timur Zangiev (Conductor), Asmik Grigorian (Tatiana), Maria Barakova (Olga), Larissa Diadkova (Filippyevna), Stanislas de Barbeyrac (Lenski), Iurii Samoilov (Eugene Onegin), Alexander Tsymbalyuk (Gremin)",
-    "cached_at": "2026-05-04T10:59:18.720878"
-  },
   "frida-kahlo-exhibition-on-screen": {
     "poster_url": "https://image.tmdb.org/t/p/w342/fzHHWd3dB2Dns936AWkEu7cJAUQ.jpg",
     "trailer_url": "https://www.youtube.com/watch?v=D76y2YhjV8A",
@@ -476,7 +462,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-02T12:34:58.672092"
+    "cached_at": "2026-06-03T13:10:36.468708"
   },
   "la-fanciulla-del-west-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -524,7 +510,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-02T12:34:59.076806"
+    "cached_at": "2026-06-03T13:10:36.705456"
   },
   "swan-lake-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -560,7 +546,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-02T12:34:59.479594"
+    "cached_at": "2026-06-03T13:10:36.937837"
   },
   "backrooms": {
     "poster_url": "https://image.tmdb.org/t/p/w342/vpkNMkbisv5cTaIfCzUduYzXnjb.jpg",
@@ -749,5 +735,22 @@
     "writer": "",
     "cast": "",
     "cached_at": "2026-06-02T12:34:58.276136"
+  },
+  "toy-story-5": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/7BuN6lQCAq1tLz2l3g6sHVSFGib.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=rbIgbuxz4vk",
+    "vote_average": 0.0,
+    "genres": [
+      "Animation",
+      "Family",
+      "Comedy",
+      "Adventure"
+    ],
+    "imdb_id": "tt29355505",
+    "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
+    "director": "Andrew Stanton",
+    "writer": "Andrew Stanton, Kenna Harris",
+    "cast": "Tom Hanks (Woody (voice)), Tim Allen (Buzz Lightyear (voice)), Joan Cusack (Jessie (voice)), Greta Lee (Lilypad (voice)), Conan O'Brien (Smarty Pants (voice)), Craig Robinson (Atlas (voice)), Shelby Rabara (Snappy (voice)), Tony Hale (Forky (voice)), Scarlett Spears (Bonnie (voice)), Jay Hernandez (Bonnie’s Dad (voice)), Lori Alan (Bonnie's Mom (voice)), Bonnie Hunt (Dolly (voice))",
+    "cached_at": "2026-06-03T13:10:36.224140"
   }
 }
