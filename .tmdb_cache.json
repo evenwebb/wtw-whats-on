@@ -1,33 +1,4 @@
 {
-  "frida-kahlo-exhibition-on-screen": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/fzHHWd3dB2Dns936AWkEu7cJAUQ.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=D76y2YhjV8A",
-    "vote_average": 7.2,
-    "genres": [
-      "Documentary"
-    ],
-    "imdb_id": "tt13011980",
-    "overview": "She was a prolific self-portraitist, using the canvas as a mirror through all stages of her turbulent and, at times, tragic life. This highly engaging film takes us on a journey through the life of one of the most prevalent female icons: Frida Kahlo. Displaying a treasure trove of colour and a feast of vibrancy on screen, this personal and intimate film offers privileged access to her works and highlights the source of her feverish creativity, her resilience and her unmatched lust for life, men, women, politics and her cultural heritage.",
-    "director": "Ali Ray",
-    "writer": "",
-    "cast": "Frida Kahlo (Self (archive footage))",
-    "cached_at": "2026-05-05T10:28:29.741464"
-  },
-  "iron-maiden-burning-ambition": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/yZqhFJDenLfgF1VygOOCNmAdS1P.jpg",
-    "trailer_url": "",
-    "vote_average": 0.0,
-    "genres": [
-      "Documentary",
-      "Music"
-    ],
-    "imdb_id": "tt36163614",
-    "overview": "With unprecedented access to the official archives and intimate recollections from the band, both current and past,  Iron Maiden: Burning Ambition invites fans to experience one of the most iconic journeys in music history.  Spanning five decades, this electrifying documentary charts the band’s rise from the pubs of East London to the world’s biggest stadiums. Featuring exclusive interviews with band members and contributors such as Javier Bardem, Lars Ulrich and Chuck D, as well as all-new animated sequences of the band's legendary mascot, Eddie, the film offers a rare and intimate look at Iron Maiden’s uncompromising vision and unwavering connection with their truly global army of fans.",
-    "director": "Malcolm Venville",
-    "writer": "David Teague",
-    "cast": "Steve Harris (Self), Bruce Dickinson (Self), Nicko McBrain (Self), Adrian Smith (Self), Dave Murray (Self), Janick Gers (Self), Blaze Bayley (Self), Rod Smallwood (Self), Chuck D (Self), Simon Gallup (Self), Scott Ian (Self), Tom Morello (Self)",
-    "cached_at": "2026-05-06T10:59:27.325353"
-  },
   "top-hat-the-musical": {
     "poster_url": "",
     "trailer_url": "",
@@ -42,7 +13,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-05-28T12:20:34.874847"
+    "cached_at": "2026-06-05T11:56:33.945396"
   },
   "charlie-the-wonderdog": {
     "poster_url": "https://image.tmdb.org/t/p/w342/whvkL0wzxgKmVbaPontq9NlVd5z.jpg",
@@ -87,7 +58,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-05-28T12:20:35.406843"
+    "cached_at": "2026-06-05T11:56:34.120674"
   },
   "renoir-love-exhibition-on-screen": {
     "poster_url": "",
@@ -99,7 +70,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-05-28T12:20:35.546232"
+    "cached_at": "2026-06-05T11:56:34.273525"
   },
   "monet-exhibition-on-screen": {
     "poster_url": "https://image.tmdb.org/t/p/w342/cYKPVyJLtSwMZ3cs46jCQOdLOIB.jpg",
@@ -236,7 +207,7 @@
     "cached_at": "2026-05-19T11:55:39.351420"
   },
   "andr-rieu-s-2026-summer-concert-viva-maastricht": {
-    "poster_url": "",
+    "poster_url": "https://image.tmdb.org/t/p/w342/sl8Rs0d5dQbnCN5Cf5CCarfzlW0.jpg",
     "trailer_url": "",
     "vote_average": 0.0,
     "genres": [],
@@ -244,8 +215,8 @@
     "overview": "",
     "director": "",
     "writer": "",
-    "cast": "André Rieu",
-    "cached_at": "2026-05-28T12:20:31.816624"
+    "cast": "André Rieu (Himself)",
+    "cached_at": "2026-06-05T11:56:31.087478"
   },
   "passenger": {
     "poster_url": "https://image.tmdb.org/t/p/w342/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
@@ -426,7 +397,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-05-28T12:20:32.018985"
+    "cached_at": "2026-06-05T11:56:31.244308"
   },
   "manon-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -438,7 +409,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-05-28T12:20:32.147083"
+    "cached_at": "2026-06-05T11:56:31.421799"
   },
   "carmen-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -450,7 +421,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-05-28T12:20:32.270789"
+    "cached_at": "2026-06-05T11:56:31.581405"
   },
   "the-nutcracker-royal-ballet-opera-26-27-season": {
     "poster_url": "https://image.tmdb.org/t/p/w342/dKfjjTLVyMcZNNSok0EkNNr6AEK.jpg",
@@ -462,7 +433,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-03T13:10:36.468708"
+    "cached_at": "2026-06-05T11:56:31.887425"
   },
   "la-fanciulla-del-west-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -474,7 +445,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-05-28T12:20:32.670841"
+    "cached_at": "2026-06-05T11:56:32.050134"
   },
   "g-tterd-mmerung-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -486,7 +457,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-05-28T12:20:32.798632"
+    "cached_at": "2026-06-05T11:56:32.201912"
   },
   "cos-fan-tutte-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -498,7 +469,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-05-28T12:20:32.923914"
+    "cached_at": "2026-06-05T11:56:32.358950"
   },
   "alice-s-adventures-in-wonderland-royal-ballet-opera-26-27-season": {
     "poster_url": "https://image.tmdb.org/t/p/w342/5objvLeZTI5oBGHeu5D2hG0EksB.jpg",
@@ -510,7 +481,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-03T13:10:36.705456"
+    "cached_at": "2026-06-05T11:56:32.665498"
   },
   "swan-lake-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -522,7 +493,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-05-28T12:20:33.304324"
+    "cached_at": "2026-06-05T11:56:32.835392"
   },
   "tosca-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -534,7 +505,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-05-28T12:20:33.429137"
+    "cached_at": "2026-06-05T11:56:32.990429"
   },
   "romeo-and-juliet-royal-ballet-opera-26-27-season": {
     "poster_url": "https://image.tmdb.org/t/p/w342/eCZpBsBQhdBPCDEjX1DOtf9qcfW.jpg",
@@ -546,7 +517,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-03T13:10:36.937837"
+    "cached_at": "2026-06-05T11:56:33.302996"
   },
   "backrooms": {
     "poster_url": "https://image.tmdb.org/t/p/w342/vpkNMkbisv5cTaIfCzUduYzXnjb.jpg",
@@ -603,7 +574,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-05-28T12:20:34.631220"
+    "cached_at": "2026-06-05T11:56:33.642563"
   },
   "event-horizon-pat-s-horror-film-club": {
     "poster_url": "https://image.tmdb.org/t/p/w342/qfluaDXv0cIdLwgQWzNB2piHL2q.jpg",
