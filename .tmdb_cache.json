@@ -216,7 +216,7 @@
     "director": "",
     "writer": "",
     "cast": "André Rieu (Himself)",
-    "cached_at": "2026-06-05T11:56:31.087478"
+    "cached_at": "2026-06-06T10:50:05.196364"
   },
   "passenger": {
     "poster_url": "https://image.tmdb.org/t/p/w342/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
@@ -433,7 +433,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-05T11:56:31.887425"
+    "cached_at": "2026-06-06T10:50:05.929527"
   },
   "la-fanciulla-del-west-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -481,7 +481,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-05T11:56:32.665498"
+    "cached_at": "2026-06-06T10:50:06.284324"
   },
   "swan-lake-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -517,7 +517,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-05T11:56:33.302996"
+    "cached_at": "2026-06-06T10:50:06.641622"
   },
   "backrooms": {
     "poster_url": "https://image.tmdb.org/t/p/w342/vpkNMkbisv5cTaIfCzUduYzXnjb.jpg",
@@ -723,5 +723,41 @@
     "writer": "Andrew Stanton, Kenna Harris",
     "cast": "Tom Hanks (Woody (voice)), Tim Allen (Buzz Lightyear (voice)), Joan Cusack (Jessie (voice)), Greta Lee (Lilypad (voice)), Conan O'Brien (Smarty Pants (voice)), Craig Robinson (Atlas (voice)), Shelby Rabara (Snappy (voice)), Tony Hale (Forky (voice)), Scarlett Spears (Bonnie (voice)), Jay Hernandez (Bonnie’s Dad (voice)), Lori Alan (Bonnie's Mom (voice)), Bonnie Hunt (Dolly (voice))",
     "cached_at": "2026-06-03T13:10:36.224140"
+  },
+  "aida-on-sydney-harbour": {
+    "poster_url": "",
+    "trailer_url": "",
+    "vote_average": null,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-06-06T10:50:04.486194"
+  },
+  "turandot-on-sydney-harbour": {
+    "poster_url": "",
+    "trailer_url": "",
+    "vote_average": null,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-06-06T10:50:04.656886"
+  },
+  "la-traviata-on-sydney-harbour": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/srA6DFO3jknyhdaoocGD2wuEska.jpg",
+    "trailer_url": "",
+    "vote_average": 0.0,
+    "genres": [],
+    "imdb_id": "tt2814162",
+    "overview": "La Traviata, one of the world's best-loved romantic operas is performed under the stars on a floating, mirrored stage in Sydney Harbor, with the city, Opera House and Harbor Bridge acting as a stunning backdrop. Giuseppe Verdi's captivating music is performed with the orchestra concealed in a studio beneath the stage to ensure the finest amplified sound combines with the superlative singing of the cast.",
+    "director": "Brian Castles Onion",
+    "writer": "Francesco Maria Piave, Alexandre Dumas fils",
+    "cast": "Emma Matthews, Gianluca Terranova, Jonathan Summers, Margaret Plummer",
+    "cached_at": "2026-06-06T10:50:05.554229"
   }
 }

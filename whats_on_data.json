@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-05T11:56:24Z",
+  "updated_at": "2026-06-06T10:50:01Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -15,32 +15,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/masters-of-the-universe/?screen=st-austell",
           "poster_url": "posters/masters-of-the-universe.jpg",
           "showtimes": [
-            {
-              "date": "2026-06-05",
-              "time": "16:00",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77510&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-06-05",
-              "time": "19:15",
-              "screen": 1,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77509&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-06-06",
               "time": "12:45",
@@ -228,6 +202,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=77574&screen=staustell",
               "tags": [
+                "Audio Description",
                 "Subtitles",
                 "Wheelchair access",
                 "2D"
@@ -256,19 +231,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/scary-movie/?screen=st-austell",
           "poster_url": "posters/scary-movie.jpg",
           "showtimes": [
-            {
-              "date": "2026-06-05",
-              "time": "20:15",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77540&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-06-06",
               "time": "20:15",
@@ -369,18 +331,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/savage-house/?screen=st-austell",
           "poster_url": "posters/savage-house.jpg",
           "showtimes": [
-            {
-              "date": "2026-06-05",
-              "time": "17:30",
-              "screen": 4,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77539&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-06-06",
               "time": "14:45",
@@ -487,20 +437,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-mandalorian-and-grogu/?screen=st-austell",
           "poster_url": "posters/the-mandalorian-and-grogu.jpg",
           "showtimes": [
-            {
-              "date": "2026-06-05",
-              "time": "17:00",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77536&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-06-06",
               "time": "14:00",
@@ -751,19 +687,6 @@
           "poster_url": "posters/power-ballad.jpg",
           "showtimes": [
             {
-              "date": "2026-06-05",
-              "time": "17:15",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77538&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-06-06",
               "time": "17:15",
               "screen": 3,
@@ -825,19 +748,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/backrooms/?screen=st-austell",
           "poster_url": "posters/backrooms.jpg",
           "showtimes": [
-            {
-              "date": "2026-06-05",
-              "time": "20:00",
-              "screen": 2,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77537&screen=staustell",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-06-06",
               "time": "20:00",
@@ -939,18 +849,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-amazing-digital-circus-the-last-act/?screen=st-austell",
           "poster_url": "posters/the-amazing-digital-circus-the-last-act.jpg",
           "showtimes": [
-            {
-              "date": "2026-06-05",
-              "time": "19:30",
-              "screen": 3,
-              "cinema_name": "White River Cinema, St Austell",
-              "cinema_url": "https://wtwcinemas.co.uk/st-austell/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=77205&screen=staustell",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-06-06",
               "time": "19:30",
@@ -1475,8 +1373,8 @@
           "writer": "Choderlos de Laclos"
         },
         {
-          "title": "Verdi’s Aida: Handa Opera on Sydney Harbour - Summer Season",
-          "search_title": "Verdi’s Aida: Handa Opera on Sydney Harbour - Summer Season",
+          "title": "Aida on Sydney Harbour",
+          "search_title": "Aida on Sydney Harbour",
           "film_slug": "verdis-aida-handa-opera-on-sydney-harbour-summer-season",
           "synopsis": "In Aida, Verdi masterfully pits the intimate affairs of the heart against the grandeur of the universe: where kingdoms rise and fall and the sands...",
           "cast": "",
@@ -1526,7 +1424,8 @@
               "tags": [
                 "Wheelchair access",
                 "2D",
-                "Event cinema"
+                "Event cinema",
+                "Strobe Light warning"
               ]
             }
           ],
@@ -1543,8 +1442,8 @@
           "writer": "Jim Steinman"
         },
         {
-          "title": "Puccini’s Turandot: Handa Opera on Sydney Harbour - Summer Season",
-          "search_title": "Puccini’s Turandot: Handa Opera on Sydney Harbour - Summer Season",
+          "title": "Turandot on Sydney Harbour",
+          "search_title": "Turandot on Sydney Harbour",
           "film_slug": "puccinis-turandot-handa-opera-on-sydney-harbour-summer-season",
           "synopsis": "This Handa Opera on Sydney Harbour production, directed by Chen Shi-Zheng, is known for its lavish sets, including a 25-meter dragon and a 20-meter pagoda,...",
           "cast": "",
@@ -1620,14 +1519,14 @@
           "writer": ""
         },
         {
-          "title": "Verdi’s La Traviata: Handa Opera on Sydney Harbour - Summer Season",
-          "search_title": "Verdi’s La Traviata: Handa Opera on Sydney Harbour - Summer Season",
+          "title": "La Traviata on Sydney Harbour",
+          "search_title": "La Traviata on Sydney Harbour",
           "film_slug": "verdis-la-traviata-handa-opera-on-sydney-harbour-summer-season",
           "synopsis": "Verdi's hugely popular La Traviata returns to the Sydney Harbour water stage featuring a breath-taking soaring 9 metre high, 3.5 ton chandelier covered in 10,000...",
-          "cast": "",
+          "cast": "Emma Matthews, Gianluca Terranova, Jonathan Summers, Margaret Plummer",
           "runtime_min": 145,
           "film_url": "https://wtwcinemas.co.uk/film/verdis-la-traviata-handa-opera-on-sydney-harbour-summer-season/?screen=st-austell",
-          "poster_url": "posters/placeholder.svg",
+          "poster_url": "posters/verdis-la-traviata-handa-opera-on-sydney-harbour-summer-season.jpg",
           "showtimes": [
             {
               "date": "2026-09-03",
@@ -1644,12 +1543,12 @@
             }
           ],
           "trailer_url": "",
-          "vote_average": null,
+          "vote_average": 0.0,
           "genres": [],
-          "imdb_id": "",
-          "overview": "",
-          "director": "",
-          "writer": ""
+          "imdb_id": "tt2814162",
+          "overview": "La Traviata, one of the world's best-loved romantic operas is performed under the stars on a floating, mirrored stage in Sydney Harbor, with the city, Opera House and Harbor Bridge acting as a stunning backdrop. Giuseppe Verdi's captivating music is performed with the orchestra concealed in a studio beneath the stage to ensure the finest amplified sound combines with the superlative singing of the cast.",
+          "director": "Brian Castles Onion",
+          "writer": "Francesco Maria Piave, Alexandre Dumas fils"
         },
         {
           "title": "Macbeth - Royal Ballet & Opera 26-27 Season",
@@ -2017,7 +1916,7 @@
         "primary_selector_nodes": 29,
         "fallback_selector_nodes": 0,
         "parsed_films": 29,
-        "parsed_showtimes": 108
+        "parsed_showtimes": 100
       }
     },
     "newquay": {
@@ -2034,45 +1933,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/masters-of-the-universe/?screen=newquay",
           "poster_url": "posters/masters-of-the-universe.jpg",
           "showtimes": [
-            {
-              "date": "2026-06-05",
-              "time": "12:45",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-06-05",
-              "time": "16:00",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65890&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-06-05",
-              "time": "19:15",
-              "screen": 1,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65889&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-06-06",
               "time": "12:45",
@@ -2312,6 +2172,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=65922&screen=newquay",
               "tags": [
+                "Audio Description",
                 "Subtitles",
                 "Wheelchair access",
                 "2D"
@@ -2340,19 +2201,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/scary-movie/?screen=newquay",
           "poster_url": "posters/scary-movie.jpg",
           "showtimes": [
-            {
-              "date": "2026-06-05",
-              "time": "20:15",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65942&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-06-06",
               "time": "20:15",
@@ -2453,34 +2301,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-mandalorian-and-grogu/?screen=newquay",
           "poster_url": "posters/the-mandalorian-and-grogu.jpg",
           "showtimes": [
-            {
-              "date": "2026-06-05",
-              "time": "14:15",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65931&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-06-05",
-              "time": "17:15",
-              "screen": 2,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65932&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-06-06",
               "time": "14:15",
@@ -2730,32 +2550,6 @@
           "poster_url": "posters/backrooms.jpg",
           "showtimes": [
             {
-              "date": "2026-06-05",
-              "time": "17:00",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65962&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-06-05",
-              "time": "20:00",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65958&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-06-06",
               "time": "17:00",
               "screen": 4,
@@ -2896,19 +2690,6 @@
           "poster_url": "posters/tuner.jpg",
           "showtimes": [
             {
-              "date": "2026-06-05",
-              "time": "17:30",
-              "screen": 3,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65949&screen=newquay",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-06-06",
               "time": "17:30",
               "screen": 3,
@@ -3047,18 +2828,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-amazing-digital-circus-the-last-act/?screen=newquay",
           "poster_url": "posters/the-amazing-digital-circus-the-last-act.jpg",
           "showtimes": [
-            {
-              "date": "2026-06-05",
-              "time": "19:30",
-              "screen": 4,
-              "cinema_name": "Lighthouse Cinema, Newquay",
-              "cinema_url": "https://wtwcinemas.co.uk/newquay/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=65598&screen=newquay",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-06-06",
               "time": "19:30",
@@ -4114,7 +3883,7 @@
         "primary_selector_nodes": 25,
         "fallback_selector_nodes": 0,
         "parsed_films": 25,
-        "parsed_showtimes": 120
+        "parsed_showtimes": 110
       }
     },
     "truro": {
@@ -4131,32 +3900,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/masters-of-the-universe/?screen=truro",
           "poster_url": "posters/masters-of-the-universe.jpg",
           "showtimes": [
-            {
-              "date": "2026-06-05",
-              "time": "16:45",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120863&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-06-05",
-              "time": "19:45",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120839&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-06-06",
               "time": "13:15",
@@ -4370,6 +4113,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120841&screen=truro",
               "tags": [
+                "Audio Description",
                 "Subtitles",
                 "Wheelchair access",
                 "2D"
@@ -4398,31 +4142,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/scary-movie/?screen=truro",
           "poster_url": "posters/scary-movie.jpg",
           "showtimes": [
-            {
-              "date": "2026-06-05",
-              "time": "17:45",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120899&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-06-05",
-              "time": "20:30",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120889&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-06-06",
               "time": "17:45",
@@ -4607,34 +4326,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-mandalorian-and-grogu/?screen=truro",
           "poster_url": "posters/the-mandalorian-and-grogu.jpg",
           "showtimes": [
-            {
-              "date": "2026-06-05",
-              "time": "16:30",
-              "screen": 1,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120832&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
-            {
-              "date": "2026-06-05",
-              "time": "20:00",
-              "screen": 3,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120870&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-06-06",
               "time": "13:45",
@@ -4977,31 +4668,6 @@
           "poster_url": "posters/backrooms.jpg",
           "showtimes": [
             {
-              "date": "2026-06-05",
-              "time": "17:00",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120848&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-06-05",
-              "time": "20:15",
-              "screen": 5,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120906&screen=truro",
-              "tags": [
-                "Audio Description",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-06-06",
               "time": "17:00",
               "screen": 2,
@@ -5163,19 +4829,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/tuner/?screen=truro",
           "poster_url": "posters/tuner.jpg",
           "showtimes": [
-            {
-              "date": "2026-06-05",
-              "time": "18:00",
-              "screen": 4,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120882&screen=truro",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-06-06",
               "time": "14:45",
@@ -5399,18 +5052,6 @@
           "poster_url": "posters/the-amazing-digital-circus-the-last-act.jpg",
           "showtimes": [
             {
-              "date": "2026-06-05",
-              "time": "19:30",
-              "screen": 2,
-              "cinema_name": "Plaza Cinema, Truro",
-              "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=120823&screen=truro",
-              "tags": [
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
               "date": "2026-06-06",
               "time": "19:30",
               "screen": 2,
@@ -5610,7 +5251,7 @@
           "film_slug": "angels-egg-anime-season",
           "synopsis": "In the ruins of a strange city, a young girl takes care of a large egg she holds carefully in her arms. She bonds with...",
           "cast": "Keiichi Noda (Narrator (voice)), Mako Hyodo (Girl (voice)), Jinpachi Nezu (Man (voice))",
-          "runtime_min": 71,
+          "runtime_min": 85,
           "film_url": "https://wtwcinemas.co.uk/film/angels-egg-anime-season/?screen=truro",
           "poster_url": "posters/angels-egg-anime-season.jpg",
           "showtimes": [
@@ -5634,6 +5275,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/truro/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=120687&screen=truro",
               "tags": [
+                "Subtitles",
                 "Wheelchair access",
                 "2D"
               ]
@@ -5735,8 +5377,8 @@
           "writer": "Philip Eisner"
         },
         {
-          "title": "Verdi’s Aida: Handa Opera on Sydney Harbour - Summer Season",
-          "search_title": "Verdi’s Aida: Handa Opera on Sydney Harbour - Summer Season",
+          "title": "Aida on Sydney Harbour",
+          "search_title": "Aida on Sydney Harbour",
           "film_slug": "verdis-aida-handa-opera-on-sydney-harbour-summer-season",
           "synopsis": "In Aida, Verdi masterfully pits the intimate affairs of the heart against the grandeur of the universe: where kingdoms rise and fall and the sands...",
           "cast": "",
@@ -5767,8 +5409,8 @@
           "writer": ""
         },
         {
-          "title": "Puccini’s Turandot: Handa Opera on Sydney Harbour - Summer Season",
-          "search_title": "Puccini’s Turandot: Handa Opera on Sydney Harbour - Summer Season",
+          "title": "Turandot on Sydney Harbour",
+          "search_title": "Turandot on Sydney Harbour",
           "film_slug": "puccinis-turandot-handa-opera-on-sydney-harbour-summer-season",
           "synopsis": "This Handa Opera on Sydney Harbour production, directed by Chen Shi-Zheng, is known for its lavish sets, including a 25-meter dragon and a 20-meter pagoda,...",
           "cast": "",
@@ -5844,14 +5486,14 @@
           "writer": ""
         },
         {
-          "title": "Verdi’s La Traviata: Handa Opera on Sydney Harbour - Summer Season",
-          "search_title": "Verdi’s La Traviata: Handa Opera on Sydney Harbour - Summer Season",
+          "title": "La Traviata on Sydney Harbour",
+          "search_title": "La Traviata on Sydney Harbour",
           "film_slug": "verdis-la-traviata-handa-opera-on-sydney-harbour-summer-season",
           "synopsis": "Verdi's hugely popular La Traviata returns to the Sydney Harbour water stage featuring a breath-taking soaring 9 metre high, 3.5 ton chandelier covered in 10,000...",
-          "cast": "",
+          "cast": "Emma Matthews, Gianluca Terranova, Jonathan Summers, Margaret Plummer",
           "runtime_min": 145,
           "film_url": "https://wtwcinemas.co.uk/film/verdis-la-traviata-handa-opera-on-sydney-harbour-summer-season/?screen=truro",
-          "poster_url": "posters/placeholder.svg",
+          "poster_url": "posters/verdis-la-traviata-handa-opera-on-sydney-harbour-summer-season.jpg",
           "showtimes": [
             {
               "date": "2026-09-03",
@@ -5867,13 +5509,13 @@
               ]
             }
           ],
+          "vote_average": 0.0,
+          "imdb_id": "tt2814162",
+          "overview": "La Traviata, one of the world's best-loved romantic operas is performed under the stars on a floating, mirrored stage in Sydney Harbor, with the city, Opera House and Harbor Bridge acting as a stunning backdrop. Giuseppe Verdi's captivating music is performed with the orchestra concealed in a studio beneath the stage to ensure the finest amplified sound combines with the superlative singing of the cast.",
+          "director": "Brian Castles Onion",
+          "writer": "Francesco Maria Piave, Alexandre Dumas fils",
           "trailer_url": "",
-          "vote_average": null,
-          "genres": [],
-          "imdb_id": "",
-          "overview": "",
-          "director": "",
-          "writer": ""
+          "genres": []
         },
         {
           "title": "James McNeill Whistler - Exhibition On Screen",
@@ -6373,12 +6015,12 @@
       ],
       "_health": {
         "parser_mode": "primary",
-        "raw_cards": 36,
-        "selector_film_nodes": 36,
-        "primary_selector_nodes": 36,
+        "raw_cards": 37,
+        "selector_film_nodes": 37,
+        "primary_selector_nodes": 37,
         "fallback_selector_nodes": 0,
         "parsed_films": 35,
-        "parsed_showtimes": 117
+        "parsed_showtimes": 107
       }
     },
     "wadebridge": {
@@ -6395,32 +6037,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/masters-of-the-universe/?screen=wadebridge",
           "poster_url": "posters/masters-of-the-universe.jpg",
           "showtimes": [
-            {
-              "date": "2026-06-05",
-              "time": "16:15",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28931&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
-            {
-              "date": "2026-06-05",
-              "time": "19:30",
-              "screen": 1,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28932&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-06-06",
               "time": "16:15",
@@ -6569,6 +6185,7 @@
               "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
               "booking_url": "https://wtwcinemas.co.uk/book?performance=28945&screen=wadebridge",
               "tags": [
+                "Audio Description",
                 "Subtitles",
                 "Wheelchair access",
                 "2D"
@@ -6597,20 +6214,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/the-mandalorian-and-grogu/?screen=wadebridge",
           "poster_url": "posters/the-mandalorian-and-grogu.jpg",
           "showtimes": [
-            {
-              "date": "2026-06-05",
-              "time": "17:00",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28933&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D",
-                "Strobe Light warning"
-              ]
-            },
             {
               "date": "2026-06-06",
               "time": "14:00",
@@ -6753,19 +6356,6 @@
           "film_url": "https://wtwcinemas.co.uk/film/backrooms/?screen=wadebridge",
           "poster_url": "posters/backrooms.jpg",
           "showtimes": [
-            {
-              "date": "2026-06-05",
-              "time": "20:00",
-              "screen": 2,
-              "cinema_name": "Regal Cinema, Wadebridge",
-              "cinema_url": "https://wtwcinemas.co.uk/wadebridge/whats-on/",
-              "booking_url": "https://wtwcinemas.co.uk/book?performance=28934&screen=wadebridge",
-              "tags": [
-                "Audio Description",
-                "Wheelchair access",
-                "2D"
-              ]
-            },
             {
               "date": "2026-06-06",
               "time": "20:00",
@@ -7413,8 +7003,8 @@
           "writer": "Choderlos de Laclos"
         },
         {
-          "title": "Verdi’s Aida: Handa Opera on Sydney Harbour - Summer Season",
-          "search_title": "Verdi’s Aida: Handa Opera on Sydney Harbour - Summer Season",
+          "title": "Aida on Sydney Harbour",
+          "search_title": "Aida on Sydney Harbour",
           "film_slug": "verdis-aida-handa-opera-on-sydney-harbour-summer-season",
           "synopsis": "In Aida, Verdi masterfully pits the intimate affairs of the heart against the grandeur of the universe: where kingdoms rise and fall and the sands...",
           "cast": "",
@@ -7445,8 +7035,8 @@
           "writer": ""
         },
         {
-          "title": "Puccini’s Turandot: Handa Opera on Sydney Harbour - Summer Season",
-          "search_title": "Puccini’s Turandot: Handa Opera on Sydney Harbour - Summer Season",
+          "title": "Turandot on Sydney Harbour",
+          "search_title": "Turandot on Sydney Harbour",
           "film_slug": "puccinis-turandot-handa-opera-on-sydney-harbour-summer-season",
           "synopsis": "This Handa Opera on Sydney Harbour production, directed by Chen Shi-Zheng, is known for its lavish sets, including a 25-meter dragon and a 20-meter pagoda,...",
           "cast": "",
@@ -7522,14 +7112,14 @@
           "writer": ""
         },
         {
-          "title": "Verdi’s La Traviata: Handa Opera on Sydney Harbour - Summer Season",
-          "search_title": "Verdi’s La Traviata: Handa Opera on Sydney Harbour - Summer Season",
+          "title": "La Traviata on Sydney Harbour",
+          "search_title": "La Traviata on Sydney Harbour",
           "film_slug": "verdis-la-traviata-handa-opera-on-sydney-harbour-summer-season",
           "synopsis": "Verdi's hugely popular La Traviata returns to the Sydney Harbour water stage featuring a breath-taking soaring 9 metre high, 3.5 ton chandelier covered in 10,000...",
-          "cast": "",
+          "cast": "Emma Matthews, Gianluca Terranova, Jonathan Summers, Margaret Plummer",
           "runtime_min": 145,
           "film_url": "https://wtwcinemas.co.uk/film/verdis-la-traviata-handa-opera-on-sydney-harbour-summer-season/?screen=wadebridge",
-          "poster_url": "posters/placeholder.svg",
+          "poster_url": "posters/verdis-la-traviata-handa-opera-on-sydney-harbour-summer-season.jpg",
           "showtimes": [
             {
               "date": "2026-09-03",
@@ -7545,13 +7135,13 @@
               ]
             }
           ],
+          "vote_average": 0.0,
+          "imdb_id": "tt2814162",
+          "overview": "La Traviata, one of the world's best-loved romantic operas is performed under the stars on a floating, mirrored stage in Sydney Harbor, with the city, Opera House and Harbor Bridge acting as a stunning backdrop. Giuseppe Verdi's captivating music is performed with the orchestra concealed in a studio beneath the stage to ensure the finest amplified sound combines with the superlative singing of the cast.",
+          "director": "Brian Castles Onion",
+          "writer": "Francesco Maria Piave, Alexandre Dumas fils",
           "trailer_url": "",
-          "vote_average": null,
-          "genres": [],
-          "imdb_id": "",
-          "overview": "",
-          "director": "",
-          "writer": ""
+          "genres": []
         },
         {
           "title": "James McNeill Whistler - Exhibition On Screen",
@@ -8056,7 +7646,7 @@
         "primary_selector_nodes": 27,
         "fallback_selector_nodes": 0,
         "parsed_films": 27,
-        "parsed_showtimes": 86
+        "parsed_showtimes": 82
       }
     }
   }
