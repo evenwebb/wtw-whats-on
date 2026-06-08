@@ -216,7 +216,7 @@
     "director": "",
     "writer": "",
     "cast": "André Rieu (Himself)",
-    "cached_at": "2026-06-07T11:02:23.936856"
+    "cached_at": "2026-06-08T12:59:58.548057"
   },
   "passenger": {
     "poster_url": "https://image.tmdb.org/t/p/w342/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
@@ -433,7 +433,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-07T11:02:24.736667"
+    "cached_at": "2026-06-08T12:59:59.389840"
   },
   "la-fanciulla-del-west-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -481,7 +481,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-07T11:02:25.140522"
+    "cached_at": "2026-06-08T12:59:59.788372"
   },
   "swan-lake-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -517,7 +517,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-07T11:02:25.540007"
+    "cached_at": "2026-06-08T13:00:00.273730"
   },
   "backrooms": {
     "poster_url": "https://image.tmdb.org/t/p/w342/vpkNMkbisv5cTaIfCzUduYzXnjb.jpg",
@@ -756,8 +756,32 @@
     "imdb_id": "tt2814162",
     "overview": "La Traviata, one of the world's best-loved romantic operas is performed under the stars on a floating, mirrored stage in Sydney Harbor, with the city, Opera House and Harbor Bridge acting as a stunning backdrop. Giuseppe Verdi's captivating music is performed with the orchestra concealed in a studio beneath the stage to ensure the finest amplified sound combines with the superlative singing of the cast.",
     "director": "Brian Castles Onion",
-    "writer": "Alexandre Dumas fils, Francesco Maria Piave",
+    "writer": "Francesco Maria Piave, Alexandre Dumas fils",
     "cast": "Emma Matthews, Gianluca Terranova, Jonathan Summers, Margaret Plummer",
-    "cached_at": "2026-06-07T11:02:24.339087"
+    "cached_at": "2026-06-08T12:59:58.951869"
+  },
+  "toy-story-5-autism-friendly-screening": {
+    "poster_url": "",
+    "trailer_url": "",
+    "vote_average": null,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-06-08T13:00:00.480423"
+  },
+  "scary-movie-subtitled": {
+    "poster_url": "",
+    "trailer_url": "",
+    "vote_average": null,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-06-08T13:00:00.725442"
   }
 }
