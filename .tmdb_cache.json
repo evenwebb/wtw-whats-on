@@ -216,7 +216,7 @@
     "director": "",
     "writer": "",
     "cast": "André Rieu (Himself)",
-    "cached_at": "2026-06-08T12:59:58.548057"
+    "cached_at": "2026-06-09T11:54:01.459846"
   },
   "passenger": {
     "poster_url": "https://image.tmdb.org/t/p/w342/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
@@ -433,7 +433,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-08T12:59:59.389840"
+    "cached_at": "2026-06-09T11:54:02.697227"
   },
   "la-fanciulla-del-west-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -481,7 +481,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-08T12:59:59.788372"
+    "cached_at": "2026-06-09T11:54:03.128802"
   },
   "swan-lake-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -517,7 +517,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-08T13:00:00.273730"
+    "cached_at": "2026-06-09T11:54:03.532308"
   },
   "backrooms": {
     "poster_url": "https://image.tmdb.org/t/p/w342/vpkNMkbisv5cTaIfCzUduYzXnjb.jpg",
@@ -756,9 +756,9 @@
     "imdb_id": "tt2814162",
     "overview": "La Traviata, one of the world's best-loved romantic operas is performed under the stars on a floating, mirrored stage in Sydney Harbor, with the city, Opera House and Harbor Bridge acting as a stunning backdrop. Giuseppe Verdi's captivating music is performed with the orchestra concealed in a studio beneath the stage to ensure the finest amplified sound combines with the superlative singing of the cast.",
     "director": "Brian Castles Onion",
-    "writer": "Francesco Maria Piave, Alexandre Dumas fils",
+    "writer": "Alexandre Dumas fils, Francesco Maria Piave",
     "cast": "Emma Matthews, Gianluca Terranova, Jonathan Summers, Margaret Plummer",
-    "cached_at": "2026-06-08T12:59:58.951869"
+    "cached_at": "2026-06-09T11:54:01.857563"
   },
   "toy-story-5-autism-friendly-screening": {
     "poster_url": "",
@@ -783,5 +783,20 @@
     "writer": "",
     "cast": "",
     "cached_at": "2026-06-08T13:00:00.725442"
+  },
+  "national-theatre-live-the-misanthrope": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/zExQKzIX12WKETFqpwlCEjoD3KF.jpg",
+    "trailer_url": "",
+    "vote_average": 0.0,
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "imdb_id": "tt42715304",
+    "overview": "Alice, a brilliant novelist, despises the hollow contemporary mantras of kindness and respect. But the bolder she becomes in speaking out, the more colleagues avoid her, and the more her personal relationships begin to fracture. As she challenges fashionable ideas and lends her voice to causes others are afraid to touch, she faces intense criticism and backlash. Alice will soon learn the price she must pay as an artist and as a woman for daring to speak her mind. Award-winner Sandra Oh is the Misanthrope in Martin Crimp's cutting new version of Molière's dark comedy, directed by National Theatre Director Indhu Rubasingham.",
+    "director": "Indhu Rubasingham",
+    "writer": "Molière",
+    "cast": "Sandra Oh (Alice), Paul Chahidi (John), Abigail Cruttenden (Claire), Imogen Elliott (Esmée), Rina Fatania (Indira), Freddie MacBruce (Allen), Tom Mison (Stefan), Jemima Rooper (Elaine), Gabby Wong (Understudy Alice), Scott Sparrow (Understudy Stefan), Amira Matthews (Understudy Claire / Understudy Indira / Understudy Elaine), Niamh James (Understudy Esmée / Understudy Allen)",
+    "cached_at": "2026-06-09T11:54:02.251530"
   }
 }
