@@ -216,7 +216,7 @@
     "director": "",
     "writer": "",
     "cast": "André Rieu (Himself)",
-    "cached_at": "2026-06-09T11:54:01.459846"
+    "cached_at": "2026-06-10T12:15:03.836555"
   },
   "passenger": {
     "poster_url": "https://image.tmdb.org/t/p/w342/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
@@ -433,7 +433,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-09T11:54:02.697227"
+    "cached_at": "2026-06-10T12:15:04.623246"
   },
   "la-fanciulla-del-west-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -481,7 +481,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-09T11:54:03.128802"
+    "cached_at": "2026-06-10T12:15:05.015759"
   },
   "swan-lake-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -517,7 +517,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-09T11:54:03.532308"
+    "cached_at": "2026-06-10T12:15:05.419902"
   },
   "backrooms": {
     "poster_url": "https://image.tmdb.org/t/p/w342/vpkNMkbisv5cTaIfCzUduYzXnjb.jpg",
@@ -758,7 +758,7 @@
     "director": "Brian Castles Onion",
     "writer": "Alexandre Dumas fils, Francesco Maria Piave",
     "cast": "Emma Matthews, Gianluca Terranova, Jonathan Summers, Margaret Plummer",
-    "cached_at": "2026-06-09T11:54:01.857563"
+    "cached_at": "2026-06-10T12:15:04.234065"
   },
   "toy-story-5-autism-friendly-screening": {
     "poster_url": "",
@@ -798,5 +798,20 @@
     "writer": "Molière",
     "cast": "Sandra Oh (Alice), Paul Chahidi (John), Abigail Cruttenden (Claire), Imogen Elliott (Esmée), Rina Fatania (Indira), Freddie MacBruce (Allen), Tom Mison (Stefan), Jemima Rooper (Elaine), Gabby Wong (Understudy Alice), Scott Sparrow (Understudy Stefan), Amira Matthews (Understudy Claire / Understudy Indira / Understudy Elaine), Niamh James (Understudy Esmée / Understudy Allen)",
     "cached_at": "2026-06-09T11:54:02.251530"
+  },
+  "the-ghost-in-the-shell-anime-season": {
+    "poster_url": "",
+    "trailer_url": "https://www.youtube.com/watch?v=rAQXtWrLPyo",
+    "vote_average": 0.0,
+    "genres": [
+      "Animation",
+      "Science Fiction"
+    ],
+    "imdb_id": "",
+    "overview": "In the year 2029, Niihama City has become a technologically advanced metropolis. Due to great improvements in cybernetics, its citizens are able to replace their limbs with robotic parts. The world is now more interconnected than ever before, and the city's Public Security Section 9 is responsible for combating corruption, terrorism, and other dangerous threats following this shift toward globalisation.  Theatrical screening of the first two episodes of the 2026 anime.",
+    "director": "Mokochan",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-06-10T12:15:06.023555"
   }
 }
