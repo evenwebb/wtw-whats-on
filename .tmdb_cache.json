@@ -15,39 +15,6 @@
     "cast": "",
     "cached_at": "2026-06-05T11:56:33.945396"
   },
-  "charlie-the-wonderdog": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/whvkL0wzxgKmVbaPontq9NlVd5z.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=uUDfO0Q4sog",
-    "vote_average": 6.8,
-    "genres": [
-      "Animation",
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Family"
-    ],
-    "imdb_id": "tt29612071",
-    "overview": "Timid 9-year-old Danny teams up with his beloved family dog Charlie, who gets abducted by aliens and returns with superpowers, to thwart a plan by the neighbor's sinister cat Puddy to destroy humanity.",
-    "director": "Shea Wageman",
-    "writer": "Shea Wageman, Steve Ball, Raul Sanchez Inglis",
-    "cast": "Owen Wilson (Charlie (voice)), Dawson Littman (Danny (voice)), Tabitha St. Germain (President Rose (voice)), Sebastian Billingsley-Rodriguez (Alien Prince (voice)), Rhona Rees (Alien Queen (voice)), Anthony Bolognese (Jacob (voice)), Caitlynne Medrek (Kitten (voice)), Emily Delahunty (Emma (voice)), Ruairi MacDonald (Puddy (voice)), Mela Pietropaolo (Madison (voice)), Lindsay Gibson (Judge Gruff (voice)), Jenn Rogan (Sam (voice))",
-    "cached_at": "2026-05-12T11:14:26.714820"
-  },
-  "the-christophers": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/ehoacRcNWpJ5mKkc2UkXOSofwuS.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=42GkXhRVLUQ",
-    "vote_average": 6.8,
-    "genres": [
-      "Crime",
-      "Comedy"
-    ],
-    "imdb_id": "tt34966562",
-    "overview": "The estranged children of a once-famous artist hire a forger to complete his unfinished works so they can be \"discovered\" and sold after his death.",
-    "director": "Steven Soderbergh",
-    "writer": "Ed Solomon",
-    "cast": "Michaela Coel (Lori Butler), Ian McKellen (Julian Sklar), Jessica Gunning (Sally Sklar), James Corden (Barnaby Sklar), Ferdy Roberts (Owen Appleton), Tilly Botsford (Esme), Lucy McCormick (Lori's Flatmate #1), Le Fil (Lori's Flatmate #2), Daniel Fearn (Locksmith), Dmitri Prokopiev (Food Truck Patron), Dallas Campbell (Art Fight Moderator), Stuart Cooke (Press (uncredited))",
-    "cached_at": "2026-05-12T11:14:26.945938"
-  },
   "james-mcneill-whistler-exhibition-on-screen": {
     "poster_url": "",
     "trailer_url": "",
@@ -216,7 +183,7 @@
     "director": "",
     "writer": "",
     "cast": "André Rieu (Himself)",
-    "cached_at": "2026-06-10T12:15:03.836555"
+    "cached_at": "2026-06-11T12:37:31.461787"
   },
   "passenger": {
     "poster_url": "https://image.tmdb.org/t/p/w342/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
@@ -433,7 +400,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-10T12:15:04.623246"
+    "cached_at": "2026-06-11T12:37:31.976703"
   },
   "la-fanciulla-del-west-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -481,7 +448,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-10T12:15:05.015759"
+    "cached_at": "2026-06-11T12:37:32.278191"
   },
   "swan-lake-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -517,7 +484,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-10T12:15:05.419902"
+    "cached_at": "2026-06-11T12:37:32.534673"
   },
   "backrooms": {
     "poster_url": "https://image.tmdb.org/t/p/w342/vpkNMkbisv5cTaIfCzUduYzXnjb.jpg",
@@ -756,9 +723,9 @@
     "imdb_id": "tt2814162",
     "overview": "La Traviata, one of the world's best-loved romantic operas is performed under the stars on a floating, mirrored stage in Sydney Harbor, with the city, Opera House and Harbor Bridge acting as a stunning backdrop. Giuseppe Verdi's captivating music is performed with the orchestra concealed in a studio beneath the stage to ensure the finest amplified sound combines with the superlative singing of the cast.",
     "director": "Brian Castles Onion",
-    "writer": "Alexandre Dumas fils, Francesco Maria Piave",
+    "writer": "Francesco Maria Piave, Alexandre Dumas fils",
     "cast": "Emma Matthews, Gianluca Terranova, Jonathan Summers, Margaret Plummer",
-    "cached_at": "2026-06-10T12:15:04.234065"
+    "cached_at": "2026-06-11T12:37:31.712641"
   },
   "toy-story-5-autism-friendly-screening": {
     "poster_url": "",
