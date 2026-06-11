@@ -23,6 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 12
     env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
       PIP_DISABLE_PIP_VERSION_CHECK: "1"
       CREATE_FAILURE_ISSUE: ${{ secrets.CREATE_FAILURE_ISSUE }}
       POSTER_MISSING_FAIL_THRESHOLD: ${{ vars.POSTER_MISSING_FAIL_THRESHOLD || '8' }}
@@ -40,18 +41,20 @@ jobs:
       TMDB_DELAY_SEC: ${{ vars.TMDB_DELAY_SEC || '0.1' }}
       TMDB_MAX_SEARCH_QUERY_VARIANTS: ${{ vars.TMDB_MAX_SEARCH_QUERY_VARIANTS || '6' }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v6
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 1
-          show-progress: false
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
+      - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"
           cache: pip
           cache-dependency-path: requirements.txt
+
+      - uses: astral-sh/setup-uv@v4
+        with:
+          enable-cache: true
+          cache-dependency-glob: requirements.txt
 
       - name: Install dependencies and run scraper
         run: |
@@ -61,7 +64,7 @@ jobs:
             exit 1
           fi
           echo "::add-mask::${TMDB_API_KEY}"
-          pip install -q -r requirements.txt
+          uv pip install --system -q -r requirements.txt
           mkdir -p logs
           cat > logs/health_env.txt <<EOF
           WTW_ENABLED_CINEMAS=${WTW_ENABLED_CINEMAS}
@@ -77,11 +80,11 @@ jobs:
           TMDB_DELAY_SEC=${TMDB_DELAY_SEC}
           TMDB_MAX_SEARCH_QUERY_VARIANTS=${TMDB_MAX_SEARCH_QUERY_VARIANTS}
           EOF
-          python3 whats_on_scraper.py 2>&1 | tee logs/scraper.log
+          python whats_on_scraper.py 2>&1 | tee logs/scraper.log
 
       - name: Upload scraper log artifact on failure
         if: failure() && hashFiles('logs/scraper.log') != ''
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@v4
         with:
           name: scraper-logs-${{ github.run_id }}
           path: logs/
@@ -108,7 +111,7 @@ jobs:
 
       - name: Create or update failure issue
         if: failure() && env.CREATE_FAILURE_ISSUE == 'true'
-        uses: actions/github-script@v8
+        uses: actions/github-script@v7
         with:
           script: |
             const owner = context.repo.owner;
@@ -270,7 +273,7 @@ jobs:
 
       - name: Auto-close stale failure issues after 2 successful runs
         if: success() && env.CREATE_FAILURE_ISSUE == 'true'
-        uses: actions/github-script@v8
+        uses: actions/github-script@v7
         with:
           script: |
             const owner = context.repo.owner;

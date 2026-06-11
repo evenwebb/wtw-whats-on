@@ -380,6 +380,8 @@ def parse_uk_date(text: str, scrape_date: datetime) -> Optional[str]:
             dt = datetime.strptime(f"{day} {month_str} {year}", "%d %B %Y")
             if dt.date() < today:
                 dt = datetime.strptime(f"{day} {month_str} {year + 1}", "%d %B %Y")
+            elif dt.date() > today + timedelta(days=200):
+                dt = datetime.strptime(f"{day} {month_str} {year - 1}", "%d %B %Y")
             return dt.date().isoformat()
         except ValueError:
             pass
@@ -554,8 +556,12 @@ def _download_poster(url: str, slug: str) -> str:
         headers = {"User-Agent": USER_AGENT}
         if "wtwcinemas.co.uk" in url:
             headers["Referer"] = WTW_BASE + "/"
-        r = HTTP_SESSION.get(url, headers=headers, timeout=15)
+        r = requests.get(url, headers=headers, timeout=15)
         r.raise_for_status()
+        ct = r.headers.get("Content-Type", "")
+        if not ct.startswith("image/"):
+            logger.warning("Poster URL returned non-image content-type %s: %s", ct, url[:50])
+            return ""
         path.write_bytes(r.content)
         return f"posters/{slug}.{ext}"  # relative to SITE_DIR for HTML
     except Exception as e:
@@ -695,13 +701,14 @@ def _event_cinema_fallback_queries(title: str) -> List[str]:
     if not title or "RBO" not in title.upper():
         return []
     # Match: "PRODUCTION - RBO 2025-26" or "PRODUCTION - The MET Opera - RBO 2025-26"
-    m = re.search(r"^(.+?)\s+-\s+(?:The MET Opera\s+-\s+)?RBO\s+2025-26", title, re.IGNORECASE)
+    m = re.search(r"^(.+?)\s+-\s+(?:The MET Opera\s+-\s+)?RBO\s+(\d{4}-\d{2})", title, re.IGNORECASE)
     if not m:
         return []
     production = m.group(1).strip().title()
+    season = m.group(2).replace("-", "/")
     if not production:
         return []
-    queries = [f"Royal Ballet & Opera 2025/26: {production}"]
+    queries = [f"Royal Ballet & Opera {season}: {production}"]
     # Met Opera titles: TMDb lists as "The Metropolitan Opera: Eugene Onegin"
     if "MET Opera" in title or "Met Opera" in title:
         queries.append(f"The Metropolitan Opera: {production}")
@@ -1129,9 +1136,13 @@ def scrape_whats_on(scrape_date: Optional[datetime] = None) -> Dict[str, Any]:
                 logger.warning("Restored previous data for failed cinema %s", slug)
 
     failure_state = load_cinema_failure_state()
+    restored_slugs = {
+        slug for slug, data in cinemas_scraped.items()
+        if (data.get("_health") or {}).get("restored_from_previous")
+    }
     threshold_breaches: List[str] = []
     for slug in selected_cinemas:
-        if slug in scrape_errors:
+        if slug in scrape_errors and slug not in restored_slugs:
             failure_state[slug] = int(failure_state.get(slug, 0)) + 1
             if failure_state[slug] >= MAX_CONSECUTIVE_CINEMA_FAILURES:
                 threshold_breaches.append(f"{slug}={failure_state[slug]}")
@@ -1533,7 +1544,7 @@ def build_html(data: Dict[str, Any]) -> str:
   <div class="film-header">
     {poster_div}
     <div class="film-meta">
-      <h2>{title} {cert_span(bbfc)}</h2>
+      <h2>{html_escape(title, quote=False)} {cert_span(bbfc)}</h2>
       <div class="meta-line">{runtime_str} {vote_str} {genre_span}</div>
       {trailer_a}
       {crew_html}
