@@ -1,6 +1,6 @@
 {
   "top-hat-the-musical": {
-    "poster_url": "",
+    "poster_url": "https://image.tmdb.org/t/p/w342/ix39MF9XSxhbw04OG1g3nlEmDZ0.jpg",
     "trailer_url": "",
     "vote_average": 0.0,
     "genres": [
@@ -13,7 +13,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-05T11:56:33.945396"
+    "cached_at": "2026-06-12T12:12:20.221587"
   },
   "james-mcneill-whistler-exhibition-on-screen": {
     "poster_url": "",
@@ -25,7 +25,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-05T11:56:34.120674"
+    "cached_at": "2026-06-12T12:12:20.445374"
   },
   "renoir-love-exhibition-on-screen": {
     "poster_url": "",
@@ -37,21 +37,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-05T11:56:34.273525"
-  },
-  "monet-exhibition-on-screen": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/cYKPVyJLtSwMZ3cs46jCQOdLOIB.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=oUvcsP0Eg8k",
-    "vote_average": 6.2,
-    "genres": [
-      "Documentary"
-    ],
-    "imdb_id": "tt6233946",
-    "overview": "From award-winning director Phil Grabsky comes this fresh new look at arguably the world’s favourite artist – through his own words.  Using letters and other private writings I, Claude Monet reveals new insight into the man who not only painted the picture that gave birth to impressionism but who was perhaps the most influential and successful painter of the 19th and early 20th centuries.  Despite this, and perhaps because of it, Monet’s life is a gripping tale about a man who, behind his sun-dazzled canvases, suffered from feelings of depression, loneliness, even suicide. Then, as his art developed and his love of gardening led to the glories of his garden at Giverney, his humour, insight and love of life is revealed.  Shot on location in Paris, London, Normandy and Venice I, Claude Monet is a cinematic immersion into some of the most loved and iconic scenes in Western Art.",
-    "director": "Phil Grabsky",
-    "writer": "",
-    "cast": "Henry Goodman (Claude Monet)",
-    "cached_at": "2026-05-13T11:26:40.759735"
+    "cached_at": "2026-06-12T12:12:20.654138"
   },
   "michael": {
     "poster_url": "https://image.tmdb.org/t/p/w342/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg",
@@ -183,7 +169,7 @@
     "director": "",
     "writer": "",
     "cast": "André Rieu (Himself)",
-    "cached_at": "2026-06-11T12:37:31.461787"
+    "cached_at": "2026-06-12T12:12:16.069949"
   },
   "passenger": {
     "poster_url": "https://image.tmdb.org/t/p/w342/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
@@ -364,7 +350,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-05T11:56:31.244308"
+    "cached_at": "2026-06-12T12:12:16.713081"
   },
   "manon-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -376,7 +362,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-05T11:56:31.421799"
+    "cached_at": "2026-06-12T12:12:16.920594"
   },
   "carmen-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -388,7 +374,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-05T11:56:31.581405"
+    "cached_at": "2026-06-12T12:12:17.121523"
   },
   "the-nutcracker-royal-ballet-opera-26-27-season": {
     "poster_url": "https://image.tmdb.org/t/p/w342/dKfjjTLVyMcZNNSok0EkNNr6AEK.jpg",
@@ -400,7 +386,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-11T12:37:31.976703"
+    "cached_at": "2026-06-12T12:12:17.526061"
   },
   "la-fanciulla-del-west-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -412,7 +398,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-05T11:56:32.050134"
+    "cached_at": "2026-06-12T12:12:17.732019"
   },
   "g-tterd-mmerung-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -424,7 +410,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-05T11:56:32.201912"
+    "cached_at": "2026-06-12T12:12:17.929107"
   },
   "cos-fan-tutte-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -436,7 +422,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-05T11:56:32.358950"
+    "cached_at": "2026-06-12T12:12:18.148215"
   },
   "alice-s-adventures-in-wonderland-royal-ballet-opera-26-27-season": {
     "poster_url": "https://image.tmdb.org/t/p/w342/5objvLeZTI5oBGHeu5D2hG0EksB.jpg",
@@ -448,7 +434,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-11T12:37:32.278191"
+    "cached_at": "2026-06-12T12:12:18.591701"
   },
   "swan-lake-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -460,7 +446,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-05T11:56:32.835392"
+    "cached_at": "2026-06-12T12:12:18.804187"
   },
   "tosca-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -472,7 +458,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-05T11:56:32.990429"
+    "cached_at": "2026-06-12T12:12:19.011542"
   },
   "romeo-and-juliet-royal-ballet-opera-26-27-season": {
     "poster_url": "https://image.tmdb.org/t/p/w342/eCZpBsBQhdBPCDEjX1DOtf9qcfW.jpg",
@@ -484,7 +470,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-11T12:37:32.534673"
+    "cached_at": "2026-06-12T12:12:19.403809"
   },
   "backrooms": {
     "poster_url": "https://image.tmdb.org/t/p/w342/vpkNMkbisv5cTaIfCzUduYzXnjb.jpg",
@@ -541,7 +527,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-05T11:56:33.642563"
+    "cached_at": "2026-06-12T12:12:19.818604"
   },
   "event-horizon-pat-s-horror-film-club": {
     "poster_url": "https://image.tmdb.org/t/p/w342/qfluaDXv0cIdLwgQWzNB2piHL2q.jpg",
@@ -725,7 +711,7 @@
     "director": "Brian Castles Onion",
     "writer": "Francesco Maria Piave, Alexandre Dumas fils",
     "cast": "Emma Matthews, Gianluca Terranova, Jonathan Summers, Margaret Plummer",
-    "cached_at": "2026-06-11T12:37:31.712641"
+    "cached_at": "2026-06-12T12:12:16.501647"
   },
   "toy-story-5-autism-friendly-screening": {
     "poster_url": "",
@@ -780,5 +766,31 @@
     "writer": "",
     "cast": "",
     "cached_at": "2026-06-10T12:15:06.023555"
+  },
+  "paw-patrol-the-dino-movie-medicinema-advanced-screening": {
+    "poster_url": "",
+    "trailer_url": "",
+    "vote_average": null,
+    "genres": [],
+    "imdb_id": "",
+    "overview": "",
+    "director": "",
+    "writer": "",
+    "cast": "",
+    "cached_at": "2026-06-12T12:12:15.483990"
+  },
+  "monet-exhibition-on-screen": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/cYKPVyJLtSwMZ3cs46jCQOdLOIB.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=oUvcsP0Eg8k",
+    "vote_average": 6.2,
+    "genres": [
+      "Documentary"
+    ],
+    "imdb_id": "tt6233946",
+    "overview": "From award-winning director Phil Grabsky comes this fresh new look at arguably the world’s favourite artist – through his own words.  Using letters and other private writings I, Claude Monet reveals new insight into the man who not only painted the picture that gave birth to impressionism but who was perhaps the most influential and successful painter of the 19th and early 20th centuries.  Despite this, and perhaps because of it, Monet’s life is a gripping tale about a man who, behind his sun-dazzled canvases, suffered from feelings of depression, loneliness, even suicide. Then, as his art developed and his love of gardening led to the glories of his garden at Giverney, his humour, insight and love of life is revealed.  Shot on location in Paris, London, Normandy and Venice I, Claude Monet is a cinematic immersion into some of the most loved and iconic scenes in Western Art.",
+    "director": "Phil Grabsky",
+    "writer": "",
+    "cast": "Henry Goodman (Claude Monet)",
+    "cached_at": "2026-06-12T12:12:21.047587"
   }
 }
