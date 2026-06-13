@@ -21,6 +21,658 @@ from typing import Any, Dict, List, Optional, Set
 from zoneinfo import ZoneInfo
 from urllib.parse import quote_plus, urljoin
 
+# ── External CSS/JS assets (written to docs/ at build time) ──────────────────
+_PAGE_CSS = """\
+    :root {
+      --bg: #0a0a0f;
+      --card-bg: #12121a;
+      --surface: #12121a;
+      --surface-2: #12121a;
+      --surface-3: #1a1a24;
+      --border: rgba(168,85,247,0.25);
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --cyan: #00d4ff;
+      --purple: #a855f7;
+      --accent: #00d4ff;
+      --accent-dim: rgba(0,212,255,0.15);
+      --accent-glow: rgba(0,212,255,0.25);
+      --radius: 16px;
+      --radius-sm: 10px;
+      --radius-lg: 24px;
+      --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    .bg-mesh {
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 100% 80% at 50% -30%, var(--accent-dim) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 50% at 80% 100%, rgba(0,212,255,0.08) 0%, transparent 40%),
+        radial-gradient(ellipse 40% 40% at 10% 90%, rgba(168,85,247,0.05) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .bg-grid {
+      position: fixed;
+      inset: 0;
+      background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .page { position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    @media (min-width: 640px) { .page { padding: 3rem 2rem 5rem; } }
+    header {
+      text-align: center;
+      padding: 3rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+      animation: fadeUp 0.8s ease-out;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    header h1 {
+      font-size: clamp(2rem, 5vw, 2.5rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      background: linear-gradient(90deg, var(--cyan), var(--purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    header p { color: var(--text-muted); font-size: 0.95rem; margin-top: 0.25rem; }
+    .filter-tabs { display: flex; flex-direction: column; gap: 1rem; padding: 1rem 0 0.5rem; }
+    .tabs-wrap { display: flex; flex-direction: column; gap: 0.4rem; align-items: center; }
+    .tabs-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+    }
+    .tabs { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+    .tab {
+      font-family: inherit;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all var(--transition);
+    }
+    .tab:hover { border-color: var(--cyan); }
+    .tab.active {
+      background: linear-gradient(135deg, var(--accent-dim), rgba(168,85,247,0.15));
+      border-color: var(--cyan);
+    }
+    #films { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+    .film-section {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1rem;
+      background: linear-gradient(160deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    }
+    @media (min-width: 900px) {
+      .film-section { grid-template-columns: repeat(2, 1fr); }
+    }
+    .film-section--now {
+      border-color: rgba(0,212,255,0.45);
+      box-shadow: inset 0 0 0 1px rgba(0,212,255,0.08);
+    }
+    .film-section--coming {
+      border-color: rgba(168,85,247,0.45);
+      box-shadow: inset 0 0 0 1px rgba(168,85,247,0.1);
+    }
+    .section-title-wrap {
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.9rem 1rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.02);
+    }
+    .film-section--now .section-title-wrap {
+      border-color: rgba(0,212,255,0.5);
+      background: linear-gradient(90deg, rgba(0,212,255,0.2), rgba(0,212,255,0.06));
+    }
+    .film-section--coming .section-title-wrap {
+      border-color: rgba(168,85,247,0.5);
+      background: linear-gradient(90deg, rgba(168,85,247,0.24), rgba(168,85,247,0.08));
+    }
+    .section-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    .film-section--now .section-title { color: var(--cyan); }
+    .film-section--coming .section-title { color: #cf90ff; }
+    .section-count { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--text); opacity: 0.95; }
+    .film-card {
+      background: linear-gradient(135deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      transition: all var(--transition);
+      position: relative;
+      overflow: hidden;
+      animation: fadeUp 0.6s ease-out backwards;
+    }
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 1.7rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      border: 1px solid transparent;
+      margin-bottom: 0.7rem;
+    }
+    .status-pill--now { background: rgba(0,212,255,0.16); border-color: rgba(0,212,255,0.45); color: #8beeff; }
+    .status-pill--coming-soon { background: rgba(168,85,247,0.2); border-color: rgba(168,85,247,0.5); color: #e0b8ff; }
+    .chance-badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 999px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; margin-left: 0.4rem; margin-bottom: 0.7rem; vertical-align: top; }
+    .chance-opens { background: rgba(74,222,128,0.2); color: #4ade80; border: 1px solid rgba(74,222,128,0.4); }
+    .chance-closing { background: rgba(251,113,133,0.2); color: #fb7185; border: 1px solid rgba(251,113,133,0.4); }
+    .film-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+    .film-card:hover {
+      border-color: rgba(0,212,255,0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(0,212,255,0.1);
+    }
+    .film-card:hover::before { opacity: 1; }
+    .film-header { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+    .poster { position: relative; flex-shrink: 0; }
+    .poster img { width: 210px; height: 315px; object-fit: cover; border-radius: var(--radius-sm); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+    .poster-fallback-label {
+      position: absolute;
+      left: 0.5rem;
+      right: 0.5rem;
+      bottom: 0.55rem;
+      padding: 0.2rem 0.4rem;
+      border-radius: 6px;
+      background: rgba(0, 0, 0, 0.62);
+      color: #e2e8f0;
+      font-size: 0.72rem;
+      text-align: center;
+      letter-spacing: 0.02em;
+    }
+    .poster .icon--hints { position: absolute; right: 0; top: 0; width: 105px; height: 105px; pointer-events: none; }
+    .poster .icon--hints.icon--3d { background: url(icons/3D-Performance.png) no-repeat; background-size: 100% auto; background-position: top right; }
+    .film-meta { flex: 1; min-width: 200px; }
+    .film-meta h2 { font-size: 1.25rem; margin: 0 0 0.5rem; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+    .cert { display: inline-block; width: 29px; height: 29px; background-position: center; background-repeat: no-repeat; background-size: 100% auto; margin-right: 6px; vertical-align: middle; }
+    .cert--U { background-image: url(certs/cert-u.png); }
+    .cert--PG { background-image: url(certs/cert-pg.png); }
+    .cert--12A { background-image: url(certs/cert-12a.png); }
+    .cert--15 { background-image: url(certs/cert-15.png); }
+    .cert--18 { background-image: url(certs/cert-18.png); }
+    .cert-fallback { background: var(--surface-3); color: #fff; font-size: 0.65rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; border-radius: 4px; }
+    .meta-line { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; }
+    .rating-wrap { display: inline-flex; align-items: center; gap: 0.4rem; }
+    .rating-bar { display: block; width: 3rem; height: 0.5rem; background: rgba(255,255,255,0.25); border-radius: 3px; overflow: hidden; }
+    .rating-fill { display: block; height: 0.5rem; background: linear-gradient(90deg, #00d4ff, #a855f7); border-radius: 3px; transition: width 0.2s; }
+    .rating-text { font-variant-numeric: tabular-nums; font-size: 0.85em; color: var(--cyan); }
+    .genres { color: var(--purple); }
+    .trailer { display: inline-block; margin-bottom: 0.5rem; color: var(--cyan); font-size: 0.9rem; background: none; border: none; cursor: pointer; font-family: inherit; padding: 0; text-decoration: underline; }
+    .trailer:hover { color: var(--purple); }
+    .trailer-lightbox { position: fixed; inset: 0; z-index: 1000; display: none; align-items: center; justify-content: center; padding: 1rem; box-sizing: border-box; }
+    .trailer-lightbox.is-open { display: flex; }
+    .trailer-lightbox-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.85); cursor: pointer; }
+    .trailer-lightbox-inner { position: relative; width: 100%; max-width: 90vw; max-height: 90vh; aspect-ratio: 16/9; background: #000; border-radius: var(--radius); box-shadow: 0 0 40px var(--accent-glow); overflow: hidden; }
+    .trailer-lightbox-inner iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+    .trailer-lightbox-close { position: absolute; top: -2.5rem; right: 0; background: var(--surface-2); border: 1px solid var(--border); color: var(--text); width: 2rem; height: 2rem; border-radius: var(--radius-sm); cursor: pointer; font-size: 1.25rem; line-height: 1; display: flex; align-items: center; justify-content: center; z-index: 1; transition: all var(--transition); }
+    .trailer-lightbox-close:hover { border-color: var(--cyan); color: var(--cyan); }
+    .trailer-lightbox-fallback { position: absolute; bottom: 0.5rem; left: 0.5rem; font-size: 0.85rem; color: var(--cyan); }
+    .trailer-lightbox-fallback:hover { color: var(--purple); }
+    .film-meta .crew { font-size: 0.9rem; color: var(--text-muted); margin: 0; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+    .film-meta .crew:first-of-type { padding-top: 0; }
+    .film-meta .cast { font-size: 0.9rem; color: var(--text-muted); margin: 0; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+    .film-meta .synopsis { font-size: 0.9rem; color: var(--text-muted); margin: 0; padding: 0.75rem 0 0.5rem; line-height: 1.5; max-width: 56em; border-top: 1px solid var(--border); }
+    .links { margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: all var(--transition);
+    }
+    .links .btn {
+      background: linear-gradient(135deg, var(--cyan), var(--purple));
+      color: var(--bg);
+      font-weight: 600;
+      border: none;
+    }
+    .links .btn:hover {
+      background: linear-gradient(135deg, #20dfff, #b366ff);
+      transform: scale(1.02);
+      box-shadow: 0 4px 20px var(--accent-glow);
+    }
+    .links .link { color: var(--accent); background: rgba(255,255,255,0.06); border: 1px solid var(--border); }
+    .links .link:hover { background: rgba(0,212,255,0.12); border-color: var(--cyan); color: var(--purple); }
+    .ext-logo { width: 18px; height: 18px; flex-shrink: 0; }
+    .showtimes { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.9rem; }
+    .day-group { margin-bottom: 0.75rem; }
+    .day-group:last-child { margin-bottom: 0; }
+    .st-date { font-weight: 600; margin-bottom: 0.25rem; color: var(--text); }
+    .st-row { display: grid; grid-template-columns: 4.5rem minmax(9rem, 1fr) 2fr; gap: 0 0.75rem; align-items: center; margin-bottom: 0.2rem; }
+    .st-row:last-child { margin-bottom: 0; }
+    .st-time { font-variant-numeric: tabular-nums; }
+    .st-time a, .showtime a { color: var(--cyan); }
+    .st-time .past { color: var(--text-muted); }
+    .st-screen { color: var(--text-muted); }
+    .st-tags { display: flex; align-items: center; flex-wrap: wrap; gap: 0.25rem; }
+    .showtimes-more { margin-top: 0.5rem; }
+    .showtimes-more-btn {
+      margin-top: 0.65rem;
+      padding: 0.38rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.04);
+      color: var(--accent);
+      font-family: inherit;
+      font-size: 0.82rem;
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    .showtimes-more-btn:hover { border-color: var(--cyan); background: rgba(0,212,255,0.1); }
+    .cast-more-btn { background: none; border: none; color: var(--cyan); cursor: pointer; font-size: 0.85em; padding: 0 0.25rem; font-family: inherit; }
+    .cast-more-btn:hover { text-decoration: underline; }
+    .tag { font-size: 0.75rem; color: var(--text-muted); margin-left: 0.25rem; display: inline-flex; align-items: center; gap: 0.25rem; }
+    .tag-icon { width: 14px; height: 14px; flex-shrink: 0; vertical-align: middle; }
+    .cal-link { color: var(--purple); text-decoration: none; margin-left: 0.25rem; }
+    footer {
+      margin-top: 4rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      animation: fadeUp 0.6s ease-out backwards;
+    }
+    footer a { color: var(--accent); text-decoration: none; font-weight: 500; transition: color var(--transition); }
+    footer a:hover { color: var(--purple); }
+    .footer-disclaimer { font-size: 0.9rem; max-width: 36rem; margin: 0 auto 1rem; line-height: 1.6; }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.5rem; margin-bottom: 1rem; }
+    .footer-attribution { font-size: 0.8rem; opacity: 0.85; margin: 0; line-height: 1.5; }
+    .view-toggle { display: flex; gap: 0.4rem; margin-top: 0.75rem; }
+    .view-btn { padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid var(--border); background: var(--surface); color: var(--muted); cursor: pointer; font-size: 0.78rem; font-weight: 500; transition: all 0.15s; }
+    .view-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .view-btn:hover:not(.active) { border-color: var(--accent); color: var(--accent); }
+    .poster-view .film-card { display: block; max-width: 220px; padding: 0; background: none; border: none; }
+    .poster-view .film-card .film-header { display: block; }
+    .poster-view .film-card .film-meta { padding: 0.5rem 0.25rem; }
+    .poster-view .film-card .showtimes, .poster-view .film-card .links, .poster-view .film-card .synopsis, .poster-view .film-card .crew-line { display: none; }
+    .poster-view .film-card .film-poster { width: 100%; height: auto; aspect-ratio: 2/3; object-fit: cover; border-radius: 8px; }
+    .poster-view #films { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1.5rem; }
+"""
+
+_PAGE_JS = """\
+    document.querySelectorAll('.cast-more-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var rest = btn.previousElementSibling;
+        if (rest && rest.classList.contains('cast-rest')) {
+          var on = rest.hasAttribute('hidden');
+          if (on) { rest.removeAttribute('hidden'); btn.textContent = 'Less'; }
+          else { rest.setAttribute('hidden', ''); btn.textContent = 'More'; }
+        }
+      });
+    });
+    (function() {
+      var filmsMain = document.getElementById('films');
+      var initialShowings = parseInt((filmsMain && filmsMain.getAttribute('data-initial-showings')) || '10', 10);
+      var se = 'script';
+
+      function showtimeFromRow(row) {
+        if (!row) return { date: '', time: '', screen: '', cinema_name: '', booking_url: '', tags: [] };
+        if (!Array.isArray(row)) return row;
+        return {
+          date: row[0] || '',
+          time: row[1] || '',
+          screen: row[2],
+          cinema_name: row[3] || '',
+          booking_url: row[4] || '',
+          tags: Array.isArray(row[5]) ? row[5] : []
+        };
+      }
+      function showtimesFromParsed(raw) {
+        if (!raw) return [];
+        if (raw.v === 1 && Array.isArray(raw.r)) return raw.r.map(showtimeFromRow);
+        if (Array.isArray(raw)) {
+          if (raw.length && Array.isArray(raw[0])) return raw.map(showtimeFromRow);
+          return raw.slice();
+        }
+        return [];
+      }
+      function showtimeToCompactRow(st) {
+        return [st.date || '', st.time || '', st.screen, st.cinema_name || '', st.booking_url || '', st.tags || []];
+      }
+
+      function escHtml(value) {
+        return String(value || '')
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;');
+      }
+      function formatDateLabel(isoDate) {
+        if (!isoDate) return '';
+        var dt = new Date(isoDate + 'T12:00:00Z');
+        if (Number.isNaN(dt.getTime())) return isoDate;
+        return dt.toLocaleDateString('en-GB', { weekday: 'short', day: '2-digit', month: 'short', timeZone: 'Europe/London' });
+      }
+      function tagHtml(tag) {
+        var iconMap = {
+          'Audio Description': 'icon-audio-desc',
+          'Wheelchair access': 'icon-wheelchair',
+          '2D': 'icon-2d',
+          '3D': 'icon-3d',
+          'Subtitles': 'icon-subtitles',
+          'Silver Screen': 'icon-silver-screen',
+          'Event cinema': 'icon-event-cinema',
+          'Strobe Light warning': 'icon-strobe',
+          'Parent & Baby': 'icon-parent-baby',
+          'Autism Friendly': 'icon-autism-friendly',
+          'Kids Club': 'icon-kids-club'
+        };
+        var shortLabelMap = { 'Audio Description': 'AD', 'Subtitles': 'Subs', 'Wheelchair access': 'WA', 'Strobe Light warning': 'Strobe' };
+        var tooltipMap = {
+          'Audio Description': 'Audio description',
+          'Subtitles': 'Subtitled screening',
+          'Wheelchair access': 'Wheelchair accessible',
+          '2D': 'Standard 2D screening',
+          'Strobe Light warning': 'Strobe lighting may affect photosensitive viewers'
+        };
+        var iconId = iconMap[tag];
+        var label = shortLabelMap[tag] || tag;
+        var tooltip = tooltipMap[tag] || (shortLabelMap[tag] ? tag : '');
+        var titleAttr = tooltip ? ' title="' + escHtml(tooltip) + '"' : '';
+        if (iconId) {
+          return '<span class="tag"' + titleAttr + '><svg class="tag-icon" aria-hidden="true"><use href="#' + iconId + '"/></svg>' + escHtml(label) + '</span>';
+        }
+        return '<span class="tag"' + titleAttr + '>' + escHtml(label) + '</span>';
+      }
+      function renderShowingsHtml(list) {
+        var grouped = {};
+        list.forEach(function(st) {
+          var d = st.date || '';
+          if (!grouped[d]) grouped[d] = [];
+          grouped[d].push(st);
+        });
+        return Object.keys(grouped).sort().map(function(d) {
+          var rows = grouped[d].map(function(st) {
+            var time = escHtml(st.time || '');
+            var cinema = String(st.cinema_name || '').trim();
+            cinema = cinema.indexOf(',') !== -1 ? cinema.split(',').pop().trim() : cinema;
+            var screen = String(st.screen || '');
+            var screenLabel = cinema && screen ? (cinema + ' (Screen ' + screen + ')') : (cinema || ('Screen ' + screen));
+            var booking = String(st.booking_url || '');
+            var timeEl = booking ? '<a href="' + escHtml(booking) + '">' + time + '</a>' : '<span class="past">' + time + '</span>';
+            var tags = Array.isArray(st.tags) ? st.tags.slice(0, 4) : [];
+            var tagSpan = tags.map(tagHtml).join(' ');
+            return '<div class="st-row"><span class="st-time">' + timeEl + '</span><span class="st-screen">' + escHtml(screenLabel) + '</span><span class="st-tags">' + tagSpan + '</span></div>';
+          }).join('');
+          return '<div class="day-group"><div class="st-date">' + escHtml(formatDateLabel(d)) + '</div>' + rows + '</div>';
+        }).join('');
+      }
+
+      function sortShowtimes(list) {
+        list.sort(function(a, b) {
+          var ad = a.date || '';
+          var bd = b.date || '';
+          if (ad !== bd) return ad < bd ? -1 : ad > bd ? 1 : 0;
+          var at = a.time || '';
+          var bt = b.time || '';
+          if (at !== bt) return at < bt ? -1 : at > bt ? 1 : 0;
+          var as = String(a.screen || '');
+          var bs = String(b.screen || '');
+          if (as !== bs) return as < bs ? -1 : as > bs ? 1 : 0;
+          var ab = a.booking_url || '';
+          var bb = b.booking_url || '';
+          return ab < bb ? -1 : ab > bb ? 1 : 0;
+        });
+      }
+
+      function buildShowtimesInner(list) {
+        var copy = list.slice();
+        sortShowtimes(copy);
+        var visible = copy.slice(0, initialShowings);
+        var hidden = copy.slice(initialShowings);
+        var html = renderShowingsHtml(visible);
+        if (hidden.length) {
+          var hiddenJson = JSON.stringify({ v: 1, r: hidden.map(showtimeToCompactRow) }).replace(/<\\//g, '<\\/');
+          var count = hidden.length;
+          var noun = count === 1 ? 'showing' : 'showings';
+          html += '<' + se + ' type="application/json" class="showtimes-more-data">' + hiddenJson + '</' + se + '>';
+          html += '<div class="showtimes-more" hidden></div>';
+          html += '<button type="button" class="showtimes-more-btn" aria-expanded="false">Show ' + count + ' more ' + noun + '</button>';
+        }
+        return html;
+      }
+
+      function shortCinemaName(full) {
+        var s = String(full || '').trim();
+        if (!s) return '';
+        var parts = s.split(',');
+        return parts.length > 1 ? parts[parts.length - 1].trim() : s;
+      }
+
+      var selectedDate = 'all';
+      var selectedCinema = 'all';
+      var STORAGE_CINEMA = 'wtw-whats-on-cinema';
+
+      function cinemaTabValues() {
+        var vals = [];
+        document.querySelectorAll('.tab-cinema').forEach(function(b) {
+          var v = b.getAttribute('data-cinema');
+          if (v != null && vals.indexOf(v) === -1) vals.push(v);
+        });
+        return vals;
+      }
+
+      function readPersistedCinema() {
+        try {
+          var raw = localStorage.getItem(STORAGE_CINEMA);
+          if (raw == null || raw === '') return null;
+          if (cinemaTabValues().indexOf(raw) !== -1) return raw;
+        } catch (e0) {}
+        try { localStorage.removeItem(STORAGE_CINEMA); } catch (e1) {}
+        return null;
+      }
+
+      function writePersistedCinema(v) {
+        try {
+          if (v === 'all') localStorage.removeItem(STORAGE_CINEMA);
+          else localStorage.setItem(STORAGE_CINEMA, v);
+        } catch (e2) {}
+      }
+
+      function applyFilters() {
+        var sectionVisibility = { now: false, coming: false };
+        document.querySelectorAll('.film-card').forEach(function(card) {
+          var dataScript = card.querySelector('script.film-showtimes-full');
+          var showtimesEl = card.querySelector('.showtimes');
+          if (!dataScript || !showtimesEl) {
+            card.style.display = 'none';
+            return;
+          }
+          var all = [];
+          try {
+            all = showtimesFromParsed(JSON.parse(dataScript.textContent || 'null'));
+          } catch (e1) {
+            card.style.display = 'none';
+            return;
+          }
+          var picked = all.filter(function(st) {
+            var dateOk = selectedDate === 'all' || st.date === selectedDate;
+            var cinemaOk = selectedCinema === 'all' || shortCinemaName(st.cinema_name) === selectedCinema;
+            return dateOk && cinemaOk;
+          });
+          var show = picked.length > 0;
+          card.style.display = show ? 'block' : 'none';
+          if (show) {
+            var status = card.getAttribute('data-status') || '';
+            if (status === 'now') sectionVisibility.now = true;
+            if (status === 'coming-soon') sectionVisibility.coming = true;
+            showtimesEl.innerHTML = buildShowtimesInner(picked);
+          }
+        });
+        document.querySelectorAll('.film-section').forEach(function(section) {
+          var sectionType = section.getAttribute('data-section') || '';
+          var showSection = sectionType === 'now' ? sectionVisibility.now : sectionVisibility.coming;
+          section.style.display = showSection ? 'grid' : 'none';
+        });
+      }
+
+      document.querySelectorAll('.tab-date').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('.tab-date').forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          selectedDate = btn.getAttribute('data-date') || 'all';
+          applyFilters();
+        });
+      });
+      document.querySelectorAll('.tab-cinema').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('.tab-cinema').forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          selectedCinema = btn.getAttribute('data-cinema') || 'all';
+          writePersistedCinema(selectedCinema);
+          applyFilters();
+        });
+      });
+
+      (function restoreCinemaFromStorage() {
+        var saved = readPersistedCinema();
+        if (saved == null) return;
+        selectedCinema = saved;
+        document.querySelectorAll('.tab-cinema').forEach(function(b) {
+          if ((b.getAttribute('data-cinema') || '') === saved) b.classList.add('active');
+          else b.classList.remove('active');
+        });
+        applyFilters();
+      })();
+
+      if (filmsMain) {
+        filmsMain.addEventListener('click', function(e) {
+          var btn = e.target.closest('.showtimes-more-btn');
+          if (!btn || !filmsMain.contains(btn)) return;
+          var card = btn.closest('.film-card');
+          if (!card) return;
+          var holder = card.querySelector('.showtimes-more');
+          var dataNode = card.querySelector('.showtimes-more-data');
+          if (!holder || !dataNode) return;
+
+          var expanded = btn.getAttribute('aria-expanded') === 'true';
+          if (expanded) {
+            holder.setAttribute('hidden', '');
+            btn.setAttribute('aria-expanded', 'false');
+            btn.textContent = btn.getAttribute('data-show-label') || 'Show more';
+            return;
+          }
+
+          if (!holder.hasChildNodes()) {
+            try {
+              var list = showtimesFromParsed(JSON.parse(dataNode.textContent || 'null'));
+              holder.innerHTML = renderShowingsHtml(list);
+            } catch (e2) {
+              holder.innerHTML = '';
+            }
+          }
+          holder.removeAttribute('hidden');
+          btn.setAttribute('aria-expanded', 'true');
+          if (!btn.getAttribute('data-show-label')) btn.setAttribute('data-show-label', btn.textContent);
+          btn.textContent = 'Show less';
+        });
+      }
+    })();
+    (function() {
+      var lb = document.getElementById('trailer-lightbox');
+      var iframe = document.getElementById('trailer-lightbox-iframe');
+      var backdrop = document.getElementById('trailer-lightbox-backdrop');
+      var closeBtn = document.getElementById('trailer-lightbox-close');
+      var fallbackLink = document.getElementById('trailer-lightbox-fallback');
+      function closeLightbox() {
+        lb.classList.remove('is-open');
+        lb.setAttribute('aria-hidden', 'true');
+        iframe.src = '';
+        if (fallbackLink) fallbackLink.href = '#';
+      }
+      function openLightbox(embedUrl, watchUrl) {
+        iframe.src = embedUrl;
+        if (fallbackLink && watchUrl) fallbackLink.href = watchUrl;
+        lb.classList.add('is-open');
+        lb.setAttribute('aria-hidden', 'false');
+      }
+      document.querySelectorAll('.trailer-lightbox-trigger').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var embedUrl = this.getAttribute('data-embed');
+          var watchUrl = this.getAttribute('data-watch') || '';
+          if (embedUrl) openLightbox(embedUrl, watchUrl);
+        });
+      });
+      if (backdrop) backdrop.addEventListener('click', closeLightbox);
+      if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && lb.classList.contains('is-open')) closeLightbox();
+      });
+    })();
+    function switchView(view) {
+      document.querySelectorAll('.view-btn').forEach(function(b) { b.classList.toggle('active', b.dataset.view === view); });
+      document.querySelector('.page').classList.toggle('poster-view', view === 'posters');
+    }
+"""
+
+def write_asset_files(out_dir):
+    """Write external CSS and JS files for browser caching."""
+    p = Path(out_dir)
+    p.mkdir(parents=True, exist_ok=True)
+    (p / "style.css").write_text(_PAGE_CSS, encoding="utf-8")
+    (p / "script.js").write_text(_PAGE_JS, encoding="utf-8")
+
+
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -1641,330 +2293,7 @@ def build_html(data: Dict[str, Any]) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
-  <style>
-    :root {{
-      --bg: #0a0a0f;
-      --card-bg: #12121a;
-      --surface: #12121a;
-      --surface-2: #12121a;
-      --surface-3: #1a1a24;
-      --border: rgba(168,85,247,0.25);
-      --text: #e2e8f0;
-      --text-muted: #94a3b8;
-      --cyan: #00d4ff;
-      --purple: #a855f7;
-      --accent: #00d4ff;
-      --accent-dim: rgba(0,212,255,0.15);
-      --accent-glow: rgba(0,212,255,0.25);
-      --radius: 16px;
-      --radius-sm: 10px;
-      --radius-lg: 24px;
-      --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    }}
-    * {{ box-sizing: border-box; margin: 0; padding: 0; }}
-    html {{ scroll-behavior: smooth; }}
-    body {{
-      font-family: 'Space Grotesk', system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      min-height: 100vh;
-      overflow-x: hidden;
-      -webkit-font-smoothing: antialiased;
-    }}
-    .bg-mesh {{
-      position: fixed;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 100% 80% at 50% -30%, var(--accent-dim) 0%, transparent 50%),
-        radial-gradient(ellipse 60% 50% at 80% 100%, rgba(0,212,255,0.08) 0%, transparent 40%),
-        radial-gradient(ellipse 40% 40% at 10% 90%, rgba(168,85,247,0.05) 0%, transparent 50%);
-      pointer-events: none;
-      z-index: 0;
-    }}
-    .bg-grid {{
-      position: fixed;
-      inset: 0;
-      background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
-      background-size: 60px 60px;
-      pointer-events: none;
-      z-index: 0;
-    }}
-    .page {{ position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }}
-    @media (min-width: 640px) {{ .page {{ padding: 3rem 2rem 5rem; }} }}
-    header {{
-      text-align: center;
-      padding: 3rem 0 2rem;
-      border-bottom: 1px solid var(--border);
-      animation: fadeUp 0.8s ease-out;
-    }}
-    @keyframes fadeUp {{
-      from {{ opacity: 0; transform: translateY(20px); }}
-      to {{ opacity: 1; transform: translateY(0); }}
-    }}
-    header h1 {{
-      font-size: clamp(2rem, 5vw, 2.5rem);
-      font-weight: 800;
-      letter-spacing: -0.04em;
-      background: linear-gradient(90deg, var(--cyan), var(--purple));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }}
-    header p {{ color: var(--text-muted); font-size: 0.95rem; margin-top: 0.25rem; }}
-    .filter-tabs {{ display: flex; flex-direction: column; gap: 1rem; padding: 1rem 0 0.5rem; }}
-    .tabs-wrap {{ display: flex; flex-direction: column; gap: 0.4rem; align-items: center; }}
-    .tabs-label {{
-      font-size: 0.7rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text-muted);
-    }}
-    .tabs {{ display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }}
-    .tab {{
-      font-family: inherit;
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      color: var(--text);
-      padding: 0.5rem 0.75rem;
-      border-radius: var(--radius-sm);
-      cursor: pointer;
-      font-size: 0.9rem;
-      transition: all var(--transition);
-    }}
-    .tab:hover {{ border-color: var(--cyan); }}
-    .tab.active {{
-      background: linear-gradient(135deg, var(--accent-dim), rgba(168,85,247,0.15));
-      border-color: var(--cyan);
-    }}
-    #films {{ display: grid; grid-template-columns: 1fr; gap: 1.5rem; }}
-    .film-section {{
-      grid-column: 1 / -1;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1rem;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 1rem;
-      background: linear-gradient(160deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-    }}
-    @media (min-width: 900px) {{
-      .film-section {{ grid-template-columns: repeat(2, 1fr); }}
-    }}
-    .film-section--now {{
-      border-color: rgba(0,212,255,0.45);
-      box-shadow: inset 0 0 0 1px rgba(0,212,255,0.08);
-    }}
-    .film-section--coming {{
-      border-color: rgba(168,85,247,0.45);
-      box-shadow: inset 0 0 0 1px rgba(168,85,247,0.1);
-    }}
-    .section-title-wrap {{
-      grid-column: 1 / -1;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.75rem;
-      padding: 0.9rem 1rem;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,0.02);
-    }}
-    .film-section--now .section-title-wrap {{
-      border-color: rgba(0,212,255,0.5);
-      background: linear-gradient(90deg, rgba(0,212,255,0.2), rgba(0,212,255,0.06));
-    }}
-    .film-section--coming .section-title-wrap {{
-      border-color: rgba(168,85,247,0.5);
-      background: linear-gradient(90deg, rgba(168,85,247,0.24), rgba(168,85,247,0.08));
-    }}
-    .section-title {{
-      font-size: 1.15rem;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      margin: 0;
-      text-transform: uppercase;
-    }}
-    .film-section--now .section-title {{ color: var(--cyan); }}
-    .film-section--coming .section-title {{ color: #cf90ff; }}
-    .section-count {{ font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--text); opacity: 0.95; }}
-    .film-card {{
-      background: linear-gradient(135deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 1.25rem;
-      transition: all var(--transition);
-      position: relative;
-      overflow: hidden;
-      animation: fadeUp 0.6s ease-out backwards;
-    }}
-    .status-pill {{
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 1.7rem;
-      padding: 0.2rem 0.55rem;
-      border-radius: 999px;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.07em;
-      text-transform: uppercase;
-      border: 1px solid transparent;
-      margin-bottom: 0.7rem;
-    }}
-    .status-pill--now {{ background: rgba(0,212,255,0.16); border-color: rgba(0,212,255,0.45); color: #8beeff; }}
-    .status-pill--coming-soon {{ background: rgba(168,85,247,0.2); border-color: rgba(168,85,247,0.5); color: #e0b8ff; }}
-    .chance-badge {{ display: inline-block; padding: 0.15rem 0.5rem; border-radius: 999px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; margin-left: 0.4rem; margin-bottom: 0.7rem; vertical-align: top; }}
-    .chance-opens {{ background: rgba(74,222,128,0.2); color: #4ade80; border: 1px solid rgba(74,222,128,0.4); }}
-    .chance-closing {{ background: rgba(251,113,133,0.2); color: #fb7185; border: 1px solid rgba(251,113,133,0.4); }}
-    .film-card::before {{
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--cyan), transparent);
-      opacity: 0;
-      transition: opacity var(--transition);
-    }}
-    .film-card:hover {{
-      border-color: rgba(0,212,255,0.4);
-      transform: translateY(-4px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(0,212,255,0.1);
-    }}
-    .film-card:hover::before {{ opacity: 1; }}
-    .film-header {{ display: flex; gap: 1.25rem; flex-wrap: wrap; }}
-    .poster {{ position: relative; flex-shrink: 0; }}
-    .poster img {{ width: 210px; height: 315px; object-fit: cover; border-radius: var(--radius-sm); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }}
-    .poster-fallback-label {{
-      position: absolute;
-      left: 0.5rem;
-      right: 0.5rem;
-      bottom: 0.55rem;
-      padding: 0.2rem 0.4rem;
-      border-radius: 6px;
-      background: rgba(0, 0, 0, 0.62);
-      color: #e2e8f0;
-      font-size: 0.72rem;
-      text-align: center;
-      letter-spacing: 0.02em;
-    }}
-    .poster .icon--hints {{ position: absolute; right: 0; top: 0; width: 105px; height: 105px; pointer-events: none; }}
-    .poster .icon--hints.icon--3d {{ background: url(icons/3D-Performance.png) no-repeat; background-size: 100% auto; background-position: top right; }}
-    .film-meta {{ flex: 1; min-width: 200px; }}
-    .film-meta h2 {{ font-size: 1.25rem; margin: 0 0 0.5rem; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }}
-    .cert {{ display: inline-block; width: 29px; height: 29px; background-position: center; background-repeat: no-repeat; background-size: 100% auto; margin-right: 6px; vertical-align: middle; }}
-    .cert--U {{ background-image: url(certs/cert-u.png); }}
-    .cert--PG {{ background-image: url(certs/cert-pg.png); }}
-    .cert--12A {{ background-image: url(certs/cert-12a.png); }}
-    .cert--15 {{ background-image: url(certs/cert-15.png); }}
-    .cert--18 {{ background-image: url(certs/cert-18.png); }}
-    .cert-fallback {{ background: var(--surface-3); color: #fff; font-size: 0.65rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; border-radius: 4px; }}
-    .meta-line {{ color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; }}
-    .rating-wrap {{ display: inline-flex; align-items: center; gap: 0.4rem; }}
-    .rating-bar {{ display: block; width: 3rem; height: 0.5rem; background: rgba(255,255,255,0.25); border-radius: 3px; overflow: hidden; }}
-    .rating-fill {{ display: block; height: 0.5rem; background: linear-gradient(90deg, #00d4ff, #a855f7); border-radius: 3px; transition: width 0.2s; }}
-    .rating-text {{ font-variant-numeric: tabular-nums; font-size: 0.85em; color: var(--cyan); }}
-    .genres {{ color: var(--purple); }}
-    .trailer {{ display: inline-block; margin-bottom: 0.5rem; color: var(--cyan); font-size: 0.9rem; background: none; border: none; cursor: pointer; font-family: inherit; padding: 0; text-decoration: underline; }}
-    .trailer:hover {{ color: var(--purple); }}
-    .trailer-lightbox {{ position: fixed; inset: 0; z-index: 1000; display: none; align-items: center; justify-content: center; padding: 1rem; box-sizing: border-box; }}
-    .trailer-lightbox.is-open {{ display: flex; }}
-    .trailer-lightbox-backdrop {{ position: absolute; inset: 0; background: rgba(0,0,0,0.85); cursor: pointer; }}
-    .trailer-lightbox-inner {{ position: relative; width: 100%; max-width: 90vw; max-height: 90vh; aspect-ratio: 16/9; background: #000; border-radius: var(--radius); box-shadow: 0 0 40px var(--accent-glow); overflow: hidden; }}
-    .trailer-lightbox-inner iframe {{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }}
-    .trailer-lightbox-close {{ position: absolute; top: -2.5rem; right: 0; background: var(--surface-2); border: 1px solid var(--border); color: var(--text); width: 2rem; height: 2rem; border-radius: var(--radius-sm); cursor: pointer; font-size: 1.25rem; line-height: 1; display: flex; align-items: center; justify-content: center; z-index: 1; transition: all var(--transition); }}
-    .trailer-lightbox-close:hover {{ border-color: var(--cyan); color: var(--cyan); }}
-    .trailer-lightbox-fallback {{ position: absolute; bottom: 0.5rem; left: 0.5rem; font-size: 0.85rem; color: var(--cyan); }}
-    .trailer-lightbox-fallback:hover {{ color: var(--purple); }}
-    .film-meta .crew {{ font-size: 0.9rem; color: var(--text-muted); margin: 0; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }}
-    .film-meta .crew:first-of-type {{ padding-top: 0; }}
-    .film-meta .cast {{ font-size: 0.9rem; color: var(--text-muted); margin: 0; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }}
-    .film-meta .synopsis {{ font-size: 0.9rem; color: var(--text-muted); margin: 0; padding: 0.75rem 0 0.5rem; line-height: 1.5; max-width: 56em; border-top: 1px solid var(--border); }}
-    .links {{ margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }}
-    .links a {{
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      padding: 0.5rem 0.75rem;
-      border-radius: var(--radius-sm);
-      font-size: 0.9rem;
-      text-decoration: none;
-      transition: all var(--transition);
-    }}
-    .links .btn {{
-      background: linear-gradient(135deg, var(--cyan), var(--purple));
-      color: var(--bg);
-      font-weight: 600;
-      border: none;
-    }}
-    .links .btn:hover {{
-      background: linear-gradient(135deg, #20dfff, #b366ff);
-      transform: scale(1.02);
-      box-shadow: 0 4px 20px var(--accent-glow);
-    }}
-    .links .link {{ color: var(--accent); background: rgba(255,255,255,0.06); border: 1px solid var(--border); }}
-    .links .link:hover {{ background: rgba(0,212,255,0.12); border-color: var(--cyan); color: var(--purple); }}
-    .ext-logo {{ width: 18px; height: 18px; flex-shrink: 0; }}
-    .showtimes {{ margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.9rem; }}
-    .day-group {{ margin-bottom: 0.75rem; }}
-    .day-group:last-child {{ margin-bottom: 0; }}
-    .st-date {{ font-weight: 600; margin-bottom: 0.25rem; color: var(--text); }}
-    .st-row {{ display: grid; grid-template-columns: 4.5rem minmax(9rem, 1fr) 2fr; gap: 0 0.75rem; align-items: center; margin-bottom: 0.2rem; }}
-    .st-row:last-child {{ margin-bottom: 0; }}
-    .st-time {{ font-variant-numeric: tabular-nums; }}
-    .st-time a, .showtime a {{ color: var(--cyan); }}
-    .st-time .past {{ color: var(--text-muted); }}
-    .st-screen {{ color: var(--text-muted); }}
-    .st-tags {{ display: flex; align-items: center; flex-wrap: wrap; gap: 0.25rem; }}
-    .showtimes-more {{ margin-top: 0.5rem; }}
-    .showtimes-more-btn {{
-      margin-top: 0.65rem;
-      padding: 0.38rem 0.7rem;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,0.04);
-      color: var(--accent);
-      font-family: inherit;
-      font-size: 0.82rem;
-      cursor: pointer;
-      transition: all var(--transition);
-    }}
-    .showtimes-more-btn:hover {{ border-color: var(--cyan); background: rgba(0,212,255,0.1); }}
-    .cast-more-btn {{ background: none; border: none; color: var(--cyan); cursor: pointer; font-size: 0.85em; padding: 0 0.25rem; font-family: inherit; }}
-    .cast-more-btn:hover {{ text-decoration: underline; }}
-    .tag {{ font-size: 0.75rem; color: var(--text-muted); margin-left: 0.25rem; display: inline-flex; align-items: center; gap: 0.25rem; }}
-    .tag-icon {{ width: 14px; height: 14px; flex-shrink: 0; vertical-align: middle; }}
-    .cal-link {{ color: var(--purple); text-decoration: none; margin-left: 0.25rem; }}
-    footer {{
-      margin-top: 4rem;
-      padding-top: 2.5rem;
-      border-top: 1px solid var(--border);
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 0.85rem;
-      animation: fadeUp 0.6s ease-out backwards;
-    }}
-    footer a {{ color: var(--accent); text-decoration: none; font-weight: 500; transition: color var(--transition); }}
-    footer a:hover {{ color: var(--purple); }}
-    .footer-disclaimer {{ font-size: 0.9rem; max-width: 36rem; margin: 0 auto 1rem; line-height: 1.6; }}
-    .footer-links {{ display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1.5rem; margin-bottom: 1rem; }}
-    .footer-attribution {{ font-size: 0.8rem; opacity: 0.85; margin: 0; line-height: 1.5; }}
-    .view-toggle {{ display: flex; gap: 0.4rem; margin-top: 0.75rem; }}
-    .view-btn {{ padding: 0.3rem 0.7rem; border-radius: 6px; border: 1px solid var(--border); background: var(--surface); color: var(--muted); cursor: pointer; font-size: 0.78rem; font-weight: 500; transition: all 0.15s; }}
-    .view-btn.active {{ background: var(--accent); color: #fff; border-color: var(--accent); }}
-    .view-btn:hover:not(.active) {{ border-color: var(--accent); color: var(--accent); }}
-    .poster-view .film-card {{ display: block; max-width: 220px; padding: 0; background: none; border: none; }}
-    .poster-view .film-card .film-header {{ display: block; }}
-    .poster-view .film-card .film-meta {{ padding: 0.5rem 0.25rem; }}
-    .poster-view .film-card .showtimes, .poster-view .film-card .links, .poster-view .film-card .synopsis, .poster-view .film-card .crew-line {{ display: none; }}
-    .poster-view .film-card .film-poster {{ width: 100%; height: auto; aspect-ratio: 2/3; object-fit: cover; border-radius: 8px; }}
-    .poster-view #films {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1.5rem; }}
+  <link rel="stylesheet" href="style.css">
   </style>
 </head>
 <body>
@@ -2021,320 +2350,7 @@ def build_html(data: Dict[str, Any]) -> str:
       </p>
     </footer>
   </div>
-  <script>
-    document.querySelectorAll('.cast-more-btn').forEach(function(btn) {{
-      btn.addEventListener('click', function() {{
-        var rest = btn.previousElementSibling;
-        if (rest && rest.classList.contains('cast-rest')) {{
-          var on = rest.hasAttribute('hidden');
-          if (on) {{ rest.removeAttribute('hidden'); btn.textContent = 'Less'; }}
-          else {{ rest.setAttribute('hidden', ''); btn.textContent = 'More'; }}
-        }}
-      }});
-    }});
-    (function() {{
-      var filmsMain = document.getElementById('films');
-      var initialShowings = parseInt((filmsMain && filmsMain.getAttribute('data-initial-showings')) || '10', 10);
-      var se = 'script';
-
-      function showtimeFromRow(row) {{
-        if (!row) return {{ date: '', time: '', screen: '', cinema_name: '', booking_url: '', tags: [] }};
-        if (!Array.isArray(row)) return row;
-        return {{
-          date: row[0] || '',
-          time: row[1] || '',
-          screen: row[2],
-          cinema_name: row[3] || '',
-          booking_url: row[4] || '',
-          tags: Array.isArray(row[5]) ? row[5] : []
-        }};
-      }}
-      function showtimesFromParsed(raw) {{
-        if (!raw) return [];
-        if (raw.v === 1 && Array.isArray(raw.r)) return raw.r.map(showtimeFromRow);
-        if (Array.isArray(raw)) {{
-          if (raw.length && Array.isArray(raw[0])) return raw.map(showtimeFromRow);
-          return raw.slice();
-        }}
-        return [];
-      }}
-      function showtimeToCompactRow(st) {{
-        return [st.date || '', st.time || '', st.screen, st.cinema_name || '', st.booking_url || '', st.tags || []];
-      }}
-
-      function escHtml(value) {{
-        return String(value || '')
-          .replace(/&/g, '&amp;')
-          .replace(/</g, '&lt;')
-          .replace(/>/g, '&gt;')
-          .replace(/"/g, '&quot;');
-      }}
-      function formatDateLabel(isoDate) {{
-        if (!isoDate) return '';
-        var dt = new Date(isoDate + 'T12:00:00Z');
-        if (Number.isNaN(dt.getTime())) return isoDate;
-        return dt.toLocaleDateString('en-GB', {{ weekday: 'short', day: '2-digit', month: 'short', timeZone: 'Europe/London' }});
-      }}
-      function tagHtml(tag) {{
-        var iconMap = {{
-          'Audio Description': 'icon-audio-desc',
-          'Wheelchair access': 'icon-wheelchair',
-          '2D': 'icon-2d',
-          '3D': 'icon-3d',
-          'Subtitles': 'icon-subtitles',
-          'Silver Screen': 'icon-silver-screen',
-          'Event cinema': 'icon-event-cinema',
-          'Strobe Light warning': 'icon-strobe',
-          'Parent & Baby': 'icon-parent-baby',
-          'Autism Friendly': 'icon-autism-friendly',
-          'Kids Club': 'icon-kids-club'
-        }};
-        var shortLabelMap = {{ 'Audio Description': 'AD', 'Subtitles': 'Subs', 'Wheelchair access': 'WA', 'Strobe Light warning': 'Strobe' }};
-        var tooltipMap = {{
-          'Audio Description': 'Audio description',
-          'Subtitles': 'Subtitled screening',
-          'Wheelchair access': 'Wheelchair accessible',
-          '2D': 'Standard 2D screening',
-          'Strobe Light warning': 'Strobe lighting may affect photosensitive viewers'
-        }};
-        var iconId = iconMap[tag];
-        var label = shortLabelMap[tag] || tag;
-        var tooltip = tooltipMap[tag] || (shortLabelMap[tag] ? tag : '');
-        var titleAttr = tooltip ? ' title="' + escHtml(tooltip) + '"' : '';
-        if (iconId) {{
-          return '<span class="tag"' + titleAttr + '><svg class="tag-icon" aria-hidden="true"><use href="#' + iconId + '"/></svg>' + escHtml(label) + '</span>';
-        }}
-        return '<span class="tag"' + titleAttr + '>' + escHtml(label) + '</span>';
-      }}
-      function renderShowingsHtml(list) {{
-        var grouped = {{}};
-        list.forEach(function(st) {{
-          var d = st.date || '';
-          if (!grouped[d]) grouped[d] = [];
-          grouped[d].push(st);
-        }});
-        return Object.keys(grouped).sort().map(function(d) {{
-          var rows = grouped[d].map(function(st) {{
-            var time = escHtml(st.time || '');
-            var cinema = String(st.cinema_name || '').trim();
-            cinema = cinema.indexOf(',') !== -1 ? cinema.split(',').pop().trim() : cinema;
-            var screen = String(st.screen || '');
-            var screenLabel = cinema && screen ? (cinema + ' (Screen ' + screen + ')') : (cinema || ('Screen ' + screen));
-            var booking = String(st.booking_url || '');
-            var timeEl = booking ? '<a href="' + escHtml(booking) + '">' + time + '</a>' : '<span class="past">' + time + '</span>';
-            var tags = Array.isArray(st.tags) ? st.tags.slice(0, 4) : [];
-            var tagSpan = tags.map(tagHtml).join(' ');
-            return '<div class="st-row"><span class="st-time">' + timeEl + '</span><span class="st-screen">' + escHtml(screenLabel) + '</span><span class="st-tags">' + tagSpan + '</span></div>';
-          }}).join('');
-          return '<div class="day-group"><div class="st-date">' + escHtml(formatDateLabel(d)) + '</div>' + rows + '</div>';
-        }}).join('');
-      }}
-
-      function sortShowtimes(list) {{
-        list.sort(function(a, b) {{
-          var ad = a.date || '';
-          var bd = b.date || '';
-          if (ad !== bd) return ad < bd ? -1 : ad > bd ? 1 : 0;
-          var at = a.time || '';
-          var bt = b.time || '';
-          if (at !== bt) return at < bt ? -1 : at > bt ? 1 : 0;
-          var as = String(a.screen || '');
-          var bs = String(b.screen || '');
-          if (as !== bs) return as < bs ? -1 : as > bs ? 1 : 0;
-          var ab = a.booking_url || '';
-          var bb = b.booking_url || '';
-          return ab < bb ? -1 : ab > bb ? 1 : 0;
-        }});
-      }}
-
-      function buildShowtimesInner(list) {{
-        var copy = list.slice();
-        sortShowtimes(copy);
-        var visible = copy.slice(0, initialShowings);
-        var hidden = copy.slice(initialShowings);
-        var html = renderShowingsHtml(visible);
-        if (hidden.length) {{
-          var hiddenJson = JSON.stringify({{ v: 1, r: hidden.map(showtimeToCompactRow) }}).replace(/<\\//g, '<\\/');
-          var count = hidden.length;
-          var noun = count === 1 ? 'showing' : 'showings';
-          html += '<' + se + ' type="application/json" class="showtimes-more-data">' + hiddenJson + '</' + se + '>';
-          html += '<div class="showtimes-more" hidden></div>';
-          html += '<button type="button" class="showtimes-more-btn" aria-expanded="false">Show ' + count + ' more ' + noun + '</button>';
-        }}
-        return html;
-      }}
-
-      function shortCinemaName(full) {{
-        var s = String(full || '').trim();
-        if (!s) return '';
-        var parts = s.split(',');
-        return parts.length > 1 ? parts[parts.length - 1].trim() : s;
-      }}
-
-      var selectedDate = 'all';
-      var selectedCinema = 'all';
-      var STORAGE_CINEMA = 'wtw-whats-on-cinema';
-
-      function cinemaTabValues() {{
-        var vals = [];
-        document.querySelectorAll('.tab-cinema').forEach(function(b) {{
-          var v = b.getAttribute('data-cinema');
-          if (v != null && vals.indexOf(v) === -1) vals.push(v);
-        }});
-        return vals;
-      }}
-
-      function readPersistedCinema() {{
-        try {{
-          var raw = localStorage.getItem(STORAGE_CINEMA);
-          if (raw == null || raw === '') return null;
-          if (cinemaTabValues().indexOf(raw) !== -1) return raw;
-        }} catch (e0) {{}}
-        try {{ localStorage.removeItem(STORAGE_CINEMA); }} catch (e1) {{}}
-        return null;
-      }}
-
-      function writePersistedCinema(v) {{
-        try {{
-          if (v === 'all') localStorage.removeItem(STORAGE_CINEMA);
-          else localStorage.setItem(STORAGE_CINEMA, v);
-        }} catch (e2) {{}}
-      }}
-
-      function applyFilters() {{
-        var sectionVisibility = {{ now: false, coming: false }};
-        document.querySelectorAll('.film-card').forEach(function(card) {{
-          var dataScript = card.querySelector('script.film-showtimes-full');
-          var showtimesEl = card.querySelector('.showtimes');
-          if (!dataScript || !showtimesEl) {{
-            card.style.display = 'none';
-            return;
-          }}
-          var all = [];
-          try {{
-            all = showtimesFromParsed(JSON.parse(dataScript.textContent || 'null'));
-          }} catch (e1) {{
-            card.style.display = 'none';
-            return;
-          }}
-          var picked = all.filter(function(st) {{
-            var dateOk = selectedDate === 'all' || st.date === selectedDate;
-            var cinemaOk = selectedCinema === 'all' || shortCinemaName(st.cinema_name) === selectedCinema;
-            return dateOk && cinemaOk;
-          }});
-          var show = picked.length > 0;
-          card.style.display = show ? 'block' : 'none';
-          if (show) {{
-            var status = card.getAttribute('data-status') || '';
-            if (status === 'now') sectionVisibility.now = true;
-            if (status === 'coming-soon') sectionVisibility.coming = true;
-            showtimesEl.innerHTML = buildShowtimesInner(picked);
-          }}
-        }});
-        document.querySelectorAll('.film-section').forEach(function(section) {{
-          var sectionType = section.getAttribute('data-section') || '';
-          var showSection = sectionType === 'now' ? sectionVisibility.now : sectionVisibility.coming;
-          section.style.display = showSection ? 'grid' : 'none';
-        }});
-      }}
-
-      document.querySelectorAll('.tab-date').forEach(function(btn) {{
-        btn.addEventListener('click', function() {{
-          document.querySelectorAll('.tab-date').forEach(function(b) {{ b.classList.remove('active'); }});
-          btn.classList.add('active');
-          selectedDate = btn.getAttribute('data-date') || 'all';
-          applyFilters();
-        }});
-      }});
-      document.querySelectorAll('.tab-cinema').forEach(function(btn) {{
-        btn.addEventListener('click', function() {{
-          document.querySelectorAll('.tab-cinema').forEach(function(b) {{ b.classList.remove('active'); }});
-          btn.classList.add('active');
-          selectedCinema = btn.getAttribute('data-cinema') || 'all';
-          writePersistedCinema(selectedCinema);
-          applyFilters();
-        }});
-      }});
-
-      (function restoreCinemaFromStorage() {{
-        var saved = readPersistedCinema();
-        if (saved == null) return;
-        selectedCinema = saved;
-        document.querySelectorAll('.tab-cinema').forEach(function(b) {{
-          if ((b.getAttribute('data-cinema') || '') === saved) b.classList.add('active');
-          else b.classList.remove('active');
-        }});
-        applyFilters();
-      }})();
-
-      if (filmsMain) {{
-        filmsMain.addEventListener('click', function(e) {{
-          var btn = e.target.closest('.showtimes-more-btn');
-          if (!btn || !filmsMain.contains(btn)) return;
-          var card = btn.closest('.film-card');
-          if (!card) return;
-          var holder = card.querySelector('.showtimes-more');
-          var dataNode = card.querySelector('.showtimes-more-data');
-          if (!holder || !dataNode) return;
-
-          var expanded = btn.getAttribute('aria-expanded') === 'true';
-          if (expanded) {{
-            holder.setAttribute('hidden', '');
-            btn.setAttribute('aria-expanded', 'false');
-            btn.textContent = btn.getAttribute('data-show-label') || 'Show more';
-            return;
-          }}
-
-          if (!holder.hasChildNodes()) {{
-            try {{
-              var list = showtimesFromParsed(JSON.parse(dataNode.textContent || 'null'));
-              holder.innerHTML = renderShowingsHtml(list);
-            }} catch (e2) {{
-              holder.innerHTML = '';
-            }}
-          }}
-          holder.removeAttribute('hidden');
-          btn.setAttribute('aria-expanded', 'true');
-          if (!btn.getAttribute('data-show-label')) btn.setAttribute('data-show-label', btn.textContent);
-          btn.textContent = 'Show less';
-        }});
-      }}
-    }})();
-    (function() {{
-      var lb = document.getElementById('trailer-lightbox');
-      var iframe = document.getElementById('trailer-lightbox-iframe');
-      var backdrop = document.getElementById('trailer-lightbox-backdrop');
-      var closeBtn = document.getElementById('trailer-lightbox-close');
-      var fallbackLink = document.getElementById('trailer-lightbox-fallback');
-      function closeLightbox() {{
-        lb.classList.remove('is-open');
-        lb.setAttribute('aria-hidden', 'true');
-        iframe.src = '';
-        if (fallbackLink) fallbackLink.href = '#';
-      }}
-      function openLightbox(embedUrl, watchUrl) {{
-        iframe.src = embedUrl;
-        if (fallbackLink && watchUrl) fallbackLink.href = watchUrl;
-        lb.classList.add('is-open');
-        lb.setAttribute('aria-hidden', 'false');
-      }}
-      document.querySelectorAll('.trailer-lightbox-trigger').forEach(function(btn) {{
-        btn.addEventListener('click', function() {{
-          var embedUrl = this.getAttribute('data-embed');
-          var watchUrl = this.getAttribute('data-watch') || '';
-          if (embedUrl) openLightbox(embedUrl, watchUrl);
-        }});
-      }});
-      if (backdrop) backdrop.addEventListener('click', closeLightbox);
-      if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
-      document.addEventListener('keydown', function(e) {{
-        if (e.key === 'Escape' && lb.classList.contains('is-open')) closeLightbox();
-      }});
-    }})();
-    function switchView(view) {{
-      document.querySelectorAll('.view-btn').forEach(function(b) {{ b.classList.toggle('active', b.dataset.view === view); }});
-      document.querySelector('.page').classList.toggle('poster-view', view === 'posters');
-    }}
+  <script src="script.js" defer></script>
   </script>
 </body>
 </html>
@@ -2484,6 +2500,7 @@ def main() -> None:
     _download_3d_icon()
     html = build_html(data)
     Path(SITE_DIR).mkdir(parents=True, exist_ok=True)
+    write_asset_files(SITE_DIR)
     Path(SITE_DIR, "index.html").write_text(html, encoding="utf-8")
     logger.info("Wrote %s/index.html", SITE_DIR)
     Path(FINGERPRINT_FILE).write_text(fingerprint, encoding="utf-8")
