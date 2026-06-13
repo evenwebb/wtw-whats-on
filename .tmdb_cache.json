@@ -39,21 +39,6 @@
     "cast": "",
     "cached_at": "2026-06-12T12:12:20.654138"
   },
-  "michael": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=miLGuFiSAis",
-    "vote_average": 7.554,
-    "genres": [
-      "Music",
-      "Drama"
-    ],
-    "imdb_id": "tt11378946",
-    "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
-    "director": "Antoine Fuqua",
-    "writer": "John Logan",
-    "cast": "Jaafar Jackson (Michael Jackson), Colman Domingo (Joseph Jackson), Nia Long (Katherine Jackson), Juliano Krue Valdi (Young Michael Jackson), Miles Teller (John Branca), KeiLyn Durrel Jones (Bill Bray), Kendrick Sampson (Quincy Jones), Joseph David-Jones (Jackie Jackson), Rhyan Hill (Tito Jackson), Jamal Henderson (Jermaine Jackson), Trey Horton (Marlon Jackson), Jessica Sula (LaToya Jackson)",
-    "cached_at": "2026-05-14T11:10:03.345976"
-  },
   "the-super-mario-galaxy-movie": {
     "poster_url": "https://image.tmdb.org/t/p/w342/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
     "trailer_url": "https://www.youtube.com/watch?v=fm3oeAGbcd4",
@@ -169,7 +154,7 @@
     "director": "",
     "writer": "",
     "cast": "André Rieu (Himself)",
-    "cached_at": "2026-06-13T11:09:32.483859"
+    "cached_at": "2026-06-13T12:58:36.342283"
   },
   "passenger": {
     "poster_url": "https://image.tmdb.org/t/p/w342/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
@@ -386,7 +371,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-13T11:09:32.974350"
+    "cached_at": "2026-06-13T12:58:36.789495"
   },
   "la-fanciulla-del-west-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -434,7 +419,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-13T11:09:33.221823"
+    "cached_at": "2026-06-13T12:58:37.005317"
   },
   "swan-lake-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -470,7 +455,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-13T11:09:33.465487"
+    "cached_at": "2026-06-13T12:58:37.220950"
   },
   "backrooms": {
     "poster_url": "https://image.tmdb.org/t/p/w342/vpkNMkbisv5cTaIfCzUduYzXnjb.jpg",
@@ -711,7 +696,7 @@
     "director": "Brian Castles Onion",
     "writer": "Francesco Maria Piave, Alexandre Dumas fils",
     "cast": "Emma Matthews, Gianluca Terranova, Jonathan Summers, Margaret Plummer",
-    "cached_at": "2026-06-13T11:09:32.726705"
+    "cached_at": "2026-06-13T12:58:36.558915"
   },
   "toy-story-5-autism-friendly-screening": {
     "poster_url": "",
@@ -792,5 +777,20 @@
     "writer": "",
     "cast": "Henry Goodman (Claude Monet)",
     "cached_at": "2026-06-12T12:12:21.047587"
+  },
+  "michael": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=XTt4vxZr2a8",
+    "vote_average": 8.545,
+    "genres": [
+      "Music",
+      "Drama"
+    ],
+    "imdb_id": "tt11378946",
+    "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+    "director": "Antoine Fuqua",
+    "writer": "John Logan",
+    "cast": "Jaafar Jackson (Michael Jackson), Colman Domingo (Joseph Jackson), Nia Long (Katherine Jackson), Juliano Krue Valdi (Young Michael Jackson), Miles Teller (John Branca), KeiLyn Durrel Jones (Bill Bray), Kendrick Sampson (Quincy Jones), Joseph David-Jones (Jackie Jackson), Rhyan Hill (Tito Jackson), Jamal Henderson (Jermaine Jackson), Trey Horton (Marlon Jackson), Jessica Sula (LaToya Jackson)",
+    "cached_at": "2026-06-13T12:58:37.456354"
   }
 }

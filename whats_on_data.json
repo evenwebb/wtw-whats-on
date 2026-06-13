@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-13T11:09:29Z",
+  "updated_at": "2026-06-13T12:55:31Z",
   "cinemas": {
     "st-austell": {
       "name": "White River Cinema, St Austell",
@@ -1776,7 +1776,9 @@
         "primary_selector_nodes": 30,
         "fallback_selector_nodes": 0,
         "parsed_films": 29,
-        "parsed_showtimes": 88
+        "parsed_showtimes": 88,
+        "restored_from_previous": true,
+        "scrape_error": "HTTPSConnectionPool(host='wtwcinemas.co.uk', port=443): Max retries exceeded with url: /st-austell/whats-on/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='wtwcinemas.co.uk', port=443) at 0x7fe18073ec30>, 'Connection to wtwcinemas.co.uk timed out. (connect timeout=60)'))"
       }
     },
     "newquay": {
@@ -2308,8 +2310,8 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=miLGuFiSAis",
-          "vote_average": 7.554,
+          "trailer_url": "https://www.youtube.com/watch?v=XTt4vxZr2a8",
+          "vote_average": 8.545,
           "genres": [
             "Music",
             "Drama"
@@ -3554,7 +3556,9 @@
         "primary_selector_nodes": 27,
         "fallback_selector_nodes": 0,
         "parsed_films": 26,
-        "parsed_showtimes": 93
+        "parsed_showtimes": 93,
+        "restored_from_previous": true,
+        "scrape_error": "HTTPSConnectionPool(host='wtwcinemas.co.uk', port=443): Max retries exceeded with url: /newquay/whats-on/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='wtwcinemas.co.uk', port=443) at 0x7fe17ff6e3f0>, 'Connection to wtwcinemas.co.uk timed out. (connect timeout=60)'))"
       }
     },
     "truro": {
@@ -4209,8 +4213,8 @@
               ]
             }
           ],
-          "trailer_url": "https://www.youtube.com/watch?v=miLGuFiSAis",
-          "vote_average": 7.554,
+          "trailer_url": "https://www.youtube.com/watch?v=XTt4vxZr2a8",
+          "vote_average": 8.545,
           "genres": [
             "Music",
             "Drama"
@@ -6005,7 +6009,9 @@
         "primary_selector_nodes": 42,
         "fallback_selector_nodes": 0,
         "parsed_films": 39,
-        "parsed_showtimes": 126
+        "parsed_showtimes": 126,
+        "restored_from_previous": true,
+        "scrape_error": "HTTPSConnectionPool(host='wtwcinemas.co.uk', port=443): Max retries exceeded with url: /truro/whats-on/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='wtwcinemas.co.uk', port=443) at 0x7fe17ff6df10>, 'Connection to wtwcinemas.co.uk timed out. (connect timeout=60)'))"
       }
     },
     "wadebridge": {
@@ -7655,7 +7661,9 @@
         "primary_selector_nodes": 26,
         "fallback_selector_nodes": 0,
         "parsed_films": 26,
-        "parsed_showtimes": 85
+        "parsed_showtimes": 85,
+        "restored_from_previous": true,
+        "scrape_error": "HTTPSConnectionPool(host='wtwcinemas.co.uk', port=443): Max retries exceeded with url: /wadebridge/whats-on/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='wtwcinemas.co.uk', port=443) at 0x7fe17ff6e030>, 'Connection to wtwcinemas.co.uk timed out. (connect timeout=60)'))"
       }
     }
   }
