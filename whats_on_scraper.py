@@ -1924,14 +1924,7 @@ def compute_fingerprint(data: Dict[str, Any]) -> str:
             )
             for st in showtimes:
                 parts.append(
-                    "S|{slug}|{cinema}|{date}|{time}|{screen}|{booking}".format(
-                        slug=cinema_slug,
-                        cinema=st.get("cinema_name", ""),
-                        date=st.get("date", ""),
-                        time=st.get("time", ""),
-                        screen=st.get("screen", ""),
-                        booking=st.get("booking_url", ""),
-                    )
+                    f"S|{film.get('film_slug', '')}|{cinema_slug}|{st.get('date', '')}|{st.get('time', '')}|{st.get('screen', '')}|{st.get('booking_url', '')}"
                 )
     return hashlib.sha256("\n".join(parts).encode("utf-8")).hexdigest()
 
