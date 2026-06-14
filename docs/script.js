@@ -45,6 +45,10 @@
           .replace(/>/g, '&gt;')
           .replace(/"/g, '&quot;');
       }
+      function safeUrl(value) {
+        var s = String(value || '').trim();
+        return /^(https?:\/\/)/i.test(s) ? s : '#';
+      }
       function formatDateLabel(isoDate) {
         if (!isoDate) return '';
         var dt = new Date(isoDate + 'T12:00:00Z');
@@ -97,7 +101,7 @@
             var screen = String(st.screen || '');
             var screenLabel = cinema && screen ? (cinema + ' (Screen ' + screen + ')') : (cinema || ('Screen ' + screen));
             var booking = String(st.booking_url || '');
-            var timeEl = booking ? '<a href="' + escHtml(booking) + '">' + time + '</a>' : '<span class="past">' + time + '</span>';
+            var timeEl = booking ? '<a href="' + safeUrl(booking) + '">' + time + '</a>' : '<span class="past">' + time + '</span>';
             var tags = Array.isArray(st.tags) ? st.tags.slice(0, 4) : [];
             var tagSpan = tags.map(tagHtml).join(' ');
             return '<div class="st-row"><span class="st-time">' + timeEl + '</span><span class="st-screen">' + escHtml(screenLabel) + '</span><span class="st-tags">' + tagSpan + '</span></div>';
@@ -304,7 +308,7 @@
       if (backdrop) backdrop.addEventListener('click', closeLightbox);
       if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
       document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && lb.classList.contains('is-open')) closeLightbox();
+        if (e.key === 'Escape' && lb && lb.classList.contains('is-open')) closeLightbox();
       });
     })();
     function switchView(view) {

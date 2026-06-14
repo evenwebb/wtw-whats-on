@@ -11,6 +11,7 @@ import json
 import logging
 import os
 import re
+import tempfile
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from copy import deepcopy
@@ -25,13 +26,13 @@ from urllib.parse import quote_plus, urljoin
 _PAGE_CSS = """\
     :root {
       --bg: #0a0a0f;
-      --card-bg: #12121a;
       --surface: #12121a;
       --surface-2: #12121a;
       --surface-3: #1a1a24;
       --border: rgba(168,85,247,0.25);
       --text: #e2e8f0;
       --text-muted: #94a3b8;
+      --muted: #94a3b8;
       --cyan: #00d4ff;
       --purple: #a855f7;
       --accent: #00d4ff;
@@ -396,6 +397,10 @@ _PAGE_JS = """\
           .replace(/>/g, '&gt;')
           .replace(/"/g, '&quot;');
       }
+      function safeUrl(value) {
+        var s = String(value || '').trim();
+        return /^(https?:\\/\\/)/i.test(s) ? s : '#';
+      }
       function formatDateLabel(isoDate) {
         if (!isoDate) return '';
         var dt = new Date(isoDate + 'T12:00:00Z');
@@ -448,7 +453,7 @@ _PAGE_JS = """\
             var screen = String(st.screen || '');
             var screenLabel = cinema && screen ? (cinema + ' (Screen ' + screen + ')') : (cinema || ('Screen ' + screen));
             var booking = String(st.booking_url || '');
-            var timeEl = booking ? '<a href="' + escHtml(booking) + '">' + time + '</a>' : '<span class="past">' + time + '</span>';
+            var timeEl = booking ? '<a href="' + safeUrl(booking) + '">' + time + '</a>' : '<span class="past">' + time + '</span>';
             var tags = Array.isArray(st.tags) ? st.tags.slice(0, 4) : [];
             var tagSpan = tags.map(tagHtml).join(' ');
             return '<div class="st-row"><span class="st-time">' + timeEl + '</span><span class="st-screen">' + escHtml(screenLabel) + '</span><span class="st-tags">' + tagSpan + '</span></div>';
@@ -655,7 +660,7 @@ _PAGE_JS = """\
       if (backdrop) backdrop.addEventListener('click', closeLightbox);
       if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
       document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && lb.classList.contains('is-open')) closeLightbox();
+        if (e.key === 'Escape' && lb && lb.classList.contains('is-open')) closeLightbox();
       });
     })();
     function switchView(view) {
@@ -785,6 +790,29 @@ TMDB_EMPTY_CACHE_TTL_DAYS = 7
 POSTER_PLACEHOLDER_REL = "posters/placeholder.svg"
 ENRICHMENT_FIELDS = ("poster_url", "trailer_url", "vote_average", "genres", "imdb_id", "overview", "director", "writer", "cast")
 
+# Tag constants for film card rendering
+_TAG_ICON_IDS = {
+    "Audio Description": "icon-audio-desc",
+    "Wheelchair access": "icon-wheelchair",
+    "2D": "icon-2d",
+    "3D": "icon-3d",
+    "Subtitles": "icon-subtitles",
+    "Silver Screen": "icon-silver-screen",
+    "Event cinema": "icon-event-cinema",
+    "Strobe Light warning": "icon-strobe",
+    "Parent & Baby": "icon-parent-baby",
+    "Autism Friendly": "icon-autism-friendly",
+    "Kids Club": "icon-kids-club",
+}
+_TAG_SHORT_LABELS = {"Audio Description": "AD", "Subtitles": "Subs", "Wheelchair access": "WA", "Strobe Light warning": "Strobe"}
+_TAG_TOOLTIPS = {
+    "Audio Description": "Audio description",
+    "Subtitles": "Subtitled screening",
+    "Wheelchair access": "Wheelchair accessible",
+    "2D": "Standard 2D screening",
+    "Strobe Light warning": "Strobe lighting may affect photosensitive viewers",
+}
+
 
 def _poster_is_placeholder(poster_url: Optional[str]) -> bool:
     """True if no art yet or the explicit site placeholder path (not a real TMDb/local file)."""
@@ -821,7 +849,7 @@ def showtimes_compact_json(showtimes: List[Dict[str, Any]]) -> str:
         [
             st.get("date", ""),
             st.get("time", ""),
-            st.get("screen", ""),
+            st.get("screen") or "",
             st.get("cinema_name", ""),
             st.get("booking_url", ""),
             st.get("tags") or [],
@@ -954,10 +982,9 @@ def fetch_with_retries(url: str, retries: int = HTTP_RETRIES, timeout: int = HTT
         except requests.RequestException as e:
             logger.warning("Attempt %d failed: %s", attempt + 1, e)
             if attempt == retries - 1:
-                raise
+                raise requests.RequestException(f"Failed after {retries} attempt(s): {e}") from e
             time.sleep(delay)
             delay *= HTTP_RETRY_MULTIPLIER
-    raise requests.RequestException("Max retries exceeded")
 
 
 def strip_format_suffix(title: str) -> str:
@@ -1001,7 +1028,13 @@ def format_runtime(minutes: Optional[int]) -> str:
 
 
 def parse_runtime_minutes(text: str) -> Optional[int]:
-    """Parse '113 minutes' or 'Running time:113 minutes' -> 113."""
+    """Parse '113 minutes', 'Running time:113 minutes', or '2 hours 15 minutes' -> 113."""
+    # "X hours Y minutes" or "X hours" or "X hour Y minutes" etc.
+    hm = re.search(r"(\d+)\s*hours?\s*(?:(\d+)\s*minutes?)?", text, re.IGNORECASE)
+    if hm:
+        h = int(hm.group(1))
+        m = int(hm.group(2)) if hm.group(2) else 0
+        return h * 60 + m
     m = re.search(r"(\d+)\s*minutes?", text, re.IGNORECASE)
     return int(m.group(1)) if m else None
 
@@ -1055,10 +1088,17 @@ def load_tmdb_cache() -> Dict[str, Dict]:
 
 
 def save_tmdb_cache(cache: Dict[str, Dict]) -> None:
-    """Persist TMDb cache."""
+    """Persist TMDb cache atomically."""
     try:
-        with open(TMDB_CACHE_FILE, "w", encoding="utf-8") as f:
-            json.dump(cache, f, indent=2, ensure_ascii=False)
+        dir_ = os.path.dirname(TMDB_CACHE_FILE) or "."
+        fd, tmp = tempfile.mkstemp(dir=dir_, suffix=".json", prefix=".tmdb_cache-")
+        try:
+            with os.fdopen(fd, "w", encoding="utf-8") as f:
+                json.dump(cache, f, indent=2, ensure_ascii=False)
+            os.replace(tmp, TMDB_CACHE_FILE)
+        except Exception:
+            os.unlink(tmp)
+            raise
     except OSError as e:
         logger.warning("Cache save failed: %s", e)
 
@@ -1078,9 +1118,17 @@ def load_cinema_failure_state() -> Dict[str, int]:
 
 
 def save_cinema_failure_state(state: Dict[str, int]) -> None:
-    """Persist per-cinema consecutive scrape failures."""
+    """Persist per-cinema consecutive scrape failures atomically."""
     try:
-        Path(CINEMA_FAILURE_STATE_FILE).write_text(json.dumps(state, indent=2, sort_keys=True), encoding="utf-8")
+        dir_ = os.path.dirname(CINEMA_FAILURE_STATE_FILE) or "."
+        fd, tmp = tempfile.mkstemp(dir=dir_, suffix=".json", prefix=".cinema_failure-")
+        try:
+            with os.fdopen(fd, "w", encoding="utf-8") as f:
+                json.dump(state, f, indent=2, sort_keys=True)
+            os.replace(tmp, CINEMA_FAILURE_STATE_FILE)
+        except Exception:
+            os.unlink(tmp)
+            raise
     except OSError as e:
         logger.warning("Cinema failure state save failed: %s", e)
 
@@ -1196,26 +1244,33 @@ def _download_poster(url: str, slug: str) -> str:
     existing = sorted(posters_dir.glob(f"{slug}.*"))
     if existing:
         return f"posters/{existing[0].name}"
-    ext = "jpg"
-    if ".webp" in url.lower():
-        ext = "webp"
-    elif ".png" in url.lower():
-        ext = "png"
-    path = posters_dir / f"{slug}.{ext}"
-    if path.exists():
-        return f"posters/{slug}.{ext}"
     try:
         headers = {"User-Agent": USER_AGENT}
         if "wtwcinemas.co.uk" in url:
             headers["Referer"] = WTW_BASE + "/"
         r = requests.get(url, headers=headers, timeout=15)
         r.raise_for_status()
+        content = r.content
         ct = r.headers.get("Content-Type", "")
         if not ct.startswith("image/"):
             logger.warning("Poster URL returned non-image content-type %s: %s", ct, url[:50])
             return ""
-        path.write_bytes(r.content)
-        return f"posters/{slug}.{ext}"  # relative to SITE_DIR for HTML
+        # Validate by magic bytes
+        magic = content[:12]
+        if magic[:3] == b'\xff\xd8\xff':
+            ext = "jpg"
+        elif magic[:8] == b'\x89PNG\r\n\x1a\n':
+            ext = "png"
+        elif magic[:4] in (b'RIFF',) and magic[8:12] == b'WEBP':
+            ext = "webp"
+        else:
+            logger.warning("Poster URL returned unrecognised file format (magic=%s): %s", magic[:8].hex(), url[:50])
+            return ""
+        path = posters_dir / f"{slug}.{ext}"
+        if path.exists():
+            return f"posters/{slug}.{ext}"
+        path.write_bytes(content)
+        return f"posters/{slug}.{ext}"
     except Exception as e:
         logger.warning("Poster download failed %s: %s", url[:50], e)
         return ""
@@ -1577,10 +1632,10 @@ def _merge_subtitle_variants(films: List[Dict[str, Any]]) -> List[Dict[str, Any]
         all_showtimes = list(main.get("showtimes") or [])
         seen_keys: set = set()
         for st in all_showtimes:
-            seen_keys.add((st["date"], st["time"], st["screen"]))
+            seen_keys.add((st["date"], st["time"], st.get("screen") or ""))
         for other in others:
             for st in (other.get("showtimes") or []):
-                key = (st["date"], st["time"], st["screen"])
+                key = (st["date"], st["time"], st.get("screen") or "")
                 if key not in seen_keys:
                     seen_keys.add(key)
                     all_showtimes.append(dict(st))
@@ -1681,7 +1736,7 @@ def _scrape_single_cinema(cinema_slug: str, cinema_info: Dict[str, str], scrape_
                     time_str = time_m.group(1) if time_m else ""
                     if not time_str:
                         continue
-                    screen = 1
+                    screen = None
                     sm = re.search(r"Screen:\s*(\d+)", perf_text, re.IGNORECASE)
                     if sm:
                         screen = int(sm.group(1))
@@ -1703,7 +1758,7 @@ def _scrape_single_cinema(cinema_slug: str, cinema_info: Dict[str, str], scrape_
         seen_st = set()
         unique_showtimes = []
         for st in showtimes:
-            key = (st["date"], st["time"], st["screen"])
+            key = (st["date"], st["time"], st.get("screen") or "")
             if key not in seen_st:
                 seen_st.add(key)
                 unique_showtimes.append(st)
@@ -1917,27 +1972,231 @@ def compute_fingerprint(data: Dict[str, Any]) -> str:
                 key=lambda st: (
                     st.get("date", ""),
                     st.get("time", ""),
-                    str(st.get("screen", "")),
+                    str(st.get("screen") or ""),
                     st.get("booking_url", ""),
                     st.get("cinema_name", ""),
                 ),
             )
             for st in showtimes:
                 parts.append(
-                    f"S|{film.get('film_slug', '')}|{cinema_slug}|{st.get('date', '')}|{st.get('time', '')}|{st.get('screen', '')}|{st.get('booking_url', '')}"
+                    f"S|{film.get('film_slug', '')}|{cinema_slug}|{st.get('date', '')}|{st.get('time', '')}|{st.get('screen') or ''}|{st.get('booking_url', '')}"
                 )
     return hashlib.sha256("\n".join(parts).encode("utf-8")).hexdigest()
 
 
+def _short_cinema_name(name: str) -> str:
+    """Extract the short cinema name (after the last comma)."""
+    value = (name or "").strip()
+    if not value:
+        return ""
+    if "," in value:
+        return value.split(",")[-1].strip()
+    return value
+
+
+def _cert_span(rating: Optional[str]) -> str:
+    """WTW-style cert icon: <span class="cert cert--15"></span>."""
+    if not rating:
+        return ""
+    r = rating.upper()
+    if r in CERT_IMAGES:
+        return f'<span class="cert cert--{r}" aria-label="{r}"></span>'
+    fallback = {"12": "12", "R18": "R18"}
+    return f'<span class="cert cert-fallback" aria-label="{r}">{fallback.get(r, r)}</span>'
+
+
+def _esc(s: str) -> str:
+    """Escape for HTML text content."""
+    return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def _tag_html(tag: str) -> str:
+    """Render an inline tag badge SVG+label."""
+    icon_id = _TAG_ICON_IDS.get(tag)
+    label = _TAG_SHORT_LABELS.get(tag, tag)
+    tooltip = _TAG_TOOLTIPS.get(tag) or (tag if tag in _TAG_SHORT_LABELS else None)
+    title_esc = (tooltip or "").replace("&", "&amp;").replace('"', "&quot;")
+    title_attr = f' title="{title_esc}"' if title_esc else ""
+    if icon_id:
+        return f'<span class="tag"{title_attr}><svg class="tag-icon" aria-hidden="true"><use href="#{icon_id}"/></svg>{label}</span>'
+    return f'<span class="tag"{title_attr}>{label}</span>'
+
+
+def _render_showings(showings: List[Dict[str, Any]]) -> str:
+    """Render showtimes grouped by date (HTML fragment)."""
+    grouped: Dict[str, List[Dict[str, Any]]] = {}
+    for st in showings:
+        d = st.get("date", "")
+        grouped.setdefault(d, []).append(st)
+    rows: List[str] = []
+    for d in sorted(grouped.keys()):
+        time_parts = []
+        for st in grouped[d]:
+            t = st.get("time", "")
+            cinema_short = __short_cinema_name(str(st.get("cinema_name") or ""))
+            screen_num = st.get("screen") or ""
+            screen_label = f"{cinema_short} (Screen {screen_num})" if cinema_short and screen_num else (cinema_short or (f"Screen {screen_num}" if screen_num else ""))
+            booking = st.get("booking_url", "")
+            tags = st.get("tags") or []
+            tag_span = " ".join(_tag_html(tag) for tag in tags[:4])
+            time_el = f'<a href="{booking}">{t}</a>' if booking else f'<span class="past">{t}</span>'
+            time_parts.append(
+                f'<div class="st-row">'
+                f'<span class="st-time">{time_el}</span>'
+                f'<span class="st-screen">{screen_label}</span>'
+                f'<span class="st-tags">{tag_span}</span>'
+                f'</div>'
+            )
+        date_label = d
+        try:
+            dt = datetime.strptime(d, "%Y-%m-%d")
+            date_label = dt.strftime("%a %d %b")
+        except ValueError:
+            pass
+        rows.append(f'<div class="day-group"><div class="st-date">{date_label}</div>' + "".join(time_parts) + "</div>")
+    return "\n".join(rows)
+
+
+def _film_card(f: Dict[str, Any], build_today_iso: str) -> str:
+    """Render a single film card to HTML."""
+    title = f.get("title", "")
+    search_title = f.get("search_title") or extract_search_title(title)
+    bbfc = extract_bbfc_rating(title)
+    runtime = f.get("runtime_min")
+    if runtime:
+        runtime_str = f"{runtime} min"
+        if runtime >= 60:
+            runtime_str += f" ({format_runtime(runtime)})"
+    else:
+        runtime_str = ""
+    cast_raw = (f.get("cast") or "").strip()
+    cast_parts = [p.strip() for p in cast_raw.split(",") if p.strip()]
+    cast_first = cast_parts[:6]
+    cast_rest = cast_parts[6:]
+    director = (f.get("director") or "").strip()
+    writer = (f.get("writer") or "").strip()
+    overview = (f.get("overview") or "").strip()
+    synopsis = (f.get("synopsis") or "").strip()
+    description = overview or synopsis
+    description = description[:500] if description else ""
+    film_url = f.get("film_url", "")
+    poster_url = f.get("poster_url", "")
+    trailer_url = f.get("trailer_url", "")
+    vote = f.get("vote_average")
+    if vote is not None:
+        pct = min(100, max(0, (vote / 10.0) * 100))
+        vote_str = f'<span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:{pct:.0f}%"></span></span><span class="rating-text">{vote:.1f}/10</span></span>'
+    else:
+        vote_str = ""
+    genres = f.get("genres") or []
+    imdb_id = f.get("imdb_id", "")
+    imdb_link = f"https://www.imdb.com/title/{imdb_id}/" if imdb_id else f"https://www.imdb.com/find/?q={quote_plus(search_title)}"
+    rt_link = f"https://www.rottentomatoes.com/search?search={quote_plus(search_title)}"
+    trakt_link = f"https://trakt.tv/search?query={quote_plus(search_title)}"
+
+    showtimes_all = sorted(f.get("showtimes") or [], key=lambda s: (s.get("date", ""), s.get("time", ""), str(s.get("screen") or ""), s.get("booking_url", "")))
+    showtimes_by_date: Dict[str, List[Dict]] = {}
+    for st in showtimes_all:
+        d = st.get("date", "")
+        showtimes_by_date.setdefault(d, []).append(st)
+    visible_showings = showtimes_all[:INITIAL_SHOWINGS_VISIBLE]
+    hidden_showings = showtimes_all[INITIAL_SHOWINGS_VISIBLE:]
+    showtimes_html = _render_showings(visible_showings)
+    show_more_block = ""
+    full_showtimes_json = showtimes_compact_json(showtimes_all)
+    if hidden_showings:
+        hidden_json = showtimes_compact_json(hidden_showings)
+        count = len(hidden_showings)
+        noun = "showing" if count == 1 else "showings"
+        show_more_block = (
+            f'<script type="application/json" class="showtimes-more-data">{hidden_json}</script>'
+            f'<div class="showtimes-more" hidden></div>'
+            f'<button type="button" class="showtimes-more-btn" aria-expanded="false">Show {count} more {noun}</button>'
+        )
+
+    has_3d = any("3D" in (st.get("tags") or []) for st in (f.get("showtimes") or []))
+    poster_src = poster_url or POSTER_PLACEHOLDER_REL
+    if _poster_is_placeholder(poster_url):
+        poster_alt = f"No poster available for {title}"
+    else:
+        poster_alt = f"Poster for {title}"
+    poster_inner = f'<img src="{poster_src}" alt="{poster_alt}" loading="lazy"/>'
+    if poster_url and not _poster_is_placeholder(poster_url) and has_3d:
+        poster_inner += '<i class="icon--hints icon--3d" aria-hidden="true"></i>'
+    if _poster_is_placeholder(poster_url):
+        poster_inner += '<span class="poster-fallback-label">No poster yet</span>'
+    poster_div = f'<div class="poster">{poster_inner}</div>'
+    # YouTube embed URL for lightbox; use nocookie domain and add fallback watch URL for Error 153 (embed disabled)
+    trailer_embed = ""
+    trailer_watch_esc = ""
+    if trailer_url:
+        v_match = re.search(r"(?:v=|youtu\.be/)([a-zA-Z0-9_-]{11})", trailer_url)
+        if v_match:
+            vid = v_match.group(1)
+            trailer_embed = f"https://www.youtube-nocookie.com/embed/{vid}?autoplay=1&rel=0"
+            trailer_watch_esc = trailer_url.replace("&", "&amp;").replace('"', "&quot;")
+    trailer_embed_esc = (trailer_embed or "").replace("&", "&amp;").replace('"', "&quot;")
+    trailer_a = f'<button type="button" class="trailer trailer-lightbox-trigger" data-embed="{trailer_embed_esc}" data-watch="{trailer_watch_esc}" aria-label="Play trailer">Trailer</button>' if trailer_embed else ""
+    genre_span = f'<span class="genres">{", ".join(genres[:4])}</span>' if genres else ""
+
+    cast_first_esc = ", ".join(_esc(a) for a in cast_first)
+    cast_rest_esc = ", ".join(_esc(a) for a in cast_rest)
+    director_esc = _esc(director)
+    writer_esc = _esc(writer)
+    description_esc = _esc(description)
+    meta_lines = []
+    cinema_name = (f.get("cinema_name") or "").strip()
+    if cinema_name:
+        meta_lines.append(f'<p class="crew"><strong>Cinemas:</strong> {_esc(cinema_name)}</p>')
+    if director_esc:
+        meta_lines.append(f'<p class="crew"><strong>Director:</strong> {director_esc}</p>')
+    if writer_esc:
+        meta_lines.append(f'<p class="crew"><strong>Writer(s):</strong> {writer_esc}</p>')
+    if cast_first_esc or cast_rest_esc:
+        cast_rest_html = f'<span class="cast-rest" hidden>, {cast_rest_esc}</span>' if cast_rest_esc else ""
+        more_btn = f' <button type="button" class="cast-more-btn">More</button>' if cast_rest_esc else ""
+        meta_lines.append(f'<p class="cast"><strong>Starring:</strong> {cast_first_esc}{cast_rest_html}{more_btn}</p>')
+    crew_html = "\n      ".join(meta_lines)
+
+    earliest = min(showtimes_by_date.keys()) if showtimes_by_date else ""
+    latest = max(showtimes_by_date.keys()) if showtimes_by_date else ""
+    status = "now" if earliest and earliest <= build_today_iso else "coming-soon"
+    status_label = "Now Showing" if status == "now" else "Coming Soon"
+    chance_badge = ""
+    if earliest and earliest == build_today_iso:
+        chance_badge = '<span class="chance-badge chance-opens">Opens today</span>'
+    elif latest and latest == build_today_iso:
+        chance_badge = '<span class="chance-badge chance-closing">Last chance today</span>'
+    elif latest and latest <= (datetime.now() + timedelta(days=3)).strftime("%Y-%m-%d"):
+        chance_badge = '<span class="chance-badge chance-closing">Ends soon</span>'
+    cinemas_on_card = ",".join(f.get("cinema_names_list") or [])
+    return f"""
+<article class="film-card" data-dates="{",".join(showtimes_by_date.keys())}" data-cinemas="{html_escape(cinemas_on_card, quote=True)}" data-status="{status}">
+  <script type="application/json" class="film-showtimes-full">{full_showtimes_json}</script>
+  <span class="status-pill status-pill--{status}">{status_label}</span>
+  {chance_badge}
+  <div class="film-header">
+    {poster_div}
+    <div class="film-meta">
+      <h2>{html_escape(title, quote=False)} {_cert_span(bbfc)}</h2>
+      <div class="meta-line">{runtime_str} {vote_str} {genre_span}</div>
+      {trailer_a}
+      {crew_html}
+      <p class="synopsis">{description_esc}</p>
+      <div class="links">
+        <a href="{film_url}" class="btn book">Book at WTW</a>
+        <a href="{imdb_link}" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
+        <a href="{rt_link}" class="link ext-link" target="_blank" rel="noopener" title="Rotten Tomatoes"><svg class="ext-logo" aria-hidden="true"><use href="#rt-logo"/></svg> RT</a>
+        <a href="{trakt_link}" class="link ext-link" target="_blank" rel="noopener" title="Trakt"><svg class="ext-logo" aria-hidden="true"><use href="#trakt-logo"/></svg> Trakt</a>
+      </div>
+    </div>
+  </div>
+  <div class="showtimes">{showtimes_html}{show_more_block}</div>
+</article>"""
+
+
 def build_html(data: Dict[str, Any]) -> str:
     """Generate single self-contained index.html with Web3 style and date filtering."""
-    def short_cinema_name(name: str) -> str:
-        value = (name or "").strip()
-        if not value:
-            return ""
-        if "," in value:
-            return value.split(",")[-1].strip()
-        return value
 
     aggregated: Dict[str, Dict[str, Any]] = {}
     for cinema in (data.get("cinemas") or {}).values():
@@ -1970,15 +2229,15 @@ def build_html(data: Dict[str, Any]) -> str:
     for film in aggregated.values():
         seen_showtimes = set()
         deduped_showtimes = []
-        for st in sorted(film.get("showtimes") or [], key=lambda s: (s.get("date", ""), s.get("time", ""), str(s.get("screen", "")), s.get("booking_url", ""))):
-            k = (st.get("date"), st.get("time"), st.get("screen"), st.get("booking_url"), st.get("cinema_name"))
+        for st in sorted(film.get("showtimes") or [], key=lambda s: (s.get("date", ""), s.get("time", ""), str(s.get("screen") or ""), s.get("booking_url", ""))):
+            k = (st.get("date"), st.get("time"), st.get("screen") or "", st.get("booking_url"), st.get("cinema_name"))
             if k in seen_showtimes:
                 continue
             seen_showtimes.add(k)
             deduped_showtimes.append(st)
         film["showtimes"] = deduped_showtimes
         cinema_names_full = sorted(film.pop("cinema_names", set()))
-        cinema_names_short = sorted({short_cinema_name(x) for x in cinema_names_full if short_cinema_name(x)})
+        cinema_names_short = sorted({_short_cinema_name(x) for x in cinema_names_full if _short_cinema_name(x)})
         film["cinema_names_list"] = cinema_names_short
         film["cinema_name"] = ", ".join(cinema_names_short)
         films.append(film)
@@ -1993,233 +2252,19 @@ def build_html(data: Dict[str, Any]) -> str:
 
     all_cinemas_short = sorted(
         {
-            short_cinema_name(str(st.get("cinema_name") or ""))
+            _short_cinema_name(str(st.get("cinema_name") or ""))
             for f in films
             for st in (f.get("showtimes") or [])
-            if short_cinema_name(str(st.get("cinema_name") or ""))
+            if _short_cinema_name(str(st.get("cinema_name") or ""))
         }
     )
 
-    def cert_span(rating: Optional[str]) -> str:
-        """WTW-style cert icon: <span class="cert cert--15"></span>. Uses scraped cert images for U, PG, 12A, 15, 18; fallback for 12/R18."""
-        if not rating:
-            return ""
-        r = rating.upper()
-        if r in CERT_IMAGES:
-            return f'<span class="cert cert--{r}" aria-label="{r}"></span>'
-        # Fallback for 12, R18 or unknown (WTW has no cert icons for these)
-        fallback = {"12": "12", "R18": "R18"}
-        return f'<span class="cert cert-fallback" aria-label="{r}">{fallback.get(r, r)}</span>'
-
-    def film_card(f: Dict) -> str:
-        title = f.get("title", "")
-        search_title = f.get("search_title") or extract_search_title(title)
-        bbfc = extract_bbfc_rating(title)
-        runtime = f.get("runtime_min")
-        if runtime:
-            runtime_str = f"{runtime} min"
-            if runtime >= 60:
-                runtime_str += f" ({format_runtime(runtime)})"
-        else:
-            runtime_str = ""
-        cast_raw = (f.get("cast") or "").strip()
-        cast_parts = [p.strip() for p in cast_raw.split(",") if p.strip()]
-        cast_first = cast_parts[:6]
-        cast_rest = cast_parts[6:]
-        director = (f.get("director") or "").strip()
-        writer = (f.get("writer") or "").strip()
-        overview = (f.get("overview") or "").strip()
-        synopsis = (f.get("synopsis") or "").strip()
-        description = overview or synopsis
-        description = description[:500] if description else ""
-        film_url = f.get("film_url", "")
-        poster_url = f.get("poster_url", "")
-        trailer_url = f.get("trailer_url", "")
-        vote = f.get("vote_average")
-        if vote is not None:
-            pct = min(100, max(0, (vote / 10.0) * 100))
-            vote_str = f'<span class="rating-wrap" title="TMDb rating"><span class="rating-bar" aria-hidden="true"><span class="rating-fill" style="width:{pct:.0f}%"></span></span><span class="rating-text">{vote:.1f}/10</span></span>'
-        else:
-            vote_str = ""
-        genres = f.get("genres") or []
-        imdb_id = f.get("imdb_id", "")
-        imdb_link = f"https://www.imdb.com/title/{imdb_id}/" if imdb_id else f"https://www.imdb.com/find/?q={quote_plus(search_title)}"
-        rt_link = f"https://www.rottentomatoes.com/search?search={quote_plus(search_title)}"
-        trakt_link = f"https://trakt.tv/search?query={quote_plus(search_title)}"
-
-        tag_icon_ids = {
-            "Audio Description": "icon-audio-desc",
-            "Wheelchair access": "icon-wheelchair",
-            "2D": "icon-2d",
-            "3D": "icon-3d",
-            "Subtitles": "icon-subtitles",
-            "Silver Screen": "icon-silver-screen",
-            "Event cinema": "icon-event-cinema",
-            "Strobe Light warning": "icon-strobe",
-            "Parent & Baby": "icon-parent-baby",
-            "Autism Friendly": "icon-autism-friendly",
-            "Kids Club": "icon-kids-club",
-        }
-        tag_short_labels = {"Audio Description": "AD", "Subtitles": "Subs", "Wheelchair access": "WA", "Strobe Light warning": "Strobe"}
-        tag_tooltips = {
-            "Audio Description": "Audio description",
-            "Subtitles": "Subtitled screening",
-            "Wheelchair access": "Wheelchair accessible",
-            "2D": "Standard 2D screening",
-            "Strobe Light warning": "Strobe lighting may affect photosensitive viewers",
-        }
-
-        def tag_html(tag: str) -> str:
-            icon_id = tag_icon_ids.get(tag)
-            label = tag_short_labels.get(tag, tag)
-            tooltip = tag_tooltips.get(tag) or (tag if tag in tag_short_labels else None)
-            title_esc = (tooltip or "").replace("&", "&amp;").replace('"', "&quot;")
-            title_attr = f' title="{title_esc}"' if title_esc else ""
-            if icon_id:
-                return f'<span class="tag"{title_attr}><svg class="tag-icon" aria-hidden="true"><use href="#{icon_id}"/></svg>{label}</span>'
-            return f'<span class="tag"{title_attr}>{label}</span>'
-
-        def render_showings(showings: List[Dict[str, Any]]) -> str:
-            grouped: Dict[str, List[Dict[str, Any]]] = {}
-            for st in showings:
-                d = st.get("date", "")
-                grouped.setdefault(d, []).append(st)
-            rows: List[str] = []
-            for d in sorted(grouped.keys()):
-                time_parts = []
-                for st in grouped[d]:
-                    t = st.get("time", "")
-                    cinema_short = short_cinema_name(str(st.get("cinema_name") or ""))
-                    screen_num = st.get("screen", "")
-                    screen_label = f"{cinema_short} (Screen {screen_num})" if cinema_short and screen_num else (cinema_short or f"Screen {screen_num}")
-                    booking = st.get("booking_url", "")
-                    tags = st.get("tags") or []
-                    tag_span = " ".join(tag_html(tag) for tag in tags[:4])
-                    time_el = f'<a href="{booking}">{t}</a>' if booking else f'<span class="past">{t}</span>'
-                    time_parts.append(
-                        f'<div class="st-row">'
-                        f'<span class="st-time">{time_el}</span>'
-                        f'<span class="st-screen">{screen_label}</span>'
-                        f'<span class="st-tags">{tag_span}</span>'
-                        f'</div>'
-                    )
-                date_label = d
-                try:
-                    dt = datetime.strptime(d, "%Y-%m-%d")
-                    date_label = dt.strftime("%a %d %b")
-                except ValueError:
-                    pass
-                rows.append(f'<div class="day-group"><div class="st-date">{date_label}</div>' + "".join(time_parts) + "</div>")
-            return "\n".join(rows)
-
-        showtimes_all = sorted(f.get("showtimes") or [], key=lambda s: (s.get("date", ""), s.get("time", ""), str(s.get("screen", "")), s.get("booking_url", "")))
-        showtimes_by_date: Dict[str, List[Dict]] = {}
-        for st in showtimes_all:
-            d = st.get("date", "")
-            showtimes_by_date.setdefault(d, []).append(st)
-        visible_showings = showtimes_all[:INITIAL_SHOWINGS_VISIBLE]
-        hidden_showings = showtimes_all[INITIAL_SHOWINGS_VISIBLE:]
-        showtimes_html = render_showings(visible_showings)
-        show_more_block = ""
-        full_showtimes_json = showtimes_compact_json(showtimes_all)
-        if hidden_showings:
-            hidden_json = showtimes_compact_json(hidden_showings)
-            count = len(hidden_showings)
-            noun = "showing" if count == 1 else "showings"
-            show_more_block = (
-                f'<script type="application/json" class="showtimes-more-data">{hidden_json}</script>'
-                f'<div class="showtimes-more" hidden></div>'
-                f'<button type="button" class="showtimes-more-btn" aria-expanded="false">Show {count} more {noun}</button>'
-            )
-
-        has_3d = any("3D" in (st.get("tags") or []) for st in (f.get("showtimes") or []))
-        poster_src = poster_url or POSTER_PLACEHOLDER_REL
-        if _poster_is_placeholder(poster_url):
-            poster_alt = f"No poster available for {title}"
-        else:
-            poster_alt = f"Poster for {title}"
-        poster_inner = f'<img src="{poster_src}" alt="{poster_alt}" loading="lazy"/>'
-        if poster_url and not _poster_is_placeholder(poster_url) and has_3d:
-            poster_inner += '<i class="icon--hints icon--3d" aria-hidden="true"></i>'
-        if _poster_is_placeholder(poster_url):
-            poster_inner += '<span class="poster-fallback-label">No poster yet</span>'
-        poster_div = f'<div class="poster">{poster_inner}</div>'
-        # YouTube embed URL for lightbox; use nocookie domain and add fallback watch URL for Error 153 (embed disabled)
-        trailer_embed = ""
-        trailer_watch_esc = ""
-        if trailer_url:
-            v_match = re.search(r"(?:v=|youtu\.be/)([a-zA-Z0-9_-]{11})", trailer_url)
-            if v_match:
-                vid = v_match.group(1)
-                trailer_embed = f"https://www.youtube-nocookie.com/embed/{vid}?autoplay=1&rel=0"
-                trailer_watch_esc = trailer_url.replace("&", "&amp;").replace('"', "&quot;")
-        trailer_embed_esc = (trailer_embed or "").replace("&", "&amp;").replace('"', "&quot;")
-        trailer_a = f'<button type="button" class="trailer trailer-lightbox-trigger" data-embed="{trailer_embed_esc}" data-watch="{trailer_watch_esc}" aria-label="Play trailer">Trailer</button>' if trailer_embed else ""
-        genre_span = f'<span class="genres">{", ".join(genres[:4])}</span>' if genres else ""
-        # Escape for HTML (e.g. "Smith & Jones" -> "Smith &amp; Jones")
-        def esc(s: str) -> str:
-            return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-        cast_first_esc = ", ".join(esc(a) for a in cast_first)
-        cast_rest_esc = ", ".join(esc(a) for a in cast_rest)
-        director_esc = esc(director)
-        writer_esc = esc(writer)
-        description_esc = esc(description)
-        meta_lines = []
-        cinema_name = (f.get("cinema_name") or "").strip()
-        if cinema_name:
-            meta_lines.append(f'<p class="crew"><strong>Cinemas:</strong> {esc(cinema_name)}</p>')
-        if director_esc:
-            meta_lines.append(f'<p class="crew"><strong>Director:</strong> {director_esc}</p>')
-        if writer_esc:
-            meta_lines.append(f'<p class="crew"><strong>Writer(s):</strong> {writer_esc}</p>')
-        if cast_first_esc or cast_rest_esc:
-            cast_rest_html = f'<span class="cast-rest" hidden>, {cast_rest_esc}</span>' if cast_rest_esc else ""
-            more_btn = f' <button type="button" class="cast-more-btn">More</button>' if cast_rest_esc else ""
-            meta_lines.append(f'<p class="cast"><strong>Starring:</strong> {cast_first_esc}{cast_rest_html}{more_btn}</p>')
-        crew_html = "\n      ".join(meta_lines)
-
-        earliest = min(showtimes_by_date.keys()) if showtimes_by_date else ""
-        latest = max(showtimes_by_date.keys()) if showtimes_by_date else ""
-        status = "now" if earliest and earliest <= build_today_iso else "coming-soon"
-        status_label = "Now Showing" if status == "now" else "Coming Soon"
-        # First/last chance labels (#8)
-        chance_badge = ""
-        if earliest and earliest == build_today_iso:
-            chance_badge = '<span class="chance-badge chance-opens">Opens today</span>'
-        elif latest and latest == build_today_iso:
-            chance_badge = '<span class="chance-badge chance-closing">Last chance today</span>'
-        elif latest and latest <= (datetime.now() + timedelta(days=3)).strftime("%Y-%m-%d"):
-            chance_badge = '<span class="chance-badge chance-closing">Ends soon</span>'
-        cinemas_on_card = ",".join(f.get("cinema_names_list") or [])
-        return f"""
-<article class="film-card" data-dates="{",".join(showtimes_by_date.keys())}" data-cinemas="{html_escape(cinemas_on_card, quote=True)}" data-status="{status}">
-  <script type="application/json" class="film-showtimes-full">{full_showtimes_json}</script>
-  <span class="status-pill status-pill--{status}">{status_label}</span>
-  {chance_badge}
-  <div class="film-header">
-    {poster_div}
-    <div class="film-meta">
-      <h2>{html_escape(title, quote=False)} {cert_span(bbfc)}</h2>
-      <div class="meta-line">{runtime_str} {vote_str} {genre_span}</div>
-      {trailer_a}
-      {crew_html}
-      <p class="synopsis">{description_esc}</p>
-      <div class="links">
-        <a href="{film_url}" class="btn book">Book at WTW</a>
-        <a href="{imdb_link}" class="link ext-link" target="_blank" rel="noopener" title="IMDb"><svg class="ext-logo" aria-hidden="true"><use href="#imdb-logo"/></svg> IMDb</a>
-        <a href="{rt_link}" class="link ext-link" target="_blank" rel="noopener" title="Rotten Tomatoes"><svg class="ext-logo" aria-hidden="true"><use href="#rt-logo"/></svg> RT</a>
-        <a href="{trakt_link}" class="link ext-link" target="_blank" rel="noopener" title="Trakt"><svg class="ext-logo" aria-hidden="true"><use href="#trakt-logo"/></svg> Trakt</a>
-      </div>
-    </div>
-  </div>
-  <div class="showtimes">{showtimes_html}{show_more_block}</div>
-</article>"""
 
     films_sorted = sorted(films, key=lambda f: len(f.get("showtimes") or []), reverse=True)
     now_showing = [f for f in films_sorted if f.get("showtimes") and min(st.get("date", "9999") for st in f["showtimes"]) <= build_today_iso]
     coming_soon = [f for f in films_sorted if f not in now_showing]
-    now_cards = "\n".join(film_card(f) for f in now_showing)
-    coming_cards = "\n".join(film_card(f) for f in coming_soon)
+    now_cards = "\n".join(_film_card(f, build_today_iso) for f in now_showing)
+    coming_cards = "\n".join(_film_card(f, build_today_iso) for f in coming_soon)
     section_now = (
         f'<section class="film-section film-section--now" data-section="now">\n'
         f'  <div class="section-title-wrap">\n'
@@ -2483,8 +2528,15 @@ def main() -> None:
         except ValueError:
             logger.warning("Invalid POSTER_MISSING_FAIL_THRESHOLD value: %s", fail_threshold_raw)
 
-    with open(DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
+    dir_ = os.path.dirname(DATA_FILE) or "."
+    fd_tmp, tmp_path = tempfile.mkstemp(dir=dir_, suffix=".json", prefix=".whats_on-")
+    try:
+        with os.fdopen(fd_tmp, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+        os.replace(tmp_path, DATA_FILE)
+    except Exception:
+        os.unlink(tmp_path)
+        raise
     logger.info("Wrote %s", DATA_FILE)
 
     _download_cert_images()
@@ -2492,9 +2544,24 @@ def main() -> None:
     html = build_html(data)
     Path(SITE_DIR).mkdir(parents=True, exist_ok=True)
     write_asset_files(SITE_DIR)
-    Path(SITE_DIR, "index.html").write_text(html, encoding="utf-8")
+    html_path = Path(SITE_DIR, "index.html")
+    fd_html, tmp_html = tempfile.mkstemp(dir=str(html_path.parent), suffix=".html", prefix=".index-")
+    try:
+        with os.fdopen(fd_html, "w", encoding="utf-8") as f:
+            f.write(html)
+        os.replace(tmp_html, str(html_path))
+    except Exception:
+        os.unlink(tmp_html)
+        raise
     logger.info("Wrote %s/index.html", SITE_DIR)
-    Path(FINGERPRINT_FILE).write_text(fingerprint, encoding="utf-8")
+    fd_fp, tmp_fp = tempfile.mkstemp(dir=dir_, suffix=".txt", prefix=".fingerprint-")
+    try:
+        with os.fdopen(fd_fp, "w", encoding="utf-8") as f:
+            f.write(fingerprint)
+        os.replace(tmp_fp, FINGERPRINT_FILE)
+    except Exception:
+        os.unlink(tmp_fp)
+        raise
     if fingerprint == prev_fingerprint:
         logger.info("Fingerprint unchanged; nothing new to commit.")
     else:
