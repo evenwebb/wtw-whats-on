@@ -39,84 +39,6 @@
     "cast": "",
     "cached_at": "2026-06-12T12:12:20.654138"
   },
-  "the-super-mario-galaxy-movie": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=fm3oeAGbcd4",
-    "vote_average": 6.686,
-    "genres": [
-      "Family",
-      "Comedy",
-      "Adventure",
-      "Fantasy",
-      "Animation"
-    ],
-    "imdb_id": "tt28650488",
-    "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-    "director": "Aaron Horvath, Michael Jelenic",
-    "writer": "Matthew Fogel",
-    "cast": "Chris Pratt (Mario (voice)), Anya Taylor-Joy (Princess Peach (voice)), Charlie Day (Luigi (voice)), Jack Black (Bowser (voice)), Donald Glover (Yoshi (voice)), Benny Safdie (Bowser Jr. (voice)), Brie Larson (Rosalina (voice)), Keegan-Michael Key (Toad (voice)), Glen Powell (Fox McCloud (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice))",
-    "cached_at": "2026-05-15T11:14:11.191508"
-  },
-  "the-magic-faraway-tree": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/udXvLxC5gAqN8SinemyFBEcHpTf.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=bxWxrEsdWqQ",
-    "vote_average": 6.5,
-    "genres": [
-      "Family",
-      "Fantasy",
-      "Adventure"
-    ],
-    "imdb_id": "tt7734244",
-    "overview": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
-    "director": "Ben Gregor",
-    "writer": "Simon Farnaby",
-    "cast": "Andrew Garfield (Tim Thompson), Claire Foy (Polly Thompson), Nicola Coughlan (Silky), Jessica Gunning (Dame Washalot), Rebecca Ferguson (Dame Snap), Hiran Abeysekera (Angry Pixie), Phoenix Laroche (Joe Thompson), Delilah Bennett-Cardy (Beth Thompson), Billie Gadsdon (Fran Thompson), Jennifer Saunders (Grandma), Judi Dench (The Fridge (voice)), Nonso Anozie (Moonface)",
-    "cached_at": "2026-05-15T11:14:11.424617"
-  },
-  "national-theatre-live-the-playboy-of-the-western-world": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/hFA2KlHAExXZFs7sZ7YtxtblDQC.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=-Q8dTGbY2F0",
-    "vote_average": 0.0,
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "imdb_id": "tt40031882",
-    "overview": "Pegeen Flaherty’s life is turned upside down when a young man walks into her pub claiming that he’s killed his father. Instead of being shunned, the killer becomes a local hero and begins to win hearts, that is until a second man unexpectedly arrives on the scene...",
-    "director": "Caitriona McLaughlin",
-    "writer": "John Millington Synge",
-    "cast": "Nicola Coughlan (Pegeen Mike), Éanna Hardwicke (Christy Mahon), Siobhán McSweeney (Widow Quin), Declan Conlon (Old Mahon), Lorcan Cranitch (Michael Flaherty), Megan Cusack (Susan Brady), Naoise Dunbar (Jimmy Farrell), Matthew Forrest (Philly Cullen), Sallay Garnett (Nelly), Fionnuala Gygax (Honor Blake), Erin Hennessey (Fiddle), Peter Mooney (Banjo / Ensemble)",
-    "cached_at": "2026-05-15T11:14:11.669452"
-  },
-  "national-theatre-live-les-liaisons-dangereuses": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/lCMzzD5XZbp2IL2dY6tbtEuX3JB.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=IcWwthReeUk",
-    "vote_average": 6.0,
-    "genres": [
-      "Drama",
-      "Romance"
-    ],
-    "imdb_id": "tt5536316",
-    "overview": "Marquise de Merteuil, former lover of Vicomte de Valmont, incites him to corrupt the innocent Cécile de Volanges before her wedding night, but Valmont has targeted the peerlessly virtuous and beautiful Madame de Tourvel.",
-    "director": "Tony Grech-Smith, Josie Rourke",
-    "writer": "Choderlos de Laclos",
-    "cast": "Janet McTeer (La Marquise de Merteuil), Dominic West (Le Vicomte de Valmont), Elaine Cassidy (Madame de Tourvel), Adjoa Andoh (Madame de Volanges), Morfydd Clark (Cécile Volanges), Edward Holcroft (Le Chevalier Danceny), Una Stubbs (Madame de Rosemonde), Theo Barklem-Biggs (Azolan), Jennifer Saayeng (Émilie), Thom Petty (Major-Domo), Alison Arnopp (Julie)",
-    "cached_at": "2026-05-15T11:14:11.910453"
-  },
-  "national-theatre-live-all-my-sons": {
-    "poster_url": "https://image.tmdb.org/t/p/w342/4bKt8WAtvDDVAfCjzwnJOil2aOU.jpg",
-    "trailer_url": "https://www.youtube.com/watch?v=6RI4M3vrgsk",
-    "vote_average": 0.0,
-    "genres": [
-      "Drama"
-    ],
-    "imdb_id": "tt39544163",
-    "overview": "One family, the heart of the American dream. When wartime delivers profits for Joe Heller, it comes at a price when his partner is charged with criminal manufacturing deals, and his eldest son goes missing in action. Will peacetime bring peace of mind, or will he be confronted by the consequence of his actions?",
-    "director": "Ivo van Hove",
-    "writer": "Arthur Miller",
-    "cast": "Bryan Cranston (Joe Keller), Marianne Jean-Baptiste (Kate Keller), Paapa Essiedu (Chris Keller), Tom Glynn-Carney (George Deever), Hayley Squires (Ann Deever), Aliyah Odoffin (Lydia Lubey), Cath Whitefield (Sue Bayliss), Richard Hansell (Dr Jim Bayliss), Zach Wyatt (Frank Lubey), Stevie Raine (Ensemble)",
-    "cached_at": "2026-05-15T11:14:12.139051"
-  },
   "shrek-25th-anniversary": {
     "poster_url": "",
     "trailer_url": "",
@@ -154,7 +76,7 @@
     "director": "",
     "writer": "",
     "cast": "André Rieu (Himself)",
-    "cached_at": "2026-06-13T12:58:36.342283"
+    "cached_at": "2026-06-14T11:25:24.163471"
   },
   "passenger": {
     "poster_url": "https://image.tmdb.org/t/p/w342/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
@@ -371,7 +293,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-13T12:58:36.789495"
+    "cached_at": "2026-06-14T11:25:25.003993"
   },
   "la-fanciulla-del-west-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -419,7 +341,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-13T12:58:37.005317"
+    "cached_at": "2026-06-14T11:25:25.431253"
   },
   "swan-lake-royal-ballet-opera-26-27-season": {
     "poster_url": "",
@@ -455,7 +377,7 @@
     "director": "",
     "writer": "",
     "cast": "",
-    "cached_at": "2026-06-13T12:58:37.220950"
+    "cached_at": "2026-06-14T11:25:25.900193"
   },
   "backrooms": {
     "poster_url": "https://image.tmdb.org/t/p/w342/vpkNMkbisv5cTaIfCzUduYzXnjb.jpg",
@@ -696,7 +618,7 @@
     "director": "Brian Castles Onion",
     "writer": "Francesco Maria Piave, Alexandre Dumas fils",
     "cast": "Emma Matthews, Gianluca Terranova, Jonathan Summers, Margaret Plummer",
-    "cached_at": "2026-06-13T12:58:36.558915"
+    "cached_at": "2026-06-14T11:25:24.568428"
   },
   "toy-story-5-autism-friendly-screening": {
     "poster_url": "",
@@ -792,5 +714,53 @@
     "writer": "John Logan",
     "cast": "Jaafar Jackson (Michael Jackson), Colman Domingo (Joseph Jackson), Nia Long (Katherine Jackson), Juliano Krue Valdi (Young Michael Jackson), Miles Teller (John Branca), KeiLyn Durrel Jones (Bill Bray), Kendrick Sampson (Quincy Jones), Joseph David-Jones (Jackie Jackson), Rhyan Hill (Tito Jackson), Jamal Henderson (Jermaine Jackson), Trey Horton (Marlon Jackson), Jessica Sula (LaToya Jackson)",
     "cached_at": "2026-06-13T12:58:37.456354"
+  },
+  "the-super-mario-galaxy-movie": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=-LLhj6QYQi8",
+    "vote_average": 8.167,
+    "genres": [
+      "Family",
+      "Comedy",
+      "Adventure",
+      "Fantasy",
+      "Animation"
+    ],
+    "imdb_id": "tt28650488",
+    "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
+    "director": "Aaron Horvath, Michael Jelenic",
+    "writer": "Matthew Fogel",
+    "cast": "Chris Pratt (Mario (voice)), Anya Taylor-Joy (Princess Peach (voice)), Charlie Day (Luigi (voice)), Jack Black (Bowser (voice)), Donald Glover (Yoshi (voice)), Benny Safdie (Bowser Jr. (voice)), Brie Larson (Rosalina (voice)), Keegan-Michael Key (Toad (voice)), Glen Powell (Fox McCloud (voice)), Luis Guzmán (Wart (voice)), Issa Rae (Honey Queen (voice)), Kevin Michael Richardson (Kamek (voice))",
+    "cached_at": "2026-06-14T11:25:23.107041"
+  },
+  "national-theatre-live-les-liaisons-dangereuses": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/lCMzzD5XZbp2IL2dY6tbtEuX3JB.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=IcWwthReeUk",
+    "vote_average": 6.0,
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "imdb_id": "tt5536316",
+    "overview": "Marquise de Merteuil, former lover of Vicomte de Valmont, incites him to corrupt the innocent Cécile de Volanges before her wedding night, but Valmont has targeted the peerlessly virtuous and beautiful Madame de Tourvel.",
+    "director": "Tony Grech-Smith, Josie Rourke",
+    "writer": "Choderlos de Laclos",
+    "cast": "Janet McTeer (La Marquise de Merteuil), Dominic West (Le Vicomte de Valmont), Elaine Cassidy (Madame de Tourvel), Adjoa Andoh (Madame de Volanges), Morfydd Clark (Cécile Volanges), Edward Holcroft (Le Chevalier Danceny), Una Stubbs (Madame de Rosemonde), Theo Barklem-Biggs (Azolan), Jennifer Saayeng (Émilie), Thom Petty (Major-Domo), Alison Arnopp (Julie)",
+    "cached_at": "2026-06-14T11:25:23.553737"
+  },
+  "national-theatre-live-the-playboy-of-the-western-world": {
+    "poster_url": "https://image.tmdb.org/t/p/w342/hFA2KlHAExXZFs7sZ7YtxtblDQC.jpg",
+    "trailer_url": "https://www.youtube.com/watch?v=-Q8dTGbY2F0",
+    "vote_average": 0.0,
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "imdb_id": "tt40031882",
+    "overview": "Pegeen Flaherty’s life is turned upside down when a young man walks into her pub claiming that he’s killed his father. Instead of being shunned, the killer becomes a local hero and begins to win hearts, that is until a second man unexpectedly arrives on the scene...",
+    "director": "Caitriona McLaughlin",
+    "writer": "John Millington Synge",
+    "cast": "Nicola Coughlan (Pegeen Mike), Éanna Hardwicke (Christy Mahon), Siobhán McSweeney (Widow Quin), Declan Conlon (Old Mahon), Lorcan Cranitch (Michael Flaherty), Megan Cusack (Susan Brady), Naoise Dunbar (Jimmy Farrell), Matthew Forrest (Philly Cullen), Sallay Garnett (Nelly), Fionnuala Gygax (Honor Blake), Erin Hennessey (Fiddle), Peter Mooney (Banjo / Ensemble)",
+    "cached_at": "2026-06-14T11:25:26.312083"
   }
 }
