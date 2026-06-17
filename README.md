@@ -1,3 +1,5 @@
+> **Superseded** — This project has been replaced by **[wtw-cinemas](https://github.com/evenwebb/wtw-cinemas)**. Kept for reference only.
+
 <div align="center">
 
 # 🎬 WTW What's On
